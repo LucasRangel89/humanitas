@@ -62,4 +62,4 @@ O plano anexado fecha com o melhor conselho possível: ao terminar, escolha UM p
 
 ## Conclusão da trilha
 
-Ao marcar o nó 12: atualize o `status` do cabeçalho para `concluida`, mova os conceitos reescritos de `rascunho` para `ok`, e rode o atualizador do painel para conferir a tabela de temas.
+Ao marcar o nó 12: atualize o `status` do cabeçalho para `concluida`, mova os conceitos reescritos de `rascunho` para `ok`, e deixe o CI regenerar a tabela de temas.

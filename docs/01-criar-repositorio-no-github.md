@@ -9,20 +9,20 @@ Pense no repositório como uma **pasta do seu computador que mora na internet**,
 ## Passo 1 — Criar a conta (se você ainda não tem)
 
 1. Acesse `github.com` e clique em **Sign up**.
-2. Informe um e-mail, crie uma senha e escolha um **nome de usuário**. Esse nome aparecerá no endereço do seu projeto (por exemplo, `github.com/seu-usuario/painel-ciencias-humanas`), então escolha algo com que você se identifique.
+2. Informe um e-mail, crie uma senha e escolha um **nome de usuário**. Esse nome aparecerá no endereço do seu projeto (por exemplo, `github.com/seu-usuario/humanitas`), então escolha algo com que você se identifique.
 3. Confirme o e-mail de verificação que o GitHub enviará.
 
 ## Passo 2 — Criar o repositório
 
 1. Já logado, clique no símbolo **+** no canto superior direito e escolha **New repository**.
 2. Preencha assim:
-   - **Repository name:** `painel-ciencias-humanas` (ou o nome que preferir; evite espaços e acentos).
-   - **Description:** algo como "Painel de estudos autodidata de ciências humanas".
-   - **Private ou Public?** Escolha **Private**. Motivo: este projeto contém texto integral de obras protegidas por direitos autorais na pasta `acervo/`. Em um repositório privado, só você vê. Se um dia você quiser compartilhar apenas suas notas e resumos, pode criar outro repositório público com esse material.
+   - **Repository name:** `humanitas` (ou o nome que preferir; evite espaços e acentos).
+   - **Description:** algo como "Painel de estudos de ciências humanas — conceitos, eixos, trilhas e progresso".
+   - **Private ou Public?** O repositório pode ser **público** ou **privado**: o texto integral das obras fica **fora do Git** (o `.gitignore` bloqueia `acervo/*.md`) e só as notas, trilhas, diário e fichas são versionados. Se você optar por versionar o texto integral, escolha **Private**. Em qualquer caso, `docs/anexos/` contém materiais de terceiros: não os redistribua.
    - Marque a opção **Add a README file**.
 3. Clique no botão verde **Create repository**.
 
-Pronto: o endereço do seu painel já existe, por exemplo `github.com/seu-usuario/painel-ciencias-humanas`.
+Pronto: o endereço do seu painel já existe, por exemplo `github.com/seu-usuario/humanitas`.
 
 ## Passo 3 — Subir os arquivos do projeto
 
@@ -43,6 +43,19 @@ Volte à página inicial do repositório. Você deve ver o `README.md` renderiza
 
 Para ler um arquivo Markdown no seu computador sem o GitHub, você pode arrastá-lo para dentro de uma janela do navegador — mas a exibição fica sem formatação. A formatação bonita aparece quando o arquivo está no GitHub, ou em aplicativos como Obsidian e Notion.
 
+## Passo 4.1 — Deixar o CI trabalhar (recomendado)
+
+O repositório traz dois workflows prontos em `.github/workflows/`:
+
+- **CI** — roda os testes e a auditoria a cada push/pull request;
+- **Painel** — regenera índice, tabela de temas e progresso a cada push em `main`.
+
+Em **Settings > Actions > General**, confira que *Workflow permissions* permite
+**Read and write permissions** (o workflow do painel precisa commitar os artefatos).
+Opcional: em **Settings > Branches**, proteja `main` exigindo o CI verde.
+
+Mais detalhes no [Guia 06](06-manutencao-e-ci.md).
+
 ## Passo 5 — Marcar o repositório como favorito
 
 Dentro do repositório, clique no ícone de estrela (**Star**) no canto superior direito. Assim ele fica sempre acessível na lista "Your stars" do seu perfil.
@@ -55,6 +68,8 @@ Quando você for criar arquivos novos, siga estas convenções — elas evitam p
 - Sem espaços: use hífen, como em `max-weber-a-etica-protestante.md`.
 - Sempre em letras minúsculas.
 - Um livro por arquivo, um conceito por arquivo.
+- Texto integral de livro **não** entra no Git: `acervo/fichas/` sim, `acervo/*.md` não.
+- Licenças: código sob MIT (`LICENSE`) e notas sob CC BY-SA 4.0 (`LICENSE-CONTEUDO.md`).
 
 ## Próximo passo
 

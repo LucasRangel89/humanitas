@@ -1,0 +1,4 @@
+# Dependências do CLI, dos testes e do CI (leves de propósito).
+# Para converter PDFs, use requirements-conversao.txt.
+PyYAML==6.0.3
+pytest==9.1.1

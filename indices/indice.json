@@ -1,8 +1,797 @@
 {
-  "projeto": "painel-ciencias-humanas",
-  "descricao": "Mapa geral do acervo processado. Gerado pelo notebook converter-pdfs.ipynb e complementado manualmente.",
-  "atualizado_em": null,
+  "projeto": "humanitas",
+  "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
+  "atualizado_em": "2026-10-21T19:25:19",
+  "totais": {
+    "livros": 0,
+    "fichas": 0,
+    "conceitos": 31,
+    "eixos": 5,
+    "trechos": 0,
+    "trilhas": 5,
+    "diario": 0
+  },
   "livros": [],
-  "conceitos": [],
-  "trechos": []
+  "fichas": [],
+  "conceitos": [
+    {
+      "arquivo": "eixo-conflito-coesao.md",
+      "caminho": "conceitos/eixo-conflito-coesao.md",
+      "conceito": "Conflito × Coesão",
+      "tipo": "eixo",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Planos de estudo anexados pelo autor",
+      "autor_origem": "Debate clássico das ciências humanas",
+      "definicao": "O que mantém uma sociedade unida — o consenso partilhado entre seus membros ou o conflito entre seus interesses, administrado pela força?",
+      "tags": [
+        "eixo",
+        "sociologia",
+        "classicos",
+        "poder"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "eixo-estrutura-agencia.md",
+      "caminho": "conceitos/eixo-estrutura-agencia.md",
+      "conceito": "Estrutura × Agência",
+      "tipo": "eixo",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Planos de estudo anexados pelo autor",
+      "autor_origem": "Debate clássico das ciências humanas",
+      "definicao": "Nossas ações refletem escolhas livres ou traçados sociais que não escolhemos — e, se os dois, onde termina um e começa o outro?",
+      "tags": [
+        "eixo",
+        "sociologia",
+        "filosofia",
+        "metodo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "eixo-inatismo-empirismo.md",
+      "caminho": "conceitos/eixo-inatismo-empirismo.md",
+      "conceito": "Inatismo × Empirismo",
+      "tipo": "eixo",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Debate filosófico clássico (Platão e Locke a Chomsky)",
+      "definicao": "O que é dado no nascimento (estruturas, capacidades, predisposições) — e o que é aprendido pela experiência?",
+      "tags": [
+        "eixo",
+        "filosofia",
+        "psicologia",
+        "natureza-cultura"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "eixo-livre-arbitrio-determinismo.md",
+      "caminho": "conceitos/eixo-livre-arbitrio-determinismo.md",
+      "conceito": "Livre-arbítrio × Determinismo",
+      "tipo": "eixo",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Debate filosófico clássico (estoicos a Dennett)",
+      "definicao": "O comportamento humano é escolhido pelo sujeito — ou efeito de causas anteriores (biológicas, psíquicas, sociais) que ele não controla?",
+      "tags": [
+        "eixo",
+        "filosofia",
+        "psicologia",
+        "agencia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "eixo-mente-corpo.md",
+      "caminho": "conceitos/eixo-mente-corpo.md",
+      "conceito": "Mente × Corpo",
+      "tipo": "eixo",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Debate filosófico clássico (Descartes a Ryle)",
+      "definicao": "A mente é uma coisa diferente do corpo (ou da matéria) — e, se for, como as duas interagem?",
+      "tags": [
+        "eixo",
+        "filosofia",
+        "psicologia",
+        "mente-corpo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-eudaimonia.md",
+      "caminho": "conceitos/filosofia-eudaimonia.md",
+      "conceito": "Eudaimonia",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Ética a Nicômaco (Livros I e II), de Aristóteles",
+      "autor_origem": "Aristóteles",
+      "definicao": "Eudaimonia é o florescimento humano: a vida plena que resulta do exercício constante da virtude — não um prazer passageiro, mas a realização daquilo que uma vida bem vivida pode ser.",
+      "tags": [
+        "filosofia",
+        "aristoteles",
+        "etica",
+        "antiguidade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-existencialismo.md",
+      "caminho": "conceitos/filosofia-existencialismo.md",
+      "conceito": "Existencialismo",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "O Existencialismo é um Humanismo, de Sartre",
+      "autor_origem": "Jean-Paul Sartre",
+      "definicao": "A existência precede a essência: não há natureza humana pré-definida — cada um é o que faz da sua vida, e essa liberdade intransferível Sartre chama de \"condenação\".",
+      "tags": [
+        "filosofia",
+        "sartre",
+        "seculo-20",
+        "liberdade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-falseabilidade.md",
+      "caminho": "conceitos/filosofia-falseabilidade.md",
+      "conceito": "Falseabilidade",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Conjecturas e Refutações, de Karl Popper",
+      "autor_origem": "Karl Popper",
+      "definicao": "Uma teoria só é científica se puder ser refutada: o que separa ciência de pseudociência não é ter provas a favor, é estar exposta a testes que poderiam provar o contrário.",
+      "tags": [
+        "filosofia",
+        "popper",
+        "ciencia",
+        "metodo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-fenomeno-noumeno.md",
+      "caminho": "conceitos/filosofia-fenomeno-noumeno.md",
+      "conceito": "Fenômeno e Númeno",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Crítica da Razão Pura, de Kant",
+      "autor_origem": "Immanuel Kant",
+      "definicao": "Fenômeno é o mundo como nos aparece — moldado pelas estruturas da mente (espaço, tempo, categorias); númeno é a \"coisa em si\", que existe mas é inacessível ao conhecimento humano.",
+      "tags": [
+        "filosofia",
+        "kant",
+        "epistemologia",
+        "modernidade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-imperativo-categorico.md",
+      "caminho": "conceitos/filosofia-imperativo-categorico.md",
+      "conceito": "Imperativo Categórico",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Fundamentação da Metafísica dos Costumes (seções I e II), de Kant",
+      "autor_origem": "Immanuel Kant",
+      "definicao": "Aja apenas segundo a máxima que você possa querer ver transformada em lei universal — e trate cada pessoa sempre também como fim, nunca apenas como meio.",
+      "tags": [
+        "filosofia",
+        "kant",
+        "etica",
+        "modernidade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-morte-de-deus.md",
+      "caminho": "conceitos/filosofia-morte-de-deus.md",
+      "conceito": "Morte de Deus",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Gaia Ciência (aforismo 125) e Genealogia da Moral, de Nietzsche",
+      "autor_origem": "Friedrich Nietzsche",
+      "definicao": "A \"morte de Deus\" é o anúncio de que as fundações absolutas da moral ocidental perderam credibilidade — e o desafio de criar valores sem elas.",
+      "tags": [
+        "filosofia",
+        "nietzsche",
+        "seculo-19",
+        "moral"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-teoria-das-formas.md",
+      "caminho": "conceitos/filosofia-teoria-das-formas.md",
+      "conceito": "Teoria das Formas",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A República (Livro VII), de Platão",
+      "autor_origem": "Platão",
+      "definicao": "Para Platão, o mundo que vemos é cópia imperfeita de um mundo inteligível de Formas perfeitas e eternas — com a Ideia do Bem no topo —, e conhecer é sair das cópias e alcançar as Formas pela razão.",
+      "tags": [
+        "filosofia",
+        "platao",
+        "epistemologia",
+        "antiguidade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "filosofia-veu-da-ignorancia.md",
+      "caminho": "conceitos/filosofia-veu-da-ignorancia.md",
+      "conceito": "Véu da Ignorância",
+      "tipo": "conceito",
+      "tema": "filosofia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Uma Teoria da Justiça, de John Rawls",
+      "autor_origem": "John Rawls",
+      "definicao": "O véu da ignorância é um experimento mental: as regras justas de uma sociedade são aquelas que você escolheria sem saber qual posição ocuparia nela — classe, gênero, raça, talento, saúde.",
+      "tags": [
+        "filosofia",
+        "rawls",
+        "justica",
+        "seculo-20"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-apego.md",
+      "caminho": "conceitos/psicologia-apego.md",
+      "conceito": "Apego",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Apego (Attachment and Loss, 1969), de John Bowlby",
+      "autor_origem": "John Bowlby e Mary Ainsworth",
+      "definicao": "Apego é o vínculo afetivo primário que a criança forma com seus cuidadores — e a segurança (ou insegurança) dessa base moldeia a forma de se relacionar por toda a vida.",
+      "tags": [
+        "psicologia",
+        "desenvolvimento",
+        "bowlby",
+        "vinculo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-behaviorismo.md",
+      "caminho": "conceitos/psicologia-behaviorismo.md",
+      "conceito": "Behaviorismo",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "John B. Watson, B. F. Skinner; base de Ivan Pavlov",
+      "definicao": "Escola que restringe a psicologia ao comportamento observável, explicado por condicionamento estímulo-resposta, dispensando entidades mentais internas.",
+      "tags": [
+        "psicologia",
+        "escolas-classicas",
+        "comportamento"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-dissonancia-cognitiva.md",
+      "caminho": "conceitos/psicologia-dissonancia-cognitiva.md",
+      "conceito": "Dissonância cognitiva",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Teoria da Dissonância Cognitiva, de Leon Festinger",
+      "autor_origem": "Leon Festinger",
+      "definicao": "Dissonância cognitiva é o desconforto psicológico de sustentar crenças, atitudes ou comportamentos em conflito entre si — e o esforço, quase sempre enviesado, para reduzir esse desconforto.",
+      "tags": [
+        "psicologia",
+        "social",
+        "festinger",
+        "atuitudes"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-estruturalismo.md",
+      "caminho": "conceitos/psicologia-estruturalismo.md",
+      "conceito": "Estruturalismo",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Edward B. Titchener, a partir de Wilhelm Wundt",
+      "definicao": "Primeira escola sistemática da psicologia científica: decompor a consciência em seus elementos básicos — sensações, imagens e sentimentos — por meio da introspecção treinada.",
+      "tags": [
+        "psicologia",
+        "escolas-classicas",
+        "mente-corpo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-fluxo.md",
+      "caminho": "conceitos/psicologia-fluxo.md",
+      "conceito": "Fluxo",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Flow: A Psicologia da Felicidade (Flow, 1990), de Mihaly Csikszentmihalyi",
+      "autor_origem": "Mihaly Csikszentmihalyi",
+      "definicao": "Fluxo é o estado de imersão total numa atividade em que desafio e habilidade se equilibram, o tempo se dissolve e a ação vira fim em si mesma.",
+      "tags": [
+        "psicologia",
+        "positiva",
+        "bem-estar",
+        "atencao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-funcionalismo.md",
+      "caminho": "conceitos/psicologia-funcionalismo.md",
+      "conceito": "Funcionalismo",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "William James, John Dewey, James Angell, Harvey Carr, G. H. Mead",
+      "definicao": "Corrente que estuda as funções da consciência — o que a mente FAZ para adaptar o organismo ao ambiente — em vez de decompor seus elementos.",
+      "tags": [
+        "psicologia",
+        "escolas-classicas",
+        "mente-corpo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-gestalt.md",
+      "caminho": "conceitos/psicologia-gestalt.md",
+      "conceito": "Psicologia da Gestalt",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Max Wertheimer, Wolfgang Köhler, Kurt Koffka",
+      "definicao": "Escola da percepção que sustenta que a experiência se organiza em totalidades — o todo é diferente da soma das partes — por princípios de organização presentes desde o início.",
+      "tags": [
+        "psicologia",
+        "escolas-classicas",
+        "percepcao",
+        "inatismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-humanismo.md",
+      "caminho": "conceitos/psicologia-humanismo.md",
+      "conceito": "Psicologia Humanista",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Carl Rogers, Abraham Maslow",
+      "definicao": "A \"terceira força\" da psicologia: estuda a experiência subjetiva integral — potencial, escolha e autorrealização — como reação ao determinismo do behaviorismo e da psicanálise.",
+      "tags": [
+        "psicologia",
+        "escolas-classicas",
+        "autorrealizacao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-psicanalise.md",
+      "caminho": "conceitos/psicologia-psicanalise.md",
+      "conceito": "Psicanálise",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Sigmund Freud; divergências de Carl Jung e Alfred Adler",
+      "definicao": "Teoria e método clínico que explicam o psiquismo por processos inconscientes — desejos, conflitos e defesas que operam fora da consciência — e o tratam pela escuta, não pelo laboratório.",
+      "tags": [
+        "psicologia",
+        "escolas-classicas",
+        "inconsciente"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-vieses-cognitivos.md",
+      "caminho": "conceitos/psicologia-vieses-cognitivos.md",
+      "conceito": "Vieses cognitivos",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Rápido e Devagar: Duas Formas de Pensar, de Daniel Kahneman",
+      "autor_origem": "Daniel Kahneman e Amos Tversky",
+      "definicao": "Vieses cognitivos são erros previsíveis de julgamento produzidos pelos atalhos mentais (heurísticas) que economizam esforço — o Sistema 1, rápido e intuitivo, vencendo o Sistema 2, lento e analítico.",
+      "tags": [
+        "psicologia",
+        "cognicao",
+        "kahneman",
+        "decisao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "psicologia-zona-desenvolvimento-proximal.md",
+      "caminho": "conceitos/psicologia-zona-desenvolvimento-proximal.md",
+      "conceito": "Zona de Desenvolvimento Proximal",
+      "tipo": "conceito",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Pensamento e Linguagem, de Lev Vygotsky",
+      "autor_origem": "Lev Vygotsky",
+      "definicao": "ZDP é a distância entre o que a pessoa consegue fazer sozinha e o que consegue fazer com apoio de alguém mais experiente — é dentro dessa zona, com mediação, que o aprendizado acontece.",
+      "tags": [
+        "psicologia",
+        "desenvolvimento",
+        "vygotsky",
+        "aprendizagem"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-alienacao.md",
+      "caminho": "conceitos/sociologia-alienacao.md",
+      "conceito": "Alienação",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Manuscritos Econômico-Filosóficos de 1844 (seção \"Trabalho Alienado\"), de Karl Marx",
+      "autor_origem": "Karl Marx",
+      "definicao": "Alienação é a separação que o trabalhador capitalista sofre em quatro frentes: do produto do seu trabalho, do próprio processo de trabalho, da sua essência humana e dos outros seres humanos.",
+      "tags": [
+        "sociologia",
+        "marx",
+        "trabalho",
+        "classicos"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-anomia.md",
+      "caminho": "conceitos/sociologia-anomia.md",
+      "conceito": "Anomia",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "O Suicídio, de Émile Durkheim",
+      "autor_origem": "Émile Durkheim",
+      "definicao": "Anomia é o estado de desregulação em que as normas perdem força e a sociedade deixa de dizer o que é esperado — e o indivíduo, sem bússola coletiva, desorienta-se e sofre.",
+      "tags": [
+        "sociologia",
+        "durkheim",
+        "normas",
+        "classicos"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-cultura.md",
+      "caminho": "conceitos/sociologia-cultura.md",
+      "conceito": "Cultura",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Conceito sociológico clássico (Tylor a Berger; fonte didática: Toda Matéria)",
+      "definicao": "Conjunto amplo de tradições, crenças, valores e costumes compartilhados por um grupo social e transmitido entre gerações.",
+      "tags": [
+        "sociologia",
+        "socio-antropologia",
+        "cultura"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-desigualdade-social.md",
+      "caminho": "conceitos/sociologia-desigualdade-social.md",
+      "conceito": "Desigualdade Social",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Conceito sociológico clássico (Marx, Bourdieu; fonte didática: Brasil Escola)",
+      "definicao": "Diferenças sistemáticas nas condições de vida e no acesso a recursos — econômicos, educacionais, simbólicos — entre classes e grupos sociais.",
+      "tags": [
+        "sociologia",
+        "socio-antropologia",
+        "desigualdade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-fato-social.md",
+      "caminho": "conceitos/sociologia-fato-social.md",
+      "conceito": "Fato social",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "As Regras do Método Sociológico, de Émile Durkheim",
+      "autor_origem": "Émile Durkheim",
+      "definicao": "Fato social é toda maneira de agir, pensar e sentir exterior ao indivíduo e dotada de poder coercitivo — o objeto próprio da sociologia.",
+      "tags": [
+        "sociologia",
+        "durkheim",
+        "metodo",
+        "classicos"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-genero.md",
+      "caminho": "conceitos/sociologia-genero.md",
+      "conceito": "Gênero",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Conceito das ciências sociais (Scott, Butler; fonte didática: Wikipédia)",
+      "definicao": "Conjunto de características físicas, mentais e comportamentais socialmente atribuídas ao masculino e ao feminino — distinto do sexo biológico e variável entre culturas e épocas.",
+      "tags": [
+        "sociologia",
+        "socio-antropologia",
+        "genero"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-identidade.md",
+      "caminho": "conceitos/sociologia-identidade.md",
+      "conceito": "Identidade",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Conceito sociológico clássico (Mead, Erikson; fonte didática: InfoEscola)",
+      "definicao": "Conjunto de significados que define um indivíduo num dado contexto social — família, profissão, etnia, religião — e que ele reconhece como \"quem eu sou\".",
+      "tags": [
+        "sociologia",
+        "socio-antropologia",
+        "identidade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-imaginacao-sociologica.md",
+      "caminho": "conceitos/sociologia-imaginacao-sociologica.md",
+      "conceito": "Imaginação sociológica",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Imaginação Sociológica (cap. 1, \"A Promessa\"), de C. Wright Mills",
+      "autor_origem": "Charles Wright Mills",
+      "definicao": "Imaginação sociológica é a capacidade de conectar a experiência pessoal à estrutura social e à história — entender que o \"problema meu\" quase nunca nasce só dentro de mim.",
+      "tags": [
+        "sociologia",
+        "mills",
+        "metodo",
+        "classicos"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-interseccionalidade.md",
+      "caminho": "conceitos/sociologia-interseccionalidade.md",
+      "conceito": "Interseccionalidade",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Demarginalizing the Intersection of Race and Sex (1989), de Kimberlé Crenshaw",
+      "autor_origem": "Kimberlé Crenshaw",
+      "definicao": "Interseccionalidade é a ideia de que desigualdades — raça, classe, gênero e outras marcações — não se somam simplesmente: elas se cruzam, produzindo experiências específicas nas interseções.",
+      "tags": [
+        "sociologia",
+        "desigualdade",
+        "genero",
+        "raca",
+        "contemporaneo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-papel-social.md",
+      "caminho": "conceitos/sociologia-papel-social.md",
+      "conceito": "Papel Social",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Conceito sociológico clássico (Linton, Goffman; fonte didática: Toda Matéria)",
+      "definicao": "Conjunto de comportamentos, direitos e deveres que a sociedade associa a um status — pai, professor, líder, paciente — numa estrutura social.",
+      "tags": [
+        "sociologia",
+        "socio-antropologia",
+        "papeis"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-racionalizacao.md",
+      "caminho": "conceitos/sociologia-racionalizacao.md",
+      "conceito": "Racionalização",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Ética Protestante e o Espírito do Capitalismo, de Max Weber",
+      "autor_origem": "Max Weber",
+      "definicao": "Racionalização é o processo histórico em que a eficiência, o cálculo e a previsibilidade substituem a tradição, a magia e o afeto como critérios de organização do mundo.",
+      "tags": [
+        "sociologia",
+        "weber",
+        "modernidade",
+        "classicos"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    },
+    {
+      "arquivo": "sociologia-socializacao.md",
+      "caminho": "conceitos/sociologia-socializacao.md",
+      "conceito": "Socialização",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
+      "autor_origem": "Conceito sociológico clássico (Berger e Luckmann; fonte didática: Toda Matéria)",
+      "definicao": "Processo pelo qual o indivíduo aprende e interioriza hábitos culturais, normas e valores da sociedade em que vive.",
+      "tags": [
+        "sociologia",
+        "socio-antropologia",
+        "socializacao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false
+    }
+  ],
+  "trechos": [],
+  "trilhas": [
+    {
+      "arquivo": "filosofia-nivel-1.md",
+      "caminho": "trilhas/filosofia-nivel-1.md",
+      "trilha": "Filosofia — Nível 1: do mito ao século XX",
+      "tema": "filosofia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de contar a linha principal da história da filosofia ocidental (da passagem do mito ao logos até o século XX), explicar o conceito central de cada grande época com as suas palavras, posicionar cada pensador nos três eixos do painel e aplicar o critério popperiano a afirmações do dia a dia.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Teoria das Formas — o ponto de partida: opinião × conhecimento, a Caverna."
+    },
+    {
+      "arquivo": "integrada-nivel-1.md",
+      "caminho": "trilhas/integrada-nivel-1.md",
+      "trilha": "Integrada — Nível 1: as três lentes juntas (Filosofia × Sociologia × Psicologia)",
+      "tema": "integrada",
+      "nivel": "entusiasta",
+      "status": "em-andamento",
+      "objetivo": "A imagem do plano anexado é a mais precisa já escrita sobre o painel: a Filosofia pergunta o que é a \"beleza\" da estátua; a Psicologia examina como a mente a percebe e o que ela evoca; a Sociologia investiga por que aquela sociedade decidiu ergui-la ali. Ao terminar, você será capaz de analisar qualquer fenômeno — uma eleição, um app, um conflito pessoal, uma obra de arte — girando entre as três lentes de propósito, e escolher a trilha de disciplina certa para aprofundar cada pergunta.",
+      "nos_total": 8,
+      "nos_concluidos": 0,
+      "formato": "secoes",
+      "proximo_no": "A0. A mentalidade do explorador (Fase 0 do plano)"
+    },
+    {
+      "arquivo": "psicologia-nivel-1.md",
+      "caminho": "trilhas/psicologia-nivel-1.md",
+      "trilha": "Psicologia — Nível 1: Fundações",
+      "tema": "psicologia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de explicar as seis escolas clássicas da psicologia com as suas palavras, posicioná-las nos três grandes eixos filosóficos e aplicar a lente sócio-antropológica para corrigir leituras individuais de fenômenos sociais — a ponte para a psicologia social.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Eixo Livre-arbítrio × Determinismo — a bússola 1: antes das escolas, o mapa do debate."
+    },
+    {
+      "arquivo": "psicologia-nivel-2.md",
+      "caminho": "trilhas/psicologia-nivel-2.md",
+      "trilha": "Psicologia — Nível 2: do laboratório à vida",
+      "tema": "psicologia",
+      "nivel": "entusiasta",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você terá percorrido o ciclo de uma graduação em miniatura — cognição, desenvolvimento, personalidade e psicologia social, saúde mental e psicologia digital — e será capaz de: aplicar o modelo de Kahneman ao seu próprio julgamento, explicar como vínculo e mediação constroem desenvolvimento, e ler notícias de saúde mental (e de IA) com o vocabulário e a cautela corretos.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Vieses cognitivos — Kahneman: Sistema 1 × Sistema 2, heurísticas e o viés de confirmação."
+    },
+    {
+      "arquivo": "sociologia-nivel-1.md",
+      "caminho": "trilhas/sociologia-nivel-1.md",
+      "trilha": "Sociologia — Nível 1: do olhar sociológico ao mundo contemporâneo",
+      "tema": "sociologia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de usar a imaginação sociológica em qualquer notícia (separar problema pessoal de questão pública), explicar o diagnóstico da modernidade feito por Marx, Durkheim e Weber com as suas palavras, posicionar cada um nos dois eixos do painel e analisar fenômenos atuais — da desigualdade às redes sociais — com as lentes clássicas.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Imaginação sociológica — a porta de entrada (Mills): o pessoal é público."
+    }
+  ],
+  "diario": []
 }

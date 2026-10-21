@@ -1,0 +1,27 @@
+# --- Texto integral de obras protegidas: NÃO entra no Git -------------------
+# O acervo convertido fica no Google Drive (uso pessoal). Só as notas e as
+# fichas de leitura são versionadas. Ver README, seção "Direitos autorais".
+acervo/*
+!acervo/README.md
+!acervo/manifesto.json
+!acervo/fichas/
+acervo/fichas/*
+!acervo/fichas/README.md
+!acervo/fichas/**-ficha.md
+
+# --- Artefatos gerados -----------------------------------------------------
+flashcards.csv
+*.zip
+relatorio-problemas.md
+indices/tabela-temas.md
+
+# --- Ambiente e ferramentas ------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.log
