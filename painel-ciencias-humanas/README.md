@@ -22,11 +22,13 @@ A lógica do projeto é simples: em vez de reler um PDF de 400 páginas para ach
 | `indices/` | `indice.json` — o mapa geral do acervo processado |
 | `templates/` | Modelos prontos para copiar ao criar uma nota nova |
 | `docs/` | Guias passo a passo: criar o repositório, extrair conteúdo dos PDFs, atualizar tudo |
-| `notebooks/` | Notebook do Google Colab que converte PDFs em Markdown em lote, sem digitar código |
+| `notebooks/` | Notebooks do Google Colab (sem digitar código): `converter-pdfs` transforma PDFs em Markdown; `atualizador-do-painel` regenera o índice, a tabela de temas, os flashcards e audita o repositório |
 
 ## Painel de temas
 
-Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo viram links clicáveis para as notas de cada tema.
+Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo viram links clicáveis para as notas de cada tema. Esta tabela é regenerada automaticamente pelo notebook `atualizador-do-painel.ipynb` — não edite à mão.
+
+<!-- PAINEL-TEMAS-INICIO -->
 
 | Tema | Status | Notas de conceito | Livros processados |
 |---|---|---|---|
@@ -39,14 +41,17 @@ Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo vi
 | Geografia | Em breve | 0 | 0 |
 | Psicologia Social | Em breve | 0 | 0 |
 
+<!-- PAINEL-TEMAS-FIM -->
+
 ## Como adicionar um livro novo (resumo rápido)
 
-O fluxo completo está explicado em `docs/02-fluxo-de-extracao.md`, mas em resumo são quatro passos:
+O fluxo completo está explicado em `docs/02-fluxo-de-extracao.md`, mas em resumo são cinco passos:
 
 1. **Converter** o PDF em Markdown usando o notebook `notebooks/converter-pdfs.ipynb` (Google Colab, funciona no navegador).
 2. **Explorar** a obra no NotebookLM usando os prompts prontos de `docs/03-prompts-notebooklm.md`.
 3. **Anotar** os resultados usando os modelos da pasta `templates/`.
 4. **Publicar** os arquivos aqui no GitHub (guia em `docs/01-criar-repositorio-no-github.md` e `docs/04-atualizar-o-github.md`).
+5. **Regenerar** o índice, a tabela de temas e os flashcards com o notebook `notebooks/atualizador-do-painel.ipynb`.
 
 ## Ferramentas utilizadas
 
@@ -54,16 +59,19 @@ O fluxo completo está explicado em `docs/02-fluxo-de-extracao.md`, mas em resum
 |---|---|---|
 | GitHub | Guarda e exibe todo o painel (é o "site" do projeto) | Gratuito |
 | NotebookLM (Google) | Lê os PDFs e ajuda a extrair conceitos, resumos, perguntas e trechos | Gratuito |
-| Google Colab | Converte PDFs em Markdown em lote, no navegador, sem instalar nada | Gratuito |
+| Google Colab | Converte PDFs em Markdown em lote e mantém o painel atualizado, no navegador, sem instalar nada | Gratuito |
 | Google Drive | Organiza os PDFs originais por tema | Gratuito |
+| Anki | Revisão espaçada dos conceitos por flashcards, gerados pelo notebook atualizador | Gratuito |
 
 ## Roteiro (roadmap)
 
 - [ ] Criar o repositório no GitHub
 - [ ] Organizar os PDFs por tema no Google Drive
-- [ ] Converter os primeiros 10 livros para Markdown
+- [ ] Converter os 10 livros-chave do primeiro lote (estratégia híbrida — ver Guia 02)
 - [ ] Criar as primeiras 20 notas de conceito
 - [ ] Preencher a primeira ficha de leitura completa
+- [ ] Importar os primeiros flashcards no Anki e estabelecer a rotina de revisão
+- [ ] Rodar o notebook atualizador do painel pela primeira vez
 - [ ] Processar 50 livros e atualizar o painel de temas
 - [ ] (Futuro) Transformar este painel em um site interativo com busca
 

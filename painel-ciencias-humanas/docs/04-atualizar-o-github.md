@@ -33,10 +33,11 @@ Dica: se os arquivos precisam entrar dentro de uma pasta específica (por exempl
 
 ## Rotina mensal sugerida
 
-Uma vez por mês, reserve 20 minutos para a manutenção do painel:
+Uma vez por mês, reserve 20 minutos para a manutenção do painel. A maior parte é feita pelo notebook atualizador:
 
-- Atualize a tabela **Painel de temas** no `README.md` com as contagens novas (notas e livros por tema).
-- Atualize o `indice.json` na pasta `indices/` — ou regenere-o rodando o notebook de conversão, que produz o índice automaticamente.
+- **Regenerar o painel:** na página do repositório no GitHub, clique no botão verde **Code** e depois em **Download ZIP**. No Colab, abra o notebook `notebooks/atualizador-do-painel.ipynb`, suba esse zip na primeira célula e execute tudo. Ele devolve um zip com: o `README.md` atualizado (com a tabela de temas regenerada), o `indice.json` completo, o `flashcards.csv` para o Anki e um `relatorio-problemas.md` com links quebrados e conceitos possivelmente duplicados.
+- **Subir os arquivos devolvidos:** descompacte e arraste o conteúdo para o repositório (**Add file > Upload files**) — arquivos de mesmo nome substituem os antigos automaticamente. O `relatorio-problemas.md` é para leitura: corrija o que ele aponta nas notas e suba as versões corrigidas.
+- **Importar os flashcards novos** no Anki (passo a passo no Guia 02, seção de retenção).
 - Marque no **Roteiro (roadmap)** do README os itens concluídos e escolha o tema foco do mês seguinte.
 - Se algo saiu do lugar, use **History** para entender o que mudou — nada se perde no GitHub.
 

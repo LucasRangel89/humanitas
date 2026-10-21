@@ -39,10 +39,14 @@ Uma frase explicando por que este trecho captura bem o conceito.
 
 ## Conceitos relacionados
 
-Conceitos vizinhos — os que o autor contrasta e os de outras obras que dialogam. Crie links para as notas correspondentes quando elas existirem.
+Conceitos vizinhos — os que o autor contrasta e os de outras obras que dialogam. Crie links para as notas correspondentes quando elas existirem, sempre com links Markdown padrão, apontando para o nome exato do arquivo (sem acentos, com hífen). Se a nota estiver em outra pasta, use o caminho a partir da raiz do repositório (ex.: `conceitos/historia-estado-nacao.md`).
 
-- [[conceito-relacionado-1]]
-- [[conceito-relacionado-2]]
+- [estado-nacao](historia-estado-nacao.md)
+- [poder-simbolico](sociologia-poder-simbolico.md)
+
+<!-- IMPORTANTE: não use a sintaxe [[assim]] — o GitHub não a transforma em
+     link. Use [texto](nome-do-arquivo.md). O notebook atualizador-do-painel
+     audita esses links e avisa se algum estiver quebrado. -->
 
 ## Por que este conceito importa
 

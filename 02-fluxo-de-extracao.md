@@ -44,6 +44,8 @@ Duas maneiras de entregar os PDFs ao notebook (o próprio notebook oferece as du
 
 O que fazer com os problemas mais comuns está no final deste guia (seção "PDFs escaneados").
 
+**Estratégia híbrida (decisão do projeto):** com mais de cem PDFs, a tentação é converter tudo de uma vez — e é exatamente aí que projetos assim morrem. O combinado é outro: identifique os **10 livros-chave** do seu estudo neste primeiro momento (os que respondem às suas dúvidas mais urgentes) e converta só eles. Os demais ficam no Drive e entram na conversão apenas quando o tema deles for o foco do mês. Converter vira consequência do plano de estudo, não o contrário.
+
 ## Etapa 2 — Explorar as obras no NotebookLM
 
 O **NotebookLM** (em `notebooklm.google.com`) é a ferramenta de leitura assistida do Google. Você entrega fontes (os PDFs) e conversa com elas: pede resumos, conceitos, comparações, perguntas — sempre com resposta ancorada no texto das fontes, com referência ao trecho original. Isso reduz muito o risco de invenção, que é a grande fraude das IAs de chat comuns.
@@ -71,9 +73,9 @@ Duas regras de ouro desta etapa:
 1. **Reescreva com suas palavras.** Copiar e colar a resposta da IA não gera aprendizado; parafrasear sim. O campo de comentário pessoal é o coração de cada nota.
 2. **Um conceito, um arquivo.** É tentador fazer um único arquivo gigante por livro, mas notas pequenas e específicas é o que permite conectar, buscar e reaproveitar depois.
 
-## Etapa 4 — Publicar e manter o índice
+## Etapa 4 — Publicar e manter o índice (automático)
 
-Com as notas prontas, suba os arquivos para o GitHub (Guia 04) e atualize o `indice.json` rodando a última célula do notebook, ou manualmente adicionando uma linha por livro novo. Atualize também a tabela "Painel de temas" do `README.md` — ela é a fachada do painel.
+Com as notas prontas, suba os arquivos para o GitHub (Guia 04). A manutenção do painel — regenerar o `indice.json` (agora com livros, conceitos e trechos), atualizar a tabela "Painel de temas" do README, conferir links e detectar conceitos duplicados — ficou por conta do segundo notebook, o `notebooks/atualizador-do-painel.ipynb`. Você baixa o repositório em zip do GitHub, ele processa tudo e devolve os arquivos atualizados, além de um `flashcards.csv` para o Anki. O passo a passo está no Guia 04.
 
 ## Outras maneiras de explorar o acervo (além do NotebookLM)
 
@@ -96,11 +98,26 @@ Uma parte dos PDFs didáticos é, na verdade, uma **fotografia das páginas** �
 1. **Deixar o NotebookLM ler:** ele processa PDFs escaneados internamente, inclusive em português. Se o objetivo é explorar a obra (e não converter o texto integral), basta subir o PDF original lá e seguir com os prompts.
 2. **Resgatar o texto pelo Google Drive:** suba o PDF no Drive, clique com o botão direito, escolha **Abrir com > Documentos Google**. O Google aplica OCR (reconhecimento de texto sobre imagem) e gera um documento editável. Depois é só baixar como texto e tratar como os demais.
 
+## Retenção: flashcards no Anki e resumo em áudio
+
+Escrever boas notas organiza o conhecimento; é a revisão que o mantém na cabeça. O painel tem duas camadas de revisão, e as duas usam o que você já produziu:
+
+**Flashcards no Anki (revisão ativa, ~10 minutos por dia).** O notebook `atualizador-do-painel.ipynb` gera um `flashcards.csv` a partir das suas notas de conceito: frente com a pergunta ("O que é habitus?"), verso com a definição que você escreveu e a fonte. O fluxo é:
+
+1. Baixe o Anki (apps.ankiweb.net) no computador e, se quiser, o app no celular — a sincronização entre eles é gratuita.
+2. Depois de rodar o atualizador, importe o `flashcards.csv`: no Anki, **Arquivo > Importar**, escolha o arquivo, confirme que a primeira coluna é a frente e a segunda o verso, e pronto.
+3. Revise os cartões que o Anki agenda para o dia — ele mesmo decide quando reapresentar cada conceito, mais espaçado a cada acerto.
+
+A regra de qualidade importa: se a definição do verso não faz sentido sozinha, o problema está na nota de conceito — volte e reescreva. O flashcard é o detector de fumaça das notas mal escritas.
+
+**Resumo em áudio (revisão passiva).** No caderno do NotebookLM de cada tema, gere o **Resumo em Áudio** das obras do mês e ouça nos deslocamentos, na cozinha, na caminhada. Não substitui o Anki (ouvir não é recordar), mas reexpor as ideias com frequência barata e sem esforço adicional.
+
 ## Ritmo sugerido
 
 Consistência vence volume. Um ciclo realista para quem estuda além do trabalho:
 
-- **Por semana:** 1 livro processado de ponta a ponta (converter, 3 a 4 prompts no NotebookLM, 5 a 10 notas, publicar).
+- **Agora:** escolha os 10 livros-chave e converta apenas eles (estratégia híbrida).
+- **Por semana:** 1 livro processado de ponta a ponta (converter, 3 a 4 prompts no NotebookLM, 5 a 10 notas, publicar) + revisões do Anki acumulando.
 - **Por lote:** trabalhe com 5 a 10 livros por vez entre as etapas de conversão e exploração.
 - **Por mês:** revise o painel de temas e o índice; escolha um tema "focado" do mês para aprofundar com comparações entre obras no NotebookLM.
 
