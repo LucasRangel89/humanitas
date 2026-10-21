@@ -35,6 +35,26 @@
 | Filosofia | 11 | 0 | 11 | 0 | 8 |
 | Psicologia | 11 | 0 | 11 | 0 | 5 |
 
+## Próximas notas a reescrever
+
+As notas com mais pendências primeiro. Reescrever uma nota é o que a move para `status: ok`.
+
+| Nota | Tema | Pendências |
+|---|---|---|
+| Behaviorismo | Psicologia | 4 — citação de apoio (com capítulo/página) |
+| Conflito × Coesão | Sociologia | 4 — explicação com as suas palavras |
+| Cultura | Sociologia | 4 — citação de apoio (com capítulo/página) |
+| Desigualdade Social | Sociologia | 4 — citação de apoio (com capítulo/página) |
+| Estrutura × Agência | Sociologia | 4 — explicação com as suas palavras |
+| Estruturalismo | Psicologia | 4 — citação de apoio (com capítulo/página) |
+| Funcionalismo | Psicologia | 4 — citação de apoio (com capítulo/página) |
+| Gênero | Sociologia | 4 — citação de apoio (com capítulo/página) |
+| Identidade | Sociologia | 4 — citação de apoio (com capítulo/página) |
+| Inatismo × Empirismo | Filosofia | 4 — explicação com as suas palavras |
+| Livre-arbítrio × Determinismo | Filosofia | 4 — explicação com as suas palavras |
+| Mente × Corpo | Filosofia | 4 — explicação com as suas palavras |
+| … | | mais 24 nota(s) |
+
 ## Como melhorar estes números
 
 - A métrica que importa não é quantidade de notas, é **nota reescrita** (`status: ok`) e **entrada de diário**.

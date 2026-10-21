@@ -1,0 +1,65 @@
+# Configuração do site (MkDocs Material).
+# As fontes são montadas por `python -m scripts.painel site` em `site-src/`,
+# que copia apenas o que pode ser público: notas, trilhas, eixos, diário,
+# fichas, guias e templates. O texto integral do acervo e docs/anexos ficam fora.
+#
+# Uso local:
+#   make site        # monta site-src/ e serve em http://127.0.0.1:8000
+#   mkdocs build     # gera o HTML em site/
+#
+# Publicação: workflow "Site" (manual) em .github/workflows/site.yml.
+
+site_name: Humanitas
+site_description: Painel de estudos de ciências humanas — conceitos, eixos, trilhas e progresso
+site_author: Lucas Rangel
+site_url: https://lucasrangel89.github.io/humanitas/
+
+docs_dir: site-src
+site_dir: site
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - content.tags
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+plugins:
+  - search:
+      lang: pt
+      separator: '[\\s\\-,:!=\\[\\]()"\\./]'
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Sem `nav` de propósito: o menu é gerado a partir das pastas, então uma nota
+# nova aparece sozinha no site, sem editar configuração e sem quebrar o build.
+# A ordem alfabética é intencional: o mapa curado fica no index (README) e nas trilhas.

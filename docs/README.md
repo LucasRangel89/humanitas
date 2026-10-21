@@ -22,7 +22,9 @@ projeto e não devem ser redistribuídos.
 ## Três comandos que você usa toda semana
 
 ```bash
+make pendencias  # o que falta em cada nota (padrão-ouro)
+make nova TIPO=conceito NOME="Habitus" TEMA=sociologia
 make auditar     # links, metadados, duplicados, seções ausentes
 make painel      # índice, tabela de temas, progresso e flashcards
-make testar      # garante que o CLI continua saudável
+make site        # site com busca (http://127.0.0.1:8000)
 ```

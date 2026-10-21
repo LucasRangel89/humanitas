@@ -30,6 +30,7 @@ A lógica: em vez de reler um PDF de 400 páginas para achar uma ideia, você ab
 | `tests/` | Testes automatizados do CLI |
 | `.github/workflows/` | CI (testes + auditoria) e atualização automática do painel |
 | `notebooks/` | Notebook do Colab que converte PDFs em Markdown |
+| `mkdocs.yml` | Configuração do site com busca (`make site`) |
 
 ## Estado atual
 
@@ -75,9 +76,12 @@ O painel se mantém sozinho: a cada push em `main`, o GitHub Actions regenera o 
 
 ```bash
 make instalar                 # cria .venv e instala dependências (uma vez)
-make testar                   # testes
 make auditar                  # links quebrados, metadados, duplicados, seções ausentes
+make pendencias               # o que falta em cada nota para virar padrão-ouro
+make nova TIPO=conceito NOME="Habitus" TEMA=sociologia   # esqueleto de nota nova
 make painel                   # índice + tabela + progresso + flashcards
+make site                     # site com busca em http://127.0.0.1:8000
+make testar                   # 51 testes
 ```
 
 Sem `make` (Windows ou pressa):
@@ -89,6 +93,20 @@ python -m scripts.painel auditar
 
 Nada disso instala nada além de Python 3.10+ e duas bibliotecas leves (`PyYAML` e `pytest`).
 O guia completo está em [`docs/06-manutencao-e-ci.md`](docs/06-manutencao-e-ci.md).
+
+## Site com busca
+
+O painel vira site com busca em português, tags e navegação automática:
+
+```bash
+make site        # monta site-src/ e serve localmente
+```
+
+Só entra no site o que pode ser público: notas, eixos, trilhas, diário, trechos,
+fichas e guias. Ficam de fora o texto integral do acervo e `docs/anexos/`.
+A publicação no GitHub Pages é **manual** (`Actions → "Site — publicar no GitHub
+Pages"`) para nada ficar público sem decisão sua — passo a passo no
+[Guia 06](docs/06-manutencao-e-ci.md#site-com-busca-mkdocs-material).
 
 ## Meta desta semana
 
@@ -140,6 +158,8 @@ O fluxo completo está em [`docs/02-fluxo-de-extracao.md`](docs/02-fluxo-de-extr
 - [x] Automação no GitHub Actions (testes, auditoria, índice, progresso, flashcards)
 - [x] Limpar duplicatas da raiz, criar `.gitignore` (acervo fora do Git) e licenças
 - [x] Medir progresso real (`progresso.md`): notas ok, nós concluídos, diários, citações
+- [x] Scaffold de notas (`nova`) e checklist do padrão-ouro (`pendencias`)
+- [x] Site com busca em português e tags (MkDocs Material)
 
 **Próximos**
 
@@ -149,7 +169,8 @@ O fluxo completo está em [`docs/02-fluxo-de-extracao.md`](docs/02-fluxo-de-extr
 - [ ] Importar os flashcards no Anki e estabelecer a rotina de revisão
 - [ ] Converter o primeiro lote de livros-chave (Guia 05)
 - [ ] Percorrer a trilha de Psicologia Nível 1 até o nó 12
-- [ ] Publicar o painel como site com busca (MkDocs Material, só notas) — ver `docs/07-rumos-e-proximos-passos.md`
+- [ ] Habilitar o GitHub Pages e publicar o site (Settings → Pages → GitHub Actions)
+- [ ] Usar `make nova` e `make pendencias` para fechar as 5 primeiras notas
 - [ ] (Futuro) Busca semântica e quiz gerados sobre as **suas** notas, com citação obrigatória
 
 ## Direitos autorais e licenças

@@ -1,0 +1,69 @@
+# Publica o painel como site com busca (MkDocs Material) no GitHub Pages.
+#
+# Manual de propósito: nada é publicado sem você pedir.
+# Antes do primeiro uso:
+#   1. Settings > Pages > Build and deployment > Source: "GitHub Actions"
+#   2. Actions > "Site — publicar no GitHub Pages" > Run workflow
+#
+# O que entra no site: notas, eixos, trilhas, diário, trechos, fichas e guias.
+# O que fica de fora: texto integral do acervo (acervo/*.md) e docs/anexos/
+# (materiais de terceiros). Ver `python -m scripts.painel site`.
+
+name: Site — publicar no GitHub Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      motivo:
+        description: "Anotação para o histórico (opcional)"
+        required: false
+        default: "publicação manual"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-docs.txt
+
+      - name: Auditar antes de publicar
+        run: python -m scripts.painel auditar
+
+      - name: Montar as fontes do site
+        run: python -m scripts.painel site
+
+      - name: Gerar o HTML
+        run: mkdocs build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

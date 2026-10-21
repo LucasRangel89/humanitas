@@ -15,6 +15,10 @@ flashcards.csv
 relatorio-problemas.md
 indices/tabela-temas.md
 
+# --- Site (gerado a partir de `python -m scripts.painel site`) ---------------
+site-src/
+site/
+
 # --- Ambiente e ferramentas ------------------------------------------------
 .venv/
 venv/

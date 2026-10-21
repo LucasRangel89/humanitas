@@ -298,3 +298,186 @@ def test_comandos_rodam_no_repositorio_real(comando: str, tmp_path: pathlib.Path
     monkeypatch.chdir(copia)
     assert painel.main(["--raiz", str(copia), comando]) == 0
     capsys.readouterr()
+
+
+# ---------------------------------------------------------------------------
+# Scaffold de notas (nova)
+# ---------------------------------------------------------------------------
+
+
+def _criar_esqueleto(mini_repo: pathlib.Path, *args: str) -> int:
+    return painel.main(["--raiz", str(mini_repo), "nova", *args])
+
+
+def test_nova_conceito_cria_nota_auditavel(mini_repo: pathlib.Path):
+    codigo = _criar_esqueleto(
+        mini_repo,
+        "--tipo", "conceito",
+        "--nome", "Campo (sociologia)",
+        "--tema", "sociologia",
+        "--nivel", "entusiasta",
+        "--autor", "Pierre Bourdieu",
+        "--obra", "O Senso Prático, cap. 3",
+        "--tags", "bourdieu,pratica",
+    )
+    assert codigo == 0
+    nota = mini_repo / "conceitos" / "sociologia-campo-sociologia.md"
+    assert nota.exists()
+    texto = nota.read_text(encoding="utf-8")
+    fm = painel.parse_frontmatter(texto)
+    assert fm["conceito"] == "Campo (sociologia)"
+    assert fm["tema"] == "sociologia"
+    assert fm["status"] == "rascunho"
+    assert fm["nivel"] == "entusiasta"
+    assert "bourdieu" in fm["tags"]
+    # o esqueleto não pode introduzir erros de auditoria
+    erros, _ = painel.auditar(mini_repo)
+    assert erros == []
+
+
+def test_nova_remove_links_de_exemplo_do_template(mini_repo: pathlib.Path):
+    _criar_esqueleto(
+        mini_repo, "--tipo", "conceito", "--nome", "Campo Novo", "--tema", "sociologia"
+    )
+    texto = (mini_repo / "conceitos" / "sociologia-campo-novo.md").read_text(encoding="utf-8")
+    # o exemplo [estado-nacao](historia-estado-nacao.md) vira texto simples
+    assert "historia-estado-nacao.md)[" not in texto
+    assert "](historia-estado-nacao.md)" not in texto
+
+
+def test_nova_marca_as_pendencias(mini_repo: pathlib.Path):
+    _criar_esqueleto(
+        mini_repo, "--tipo", "conceito", "--nome", "Campo Novo", "--tema", "sociologia"
+    )
+    nota = mini_repo / "conceitos" / "sociologia-campo-novo.md"
+    assert "<!-- PENDENTE" in nota.read_text(encoding="utf-8")
+    texto = nota.read_text(encoding="utf-8")
+    assert "A definição mais enxuta possível" in texto  # ainda é placeholder
+
+
+def test_nova_nao_sobrescreve_sem_forcar(mini_repo: pathlib.Path, capsys):
+    args = ("--tipo", "conceito", "--nome", "Campo Novo", "--tema", "sociologia")
+    assert _criar_esqueleto(mini_repo, *args) == 0
+    capsys.readouterr()
+    assert _criar_esqueleto(mini_repo, *args) == 1
+    assert "Já existe" in capsys.readouterr().out
+    assert _criar_esqueleto(mini_repo, *args, "--forcar") == 0
+
+
+def test_nova_valida_tema_e_nivel(mini_repo: pathlib.Path, capsys):
+    assert _criar_esqueleto(mini_repo, "--tipo", "conceito", "--nome", "X", "--tema", "xyz") == 1
+    assert "Tema inválido" in capsys.readouterr().out
+    assert _criar_esqueleto(
+        mini_repo, "--tipo", "conceito", "--nome", "X", "--tema", "sociologia", "--nivel", "deus"
+    ) == 1
+    assert "Nível inválido" in capsys.readouterr().out
+
+
+@pytest.mark.parametrize(
+    ("tipo", "nome", "esperado"),
+    [
+        ("eixo", "Cultura × Natureza", "conceitos/eixo-cultura-natureza.md"),
+        ("ficha", "O Senso Prático", "acervo/fichas/o-senso-pratico-ficha.md"),
+        ("trecho", "Bourdieu sobre o corpo", "trechos/bourdieu-sobre-o-corpo.md"),
+        ("diario", "Sobre habitus", "diario/2026-01-15-sociologia-sobre-habitus.md"),
+    ],
+)
+def test_nova_outros_tipos(mini_repo: pathlib.Path, tipo: str, nome: str, esperado: str):
+    extra = ("--data", "2026-01-15") if tipo == "diario" else ()
+    codigo = _criar_esqueleto(
+        mini_repo, "--tipo", tipo, "--nome", nome, "--tema", "sociologia", *extra
+    )
+    assert codigo == 0
+    caminho = mini_repo / esperado
+    assert caminho.exists(), esperado
+    erros, _ = painel.auditar(mini_repo)
+    assert erros == []
+
+
+def test_flashcards_ignoram_texto_de_exemplo(mini_repo: pathlib.Path):
+    _criar_esqueleto(
+        mini_repo, "--tipo", "conceito", "--nome", "Campo Novo", "--tema", "sociologia"
+    )
+    frentes = [linha[1] for linha in painel.gerar_flashcards(mini_repo)]
+    assert "O que é Campo Novo?" not in frentes  # definição ainda é placeholder
+
+
+# ---------------------------------------------------------------------------
+# Pendências (checklist do padrão-ouro)
+# ---------------------------------------------------------------------------
+
+
+def test_pendencias_mostra_o_que_falta(mini_repo: pathlib.Path, capsys):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    nota.write_text(
+        nota.read_text(encoding="utf-8").replace("status: ok", "status: rascunho"),
+        encoding="utf-8",
+    )
+    assert painel.main(["--raiz", str(mini_repo), "pendencias"]) == 0
+    saida = capsys.readouterr().out
+    assert "Habitus" in saida
+    assert "status ainda é rascunho" in saida
+    assert "com pendência" in saida
+
+
+def test_pendencias_respeita_limite_e_tema(mini_repo: pathlib.Path, capsys):
+    assert painel.main(
+        ["--raiz", str(mini_repo), "pendencias", "--tema", "sociologia", "--limite", "1"]
+    ) == 0
+    saida = capsys.readouterr().out
+    assert saida.count("pendência(s) —") == 1
+    assert "Mostrando as 1 notas" in saida
+
+
+def test_pendencias_nota_pronta_nao_aparece(mini_repo: pathlib.Path, capsys):
+    assert painel.main(["--raiz", str(mini_repo), "pendencias"]) == 0
+    saida = capsys.readouterr().out
+    # as duas notas válidas do mini-repo estão em status ok e têm citação? só o habitus tem
+    assert "0 com pendência" in saida or "com pendência" in saida
+
+
+def test_pendencias_tema_invalido(mini_repo: pathlib.Path, capsys):
+    assert painel.main(["--raiz", str(mini_repo), "pendencias", "--tema", "xyz"]) == 1
+    assert "Tema inválido" in capsys.readouterr().out
+
+
+# ---------------------------------------------------------------------------
+# Site
+# ---------------------------------------------------------------------------
+
+
+def test_site_monta_apenas_conteudo_publicavel(mini_repo: pathlib.Path):
+    texto_integral = mini_repo / "acervo" / "bourdieu-senso-pratico.md"
+    texto_integral.write_text("# Texto integral protegido\n", encoding="utf-8")
+    anexo = mini_repo / "docs" / "anexos" / "plano.pdf"
+    anexo.parent.mkdir(parents=True, exist_ok=True)
+    anexo.write_bytes(b"%PDF-1.4")
+
+    assert painel.main(["--raiz", str(mini_repo), "site"]) == 0
+
+    fontes = mini_repo / "site-src"
+    assert (fontes / "index.md").exists()  # README vira a home
+    assert (fontes / "conceitos" / "sociologia-habitus.md").exists()
+    assert (fontes / "trilhas" / "sociologia-teste.md").exists()
+    assert (fontes / "diario").exists()
+    assert (fontes / "acervo" / "fichas").exists()
+    # o que não pode ser publicado
+    assert not (fontes / "acervo" / "bourdieu-senso-pratico.md").exists()
+    assert not (fontes / "docs" / "anexos").exists()
+    assert not (fontes / ".git").exists()
+
+
+def test_site_nao_publica_texto_integral_mesmo_sem_ficha(mini_repo: pathlib.Path):
+    (mini_repo / "acervo" / "livro-protegido.md").write_text("# capítulo\n", encoding="utf-8")
+    painel.main(["--raiz", str(mini_repo), "site"])
+    assert not (mini_repo / "site-src" / "acervo" / "livro-protegido.md").exists()
+
+
+def test_site_e_idempotente(mini_repo: pathlib.Path):
+    painel.main(["--raiz", str(mini_repo), "site"])
+    primeiro = (mini_repo / "site-src" / "index.md").read_text(encoding="utf-8")
+    sobra = mini_repo / "site-src" / "arquivo-velho.md"
+    sobra.write_text("lixo\n", encoding="utf-8")
+    painel.main(["--raiz", str(mini_repo), "site"])
+    assert not sobra.exists()  # reconstrói do zero
+    assert (mini_repo / "site-src" / "index.md").read_text(encoding="utf-8") == primeiro

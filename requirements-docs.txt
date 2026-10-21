@@ -1,0 +1,2 @@
+# Dependências do site (mkdocs + tema). Leves; usadas só no workflow "Site".
+mkdocs-material==9.7.1
