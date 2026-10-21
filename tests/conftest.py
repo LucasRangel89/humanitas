@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import pathlib
+import shutil
 import sys
 
 import pytest
@@ -152,4 +153,6 @@ def mini_repo(tmp_path: pathlib.Path) -> pathlib.Path:
         "# Ficha — O Senso Prático\n\n## Tese central\n\nO habitus.\n",
     )
     _escrever(tmp_path / "acervo" / "README.md", "# acervo/\n")
+    # templates reais: o comando `nova` monta o esqueleto a partir deles
+    shutil.copytree(RAIZ_PROJETO / "templates", tmp_path / "templates")
     return tmp_path

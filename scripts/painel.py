@@ -93,6 +93,26 @@ REGEX_WIKILINK = re.compile(r"\[\[[^\]]+\]\]")
 REGEX_TITULO = re.compile(r"^#\s+(.+?)\s*$", re.M)
 REGEX_SECAO = re.compile(r"^##\s+(.+?)\s*$", re.M)
 
+# Textos de exemplo dos templates: se a nota ainda os contiver, a seção está pendente.
+PLACEHOLDERS = (
+    "a definição mais enxuta possível",
+    "explique o conceito em 3 a 5 frases",
+    "capítulo ou seção onde o autor apresenta",
+    "citação literal curta do autor",
+    "exemplo 1",
+    "formule o debate como uma pergunta",
+    "3 a 5 frases: o que está em jogo",
+    "uma frase sobre a consequência de entender",
+    "nome do conceito",
+    "cole aqui",
+    "o que este livro mudou",
+    "100 a 150 palavras",
+)
+
+# Arquivos e pastas que entram no site (o texto integral do acervo fica de fora).
+PASTAS_SITE = ("conceitos", "trilhas", "diario", "trechos")
+ARQUIVOS_SITE = ("README.md", "progresso.md", "LICENSE", "LICENSE-CONTEUDO.md")
+
 
 # ---------------------------------------------------------------------------
 # Leitura e parsing
@@ -223,6 +243,12 @@ def listar_md(pasta: pathlib.Path, recursivo: bool = False) -> list[pathlib.Path
         return []
     itens = pasta.rglob("*.md") if recursivo else pasta.glob("*.md")
     return sorted(p for p in itens if p.name.upper() != "README.MD")
+
+
+def eh_placeholder(texto: str) -> bool:
+    """True quando o trecho ainda é o texto de exemplo do template."""
+    normalizado = normalizar(texto)
+    return not normalizado or any(p in normalizado for p in map(normalizar, PLACEHOLDERS))
 
 
 def rel(caminho: pathlib.Path, raiz: pathlib.Path) -> str:
@@ -421,6 +447,7 @@ def montar_indice(raiz: pathlib.Path) -> dict:
     diario = coletar_diario(raiz)
 
     for registro in conceitos:
+        registro["pendencias"] = pendencias_da_nota(registro)
         registro.pop("_texto", None)
 
     indice = {
@@ -528,6 +555,34 @@ def progresso_barra(feitos: int, total: int, largura: int = 10) -> str:
     return f"[{'#' * preenchido}{'-' * (largura - preenchido)}] {feitos * 100 // total}%"
 
 
+def pendencias_da_nota(registro: dict) -> list[str]:
+    """O que falta para a nota virar padrão-ouro (lista vazia = pronta)."""
+    texto = registro.get("_texto", "")
+    faltas = []
+    if eh_placeholder(registro.get("definicao", "")):
+        faltas.append("definição em uma frase")
+    if eh_placeholder(extrair_secao(texto, "Explicação com as minhas palavras")):
+        faltas.append("explicação com as suas palavras")
+    trecho = achar_secao(texto, "Trecho de apoio")
+    if not trecho.strip() or eh_placeholder(trecho) or "> \"" in trecho:
+        faltas.append("citação de apoio (com capítulo/página)")
+    if registro.get("tipo") == "conceito" and eh_placeholder(
+        extrair_secao(texto, "Exemplos que ilustram")
+    ):
+        faltas.append("exemplo próprio (de preferência brasileiro)")
+    if re.search(
+        r"guia de estudos|planos de estudo|anexo|wikip", registro.get("obra_origem", ""), re.I
+    ):
+        faltas.append("fonte primária")
+    if registro.get("tipo") == "eixo" and eh_placeholder(
+        achar_secao(texto, "Posições no debate")
+    ):
+        faltas.append("posições com autor e obra")
+    if registro.get("status") != "ok":
+        faltas.append("status ainda é rascunho")
+    return faltas
+
+
 def calcular_progresso(indice: dict) -> dict:
     conceitos = indice["conceitos"]
     status = Counter(c["status"] or "sem-status" for c in conceitos)
@@ -619,6 +674,28 @@ def texto_progresso(indice: dict) -> str:
             f"{sum(1 for c in do_tema if c['tem_trecho'])} | "
             f"{sum(1 for c in do_tema if c['obra_origem'] and not re.search('guia de estudos|planos de estudo|anexo|wikip', c['obra_origem'], re.I))} |"
         )
+    # próximas notas a reescrever — o trabalho de estudo da semana
+    pendentes = []
+    for c in indice["conceitos"]:
+        faltas = c.get("pendencias") or []
+        if faltas and c.get("status") != "ok":
+            pendentes.append((len(faltas), c["conceito"], c["tema"], faltas))
+    if pendentes:
+        pendentes.sort(key=lambda item: (-item[0], item[1]))
+        linhas += [
+            "",
+            "## Próximas notas a reescrever",
+            "",
+            "As notas com mais pendências primeiro. Reescrever uma nota é o que a "
+            "move para `status: ok`.",
+            "",
+            "| Nota | Tema | Pendências |",
+            "|---|---|---|",
+        ]
+        for _, nome, tema, faltas in pendentes[:12]:
+            linhas.append(f"| {nome} | {TEMAS.get(tema, tema)} | {len(faltas)} — {faltas[0]} |")
+        if len(pendentes) > 12:
+            linhas.append(f"| … | | mais {len(pendentes) - 12} nota(s) |")
     if p["diario_ultima"]:
         linhas += ["", f"Última entrada no diário: **{p['diario_ultima']}**."]
     linhas += [
@@ -692,11 +769,9 @@ def cartoes_de(registro: dict) -> list[list[str]]:
             ]
         )
 
-    adicionar(
-        "definicao",
-        f"O que é {nome}?",
-        registro["definicao"] + (f" — Fonte: {fonte}" if fonte else ""),
-    )
+    definicao = registro["definicao"]
+    if not eh_placeholder(definicao):  # texto de exemplo do template não vira cartão
+        adicionar("definicao", f"O que é {nome}?", definicao + (f" — Fonte: {fonte}" if fonte else ""))
 
     if registro["tipo"] == "conceito":
         exemplos = extrair_secao(registro["_texto"], "Exemplos que ilustram")
@@ -1002,6 +1077,313 @@ def cmd_auditar(raiz: pathlib.Path, estrito: bool = False) -> int:
     return 0
 
 
+# ---------------------------------------------------------------------------
+# Scaffold de notas novas
+# ---------------------------------------------------------------------------
+
+# tipo -> (template, pasta-destino, campos extras)
+TIPOS_NOVA = {
+    "conceito": ("template-conceito.md", "conceitos", ("autor", "obra", "nivel")),
+    "eixo": ("template-eixo.md", "conceitos", ("autor", "nivel")),
+    "ficha": ("template-livro.md", "acervo/fichas", ("autor", "obra", "ano")),
+    "trecho": ("template-trecho.md", "trechos", ("autor", "obra", "capitulo", "pagina")),
+    "diario": ("template-diario.md", "diario", ("origem", "data")),
+}
+
+ROTULO_H1 = {
+    "conceito": "Nome do conceito",
+    "eixo": "Nome da grande questão",
+    "ficha": "Título da obra",
+    "trecho": "tema curto do trecho",
+    "diario": "tema curto da reflexão",
+}
+
+
+def slug(texto: str) -> str:
+    """Nome de arquivo compatível com o GitHub: sem acento, minúsculo, com hífens."""
+    return re.sub(r"-+", "-", normalizar(texto).replace(" ", "-")).strip("-")
+
+
+def yaml_escalar(valor) -> str:
+    if isinstance(valor, (list, tuple)):
+        return "[" + ", ".join(str(v) for v in valor) + "]"
+    if isinstance(valor, int):
+        return str(valor)
+    return '"' + str(valor).replace('"', '\\"') + '"'
+
+
+def serializar_frontmatter(dados: dict) -> str:
+    linhas = ["---"]
+    for chave, valor in dados.items():
+        linhas.append(f"{chave}: {yaml_escalar(valor)}")
+    linhas.append("---")
+    return "\n".join(linhas) + "\n"
+
+
+def corpo_do_template(caminho: pathlib.Path) -> str:
+    """Corpo do template, sem cabeçalho e sem os blocos de instrução."""
+    texto = ler(caminho)
+    if texto.lstrip().startswith("---"):
+        partes = texto.lstrip().split("---", 2)
+        if len(partes) >= 3:
+            texto = partes[2]
+    texto = re.sub(r"<!--.*?-->", "", texto, flags=re.S)
+    return texto.strip("\n")
+
+
+def desativar_links_quebrados(texto: str, raiz: pathlib.Path, pasta: pathlib.Path) -> str:
+    """Troca exemplos de link do template (que não existem) por texto simples."""
+
+    def trocar(match: re.Match) -> str:
+        rotulo, alvo = match.group(1), match.group(2)
+        if alvo.startswith(("http://", "https://", "#", "mailto:")):
+            return match.group(0)
+        caminho = alvo.split("#")[0].strip()
+        if not caminho.lower().endswith(".md"):
+            return match.group(0)
+        if (pasta / caminho).exists() or (raiz / caminho).exists():
+            return match.group(0)
+        return rotulo
+
+    return re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", trocar, texto)
+
+
+def cmd_nova(raiz: pathlib.Path, **opcoes) -> int:
+    tipo = (opcoes.get("tipo") or "").strip().lower()
+    if tipo not in TIPOS_NOVA:
+        print(f"Tipo inválido: {tipo!r}. Use um de: {', '.join(TIPOS_NOVA)}.")
+        return 1
+
+    nome = (opcoes.get("nome") or "").strip()
+    if not nome:
+        print("Informe o nome com --nome (ex.: --nome \"Habitus\").")
+        return 1
+
+    tema = (opcoes.get("tema") or "").strip().lower()
+    if tema not in TEMAS:
+        print(f"Tema inválido: {tema!r}. Use um de: {', '.join(sorted(TEMAS))}.")
+        return 1
+
+    template, pasta_nome, _ = TIPOS_NOVA[tipo]
+    origem = raiz / "templates" / template
+    if not origem.exists():
+        print(f"Template não encontrado: {rel(origem, raiz)}.")
+        return 1
+
+    nivel = (opcoes.get("nivel") or "iniciante").strip().lower()
+    if nivel not in NIVEIS_VALIDOS:
+        print(f"Nível inválido: {nivel!r}. Use um de: {', '.join(sorted(NIVEIS_VALIDOS))}.")
+        return 1
+
+    autor = (opcoes.get("autor") or "").strip()
+    obra = (opcoes.get("obra") or "").strip()
+    data = (opcoes.get("data") or dt.date.today().isoformat()).strip()
+    tags = parse_tags(opcoes.get("tags") or f"{tema}")
+    if tema not in tags:
+        tags = [tema, *tags]
+
+    frente = {
+        "conceito": {
+            "conceito": nome,
+            "obra_origem": obra,
+            "autor_origem": autor,
+            "tema": tema,
+            "tipo": "conceito",
+            "nivel": nivel,
+            "status": "rascunho",
+            "tags": tags,
+        },
+        "eixo": {
+            "eixo": nome,
+            "tema": tema,
+            "tipo": "eixo",
+            "nivel": nivel,
+            "status": "rascunho",
+            "tags": ["eixo", *tags],
+        },
+        "ficha": {
+            "obra": obra or nome,
+            "autor": autor,
+            "ano": opcoes.get("ano") or "",
+            "tema": tema,
+            "tipo": "ficha-de-leitura",
+            "status": "em-andamento",
+            "tags": tags,
+        },
+        "trecho": {
+            "obra": obra or nome,
+            "autor": autor,
+            "capitulo": opcoes.get("capitulo") or "",
+            "pagina": opcoes.get("pagina") or "",
+            "tema": tema,
+            "tipo": "trecho",
+            "tags": tags,
+        },
+        "diario": {
+            "data": data,
+            "tema": tema,
+            "origem": opcoes.get("origem") or nome,
+            "tipo": "diario",
+            "tags": ["diario", *tags],
+        },
+    }[tipo]
+
+    ident = slug(nome)
+    if tipo == "conceito":
+        arquivo = f"{tema}-{ident}.md"
+    elif tipo == "eixo":
+        arquivo = f"eixo-{ident}.md"
+    elif tipo == "ficha":
+        arquivo = f"{ident}-ficha.md"
+    elif tipo == "diario":
+        arquivo = f"{data}-{tema}-{ident}.md"
+    else:
+        arquivo = f"{ident}.md"
+
+    pasta = raiz / pasta_nome
+    destino = pasta / arquivo
+    if destino.exists() and not opcoes.get("forcar"):
+        print(f"Já existe: {rel(destino, raiz)}. Use --forcar para sobrescrever.")
+        return 1
+
+    corpo = corpo_do_template(origem)
+    corpo = corpo.replace(ROTULO_H1[tipo], nome)
+    corpo = desativar_links_quebrados(corpo, raiz, pasta)
+    pendente = (
+        "<!-- PENDENTE (padrão-ouro): preencha as seções e depois rode\n"
+        f"     `python -m scripts.painel pendencias --tema {tema}`.\n"
+        "     Ao terminar, mude o status para ok. -->\n"
+    )
+    conteudo = serializar_frontmatter(frente) + "\n" + pendente + corpo + "\n"
+
+    pasta.mkdir(parents=True, exist_ok=True)
+    destino.write_text(conteudo, encoding="utf-8")
+    print(f"Criado: {rel(destino, raiz)}")
+    print()
+    print("Próximos passos:")
+    print(f"  1. preencha as seções (sem consultar a IA enquanto escreve)")
+    print(f"  2. python -m scripts.painel pendencias --tema {tema}")
+    print(f"  3. ao terminar, troque status: rascunho -> ok")
+    return 0
+
+
+def cmd_pendencias(raiz: pathlib.Path, **opcoes) -> int:
+    """Checklist do padrão-ouro: o que falta em cada nota para virar `ok`."""
+    registros = coletar_conceitos(raiz)
+    tema = (opcoes.get("tema") or "").strip().lower()
+    limite = opcoes.get("limite")
+    mostrar_prontas = bool(opcoes.get("prontas"))
+
+    if tema:
+        if tema not in TEMAS:
+            print(f"Tema inválido: {tema!r}. Use um de: {', '.join(sorted(TEMAS))}.")
+            return 1
+        registros = [r for r in registros if r["tema"] == tema]
+
+    blocos, prontas = [], []
+    for registro in registros:
+        faltas = pendencias_da_nota(registro)
+        if not faltas:
+            prontas.append(registro)
+            continue
+        blocos.append((len(faltas), registro, faltas))
+
+    blocos.sort(key=lambda item: (-item[0], item[2][0]))
+    if limite:
+        blocos = blocos[:limite]
+
+    print("# Pendências para o padrão-ouro")
+    if tema:
+        print(f"# tema: {TEMAS[tema]}")
+    print()
+
+    if not blocos:
+        print("Nenhuma pendência: as notas filtradas estão no padrão-ouro.")
+    for quantidade, registro, faltas in blocos:
+        print(f"{quantidade} pendência(s) — {registro['conceito']} ({rel(raiz / 'conceitos' / registro['arquivo'], raiz)})")
+        for falta in faltas:
+            print(f"    - {falta}")
+        print()
+
+    if mostrar_prontas and prontas:
+        print("Já no padrão-ouro:")
+        for registro in prontas:
+            print(f"    ok  {registro['conceito']} ({registro['arquivo']})")
+        print()
+
+    total = len(registros)
+    print(
+        f"Resumo: {total} nota(s) analisada(s), {len(prontas)} pronta(s), "
+        f"{total - len(prontas)} com pendência."
+    )
+    if limite and total - len(prontas) > limite:
+        print(f"Mostrando as {limite} notas com mais pendências (use --limite para ver mais).")
+    return 0
+
+
+# ---------------------------------------------------------------------------
+# Site (MkDocs Material)
+# ---------------------------------------------------------------------------
+
+
+def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> pathlib.Path:
+    """Monta a pasta de fontes do site só com o que pode ser público."""
+    import shutil
+
+    destino = destino or (raiz / "site-src")
+    if destino.exists():
+        shutil.rmtree(destino)
+    destino.mkdir(parents=True)
+
+    for nome in ARQUIVOS_SITE:
+        origem = raiz / nome
+        if not origem.exists():
+            continue
+        alvo = destino / ("index.md" if nome == "README.md" else nome)
+        alvo.write_text(ler(origem), encoding="utf-8")
+
+    for pasta in PASTAS_SITE:
+        origem = raiz / pasta
+        if origem.exists():
+            shutil.copytree(origem, destino / pasta, dirs_exist_ok=True)
+
+    # guias do projeto, sem os anexos de terceiros
+    docs = raiz / "docs"
+    if docs.exists():
+        shutil.copytree(
+            docs, destino / "docs", dirs_exist_ok=True,
+            ignore=shutil.ignore_patterns("anexos"),
+        )
+
+    # fichas de leitura (produção própria) — nunca o texto integral
+    fichas = raiz / "acervo" / "fichas"
+    if fichas.exists():
+        shutil.copytree(fichas, destino / "acervo" / "fichas", dirs_exist_ok=True)
+
+    return destino
+
+
+def cmd_site(raiz: pathlib.Path, **opcoes) -> int:
+    destino = raiz / "site-src"
+    montar_site_src(raiz, destino)
+    paginas = sorted(destino.rglob("*.md"))
+    # os templates têm links de exemplo de propósito — não entram na checagem
+    auditaveis = [p for p in paginas if "templates" not in p.relative_to(destino).parts]
+    problemas = _links_quebrados(destino, auditaveis)
+    print(f"site-src/ montado com {len(paginas)} página(s).")
+    print("O texto integral do acervo e docs/anexos ficaram de fora.")
+    if problemas:
+        print(f"\nAviso: {len(problemas)} link(s) relativo(s) não resolvem no site:")
+        for problema in problemas[:10]:
+            print(f"  - {problema.replace(str(destino) + '/', '')}")
+    else:
+        print("Todos os links relativos resolvem dentro do site.")
+    print()
+    print("Para ver localmente:  mkdocs serve")
+    print("Para gerar o HTML:    mkdocs build")
+    return 0
+
+
 def cmd_tudo(raiz: pathlib.Path) -> int:
     for comando in (cmd_indice, cmd_tabela, cmd_progresso, cmd_flashcards):
         codigo = comando(raiz)
@@ -1017,6 +1399,9 @@ COMANDOS = {
     "flashcards": cmd_flashcards,
     "auditar": cmd_auditar,
     "tudo": cmd_tudo,
+    "nova": cmd_nova,
+    "pendencias": cmd_pendencias,
+    "site": cmd_site,
 }
 
 
@@ -1035,11 +1420,38 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="No comando auditar, tratar avisos como erro.",
     )
+
+    grupo = parser.add_argument_group("nova")
+    grupo.add_argument("--tipo", choices=sorted(TIPOS_NOVA), help="Tipo de nota a criar (nova).")
+    grupo.add_argument("--nome", help="Nome do conceito, do eixo, da obra ou da reflexão (nova).")
+    grupo.add_argument("--tema", help="Tema da nota (nova, pendencias).")
+    grupo.add_argument("--nivel", help="iniciante | entusiasta | avancado (nova).")
+    grupo.add_argument("--autor", help="Autor da obra (nova).")
+    grupo.add_argument("--obra", help="Obra de origem (nova).")
+    grupo.add_argument("--ano", help="Ano da obra (nova, ficha).")
+    grupo.add_argument("--capitulo", help="Capítulo do trecho (nova, trecho).")
+    grupo.add_argument("--pagina", help="Página do trecho (nova, trecho).")
+    grupo.add_argument("--data", help="Data AAAA-MM-DD (nova, diario). Padrão: hoje.")
+    grupo.add_argument("--origem", help="Módulo/conceito que gerou o diário (nova).")
+    grupo.add_argument("--tags", help="Tags separadas por vírgula (nova).")
+    grupo.add_argument("--forcar", action="store_true", help="Sobrescrever arquivo existente (nova).")
+    grupo.add_argument("--limite", type=int, help="Máximo de notas listadas (pendencias).")
+    grupo.add_argument("--prontas", action="store_true", help="Incluir as notas já prontas (pendencias).")
+
     args = parser.parse_args(argv)
     raiz = pathlib.Path(args.raiz).resolve()
     comando = COMANDOS[args.comando]
     if args.comando == "auditar":
         return comando(raiz, estrito=args.estrito)  # type: ignore[call-arg]
+    if args.comando in ("nova", "pendencias"):
+        opcoes = {
+            chave: getattr(args, chave)
+            for chave in (
+                "tipo", "nome", "tema", "nivel", "autor", "obra", "ano", "capitulo",
+                "pagina", "data", "origem", "tags", "forcar", "limite", "prontas",
+            )
+        }
+        return comando(raiz, **opcoes)  # type: ignore[call-arg]
     return comando(raiz)
 
 

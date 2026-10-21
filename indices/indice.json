@@ -1,7 +1,7 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-21T19:25:19",
+  "atualizado_em": "2026-10-21T20:55:41",
   "totais": {
     "livros": 0,
     "fichas": 0,
@@ -32,7 +32,13 @@
         "poder"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "eixo-estrutura-agencia.md",
@@ -52,7 +58,13 @@
         "metodo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "eixo-inatismo-empirismo.md",
@@ -72,7 +84,13 @@
         "natureza-cultura"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "eixo-livre-arbitrio-determinismo.md",
@@ -92,7 +110,13 @@
         "agencia"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "eixo-mente-corpo.md",
@@ -112,7 +136,13 @@
         "mente-corpo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-eudaimonia.md",
@@ -132,7 +162,12 @@
         "antiguidade"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-existencialismo.md",
@@ -152,7 +187,12 @@
         "liberdade"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-falseabilidade.md",
@@ -172,7 +212,12 @@
         "metodo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-fenomeno-noumeno.md",
@@ -192,7 +237,12 @@
         "modernidade"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-imperativo-categorico.md",
@@ -212,7 +262,12 @@
         "modernidade"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-morte-de-deus.md",
@@ -232,7 +287,12 @@
         "moral"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-teoria-das-formas.md",
@@ -252,7 +312,12 @@
         "antiguidade"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "filosofia-veu-da-ignorancia.md",
@@ -272,7 +337,12 @@
         "seculo-20"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-apego.md",
@@ -292,7 +362,12 @@
         "vinculo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-behaviorismo.md",
@@ -311,7 +386,13 @@
         "comportamento"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-dissonancia-cognitiva.md",
@@ -331,7 +412,12 @@
         "atuitudes"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-estruturalismo.md",
@@ -350,7 +436,13 @@
         "mente-corpo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-fluxo.md",
@@ -370,7 +462,12 @@
         "atencao"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-funcionalismo.md",
@@ -389,7 +486,13 @@
         "mente-corpo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-gestalt.md",
@@ -409,7 +512,13 @@
         "inatismo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-humanismo.md",
@@ -428,7 +537,13 @@
         "autorrealizacao"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-psicanalise.md",
@@ -447,7 +562,13 @@
         "inconsciente"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-vieses-cognitivos.md",
@@ -467,7 +588,12 @@
         "decisao"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "psicologia-zona-desenvolvimento-proximal.md",
@@ -487,7 +613,12 @@
         "aprendizagem"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-alienacao.md",
@@ -507,7 +638,12 @@
         "classicos"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-anomia.md",
@@ -527,7 +663,12 @@
         "classicos"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-cultura.md",
@@ -546,7 +687,13 @@
         "cultura"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-desigualdade-social.md",
@@ -565,7 +712,13 @@
         "desigualdade"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-fato-social.md",
@@ -585,7 +738,12 @@
         "classicos"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-genero.md",
@@ -604,7 +762,13 @@
         "genero"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-identidade.md",
@@ -623,7 +787,13 @@
         "identidade"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-imaginacao-sociologica.md",
@@ -643,7 +813,12 @@
         "classicos"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-interseccionalidade.md",
@@ -664,7 +839,12 @@
         "contemporaneo"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-papel-social.md",
@@ -683,7 +863,13 @@
         "papeis"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-racionalizacao.md",
@@ -703,7 +889,12 @@
         "classicos"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "status ainda é rascunho"
+      ]
     },
     {
       "arquivo": "sociologia-socializacao.md",
@@ -722,7 +913,13 @@
         "socializacao"
       ],
       "secoes_faltando": [],
-      "tem_trecho": false
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "exemplo próprio (de preferência brasileiro)",
+        "fonte primária",
+        "status ainda é rascunho"
+      ]
     }
   ],
   "trechos": [],

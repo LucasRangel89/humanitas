@@ -36,39 +36,47 @@ e só depois escalar.
 5. **Escrever a primeira entrada do diário** em `diario/AAAA-MM-DD-sociologia-imaginacao.md`.
 6. Rodar `make auditar` e conferir o `progresso.md`: 5 notas `ok`, 1 ficha, 1 diário.
 
-## Fase 2 — Jardim público (30–60 dias)
+## Fase 2 — Jardim público (30–60 dias) — **infraestrutura pronta**
 
-Transformar o painel em site com busca, mantendo o acervo fora do Git.
+O site já está montado (MkDocs Material com busca em português e tags). Falta
+ligar a publicação e escrever o conteúdo.
 
-```yaml
-# mkdocs.yml
-site_name: Humanitas
-theme:
-  name: material
-  language: pt-BR
-  features: [navigation.sections, navigation.indexes, search.suggest, content.tags]
-plugins:
-  - search:
-      lang: pt
-  - tags
-markdown_extensions: [admonition, tables, toc, pymdownx.superfences]
-nav:
-  - Início: README.md
-  - Progresso: progresso.md
-  - Trilhas:
-      - Psicologia 1: trilhas/psicologia-nivel-1.md
-      - Psicologia 2: trilhas/psicologia-nivel-2.md
-      - Filosofia: trilhas/filosofia-nivel-1.md
-      - Sociologia: trilhas/sociologia-nivel-1.md
-      - Integrada: trilhas/integrada-nivel-1.md
-  - Conceitos: conceitos/
+**Publicar (5 minutos):**
+
+1. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+2. **Actions → "Site — publicar no GitHub Pages" → Run workflow**.
+3. O site fica em `https://<usuario>.github.io/humanitas/`.
+
+**Testar antes de publicar:**
+
+```bash
+make site          # serve em http://127.0.0.1:8000
 ```
 
-Passos: `pip install mkdocs-material` → `mkdocs serve` local → `mkdocs gh-deploy`.
-Publicar **somente** `conceitos/`, `trilhas/`, `diario/`, `trechos/` e `acervo/fichas/`.
-A `LICENSE-CONTEUDO.md` (CC BY-SA) é o que torna essa publicação legítima.
+O `make site` monta `site-src/` só com o que pode ser público — nunca o texto
+integral do acervo nem `docs/anexos/`. O workflow roda a auditoria antes de
+publicar, então link quebrado não vai para o ar.
+
+**O que ainda depende de você (e só de você):**
+
+- 20 notas `ok` antes de divulgar o link (hoje: 0). Publicar 36 rascunhos de IA
+  contradiz a tese do projeto — a licença CC BY-SA já está pronta para quando
+  houver conteúdo autoral.
+- Um `index` que funcione como porta de entrada: o README já serve, mas vale
+  escrever "por onde começar" em 5 linhas quando as trilhas tiverem progresso real.
+- Fichas de leitura: o site já publica `acervo/fichas/`; com 0 fichas, a seção
+  aparece vazia.
 
 Métrica de saída da fase: 20 notas `ok`, 8 entradas de diário, 1 trilha em 30%.
+
+## Fase 2.5 — Conteúdo antes de produto
+
+Antes de qualquer app, quiz ou XP, o gargalo é escrever. Use as ferramentas:
+
+```bash
+make pendencias                        # o que falta em cada nota
+make nova TIPO=conceito NOME="Habitus" TEMA=sociologia
+```
 
 ## Fase 3 — Escolher **um** caminho (90 dias)
 
@@ -101,9 +109,9 @@ Só depois de ter conteúdo, escolha **um** com base no sinal que o uso der:
 |---|---|---|
 | P1 | 5 notas padrão-ouro + 1 ficha + 1 diário | 1–2 semanas |
 | P1 | Habilitar branch protection exigindo o CI verde em `main` | 10 min |
-| P2 | Site MkDocs com busca, tags e deploy no Pages | 2 dias |
+| P2 | ~~Site MkDocs com busca e tags~~ (feito; falta habilitar Pages) | 5 min |
 | P2 | Conversor por capítulo (arquivos menores, melhor busca) | 1 dia |
-| P2 | `pydantic` para validar o schema das notas + `pre-commit` | meio dia |
+| P2 | `pre-commit` rodando `auditar` antes de cada commit | 1 h |
 | P3 | Grafo de conexões, quiz automático, RAG local | semanas |
 
 ## Como medir (sem autoengano)
