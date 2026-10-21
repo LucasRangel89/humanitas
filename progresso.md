@@ -55,6 +55,19 @@ As notas com mais pendências primeiro. Reescrever uma nota é o que a move para
 | Mente × Corpo | Filosofia | 4 — explicação com as suas palavras |
 | … | | mais 24 nota(s) |
 
+## Marcos de decisão
+
+Gatilhos registrados no [Guia 07](docs/07-rumos-e-proximos-passos.md#fase-4-ferramenta-do-site-quando-migrar). Quando um marco é atingido, a decisão correspondente pode ser reavaliada — não antes.
+
+| Marco | Atual | Alvo | Situação | O que destrava |
+|---|---|---|---|---|
+| Notas reescritas (`ok`) | 0 | 25 | faltam 25 | Migrar o site (Astro) — Guia 07, Fase 4 |
+| Entradas de diário | 0 | 12 | faltam 12 | Migrar o site (Astro) — Guia 07, Fase 4 |
+| Notas com citação de apoio | 0 | 25 | faltam 25 | Meta de 90 dias (Guia 07) |
+| Fichas de leitura | 0 | 3 | faltam 3 | Meta de 90 dias (Guia 07) |
+
+Enquanto houver marco pendente: **escreva notas**, não troque de ferramenta.
+
 ## Como melhorar estes números
 
 - A métrica que importa não é quantidade de notas, é **nota reescrita** (`status: ok`) e **entrada de diário**.
