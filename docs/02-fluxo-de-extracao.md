@@ -44,7 +44,7 @@ Duas maneiras de entregar os PDFs ao notebook (o próprio notebook oferece as du
 
 O que fazer com os problemas mais comuns está no final deste guia (seção "PDFs escaneados").
 
-**Estratégia híbrida (decisão do projeto):** com mais de cem PDFs, a tentação é converter tudo de uma vez — e é exatamente aí que projetos assim morrem. O combinado é outro: identifique os **10 livros-chave** do seu estudo neste primeiro momento (os que respondem às suas dúvidas mais urgentes) e converta só eles. Os demais ficam no Drive e entram na conversão apenas quando o tema deles for o foco do mês. Converter vira consequência do plano de estudo, não o contrário.
+**Estratégia híbrida (decisão do projeto):** com mais de cem PDFs, a tentação é converter tudo de uma vez — e é exatamente aí que projetos assim morrem. O combinado é outro: identifique os **10 livros-chave** do seu estudo neste primeiro momento e converta só eles. A lista dos 10 deixou de ser um chute: está pronta, calculada a partir dos planos de estudo anexados, no **Guia 05** (`docs/05-prioridades-de-leitura.md`). Os demais livros ficam no Drive e entram na conversão apenas quando o tema deles for o foco do mês. Converter vira consequência do plano de estudo, não o contrário.
 
 ## Etapa 2 — Explorar as obras no NotebookLM
 
@@ -104,7 +104,7 @@ Uma parte dos PDFs didáticos é, na verdade, uma **fotografia das páginas** �
 
 Esta camada avançada nasceu do blueprint "Humanitas Explore" (guardado em `docs/anexos/`), e se encaixa no painel sem exigir nada além de Markdown:
 
-- **Trilhas (`trilhas/`) — o Modo Trilha.** Uma trilha é um caminho ordenado de estudo dentro de um tema: cada nó é uma nota de conceito, do fundamental ao complexo, como uma árvore de habilidades de jogo. Excelente para começar um tema do zero. A recomendação do blueprint vale aqui: trilha é opção, não obrigação.
+- **Trilhas (`trilhas/`) — o Modo Trilha.** Uma trilha é um caminho ordenado de estudo dentro de um tema: cada nó é uma nota de conceito, do fundamental ao complexo, como uma árvore de habilidades de jogo. Excelente para começar um tema do zero. O painel já vem com **cinco trilhas semente** (Psicologia níveis 1 e 2, Filosofia, Sociologia e Integrada), montadas a partir dos planos de estudo que o autor anexou ao repositório (`docs/anexos/`). A recomendação do blueprint vale aqui: trilha é opção, não obrigação.
 - **Modo Exploração Livre.** O complemento da trilha: você busca o que quiser, na hora que quiser (no NotebookLM, no Modo Tutor ou pesquisando as notas existentes), e a nota nova revela depois onde se encaixa. Ciências humanas é mais debate do que "passar de fase" — os dois modos convivem.
 - **Eixos (`conceitos/` com `tipo: eixo`) — as notas-bússola.** As grandes questões que atravessam disciplinas (mente e corpo, livre-arbítrio contra determinismo, natureza contra cultura). Cada teoria nova que você estudar pode ser localizada num eixo: "onde essa teoria fica neste debate?". É o mecanismo que transforma conexões soltas em espinha dorsal de estudo.
 - **Diário de bordo (`diario/`).** Ao fechar um módulo de estudo, o Tutor (ou o Prompt 4 do Guia 03) gera uma pergunta reflexiva, e você escreve 100 a 150 palavras aplicando o conceito com as suas palavras — sem colar da IA. É a síntese que fixa o aprendizado, e com o tempo vira o registro mais valioso do painel: a prova documental de como o seu entendimento evoluiu.

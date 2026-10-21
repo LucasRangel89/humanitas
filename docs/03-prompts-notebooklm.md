@@ -169,7 +169,7 @@ Indique os capítulos de origem de cada bloco.
 
 Além dos prompts do NotebookLM, existe o **Modo Tutor**: um prompt de sistema que transforma qualquer assistente (GLM, Gemini, Claude, ChatGPT) num tutor acadêmico que gera "módulos de aprendizado" completos — a adaptação do blueprint Humanitas Explore para o nosso painel, sem precisar de API nem código.
 
-**Como usar:** abra uma conversa nova no assistente, cole o bloco abaixo como primeira mensagem e, na sequência, peça o módulo que quiser (ex.: "Gere um módulo para 'Estruturalismo' em 'Antropologia', nível 'iniciante'"). Se você anexar um PDF do seu acervo, o Tutor ancora tudo nele; sem anexo, ele busca fontes confiáveis e informa quais usou.
+**Como usar:** abra uma conversa nova no assistente, cole o bloco abaixo como primeira mensagem e, na sequência, peça o módulo que quiser (ex.: "Gere um módulo para 'Estruturalismo' em 'Antropologia', nível 'iniciante'"). As cinco trilhas prontas da pasta `trilhas/` indicam, nó por nó, qual módulo pedir — comece por elas. Se você anexar um PDF do seu acervo, o Tutor ancora tudo nele; sem anexo, ele busca fontes confiáveis e informa quais usou.
 
 ```text
 Você é o "Tutor Humanitas", especialista em ciências humanas (psicologia, sociologia, antropologia,

@@ -44,7 +44,7 @@ Duas maneiras de entregar os PDFs ao notebook (o próprio notebook oferece as du
 
 O que fazer com os problemas mais comuns está no final deste guia (seção "PDFs escaneados").
 
-**Estratégia híbrida (decisão do projeto):** com mais de cem PDFs, a tentação é converter tudo de uma vez — e é exatamente aí que projetos assim morrem. O combinado é outro: identifique os **10 livros-chave** do seu estudo neste primeiro momento (os que respondem às suas dúvidas mais urgentes) e converta só eles. Os demais ficam no Drive e entram na conversão apenas quando o tema deles for o foco do mês. Converter vira consequência do plano de estudo, não o contrário.
+**Estratégia híbrida (decisão do projeto):** com mais de cem PDFs, a tentação é converter tudo de uma vez — e é exatamente aí que projetos assim morrem. O combinado é outro: identifique os **10 livros-chave** do seu estudo neste primeiro momento e converta só eles. A lista dos 10 deixou de ser um chute: está pronta, calculada a partir dos planos de estudo anexados, no **Guia 05** (`docs/05-prioridades-de-leitura.md`). Os demais livros ficam no Drive e entram na conversão apenas quando o tema deles for o foco do mês. Converter vira consequência do plano de estudo, não o contrário.
 
 ## Etapa 2 — Explorar as obras no NotebookLM
 
@@ -73,6 +73,8 @@ Duas regras de ouro desta etapa:
 1. **Reescreva com suas palavras.** Copiar e colar a resposta da IA não gera aprendizado; parafrasear sim. O campo de comentário pessoal é o coração de cada nota.
 2. **Um conceito, um arquivo.** É tentador fazer um único arquivo gigante por livro, mas notas pequenas e específicas é o que permite conectar, buscar e reaproveitar depois.
 
+Há ainda três modelos complementares que aprofundam o painel: `template-eixo.md` (as grandes questões que atravessam várias disciplinas), `template-trilha.md` (caminhos ordenados de estudo por tema) e `template-diario.md` (o diário de bordo, onde a síntese final é sempre sua). Eles estão explicados na seção "Trilhas, eixos e diário de bordo", mais abaixo.
+
 ## Etapa 4 — Publicar e manter o índice (automático)
 
 Com as notas prontas, suba os arquivos para o GitHub (Guia 04). A manutenção do painel — regenerar o `indice.json` (agora com livros, conceitos e trechos), atualizar a tabela "Painel de temas" do README, conferir links e detectar conceitos duplicados — ficou por conta do segundo notebook, o `notebooks/atualizador-do-painel.ipynb`. Você baixa o repositório em zip do GitHub, ele processa tudo e devolve os arquivos atualizados, além de um `flashcards.csv` para o Anki. O passo a passo está no Guia 04.
@@ -84,7 +86,7 @@ O fluxo principal já cobre o essencial, mas existem caminhos complementares. Es
 | Ferramenta | O que faz de melhor | Limitações | Quando usar |
 |---|---|---|---|
 | **NotebookLM** | Respostas ancoradas nas fontes, com referência de trecho; mapa mental; resumo em áudio; compara várias obras do mesmo tema | Limite de 50 fontes por caderno (grátis); exportar exige copiar e colar | Exploração rotineira de todo o acervo — é o motor do projeto |
-| **Conversa direta com IA** (GLM, Claude, ChatGPT) | Raciocínio mais profundo por obra; aceita o PDF anexado e conversas longas e sofisticadas sobre o texto | Um livro por conversa; sem memória entre conversas; respostas não são ancoradas com referências como no NotebookLM | Análise profunda de um livro difícil; discutir críticas e contra-argumentos |
+| **Conversa direta com IA** (GLM, Claude, ChatGPT) | Raciocínio mais profundo por obra; aceita o PDF anexado e conversas longas e sofisticadas sobre o texto; com o Modo Tutor do Guia 03, gera módulos de aprendizado completos | Um livro por conversa; sem memória entre conversas; respostas não são ancoradas com referências como no NotebookLM | Análise profunda de um livro difícil; discutir críticas e contra-argumentos; gerar módulos com quiz e pergunta reflexiva |
 | **Obsidian** (aplicativo gratuito) | Abre exatamente os arquivos Markdown deste repositório como um "segundo cérebro" local, com busca poderosa e grafo visual de conexões entre conceitos | É mais um lugar de leitura do que de extração; exige instalar um programa | Opcional: se você quiser um "modo offline" do painel no computador |
 | **Zotero** (gratuito) | Organiza a biblioteca de PDFs em si, com metadados (autor, ano, editora) e extração dos seus grifos feitos no leitor de PDF | Mais um sistema para aprender a usar; não extrai conceitos | Opcional: se a biblioteca de PDFs estiver fora de controle |
 | **Leitura com OCR no Google Drive** | Converte PDFs escaneados em texto selecionável ("Abrir com Documentos Google") | Demora e perde formatação; só vale para resgatar livros problemáticos | Apenas quando o notebook avisar que um PDF não tem texto extraível |
@@ -97,6 +99,15 @@ Uma parte dos PDFs didáticos é, na verdade, uma **fotografia das páginas** �
 
 1. **Deixar o NotebookLM ler:** ele processa PDFs escaneados internamente, inclusive em português. Se o objetivo é explorar a obra (e não converter o texto integral), basta subir o PDF original lá e seguir com os prompts.
 2. **Resgatar o texto pelo Google Drive:** suba o PDF no Drive, clique com o botão direito, escolha **Abrir com > Documentos Google**. O Google aplica OCR (reconhecimento de texto sobre imagem) e gera um documento editável. Depois é só baixar como texto e tratar como os demais.
+
+## Trilhas, eixos e diário de bordo
+
+Esta camada avançada nasceu do blueprint "Humanitas Explore" (guardado em `docs/anexos/`), e se encaixa no painel sem exigir nada além de Markdown:
+
+- **Trilhas (`trilhas/`) — o Modo Trilha.** Uma trilha é um caminho ordenado de estudo dentro de um tema: cada nó é uma nota de conceito, do fundamental ao complexo, como uma árvore de habilidades de jogo. Excelente para começar um tema do zero. O painel já vem com **cinco trilhas semente** (Psicologia níveis 1 e 2, Filosofia, Sociologia e Integrada), montadas a partir dos planos de estudo que o autor anexou ao repositório (`docs/anexos/`). A recomendação do blueprint vale aqui: trilha é opção, não obrigação.
+- **Modo Exploração Livre.** O complemento da trilha: você busca o que quiser, na hora que quiser (no NotebookLM, no Modo Tutor ou pesquisando as notas existentes), e a nota nova revela depois onde se encaixa. Ciências humanas é mais debate do que "passar de fase" — os dois modos convivem.
+- **Eixos (`conceitos/` com `tipo: eixo`) — as notas-bússola.** As grandes questões que atravessam disciplinas (mente e corpo, livre-arbítrio contra determinismo, natureza contra cultura). Cada teoria nova que você estudar pode ser localizada num eixo: "onde essa teoria fica neste debate?". É o mecanismo que transforma conexões soltas em espinha dorsal de estudo.
+- **Diário de bordo (`diario/`).** Ao fechar um módulo de estudo, o Tutor (ou o Prompt 4 do Guia 03) gera uma pergunta reflexiva, e você escreve 100 a 150 palavras aplicando o conceito com as suas palavras — sem colar da IA. É a síntese que fixa o aprendizado, e com o tempo vira o registro mais valioso do painel: a prova documental de como o seu entendimento evoluiu.
 
 ## Retenção: flashcards no Anki e resumo em áudio
 

@@ -165,6 +165,54 @@ Indique os capítulos de origem de cada bloco.
 - **Mapa Mental:** no painel do caderno, peça a geração do mapa mental da obra. Ele mostra a estrutura de ideias em árvore e é um ótimo "sumário visual" para abrir cada sessão de estudo. Dá para copiar a estrutura em texto e colar em uma nota.
 - **Resumo em Áudio:** gera uma conversa entre duas vozes, em formato de podcast, sobre as fontes do caderno. Ideal para revisar o conteúdo em deslocamentos. Disponível em português.
 
+## Modo Tutor: módulos de aprendizado com IA direta
+
+Além dos prompts do NotebookLM, existe o **Modo Tutor**: um prompt de sistema que transforma qualquer assistente (GLM, Gemini, Claude, ChatGPT) num tutor acadêmico que gera "módulos de aprendizado" completos — a adaptação do blueprint Humanitas Explore para o nosso painel, sem precisar de API nem código.
+
+**Como usar:** abra uma conversa nova no assistente, cole o bloco abaixo como primeira mensagem e, na sequência, peça o módulo que quiser (ex.: "Gere um módulo para 'Estruturalismo' em 'Antropologia', nível 'iniciante'"). As cinco trilhas prontas da pasta `trilhas/` indicam, nó por nó, qual módulo pedir — comece por elas. Se você anexar um PDF do seu acervo, o Tutor ancora tudo nele; sem anexo, ele busca fontes confiáveis e informa quais usou.
+
+```text
+Você é o "Tutor Humanitas", especialista em ciências humanas (psicologia, sociologia, antropologia,
+filosofia, história, ciência política, economia e geografia), guiando um estudante autodidata.
+
+REGRAS:
+1. PROGRESSÃO LÓGICA: apresente os conceitos do fundamental ao complexo, sinalizando o nível
+   (iniciante, entusiasta ou avançado).
+2. FONTE PRIMEIRO: se eu anexar um texto do meu acervo, ancore TODA a resposta nele, indicando
+   capítulo ou seção. Sem anexo, use fontes confiáveis (universidades, enciclopédias
+   acadêmicas, obras clássicas) e diga quais foram.
+3. FOCO NA CONEXÃO: para qualquer conceito, proponha conexões com outras disciplinas e explique
+   por que cada conexão existe — não apenas que existe.
+4. ESTRUTURA FIXA: devolva o módulo como um único objeto JSON, sem texto fora dele, no formato
+   especificado abaixo.
+5. FECHAMENTO REFLEXIVO: além do quiz, inclua sempre uma pergunta reflexiva que me obrigue a
+   aplicar o conceito a um caso atual e concreto, para o meu diário de bordo.
+
+FORMATO DO JSON:
+{
+  "modulo": "Nome do conceito (disciplina)",
+  "nivel": "iniciante | entusiasta | avancado",
+  "essencial": "Resumo de até 250 palavras, do fundamental ao complexo",
+  "fontes_confiaveis": [{"titulo": "...", "url": "...", "por_que_confiavel": "..."}],
+  "conexoes": [{"disciplina": "...", "conceito": "...", "explicacao": "..."}],
+  "quiz": [{"pergunta": "...", "opcoes": ["..."], "resposta": "...", "por_que": "..."}],
+  "pergunta_reflexiva": "Pergunta que aplica o conceito a um caso atual"
+}
+```
+
+**Para onde vai cada campo do módulo:**
+
+| Campo do JSON | Para onde vai no painel |
+|---|---|
+| `modulo` e `nivel` | Título e frontmatter (`nivel`) de uma nova nota de conceito |
+| `essencial` | Rascunho da "Explicação com as minhas palavras" — reescreva antes de salvar |
+| `fontes_confiaveis` | Seção "Fontes validadas" — só as que você conferiu e aprovou |
+| `conexoes` | Seção "Conexões interdisciplinares" da nota, com links para as notas existentes |
+| `quiz` | "Perguntas de estudo" da nota ou da ficha do livro |
+| `pergunta_reflexiva` | Abre uma nova entrada no `templates/template-diario.md`, salva em `diario/` |
+
+A regra de ouro não muda: **o Tutor acelera, você decide.** Nada entra no repositório sem passar pelos templates e pela sua reescrita.
+
 ## O que fazer com cada resposta
 
 | Resposta do prompt | Para onde vai |
@@ -174,3 +222,4 @@ Indique os capítulos de origem de cada bloco.
 | Prompt 3 (trechos) | Um `template-trecho.md` por trecho > salvo em `trechos/` |
 | Prompts 4, 5, 7 (perguntas, glossário, críticas) | Campos finais do `template-livro.md` |
 | Prompts 6, 8, 9, 10 (conexões, roteiro, leigos, aula) | Notas avulsas em `conceitos/` ou no final da ficha do livro |
+| Modo Tutor (módulo JSON completo) | Vira notas de conceito, conexões e uma entrada no diário de bordo — veja o mapeamento na seção "Modo Tutor" |
