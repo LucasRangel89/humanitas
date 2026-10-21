@@ -1342,6 +1342,13 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
         alvo = destino / ("index.md" if nome == "README.md" else nome)
         alvo.write_text(ler(origem), encoding="utf-8")
 
+    # página de índice das tags (o plugin `tags` do Material preenche a lista)
+    (destino / "tags.md").write_text(
+        "# Tags\n\nTodas as etiquetas do painel, geradas a partir do frontmatter das notas.\n\n"
+        "<!-- material/tags -->\n",
+        encoding="utf-8",
+    )
+
     for pasta in PASTAS_SITE:
         origem = raiz / pasta
         if origem.exists():

@@ -461,6 +461,7 @@ def test_site_monta_apenas_conteudo_publicavel(mini_repo: pathlib.Path):
     assert (fontes / "trilhas" / "sociologia-teste.md").exists()
     assert (fontes / "diario").exists()
     assert (fontes / "acervo" / "fichas").exists()
+    assert "material/tags" in (fontes / "tags.md").read_text(encoding="utf-8")
     # o que não pode ser publicado
     assert not (fontes / "acervo" / "bourdieu-senso-pratico.md").exists()
     assert not (fontes / "docs" / "anexos").exists()
