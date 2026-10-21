@@ -102,4 +102,4 @@ Nós: [Racionalização](../conceitos/sociologia-racionalizacao.md) (Weber: tipo
 
 ## Fechamento da trilha
 
-Uma síntese só no diário (300+ palavras, fecho das duas rotas): escolha UM fenômeno atual e analise-o girando entre as três lentes — o que cada disciplina vê e o que nenhuma vê sozinha. Depois: `status` para `concluida` e atualizador do painel rodado. O plano integrado fecha com a melhor definição de sucesso possível: não ter todas as respostas, mas fazer perguntas melhores.
+Uma síntese só no diário (300+ palavras, fecho das duas rotas): escolha UM fenômeno atual e analise-o girando entre as três lentes — o que cada disciplina vê e o que nenhuma vê sozinha. Depois: `status` para `concluida` — o CI regenera índice e progresso. O plano integrado fecha com a melhor definição de sucesso possível: não ter todas as respostas, mas fazer perguntas melhores.

@@ -61,4 +61,4 @@ Os dois planos anexados combinam: cada módulo do Nível 2 tem um "aprofundament
 
 ## Conclusão da trilha
 
-Ao marcar o nó 12: `status` para `concluida`, notas criadas ao longo do caminho passam de `rascunho` para `ok`, atualizador do painel rodado (a tabela de temas de Psicologia deve crescer com as notas dos nós 2, 5, 6, 9 e 10).
+Ao marcar o nó 12: `status` para `concluida`, notas criadas ao longo do caminho passam de `rascunho` para `ok`, CI rodado (a tabela de temas de Psicologia deve crescer com as notas dos nós 2, 5, 6, 9 e 10).

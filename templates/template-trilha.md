@@ -40,7 +40,7 @@ Ordene do fundamental ao complexo. Cada nó tem: a nota (link), o critério de c
 
 ## Modo Exploração Livre
 
-Quando a trilha parecer restritiva: saia dela. Anote o que explorou normalmente (o atualizador do painel reconhece notas novas automaticamente) e, ao voltar, pergunte-se: "onde o que acabei de explorar se encaixa nesta trilha?".
+Quando a trilha parecer restritiva: saia dela. Anote o que explorou normalmente (o CI reconhece notas novas automaticamente) e, ao voltar, pergunte-se: "onde o que acabei de explorar se encaixa nesta trilha?".
 
 ## Conclusão da trilha
 

@@ -47,4 +47,4 @@ Citados nos planos como aprofundamento, não como obrigação — entram só por
 1. Abra a trilha do mês e olhe qual nó vem a seguir.
 2. Se o nó aponta um livro desta lista que ainda não está convertido em `acervo/`, é ele o próximo PDF do lote (Guia 02, Etapa 1).
 3. Se o livro-chave do nó não está entre os seus 100+ PDFs, converta o manual equivalente que você tiver — o manual cobre o mesmo nó, e o clássico entra depois como aprofundamento.
-4. A cada mês, ao rodar o atualizador do painel, confira no `indice.json` quantos dos 10 já estão no acervo — a meta saudável é 2 a 3 por trimestre, não 10 em uma semana (a lição anti-colecionismo do projeto).
+4. A cada mês, confira no `indice.json` (regenerado pelo CI) quantos dos 10 já estão no acervo — a meta saudável é 2 a 3 por trimestre, não 10 em uma semana (a lição anti-colecionismo do projeto).

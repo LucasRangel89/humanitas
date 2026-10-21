@@ -3,6 +3,7 @@ eixo: "Nome da grande questão (ex.: Livre-arbítrio × determinismo)"
 tema: filosofia
 tipo: eixo
 nivel: entusiasta
+status: rascunho
 tags: [eixo, exemplo-tag]
 ---
 
@@ -10,7 +11,13 @@ tags: [eixo, exemplo-tag]
      nota-bússola do painel. Ele não descreve uma teoria: organiza um DEBATE e
      mostra onde cada autor/teoria fica nele. Salve em conceitos/ com o nome
      eixo-tema-curto.md (ex.: eixo-livre-arbitrio-determinismo.md). Apague
-     estes comentários antes de salvar. -->
+     estes comentários antes de salvar.
+
+     O QUE O CI EXIGE: tema · tipo · nivel · status válidos;
+     "A questão em uma frase" não vazia; seções "Posições no debate" e
+     "Conexões interdisciplinares".
+     O QUE O PADRÃO-OURO PEDE: ao menos 3 posições com autor, obra e nota;
+     cada posição ligada a uma nota existente do painel. -->
 
 # Eixo — Nome da grande questão
 
@@ -24,12 +31,12 @@ Formule o debate como uma pergunta que não tem resposta única (ex.: "O comport
 
 ## Posições no debate
 
-Para cada posição relevante: quem defende, em que obra, e a formulação essencial. Atualize conforme novas leituras entrarem no painel.
+Obrigatório. Para cada posição relevante: quem defende, em que obra, e a formulação essencial. Atualize conforme novas leituras entrarem no painel. A tabela também gera os flashcards de posicionamento.
 
 | Posição | Autores | Obra de referência | Nota no painel |
 |---|---|---|---|
 | Posição A | ... | ... | [nota](psicologia-exemplo.md) |
-| Posição B | ... | ... | ... | |
+| Posição B | ... | ... | ... |
 
 ## Como usar este eixo (a pergunta-bússola)
 
@@ -39,10 +46,10 @@ Ao estudar qualquer teoria nova, pergunte: "onde ela fica neste eixo?" — e reg
 
 Só entre aqui fonte que você conferiu e aprovou (curadoria sua, não da IA). Para cada uma: título, link e uma linha sobre a qualidade e o viés dela.
 
-- [Título da fonte](url) — por que confio nesta fonte e qual o limite dela.
+- [Título da fonte](https://exemplo.org) — por que confio nesta fonte e qual o limite dela.
 
 ## Conexões interdisciplinares
 
-Quais temas costumam discutir esta questão e sob qual ângulo (ex.: filosofia pela ética; psicologia pela motivação; sociologia pela estrutura social).
+Obrigatório. Quais temas costumam discutir esta questão e sob qual ângulo (ex.: filosofia pela ética; psicologia pela motivação; sociologia pela estrutura social).
 
 - **Tema — ângulo:** uma frase.

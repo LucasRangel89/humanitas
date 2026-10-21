@@ -60,4 +60,4 @@ O plano anexado avisa: a sociologia é um diálogo com os próprios conceitos, e
 
 ## Conclusão da trilha
 
-Ao marcar o nó 12: `status` para `concluida`, conceitos reescritos para `ok`, atualizador do painel rodado. A ponte natural para depois é a **trilha Integrada** (as duas rotas interdisciplinares).
+Ao marcar o nó 12: `status` para `concluida`, conceitos reescritos para `ok` — o CI regenera índice e progresso. A ponte natural para depois é a **trilha Integrada** (as duas rotas interdisciplinares).

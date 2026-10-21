@@ -7,7 +7,7 @@ Este é o guia central do projeto. Ele responde à pergunta que originou tudo: *
 O caminho de um livro, da estante ao painel, tem cinco etapas:
 
 1. **Organizar** — os PDFs ficam agrupados por tema no Google Drive, com nomes padronizados.
-2. **Converter** — um notebook do Google Colab transforma os PDFs em Markdown em lote (isto é, vários de uma vez, sozinho).
+2. **Converter** — um notebook do Google Colab transforma os PDFs em Markdown em lote (incremental: só reconverte o que mudou) e gera um manifesto de conversão.
 3. **Explorar** — o NotebookLM lê as obras e, com os prompts prontos do Guia 03, devolve conceitos, resumos, trechos e perguntas de estudo.
 4. **Anotar** — você copia esses resultados para os modelos da pasta `templates/`, adicionando o seu comentário pessoal (a parte mais valiosa).
 5. **Publicar** — os arquivos sobem para o GitHub e entram no índice do painel.
@@ -35,12 +35,14 @@ A conversão usa o arquivo `notebooks/converter-pdfs.ipynb` deste repositório, 
 2. Clique em **Arquivo > Fazer upload de notebook** e selecione `notebooks/converter-pdfs.ipynb`.
 3. Leia as células (os "blocos" do notebook): cada uma tem uma explicação em português antes do código.
 4. Execute as células em ordem, clicando no botão de play à esquerda de cada uma. Não é preciso digitar nem editar código, exceto em um ponto único e sinalizado: o endereço da pasta do Drive.
-5. No final, o notebook gera um arquivo zip com todos os Markdowns e um `indice.json` pronto.
+5. No final, o notebook gera um zip com os Markdowns e o `manifesto.json` (controle do que já foi convertido). **Ele não gera mais índice** — o índice tem um único dono, o CLI do painel (Guia 06).
 
 Duas maneiras de entregar os PDFs ao notebook (o próprio notebook oferece as duas):
 
 - **Opção A — Enviar do computador:** aparece uma janela para selecionar os arquivos. Funciona bem para até uns 20 PDFs.
 - **Opção B — Ler do Google Drive (recomendada para 100+):** o notebook pede permissão para acessar seu Drive, e você só informa o nome da pasta `Estudos-PDFs`. Aí ele processa tudo de uma vez, incluindo subpastas por tema.
+
+O texto integral convertido **fica fora do Git**: guarde-o no Drive ou na sua máquina. O `.gitignore` bloqueia `acervo/*.md` para proteger direitos autorais; do acervo, só as fichas de leitura (`acervo/fichas/`) entram no repositório. Se preferir versionar o texto integral, mantenha o repositório privado.
 
 O que fazer com os problemas mais comuns está no final deste guia (seção "PDFs escaneados").
 
@@ -64,7 +66,7 @@ O resultado de cada prompt é copiado para os templates da etapa seguinte. Não 
 
 Aqui o material bruto vira conhecimento organizado, usando três modelos da pasta `templates/`:
 
-- **`template-livro.md`** — a ficha de leitura: tese central, resumo por capítulos, conceitos-chave e perguntas. Um arquivo por livro, salvo em `acervo/fichas/` (ou no próprio `acervo/`, ao lado do texto integral).
+- **`template-livro.md`** — a ficha de leitura: tese central, resumo por capítulos, conceitos-chave e perguntas. Um arquivo por livro, salvo em `acervo/fichas/` com o sufixo `-ficha.md`. É a única parte do acervo que entra no Git.
 - **`template-conceito.md`** — a unidade fundamental do painel. Um conceito por arquivo, com definição em uma frase, explicação com suas palavras, trecho de apoio e conceitos relacionados. Salvo em `conceitos/`.
 - **`template-trecho.md`** — para citações literais que você quer guardar, sempre com o comentário "por que guardei este trecho". Salvo em `trechos/`.
 
@@ -77,7 +79,7 @@ Há ainda três modelos complementares que aprofundam o painel: `template-eixo.m
 
 ## Etapa 4 — Publicar e manter o índice (automático)
 
-Com as notas prontas, suba os arquivos para o GitHub (Guia 04). A manutenção do painel — regenerar o `indice.json` (agora com livros, conceitos e trechos), atualizar a tabela "Painel de temas" do README, conferir links e detectar conceitos duplicados — ficou por conta do segundo notebook, o `notebooks/atualizador-do-painel.ipynb`. Você baixa o repositório em zip do GitHub, ele processa tudo e devolve os arquivos atualizados, além de um `flashcards.csv` para o Anki. O passo a passo está no Guia 04.
+Com as notas prontas, suba os arquivos para o GitHub (Guia 04). A manutenção do painel é **automática**: a cada push em `main`, o GitHub Actions roda o CLI `scripts/painel.py` e regenera o `indices/indice.json` (livros, fichas, conceitos, eixos, trechos, trilhas e diário), a tabela "Painel de temas", o `progresso.md` e o `flashcards.csv`. O mesmo CLI roda na sua máquina com `python -m scripts.painel tudo` e audita o repositório com `python -m scripts.painel auditar`. O passo a passo está no Guia 06.
 
 ## Outras maneiras de explorar o acervo (além do NotebookLM)
 
@@ -113,10 +115,10 @@ Esta camada avançada nasceu do blueprint "Humanitas Explore" (guardado em `docs
 
 Escrever boas notas organiza o conhecimento; é a revisão que o mantém na cabeça. O painel tem duas camadas de revisão, e as duas usam o que você já produziu:
 
-**Flashcards no Anki (revisão ativa, ~10 minutos por dia).** O notebook `atualizador-do-painel.ipynb` gera um `flashcards.csv` a partir das suas notas de conceito: frente com a pergunta ("O que é habitus?"), verso com a definição que você escreveu e a fonte. O fluxo é:
+**Flashcards no Anki (revisão ativa, ~10 minutos por dia).** O CLI do painel gera um `flashcards.csv` a partir das suas notas: definição ("O que é habitus?"), aplicação ("Dê um exemplo e explique") e posicionamento nos eixos. Cada cartão tem um **GUID estável** — reimportar atualiza em vez de duplicar. O fluxo é:
 
 1. Baixe o Anki (apps.ankiweb.net) no computador e, se quiser, o app no celular — a sincronização entre eles é gratuita.
-2. Depois de rodar o atualizador, importe o `flashcards.csv`: no Anki, **Arquivo > Importar**, escolha o arquivo, confirme que a primeira coluna é a frente e a segunda o verso, e pronto.
+2. Baixe o `flashcards.csv` (artefato do workflow "Painel" no GitHub Actions, ou `make painel` na sua máquina) e importe no Anki em **Arquivo > Importar**: coluna 1 = GUID, 2 = frente, 3 = verso, 4 = tags, 5 = baralho.
 3. Revise os cartões que o Anki agenda para o dia — ele mesmo decide quando reapresentar cada conceito, mais espaçado a cada acerto.
 
 A regra de qualidade importa: se a definição do verso não faz sentido sozinha, o problema está na nota de conceito — volte e reescreva. O flashcard é o detector de fumaça das notas mal escritas.
@@ -130,6 +132,7 @@ Consistência vence volume. Um ciclo realista para quem estuda além do trabalho
 - **Agora:** escolha os 10 livros-chave e converta apenas eles (estratégia híbrida).
 - **Por semana:** 1 livro processado de ponta a ponta (converter, 3 a 4 prompts no NotebookLM, 5 a 10 notas, publicar) + revisões do Anki acumulando.
 - **Por lote:** trabalhe com 5 a 10 livros por vez entre as etapas de conversão e exploração.
+- **A cada push:** o CI roda testes e auditoria; o painel se regenera sozinho (Guia 06).
 - **Por mês:** revise o painel de temas e o índice; escolha um tema "focado" do mês para aprofundar com comparações entre obras no NotebookLM.
 
 Com esse ritmo, em seis meses o painel terá entre 25 e 50 obras processadas e algumas centenas de conceitos organizados — o que já é uma base de estudos de nível universitário.

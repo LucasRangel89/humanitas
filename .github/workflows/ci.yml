@@ -1,0 +1,41 @@
+name: CI — testes e auditoria
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Rodar testes
+        run: python -m pytest tests -q
+
+      - name: Auditar o painel (bloqueia se houver erro)
+        run: python -m scripts.painel auditar
+
+      - name: Conferir que índice e progresso estão atualizados
+        run: |
+          python -m scripts.painel indice
+          python -m scripts.painel progresso
+          python -m scripts.painel tabela
+          git diff --exit-code -- indices/indice.json progresso.md README.md \
+            || { echo "::error::Índice/progresso/tabela desatualizados. Rode 'make painel' e commite."; exit 1; }

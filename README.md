@@ -1,58 +1,102 @@
-# Painel de Estudos — Ciências Humanas
+# Humanitas — painel de estudos de ciências humanas
 
-Base de estudos autodidata que concentra, em um só lugar, os tópicos, conceitos e trechos essenciais de obras didáticas de ciências humanas: história, sociologia, filosofia, ciência política, antropologia e áreas vizinhas.
+Base de estudos autodidata que concentra, em um só lugar, os tópicos, conceitos e trechos essenciais de obras de ciências humanas: filosofia, sociologia, psicologia, história, ciência política, antropologia e áreas vizinhas.
 
 ## O que é este projeto
 
-Este repositório funciona como um **painel pessoal de estudos**. Ele nasce de uma biblioteca de PDFs de obras didáticas e se organiza em três camadas complementares:
+Um **painel pessoal de estudos**. Ele nasce de uma biblioteca de PDFs didáticos e se organiza em camadas complementares:
 
-1. **Acervo** — o conteúdo dos livros convertido para Markdown, um formato de texto simples que pode ser lido em qualquer navegador, pesquisado com Ctrl+F e que nunca "quebra" como um PDF.
-2. **Notas de estudo** — conceitos explicados, trechos marcantes e fichas de leitura, produzidos com apoio de inteligência artificial (NotebookLM) a partir do acervo, e organizados em modelos padronizados.
-3. **Índices** — um mapa em formato JSON que lista tudo o que já foi processado, servindo de sumário geral do painel.
+1. **Notas de estudo** — conceitos explicados, trechos comentados, eixos de debate e fichas de leitura, escritos com as suas palavras a partir das obras (com apoio de IA para a parte burocrática).
+2. **Trilhas** — caminhos ordenados de estudo, com critério de conclusão verificável e diário de bordo.
+3. **Índices e progresso** — o mapa do acervo (`indices/indice.json`), a tabela de temas e o `progresso.md`, todos regenerados automaticamente.
+4. **Acervo** — o texto integral dos livros convertido para Markdown, que fica **fora do Git** (direitos autorais) e é consultado localmente/Drive.
 
-A lógica do projeto é simples: em vez de reler um PDF de 400 páginas para achar uma ideia, você abre a nota do conceito, o trecho comentado ou a ficha do livro — tudo interligado e organizado por tema.
+A lógica: em vez de reler um PDF de 400 páginas para achar uma ideia, você abre a nota do conceito, o trecho comentado ou a ficha do livro — tudo interligado e organizado por tema e por eixo de debate.
 
 ## Como navegar
 
-| Pasta | O que você encontra |
+| Pasta / arquivo | O que você encontra |
 |---|---|
-| `acervo/` | Um arquivo Markdown por livro convertido (texto integral da obra) |
-| `conceitos/` | Notas de conceito — uma ideia central por arquivo, com explicação e trecho de apoio |
-| `trechos/` | Citações e passagens guardadas, sempre acompanhadas de um comentário pessoal |
-| `trilhas/` | Trilhas de aprendizado — caminhos ordenados do básico ao avançado (Modo Trilha). Já vêm prontas: Psicologia Níveis 1 e 2, Filosofia, Sociologia e a Integrada (as três lentes juntas) |
-| `diario/` | Diário de bordo — sínteses reflexivas escritas por você ao fechar cada módulo de estudo |
-| `indices/` | `indice.json` — o mapa geral do acervo processado |
-| `templates/` | Modelos prontos para copiar ao criar uma nota nova |
-| `docs/` | Guias passo a passo (01 a 05): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo e priorizar leituras |
-| `notebooks/` | Notebooks do Google Colab (sem digitar código): `converter-pdfs` transforma PDFs em Markdown; `atualizador-do-painel` regenera o índice, a tabela de temas, os flashcards e audita o repositório |
+| `conceitos/` | Notas de conceito — uma ideia central por arquivo — e as notas de **eixo** (grandes questões que atravessam disciplinas) |
+| `trilhas/` | Caminhos de aprendizado do básico ao avançado. Já vêm prontas: Psicologia Níveis 1 e 2, Filosofia, Sociologia e a Integrada |
+| `trechos/` | Citações literais sempre acompanhadas de comentário pessoal |
+| `diario/` | Diário de bordo — a síntese reflexiva de cada sessão (a IA nunca escreve por você) |
+| `acervo/` | **Só fichas de leitura** (`acervo/fichas/`) e o manifesto de conversão; o texto integral fica fora do Git |
+| `indices/` | `indice.json` — o mapa geral do acervo, gerado automaticamente |
+| `progresso.md` | Nós concluídos, notas reescritas, diários, citações — gerado automaticamente |
+| `templates/` | Modelos para copiar ao criar nota, eixo, trilha, ficha, trecho ou diário |
+| `docs/` | Guias 01–06 (criar repositório, extrair dos PDFs, prompts, atualizar, prioridades de leitura, manutenção/CI) + a análise do projeto |
+| `scripts/` | CLI de manutenção (`python -m scripts.painel ...`) |
+| `tests/` | Testes automatizados do CLI |
+| `.github/workflows/` | CI (testes + auditoria) e atualização automática do painel |
+| `notebooks/` | Notebook do Colab que converte PDFs em Markdown |
+
+## Estado atual
+
+<!-- PROGRESSO-INICIO -->
+
+| Indicador | Valor |
+|---|---|
+| Nós de trilha concluídos | 0 de 56 |
+| Notas reescritas (`ok`) | 0 de 36 |
+| Entradas de diário | 0 |
+| Notas com citação de apoio | 0 de 36 |
+
+Detalhes por trilha e por tema em [`progresso.md`](progresso.md).
+
+<!-- PROGRESSO-FIM -->
+
+> A métrica que importa não é quantidade de notas: é **nota reescrita** (`status: ok`) e **entrada de diário**.
 
 ## Painel de temas
 
-Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo viram links clicáveis para as notas de cada tema. Esta tabela é regenerada automaticamente pelo notebook `atualizador-do-painel.ipynb` — não edite à mão.
+Mapa dos estudos. A tabela é regenerada automaticamente pelo CLI — não edite à mão.
 
 <!-- PAINEL-TEMAS-INICIO -->
 
-| Tema | Status | Notas de conceito | Livros processados |
-|---|---|---|---|
-| História | Em breve | 0 | 0 |
-| Sociologia | Ativo | 14 | 0 |
-| Filosofia | Ativo | 11 | 0 |
-| Ciência Política | Em breve | 0 | 0 |
-| Antropologia | Em breve | 0 | 0 |
-| Economia | Em breve | 0 | 0 |
-| Geografia | Em breve | 0 | 0 |
-| Psicologia | Ativo | 11 | 0 |
-| Psicologia Social | Em breve | 0 | 0 |
+| Tema | Status | Notas de conceito | Livros processados | Fichas | Trilhas |
+|---|---|---|---|---|---|
+| História | Em breve | 0 | 0 | 0 | 0 |
+| Sociologia | Ativo | 14 | 0 | 0 | 1 |
+| Filosofia | Ativo | 11 | 0 | 0 | 1 |
+| Ciência Política | Em breve | 0 | 0 | 0 | 0 |
+| Antropologia | Em breve | 0 | 0 | 0 | 0 |
+| Economia | Em breve | 0 | 0 | 0 | 0 |
+| Geografia | Em breve | 0 | 0 | 0 | 0 |
+| Psicologia | Ativo | 11 | 0 | 0 | 2 |
+| Psicologia Social | Em breve | 0 | 0 | 0 | 0 |
+| Integrada | Ativo | 0 | 0 | 0 | 1 |
 
 <!-- PAINEL-TEMAS-FIM -->
 
+## Mantendo o painel (3 comandos)
+
+O painel se mantém sozinho: a cada push em `main`, o GitHub Actions regenera o índice, a tabela de temas, o `progresso.md` e o `flashcards.csv`. Para rodar localmente:
+
+```bash
+make instalar                 # cria .venv e instala dependências (uma vez)
+make testar                   # testes
+make auditar                  # links quebrados, metadados, duplicados, seções ausentes
+make painel                   # índice + tabela + progresso + flashcards
+```
+
+Sem `make` (Windows ou pressa):
+
+```bash
+python -m scripts.painel tudo
+python -m scripts.painel auditar
+```
+
+Nada disso instala nada além de Python 3.10+ e duas bibliotecas leves (`PyYAML` e `pytest`).
+O guia completo está em [`docs/06-manutencao-e-ci.md`](docs/06-manutencao-e-ci.md).
+
 ## Meta desta semana
 
-Edite esta linha toda semana (o atualizador do painel não mexe nela): _ex.: nós 1 a 3 da trilha de Filosofia (Teoria das Formas, Eudaimonia, Eixo Mente × Corpo), com quiz e diário_.
+Edite esta linha toda semana (nada automático mexe nela): _ex.: nós 1 a 3 da trilha de Filosofia (Teoria das Formas, Eudaimonia, Eixo Mente × Corpo), com quiz e diário_.
 
 ## Trilhas prontas para começar
 
-O painel nasce com cinco trilhas semente, montadas a partir dos planos de estudo anexados pelo autor (arquivados em `docs/anexos/`):
+O painel nasce com cinco trilhas semente, montadas a partir dos planos de estudo do autor (arquivados em `docs/anexos/`):
 
 | Trilha | Em uma frase |
 |---|---|
@@ -66,40 +110,53 @@ A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridad
 
 ## Como adicionar um livro novo (resumo rápido)
 
-O fluxo completo está explicado em `docs/02-fluxo-de-extracao.md`, mas em resumo são cinco passos:
+O fluxo completo está em [`docs/02-fluxo-de-extracao.md`](docs/02-fluxo-de-extracao.md). Em resumo:
 
-1. **Converter** o PDF em Markdown usando o notebook `notebooks/converter-pdfs.ipynb` (Google Colab, funciona no navegador).
-2. **Explorar** a obra no NotebookLM usando os prompts prontos de `docs/03-prompts-notebooklm.md`.
-3. **Anotar** os resultados usando os modelos da pasta `templates/`.
-4. **Publicar** os arquivos aqui no GitHub (guia em `docs/01-criar-repositorio-no-github.md` e `docs/04-atualizar-o-github.md`).
-5. **Regenerar** o índice, a tabela de temas e os flashcards com o notebook `notebooks/atualizador-do-painel.ipynb`.
+1. **Organizar** os PDFs por tema no Google Drive (fora do Git).
+2. **Converter** com `notebooks/converter-pdfs.ipynb` no Colab (incremental, com manifesto).
+3. **Explorar** a obra no NotebookLM com os prompts de [`docs/03-prompts-notebooklm.md`](docs/03-prompts-notebooklm.md).
+4. **Anotar** com os modelos de `templates/` — reescrevendo com as suas palavras e, sempre que possível, com citação e página.
+5. **Publicar** e deixar o CI regenerar índice, tabela, progresso e flashcards.
 
 ## Ferramentas utilizadas
 
 | Ferramenta | Papel no projeto | Custo |
 |---|---|---|
-| GitHub | Guarda e exibe todo o painel (é o "site" do projeto) | Gratuito |
+| GitHub + Actions | Guarda o painel e regenera índice/progresso a cada push | Gratuito |
 | NotebookLM (Google) | Lê os PDFs e ajuda a extrair conceitos, resumos, perguntas e trechos | Gratuito |
-| Google Colab | Converte PDFs em Markdown em lote e mantém o painel atualizado, no navegador, sem instalar nada | Gratuito |
-| Google Drive | Organiza os PDFs originais por tema | Gratuito |
-| Anki | Revisão espaçada dos conceitos por flashcards, gerados pelo notebook atualizador | Gratuito |
-| Assistente de IA (GLM, Gemini, Claude) | Modo Tutor: gera módulos de aprendizado com resumo, fontes, conexões e quiz (Guia 03) | Gratuito |
+| Google Colab | Converte PDFs em Markdown em lote, no navegador | Gratuito |
+| Google Drive | Organiza os PDFs e o texto integral convertido (fora do Git) | Gratuito |
+| Anki | Revisão espaçada com os flashcards gerados pelo CLI (GUID estável: reimportar não duplica) | Gratuito |
+| Obsidian (opcional) | Abre o repositório como "segundo cérebro" local, com grafo de links | Gratuito |
+| Assistente de IA (Modo Tutor) | Gera módulos de aprendizado com quiz e pergunta reflexiva (Guia 03) | Gratuito |
 
 ## Roteiro (roadmap)
 
-- [ ] Criar o repositório no GitHub
-- [ ] Organizar os PDFs por tema no Google Drive
-- [ ] Converter os 10 livros-chave do primeiro lote (lista pronta no Guia 05 — estratégia híbrida, ver Guia 02)
-- [ ] Revisar e reescrever com suas palavras as 36 notas semente já presentes no repositório
-- [ ] Percorrer a trilha de Psicologia Nível 1 até o nó 12, com quiz e diário de bordo
-- [ ] Percorrer as trilhas de Filosofia e de Sociologia Nível 1 (podem rodar em paralelo com a de Psicologia)
-- [ ] Fazer uma rota da trilha Integrada quando as trilhas de disciplina estiverem avançadas
-- [ ] Preencher a primeira ficha de leitura completa
-- [ ] Importar os primeiros flashcards no Anki e estabelecer a rotina de revisão
-- [ ] Rodar o notebook atualizador do painel pela primeira vez
-- [ ] Processar 50 livros e atualizar o painel de temas
-- [ ] (Futuro) Transformar este painel em um site interativo com busca, trilhas visuais e XP — design de referência no blueprint Humanitas Explore (`docs/anexos/`)
+**Concluído**
 
-## Nota sobre direitos autorais
+- [x] Criar o repositório no GitHub
+- [x] Escrever as 36 notas semente e as 5 trilhas
+- [x] Trocar os notebooks de manutenção por um CLI testável (`scripts/painel.py`)
+- [x] Automação no GitHub Actions (testes, auditoria, índice, progresso, flashcards)
+- [x] Limpar duplicatas da raiz, criar `.gitignore` (acervo fora do Git) e licenças
+- [x] Medir progresso real (`progresso.md`): notas ok, nós concluídos, diários, citações
 
-O acervo convertido destina-se a uso pessoal de estudo. Por isso, a recomendação deste projeto é manter o repositório **privado** enquanto ele contiver texto integral de obras protegidas. As notas de conceito e os comentários pessoais são produções próprias e podem ser compartilhados livremente, caso um dia você queira tornar o painel público.
+**Próximos**
+
+- [ ] Reescrever as 5 primeiras notas no padrão-ouro (fonte primária + citação com capítulo/página) e mudar para `status: ok`
+- [ ] Escrever a primeira ficha de leitura (Mills, *A Imaginação Sociológica*)
+- [ ] Escrever a primeira entrada do diário de bordo
+- [ ] Importar os flashcards no Anki e estabelecer a rotina de revisão
+- [ ] Converter o primeiro lote de livros-chave (Guia 05)
+- [ ] Percorrer a trilha de Psicologia Nível 1 até o nó 12
+- [ ] Publicar o painel como site com busca (MkDocs Material, só notas) — ver `docs/07-rumos-e-proximos-passos.md`
+- [ ] (Futuro) Busca semântica e quiz gerados sobre as **suas** notas, com citação obrigatória
+
+## Direitos autorais e licenças
+
+- **Texto integral de obras**: uso pessoal de estudo, **fora do Git** (o `.gitignore` bloqueia `acervo/*.md`). Se você optar por versionar o texto integral, mantenha o repositório **privado**.
+- **Notas, trilhas, eixos, diário e fichas** (produção própria): [CC BY-SA 4.0](LICENSE-CONTEUDO.md) — podem ser compartilhadas com atribuição.
+- **Código** (`scripts/`, `tests/`, workflows, notebooks): [MIT](LICENSE).
+- **`docs/anexos/`** (planos de estudo, grade curricular, `.docx`): materiais de terceiros, não cobertos pelas licenças acima.
+
+Análise crítica do projeto (pontos fortes, riscos, correções e rumos): [`docs/analise-do-projeto.md`](docs/analise-do-projeto.md).
