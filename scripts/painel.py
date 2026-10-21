@@ -588,12 +588,12 @@ def calcular_progresso(indice: dict) -> dict:
     status = Counter(c["status"] or "sem-status" for c in conceitos)
     ok = status.get("ok", 0)
     rascunho = status.get("rascunho", 0)
-    com_trecho = sum(1 for c in conceitos if c["tem_trecho"])
+    com_trecho = sum(1 for c in conceitos if c.get("tem_trecho"))
     fonte_secundaria = re.compile(r"guia de estudos|planos de estudo|anexo|wikip", re.I)
     com_fonte_primaria = sum(
         1
         for c in conceitos
-        if c["obra_origem"] and not fonte_secundaria.search(c["obra_origem"])
+        if c.get("obra_origem") and not fonte_secundaria.search(c["obra_origem"])
     )
     datas = sorted(d["data"] for d in indice["diario"] if d["data"])
     semanas = {
@@ -618,6 +618,24 @@ def calcular_progresso(indice: dict) -> dict:
         "trechos": len(indice["trechos"]),
         "livros": len(indice["livros"]),
     }
+
+
+# Marcos que destravam decisões registradas no Guia 07 (Fase 4 / métricas).
+MARCOS_DECISAO = (
+    ("ok", "Notas reescritas (`ok`)", 25, "Migrar o site (Astro) — Guia 07, Fase 4"),
+    ("diario_total", "Entradas de diário", 12, "Migrar o site (Astro) — Guia 07, Fase 4"),
+    ("com_trecho", "Notas com citação de apoio", 25, "Meta de 90 dias (Guia 07)"),
+    ("fichas", "Fichas de leitura", 3, "Meta de 90 dias (Guia 07)"),
+)
+
+
+def marcos_de_decisao(indice: dict) -> list[tuple[str, int, int, str, bool]]:
+    """(rótulo, atual, alvo, porquê, atingido) de cada marco."""
+    p = calcular_progresso(indice)
+    return [
+        (rotulo, p[campo], alvo, motivo, p[campo] >= alvo)
+        for campo, rotulo, alvo, motivo in MARCOS_DECISAO
+    ]
 
 
 def texto_progresso(indice: dict) -> str:
@@ -698,6 +716,32 @@ def texto_progresso(indice: dict) -> str:
             linhas.append(f"| … | | mais {len(pendentes) - 12} nota(s) |")
     if p["diario_ultima"]:
         linhas += ["", f"Última entrada no diário: **{p['diario_ultima']}**."]
+    marcos = marcos_de_decisao(indice)
+    linhas += [
+        "",
+        "## Marcos de decisão",
+        "",
+        "Gatilhos registrados no [Guia 07](docs/07-rumos-e-proximos-passos.md#fase-4-ferramenta-do-site-quando-migrar). "
+        "Quando um marco é atingido, a decisão correspondente pode ser reavaliada — "
+        "não antes.",
+        "",
+        "| Marco | Atual | Alvo | Situação | O que destrava |",
+        "|---|---|---|---|---|",
+    ]
+    for rotulo, atual, alvo, motivo, atingido in marcos:
+        falta = alvo - atual
+        situacao = "✔ atingido" if atingido else f"faltam {falta}" if falta > 1 else "falta 1"
+        linhas.append(f"| {rotulo} | {atual} | {alvo} | {situacao} | {motivo} |")
+    pendentes = [(rotulo, alvo - atual) for rotulo, atual, alvo, _, ok in marcos if not ok]
+    linhas += [
+        "",
+        (
+            "Enquanto houver marco pendente: **escreva notas**, não troque de ferramenta."
+            if pendentes
+            else "Todos os marcos atingidos: hora de reavaliar as decisões do Guia 07."
+        ),
+    ]
+
     linhas += [
         "",
         "## Como melhorar estes números",

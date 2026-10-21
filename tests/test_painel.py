@@ -561,3 +561,33 @@ def test_site_converte_readme_em_index_e_ajusta_links(mini_repo: pathlib.Path):
     )
     painel._ajustar_links_readme(fontes)
     assert "../diario/index.md" in trilha.read_text(encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
+# Marcos de decisão (gatilhos do Guia 07, Fase 4)
+# ---------------------------------------------------------------------------
+
+
+def test_marcos_de_decisao_no_progresso(mini_repo: pathlib.Path):
+    assert painel.main(["--raiz", str(mini_repo), "progresso"]) == 0
+    texto = (mini_repo / "progresso.md").read_text(encoding="utf-8")
+    assert "## Marcos de decisão" in texto
+    assert "| Notas reescritas (`ok`) |" in texto
+    assert "| Entradas de diário |" in texto
+    # mini-repo: 3 notas ok, 1 diário -> todos abaixo do alvo
+    assert "escreva notas" in texto
+
+
+def test_marcos_refletem_os_numeros(indice=None):
+    indice = {
+        "conceitos": [
+            {"status": "ok", "tem_trecho": True, "tema": "sociologia", "tipo": "conceito",
+             "definicao": "d", "pendencias": []} for _ in range(25)
+        ],
+        "trilhas": [], "diario": [], "fichas": [], "trechos": [], "livros": [],
+        "totais": {},
+    }
+    marcos = dict((rotulo, (atual, alvo, atingido)) for rotulo, atual, alvo, _, atingido in painel.marcos_de_decisao(indice))
+    assert marcos["Notas reescritas (`ok`)"][0] == 25
+    assert marcos["Notas reescritas (`ok`)"][2] is True
+    assert marcos["Entradas de diário"][2] is False

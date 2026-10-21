@@ -10,7 +10,7 @@ Comece pelo que resolve o seu problema agora.
 | [04 — Atualizar o GitHub no dia a dia](04-atualizar-o-github.md) | Adicionar, editar, renomear e excluir arquivos pelo navegador |
 | [05 — Prioridades de leitura](05-prioridades-de-leitura.md) | Escolher o próximo livro (os 10 livros-chave e as filas seguintes) |
 | [06 — Manutenção: CLI e CI](06-manutencao-e-ci.md) | Rodar `scripts/painel.py`, entender a auditoria e importar flashcards |
-| [07 — Rumos e próximos passos](07-rumos-e-proximos-passos.md) | O que fazer depois da fundação: padrão-ouro, site, RAG |
+| [07 — Rumos e próximos passos](07-rumos-e-proximos-passos.md) | O que fazer depois da fundação: padrão-ouro, site, RAG e **quando migrar de ferramenta** (Fase 4) |
 | [Análise do projeto](analise-do-projeto.md) | Diagnóstico crítico (pontos fortes, riscos, correções, cenários) |
 
 ## Anexos

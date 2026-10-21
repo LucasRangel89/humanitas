@@ -96,6 +96,77 @@ Só depois de ter conteúdo, escolha **um** com base no sinal que o uso der:
 - A IA pode gerar **perguntas** e localizar trechos — nunca escrever o diário.
 - Preferir busca local (FTS5/Pagefind) antes de qualquer LLM: 90% do valor, custo zero.
 
+## Fase 4 — Ferramenta do site: quando migrar
+
+A publicação do painel é infraestrutura, não o projeto. Hoje ela usa **MkDocs
+Material** com painel inicial gerado; existem outras duas ferramentas possíveis,
+com papéis diferentes — e uma não substitui a outra.
+
+| | **MkDocs Material** (atual) | **Obsidian** (local) | **Astro** (site próprio) |
+|---|---|---|---|
+| Para quê | publicar o painel | ler, escrever e revisar | publicar com UI sob medida |
+| Como se usa | `mkdocs.yml` + Markdown | abrir a pasta do repositório | projeto JS (componentes `.astro`) |
+| Controle de UI | o que o tema permite (CSS) | painéis, grafo, plugins | total |
+| Busca | plugin em português | instantânea, local | Pagefind |
+| Como lê os dados | Python gera o Markdown | lê o frontmatter direto | lê `indices/indice.json` |
+| Esforço para empatar | ~1 dia (feito) | 30 min | 1–2 semanas |
+| Custo de manutenção | zero dependência nova | app gratuito (Publish é pago) | Node, dependências, build |
+| Texto integral do acervo | fora do site | **abre localmente** | fora do site |
+
+### Gatilhos de decisão — Astro
+
+Migrar **somente** quando as três condições forem verdadeiras ao mesmo tempo:
+
+1. **Conteúdo**: ≥ 25 notas com `status: ok` **e** ≥ 12 entradas de diário
+   (números reais em [`progresso.md`](../progresso.md)) — senão é uma vitrine vazia;
+2. **Lacuna concreta**: falta algo que o Material não faz e que você **usa de fato**
+   — heatmap dos dias de estudo, filtro interativo ("só rascunhos"), gráfico de
+   evolução, quiz embutido;
+3. **Uso real**: o site publicado já é usado para estudar, não só para mostrar.
+
+Se qualquer uma for falsa, **não migre** — volte para a Fase 1 e escreva notas.
+
+### Gatilhos de decisão — Obsidian
+
+Adotar quando você quiser **grafo, backlinks e revisão espaçada sobre os mesmos
+arquivos**, sem publicar nada. Não substitui o site: é o "modo local".
+
+- **Gatilho:** você quer ver "quem linka para esta nota", abrir o acervo protegido
+  com conforto, ou revisar com o plugin *Spaced Repetition* — e isso não vale um
+  projeto novo.
+- **Custo:** abrir a pasta no app (30 min). Nenhuma mudança nos arquivos.
+- **Risco:** criar nota fora do padrão (sem `status`, sem `tema`). O
+  `python -m scripts.painel auditar` e o CI já pegam isso.
+
+### Não gatilhos (parecem, mas não são)
+
+- "Quero um site mais bonito" — o Material com dashboard já entrega isso.
+- "O Astro é o que todo mundo usa" — irrelevante para um painel pessoal.
+- Fazer os dois em paralelo (Pages + Astro): em duas semanas as saídas divergem.
+- Migrar durante um período de estudo — trocar ferramenta no meio de uma trilha
+  é a forma mais elegante de não terminá-la.
+
+### Se migrar, como migrar sem perder nada
+
+1. Rodar o Astro **em paralelo, lendo `site-src/`**, por uma semana, sem desligar o Material.
+2. O `indices/indice.json` é a API do site: notas, pendências, trilhas e progresso
+   já vêm prontos — nada de reprocessar Markdown no front-end.
+3. `scripts/painel.py` continua sendo o **único dono dos dados**; o Astro só desenha.
+4. Só desligar o Material quando busca, tags, painel e links estiverem equivalentes.
+
+### Decisão registrada
+
+| Data | Decisão | Gatilho | Situação |
+|---|---|---|---|
+| 2026-10-21 | Manter **MkDocs Material** com painel gerado | 0 notas `ok`, 0 diários | Reavaliar quando ≥ 25 `ok` e ≥ 12 diários |
+
+Ao reavaliar, atualize esta tabela com a data e os números do dia — decisão sem
+evidência registrada vira preferência.
+
+Os números dos gatilhos **não são conferidos à mão**: o `progresso.md` tem uma
+seção "Marcos de decisão" com atual/alvo/situação de cada um (gerada por
+`python -m scripts.painel progresso`, ou pelo CI a cada push).
+
 ## O que não fazer
 
 - Converter os 100+ PDFs "para depois".
@@ -103,6 +174,8 @@ Só depois de ter conteúdo, escolha **um** com base no sinal que o uso der:
 - Versionar texto integral em repositório público.
 - Criar notas novas antes de fechar as lacunas (citação, exemplo, eixo) das existentes.
 - Deixar o diário ser gerado por IA — é o único ativo que não pode ser terceirizado.
+- Trocar a ferramenta do site (ver Fase 4) antes de ter conteúdo: o painel já existe;
+  o que falta são notas reescritas.
 
 ## Backlog priorizado
 
@@ -114,6 +187,7 @@ Só depois de ter conteúdo, escolha **um** com base no sinal que o uso der:
 | P2 | Conversor por capítulo (arquivos menores, melhor busca) | 1 dia |
 | P2 | `pre-commit` rodando `auditar` antes de cada commit | 1 h |
 | P3 | Grafo de conexões, quiz automático, RAG local | semanas |
+| P3 | ~~Definir gatilhos de migração do site~~ (feito — ver Fase 4) | — |
 
 ## Como medir (sem autoengano)
 
