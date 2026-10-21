@@ -1,0 +1,8 @@
+{
+  "projeto": "painel-ciencias-humanas",
+  "descricao": "Mapa geral do acervo processado. Gerado pelo notebook converter-pdfs.ipynb e complementado manualmente.",
+  "atualizado_em": null,
+  "livros": [],
+  "conceitos": [],
+  "trechos": []
+}
