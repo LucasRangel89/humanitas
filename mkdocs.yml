@@ -1,18 +1,19 @@
 # Configuração do site (MkDocs Material).
 # As fontes são montadas por `python -m scripts.painel site` em `site-src/`,
-# que copia apenas o que pode ser público: notas, trilhas, eixos, diário,
-# fichas, guias e templates. O texto integral do acervo e docs/anexos ficam fora.
+# que copia apenas o que pode ser público e GERA as páginas de navegação
+# (painel inicial, índices por tema, eixos) a partir do índice.
 #
 # Uso local:
-#   make site        # monta site-src/ e serve em http://127.0.0.1:8000
-#   mkdocs build     # gera o HTML em site/
+#   make site          # monta site-src/ e serve em http://127.0.0.1:8000
+#   mkdocs build       # gera o HTML em site/
 #
 # Publicação: workflow "Site" (manual) em .github/workflows/site.yml.
 
 site_name: Humanitas
 site_description: Painel de estudos de ciências humanas — conceitos, eixos, trilhas e progresso
 site_author: Lucas Rangel
-site_url: https://lucasrangel89.github.io/humanitas/
+# Em produção aponta para o GitHub Pages; no preview local, `MKDOCS_SITE_URL=/`.
+site_url: !ENV [MKDOCS_SITE_URL, "https://lucasrangel89.github.io/humanitas/"]
 
 docs_dir: site-src
 site_dir: site
@@ -23,23 +24,33 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Modo claro
   features:
+    # navegação em abas (o "painel" no topo)
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top
     - navigation.tracking
+    - navigation.footer
+    # conteúdo
     - content.tags
     - search.suggest
     - search.highlight
     - toc.follow
+    - announce.dismiss
 
 plugins:
   - search:
@@ -50,16 +61,39 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html          # necessário para os cartões (grid cards) do painel
   - def_list
   - footnotes
   - tables
   - toc:
       permalink: true
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
 
-# Sem `nav` de propósito: o menu é gerado a partir das pastas, então uma nota
-# nova aparece sozinha no site, sem editar configuração e sem quebrar o build.
-# A ordem alfabética é intencional: o mapa curado fica no index (README) e nas trilhas.
+# Navegação explícita nas seções fixas. Notas novas NÃO exigem editar este
+# arquivo: elas aparecem em Conceitos (índice gerado por tema), na busca, nas
+# tags e nos links das trilhas.
+nav:
+  - Início: index.md
+  - Trilhas: trilhas/index.md
+  - Conceitos: conceitos/index.md
+  - Eixos: eixos.md
+  - Diário: diario/index.md
+  - Trechos: trechos/index.md
+  - Fichas: acervo/fichas/index.md
+  - Progresso: progresso.md
+  - Guias: docs/index.md
+  - Sobre: sobre.md
+
+extra:
+  social:
+    - icon: material/github
+      link: https://github.com/LucasRangel89/humanitas
+      name: Repositório no GitHub
+
+copyright: Conteúdo sob CC BY-SA 4.0 · Código sob MIT

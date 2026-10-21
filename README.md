@@ -94,19 +94,24 @@ python -m scripts.painel auditar
 Nada disso instala nada além de Python 3.10+ e duas bibliotecas leves (`PyYAML` e `pytest`).
 O guia completo está em [`docs/06-manutencao-e-ci.md`](docs/06-manutencao-e-ci.md).
 
-## Site com busca
+## Painel web (site com busca)
 
-O painel vira site com busca em português, tags e navegação automática:
+A home do site é um **painel gerado a partir do índice**, não o README: cartões de
+progresso, trilhas com barra e próximo nó, temas com contagem, o que falta para as
+notas ficarem boas e as últimas entradas do diário. Navegação em **abas**
+(Início · Trilhas · Conceitos · Eixos · Diário · Trechos · Fichas · Progresso ·
+Guias · Sobre), busca em português e filtro por tags.
 
 ```bash
-make site        # monta site-src/ e serve localmente
+make site        # monta site-src/ e serve em http://127.0.0.1:8000
 ```
 
-Só entra no site o que pode ser público: notas, eixos, trilhas, diário, trechos,
-fichas e guias. Ficam de fora o texto integral do acervo e `docs/anexos/`.
-A publicação no GitHub Pages é **manual** (`Actions → "Site — publicar no GitHub
-Pages"`) para nada ficar público sem decisão sua — passo a passo no
-[Guia 06](docs/06-manutencao-e-ci.md#site-com-busca-mkdocs-material).
+Notas novas aparecem sozinhas (índice de conceitos por tema, busca, tags) — o
+`mkdocs.yml` só lista as seções fixas. Só entra no site o que pode ser público:
+notas, eixos, trilhas, diário, trechos, fichas e guias; ficam de fora o texto
+integral do acervo e `docs/anexos/`. A publicação no GitHub Pages é **manual**
+(`Actions → "Site — publicar no GitHub Pages"`) — passo a passo no
+[Guia 06](docs/06-manutencao-e-ci.md#site-com-busca-e-painel-inicial-mkdocs-material).
 
 ## Meta desta semana
 
@@ -159,7 +164,7 @@ O fluxo completo está em [`docs/02-fluxo-de-extracao.md`](docs/02-fluxo-de-extr
 - [x] Limpar duplicatas da raiz, criar `.gitignore` (acervo fora do Git) e licenças
 - [x] Medir progresso real (`progresso.md`): notas ok, nós concluídos, diários, citações
 - [x] Scaffold de notas (`nova`) e checklist do padrão-ouro (`pendencias`)
-- [x] Site com busca em português e tags (MkDocs Material)
+- [x] Site com busca, tags e **painel inicial gerado** (dashboard + abas)
 
 **Próximos**
 

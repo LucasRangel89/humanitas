@@ -38,8 +38,9 @@ e só depois escalar.
 
 ## Fase 2 — Jardim público (30–60 dias) — **infraestrutura pronta**
 
-O site já está montado (MkDocs Material com busca em português e tags). Falta
-ligar a publicação e escrever o conteúdo.
+O site está montado: **painel inicial gerado** (cartões de progresso, trilhas com
+barra e próximo nó, temas, pendências, diário), abas de navegação, busca em
+português e tags. Falta ligar a publicação e escrever o conteúdo.
 
 **Publicar (5 minutos):**
 

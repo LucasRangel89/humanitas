@@ -153,6 +153,15 @@ def mini_repo(tmp_path: pathlib.Path) -> pathlib.Path:
         "# Ficha — O Senso Prático\n\n## Tese central\n\nO habitus.\n",
     )
     _escrever(tmp_path / "acervo" / "README.md", "# acervo/\n")
+    _escrever(tmp_path / "progresso.md", "# Progresso do painel\n\nGerado.\n")
+    _escrever(tmp_path / "diario" / "README.md", "# diario/\n\nDiário de bordo.\n")
+    _escrever(tmp_path / "trechos" / "README.md", "# trechos/\n\nCitações.\n")
+    _escrever(
+        tmp_path / "docs" / "README.md",
+        "# docs/\n\n- [Guia 03](03-prompts-notebooklm.md)\n",
+    )
+    _escrever(tmp_path / "docs" / "03-prompts-notebooklm.md", "# Guia 03\n")
+    _escrever(tmp_path / "docs" / "07-rumos-e-proximos-passos.md", "# Guia 07\n")
     # templates reais: o comando `nova` monta o esqueleto a partir deles
     shutil.copytree(RAIZ_PROJETO / "templates", tmp_path / "templates")
     return tmp_path

@@ -116,30 +116,68 @@ Fluxo diário, na prática:
    (`chore: regenera índice, tabela de temas e progresso [skip ci]`).
 4. Você baixa o `flashcards.csv` em **Actions → último run do "Painel" → Artifacts**.
 
-## Site com busca (MkDocs Material)
+## Site com busca e painel inicial (MkDocs Material)
 
 ```bash
 make site        # monta site-src/, instala o tema e serve em http://127.0.0.1:8000
 # ou, célula a célula:
 python -m scripts.painel site
-mkdocs build     # HTML em site/
+MKDOCS_SITE_URL="http://127.0.0.1:8000/" mkdocs build   # HTML em site/
 ```
 
-O comando `site` monta `site-src/` **do zero** a cada execução, copiando só o que
-pode ser público:
+### A home é um painel gerado, não o README
 
-| Entra no site | Fica de fora |
+`site-src/index.md` é **gerado a cada build** a partir do índice, com:
+
+- **quatro cartões** no topo: *Onde você está* (nós, notas reescritas, diários,
+  citações), *Comece por aqui* (retomar a trilha em andamento, mapa dos eixos,
+  como funciona), *Trilhas* e *Conceitos e eixos*;
+- **tabela de trilhas** com barra de progresso (`█░`) e o próximo nó;
+- **tabela de temas** com quantas notas estão reescritas e com citação;
+- **o que falta para as notas ficarem boas**: as cinco notas com mais pendências;
+- **últimas entradas do diário**, quando existirem;
+- rodapé com a data de geração e as contagens.
+
+O `README.md` do repositório passa a ser a página **Sobre** — texto de projeto,
+não de navegação. Nada disso é editado à mão: mudou a nota, mudou o painel.
+
+### Páginas de navegação geradas
+
+| Página | O que é |
+|---|---|
+| `index.md` | Painel inicial (dashboard) |
+| `trilhas/index.md` | Trilhas com progresso, status e ordem de percurso |
+| `conceitos/index.md` | Notas agrupadas por tema, com ✔/○ por estado |
+| `eixos.md` | Mapa dos debates, com a pergunta de cada eixo |
+| `sobre.md` | O `README.md` do repositório |
+| `tags.md` | Índice completo de etiquetas |
+
+### Abas e navegação
+
+O `mkdocs.yml` tem `navigation.tabs` (+ `sticky`), `navigation.sections` e
+`navigation.indexes`, com um `nav` explícito para as seções fixas: Início ·
+Trilhas · Conceitos · Eixos · Diário · Trechos · Fichas · Progresso · Guias · Sobre.
+
+**Uma nota nova não exige editar o `mkdocs.yml`**: ela aparece no índice de
+Conceitos (gerado por tema), na busca, nas tags e nos links das trilhas. O `nav`
+só lista as seções fixas — e há um teste que garante que todo destino do `nav`
+existe no site (senão o build falha).
+
+### O que entra no site
+
+| Entra | Fica de fora |
 |---|---|
 | `conceitos/`, `trilhas/`, `diario/`, `trechos/` | texto integral do acervo (`acervo/*.md`) |
 | `acervo/fichas/` (produção própria) | `docs/anexos/` (materiais de terceiros) |
-| `README.md` (como home), `progresso.md`, `docs/`, licenças | `scripts/`, `tests/`, `.github/`, `notebooks/` |
+| `README.md` (como *Sobre*), `progresso.md`, `docs/`, licenças | `scripts/`, `tests/`, `.github/`, `notebooks/` |
 
-O menu é gerado a partir das pastas: uma nota nova aparece no site sozinha, sem
-editar configuração. A busca é configurada em português (`search: lang: pt`) e as
-tags do frontmatter viram filtro (`plugins: tags`).
+O tema ainda traz busca em português (`search: lang: pt`), filtro por tags
+(`plugins: tags`), modo claro/escuro e link para o GitHub.
 
-**Publicar no GitHub Pages:** o workflow **"Site — publicar no GitHub Pages"** é
-manual de propósito — nada fica público sem você pedir.
+### Publicar no GitHub Pages
+
+O workflow **"Site — publicar no GitHub Pages"** é manual de propósito — nada
+fica público sem você pedir.
 
 1. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 2. **Actions → "Site — publicar no GitHub Pages" → Run workflow**.

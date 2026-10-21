@@ -482,3 +482,82 @@ def test_site_e_idempotente(mini_repo: pathlib.Path):
     painel.main(["--raiz", str(mini_repo), "site"])
     assert not sobra.exists()  # reconstrói do zero
     assert (mini_repo / "site-src" / "index.md").read_text(encoding="utf-8") == primeiro
+
+
+# ---------------------------------------------------------------------------
+# Dashboard e navegação do site
+# ---------------------------------------------------------------------------
+
+
+def test_dashboard_e_painel_e_nao_readme(mini_repo: pathlib.Path):
+    painel.main(["--raiz", str(mini_repo), "site"])
+    fontes = mini_repo / "site-src"
+    dashboard = (fontes / "index.md").read_text(encoding="utf-8")
+
+    assert dashboard.startswith("# Humanitas")
+    assert "grid cards" in dashboard          # cartões do painel
+    assert "## Trilhas" in dashboard          # tabela de trilhas com progresso
+    assert "## Temas" in dashboard
+    assert "Onde você está" in dashboard
+    # o README vira a página "Sobre", não a home
+    assert (fontes / "sobre.md").exists()
+    assert not (fontes / "README.md").exists()
+    assert (fontes / "sobre.md").read_text(encoding="utf-8").startswith("# Painel")
+
+
+def test_dashboard_mostra_progresso_real(mini_repo: pathlib.Path):
+    painel.main(["--raiz", str(mini_repo), "site"])
+    dashboard = (mini_repo / "site-src" / "index.md").read_text(encoding="utf-8")
+    # mini-repo tem 3 nós, 1 concluído e 3 notas
+    assert "1 de 3" in dashboard
+    assert "█" in dashboard and "░" in dashboard
+
+
+def test_dashboard_sem_links_quebrados(mini_repo: pathlib.Path):
+    painel.main(["--raiz", str(mini_repo), "site"])
+    fontes = mini_repo / "site-src"
+    problemas = painel._links_quebrados(fontes, sorted(fontes.rglob("*.md")))
+    assert problemas == []
+
+
+def test_indices_gerados_por_tema(mini_repo: pathlib.Path):
+    painel.main(["--raiz", str(mini_repo), "site"])
+    indice = (mini_repo / "site-src" / "conceitos" / "index.md").read_text(encoding="utf-8")
+    assert "## Sociologia" in indice
+    assert "## Filosofia" in indice
+    assert "Habitus" in indice
+    # link relativo dentro da pasta, sem o prefixo conceitos/
+    assert "](sociologia-habitus.md)" in indice
+
+    eixos = (mini_repo / "site-src" / "eixos.md").read_text(encoding="utf-8")
+    assert "Natureza × Cultura" in eixos
+    assert "conceitos/eixo-natureza-cultura.md" in eixos
+
+
+def test_nav_do_mkdocs_aponta_para_paginas_existentes(mini_repo: pathlib.Path):
+    """Todo destino do nav precisa existir: senão o build do site falha."""
+    import re
+
+    raiz = pathlib.Path(__file__).resolve().parents[1]
+    config = (raiz / "mkdocs.yml").read_text(encoding="utf-8")
+    alvos = re.findall(r"^\s+-\s+[^:]+:\s+([^\s#]+\.md)\s*$", config, re.M)
+    assert alvos, "nav não encontrado em mkdocs.yml"
+
+    painel.montar_site_src(raiz, mini_repo / "site-src")
+    faltando = [alvo for alvo in alvos if not (mini_repo / "site-src" / alvo).exists()]
+    assert faltando == [], f"nav aponta para páginas que o site não gera: {faltando}"
+
+
+def test_site_converte_readme_em_index_e_ajusta_links(mini_repo: pathlib.Path):
+    painel.main(["--raiz", str(mini_repo), "site"])
+    fontes = mini_repo / "site-src"
+    assert (fontes / "diario" / "index.md").exists()
+    assert not (fontes / "diario" / "README.md").exists()
+    # um link para README.md passa a apontar para index.md
+    trilha = fontes / "trilhas" / "sociologia-teste.md"
+    trilha.write_text(
+        trilha.read_text(encoding="utf-8") + "\n[diário](../diario/README.md)\n",
+        encoding="utf-8",
+    )
+    painel._ajustar_links_readme(fontes)
+    assert "../diario/index.md" in trilha.read_text(encoding="utf-8")
