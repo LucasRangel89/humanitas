@@ -1,7 +1,7 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-21T20:55:41",
+  "atualizado_em": "2026-10-21T20:58:18",
   "totais": {
     "livros": 0,
     "fichas": 0,
@@ -409,7 +409,7 @@
         "psicologia",
         "social",
         "festinger",
-        "atuitudes"
+        "atitudes"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
