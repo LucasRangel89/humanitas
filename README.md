@@ -32,17 +32,18 @@ Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo vi
 
 <!-- PAINEL-TEMAS-INICIO -->
 
-| Tema | Status | Notas de conceito | Livros processados |
-|---|---|---|---|
-| História | Em breve | 0 | 0 |
-| Sociologia | Ativo | 20 | 0 |
-| Filosofia | Ativo | 15 | 0 |
-| Ciência Política | Em breve | 0 | 0 |
-| Antropologia | Em breve | 0 | 0 |
-| Economia | Em breve | 0 | 0 |
-| Geografia | Em breve | 0 | 0 |
-| Psicologia | Ativo | 15 | 0 |
-| Psicologia Social | Em breve | 0 | 0 |
+| Tema | Status | Notas de conceito | Livros processados | Fichas | Trilhas |
+|---|---|---|---|---|---|
+| História | Em breve | 0 | 0 | 0 | 0 |
+| Sociologia | Ativo | 20 | 0 | 0 | 1 |
+| Filosofia | Ativo | 15 | 0 | 0 | 1 |
+| Ciência Política | Em breve | 0 | 0 | 0 | 0 |
+| Antropologia | Em breve | 0 | 0 | 0 | 0 |
+| Economia | Em breve | 0 | 0 | 0 | 0 |
+| Geografia | Em breve | 0 | 0 | 0 | 0 |
+| Psicologia | Ativo | 15 | 0 | 0 | 2 |
+| Psicologia Social | Em breve | 0 | 0 | 0 | 0 |
+| Integrada | Ativo | 0 | 0 | 0 | 1 |
 
 <!-- PAINEL-TEMAS-FIM -->
 
