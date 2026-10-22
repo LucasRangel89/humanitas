@@ -6,7 +6,7 @@ tema: psicologia
 tipo: conceito
 nivel: iniciante
 status: rascunho
-tags: [psicologia, social, festinger, atitudes]
+tags: [psicologia, social, festinger, atuitudes]
 ---
 # Conceito — Dissonância cognitiva
 

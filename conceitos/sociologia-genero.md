@@ -17,12 +17,13 @@ Conjunto de características físicas, mentais e comportamentais socialmente atr
 
 ## Explicação com as minhas palavras (rascunho — reescrever)
 
-Gênero é a resposta social à pergunta "o que homens e mulheres devem ser?" — e a resposta varia demais no tempo e no espaço para ser natureza pura. Ele opera por expectativas (o que se espera), sanciona desvios (o que se pune) e se apresenta como natural (o que se disfarça). O risco clínico do guia é direto: sem considerar a construção de gênero, expressões normativas de identidade — comportamentos atribuídos ao "outro" gênero, por exemplo — são avaliadas erroneamente como sintomas de transtorno, quando são variações do esperado social.
+Gênero é a resposta social à pergunta "o que homens e mulheres devem ser?" — e a resposta varia demais no tempo e no espaço para ser natureza pura. Ele opera por expectativas (o que se espera), sanciona desvios (o que se pune) e se apresenta como natural (o que se disfarça). A frase-fundadora é de Simone de Beauvoir, no O Segundo Sexo (1949): **"não se nasce mulher, torna-se"** — a identidade de gênero é construção social, histórica e psicológica, não destino biológico; o plano integrado anexado a aponta como o exemplo mais claro de convergência entre as três disciplinas (filosófica pela essência negada, sociológica pela fabricação das expectativas, psicológica pelos efeitos sobre a pessoa). O risco clínico do guia é direto: sem considerar a construção de gênero, expressões normativas de identidade — comportamentos atribuídos ao "outro" gênero, por exemplo — são avaliadas erroneamente como sintomas de transtorno, quando são variações do esperado social.
 
 ## Autores e obras para aprofundar
 
 - Joan Scott — "Gênero: uma categoria útil de análise histórica" (1986)
 - Judith Butler — *Problemas de Gênero* (1990)
+- Simone de Beauvoir — *O Segundo Sexo* (1949, introdução: a frase fundadora e o contexto)
 - Fontes didáticas do guia original (Wikipédia) servem de primeiro contato; confirmar em obra primária.
 
 ## Conceitos relacionados

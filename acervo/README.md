@@ -1,29 +1,9 @@
 # acervo/
 
-Esta pasta guarda o material das obras — mas **só as fichas de leitura entram no Git**.
+Esta pasta guarda o texto integral das obras convertidas para Markdown, um arquivo por livro.
 
-## O que é versionado
+- Os arquivos entram aqui no formato `autor-titulo.md` (minúsculas, sem acentos), gerados pelo notebook `notebooks/converter-pdfs.ipynb`.
+- A ficha de leitura de cada obra (feita com o `templates/template-livro.md`) também pode morar aqui, com o sufixo `-ficha.md`.
+- Os PDFs originais **não** entram neste repositório: eles continuam guardados no Google Drive, organizados por tema.
 
-- `acervo/fichas/` — as fichas de leitura (modelo `templates/template-livro.md`),
-  nomeadas `autor-titulo-ficha.md`. São produção própria e podem ser compartilhadas.
-- `acervo/manifesto.json` — controle de quais PDFs já foram convertidos e o hash de
-  cada um (permite reconverter só o que mudou).
-- Este `README.md`.
-
-## O que NÃO é versionado
-
-- O **texto integral** convertido (`acervo/autor-titulo.md`) e os PDFs originais.
-  O `.gitignore` já bloqueia esses arquivos. Motivo: direitos autorais — o texto
-  integral é para uso pessoal de estudo e fica no Google Drive.
-
-## Como converter
-
-1. Use o notebook [`notebooks/converter-pdfs.ipynb`](../notebooks/converter-pdfs.ipynb)
-   (Colab), com os PDFs organizados por tema no Drive (`Estudos-PDFs/<tema>/`).
-2. Guarde os `.md` gerados onde preferir (Drive ou máquina local) — **não** no Git.
-3. As notas de conceito, eixos, trechos e fichas é que entram no repositório.
-
-O índice é regenerado pelo CLI/GitHub Actions e lê o tema das fichas; para o texto
-integral, o tema vem do `manifesto.json`.
-
-Passo a passo completo: [`docs/02-fluxo-de-extracao.md`](../docs/02-fluxo-de-extracao.md).
+Para o passo a passo de conversão, veja `docs/02-fluxo-de-extracao.md`.

@@ -30,6 +30,7 @@ Kahneman descreve duas formas de pensar: o Sistema 1 (instantâneo, automático,
 ## Conexões interdisciplinares
 - **Sociologia — [Imaginação sociológica](sociologia-imaginacao-sociologica.md):** o erro fundamental de atribuição (culpar o caráter, ignorar a situação) é um viés cognitivo que trava a lente sociológica.
 - **Filosofia — doxa × episteme:** a distinção platônica entre opinião e conhecimento descreve exatamente o que o Sistema 1 produz e o Sistema 2 corrige.
+- **Filosofia — [Paradigma (Kuhn)](filosofia-paradigma-kuhn.md):** o viés de confirmação em escala de comunidade — o que o plano anexado chama de ideologia psicológica: psicologia chama de viés, sociologia de ideologia, filosofia de dogmatismo.
 - **Tecnologia — [Racionalização](sociologia-racionalizacao.md) digital:** plataformas descobriram que vieses são exploráveis — a recomendação alimenta disponibilidade e confirmação porque mantém o olho na tela.
 
 ## Por que este conceito importa

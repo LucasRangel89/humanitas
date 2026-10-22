@@ -46,4 +46,4 @@ Sair da trilha para perseguir uma curiosidade não é falha — é o jeito das c
 
 ## Conclusão da trilha
 
-Ao marcar o nó 12: atualize o `status` do cabeçalho para `concluida`, mova os conceitos reescritos de `rascunho` para `ok` e confira a tabela de temas no README (atualizada pelo CI).
+Ao marcar o nó 12: atualize o `status` do cabeçalho para `concluida`, mova os conceitos reescritos de `rascunho` para `ok` e confira a tabela de temas no README (rodando o atualizador do painel).

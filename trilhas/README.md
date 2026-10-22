@@ -13,6 +13,6 @@ A trilha semente `psicologia-nivel-1.md` já vem preenchida com as 13 notas seme
 - `psicologia-nivel-2.md` — do laboratório à vida: cognição, desenvolvimento, personalidade, saúde mental e psicologia digital;
 - `filosofia-nivel-1.md` — do mito ao século XX, um conceito-fundador por época;
 - `sociologia-nivel-1.md` — do olhar sociológico aos clássicos, desigualdade e mundo digital;
-- `integrada-nivel-1.md` — as três lentes juntas, em duas rotas (Confluência Humano-Tecnológica e módulos temáticos).
+- `integrada-nivel-1.md` — as três lentes juntas, em três rotas (Confluência Humano-Tecnológica, módulos temáticos e o curso completo de 5 módulos "Mente, Sociedade e Existência", montado a partir do 7º plano anexado).
 
 A lista de leituras que sustenta essas trilhas está no Guia 05 (`docs/05-prioridades-de-leitura.md`).

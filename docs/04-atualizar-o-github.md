@@ -1,6 +1,6 @@
 # Guia 04 — Atualizar o GitHub no dia a dia
 
-Este guia cobre as operações do dia a dia: adicionar, editar, renomear e excluir arquivos pelo navegador — e como o índice e o progresso se mantêm atualizados sozinhos. Continua sem instalar nada; a manutenção automática está no [Guia 06](06-manutencao-e-ci.md).
+Este guia cobre as quatro operações de manutenção do painel, todas feitas pelo navegador, sem instalar nada. É a rotina do dia a dia depois que o repositório já existe.
 
 ## Adicionar arquivos novos (notas, fichas, livros convertidos)
 
@@ -22,7 +22,7 @@ Dica: se os arquivos precisam entrar dentro de uma pasta específica (por exempl
 
 1. Abra o arquivo e clique no ícone de **lápis** para editar.
 2. Na barra acima do texto, clique no nome do arquivo: ele se transforma em campo editável.
-3. Ajuste o nome (a barra `/` no nome cria ou muda a pasta, por exemplo mover de `acervo/livro.md` para `acervo/fichas/livro-ficha.md`).
+3. Ajuste o nome (a barra `/` no nome cria ou muda a pasta, por exemplo mover de `acervo/livro.md` para `acervo/fichas/livro.md`).
 4. Confirme com **Commit changes**.
 
 ## Excluir um arquivo
@@ -31,42 +31,22 @@ Dica: se os arquivos precisam entrar dentro de uma pasta específica (por exempl
 2. Clique no ícone de **lixeira** à direita (Delete this file).
 3. Confirme com **Commit changes**. O arquivo sai do repositório, mas continua recuperável pelo histórico de versões.
 
-## Rotina: o painel se atualiza sozinho
+## Rotina mensal sugerida
 
-Depois da limpeza do projeto, **você não precisa mais rodar notebook nenhum** para manter o índice. O fluxo é:
+Uma vez por mês, reserve 20 minutos para a manutenção do painel. A maior parte é feita pelo notebook atualizador:
 
-1. Você escreve/edita notas (no GitHub ou na sua máquina) e faz commit.
-2. O **CI** roda os testes e a auditoria: link quebrado, `tema` inválido, seção obrigatória ausente ou conceito duplicado deixam o pull request vermelho.
-3. Ao entrar em `main`, o workflow **Painel** regenera `indices/indice.json`, a tabela de temas do `README.md`, o `progresso.md` e o `flashcards.csv`, e commita os três primeiros com a mensagem `chore: regenera índice, tabela de temas e progresso [skip ci]`.
-4. Para revisar no Anki: **Actions → run mais recente do "Painel" → Artifacts → flashcards**.
-
-Se preferir rodar na sua máquina (Python 3.10+):
-
-```bash
-make instalar     # uma vez
-make auditar      # links, metadados, duplicados
-make painel       # índice + tabela + progresso + flashcards
-```
-
-O passo a passo detalhado está no [Guia 06](06-manutencao-e-ci.md).
-
-## O que subir e o que não subir
-
-| Arquivo | Entra no Git? | Por quê |
-|---|---|---|
-| `conceitos/`, `trilhas/`, `diario/`, `trechos/` | Sim | produção própria (CC BY-SA 4.0) |
-| `acervo/fichas/*-ficha.md` | Sim | produção própria |
-| `acervo/*.md` (texto integral), PDFs | **Não** | direitos autorais; `.gitignore` bloqueia |
-| `indices/indice.json`, `progresso.md`, tabela do README | Sim (automático) | gerados pelo CI |
-| `flashcards.csv` | Não (artefato) | gerado; baixe em Actions → Artifacts |
+- **Regenerar o painel:** na página do repositório no GitHub, clique no botão verde **Code** e depois em **Download ZIP**. No Colab, abra o notebook `notebooks/atualizador-do-painel.ipynb`, suba esse zip na primeira célula e execute tudo. Ele devolve um zip com: o `README.md` atualizado (com a tabela de temas regenerada), o `indice.json` completo, o `flashcards.csv` para o Anki e um `relatorio-problemas.md` com links quebrados e conceitos possivelmente duplicados.
+- **Subir os arquivos devolvidos:** descompacte e arraste o conteúdo para o repositório (**Add file > Upload files**) — arquivos de mesmo nome substituem os antigos automaticamente. O `relatorio-problemas.md` é para leitura: corrija o que ele aponta nas notas e suba as versões corrigidas.
+- **Importar os flashcards novos** no Anki (passo a passo no Guia 02, seção de retenção).
+- Marque no **Roteiro (roadmap)** do README os itens concluídos e escolha o tema foco do mês seguinte.
+- Se algo saiu do lugar, use **History** para entender o que mudou — nada se perde no GitHub.
 
 ## Nomes e convenções para não se perder
 
 Mantenha o padrão desde o início e o painel se organiza sozinho:
 
-- Fichas em `acervo/fichas/`: `autor-titulo-ficha.md`. O texto integral (`acervo/autor-titulo.md`) fica fora do Git.
-- Conceitos em `conceitos/`: `tema-conceito.md`.
-- Diário em `diario/`: `AAAA-MM-DD-tema-assunto.md`.
+- Livros em `acervo/`: `autor-titulo.md` (minúsculas, hífens, sem acentos).
+- Conceitos em `conceitos/`: `tema-conceito.md`, por exemplo `historia-estado-nacao.md`.
 - Trechos em `trechos/`: `autor-trecho-curto.md`, por exemplo `carr-fatos-e-interpretacoes.md`.
 
-Se um dia as pastas ficarem grandes demais, crie subpastas por tema: o CLI lê `conceitos/`, `trilhas/`, `diario/` e `trechos/` recursivamente e registra o caminho completo no índice. Mantenha os links relativos ao arquivo (ex.: `../sociologia-cultura.md`) — a auditoria confere cada um.
+Se um dia as pastas ficarem grandes demais, é só criar subpastas por tema dentro de `conceitos/` e `trechos/` — a estrutura do projeto já foi desenhada para crescer assim.

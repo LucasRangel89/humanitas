@@ -1,7 +1,7 @@
 ---
 trilha: "Integrada — Nível 1: as três lentes juntas (Filosofia × Sociologia × Psicologia)"
-obra_origem: "Plano interdisciplinar 'Confluência Humano-Tecnológica' (docs/anexos/plano-confluencia-humano-tecnologica.pdf) e Plano integrado das três disciplinas (docs/anexos/plano-integrado-tres-disciplinas.pdf)"
-autor_origem: "Trilha montada a partir dos dois planos interdisciplinares anexados; nós ligados às notas já existentes do painel"
+obra_origem: "Planos interdisciplinares anexados: Confluência Humano-Tecnológica (docs/anexos/plano-confluencia-humano-tecnologica.pdf), Plano integrado das três disciplinas (docs/anexos/plano-integrado-tres-disciplinas.pdf) e Mente, Sociedade e Existência — plano de 5 módulos (docs/anexos/plano-mente-sociedade-existencia.md)"
+autor_origem: "Trilha montada a partir dos planos interdisciplinares anexados; nós ligados às notas já existentes do painel"
 tema: integrada
 nivel: entusiasta
 status: em-andamento
@@ -18,12 +18,13 @@ A imagem do plano anexado é a mais precisa já escrita sobre o painel: a Filoso
 
 Nenhum formal, mas o rendimento cresce com as trilhas de disciplina em andamento: esta trilha NÃO apresenta conceitos novos — ela costura os que já estão no painel. Se um link ainda aponta para nota `rascunho`, reescrevê-la é parte do nó.
 
-## As duas rotas
+## As três rotas
 
-Os dois planos anexados são dois jeitos bons de costurar as disciplinas — foram mantidos como rotas independentes (fazer as duas não é obrigatório; escolha pelo interesse do momento):
+Os três planos interdisciplinares anexados são três jeitos bons de costurar as disciplinas — foram mantidos como rotas independentes (fazer mais de uma não é obrigatório; escolha pelo interesse do momento):
 
 - **Rota A — Confluência Humano-Tecnológica** (do plano de 4 fases): progressiva e projetada para quem estuda de dentro do mundo digital. É a rota "espinha dorsal".
 - **Rota B — Três módulos temáticos** (do plano integrado): mais curta e cinematográfica, organizada por grandes perguntas. É a rota "imersão".
+- **Rota C — Mente, Sociedade e Existência** (do plano de 5 módulos): o curso completo, do espanto socrático ao futuro — a mais longa (20 semanas no ritmo do plano) e a que mais atividades práticas traz. É a rota "formação".
 
 ---
 
@@ -100,6 +101,60 @@ Nós: [Racionalização](../conceitos/sociologia-racionalizacao.md) (Weber: tipo
 
 ---
 
+## Rota C — Mente, Sociedade e Existência (plano de 5 módulos)
+
+O plano completo (`docs/anexos/plano-mente-sociedade-existencia.md`) tem estrutura própria por módulo: objetivos de aprendizagem, tópicos detalhados, pontos de conexão interdisciplinar, recursos e atividades. Abaixo, cada módulo vira um nó com as notas do painel e as atividades assinadas do plano (⚑). Ritmo do plano: 3–5 semanas por módulo, 1–2 h/dia, 4–5 dias por semana — "não há pressa. Há profundidade."
+
+### Nó C1. As grandes perguntas — fundamentos e origens (Módulo 1)
+
+Nós: [Método Socrático](../conceitos/filosofia-metodo-socratico.md) (o espanto e a pergunta como método), [Teoria das Formas](../conceitos/filosofia-teoria-das-formas.md) (a Caverna vista pelas três lentes: ilusão filosófica, viés de confirmação psicológico, controle das imagens sociológico), [Positivismo](../conceitos/sociologia-positivismo.md) (por que a Sociologia nasce da crise do século XIX), [Estruturalismo](../conceitos/psicologia-estruturalismo.md) e [Funcionalismo](../conceitos/psicologia-funcionalismo.md) (o laboratório de 1879), [Imaginação sociológica](../conceitos/sociologia-imaginacao-sociologica.md).
+
+- ⚑ Atividade do plano — **Diário Socrático (7 dias)**: ao fim de cada dia, anote UMA pergunta que você não conseguiu responder; no sétimo dia, releia e procure o padrão (entra no [diário de bordo](../diario/README.md)).
+- ⚑ Exercício de observação: mapeie 3 regras não escritas do lugar onde você cresceu — quem as criou, o que acontece com quem as viola.
+- Mídia do plano: *O Mundo de Sofia* (caps. 1–10); Crash Course Philosophy (eps. 1–5); série UNIVESP sobre Durkheim, Marx e Weber.
+
+### Nó C2. O eu — identidade, consciência e self social (Módulo 2)
+
+Nós: [Eixo Mente × Corpo](../conceitos/eixo-mente-corpo.md) (Descartes, Hume e o problema do self), [Psicanálise](../conceitos/psicologia-psicanalise.md) (Id, Ego, Superego, mecanismos de defesa), [Estágios Psicossociais](../conceitos/psicologia-estagios-erikson.md) (oito crises, uma vida inteira), [Psicologia Humanista](../conceitos/psicologia-humanismo.md) (self real × self ideal em Rogers), [Interacionismo Simbólico](../conceitos/sociologia-interacionismo-simbolico.md) (o "Me" como espelho social), [Papel Social](../conceitos/sociologia-papel-social.md) (a dramaturgia de Goffman), [Construção Social da Realidade](../conceitos/sociologia-construcao-social-realidade.md), [Gênero](../conceitos/sociologia-genero.md) (a frase de Beauvoir como convergência das três lentes).
+
+- ⚑ Atividade do plano — **Diário das Máscaras (5 dias)**: registre como você muda vocabulário, postura e tom com públicos diferentes; no quinto dia, procure o padrão e onde se sente mais autêntico.
+- ⚑ **Arqueologia do Superego**: liste 5 regras que você herdou ("não se deve...") e rastreie a origem de cada uma — concorda ou só herdou?
+- ⚑ **Linha do tempo Eriksoniana**: marque as crises de identidade da sua vida e como cada uma foi (ou não) resolvida.
+- Mídia do plano: *The Century of the Self*; *O Dilema das Redes*; TED de Brené Brown.
+
+### Nó C3. O outro — relações, poder e sociedade (Módulo 3)
+
+Nós: [Imperativo Categórico](../conceitos/filosofia-imperativo-categorico.md) e [Utilitarismo](../conceitos/filosofia-utilitarismo.md) (o duelo da ética moderna), [Ética do Rosto](../conceitos/filosofia-etica-do-rosto.md) (Lévinas), [Racionalização](../conceitos/sociologia-racionalizacao.md) (os três tipos de dominação de Weber), [Habitus](../conceitos/sociologia-habitus.md) (Bourdieu: capitais, campo, violência simbólica), [Panóptico e Biopoder](../conceitos/sociologia-panoptico.md) (Foucault), [Obediência à Autoridade](../conceitos/psicologia-obediencia-autoridade.md) (Milgram e Zimbardo), [Identidade Social](../conceitos/psicologia-identidade-social.md) (Tajfel), [Dissonância Cognitiva](../conceitos/psicologia-dissonancia-cognitiva.md).
+
+- ⚑ Atividade do plano — **Mapeando Seus Capitais (Bourdieu)**: inventarie seus capitais econômico, cultural, social e simbólico — qual é o mais forte, qual o mais fraco, como isso posiciona você?
+- ⚑ **Teste de Associação Implícita (IAT)**: faça um teste no Project Implicit de Harvard (implicit.harvard.edu) e reflita: o resultado contradiz seus valores conscientes?
+- ⚑ **Análise de poder numa instituição**: numa instituição que você frequenta, onde está o poder formal e o informal? Quais discursos o legitimam? Quem ganha e quem perde?
+- Mídia do plano: *13th*; *O Experimento* (Das Experiment); TED "The Psychology of Evil" (Zimbardo).
+
+### Nó C4. O mundo — conhecimento, ciência e ideologia (Módulo 4)
+
+Nós: [Eixo Inatismo × Empirismo](../conceitos/eixo-inatismo-empirismo.md) (racionalistas contra empiristas), [Fenômeno × Númeno](../conceitos/filosofia-fenomeno-noumeno.md) (a síntese de Kant), [Falseabilidade](../conceitos/filosofia-falseabilidade.md) (Popper), [Paradigma (Kuhn)](../conceitos/filosofia-paradigma-kuhn.md) (revoluções científicas), [Vieses Cognitivos](../conceitos/psicologia-vieses-cognitivos.md) (Sistema 1 × Sistema 2), [Construção Social da Realidade](../conceitos/sociologia-construcao-social-realidade.md) (o conhecimento como produto social).
+
+- ⚑ Atividade do plano — **Teste da Falsificabilidade**: pegue 5 afirmações ouvidas na semana e pergunte "o que precisaria acontecer para isso ser falso?" — a impossível de falsificar é dogma, não argumento.
+- ⚑ **Rastreamento ideológico**: 30 minutos num veículo com posição política oposta à sua — não para concordar, mas para mapear pressupostos embutidos.
+- ⚑ **Diário de vieses (1 semana)**: toda vez que notar um viés em operação (seu ou alheio), registre o contexto e qual seria a correção racional — metacognição em ação.
+- Mídia do plano: *Behind the Curve* (terraplanistas como estudo de caso vivo de viés de confirmação); TED "The Danger of a Single Story" (Adichie).
+
+### Nó C5. O futuro — ética, tecnologia e transformação (Módulo 5)
+
+Nós: [Eixo Estrutura × Agência](../conceitos/eixo-estrutura-agencia.md) (a grande síntese do plano: habitus × má-fé, vieses × sentido — e a frase sobre a margem de liberdade), [Utilitarismo](../conceitos/filosofia-utilitarismo.md) revisitado (Singer e a ética aplicada), [Bem-estar e Sentido](../conceitos/psicologia-bem-estar-sentido.md) (Frankl e o PERMA), [Fluxo](../conceitos/psicologia-fluxo.md), [Aceleração Social](../conceitos/sociologia-aceleracao-rosa.md) (o mal-estar do tempo), [Véu da Ignorância](../conceitos/filosofia-veu-da-ignorancia.md) (justiça para o mundo que vem).
+
+- ⚑ Capstone do plano — **O Manifesto Pessoal (1–2 páginas)**: quem você é (filosofia), em que tipo de mundo vive (sociologia), o que te motiva e te limita (psicologia), como você quer agir daqui para frente (ética). "Não há certo ou errado. Há coerência ou incoerência."
+- ⚑ **Mapa Conceitual**: conecte os 10 conceitos que mais te impactaram — pelo menos 5 conexões ENTRE disciplinas diferentes.
+- ⚑ Ensaio de síntese: escolha um problema contemporâneo que te preocupa e analise-o com um conceito de cada disciplina — que ação (individual ou coletiva) seria coerente com a análise?
+- Mídia do plano: *Justice with Michael Sandel* (Harvard, aberto, eps. 1–4); TED "Flow" (Csikszentmihalyi).
+
+### Fechamento da Rota C
+
+O plano fecha com a melhor definição de sucesso possível — "você chegou ao começo": as três perguntas (O que está em jogo filosoficamente? Que estrutura social opera aqui? Que mecanismo psicológico explica isso?) viram automáticas. Conclua com o manifesto no [diário de bordo](../diario/README.md), marque a trilha como `concluida` no frontmatter e rode o atualizador. As três práticas contínuas do plano valem como regime permanente do painel: escrever perguntas e conexões, ler quem discorda, e estudar acompanhado.
+
+---
+
 ## Fechamento da trilha
 
-Uma síntese só no diário (300+ palavras, fecho das duas rotas): escolha UM fenômeno atual e analise-o girando entre as três lentes — o que cada disciplina vê e o que nenhuma vê sozinha. Depois: `status` para `concluida` — o CI regenera índice e progresso. O plano integrado fecha com a melhor definição de sucesso possível: não ter todas as respostas, mas fazer perguntas melhores.
+Uma síntese só no diário (300+ palavras, fecho da rota que você percorreu): escolha UM fenômeno atual e analise-o girando entre as três lentes — o que cada disciplina vê e o que nenhuma vê sozinha. (Se a rota foi a C, o Manifesto Pessoal do nó C5 já cumpre este papel.) Depois: `status` para `concluida` e atualizador do painel rodado. A definição de sucesso compartilhada pelas três rotas: não ter todas as respostas, mas fazer perguntas melhores.
