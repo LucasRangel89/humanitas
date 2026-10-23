@@ -37,10 +37,8 @@ theme:
         icon: material/weather-sunny
         name: Modo claro
   features:
-    # navegação em abas (o "painel" no topo)
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
+    # Menu lateral com seções expansíveis (sem abas apertadas no topo).
+    # `navigation.expand` fica desligado: só a seção ativa abre.
     - navigation.indexes
     - navigation.top
     - navigation.tracking
@@ -79,27 +77,34 @@ extra_css:
   - assets/css/dashboard.css
 extra_javascript:
   - assets/js/dashboard.js
+  - assets/js/progresso.js
+  - assets/js/registrar.js
 
 # Navegação explícita nas seções fixas. Notas novas NÃO exigem editar este
 # arquivo: elas aparecem em Conceitos (índice gerado por tema), na busca, nas
 # tags e nos links das trilhas.
 nav:
-  - Início: index.md
-  - Trilhas: trilhas/index.md
-  - Conceitos: conceitos/index.md
-  - Eixos: eixos.md
-  - Obras: obras.md
-  - Grafo: grafo.md
-  - Retenção: retencao.md
-  - Diário: diario/index.md
-  - Trechos: trechos/index.md
-  - Fichas: acervo/fichas/index.md
-  - Progresso: progresso.md
-  - Guias: docs/index.md
-  - Futuros mantenedores: docs/08-instrucoes-futuras.md
-  - Mapa das humanidades: docs/09-mapa-das-humanidades.md
-  - Ritual de estudo: docs/10-ritual-de-estudo.md
-  - Sobre: sobre.md
+  - Estudar:
+      - Início: index.md
+      - Trilhas: trilhas/index.md
+      - Conceitos: conceitos/index.md
+      - Eixos: eixos.md
+  - Acompanhar:
+      - Registrar: registrar.md
+      - Diário: diario/index.md
+      - Progresso: progresso.md
+      - Retenção: retencao.md
+  - Biblioteca:
+      - Obras: obras.md
+      - Fichas de leitura: acervo/fichas/index.md
+      - Trechos: trechos/index.md
+      - Grafo: grafo.md
+  - Projeto:
+      - Guias: docs/index.md
+      - Mapa das humanidades: docs/09-mapa-das-humanidades.md
+      - Ritual de estudo: docs/10-ritual-de-estudo.md
+      - Como manter o painel: docs/08-instrucoes-futuras.md
+      - Sobre: sobre.md
 
 extra:
   social:

@@ -77,6 +77,8 @@ from .obras import agrupar_obras, gravar_obras, cmd_obras
 
 from .retencao import calcular_retencao, gravar_retencao, cmd_retencao
 
+from .marcacao import aplicar_progresso
+
 from .auditoria import (
     _links_quebrados,
     _wikilinks,

@@ -1,5 +1,5 @@
 # Atalhos de manutenção do painel (Windows: use `python -m scripts.painel ...`).
-.PHONY: ajuda instalar testar auditar painel pendencias nova site limpar
+.PHONY: ajuda instalar testar auditar painel pendencias nova site progresso limpar
 
 ajuda:
 	@echo "make instalar  - cria .venv e instala as dependências"
@@ -10,6 +10,8 @@ ajuda:
 	@echo "make nova TIPO=conceito NOME='Habitus' TEMA=sociologia"
 	@echo "                 - cria uma nota a partir do template"
 	@echo "make site      - monta e serve o site com busca em http://127.0.0.1:8000"
+	@echo "make aplicar-progresso ARQUIVO=progresso.json"
+	@echo "                 - grava no repositório o progresso marcado no site"
 	@echo "make limpar    - remove caches e artefatos locais"
 
 instalar:
@@ -32,6 +34,10 @@ pendencias:
 # make nova TIPO=conceito NOME="Habitus" TEMA=sociologia
 nova:
 	./.venv/bin/python -m scripts.painel nova --tipo "$(TIPO)" --nome "$(NOME)" --tema "$(TEMA)"
+
+# make aplicar-progresso ARQUIVO=progresso.json  (o JSON sai do botão "Exportar" no site)
+aplicar-progresso:
+	./.venv/bin/python -m scripts.painel aplicar-progresso --arquivo "$(ARQUIVO)"
 
 site:
 	./.venv/bin/pip install -q -r requirements-docs.txt

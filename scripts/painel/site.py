@@ -90,7 +90,7 @@ def pagina_dashboard(indice: dict) -> str:
         f"    - Citações: **{p['com_trecho']} de {p['conceitos']}**",
         f"    - Fonte verificada: **{p.get('fonte_verificada',0)}**",
         "",
-        "    [Ver progresso →](progresso.md) · [Filtar pendências →](progresso.md#pendências)",
+        "    [Ver progresso →](progresso.md) · [Filtrar pendências →](progresso.md#proximas-notas-a-reescrever)",
         "",
         "-   :material-play-circle-outline:{ .lg .middle } **Comece por aqui**",
         "",
@@ -119,7 +119,7 @@ def pagina_dashboard(indice: dict) -> str:
         "",
         "    ---",
         "    " + " · ".join(
-            f"[{TEMAS.get(tema, tema)}](conceitos/index.md#{slug(TEMAS.get(tema, tema))}) ({qtd})"
+            f"[{TEMAS.get(tema, tema)}](conceitos/index.md) ({qtd})"
             for tema, qtd in sorted(temas.items(), key=lambda i: (-i[1], i[0]))
         ),
         "",
@@ -149,7 +149,7 @@ def pagina_dashboard(indice: dict) -> str:
         ok = sum(1 for c in do_tema if c['status']=="ok")
         cit = sum(1 for c in do_tema if c['tem_trecho'])
         linhas.append(
-            f"| [{TEMAS.get(tema, tema)}](conceitos/index.md#{slug(TEMAS.get(tema, tema))}) | {qtd} | {ok} | {cit} | `{barra(ok, qtd)}` |"
+            f"| [{TEMAS.get(tema, tema)}](conceitos/index.md) | {qtd} | {ok} | {cit} | `{barra(ok, qtd)}` |"
         )
     linhas += [
         "",
@@ -195,7 +195,7 @@ def pagina_dashboard(indice: dict) -> str:
             linhas.append(
                 f"| {_link_nota(c)} | {TEMAS.get(c['tema'], c['tema'])} | {c['pendencias'][0]} | [editar](conceitos/{c['arquivo']}) |"
             )
-        linhas += ["", "[Ver todas as pendências →](progresso.md#pendências)", ""]
+        linhas += ["", "[Ver todas as pendências →](progresso.md#proximas-notas-a-reescrever)", ""]
     if indice["diario"]:
         linhas += ["", "## Diário — últimas reflexões", ""]
         for e in sorted(indice["diario"], key=lambda d: d.get("data",""), reverse=True)[:3]:
@@ -401,6 +401,164 @@ def _ajustar_links_readme(destino: pathlib.Path) -> None:
             arquivo.write_text(novo, encoding="utf-8")
 
 
+REPO_URL = "https://github.com/LucasRangel89/humanitas"
+
+PASTAS_NOVA = {
+    "conceito": "conceitos",
+    "eixo": "conceitos",
+    "ficha": "acervo/fichas",
+    "trecho": "trechos",
+    "diario": "diario",
+}
+
+
+def pagina_registrar(indice: dict, guias: set[str] | None = None) -> str:
+    """Página "Registrar": criar nota, ver pendências, lembrar dos cartões.
+
+    O site é estático, então nada aqui escreve em disco: a página monta o
+    Markdown pronto e oferece (a) copiar e (b) abrir o GitHub já preenchido.
+    """
+    p = calcular_progresso(indice)
+    pendentes = sorted(
+        (c for c in indice["conceitos"] if c.get("pendencias") and c.get("status") != "ok"),
+        key=lambda c: (-len(c["pendencias"]), c["conceito"]),
+    )[:8]
+    import json as _json
+
+    guias = guias or set()
+    link_ritual = (
+        "[Guia 10](docs/10-ritual-de-estudo.md)" if "10-ritual-de-estudo.md" in guias else "Guia 10"
+    )
+    link_ci = (
+        "[Guia 06](docs/06-manutencao-e-ci.md)" if "06-manutencao-e-ci.md" in guias else "Guia 06"
+    )
+
+    config = {
+        "repo": REPO_URL,
+        "pastas": PASTAS_NOVA,
+        "temas": dict(TEMAS),
+        "hoje": __import__("datetime").date.today().isoformat(),
+    }
+
+    linhas = [
+        '<div class="humanitas-hero" markdown>',
+        "",
+        "# Registrar",
+        "",
+        "Um lugar único para **criar**, **reescrever** e **acompanhar**. "
+        "O site é um leitor: ele monta o arquivo pronto e te leva ao GitHub com "
+        "o conteúdo preenchido.",
+        "",
+        "</div>",
+        "",
+        '<div class="hum-cards" markdown>',
+        "",
+        "## 1. Criar uma nota",
+        "",
+        "Preencha os campos: o Markdown é montado na hora, no formato que a "
+        "auditoria espera. Depois **copie** ou **abra no GitHub já preenchido** "
+        "(um commit e a nota entra no painel).",
+        "",
+        "</div>",
+        "",
+        '<div class="hum-card" id="hum-criar">',
+        '  <div class="hum-form">',
+        '    <label>Tipo<select id="hum-tipo">'
+        '<option value="conceito">Conceito</option>'
+        '<option value="eixo">Eixo (grande questão)</option>'
+        '<option value="trecho">Trecho (citação)</option>'
+        '<option value="diario">Diário de bordo</option>'
+        '<option value="ficha">Ficha de leitura</option>'
+        '</select></label>',
+        '    <label>Nome<input id="hum-nome" type="text" placeholder="Ex.: Habitus" autocomplete="off"></label>',
+        '    <label>Tema<select id="hum-tema"></select></label>',
+        '    <label>Nível<select id="hum-nivel">'
+        '<option value="iniciante">iniciante</option>'
+        '<option value="entusiasta">entusiasta</option>'
+        '<option value="avancado">avancado</option></select></label>',
+        '    <label>Autor<input id="hum-autor" type="text" placeholder="Ex.: Pierre Bourdieu" autocomplete="off"></label>',
+        '    <label>Obra<input id="hum-obra" type="text" placeholder="Ex.: O Senso Prático" autocomplete="off"></label>',
+        '    <label id="hum-campo-ano" hidden>Ano<input id="hum-ano" type="text" placeholder="1980" autocomplete="off"></label>',
+        '    <label id="hum-campo-cap" hidden>Capítulo<input id="hum-capitulo" type="text" placeholder="3" autocomplete="off"></label>',
+        '    <label id="hum-campo-pag" hidden>Página<input id="hum-pagina" type="text" placeholder="94" autocomplete="off"></label>',
+        '  </div>',
+        '  <p class="hum-arquivo">Arquivo: <code id="hum-caminho">conceitos/…</code></p>',
+        '  <textarea id="hum-saida" class="hum-saida" rows="18" spellcheck="false" readonly></textarea>',
+        '  <div class="hum-acoes">',
+        '    <button type="button" class="hum-btn" data-acao="copiar">Copiar Markdown</button>',
+        '    <a class="hum-btn hum-btn-primario" id="hum-github" href="#" target="_blank" rel="noopener">Abrir no GitHub preenchido</a>',
+        '    <span class="hum-dica" id="hum-dica"></span>',
+        '  </div>',
+        '  <p class="hum-nota">No computador, o mesmo resultado sai de '
+        '<code>make nova TIPO=conceito NOME="Habitus" TEMA=sociologia</code> — '
+        'que já cria o arquivo e roda a auditoria.</p>',
+        '</div>',
+        "",
+        '<div class="hum-cards" markdown>',
+        "",
+        "## 2. Reescrever (e registrar) uma nota",
+        "",
+        f"Hoje: **{p['ok']} de {p['conceitos']} notas** no padrão-ouro. "
+        "As mais perto de virar `ok` estão abaixo — cada linha abre a nota aqui "
+        "e o arquivo no GitHub para edição.",
+        "",
+        "</div>",
+        "",
+        "| Nota | Tema | O que falta | Ações |",
+        "|---|---|---|---|",
+    ]
+    for c in pendentes:
+        github = f"{REPO_URL}/edit/main/conceitos/{c['arquivo']}"
+        linhas.append(
+            f"| [{c['conceito']}](conceitos/{c['arquivo']}) "
+            f"| {TEMAS.get(c['tema'], c['tema'])} "
+            f"| {c['pendencias'][0]} "
+            f"| [editar no GitHub]({github}) |"
+        )
+    linhas += [
+        "",
+        f"> O roteiro dos 90 minutos para transformar uma nota em `ok` está no "
+        f"{link_ritual}.",
+        "",
+        '<div class="hum-cards" markdown>',
+        "",
+        "## 3. Cartões (Anki)",
+        "",
+        "Não existe um cadastro separado de cartões: **o cartão nasce da nota**. "
+        "A pergunta é o nome do conceito; a resposta é a seção *Definição em uma "
+        "frase*. Ficha de leitura e trecho também geram cartões quando têm "
+        "definição ou citação.",
+        "",
+        "```bash",
+        "make painel        # regenera flashcards.csv (importar no Anki)",
+        "```",
+        "",
+        f"Hoje: **{p['conceitos']} cartões** de definição, mais os de aplicação e "
+        f"de eixo. Veja a [retenção](retencao.md) e o {link_ci} "
+        "para o passo de importação.",
+        "",
+        "## 4. Progresso das trilhas",
+        "",
+        "Nas páginas de trilha, cada nó tem uma caixa clicável. A marcação fica "
+        "**neste navegador** (localStorage) — é rascunho de progresso, não commit. "
+        "Para gravar no repositório:",
+        "",
+        "1. marque os nós estudados na página da trilha;",
+        "2. clique em **Exportar progresso** (baixa `progresso.json`);",
+        "3. rode `make aplicar-progresso ARQUIVO=progresso.json`;",
+        "4. `make painel` e commite — o `progresso.md` passa a contar os nós.",
+        "",
+        "Enquanto não sincronizar, o painel mostra o progresso real do "
+        "repositório e as trilhas mostram o **seu** progresso local, lado a lado.",
+        "",
+        "</div>",
+        "",
+        f'<script type="application/json" id="hum-config">{_json.dumps(config, ensure_ascii=False)}</script>',
+        "",
+    ]
+    return "\n".join(linhas)
+
+
 def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> pathlib.Path:
     """Monta a pasta de fontes do site só com o que pode ser público.
 
@@ -425,6 +583,10 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
         (destino / nome).write_text(ler(raiz / nome), encoding="utf-8")
 
     (destino / "index.md").write_text(pagina_dashboard(indice), encoding="utf-8")
+    guias = {p.name for p in (raiz / "docs").glob("*.md")} if (raiz / "docs").exists() else set()
+    (destino / "registrar.md").write_text(
+        pagina_registrar(indice, guias=guias), encoding="utf-8"
+    )
     (destino / "eixos.md").write_text(pagina_eixos(indice), encoding="utf-8")
     (destino / "tags.md").write_text(
         "# Tags\n\nTodas as etiquetas do painel, geradas a partir do frontmatter das notas.\n\n"
@@ -471,14 +633,12 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
             ler(readme) if readme.exists() else texto_padrao, encoding="utf-8"
         )
 
-    # assets de UI (css/js) e indices para o frontend
-    for asset in ["docs/assets/css/dashboard.css", "docs/assets/js/dashboard.js"]:
-        src = raiz / asset
-        if src.exists():
-            dst = destino / asset.replace("docs/", "")
-            dst.parent.mkdir(parents=True, exist_ok=True)
-            import shutil
-            shutil.copy2(src, dst)
+    # assets de UI (todo o docs/assets: css, js, imagens)
+    origem_assets = raiz / "docs" / "assets"
+    if origem_assets.exists():
+        shutil.copytree(
+            origem_assets, destino / "assets", dirs_exist_ok=True,
+        )
     # indices JSON para fetch no JS
     if (raiz / "indices").exists():
         import shutil

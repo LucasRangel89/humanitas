@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 
 import pytest
 
@@ -513,13 +514,18 @@ def test_site_nao_publica_texto_integral_mesmo_sem_ficha(mini_repo: pathlib.Path
 
 
 def test_site_e_idempotente(mini_repo: pathlib.Path):
+    def sem_horario(texto: str) -> str:
+        # a home carrega o horário de geração; comparar sem ele evita teste instável
+        return re.sub(r"Gerado em \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}", "Gerado em —", texto)
+
     painel.main(["--raiz", str(mini_repo), "site"])
-    primeiro = (mini_repo / "site-src" / "index.md").read_text(encoding="utf-8")
+    primeiro = sem_horario((mini_repo / "site-src" / "index.md").read_text(encoding="utf-8"))
     sobra = mini_repo / "site-src" / "arquivo-velho.md"
     sobra.write_text("lixo\n", encoding="utf-8")
     painel.main(["--raiz", str(mini_repo), "site"])
     assert not sobra.exists()  # reconstrói do zero
-    assert (mini_repo / "site-src" / "index.md").read_text(encoding="utf-8") == primeiro
+    segundo = sem_horario((mini_repo / "site-src" / "index.md").read_text(encoding="utf-8"))
+    assert segundo == primeiro
 
 
 # ---------------------------------------------------------------------------
@@ -812,3 +818,95 @@ def test_site_gate_bloqueia_com_erro(mini_repo: pathlib.Path):
 def test_site_gate_passou_sem_erro(mini_repo: pathlib.Path):
     assert painel.main(["--raiz", str(mini_repo), "site"]) == 0
 
+
+
+# ---------------------------------------------------------------------------
+# Progresso marcado no site -> trilhas (aplicar-progresso)
+# ---------------------------------------------------------------------------
+
+
+def test_aplicar_progresso_marca_nos_e_avisa_trilha_inexistente(mini_repo: pathlib.Path):
+    dados = {"versao": 1, "trilhas": {"sociologia-teste": [0, 1], "nao-existe": [0]}}
+    mudancas, avisos = painel.aplicar_progresso(dados, mini_repo, gravar=True)
+    texto = (mini_repo / "trilhas" / "sociologia-teste.md").read_text(encoding="utf-8")
+    assert "1. [x]" in texto and "2. [x]" in texto and "3. [ ]" in texto
+    assert any("sociologia-teste" in m for m in mudancas)
+    assert any("nao-existe" in a for a in avisos)
+    # ainda não concluiu todos os nós: o status não muda
+    assert "status: em-andamento" in texto
+
+
+def test_aplicar_progresso_conclui_trilha_e_e_idempotente(mini_repo: pathlib.Path):
+    dados = {"versao": 1, "trilhas": {"sociologia-teste": [0, 1, 2]}}
+    mudancas, _ = painel.aplicar_progresso(dados, mini_repo, gravar=True)
+    texto = (mini_repo / "trilhas" / "sociologia-teste.md").read_text(encoding="utf-8")
+    assert texto.count("1. [x]") == 1 and "[ ]" not in texto
+    assert "status: concluida" in texto
+    assert any("concluida" in m for m in mudancas)
+
+    # segunda aplicação não muda nada
+    mudancas2, avisos2 = painel.aplicar_progresso(dados, mini_repo, gravar=True)
+    assert mudancas2 == []
+    assert (mini_repo / "trilhas" / "sociologia-teste.md").read_text(encoding="utf-8") == texto
+
+
+def test_aplicar_progresso_simulacao_nao_grava(mini_repo: pathlib.Path):
+    antes = (mini_repo / "trilhas" / "sociologia-teste.md").read_text(encoding="utf-8")
+    mudancas, _ = painel.aplicar_progresso(
+        {"trilhas": {"sociologia-teste": [1, 2]}}, mini_repo, gravar=False
+    )
+    assert mudancas
+    assert (mini_repo / "trilhas" / "sociologia-teste.md").read_text(encoding="utf-8") == antes
+
+
+def test_cli_aplicar_progresso(mini_repo: pathlib.Path, tmp_path: pathlib.Path, capsys):
+    arquivo = mini_repo / "progresso.json"
+    arquivo.write_text('{"versao": 1, "trilhas": {"sociologia-teste": [1]}}', encoding="utf-8")
+    assert painel.main(["--raiz", str(mini_repo), "aplicar-progresso", "--arquivo", str(arquivo), "--simular"]) == 0
+    saida = capsys.readouterr().out
+    assert "simulação" in saida
+    trilha = mini_repo / "trilhas" / "sociologia-teste.md"
+    assert "2. [x]" not in trilha.read_text(encoding="utf-8")
+
+    assert painel.main(["--raiz", str(mini_repo), "aplicar-progresso", "--arquivo", str(arquivo)]) == 0
+    assert "2. [x]" in trilha.read_text(encoding="utf-8")
+
+
+def test_cli_aplicar_progresso_sem_arquivo_falha(mini_repo: pathlib.Path, capsys):
+    assert painel.main(["--raiz", str(mini_repo), "aplicar-progresso"]) == 1
+    assert "Informe o arquivo" in capsys.readouterr().out
+
+
+# ---------------------------------------------------------------------------
+# Página "Registrar" (site)
+# ---------------------------------------------------------------------------
+
+
+def test_site_gera_pagina_registrar_com_formulario(mini_repo: pathlib.Path):
+    painel.montar_site_src(mini_repo)
+    texto = (mini_repo / "site-src" / "registrar.md").read_text(encoding="utf-8")
+    assert 'id="hum-criar"' in texto
+    assert 'id="hum-config"' in texto
+    assert '"temas"' in texto and "sociologia" in texto
+    assert "aplicar-progresso" in texto
+    assert "## 2. Reescrever" in texto
+    assert "Abrir no GitHub preenchido" in texto
+
+
+def test_pagina_registrar_lista_pendencia_com_link_de_edicao(mini_repo: pathlib.Path):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    nota.write_text(
+        nota.read_text(encoding="utf-8").replace("status: ok", "status: rascunho"),
+        encoding="utf-8",
+    )
+    painel.montar_site_src(mini_repo)
+    texto = (mini_repo / "site-src" / "registrar.md").read_text(encoding="utf-8")
+    assert "edit/main/conceitos/sociologia-habitus.md" in texto
+
+
+def test_site_copia_assets_js(mini_repo: pathlib.Path):
+    pasta = mini_repo / "docs" / "assets" / "js"
+    pasta.mkdir(parents=True, exist_ok=True)
+    (pasta / "progresso.js").write_text("// teste\n", encoding="utf-8")
+    painel.montar_site_src(mini_repo)
+    assert (mini_repo / "site-src" / "assets" / "js" / "progresso.js").exists()

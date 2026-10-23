@@ -13,6 +13,7 @@ python -m scripts.painel progresso   # regenera progresso.md + bloco de progress
 python -m scripts.painel flashcards  # gera flashcards.csv com GUID estável (Anki)
 python -m scripts.painel auditar     # links, metadados, duplicados, órfãs, seções ausentes
 python -m scripts.painel tudo        # índice + tabela + progresso + flashcards
+python -m scripts.painel aplicar-progresso --arquivo progresso.json  # marcação feita no site
 python -m scripts.painel nova        # cria o esqueleto de uma nota a partir do template
 python -m scripts.painel pendencias  # o que falta em cada nota para virar padrão-ouro
 python -m scripts.painel afirmacoes # gera relatorio-afirmacoes.md para conferência manual
@@ -145,22 +146,51 @@ não de navegação. Nada disso é editado à mão: mudou a nota, mudou o painel
 | Página | O que é |
 |---|---|
 | `index.md` | Painel inicial (dashboard) |
+| `registrar.md` | **Registrar**: monta uma nota nova, lista pendências, cartões e progresso |
 | `trilhas/index.md` | Trilhas com progresso, status e ordem de percurso |
 | `conceitos/index.md` | Notas agrupadas por tema, com ✔/○ por estado |
 | `eixos.md` | Mapa dos debates, com a pergunta de cada eixo |
 | `sobre.md` | O `README.md` do repositório |
 | `tags.md` | Índice completo de etiquetas |
 
-### Abas e navegação
+### Menu lateral em quatro grupos
 
-O `mkdocs.yml` tem `navigation.tabs` (+ `sticky`), `navigation.sections` e
-`navigation.indexes`, com um `nav` explícito para as seções fixas: Início ·
-Trilhas · Conceitos · Eixos · Diário · Trechos · Fichas · Progresso · Guias · Sobre.
+O `mkdocs.yml` **não usa `navigation.tabs`**: as seções ficam no menu lateral,
+agrupadas por intenção, e só o grupo da página atual abre.
+
+| Grupo | Páginas |
+|---|---|
+| **Estudar** | Início · Trilhas · Conceitos · Eixos |
+| **Acompanhar** | Registrar · Diário · Progresso · Retenção |
+| **Biblioteca** | Obras · Fichas · Trechos · Grafo |
+| **Projeto** | Guias · Mapa das humanidades · Ritual de estudo · Como manter · Sobre |
+
+A regra de ouro: **quem só estuda não precisa abrir "Projeto"**. Guias,
+manutenção e CI vivem lá; o caminho de leitura cabe numa tela.
 
 **Uma nota nova não exige editar o `mkdocs.yml`**: ela aparece no índice de
 Conceitos (gerado por tema), na busca, nas tags e nos links das trilhas. O `nav`
 só lista as seções fixas — e há um teste que garante que todo destino do `nav`
 existe no site (senão o build falha).
+
+### Progresso e criação no próprio site
+
+Duas coisas deixaram de exigir terminal:
+
+1. **Marcar progresso** — nas páginas de trilha as caixas viram clicáveis (o
+   Material gera `<input disabled>`; o `assets/js/progresso.js` reabilita). A
+   marcação fica no `localStorage` do navegador. O botão **Exportar progresso**
+   baixa `progresso.json`; `make aplicar-progresso ARQUIVO=progresso.json` grava
+   os nós em `trilhas/<slug>.md`, ajusta o `status` (`em-andamento` ⇄
+   `concluida`) e é idempotente (`--simular` mostra o que mudaria).
+2. **Criar/reescrever nota** — a página **Registrar** monta o Markdown no
+   formato da auditoria (frontmatter + corpo-semente por tipo), com **Copiar
+   Markdown** e **Abrir no GitHub preenchido** (`/new/main/<pasta>?filename=…&value=…`).
+   O nome do arquivo é o mesmo que `make nova` produziria — o site nunca escreve
+   no repositório, só prepara o commit.
+
+O vaivém é sempre: site → arquivo local → comando → `make painel` → commit.
+Nada no site altera o repositório sozinho.
 
 ### O que entra no site
 
@@ -168,7 +198,8 @@ existe no site (senão o build falha).
 |---|---|
 | `conceitos/`, `trilhas/`, `diario/`, `trechos/` | texto integral do acervo (`acervo/*.md`) |
 | `acervo/fichas/` (produção própria) | `docs/anexos/` (materiais de terceiros) |
-| `README.md` (como *Sobre*), `progresso.md`, `docs/`, licenças | `scripts/`, `tests/`, `.github/`, `notebooks/` |
+| `README.md` (como *Sobre*), `progresso.md`, `docs/` (sem `anexos/`), licenças | `scripts/`, `tests/`, `.github/`, `notebooks/` |
+| `docs/assets/` inteiro (css, js e imagens) | `site-src/`, `site/`, `progresso.json` (local) |
 
 O tema ainda traz busca em português (`search: lang: pt`), filtro por tags
 (`plugins: tags`), modo claro/escuro e link para o GitHub.
@@ -248,7 +279,8 @@ scripts/painel.py
 ├── scaffold (nova: conceito, eixo, ficha, trecho, diário)
 ├── pendências (pendencias: checklist do padrão-ouro)
 ├── site (monta site-src/ sem acervo nem anexos)
-└── comandos (indice, tabela, progresso, flashcards, auditar, tudo, nova, pendencias, site)
+├── marcacao (aplicar-progresso: progresso exportado pelo site → trilhas)
+└── comandos (indice, tabela, progresso, flashcards, auditar, tudo, nova, pendencias, site, aplicar-progresso)
 tests/
 ├── conftest.py   (mini-repositório válido como fixture)
 └── test_painel.py (testes de parsing, auditoria, índice, progresso, flashcards, scaffold, site e afirmações)

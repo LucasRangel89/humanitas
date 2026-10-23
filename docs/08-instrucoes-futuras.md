@@ -14,6 +14,8 @@
 | Lugar | O que faz | Quando mexer |
 |---|---|---|
 | `scripts/painel/` | CLI que gera índices, progresso, flashcards, grafo, obras, retenção e site | PRs de funcionalidade |
+| `scripts/painel/marcacao.py` | Aplica nas trilhas o `progresso.json` exportado pelo site (idempotente) | PRs de funcionalidade |
+| `docs/assets/js/` | `progresso.js` (marcação local das trilhas) e `registrar.js` (formulário → Markdown/GitHub) | PRs de usabilidade |
 | `templates/` | Modelos para `nova` | Ao adicionar campo novo |
 | `docs/06-manutencao-e-ci.md` | Como usar `make painel` e CI | Ao mudar workflow |
 | `docs/07-rumos-e-proximos-passos.md` | Backlog priorizado | Ao fechar/entregar marco |
@@ -55,6 +57,10 @@ python -m scripts.painel grafo       # indices/grafo.json
 python -m scripts.painel obras       # indices/obras.json
 python -m scripts.painel retencao    # indices/retencao.json
 python -m scripts.painel site        # site-src/ (bloqueia se auditar falhar)
+
+# progresso marcado no site (botão "Exportar progresso" nas trilhas)
+python -m scripts.painel aplicar-progresso --arquivo progresso.json --simular
+make aplicar-progresso ARQUIVO=progresso.json   # grava + depois `make painel`
 
 # tudo + idempotência
 python -m scripts.painel tudo
