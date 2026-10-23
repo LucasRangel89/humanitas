@@ -163,6 +163,7 @@ def progresso_trilha(texto: str) -> dict:
     itens = REGEX_CHECKBOX.findall(texto)
     if itens:
         total = len(itens)
+        nos = [limpar_markdown(txt).strip() for _, txt in itens]
         feitos = sum(1 for marca, _ in itens if marca.strip().lower() == "x")
         proximo = next(
             (limpar_markdown(txt).strip() for marca, txt in itens if marca.strip() != "x"),
@@ -171,10 +172,12 @@ def progresso_trilha(texto: str) -> dict:
         formato = "checkbox"
     else:
         secoes_no = REGEX_SECAO_NO.findall(texto)
+        nos = [limpar_markdown(txt).strip() for txt in secoes_no]
         total, feitos = len(secoes_no), 0
         proximo = limpar_markdown(secoes_no[0]).strip() if secoes_no else ""
         formato = "secoes"
     return {
+        "nos": nos,
         "nos_total": total,
         "nos_concluidos": feitos,
         "formato": formato,

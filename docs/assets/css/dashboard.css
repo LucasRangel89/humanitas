@@ -88,3 +88,174 @@
 .obra-item .autor { font-size: 0.8rem; opacity: 0.7; }
 .obra-item .conceitos-tags { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-top: 0.5rem; }
 .obra-item .tag { font-size: 0.7rem; background: white; padding: 0.2rem 0.5rem; border-radius: 10px; border: 1px solid #ddd; }
+
+/* ------------------------------------------------------------------ */
+/* Registrar e progresso local                                        */
+/* ------------------------------------------------------------------ */
+.hum-cards { margin: 2rem 0 0.5rem; }
+.hum-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin: 0.8rem 0 2rem;
+  background: var(--md-default-bg-color);
+}
+.hum-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem 1rem;
+}
+.hum-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+  gap: 0.3rem;
+}
+.hum-form input,
+.hum-form select {
+  font-size: 0.9rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.hum-form input:focus,
+.hum-form select:focus { outline: 2px solid var(--md-primary-fg-color); border-color: transparent; }
+.hum-arquivo { font-size: 0.8rem; opacity: 0.8; margin: 0.9rem 0 0.4rem; }
+.hum-saida {
+  width: 100%;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+  resize: vertical;
+}
+.hum-acoes { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin-top: 0.7rem; }
+.hum-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+  border: 1px solid var(--md-primary-fg-color);
+  background: transparent;
+  color: var(--md-primary-fg-color);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.hum-btn:hover { background: var(--md-primary-fg-color); color: white; }
+.hum-btn-primario { background: var(--md-primary-fg-color); color: white; }
+.hum-btn-primario:hover { filter: brightness(1.1); color: white; }
+.hum-btn-sutil { border-color: var(--md-default-fg-color--lightest); color: var(--md-default-fg-color--light); }
+.hum-btn-off { opacity: 0.45; pointer-events: none; }
+.hum-dica { font-size: 0.72rem; opacity: 0.75; }
+.hum-nota { font-size: 0.72rem; opacity: 0.75; margin-top: 0.6rem; }
+.hum-nota code { font-size: 0.7rem; }
+
+/* progresso local nas páginas de trilha */
+.hum-painel {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 0 8px 8px 0;
+  padding: 0.8rem 1rem;
+  margin: 1.2rem 0 1.4rem;
+  background: var(--md-code-bg-color);
+}
+.hum-painel-topo { display: flex; justify-content: space-between; align-items: baseline; font-size: 0.85rem; }
+.hum-barra {
+  height: 8px;
+  border-radius: 6px;
+  background: var(--md-default-fg-color--lightest);
+  overflow: hidden;
+  margin: 0.5rem 0 0.7rem;
+}
+.hum-barra span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--md-primary-fg-color);
+  transition: width 0.25s ease;
+}
+.task-list-item.hum-feito > label .task-list-indicator::after { opacity: 1; }
+.task-list-item.hum-feito { color: var(--md-default-fg-color--light); }
+.task-list-item.hum-feito strong { text-decoration: line-through; text-decoration-thickness: 1px; }
+
+/* --- Central de progresso (página Registrar) ------------------------------- */
+.hum-tabela-progresso {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.4rem 0 0.8rem;
+  font-size: 0.86rem;
+}
+.hum-tabela-progresso th,
+.hum-tabela-progresso td {
+  border: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.4rem 0.5rem;
+  vertical-align: middle;
+  text-align: left;
+}
+.hum-tabela-progresso th {
+  color: var(--md-default-fg-color--light);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.hum-tabela-progresso tr.hum-linha-ativa td {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 7%, transparent);
+}
+.hum-mini-barra {
+  display: inline-block;
+  width: 5.5rem;
+  height: 0.35rem;
+  margin-right: 0.45rem;
+  border-radius: 999px;
+  background: var(--md-default-fg-color--lightest);
+  overflow: hidden;
+  vertical-align: middle;
+}
+.hum-mini-barra > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--md-primary-fg-color);
+}
+.hum-mini-contagem {
+  color: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.78rem;
+}
+.hum-mini-acao {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+.hum-comando {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.3rem 0 0.6rem;
+}
+.hum-comando code {
+  flex: 1 1 16rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--md-code-bg-color);
+  border-radius: 0.3rem;
+  font-size: 0.74rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}

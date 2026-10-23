@@ -16,6 +16,8 @@ from .afirmacoes import cmd_afirmacoes
 from .grafo import cmd_grafo
 from .obras import cmd_obras
 from .retencao import cmd_retencao
+from .marcacao import aplicar_progresso
+import json as _json
 
 # ---------------------------------------------------------------------------
 # Comandos
@@ -117,6 +119,39 @@ def cmd_tudo(raiz: pathlib.Path) -> int:
     return 0
 
 
+def cmd_aplicar_progresso(raiz: pathlib.Path, **opcoes) -> int:
+    """Grava nas trilhas o progresso exportado pelo site (botão "Exportar")."""
+    arquivo = (opcoes.get("arquivo") or "").strip()
+    if not arquivo:
+        print(
+            "Informe o arquivo exportado pelo site:\n"
+            "  python -m scripts.painel aplicar-progresso --arquivo progresso.json"
+        )
+        return 1
+    caminho = pathlib.Path(arquivo)
+    if not caminho.is_absolute():
+        caminho = (pathlib.Path.cwd() / caminho).resolve()
+    if not caminho.exists():
+        print(f"Arquivo não encontrado: {caminho}")
+        return 1
+    try:
+        dados = _json.loads(caminho.read_text(encoding="utf-8"))
+    except Exception as exc:  # JSON inválido
+        print(f"JSON inválido em {caminho.name}: {exc}")
+        return 1
+
+    simular = bool(opcoes.get("simular"))
+    mudancas, avisos = aplicar_progresso(dados, raiz, gravar=not simular)
+    print("# Progresso do site → trilhas")
+    _imprimir_lista("Mudanças" + (" (simulação, nada gravado)" if simular else ""), mudancas)
+    _imprimir_lista("Avisos", avisos)
+    if simular and mudancas:
+        print("\nRode sem --simular para gravar, depois `make painel` e commite.")
+    elif mudancas:
+        print("\nAgora rode `make painel` para atualizar índice, progresso e cartões.")
+    return 0
+
+
 COMANDOS = {
     "indice": cmd_indice,
     "tabela": cmd_tabela,
@@ -131,6 +166,7 @@ COMANDOS = {
     "grafo": cmd_grafo,
     "obras": cmd_obras,
     "retencao": cmd_retencao,
+    "aplicar-progresso": cmd_aplicar_progresso,
 }
 
 
@@ -172,12 +208,16 @@ def main(argv: list[str] | None = None) -> int:
     grupo.add_argument("--forcar", action="store_true", help="Sobrescrever arquivo existente (nova).")
     grupo.add_argument("--limite", type=int, help="Máximo de notas listadas (pendencias).")
     grupo.add_argument("--prontas", action="store_true", help="Incluir as notas já prontas (pendencias).")
+    grupo.add_argument("--arquivo", help="Arquivo JSON do progresso exportado pelo site (aplicar-progresso).")
+    grupo.add_argument("--simular", action="store_true", help="Só mostrar o que mudaria (aplicar-progresso).")
 
     args = parser.parse_args(argv)
     raiz = pathlib.Path(args.raiz).resolve()
     comando = COMANDOS[args.comando]
     if args.comando == "auditar":
         return comando(raiz, estrito=args.estrito)  # type: ignore[call-arg]
+    if args.comando == "aplicar-progresso":
+        return comando(raiz, arquivo=args.arquivo, simular=args.simular)  # type: ignore[call-arg]
     if args.comando in ("nova", "pendencias"):
         opcoes = {
             chave: getattr(args, chave)

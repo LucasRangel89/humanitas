@@ -77,6 +77,16 @@ A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridad
 
 O guia que explica **como** transformar uma leitura em nota `ok` (o ritual de 90 minutos, os cinco testes e os anti-padrões) é o [Guia 10](docs/10-ritual-de-estudo.md).
 
+## O que dá para fazer direto no site
+
+O site (MkDocs) não é só leitura:
+
+- **Marcar progresso** — nas páginas de trilha as caixas são clicáveis; a marcação fica no navegador. A **central de progresso** (em *Registrar*) exporta `progresso.json` (backup que dá para reimportar), baixa um resumo `.md` legível e copia o comando. No computador, `make aplicar-progresso ARQUIVO=progresso.json` grava os nós nas trilhas e ajusta o `status`.
+- **Registrar uma nota** — a página **Registrar** monta o Markdown no formato que a auditoria espera e oferece **Copiar** ou **Abrir no GitHub já preenchido**. O mesmo resultado sai de `make nova`.
+- **Acompanhar** — painel inicial com o que falta, pendências por nota, cartões (Anki) e retenção.
+
+O menu lateral tem quatro grupos — **Estudar**, **Acompanhar**, **Biblioteca** e **Projeto** — e só o grupo da página atual abre. Quem está estudando não precisa ver guias nem manutenção: elas ficam em *Projeto*.
+
 ## Como adicionar um livro novo (resumo rápido)
 
 O fluxo completo está explicado em `docs/02-fluxo-de-extracao.md`, mas em resumo são cinco passos:

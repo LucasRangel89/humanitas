@@ -14,6 +14,7 @@ flashcards.csv
 *.zip
 relatorio-problemas.md
 relatorio-afirmacoes.md
+progresso.json
 indices/tabela-temas.md
 
 # --- Site (gerado a partir de `python -m scripts.painel site`) ---------------
