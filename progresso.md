@@ -6,9 +6,9 @@
 
 | Indicador | Valor |
 |---|---|
-| Notas de conceito | 86 |
+| Notas de conceito | 87 |
 | Notas reescritas (`status: ok`) | 0 |
-| Notas em rascunho | 86 |
+| Notas em rascunho | 87 |
 | Notas com citação de apoio | 0 |
 | Notas com fonte primária declarada | 64 |
 | Notas com fonte verificada | 0 |
@@ -38,8 +38,8 @@
 | Tema | Notas | ok | rascunho | Com citação | Fonte primária | Fonte verificada |
 |---|---|---|---|---|---|---|
 | Sociologia | 20 | 0 | 20 | 0 | 12 | 0 |
+| Psicologia | 16 | 0 | 16 | 0 | 9 | 0 |
 | Filosofia | 15 | 0 | 15 | 0 | 12 | 0 |
-| Psicologia | 15 | 0 | 15 | 0 | 9 | 0 |
 | Economia | 8 | 0 | 8 | 0 | 7 | 0 |
 | Antropologia | 7 | 0 | 7 | 0 | 6 | 0 |
 | Ciência Política | 7 | 0 | 7 | 0 | 6 | 0 |
@@ -64,7 +64,7 @@ As notas com mais pendências primeiro. Reescrever uma nota é o que a move para
 | Inatismo × Empirismo | Filosofia | 5 — explicação com as suas palavras |
 | Livre-arbítrio × Determinismo | Filosofia | 5 — explicação com as suas palavras |
 | Mente × Corpo | Filosofia | 5 — explicação com as suas palavras |
-| … | | mais 74 nota(s) |
+| … | | mais 75 nota(s) |
 
 ## Marcos de decisão
 

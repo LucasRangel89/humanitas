@@ -6,8 +6,9 @@ autor_origem: "Stanley Milgram e Philip Zimbardo"
 tema: "psicologia"
 tipo: "conceito"
 nivel: "iniciante"
+eixos: ["eixo-individuo-grupo"]
 status: "rascunho"
-tags: [psicologia, social, milgram, obediencia]
+tags: [psicologia, social, milgram, obediencia, psicologia-social]
 fonte_verificada: nao
 ---
 # Conceito — Obediência à Autoridade

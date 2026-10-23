@@ -269,9 +269,10 @@
     },
     "Sem obra": {
       "autor": "Desconhecido",
-      "total": 5,
+      "total": 6,
       "temas": {
         "historia": 1,
+        "psicologia": 1,
         "ciencia-politica": 1,
         "geografia": 1,
         "economia": 1,
@@ -282,6 +283,11 @@
           "conceito": "Continuidade × Ruptura",
           "arquivo": "eixo-continuidade-ruptura.md",
           "tema": "historia"
+        },
+        {
+          "conceito": "Indivíduo × Grupo",
+          "arquivo": "eixo-individuo-grupo.md",
+          "tema": "psicologia"
         },
         {
           "conceito": "Liberdade × Igualdade",
@@ -1175,12 +1181,13 @@
       ]
     },
     "Desconhecido": {
-      "total": 5,
+      "total": 6,
       "obras": [
         "Sem obra"
       ],
       "conceitos": [
         "Continuidade × Ruptura",
+        "Indivíduo × Grupo",
         "Liberdade × Igualdade",
         "Local × Global",
         "Mercado × Estado",
@@ -1697,5 +1704,5 @@
       ]
     }
   },
-  "atualizado_em": "2026-10-23T01:34:21"
+  "atualizado_em": "2026-10-23T01:36:27"
 }

@@ -36,7 +36,7 @@
 | Ciência Política | `ciencia-politica` | 7 | 0 | 1 | Ativo (aberto em 2026-10-23) |
 | Economia | `economia` | 7 | 0 | 1 | Ativo (aberto em 2026-10-23) |
 | Integrada | `integrada` | 0 | 0 | 1 | Ativo (só trilha) |
-| Psicologia Social | `psicologia-social` | 0 | 0 | 0 | **Vazio — decisão pendente (§4.1.6)** |
+| Psicologia Social | *(rebaixado a tag)* | — | — | — | **Resolvido em 2026-10-23: virou tag + eixo Indivíduo × Grupo (§4.1.6)** |
 
 *Tabela de 2026-10-23, depois da primeira onda de expansão. Antes dela, os cinco temas
 da primeira onda estavam todos vazios.*
@@ -107,7 +107,7 @@ A taxonomia é viva, mas com portas de entrada e de saída explícitas:
 | tag → eixo | a tag aparece em 5+ notas de 2+ temas e organiza um debate | `genero` → eixo Corpo × Sociedade |
 | eixo → tema | o eixo acumula 8 conceitos próprios e um método | Natureza × Cultura → Antropologia |
 | tema → pausado | 3 meses sem nota nova e sem nó concluído | Economia, se ficar só no desejo |
-| tema → eixo/tag | nunca passou de 3 notas e não tem trilha em 6 meses | Psicologia Social (ver §4.1.6) |
+| tema → eixo/tag | nunca passou de 3 notas e não tem trilha em 6 meses | **Psicologia Social → tag + eixo Indivíduo × Grupo (feito em 2026-10-23)** |
 
 Registre a mudança neste guia e rode `make painel`. Taxonomia sem registro de decisão
 vira preferência pessoal — o mesmo princípio da tabela de decisões do Guia 07.
@@ -262,19 +262,21 @@ Ordem recomendada, do mais barato e conectado ao mais caro:
 - **Cuidado:** não duplicar Sociologia. "Desigualdade" e "trabalho" já existem lá; aqui
   o recorte é distribuição, incentivo e mensuração.
 
-#### 4.1.6 Psicologia Social — `psicologia-social` (decisão pendente)
+#### 4.1.6 Psicologia Social — `psicologia-social` (resolvido: virou tag + eixo)
 
-Hoje há notas de identidade social, obediência e dissonância **dentro de** Psicologia.
-Duas saídas honestas:
+Havia 3 notas de psicologia social dispersas dentro de Psicologia (identidade social,
+obediência, dissonância) e 0 trilhas — abaixo do limite de densidade de 8 notas.
 
-- **Promover:** 8 notas próprias (conformidade, atitudes, influência, grupos,
-  preconceito, relações intergrupais, comportamento pró-social, self) + trilha. Aí vira
-  tema de verdade.
-- **Rebaixar:** vira tag `psicologia-social` e um eixo (Indivíduo × Grupo). É o mais
-  econômico e o que a regra do zero recomenda enquanto houver menos de 8 notas.
+**Decisão tomada em 2026-10-23: rebaixar.** O tema saiu de `TEMAS` (não tem mais linha
+na tabela), as 3 notas ganharam a tag `psicologia-social` e o campo
+`eixos: ["eixo-individuo-grupo"]`, e o eixo **Indivíduo × Grupo** foi criado em
+`conceitos/eixo-individuo-grupo.md` como nova bússola do tema Psicologia.
 
-Escolha e **registre a decisão**. Hoje o tema existe no código e não existe no estudo —
-o pior dos dois mundos.
+Por que rebaixar e não promover: promover custaria 8 notas novas + trilha (~18 h) e
+abriria um sexto tema simultâneo, contra o teto de dois. O conteúdo de psicologia social
+não se perde — ele passa a ser uma **lente** dentro de Psicologia, visível por tag e no
+grafo. **Gatilho de promoção:** se a tag chegar a 8 notas com fonte primária, a decisão
+se inverte e o tema volta (é o caminho tag → eixo → tema do §2.2).
 
 ### 4.2 Segunda onda — novos temas candidatos
 
@@ -562,7 +564,7 @@ de ser intenção.
 | 2026-10-23 | Regra do zero implementada no gerador da tabela (temas vazios vão para o rodapé "Planejados") | `scripts/painel/indice.py` + 2 testes | se a tabela esconder tema que está sendo estudado |
 | 2026-10-23 | Terceiro e quarto temas abertos: **Geografia** e **Ciência Política** | Guia §4.1.3 e §4.1.4; eixos-ponte disponíveis | ao fechar 4 notas `ok` em cada tema |
 | 2026-10-23 | Quinto tema aberto: **Economia** — primeira onda completa (5 de 5 temas registrados no código têm eixo, notas e trilha) | Guia §4.1.5; Piketty/Chang/Furtado como leitura de entrada | ao fechar 4 notas `ok` |
-| *(pendente)* | Psicologia Social: promover a tema ou rebaixar a tag + eixo | §4.1.6 — hoje há 3 notas de psicologia social dispersas em Psicologia | — |
+| 2026-10-23 | **Psicologia Social rebaixada** a tag + eixo (Indivíduo × Grupo), em vez de promovida a tema | 3 notas e 0 trilhas — abaixo do limite de densidade de 8 (§2.1) | se a tag chegar a 8 notas com fonte primária |
 | *(pendente)* | Profundidade Brasil no primeiro ano? | — | — |
 
 ---
@@ -585,14 +587,14 @@ de ser intenção.
 | Eixo-ponte de Economia (Mercado × Estado) | **feito** (rascunho) | `conceitos/eixo-mercado-estado.md` |
 | 7 notas semente de Economia | **feito** (rascunho) | `conceitos/economia-*.md` |
 | Trilha de Economia (12 nós) | **feito** | `trilhas/economia-nivel-1.md` |
-| Decisão sobre Psicologia Social | **pendente** — depende do autor | Guia 09, §4.1.6 |
+| Decisão sobre Psicologia Social | **feito** — rebaixada a tag + eixo Indivíduo × Grupo | `conceitos/eixo-individuo-grupo.md`; `TEMAS` em `scripts/painel/modelo.py` |
 | Fichas de leitura (*Raça e História*, *Apologia da História*) | **falta** | `acervo/fichas/` |
 | Reescrever as notas para `ok` com citação e página | **falta** (é o trabalho de estudo, não de infraestrutura) | `make pendencias` |
 
 O esqueleto está de pé: **5 temas** saíram de "Em breve" e agora aparecem como **Ativos**
 na tabela do README, cada um com eixo, notas e trilha (Antropologia, História, Geografia,
-Ciência Política e Economia). A primeira onda está completa; sobram Psicologia Social
-(decisão do autor) e a trilha de Pensamento Social Brasileiro. O que resta é a parte que
+Ciência Política e Economia). A primeira onda está completa e a questão da Psicologia Social foi resolvida
+(rebaixada a tag + eixo); sobra a trilha de Pensamento Social Brasileiro. O que resta é a parte que
 não pode ser terceirizada — ler, reescrever e escrever o diário.
 
 ## 13. O que já está pronto e o que falta

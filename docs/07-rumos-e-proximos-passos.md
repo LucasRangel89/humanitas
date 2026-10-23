@@ -189,7 +189,7 @@ A lista gerada de marcos e métricas está em [`progresso.md`](../progresso.md).
 | P2 | Conversor por capítulo (arquivos menores, melhor busca) | 1 dia |
 | P2 | `pre-commit` rodando `auditar` antes de cada commit | 1 h |
 | P2 | Fichas de leitura de *Raça e História* e *Apologia da História* (Guia 09, §12) | 3 h |
-| P1 | Decidir Psicologia Social: promover a tema (8 notas + trilha) ou rebaixar a tag + eixo (Guia 09, §4.1.6) | 30 min |
+| P1 | ~~Decidir Psicologia Social~~ — **feito**: rebaixada a tag + eixo Indivíduo × Grupo (Guia 09, §4.1.6) | 30 min |
 | P2 | ~~Quinta onda da expansão: Economia~~ — **feito em 2026-10-23** (Guia 09, §4.1.5) | 20 h |
 
 ## Como medir (sem autoengano)

@@ -246,6 +246,15 @@
       "eixos": []
     },
     {
+      "id": "eixo-individuo-grupo.md",
+      "conceito": "Indivíduo × Grupo",
+      "tema": "psicologia",
+      "tipo": "eixo",
+      "tradicao": "psicologia social",
+      "nivel_evidencia": "teorica",
+      "eixos": []
+    },
+    {
       "id": "eixo-liberdade-igualdade.md",
       "conceito": "Liberdade × Igualdade",
       "tema": "ciencia-politica",
@@ -574,7 +583,9 @@
       "tipo": "conceito",
       "tradicao": "",
       "nivel_evidencia": "",
-      "eixos": []
+      "eixos": [
+        "eixo-individuo-grupo"
+      ]
     },
     {
       "id": "psicologia-estagios-erikson.md",
@@ -637,7 +648,9 @@
       "tipo": "conceito",
       "tradicao": "",
       "nivel_evidencia": "",
-      "eixos": []
+      "eixos": [
+        "eixo-individuo-grupo"
+      ]
     },
     {
       "id": "psicologia-obediencia-autoridade.md",
@@ -646,7 +659,9 @@
       "tipo": "conceito",
       "tradicao": "",
       "nivel_evidencia": "",
-      "eixos": []
+      "eixos": [
+        "eixo-individuo-grupo"
+      ]
     },
     {
       "id": "psicologia-psicanalise.md",
@@ -1463,11 +1478,26 @@
       "source": "historia-tempo-historico.md",
       "target": "eixo-continuidade-ruptura.md",
       "tipo": "eixo"
+    },
+    {
+      "source": "psicologia-dissonancia-cognitiva.md",
+      "target": "eixo-individuo-grupo.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "psicologia-identidade-social.md",
+      "target": "eixo-individuo-grupo.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "psicologia-obediencia-autoridade.md",
+      "target": "eixo-individuo-grupo.md",
+      "tipo": "eixo"
     }
   ],
-  "atualizado_em": "2026-10-23T01:34:21",
+  "atualizado_em": "2026-10-23T01:36:27",
   "totais": {
-    "nodes": 86,
-    "edges": 125
+    "nodes": 87,
+    "edges": 128
   }
 }

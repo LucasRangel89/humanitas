@@ -41,10 +41,8 @@ Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo vi
 | Antropologia | Ativo | 7 | 0 | 0 | 1 |
 | Economia | Ativo | 8 | 0 | 0 | 1 |
 | Geografia | Ativo | 7 | 0 | 0 | 1 |
-| Psicologia | Ativo | 15 | 0 | 0 | 2 |
+| Psicologia | Ativo | 16 | 0 | 0 | 2 |
 | Integrada | Ativo | 0 | 0 | 0 | 1 |
-
-> **Planejados (sem conteúdo ainda):** Psicologia Social. Critério de entrada e ordem de estudo no Guia 09 (`docs/09-mapa-das-humanidades.md`).
 
 <!-- PAINEL-TEMAS-FIM -->
 

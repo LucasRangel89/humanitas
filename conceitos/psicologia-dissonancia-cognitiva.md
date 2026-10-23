@@ -6,8 +6,9 @@ autor_origem: "Leon Festinger"
 tema: psicologia
 tipo: conceito
 nivel: iniciante
+eixos: ["eixo-individuo-grupo"]
 status: rascunho
-tags: [psicologia, social, festinger, atuitudes]
+tags: [psicologia, social, festinger, atuitudes, psicologia-social]
 fonte_verificada: nao
 ---
 # Conceito — Dissonância cognitiva

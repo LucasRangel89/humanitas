@@ -1,12 +1,12 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-23T01:34:21",
+  "atualizado_em": "2026-10-23T01:36:26",
   "totais": {
     "livros": 0,
     "fichas": 0,
     "conceitos": 76,
-    "eixos": 10,
+    "eixos": 11,
     "trechos": 0,
     "trilhas": 10,
     "diario": 0
@@ -865,6 +865,40 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-individuo-grupo.md",
+      "caminho": "conceitos/eixo-individuo-grupo.md",
+      "conceito": "Indivíduo × Grupo",
+      "tipo": "eixo",
+      "tema": "psicologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "psicologia social",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "Pensamos e agimos como indivíduos ou como membros de grupos — e quanto do que parece pessoal é, na verdade, posição social?",
+      "tags": [
+        "eixo",
+        "psicologia",
+        "psicologia-social",
+        "grupo",
+        "identidade",
+        "influencia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -2016,14 +2050,17 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "contestado_por": [],
-      "eixos": [],
+      "eixos": [
+        "eixo-individuo-grupo"
+      ],
       "relacoes": [],
       "definicao": "Dissonância cognitiva é o desconforto psicológico de sustentar crenças, atitudes ou comportamentos em conflito entre si — e o esforço, quase sempre enviesado, para reduzir esse desconforto.",
       "tags": [
         "psicologia",
         "social",
         "festinger",
-        "atuitudes"
+        "atuitudes",
+        "psicologia-social"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -2241,14 +2278,17 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "contestado_por": [],
-      "eixos": [],
+      "eixos": [
+        "eixo-individuo-grupo"
+      ],
       "relacoes": [],
       "definicao": "A simples divisão em grupos (\"nós\" × \"eles\") já produz favoritismo interno e discriminação externa — mesmo sem interesse, sem história e sem ódio envolvidos.",
       "tags": [
         "psicologia",
         "social",
         "tajfel",
-        "grupos"
+        "grupos",
+        "psicologia-social"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -2273,14 +2313,17 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "contestado_por": [],
-      "eixos": [],
+      "eixos": [
+        "eixo-individuo-grupo"
+      ],
       "relacoes": [],
       "definicao": "Os experimentos de Milgram e Zimbardo mostram que pessoas comuns obedecem a autoridades e a papéis até cometer crueldade — a situação pesa mais que o caráter.",
       "tags": [
         "psicologia",
         "social",
         "milgram",
-        "obediencia"
+        "obediencia",
+        "psicologia-social"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
