@@ -7,7 +7,7 @@ tema: "psicologia"
 tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
-tags: "[psicologia, social, tajfel, grupos]"
+tags: [psicologia, social, tajfel, grupos]
 fonte_verificada: nao
 ---
 # Conceito — Identidade Social

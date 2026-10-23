@@ -7,7 +7,7 @@ tema: "sociologia"
 tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
-tags: "[sociologia, comte, metodo, fundadores]"
+tags: [sociologia, comte, metodo, fundadores]
 fonte_verificada: nao
 ---
 # Conceito — Positivismo

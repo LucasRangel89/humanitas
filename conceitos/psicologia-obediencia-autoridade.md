@@ -7,7 +7,7 @@ tema: "psicologia"
 tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
-tags: "[psicologia, social, milgram, obediencia]"
+tags: [psicologia, social, milgram, obediencia]
 fonte_verificada: nao
 ---
 # Conceito — Obediência à Autoridade

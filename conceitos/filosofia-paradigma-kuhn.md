@@ -7,7 +7,7 @@ tema: "filosofia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[filosofia, ciencia, kuhn, paradigma]"
+tags: [filosofia, ciencia, kuhn, paradigma]
 fonte_verificada: nao
 ---
 # Conceito — Paradigma (Kuhn)

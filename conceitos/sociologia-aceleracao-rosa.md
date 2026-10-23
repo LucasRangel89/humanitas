@@ -7,7 +7,7 @@ tema: "sociologia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[sociologia, rosa, aceleracao, ressonancia]"
+tags: [sociologia, rosa, aceleracao, ressonancia]
 fonte_verificada: nao
 ---
 # Conceito — Aceleração Social (Rosa)

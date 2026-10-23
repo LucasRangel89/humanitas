@@ -75,6 +75,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
+extra_css:
+  - assets/css/dashboard.css
+extra_javascript:
+  - assets/js/dashboard.js
+
 # Navegação explícita nas seções fixas. Notas novas NÃO exigem editar este
 # arquivo: elas aparecem em Conceitos (índice gerado por tema), na busca, nas
 # tags e nos links das trilhas.
@@ -83,6 +88,9 @@ nav:
   - Trilhas: trilhas/index.md
   - Conceitos: conceitos/index.md
   - Eixos: eixos.md
+  - Obras: obras.md
+  - Grafo: grafo.md
+  - Retenção: retencao.md
   - Diário: diario/index.md
   - Trechos: trechos/index.md
   - Fichas: acervo/fichas/index.md

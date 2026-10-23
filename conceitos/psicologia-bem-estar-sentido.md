@@ -7,7 +7,7 @@ tema: "psicologia"
 tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
-tags: "[psicologia, positiva, frankl, sentido]"
+tags: [psicologia, positiva, frankl, sentido]
 fonte_verificada: nao
 ---
 # Conceito — Bem-estar e Sentido
