@@ -12,6 +12,17 @@
 name: Site — publicar no GitHub Pages
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "conceitos/**"
+      - "trilhas/**"
+      - "diario/**"
+      - "docs/**"
+      - "indices/**"
+      - "mkdocs.yml"
+      - "scripts/**"
+      - ".github/workflows/site.yml"
   workflow_dispatch:
     inputs:
       motivo:
