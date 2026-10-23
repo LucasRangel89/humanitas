@@ -2,7 +2,7 @@
 
 Este guia é o plano de voo do projeto depois da limpeza e da automação.
 O diagnóstico completo (pontos fortes, riscos e evidências) está em
-[`analise-do-projeto.md`](analise-do-projeto.md).
+[`arquivo/analise-2026-10-21.md`](arquivo/analise-2026-10-21.md) — registro histórico; não é plano vigente.
 
 ## Princípio
 
@@ -179,27 +179,18 @@ seção "Marcos de decisão" com atual/alvo/situação de cada um (gerada por
 
 ## Backlog priorizado
 
+A lista gerada de marcos e métricas está em [`progresso.md`](../progresso.md). Abaixo ficam apenas os próximos passos manuais (não duplicam o progresso gerado).
+
 | Prioridade | Item | Esforço |
 |---|---|---|
-| P1 | 5 notas padrão-ouro + 1 ficha + 1 diário | 1–2 semanas |
 | P1 | Habilitar branch protection exigindo o CI verde em `main` | 10 min |
-| P2 | ~~Site MkDocs com busca e tags~~ (feito; falta habilitar Pages) | 5 min |
 | P2 | Conversor por capítulo (arquivos menores, melhor busca) | 1 dia |
 | P2 | `pre-commit` rodando `auditar` antes de cada commit | 1 h |
-| P3 | Grafo de conexões, quiz automático, RAG local | semanas |
-| P3 | ~~Definir gatilhos de migração do site~~ (feito — ver Fase 4) | — |
 
 ## Como medir (sem autoengano)
+
+O progresso atualizado está sempre em [`progresso.md`](../progresso.md), gerado por `python -m scripts.painel progresso`. Use-o como única fonte de números; não mantenha contagens manuais aqui.
 
 ```bash
 python -m scripts.painel progresso && sed -n '1,25p' progresso.md
 ```
-
-| Métrica | Hoje | 30 dias | 90 dias |
-|---|---|---|---|
-| Notas `ok` | 0 | 10 | 25 |
-| Diários | 0 | 4 | 12 |
-| Fichas | 0 | 1 | 3 |
-| Nós de trilha | 0/56 | 6 | 15 |
-| Notas com citação + página | 0 | 10 | 25 |
-| Erros de auditoria | 0 | 0 | 0 |

@@ -1,4 +1,5 @@
 ---
+
 eixo: "Conflito × Coesão"
 obra_origem: "Planos de estudo anexados pelo autor"
 autor_origem: "Debate clássico das ciências humanas"
@@ -7,6 +8,7 @@ tipo: eixo
 nivel: entusiasta
 status: rascunho
 tags: [eixo, sociologia, classicos, poder]
+fonte_verificada: nao
 ---
 # Eixo — Conflito × Coesão
 

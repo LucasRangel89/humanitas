@@ -1,4 +1,5 @@
 ---
+
 conceito: "Estágios Psicossociais (Erikson)"
 obra_origem: "Infância e Sociedade, de Erik Erikson"
 autor_origem: "Erik Erikson"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
 tags: "[psicologia, desenvolvimento, erikson, identidade]"
+fonte_verificada: nao
 ---
 # Conceito — Estágios Psicossociais (Erikson)
 

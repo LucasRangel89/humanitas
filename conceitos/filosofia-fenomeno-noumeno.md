@@ -1,4 +1,5 @@
 ---
+
 conceito: "Fenômeno e Númeno"
 obra_origem: "Crítica da Razão Pura, de Kant"
 autor_origem: "Immanuel Kant"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: entusiasta
 status: rascunho
 tags: [filosofia, kant, epistemologia, modernidade]
+fonte_verificada: nao
 ---
 # Conceito — Fenômeno e Númeno
 

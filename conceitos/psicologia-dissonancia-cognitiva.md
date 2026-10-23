@@ -1,4 +1,5 @@
 ---
+
 conceito: "Dissonância cognitiva"
 obra_origem: "A Teoria da Dissonância Cognitiva, de Leon Festinger"
 autor_origem: "Leon Festinger"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, social, festinger, atuitudes]
+fonte_verificada: nao
 ---
 # Conceito — Dissonância cognitiva
 

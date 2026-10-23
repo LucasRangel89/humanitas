@@ -1,4 +1,5 @@
 ---
+
 conceito: "Eudaimonia"
 obra_origem: "Ética a Nicômaco (Livros I e II), de Aristóteles"
 autor_origem: "Aristóteles"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [filosofia, aristoteles, etica, antiguidade]
+fonte_verificada: nao
 ---
 # Conceito — Eudaimonia
 

@@ -1,0 +1,23 @@
+{
+  "total_conceitos": 50,
+  "por_status": {
+    "rascunho": 50
+  },
+  "por_nivel": {
+    "entusiasta": 19,
+    "iniciante": 31
+  },
+  "por_tema": {
+    "sociologia": 20,
+    "filosofia": 15,
+    "psicologia": 15
+  },
+  "total_cartoes": 55,
+  "cartoes_por_tema": {
+    "filosofia": 18,
+    "psicologia": 15,
+    "sociologia": 22
+  },
+  "taxa_ok": 0.0,
+  "atualizado_em": "2026-10-22T23:18:46"
+}

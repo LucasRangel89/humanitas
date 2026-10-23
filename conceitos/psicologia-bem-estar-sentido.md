@@ -1,4 +1,5 @@
 ---
+
 conceito: "Bem-estar e Sentido"
 obra_origem: "Em Busca de Sentido, de Viktor Frankl; Florescer, de Martin Seligman"
 autor_origem: "Viktor Frankl e Martin Seligman"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
 tags: "[psicologia, positiva, frankl, sentido]"
+fonte_verificada: nao
 ---
 # Conceito — Bem-estar e Sentido
 

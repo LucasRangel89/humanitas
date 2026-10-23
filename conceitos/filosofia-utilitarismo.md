@@ -1,4 +1,5 @@
 ---
+
 conceito: "Utilitarismo"
 obra_origem: "Utilitarismo, de John Stuart Mill; Introdução aos Princípios da Moral e da Legislação, de Bentham"
 autor_origem: "Jeremy Bentham e John Stuart Mill"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[filosofia, etica, utilitarismo, consequencias]"
+fonte_verificada: nao
 ---
 # Conceito — Utilitarismo
 

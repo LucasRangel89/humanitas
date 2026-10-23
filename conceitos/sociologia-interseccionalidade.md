@@ -1,4 +1,5 @@
 ---
+
 conceito: "Interseccionalidade"
 obra_origem: "Demarginalizing the Intersection of Race and Sex (1989), de Kimberlé Crenshaw"
 autor_origem: "Kimberlé Crenshaw"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, desigualdade, genero, raca, contemporaneo]
+fonte_verificada: nao
 ---
 # Conceito — Interseccionalidade
 

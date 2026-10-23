@@ -1,12 +1,14 @@
 ---
+
 conceito: "Alienação"
-obra_origem: "Manuscritos Econômico-Filosóficos de 1844 (seção "Trabalho Alienado"), de Karl Marx"
+obra_origem: 'Manuscritos Econômico-Filosóficos de 1844 (seção "Trabalho Alienado"), de Karl Marx'
 autor_origem: "Karl Marx"
 tema: sociologia
 tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, marx, trabalho, classicos]
+fonte_verificada: nao
 ---
 # Conceito — Alienação
 

@@ -11,6 +11,7 @@
 | Notas em rascunho | 50 |
 | Notas com citação de apoio | 0 |
 | Notas com fonte primária declarada | 33 |
+| Notas com fonte verificada | 0 |
 | Nós de trilha concluídos | 0 de 61 |
 | Entradas de diário | 0 (em 0 semana(s)) |
 | Fichas de leitura | 0 |
@@ -29,11 +30,11 @@
 
 ## Notas por tema
 
-| Tema | Notas | ok | rascunho | Com citação | Fonte primária |
-|---|---|---|---|---|---|
-| Sociologia | 20 | 0 | 20 | 0 | 12 |
-| Filosofia | 15 | 0 | 15 | 0 | 12 |
-| Psicologia | 15 | 0 | 15 | 0 | 9 |
+| Tema | Notas | ok | rascunho | Com citação | Fonte primária | Fonte verificada |
+|---|---|---|---|---|---|---|
+| Sociologia | 20 | 0 | 20 | 0 | 12 | 0 |
+| Filosofia | 15 | 0 | 15 | 0 | 12 | 0 |
+| Psicologia | 15 | 0 | 15 | 0 | 9 | 0 |
 
 ## Próximas notas a reescrever
 
@@ -41,18 +42,18 @@ As notas com mais pendências primeiro. Reescrever uma nota é o que a move para
 
 | Nota | Tema | Pendências |
 |---|---|---|
-| Behaviorismo | Psicologia | 4 — citação de apoio (com capítulo/página) |
-| Conflito × Coesão | Sociologia | 4 — explicação com as suas palavras |
-| Cultura | Sociologia | 4 — citação de apoio (com capítulo/página) |
-| Desigualdade Social | Sociologia | 4 — citação de apoio (com capítulo/página) |
-| Estrutura × Agência | Sociologia | 4 — explicação com as suas palavras |
-| Estruturalismo | Psicologia | 4 — citação de apoio (com capítulo/página) |
-| Funcionalismo | Psicologia | 4 — citação de apoio (com capítulo/página) |
-| Gênero | Sociologia | 4 — citação de apoio (com capítulo/página) |
-| Identidade | Sociologia | 4 — citação de apoio (com capítulo/página) |
-| Inatismo × Empirismo | Filosofia | 4 — explicação com as suas palavras |
-| Livre-arbítrio × Determinismo | Filosofia | 4 — explicação com as suas palavras |
-| Mente × Corpo | Filosofia | 4 — explicação com as suas palavras |
+| Behaviorismo | Psicologia | 5 — citação de apoio (com capítulo/página) |
+| Conflito × Coesão | Sociologia | 5 — explicação com as suas palavras |
+| Cultura | Sociologia | 5 — citação de apoio (com capítulo/página) |
+| Desigualdade Social | Sociologia | 5 — citação de apoio (com capítulo/página) |
+| Estrutura × Agência | Sociologia | 5 — explicação com as suas palavras |
+| Estruturalismo | Psicologia | 5 — citação de apoio (com capítulo/página) |
+| Funcionalismo | Psicologia | 5 — citação de apoio (com capítulo/página) |
+| Gênero | Sociologia | 5 — citação de apoio (com capítulo/página) |
+| Identidade | Sociologia | 5 — citação de apoio (com capítulo/página) |
+| Inatismo × Empirismo | Filosofia | 5 — explicação com as suas palavras |
+| Livre-arbítrio × Determinismo | Filosofia | 5 — explicação com as suas palavras |
+| Mente × Corpo | Filosofia | 5 — explicação com as suas palavras |
 | … | | mais 38 nota(s) |
 
 ## Marcos de decisão

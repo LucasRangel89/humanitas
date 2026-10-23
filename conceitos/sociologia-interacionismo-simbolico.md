@@ -1,4 +1,5 @@
 ---
+
 conceito: "Interacionismo Simbólico"
 obra_origem: "Mind, Self and Society, de George Herbert Mead"
 autor_origem: "George Herbert Mead"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[sociologia, mead, self, interacao]"
+fonte_verificada: nao
 ---
 # Conceito — Interacionismo Simbólico
 

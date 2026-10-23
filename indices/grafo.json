@@ -1,0 +1,460 @@
+{
+  "nodes": [
+    {
+      "id": "eixo-conflito-coesao.md",
+      "conceito": "Conflito × Coesão",
+      "tema": "sociologia",
+      "tipo": "eixo",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-estrutura-agencia.md",
+      "conceito": "Estrutura × Agência",
+      "tema": "sociologia",
+      "tipo": "eixo",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-inatismo-empirismo.md",
+      "conceito": "Inatismo × Empirismo",
+      "tema": "filosofia",
+      "tipo": "eixo",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-livre-arbitrio-determinismo.md",
+      "conceito": "Livre-arbítrio × Determinismo",
+      "tema": "filosofia",
+      "tipo": "eixo",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-mente-corpo.md",
+      "conceito": "Mente × Corpo",
+      "tema": "filosofia",
+      "tipo": "eixo",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-etica-do-rosto.md",
+      "conceito": "Ética do Rosto (Lévinas)",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-eudaimonia.md",
+      "conceito": "Eudaimonia",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-existencialismo.md",
+      "conceito": "Existencialismo",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-falseabilidade.md",
+      "conceito": "Falseabilidade",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-fenomeno-noumeno.md",
+      "conceito": "Fenômeno e Númeno",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-imperativo-categorico.md",
+      "conceito": "Imperativo Categórico",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-metodo-socratico.md",
+      "conceito": "Método Socrático",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-morte-de-deus.md",
+      "conceito": "Morte de Deus",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-paradigma-kuhn.md",
+      "conceito": "Paradigma (Kuhn)",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-teoria-das-formas.md",
+      "conceito": "Teoria das Formas",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-utilitarismo.md",
+      "conceito": "Utilitarismo",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "filosofia-veu-da-ignorancia.md",
+      "conceito": "Véu da Ignorância",
+      "tema": "filosofia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-apego.md",
+      "conceito": "Apego",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-behaviorismo.md",
+      "conceito": "Behaviorismo",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-bem-estar-sentido.md",
+      "conceito": "Bem-estar e Sentido",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-dissonancia-cognitiva.md",
+      "conceito": "Dissonância cognitiva",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-estagios-erikson.md",
+      "conceito": "Estágios Psicossociais (Erikson)",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-estruturalismo.md",
+      "conceito": "Estruturalismo",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-fluxo.md",
+      "conceito": "Fluxo",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-funcionalismo.md",
+      "conceito": "Funcionalismo",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-gestalt.md",
+      "conceito": "Psicologia da Gestalt",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-humanismo.md",
+      "conceito": "Psicologia Humanista",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-identidade-social.md",
+      "conceito": "Identidade Social",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-obediencia-autoridade.md",
+      "conceito": "Obediência à Autoridade",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-psicanalise.md",
+      "conceito": "Psicanálise",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-vieses-cognitivos.md",
+      "conceito": "Vieses cognitivos",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "psicologia-zona-desenvolvimento-proximal.md",
+      "conceito": "Zona de Desenvolvimento Proximal",
+      "tema": "psicologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-aceleracao-rosa.md",
+      "conceito": "Aceleração Social (Rosa)",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-alienacao.md",
+      "conceito": "Alienação",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-anomia.md",
+      "conceito": "Anomia",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-construcao-social-realidade.md",
+      "conceito": "Construção Social da Realidade",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-cultura.md",
+      "conceito": "Cultura",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-desigualdade-social.md",
+      "conceito": "Desigualdade Social",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-fato-social.md",
+      "conceito": "Fato social",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-genero.md",
+      "conceito": "Gênero",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-habitus.md",
+      "conceito": "Habitus",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-identidade.md",
+      "conceito": "Identidade",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-imaginacao-sociologica.md",
+      "conceito": "Imaginação sociológica",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-interacionismo-simbolico.md",
+      "conceito": "Interacionismo Simbólico",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-interseccionalidade.md",
+      "conceito": "Interseccionalidade",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-panoptico.md",
+      "conceito": "Panóptico e Biopoder",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-papel-social.md",
+      "conceito": "Papel Social",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-positivismo.md",
+      "conceito": "Positivismo",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-racionalizacao.md",
+      "conceito": "Racionalização",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "sociologia-socializacao.md",
+      "conceito": "Socialização",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "eixos": []
+    }
+  ],
+  "edges": [],
+  "atualizado_em": "2026-10-22T23:13:53",
+  "totais": {
+    "nodes": 50,
+    "edges": 0
+  }
+}

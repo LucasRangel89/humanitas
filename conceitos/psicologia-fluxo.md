@@ -1,4 +1,5 @@
 ---
+
 conceito: "Fluxo"
 obra_origem: "Flow: A Psicologia da Felicidade (Flow, 1990), de Mihaly Csikszentmihalyi"
 autor_origem: "Mihaly Csikszentmihalyi"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, positiva, bem-estar, atencao]
+fonte_verificada: nao
 ---
 # Conceito — Fluxo
 

@@ -1,4 +1,5 @@
 ---
+
 conceito: "Aceleração Social (Rosa)"
 obra_origem: "Alienação e Aceleração, de Hartmut Rosa"
 autor_origem: "Hartmut Rosa"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[sociologia, rosa, aceleracao, ressonancia]"
+fonte_verificada: nao
 ---
 # Conceito — Aceleração Social (Rosa)
 

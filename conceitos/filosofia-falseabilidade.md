@@ -1,4 +1,5 @@
 ---
+
 conceito: "Falseabilidade"
 obra_origem: "Conjecturas e Refutações, de Karl Popper"
 autor_origem: "Karl Popper"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: entusiasta
 status: rascunho
 tags: [filosofia, popper, ciencia, metodo]
+fonte_verificada: nao
 ---
 # Conceito — Falseabilidade
 

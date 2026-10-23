@@ -1,4 +1,5 @@
 ---
+
 conceito: "Habitus"
 obra_origem: "A Reprodução (com Passeron) e A Distinção, de Pierre Bourdieu"
 autor_origem: "Pierre Bourdieu"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[sociologia, bourdieu, habitus, desigualdade]"
+fonte_verificada: nao
 ---
 # Conceito — Habitus
 

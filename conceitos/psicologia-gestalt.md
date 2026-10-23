@@ -1,4 +1,5 @@
 ---
+
 conceito: "Psicologia da Gestalt"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Max Wertheimer, Wolfgang Köhler, Kurt Koffka"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, escolas-classicas, percepcao, inatismo]
+fonte_verificada: nao
 ---
 
 # Conceito — Psicologia da Gestalt

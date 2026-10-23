@@ -1,4 +1,5 @@
 ---
+
 conceito: "Vieses cognitivos"
 obra_origem: "Rápido e Devagar: Duas Formas de Pensar, de Daniel Kahneman"
 autor_origem: "Daniel Kahneman e Amos Tversky"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, cognicao, kahneman, decisao]
+fonte_verificada: nao
 ---
 # Conceito — Vieses cognitivos
 

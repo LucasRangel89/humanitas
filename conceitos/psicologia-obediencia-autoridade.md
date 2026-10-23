@@ -1,4 +1,5 @@
 ---
+
 conceito: "Obediência à Autoridade"
 obra_origem: "Obedience to Authority, de Stanley Milgram; experimento de Stanford, de Zimbardo"
 autor_origem: "Stanley Milgram e Philip Zimbardo"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
 tags: "[psicologia, social, milgram, obediencia]"
+fonte_verificada: nao
 ---
 # Conceito — Obediência à Autoridade
 

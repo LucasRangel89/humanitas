@@ -1,4 +1,5 @@
 ---
+
 eixo: "Estrutura × Agência"
 obra_origem: "Planos de estudo anexados pelo autor"
 autor_origem: "Debate clássico das ciências humanas"
@@ -7,6 +8,7 @@ tipo: eixo
 nivel: entusiasta
 status: rascunho
 tags: [eixo, sociologia, filosofia, metodo]
+fonte_verificada: nao
 ---
 # Eixo — Estrutura × Agência
 

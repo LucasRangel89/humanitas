@@ -11,7 +11,8 @@ Comece pelo que resolve o seu problema agora.
 | [05 — Prioridades de leitura](05-prioridades-de-leitura.md) | Escolher o próximo livro (os 10 livros-chave e as filas seguintes) |
 | [06 — Manutenção: CLI e CI](06-manutencao-e-ci.md) | Rodar `scripts/painel.py`, entender a auditoria e importar flashcards |
 | [07 — Rumos e próximos passos](07-rumos-e-proximos-passos.md) | O que fazer depois da fundação: padrão-ouro, site, RAG e **quando migrar de ferramenta** (Fase 4) |
-| [Análise do projeto](analise-do-projeto.md) | Diagnóstico crítico (pontos fortes, riscos, correções, cenários) |
+| [08 — Instruções para futuros mantenedores](08-instrucoes-futuras.md) | Como adicionar campo, manter CI, publicar site e criar PRs |
+| [Análise do projeto (arquivo histórico)](arquivo/analise-2026-10-21.md) | Diagnóstico de 21/10/2026 — números desatualizados, não é plano vigente |
 
 ## Anexos
 

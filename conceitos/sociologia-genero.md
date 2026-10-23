@@ -1,4 +1,5 @@
 ---
+
 conceito: "Gênero"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Conceito das ciências sociais (Scott, Butler; fonte didática: Wikipédia)"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, socio-antropologia, genero]
+fonte_verificada: nao
 ---
 
 # Conceito — Gênero

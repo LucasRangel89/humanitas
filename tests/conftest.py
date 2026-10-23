@@ -19,6 +19,7 @@ autor_origem: "Pierre Bourdieu"
 tema: sociologia
 tipo: conceito
 nivel: entusiasta
+fonte_verificada: sim
 tags: [sociologia, bourdieu, pratica]
 status: ok
 ---
@@ -66,6 +67,7 @@ autor_origem: "Debate clássico"
 tema: filosofia
 tipo: eixo
 nivel: iniciante
+fonte_verificada: sim
 tags: [eixo]
 status: ok
 ---
