@@ -20,7 +20,8 @@ E a expansão para as demais humanidades (Guia 09) abriu duas trilhas:
 - `antropologia-nivel-1.md` — estranhar o familiar: alteridade, etnocentrismo, relativismo, etnografia, ritual e técnicas do corpo, fechando no eixo Natureza × Cultura;
 - `historia-nivel-1.md` — do documento ao tempo longo: fonte, temporalidades, memória e formação do Brasil, fechando no eixo Continuidade × Ruptura;
 - `geografia-nivel-1.md` — ler o mundo pela escala: espaço, lugar, paisagem, território, escala e redes, fechando no eixo Local × Global;
-- `ciencia-politica-nivel-1.md` — do poder ao regime: as três dimensões do poder, Estado, legitimidade, regime, democracia e populismo, fechando no eixo Liberdade × Igualdade.
+- `ciencia-politica-nivel-1.md` — do poder ao regime: as três dimensões do poder, Estado, legitimidade, regime, democracia e populismo, fechando no eixo Liberdade × Igualdade;
+- `economia-nivel-1.md` — como ler o noticiário econômico: escassez, incentivos, PIB, inflação e juros, desigualdade e externalidades, fechando no eixo Mercado × Estado.
 
 Nas trilhas novas, alguns nós ainda aparecem como "a criar": a nota nasce ao fim do módulo do Tutor, como já acontece em `sociologia-nivel-1.md`.
 

@@ -40,4 +40,4 @@ Diante de qualquer "marco" — uma lei, uma revolução, uma eleição —, perg
 - **Sociologia — [Eixo Estrutura × Agência](eixo-estrutura-agencia.md):** a mesma tensão entre o que resiste e o que é transformado, aplicada ao presente.
 - **Antropologia — [Relativismo cultural](antropologia-relativismo-cultural.md):** o olhar de longa duração desmonta a ideia de povos "sem história".
 - **Filosofia — [Paradigma (Kuhn)](filosofia-paradigma-kuhn.md):** a ciência também tem rupturas e continuidades — Kuhn é este eixo no terreno do conhecimento.
-- **Economia — debate do desenvolvimento:** o confronto entre industrialização acelerada e atraso é uma disputa entre ruptura e continuidade (nota a criar quando o bloco de Economia abrir).
+- **Economia — [PIB e crescimento](economia-pib-crescimento.md):** o confronto entre industrialização acelerada e atraso é uma disputa entre ruptura e continuidade.

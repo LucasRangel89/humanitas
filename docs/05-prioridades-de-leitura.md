@@ -58,7 +58,7 @@ A conclusão do plano de 5 módulos traz a lista de continuação por disciplina
 - **Sociologia:** Zygmunt Bauman (*Modernidade Líquida*), Byung-Chul Han (*A Sociedade do Cansaço* — síntese de Foucault e Nietzsche aplicada ao esgotamento contemporâneo), bell hooks (*Ensinando a Transgredir*), Jessé Souza (*A Elite do Atraso* — sociologia brasileira aplicada).
 - **Psicologia:** Carl Jung (*O Homem e Seus Símbolos*), Antonio Damásio (*O Erro de Descartes* — já na terceira fila), Bessel van der Kolk (*O Corpo Guarda as Marcas* — trauma), Robert Sapolsky (*Comporte-se* — a ponte biologia × comportamento).
 
-## Temas novos: Antropologia, História, Geografia e Ciência Política
+## Temas novos: Antropologia, História, Geografia, Ciência Política e Economia
 
 A expansão para as demais humanidades (Guia 09) abriu dois temas com trilha própria. As
 leituras de entrada deles **não entram no top 10** — a regra continua: o top 10 é o
@@ -78,6 +78,9 @@ paralela, curta e barata:
 | Ciência Política | Weber, "A política como vocação" | uma conferência: Estado, poder e legitimidade de uma vez |
 | Ciência Política | Bobbio, *Estado, Governo, Sociedade* | o vocabulário institucional em português, sem jargão |
 | Ciência Política | Levitsky e Ziblatt, *Como as Democracias Morrem* | o diagnóstico contemporâneo, legível em uma semana |
+| Economia | Ha-Joon Chang, *Economia: Modo de Usar* | a melhor porta de entrada sem matemática: conceitos em linguagem comum |
+| Economia | Celso Furtado, *Formação Econômica do Brasil* | a economia brasileira explicada pelos ciclos, não por fórmulas |
+| Economia | Thomas Piketty, *O Capital no Século XXI* (introdução) | por que riqueza concentra mais que renda |
 
 ## Como usar este guia na prática
 

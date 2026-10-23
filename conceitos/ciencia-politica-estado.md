@@ -44,6 +44,8 @@ Na conferência "A política como vocação" (1919), Weber define o Estado pelo 
 
 ## Conexões interdisciplinares
 
+- **Economia — [Eixo Mercado × Estado](eixo-mercado-estado.md):** o tamanho do Estado é a variável que a política econômica disputa.
+
 - **História — [Colonialismo](historia-colonialismo.md):** o Estado brasileiro nasceu como extensão administrativa da metrópole e herdou suas hierarquias.
 - **Sociologia — [Racionalização](sociologia-racionalizacao.md):** a burocracia é a forma racional-legal de organizar o poder estatal.
 - **Filosofia — [Imperativo categórico](filosofia-imperativo-categorico.md):** por que obedecer ao Estado é uma pergunta moral, não só jurídica.

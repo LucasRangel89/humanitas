@@ -45,7 +45,7 @@ No artigo de 2000, Quijano descreve a "colonialidade do poder" como a face durad
 ## Conexões interdisciplinares
 
 - **Antropologia — [Etnocentrismo](antropologia-etnocentrismo.md):** a "missão civilizadora" é o etnocentrismo com exército e orçamento.
-- **Economia — debate da dependência:** a dependência econômica é a face material da colonialidade (nota a criar no bloco de Economia).
+- **Economia — [PIB e crescimento](economia-pib-crescimento.md):** a dependência econômica é a face material da colonialidade, e os ciclos de exportação são a sua história.
 - **Filosofia — [Eixo Natureza × Cultura](eixo-natureza-cultura.md):** naturalizar a hierarquia entre povos foi o argumento colonial por excelência.
 
 ## Por que este conceito importa

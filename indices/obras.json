@@ -159,6 +159,95 @@
         }
       ]
     },
+    "O Capital no Século XXI": {
+      "autor": "Thomas Piketty",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Desigualdade e distribuição",
+          "arquivo": "economia-desigualdade-distribuicao.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "Economia: Modo de Usar": {
+      "autor": "Ha-Joon Chang",
+      "total": 2,
+      "temas": {
+        "economia": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Escassez e custo de oportunidade",
+          "arquivo": "economia-escassez-custo-oportunidade.md",
+          "tema": "economia"
+        },
+        {
+          "conceito": "Incentivos",
+          "arquivo": "economia-incentivos.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "A Economia do Bem-Estar": {
+      "autor": "Arthur C. Pigou",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Externalidades e bens públicos",
+          "arquivo": "economia-externalidades-bens-publicos.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "Teoria Geral do Emprego, do Juro e da Moeda": {
+      "autor": "John Maynard Keynes",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Inflação e juros",
+          "arquivo": "economia-inflacao-juros.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "A Riqueza das Nações": {
+      "autor": "Adam Smith",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Oferta e demanda",
+          "arquivo": "economia-oferta-demanda.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "Formação Econômica do Brasil": {
+      "autor": "Celso Furtado",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "PIB e crescimento",
+          "arquivo": "economia-pib-crescimento.md",
+          "tema": "economia"
+        }
+      ]
+    },
     "Planos de estudo anexados pelo autor": {
       "autor": "Debate clássico das ciências humanas",
       "total": 2,
@@ -180,11 +269,12 @@
     },
     "Sem obra": {
       "autor": "Desconhecido",
-      "total": 4,
+      "total": 5,
       "temas": {
         "historia": 1,
         "ciencia-politica": 1,
         "geografia": 1,
+        "economia": 1,
         "antropologia": 1
       },
       "conceitos": [
@@ -202,6 +292,11 @@
           "conceito": "Local × Global",
           "arquivo": "eixo-local-global.md",
           "tema": "geografia"
+        },
+        {
+          "conceito": "Mercado × Estado",
+          "arquivo": "eixo-mercado-estado.md",
+          "tema": "economia"
         },
         {
           "conceito": "Natureza × Cultura",
@@ -1014,6 +1109,61 @@
         "Regime político"
       ]
     },
+    "Thomas Piketty": {
+      "total": 1,
+      "obras": [
+        "O Capital no Século XXI"
+      ],
+      "conceitos": [
+        "Desigualdade e distribuição"
+      ]
+    },
+    "Ha-Joon Chang": {
+      "total": 2,
+      "obras": [
+        "Economia: Modo de Usar"
+      ],
+      "conceitos": [
+        "Escassez e custo de oportunidade",
+        "Incentivos"
+      ]
+    },
+    "Arthur C. Pigou": {
+      "total": 1,
+      "obras": [
+        "A Economia do Bem-Estar"
+      ],
+      "conceitos": [
+        "Externalidades e bens públicos"
+      ]
+    },
+    "John Maynard Keynes": {
+      "total": 1,
+      "obras": [
+        "Teoria Geral do Emprego, do Juro e da Moeda"
+      ],
+      "conceitos": [
+        "Inflação e juros"
+      ]
+    },
+    "Adam Smith": {
+      "total": 1,
+      "obras": [
+        "A Riqueza das Nações"
+      ],
+      "conceitos": [
+        "Oferta e demanda"
+      ]
+    },
+    "Celso Furtado": {
+      "total": 1,
+      "obras": [
+        "Formação Econômica do Brasil"
+      ],
+      "conceitos": [
+        "PIB e crescimento"
+      ]
+    },
     "Debate clássico das ciências humanas": {
       "total": 2,
       "obras": [
@@ -1025,7 +1175,7 @@
       ]
     },
     "Desconhecido": {
-      "total": 4,
+      "total": 5,
       "obras": [
         "Sem obra"
       ],
@@ -1033,6 +1183,7 @@
         "Continuidade × Ruptura",
         "Liberdade × Igualdade",
         "Local × Global",
+        "Mercado × Estado",
         "Natureza × Cultura"
       ]
     },
@@ -1546,5 +1697,5 @@
       ]
     }
   },
-  "atualizado_em": "2026-10-23T01:30:07"
+  "atualizado_em": "2026-10-23T01:34:21"
 }

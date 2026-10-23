@@ -34,6 +34,8 @@ Desigualdade não é diferença ocasional: é distribuição desigual e reproduz
 
 ## Conexões interdisciplinares
 
+- **Economia — [Desigualdade e distribuição](economia-desigualdade-distribuicao.md):** o mesmo objeto medido de outro jeito — renda, riqueza e mobilidade.
+
 - **Psicologia — [Humanismo](psicologia-humanismo.md):** a autorrealização pressupõe margem de escolha; a desigualdade é a distribuição desigual dessa margem — o ponto onde a "terceira força" precisa das ciências sociais.
 - **Filosofia — [eixo Livre-arbítrio × Determinismo](eixo-livre-arbitrio-determinismo.md):** quanto menos recursos, mais determinado o campo de opções — o debate filosófico ganha estatística.
 

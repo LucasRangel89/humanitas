@@ -133,6 +133,83 @@
       ]
     },
     {
+      "id": "economia-desigualdade-distribuicao.md",
+      "conceito": "Desigualdade e distribuição",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia da distribuição",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-escassez-custo-oportunidade.md",
+      "conceito": "Escassez e custo de oportunidade",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia política heterodoxa",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-externalidades-bens-publicos.md",
+      "conceito": "Externalidades e bens públicos",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia do bem-estar",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-incentivos.md",
+      "conceito": "Incentivos",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-inflacao-juros.md",
+      "conceito": "Inflação e juros",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "macroeconomia keynesiana",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-oferta-demanda.md",
+      "conceito": "Oferta e demanda",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia clássica",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-pib-crescimento.md",
+      "conceito": "PIB e crescimento",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia do desenvolvimento / estruturalismo latino-americano",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
       "id": "eixo-conflito-coesao.md",
       "conceito": "Conflito × Coesão",
       "tema": "sociologia",
@@ -202,6 +279,15 @@
       "tipo": "eixo",
       "tradicao": "",
       "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-mercado-estado.md",
+      "conceito": "Mercado × Estado",
+      "tema": "economia",
+      "tipo": "eixo",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
       "eixos": []
     },
     {
@@ -994,6 +1080,146 @@
       "tipo": "eixo"
     },
     {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "economia-pib-crescimento.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "sociologia-desigualdade-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "economia-incentivos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "economia-oferta-demanda.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "economia-incentivos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "geografia-redes-fluxos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "economia-escassez-custo-oportunidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "economia-oferta-demanda.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "economia-externalidades-bens-publicos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "economia-pib-crescimento.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "economia-oferta-demanda.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "economia-desigualdade-distribuicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "economia-incentivos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "economia-inflacao-juros.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "economia-inflacao-juros.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "economia-desigualdade-distribuicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "historia-colonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
       "source": "geografia-escala.md",
       "target": "geografia-espaco-geografico.md",
       "tipo": "relacionado"
@@ -1239,9 +1465,9 @@
       "tipo": "eixo"
     }
   ],
-  "atualizado_em": "2026-10-23T01:30:06",
+  "atualizado_em": "2026-10-23T01:34:21",
   "totais": {
-    "nodes": 78,
-    "edges": 97
+    "nodes": 86,
+    "edges": 125
   }
 }

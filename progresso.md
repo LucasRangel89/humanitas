@@ -6,13 +6,13 @@
 
 | Indicador | Valor |
 |---|---|
-| Notas de conceito | 78 |
+| Notas de conceito | 86 |
 | Notas reescritas (`status: ok`) | 0 |
-| Notas em rascunho | 78 |
+| Notas em rascunho | 86 |
 | Notas com citação de apoio | 0 |
-| Notas com fonte primária declarada | 57 |
+| Notas com fonte primária declarada | 64 |
 | Notas com fonte verificada | 0 |
-| Nós de trilha concluídos | 0 de 109 |
+| Nós de trilha concluídos | 0 de 121 |
 | Entradas de diário | 0 (em 0 semana(s)) |
 | Fichas de leitura | 0 |
 | Trechos guardados | 0 |
@@ -24,6 +24,7 @@
 |---|---|---|---|---|
 | Antropologia — Nível 1: estranhar o familiar | 12 | 0 | [----------] 0% | Alteridade — a porta de entrada: o outro como sujeito, não como ver… |
 | Ciência Política — Nível 1: do poder ao regime | 12 | 0 | [----------] 0% | Poder — a porta de entrada: as três dimensões, de decidir a moldar… |
+| Economia — Nível 1: como ler o noticiário econômico | 12 | 0 | [----------] 0% | Escassez e custo de oportunidade — a porta de entrada: toda escolha… |
 | Filosofia — Nível 1: do mito ao século XX | 12 | 0 | [----------] 0% | Teoria das Formas — o ponto de partida: opinião × conhecimento, a C… |
 | Geografia — Nível 1: ler o mundo pela escala | 12 | 0 | [----------] 0% | Espaço geográfico — a porta de entrada: espaço como sistema de obje… |
 | História — Nível 1: do documento ao tempo longo | 12 | 0 | [----------] 0% | Fonte histórica — a porta de entrada: o documento responde a pergun… |
@@ -39,6 +40,7 @@
 | Sociologia | 20 | 0 | 20 | 0 | 12 | 0 |
 | Filosofia | 15 | 0 | 15 | 0 | 12 | 0 |
 | Psicologia | 15 | 0 | 15 | 0 | 9 | 0 |
+| Economia | 8 | 0 | 8 | 0 | 7 | 0 |
 | Antropologia | 7 | 0 | 7 | 0 | 6 | 0 |
 | Ciência Política | 7 | 0 | 7 | 0 | 6 | 0 |
 | Geografia | 7 | 0 | 7 | 0 | 6 | 0 |
@@ -62,7 +64,7 @@ As notas com mais pendências primeiro. Reescrever uma nota é o que a move para
 | Inatismo × Empirismo | Filosofia | 5 — explicação com as suas palavras |
 | Livre-arbítrio × Determinismo | Filosofia | 5 — explicação com as suas palavras |
 | Mente × Corpo | Filosofia | 5 — explicação com as suas palavras |
-| … | | mais 66 nota(s) |
+| … | | mais 74 nota(s) |
 
 ## Marcos de decisão
 

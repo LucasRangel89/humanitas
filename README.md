@@ -39,11 +39,12 @@ Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo vi
 | Filosofia | Ativo | 15 | 0 | 0 | 1 |
 | Ciência Política | Ativo | 7 | 0 | 0 | 1 |
 | Antropologia | Ativo | 7 | 0 | 0 | 1 |
+| Economia | Ativo | 8 | 0 | 0 | 1 |
 | Geografia | Ativo | 7 | 0 | 0 | 1 |
 | Psicologia | Ativo | 15 | 0 | 0 | 2 |
 | Integrada | Ativo | 0 | 0 | 0 | 1 |
 
-> **Planejados (sem conteúdo ainda):** Economia, Psicologia Social. Critério de entrada e ordem de estudo no Guia 09 (`docs/09-mapa-das-humanidades.md`).
+> **Planejados (sem conteúdo ainda):** Psicologia Social. Critério de entrada e ordem de estudo no Guia 09 (`docs/09-mapa-das-humanidades.md`).
 
 <!-- PAINEL-TEMAS-FIM -->
 
@@ -58,7 +59,7 @@ Edite esta linha toda semana (o atualizador do painel não mexe nela): _ex.: nó
 
 ## Trilhas prontas para começar
 
-O painel nasce com nove trilhas semente: cinco montadas a partir dos planos de estudo anexados pelo autor (arquivados em `docs/anexos/`) e quatro abertas pela expansão para as demais humanidades (Guia 09):
+O painel nasce com dez trilhas semente: cinco montadas a partir dos planos de estudo anexados pelo autor (arquivados em `docs/anexos/`) e cinco abertas pela expansão para as demais humanidades (Guia 09):
 
 | Trilha | Em uma frase |
 |---|---|
@@ -71,8 +72,9 @@ O painel nasce com nove trilhas semente: cinco montadas a partir dos planos de e
 | [História Nível 1](trilhas/historia-nivel-1.md) | Do documento ao tempo longo: o ofício do historiador aplicado à formação do Brasil |
 | [Geografia Nível 1](trilhas/geografia-nivel-1.md) | Ler o mundo pela escala: do lugar vivido ao sistema de fluxos |
 | [Ciência Política Nível 1](trilhas/ciencia-politica-nivel-1.md) | Do poder ao regime: as três dimensões do poder e o teste da democracia |
+| [Economia Nível 1](trilhas/economia-nivel-1.md) | Como ler o noticiário econômico: escassez, incentivos, juros, desigualdade — sem cálculo |
 
-A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridades-de-leitura.md) — os 10 livros-chave definidos a partir dos planos anexados. As leituras de Antropologia, História, Geografia e Ciência Política estão no [Guia 09](docs/09-mapa-das-humanidades.md) (§4.1).
+A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridades-de-leitura.md) — os 10 livros-chave definidos a partir dos planos anexados. As leituras de Antropologia, História, Geografia, Ciência Política e Economia estão no [Guia 09](docs/09-mapa-das-humanidades.md) (§4.1).
 
 ## Como adicionar um livro novo (resumo rápido)
 

@@ -1,14 +1,14 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-23T01:30:06",
+  "atualizado_em": "2026-10-23T01:34:21",
   "totais": {
     "livros": 0,
     "fichas": 0,
-    "conceitos": 69,
-    "eixos": 9,
+    "conceitos": 76,
+    "eixos": 10,
     "trechos": 0,
-    "trilhas": 9,
+    "trilhas": 10,
     "diario": 0
   },
   "livros": [],
@@ -469,6 +469,276 @@
       ]
     },
     {
+      "arquivo": "economia-desigualdade-distribuicao.md",
+      "caminho": "conceitos/economia-desigualdade-distribuicao.md",
+      "conceito": "Desigualdade e distribuição",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "O Capital no Século XXI",
+      "autor_origem": "Thomas Piketty",
+      "fonte_verificada": "nao",
+      "tradicao": "economia da distribuição",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-pib-crescimento",
+        "sociologia-desigualdade-social",
+        "eixo-mercado-estado"
+      ],
+      "definicao": "Como o produto e a riqueza de um país se repartem entre as pessoas — medido por indicadores como o coeficiente de Gini, e explicado por fluxos (renda, trabalho) e estoques (patrimônio, herança).",
+      "tags": [
+        "economia",
+        "desigualdade",
+        "gini",
+        "piketty",
+        "distribuicao",
+        "brasil"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-escassez-custo-oportunidade.md",
+      "caminho": "conceitos/economia-escassez-custo-oportunidade.md",
+      "conceito": "Escassez e custo de oportunidade",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Economia: Modo de Usar",
+      "autor_origem": "Ha-Joon Chang",
+      "fonte_verificada": "nao",
+      "tradicao": "economia política heterodoxa",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-incentivos",
+        "economia-oferta-demanda",
+        "eixo-mercado-estado"
+      ],
+      "definicao": "Escassez é ter desejos maiores que os recursos disponíveis; custo de oportunidade é o valor da melhor alternativa que você abriu mão para escolher.",
+      "tags": [
+        "economia",
+        "escassez",
+        "custo-oportunidade",
+        "chang",
+        "decisao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-externalidades-bens-publicos.md",
+      "caminho": "conceitos/economia-externalidades-bens-publicos.md",
+      "conceito": "Externalidades e bens públicos",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Economia do Bem-Estar",
+      "autor_origem": "Arthur C. Pigou",
+      "fonte_verificada": "nao",
+      "tradicao": "economia do bem-estar",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-incentivos",
+        "eixo-mercado-estado",
+        "geografia-redes-fluxos"
+      ],
+      "definicao": "Externalidade é um efeito de uma transação sobre terceiros que não participaram dela; bem público é aquele que, uma vez produzido, ninguém pode ser excluído de usar.",
+      "tags": [
+        "economia",
+        "externalidades",
+        "bens-publicos",
+        "pigou",
+        "ostrom",
+        "falha-de-mercado"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-incentivos.md",
+      "caminho": "conceitos/economia-incentivos.md",
+      "conceito": "Incentivos",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Economia: Modo de Usar",
+      "autor_origem": "Ha-Joon Chang",
+      "fonte_verificada": "nao",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-escassez-custo-oportunidade",
+        "economia-oferta-demanda",
+        "economia-externalidades-bens-publicos"
+      ],
+      "definicao": "As recompensas e punições — preços, impostos, multas, prêmios — que mudam o cálculo de custo e benefício e, com ele, o comportamento das pessoas.",
+      "tags": [
+        "economia",
+        "incentivos",
+        "comportamento",
+        "politica-publica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-inflacao-juros.md",
+      "caminho": "conceitos/economia-inflacao-juros.md",
+      "conceito": "Inflação e juros",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Teoria Geral do Emprego, do Juro e da Moeda",
+      "autor_origem": "John Maynard Keynes",
+      "fonte_verificada": "nao",
+      "tradicao": "macroeconomia keynesiana",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-pib-crescimento",
+        "economia-oferta-demanda",
+        "economia-desigualdade-distribuicao"
+      ],
+      "definicao": "Inflação é a alta contínua e generalizada dos preços; a taxa de juros é o preço do dinheiro no tempo — e, no Brasil, o principal instrumento para conter a primeira.",
+      "tags": [
+        "economia",
+        "inflacao",
+        "juros",
+        "selic",
+        "keynes",
+        "banco-central"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-oferta-demanda.md",
+      "caminho": "conceitos/economia-oferta-demanda.md",
+      "conceito": "Oferta e demanda",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Riqueza das Nações",
+      "autor_origem": "Adam Smith",
+      "fonte_verificada": "nao",
+      "tradicao": "economia clássica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-incentivos",
+        "economia-inflacao-juros",
+        "eixo-mercado-estado"
+      ],
+      "definicao": "O preço de equilíbrio é o ponto em que a quantidade que as pessoas querem comprar encontra a quantidade que os produtores querem vender — e ele se move quando um dos dois lados muda.",
+      "tags": [
+        "economia",
+        "oferta",
+        "demanda",
+        "preco",
+        "smith",
+        "mercado"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-pib-crescimento.md",
+      "caminho": "conceitos/economia-pib-crescimento.md",
+      "conceito": "PIB e crescimento",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Formação Econômica do Brasil",
+      "autor_origem": "Celso Furtado",
+      "fonte_verificada": "nao",
+      "tradicao": "economia do desenvolvimento / estruturalismo latino-americano",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-inflacao-juros",
+        "economia-desigualdade-distribuicao",
+        "historia-colonialismo"
+      ],
+      "definicao": "O PIB é a soma de tudo o que é produzido em um território num período; crescimento é o aumento dessa soma — um indicador de tamanho, não de bem-estar.",
+      "tags": [
+        "economia",
+        "pib",
+        "crescimento",
+        "furtado",
+        "desenvolvimento",
+        "brasil"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "eixo-conflito-coesao.md",
       "caminho": "conceitos/eixo-conflito-coesao.md",
       "conceito": "Conflito × Coesão",
@@ -726,6 +996,39 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-mercado-estado.md",
+      "caminho": "conceitos/eixo-mercado-estado.md",
+      "conceito": "Mercado × Estado",
+      "tipo": "eixo",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "Quem deve coordenar a vida material — o mercado, com seus preços e incentivos, ou o Estado, com suas regras e gastos?",
+      "tags": [
+        "eixo",
+        "economia",
+        "mercado",
+        "estado",
+        "politica-economica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -2689,6 +2992,19 @@
       "nos_concluidos": 0,
       "formato": "checkbox",
       "proximo_no": "Poder — a porta de entrada: as três dimensões, de decidir a moldar o desejo."
+    },
+    {
+      "arquivo": "economia-nivel-1.md",
+      "caminho": "trilhas/economia-nivel-1.md",
+      "trilha": "Economia — Nível 1: como ler o noticiário econômico",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de abrir o jornal econômico e entender o que está em jogo: por que a Selic subiu, o que a inflação faz com o seu salário, de onde vem a desigualdade brasileira e quem paga a conta de cada decisão — sem precisar de cálculo e sem aceitar frase pronta.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Escassez e custo de oportunidade — a porta de entrada: toda escolha tem uma renúncia."
     },
     {
       "arquivo": "filosofia-nivel-1.md",

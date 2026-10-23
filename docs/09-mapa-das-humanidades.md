@@ -30,13 +30,16 @@
 | Sociologia | `sociologia` | 20 | 0 | 1 | Ativo |
 | Filosofia | `filosofia` | 15 | 0 | 1 | Ativo |
 | Psicologia | `psicologia` | 15 | 0 | 2 | Ativo |
+| Antropologia | `antropologia` | 7 | 0 | 1 | Ativo (aberto em 2026-10-23) |
+| História | `historia` | 7 | 0 | 1 | Ativo (aberto em 2026-10-23) |
+| Geografia | `geografia` | 7 | 0 | 1 | Ativo (aberto em 2026-10-23) |
+| Ciência Política | `ciencia-politica` | 7 | 0 | 1 | Ativo (aberto em 2026-10-23) |
+| Economia | `economia` | 7 | 0 | 1 | Ativo (aberto em 2026-10-23) |
 | Integrada | `integrada` | 0 | 0 | 1 | Ativo (só trilha) |
-| História | `historia` | 0 | 0 | 0 | **Vazio** |
-| Geografia | `geografia` | 0 | 0 | 0 | **Vazio** |
-| Ciência Política | `ciencia-politica` | 0 | 0 | 0 | **Vazio** |
-| Economia | `economia` | 0 | 0 | 0 | **Vazio** |
-| Antropologia | `antropologia` | 0 | 0 | 0 | **Vazio** |
-| Psicologia Social | `psicologia-social` | 0 | 0 | 0 | **Vazio** |
+| Psicologia Social | `psicologia-social` | 0 | 0 | 0 | **Vazio — decisão pendente (§4.1.6)** |
+
+*Tabela de 2026-10-23, depois da primeira onda de expansão. Antes dela, os cinco temas
+da primeira onda estavam todos vazios.*
 
 Três consequências práticas:
 
@@ -170,7 +173,7 @@ Ordem recomendada, do mais barato e conectado ao mais caro:
 5. **Economia** — a mais custosa (tentação de virar curso de cálculo) e a mais útil no
    dia a dia; entra como economia política, não como microeconomia.
 
-#### 4.1.1 Antropologia — `antropologia`
+#### 4.1.1 Antropologia — `antropologia` *(aberto em 2026-10-23)*
 
 - **Pergunta própria:** o que significa ser humano em outra cultura — e o que isso diz
   da nossa?
@@ -188,7 +191,7 @@ Ordem recomendada, do mais barato e conectado ao mais caro:
   Integrada (nó A1). Já há seis notas em Sociologia com tag `socio-antropologia`.
 - **Primeiro passo:** criar o eixo-ponte antes dos conceitos (ver §8).
 
-#### 4.1.2 História — `historia`
+#### 4.1.2 História — `historia` *(aberto em 2026-10-23)*
 
 - **Pergunta própria:** como as sociedades mudam no tempo — e quem conta essa mudança?
 - **Método:** crítica de fontes, periodização, escala (longa duração × evento),
@@ -208,7 +211,7 @@ Ordem recomendada, do mais barato e conectado ao mais caro:
 - **Conecta com:** Filosofia (tempo, verdade), Sociologia (modernidade), Integrada
   (módulo 5), Antropologia (memória).
 
-#### 4.1.3 Geografia — `geografia`
+#### 4.1.3 Geografia — `geografia` *(aberto em 2026-10-23)*
 
 - **Pergunta própria:** como o espaço produz a sociedade e é produzido por ela?
 - **Método:** análise espacial, escala, cartografia, trabalho de campo.
@@ -223,7 +226,7 @@ Ordem recomendada, do mais barato e conectado ao mais caro:
 - **Conecta com:** Economia (desenvolvimento regional), História (território e
   fronteiras), CTS (redes e plataformas), Confluência Humano-Tecnológica.
 
-#### 4.1.4 Ciência Política — `ciencia-politica`
+#### 4.1.4 Ciência Política — `ciencia-politica` *(aberto em 2026-10-23)*
 
 - **Pergunta própria:** quem manda, com que autoridade e com que limites?
 - **Método:** análise institucional, comparação de regimes, teoria normativa.
@@ -239,7 +242,7 @@ Ordem recomendada, do mais barato e conectado ao mais caro:
 - **Conecta com:** Filosofia (justiça, contrato), Sociologia (poder, Estado), Direito
   (norma), Integrada (nós C3 e C5).
 
-#### 4.1.5 Economia — `economia`
+#### 4.1.5 Economia — `economia` *(aberto em 2026-10-23)*
 
 - **Pergunta própria:** como as sociedades decidem o que produzir, para quem e a que
   custo?
@@ -385,7 +388,7 @@ O plano abaixo pressupõe ~3 h/semana. Se a rotina mudar, o prazo muda — a ord
 | **2. Antropologia** | meses 2–3 | 8 notas (4 `ok`), trilha de 12 nós, 1 ficha, 1 diário — **esqueleto pronto em 2026-10-23** (eixo + 6 notas + trilha) | 18 h |
 | **3. História** | meses 4–6 | 8 notas (4 `ok`), trilha, 1 ficha, eixo **Continuidade × Ruptura** — **esqueleto pronto em 2026-10-23** (eixo + 6 notas + trilha) | 20 h |
 | **4. Geografia + Política** | meses 7–9 | 6 notas em cada, 1 trilha cada, eixos Local × Global e Liberdade × Igualdade — **esqueleto pronto em 2026-10-23** (2 eixos + 12 notas + 2 trilhas) | 24 h |
-| **5. Economia + Brasil** | meses 10–12 | 6 notas de Economia, trilha "noticiário", eixo Mercado × Estado e trilha **Pensamento Social Brasileiro** | 24 h |
+| **5. Economia + Brasil** | meses 10–12 | 6 notas de Economia, trilha "noticiário", eixo Mercado × Estado e trilha **Pensamento Social Brasileiro** — **esqueleto de Economia pronto em 2026-10-23** (eixo + 7 notas + trilha); falta a trilha Brasil | 24 h |
 
 O que **não** está no roadmap: converter os 100+ PDFs, criar 20 temas, migrar o site.
 Isso é o Guia 07 dizendo "não" — e este guia concorda.
@@ -557,7 +560,9 @@ de ser intenção.
 | 2026-10-23 | Mapa criado com 7 famílias, 5 temas de primeira onda e 14 candidatos | 6 de 10 temas vazios; 0 notas `ok` | houver 10 notas `ok` e 2 temas ativos |
 | 2026-10-23 | Primeiro tema da expansão: **Antropologia**, seguido de **História** (decisão de fato, tomada ao abrir as trilhas) | Guia §4.1.1 e §4.1.2; clássicos curtos e eixo-ponte disponível | ao fechar 4 notas `ok` em cada tema |
 | 2026-10-23 | Regra do zero implementada no gerador da tabela (temas vazios vão para o rodapé "Planejados") | `scripts/painel/indice.py` + 2 testes | se a tabela esconder tema que está sendo estudado |
-| 2026-10-23 | Terceiro e quarto temas abertos: **Geografia** e **Ciência Política**, completando a primeira onda parcial (faltam Economia e a decisão sobre Psicologia Social) | Guia §4.1.3 e §4.1.4; eixos-ponte disponíveis | ao fechar 4 notas `ok` em cada tema |
+| 2026-10-23 | Terceiro e quarto temas abertos: **Geografia** e **Ciência Política** | Guia §4.1.3 e §4.1.4; eixos-ponte disponíveis | ao fechar 4 notas `ok` em cada tema |
+| 2026-10-23 | Quinto tema aberto: **Economia** — primeira onda completa (5 de 5 temas registrados no código têm eixo, notas e trilha) | Guia §4.1.5; Piketty/Chang/Furtado como leitura de entrada | ao fechar 4 notas `ok` |
+| *(pendente)* | Psicologia Social: promover a tema ou rebaixar a tag + eixo | §4.1.6 — hoje há 3 notas de psicologia social dispersas em Psicologia | — |
 | *(pendente)* | Profundidade Brasil no primeiro ano? | — | — |
 
 ---
@@ -577,13 +582,18 @@ de ser intenção.
 | 6 notas semente de Geografia | **feito** (rascunho) | `conceitos/geografia-*.md` |
 | 6 notas semente de Ciência Política | **feito** (rascunho) | `conceitos/ciencia-politica-*.md` |
 | Trilhas de Geografia e de Ciência Política (12 nós cada) | **feito** | `trilhas/geografia-nivel-1.md`, `trilhas/ciencia-politica-nivel-1.md` |
+| Eixo-ponte de Economia (Mercado × Estado) | **feito** (rascunho) | `conceitos/eixo-mercado-estado.md` |
+| 7 notas semente de Economia | **feito** (rascunho) | `conceitos/economia-*.md` |
+| Trilha de Economia (12 nós) | **feito** | `trilhas/economia-nivel-1.md` |
+| Decisão sobre Psicologia Social | **pendente** — depende do autor | Guia 09, §4.1.6 |
 | Fichas de leitura (*Raça e História*, *Apologia da História*) | **falta** | `acervo/fichas/` |
 | Reescrever as notas para `ok` com citação e página | **falta** (é o trabalho de estudo, não de infraestrutura) | `make pendencias` |
 
-O esqueleto está de pé: **4 temas** saíram de "Em breve" e agora aparecem como **Ativos**
-na tabela do README, cada um com eixo, notas e trilha (Antropologia, História, Geografia
-e Ciência Política). O que resta é a parte que não pode ser terceirizada — ler,
-reescrever e escrever o diário.
+O esqueleto está de pé: **5 temas** saíram de "Em breve" e agora aparecem como **Ativos**
+na tabela do README, cada um com eixo, notas e trilha (Antropologia, História, Geografia,
+Ciência Política e Economia). A primeira onda está completa; sobram Psicologia Social
+(decisão do autor) e a trilha de Pensamento Social Brasileiro. O que resta é a parte que
+não pode ser terceirizada — ler, reescrever e escrever o diário.
 
 ## 13. O que já está pronto e o que falta
 

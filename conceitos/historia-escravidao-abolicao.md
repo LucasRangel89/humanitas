@@ -46,7 +46,7 @@ Em *Brasil: uma biografia* (2015), Schwarcz e Starling tratam a escravidão como
 
 - **Sociologia — [Desigualdade social](sociologia-desigualdade-social.md):** a estratificação brasileira tem data de nascimento e endereço histórico.
 - **Antropologia — [Etnocentrismo](antropologia-etnocentrismo.md):** teorias raciais do século XIX deram "ciência" à hierarquia que a escravidão já praticava.
-- **Economia — debate do desenvolvimento:** a transição do trabalho escravo ao assalariado é um capítulo central da formação econômica brasileira (nota a criar no bloco de Economia).
+- **Economia — [PIB e crescimento](economia-pib-crescimento.md):** a transição do trabalho escravo ao assalariado é um capítulo central da formação econômica brasileira em Furtado.
 
 ## Por que este conceito importa
 
