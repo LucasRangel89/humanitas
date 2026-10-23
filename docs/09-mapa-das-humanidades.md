@@ -333,7 +333,7 @@ como tag, eixo ou trilha de repertório:
 | Teologia confessional | fora; entra "Estudos Religiosos" | o painel estuda religião como fenômeno, não como doutrina |
 | Biomedicina, Neurociência | tag em Psicologia | biologia não é humanidade, mas dialoga (e o painel já usa Damásio) |
 
-### 4.4 O caso especial: Pensamento Social Brasileiro
+### 4.4 O caso especial: Pensamento Social Brasileiro *(aberto em 2026-10-23)*
 
 Esta é a adição mais alinhada ao projeto e não está em nenhuma lista acima, porque não é
 uma disciplina nova: é um **eixo transversal + trilha**.
@@ -346,8 +346,16 @@ uma disciplina nova: é um **eixo transversal + trilha**.
 - **Obras:** Sérgio Buarque de Holanda, *Raízes do Brasil*; Gilberto Freyre, *Casa-Grande
   & Senzala* (com crítica); Jessé Souza, *A Elite do Atraso*; Lélia Gonzalez; Darcy
   Ribeiro.
-- **Forma:** um eixo (Brasil × Universal) + uma trilha de 10 nós que puxa notas de
-  História, Sociologia, Antropologia, Política e Economia.
+- **Forma:** um eixo (Brasil × Universal) + uma trilha que puxa notas de História,
+  Sociologia, Antropologia, Política e Economia. **Feito:** o eixo
+  `eixo-brasil-universal`, 8 notas (`historia-formacao-social-brasileira`,
+  `historia-racismo-estrutural`, `sociologia-patrimonialismo`, `sociologia-cordialidade`,
+  `sociologia-elite-do-atraso`, `antropologia-mesticagem-identidade`,
+  `antropologia-cultura-popular-sincretismo`, `ciencia-politica-democracia-racial`) e a
+  trilha `pensamento-social-brasileiro` com 13 nós.
+- **Nota de arquitetura:** as notas foram distribuídas pelos temas existentes — nenhum
+  tema novo foi criado. É a prova prática da regra do §2: uma área transversal entra como
+  eixo + notas nos temas que já existem.
 - **Por que importa:** o painel hoje é majoritariamente eurocêntrico em autores e
   exemplos. Uma trilha brasileira corrige isso sem criar dez temas novos e dá ao
   projeto uma identidade que manuais importados não têm.
@@ -565,6 +573,7 @@ de ser intenção.
 | 2026-10-23 | Terceiro e quarto temas abertos: **Geografia** e **Ciência Política** | Guia §4.1.3 e §4.1.4; eixos-ponte disponíveis | ao fechar 4 notas `ok` em cada tema |
 | 2026-10-23 | Quinto tema aberto: **Economia** — primeira onda completa (5 de 5 temas registrados no código têm eixo, notas e trilha) | Guia §4.1.5; Piketty/Chang/Furtado como leitura de entrada | ao fechar 4 notas `ok` |
 | 2026-10-23 | **Psicologia Social rebaixada** a tag + eixo (Indivíduo × Grupo), em vez de promovida a tema | 3 notas e 0 trilhas — abaixo do limite de densidade de 8 (§2.1) | se a tag chegar a 8 notas com fonte primária |
+| 2026-10-23 | **Bloco brasileiro aberto** como eixo + trilha transversal, sem criar tema novo (8 notas espalhadas por Historia, Sociologia, Antropologia e Ciência Política) | §4.4 e regra do §2 (área sem objeto próprio vira eixo) | ao fechar 4 notas `ok` no bloco |
 | *(pendente)* | Profundidade Brasil no primeiro ano? | — | — |
 
 ---
@@ -587,6 +596,9 @@ de ser intenção.
 | Eixo-ponte de Economia (Mercado × Estado) | **feito** (rascunho) | `conceitos/eixo-mercado-estado.md` |
 | 7 notas semente de Economia | **feito** (rascunho) | `conceitos/economia-*.md` |
 | Trilha de Economia (12 nós) | **feito** | `trilhas/economia-nivel-1.md` |
+| Eixo Brasil × Universal | **feito** (rascunho) | `conceitos/eixo-brasil-universal.md` |
+| 8 notas do bloco brasileiro (distribuídas em 4 temas) | **feito** (rascunho) | `conceitos/historia-formacao-social-brasileira.md`, `historia-racismo-estrutural.md`, `sociologia-patrimonialismo.md`, `sociologia-cordialidade.md`, `sociologia-elite-do-atraso.md`, `antropologia-mesticagem-identidade.md`, `antropologia-cultura-popular-sincretismo.md`, `ciencia-politica-democracia-racial.md` |
+| Trilha Pensamento Social Brasileiro (13 nós) | **feito** | `trilhas/pensamento-social-brasileiro.md` |
 | Decisão sobre Psicologia Social | **feito** — rebaixada a tag + eixo Indivíduo × Grupo | `conceitos/eixo-individuo-grupo.md`; `TEMAS` em `scripts/painel/modelo.py` |
 | Fichas de leitura (*Raça e História*, *Apologia da História*) | **falta** | `acervo/fichas/` |
 | Reescrever as notas para `ok` com citação e página | **falta** (é o trabalho de estudo, não de infraestrutura) | `make pendencias` |

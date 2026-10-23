@@ -21,7 +21,8 @@ E a expansão para as demais humanidades (Guia 09) abriu duas trilhas:
 - `historia-nivel-1.md` — do documento ao tempo longo: fonte, temporalidades, memória e formação do Brasil, fechando no eixo Continuidade × Ruptura;
 - `geografia-nivel-1.md` — ler o mundo pela escala: espaço, lugar, paisagem, território, escala e redes, fechando no eixo Local × Global;
 - `ciencia-politica-nivel-1.md` — do poder ao regime: as três dimensões do poder, Estado, legitimidade, regime, democracia e populismo, fechando no eixo Liberdade × Igualdade;
-- `economia-nivel-1.md` — como ler o noticiário econômico: escassez, incentivos, PIB, inflação e juros, desigualdade e externalidades, fechando no eixo Mercado × Estado.
+- `economia-nivel-1.md` — como ler o noticiário econômico: escassez, incentivos, PIB, inflação e juros, desigualdade e externalidades, fechando no eixo Mercado × Estado;
+- `pensamento-social-brasileiro.md` — a trilha transversal que puxa notas de cinco temas (História, Sociologia, Antropologia, Ciência Política e Economia) para responder por que o Brasil é assim.
 
 Nas trilhas novas, alguns nós ainda aparecem como "a criar": a nota nasce ao fim do módulo do Tutor, como já acontece em `sociologia-nivel-1.md`.
 

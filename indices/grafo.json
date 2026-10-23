@@ -23,6 +23,18 @@
       ]
     },
     {
+      "id": "antropologia-cultura-popular-sincretismo.md",
+      "conceito": "Cultura popular e sincretismo",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "antropologia brasileira",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-brasil-universal",
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
       "id": "antropologia-etnocentrismo.md",
       "conceito": "Etnocentrismo",
       "tema": "antropologia",
@@ -41,6 +53,18 @@
       "tradicao": "funcionalismo",
       "nivel_evidencia": "teorica",
       "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-mesticagem-identidade.md",
+      "conceito": "Mestiçagem e identidade nacional",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-brasil-universal",
         "eixo-natureza-cultura"
       ]
     },
@@ -64,6 +88,18 @@
       "nivel_evidencia": "teorica",
       "eixos": [
         "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "ciencia-politica-democracia-racial.md",
+      "conceito": "Democracia racial",
+      "tema": "ciencia-politica",
+      "tipo": "conceito",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-brasil-universal",
+        "eixo-liberdade-igualdade"
       ]
     },
     {
@@ -208,6 +244,15 @@
       "eixos": [
         "eixo-mercado-estado"
       ]
+    },
+    {
+      "id": "eixo-brasil-universal.md",
+      "conceito": "Brasil × Universal",
+      "tema": "sociologia",
+      "tipo": "eixo",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "eixos": []
     },
     {
       "id": "eixo-conflito-coesao.md",
@@ -528,6 +573,17 @@
       ]
     },
     {
+      "id": "historia-formacao-social-brasileira.md",
+      "conceito": "Formação social brasileira",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-brasil-universal"
+      ]
+    },
+    {
       "id": "historia-memoria.md",
       "conceito": "Memória e esquecimento",
       "tema": "historia",
@@ -536,6 +592,17 @@
       "nivel_evidencia": "teorica",
       "eixos": [
         "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-racismo-estrutural.md",
+      "conceito": "Racismo estrutural",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "pensamento social brasileiro / teoria racial",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-brasil-universal"
       ]
     },
     {
@@ -727,6 +794,17 @@
       "eixos": []
     },
     {
+      "id": "sociologia-cordialidade.md",
+      "conceito": "Cordialidade",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-brasil-universal"
+      ]
+    },
+    {
       "id": "sociologia-cultura.md",
       "conceito": "Cultura",
       "tema": "sociologia",
@@ -743,6 +821,17 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "eixos": []
+    },
+    {
+      "id": "sociologia-elite-do-atraso.md",
+      "conceito": "Elite do atraso",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "pensamento social brasileiro / sociologia crítica",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-brasil-universal"
+      ]
     },
     {
       "id": "sociologia-fato-social.md",
@@ -826,6 +915,17 @@
       "eixos": []
     },
     {
+      "id": "sociologia-patrimonialismo.md",
+      "conceito": "Patrimonialismo",
+      "tema": "sociologia",
+      "tipo": "conceito",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-brasil-universal"
+      ]
+    },
+    {
       "id": "sociologia-positivismo.md",
       "conceito": "Positivismo",
       "tema": "sociologia",
@@ -895,6 +995,31 @@
       "tipo": "eixo"
     },
     {
+      "source": "antropologia-cultura-popular-sincretismo.md",
+      "target": "antropologia-mesticagem-identidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-cultura-popular-sincretismo.md",
+      "target": "antropologia-ritual.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-cultura-popular-sincretismo.md",
+      "target": "sociologia-cultura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-cultura-popular-sincretismo.md",
+      "target": "eixo-brasil-universal.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-cultura-popular-sincretismo.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
       "source": "antropologia-etnocentrismo.md",
       "target": "antropologia-relativismo-cultural.md",
       "tipo": "relacionado"
@@ -931,6 +1056,31 @@
     },
     {
       "source": "antropologia-etnografia.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-mesticagem-identidade.md",
+      "target": "antropologia-cultura-popular-sincretismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-mesticagem-identidade.md",
+      "target": "historia-racismo-estrutural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-mesticagem-identidade.md",
+      "target": "sociologia-identidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-mesticagem-identidade.md",
+      "target": "eixo-brasil-universal.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-mesticagem-identidade.md",
       "target": "eixo-natureza-cultura.md",
       "tipo": "eixo"
     },
@@ -972,6 +1122,31 @@
     {
       "source": "antropologia-ritual.md",
       "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-democracia-racial.md",
+      "target": "historia-racismo-estrutural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-democracia-racial.md",
+      "target": "antropologia-mesticagem-identidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-democracia-racial.md",
+      "target": "ciencia-politica-democracia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-democracia-racial.md",
+      "target": "eixo-brasil-universal.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-democracia-racial.md",
+      "target": "eixo-liberdade-igualdade.md",
       "tipo": "eixo"
     },
     {
@@ -1440,6 +1615,26 @@
       "tipo": "eixo"
     },
     {
+      "source": "historia-formacao-social-brasileira.md",
+      "target": "historia-colonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-formacao-social-brasileira.md",
+      "target": "sociologia-patrimonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-formacao-social-brasileira.md",
+      "target": "sociologia-cordialidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-formacao-social-brasileira.md",
+      "target": "eixo-brasil-universal.md",
+      "tipo": "eixo"
+    },
+    {
       "source": "historia-memoria.md",
       "target": "historia-fonte-historica.md",
       "tipo": "relacionado"
@@ -1457,6 +1652,26 @@
     {
       "source": "historia-memoria.md",
       "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-racismo-estrutural.md",
+      "target": "historia-escravidao-abolicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-racismo-estrutural.md",
+      "target": "ciencia-politica-democracia-racial.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-racismo-estrutural.md",
+      "target": "sociologia-desigualdade-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-racismo-estrutural.md",
+      "target": "eixo-brasil-universal.md",
       "tipo": "eixo"
     },
     {
@@ -1493,11 +1708,71 @@
       "source": "psicologia-obediencia-autoridade.md",
       "target": "eixo-individuo-grupo.md",
       "tipo": "eixo"
+    },
+    {
+      "source": "sociologia-cordialidade.md",
+      "target": "sociologia-patrimonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-cordialidade.md",
+      "target": "historia-formacao-social-brasileira.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-cordialidade.md",
+      "target": "sociologia-identidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-cordialidade.md",
+      "target": "eixo-brasil-universal.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "sociologia-elite-do-atraso.md",
+      "target": "sociologia-patrimonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-elite-do-atraso.md",
+      "target": "historia-racismo-estrutural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-elite-do-atraso.md",
+      "target": "sociologia-desigualdade-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-elite-do-atraso.md",
+      "target": "eixo-brasil-universal.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "sociologia-patrimonialismo.md",
+      "target": "historia-formacao-social-brasileira.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-patrimonialismo.md",
+      "target": "sociologia-cordialidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-patrimonialismo.md",
+      "target": "ciencia-politica-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "sociologia-patrimonialismo.md",
+      "target": "eixo-brasil-universal.md",
+      "tipo": "eixo"
     }
   ],
-  "atualizado_em": "2026-10-23T01:36:27",
+  "atualizado_em": "2026-10-23T01:44:16",
   "totais": {
-    "nodes": 87,
-    "edges": 128
+    "nodes": 96,
+    "edges": 163
   }
 }

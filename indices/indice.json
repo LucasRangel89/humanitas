@@ -1,14 +1,14 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-23T01:36:26",
+  "atualizado_em": "2026-10-23T01:44:15",
   "totais": {
     "livros": 0,
     "fichas": 0,
-    "conceitos": 76,
-    "eixos": 11,
+    "conceitos": 84,
+    "eixos": 12,
     "trechos": 0,
-    "trilhas": 10,
+    "trilhas": 11,
     "diario": 0
   },
   "livros": [],
@@ -80,6 +80,46 @@
         "mauss",
         "habitus",
         "tecnica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-cultura-popular-sincretismo.md",
+      "caminho": "conceitos/antropologia-cultura-popular-sincretismo.md",
+      "conceito": "Cultura popular e sincretismo",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Carnavais, Malandros e Heróis",
+      "autor_origem": "Roberto DaMatta",
+      "fonte_verificada": "nao",
+      "tradicao": "antropologia brasileira",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal",
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-mesticagem-identidade",
+        "antropologia-ritual",
+        "sociologia-cultura"
+      ],
+      "definicao": "Cultura popular é o repertório produzido e vivido fora das elites — e sincretismo é a fusão prática de tradições distintas que, no Brasil, foi também estratégia de sobrevivência.",
+      "tags": [
+        "antropologia",
+        "cultura-popular",
+        "sincretismo",
+        "damatta",
+        "carnaval",
+        "brasil"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -164,6 +204,46 @@
       ]
     },
     {
+      "arquivo": "antropologia-mesticagem-identidade.md",
+      "caminho": "conceitos/antropologia-mesticagem-identidade.md",
+      "conceito": "Mestiçagem e identidade nacional",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Casa-Grande & Senzala",
+      "autor_origem": "Gilberto Freyre",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal",
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-cultura-popular-sincretismo",
+        "historia-racismo-estrutural",
+        "sociologia-identidade"
+      ],
+      "definicao": "A narrativa que fez da mistura de povos a marca do Brasil — e que, ao celebrá-la, muitas vezes apagou a violência que a produziu.",
+      "tags": [
+        "antropologia",
+        "mesticagem",
+        "freyre",
+        "darcy-ribeiro",
+        "identidade",
+        "brasil"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "antropologia-relativismo-cultural.md",
       "caminho": "conceitos/antropologia-relativismo-cultural.md",
       "conceito": "Relativismo cultural",
@@ -229,6 +309,46 @@
         "van-gennep",
         "turner",
         "simbolo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-democracia-racial.md",
+      "caminho": "conceitos/ciencia-politica-democracia-racial.md",
+      "conceito": "Democracia racial",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Casa-Grande & Senzala",
+      "autor_origem": "Gilberto Freyre (formulação); Florestan Fernandes e Lélia Gonzalez (crítica)",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal",
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "historia-racismo-estrutural",
+        "antropologia-mesticagem-identidade",
+        "ciencia-politica-democracia"
+      ],
+      "definicao": "O mito de que o Brasil vive uma convivência racial sem hierarquia — crença que, ao negar o racismo, funcionou como obstáculo às políticas de igualdade.",
+      "tags": [
+        "ciencia-politica",
+        "democracia-racial",
+        "freyre",
+        "florestan",
+        "brasil",
+        "mito"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -733,6 +853,39 @@
       "secoes_faltando": [],
       "tem_trecho": false,
       "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-brasil-universal.md",
+      "caminho": "conceitos/eixo-brasil-universal.md",
+      "conceito": "Brasil × Universal",
+      "tipo": "eixo",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "O que no Brasil se explica pela nossa formação particular — e o que se explica por teorias que valem para qualquer sociedade?",
+      "tags": [
+        "eixo",
+        "sociologia",
+        "brasil",
+        "pensamento-social-brasileiro",
+        "identidade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
@@ -1865,6 +2018,45 @@
       ]
     },
     {
+      "arquivo": "historia-formacao-social-brasileira.md",
+      "caminho": "conceitos/historia-formacao-social-brasileira.md",
+      "conceito": "Formação social brasileira",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Raízes do Brasil",
+      "autor_origem": "Sérgio Buarque de Holanda",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal"
+      ],
+      "relacoes": [
+        "historia-colonialismo",
+        "sociologia-patrimonialismo",
+        "sociologia-cordialidade"
+      ],
+      "definicao": "O conjunto de heranças — latifúndio, escravidão, família patriarcal e Estado patrimonial — que explica por que o Brasil moderno mantém traços que a lei já não autoriza.",
+      "tags": [
+        "historia",
+        "brasil",
+        "holanda",
+        "freyre",
+        "prado-jr",
+        "formacao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "historia-memoria.md",
       "caminho": "conceitos/historia-memoria.md",
       "conceito": "Memória e esquecimento",
@@ -1893,6 +2085,45 @@
         "halbwachs",
         "esquecimento",
         "negacionismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-racismo-estrutural.md",
+      "caminho": "conceitos/historia-racismo-estrutural.md",
+      "conceito": "Racismo estrutural",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "O Que É Racismo Estrutural",
+      "autor_origem": "Silvio Almeida",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro / teoria racial",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal"
+      ],
+      "relacoes": [
+        "historia-escravidao-abolicao",
+        "ciencia-politica-democracia-racial",
+        "sociologia-desigualdade-social"
+      ],
+      "definicao": "O racismo não é um ato de indivíduos maldosos, mas uma estrutura que organiza economia, política e direito — e que funciona mesmo sem intenção de ninguém.",
+      "tags": [
+        "historia",
+        "racismo",
+        "almeida",
+        "gonzalez",
+        "brasil",
+        "estrutura"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -2559,6 +2790,45 @@
       ]
     },
     {
+      "arquivo": "sociologia-cordialidade.md",
+      "caminho": "conceitos/sociologia-cordialidade.md",
+      "conceito": "Cordialidade",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Raízes do Brasil",
+      "autor_origem": "Sérgio Buarque de Holanda",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal"
+      ],
+      "relacoes": [
+        "sociologia-patrimonialismo",
+        "historia-formacao-social-brasileira",
+        "sociologia-identidade"
+      ],
+      "definicao": "O \"homem cordial\" não é gentil: é quem age pelo coração — laços pessoais, familiares e afetivos — mesmo quando a regra impessoal mandaria o contrário.",
+      "tags": [
+        "sociologia",
+        "cordialidade",
+        "holanda",
+        "brasil",
+        "pessoalidade",
+        "damatta"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "sociologia-cultura.md",
       "caminho": "conceitos/sociologia-cultura.md",
       "conceito": "Cultura",
@@ -2618,6 +2888,45 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "sociologia-elite-do-atraso.md",
+      "caminho": "conceitos/sociologia-elite-do-atraso.md",
+      "conceito": "Elite do atraso",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Elite do Atraso: da Escravidão à Lava Jato",
+      "autor_origem": "Jessé Souza",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro / sociologia crítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal"
+      ],
+      "relacoes": [
+        "sociologia-patrimonialismo",
+        "historia-racismo-estrutural",
+        "sociologia-desigualdade-social"
+      ],
+      "definicao": "A tese de que a desigualdade brasileira não vem do Estado inchado nem da corrupção, mas de uma elite que lucra com a hierarquia herdada da escravidão e a reproduz com a ajuda do próprio Estado.",
+      "tags": [
+        "sociologia",
+        "jesse-souza",
+        "elite",
+        "brasil",
+        "racismo",
+        "classe"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -2912,6 +3221,45 @@
       ]
     },
     {
+      "arquivo": "sociologia-patrimonialismo.md",
+      "caminho": "conceitos/sociologia-patrimonialismo.md",
+      "conceito": "Patrimonialismo",
+      "tipo": "conceito",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Os Donos do Poder",
+      "autor_origem": "Raymundo Faoro",
+      "fonte_verificada": "nao",
+      "tradicao": "pensamento social brasileiro",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-brasil-universal"
+      ],
+      "relacoes": [
+        "historia-formacao-social-brasileira",
+        "sociologia-cordialidade",
+        "ciencia-politica-estado"
+      ],
+      "definicao": "Confusão entre o público e o privado: quem administra o Estado trata o cargo, o orçamento e a coisa pública como extensão do seu patrimônio pessoal.",
+      "tags": [
+        "sociologia",
+        "patrimonialismo",
+        "faoro",
+        "weber",
+        "brasil",
+        "estado"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "sociologia-positivismo.md",
       "caminho": "conceitos/sociologia-positivismo.md",
       "conceito": "Positivismo",
@@ -3100,6 +3448,19 @@
       "nos_concluidos": 0,
       "formato": "secoes",
       "proximo_no": "A0. A mentalidade do explorador (Fase 0 do plano)"
+    },
+    {
+      "arquivo": "pensamento-social-brasileiro.md",
+      "caminho": "trilhas/pensamento-social-brasileiro.md",
+      "trilha": "Pensamento Social Brasileiro: por que o Brasil é assim",
+      "tema": "sociologia",
+      "nivel": "entusiasta",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de responder — com autores, não com opinião — por que a desigualdade brasileira tem a forma que tem: identificar o que vem da formação colonial, o que vem do mito da democracia racial e o que vem de escolhas políticas recentes. E, principalmente, distinguir o que é explicação do Brasil do que é desculpa nacional.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Eixo Brasil × Universal — a bússola de abertura: excepcionalismo de um lado, colonialismo epistemológico do outro."
     },
     {
       "arquivo": "psicologia-nivel-1.md",

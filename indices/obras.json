@@ -28,6 +28,20 @@
         }
       ]
     },
+    "Carnavais, Malandros e Heróis": {
+      "autor": "Roberto DaMatta",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Cultura popular e sincretismo",
+          "arquivo": "antropologia-cultura-popular-sincretismo.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
     "Folkways": {
       "autor": "William Graham Sumner",
       "total": 1,
@@ -53,6 +67,26 @@
           "conceito": "Etnografia",
           "arquivo": "antropologia-etnografia.md",
           "tema": "antropologia"
+        }
+      ]
+    },
+    "Casa-Grande & Senzala": {
+      "autor": "Gilberto Freyre (formulação); Florestan Fernandes e Lélia Gonzalez (crítica)",
+      "total": 2,
+      "temas": {
+        "antropologia": 1,
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Mestiçagem e identidade nacional",
+          "arquivo": "antropologia-mesticagem-identidade.md",
+          "tema": "antropologia"
+        },
+        {
+          "conceito": "Democracia racial",
+          "arquivo": "ciencia-politica-democracia-racial.md",
+          "tema": "ciencia-politica"
         }
       ]
     },
@@ -248,29 +282,11 @@
         }
       ]
     },
-    "Planos de estudo anexados pelo autor": {
-      "autor": "Debate clássico das ciências humanas",
-      "total": 2,
-      "temas": {
-        "sociologia": 2
-      },
-      "conceitos": [
-        {
-          "conceito": "Conflito × Coesão",
-          "arquivo": "eixo-conflito-coesao.md",
-          "tema": "sociologia"
-        },
-        {
-          "conceito": "Estrutura × Agência",
-          "arquivo": "eixo-estrutura-agencia.md",
-          "tema": "sociologia"
-        }
-      ]
-    },
     "Sem obra": {
       "autor": "Desconhecido",
-      "total": 6,
+      "total": 7,
       "temas": {
+        "sociologia": 1,
         "historia": 1,
         "psicologia": 1,
         "ciencia-politica": 1,
@@ -279,6 +295,11 @@
         "antropologia": 1
       },
       "conceitos": [
+        {
+          "conceito": "Brasil × Universal",
+          "arquivo": "eixo-brasil-universal.md",
+          "tema": "sociologia"
+        },
         {
           "conceito": "Continuidade × Ruptura",
           "arquivo": "eixo-continuidade-ruptura.md",
@@ -308,6 +329,25 @@
           "conceito": "Natureza × Cultura",
           "arquivo": "eixo-natureza-cultura.md",
           "tema": "antropologia"
+        }
+      ]
+    },
+    "Planos de estudo anexados pelo autor": {
+      "autor": "Debate clássico das ciências humanas",
+      "total": 2,
+      "temas": {
+        "sociologia": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Conflito × Coesão",
+          "arquivo": "eixo-conflito-coesao.md",
+          "tema": "sociologia"
+        },
+        {
+          "conceito": "Estrutura × Agência",
+          "arquivo": "eixo-estrutura-agencia.md",
+          "tema": "sociologia"
         }
       ]
     },
@@ -696,6 +736,26 @@
         }
       ]
     },
+    "Raízes do Brasil": {
+      "autor": "Sérgio Buarque de Holanda",
+      "total": 2,
+      "temas": {
+        "historia": 1,
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Formação social brasileira",
+          "arquivo": "historia-formacao-social-brasileira.md",
+          "tema": "historia"
+        },
+        {
+          "conceito": "Cordialidade",
+          "arquivo": "sociologia-cordialidade.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
     "A Memória Coletiva": {
       "autor": "Maurice Halbwachs",
       "total": 1,
@@ -706,6 +766,20 @@
         {
           "conceito": "Memória e esquecimento",
           "arquivo": "historia-memoria.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "O Que É Racismo Estrutural": {
+      "autor": "Silvio Almeida",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Racismo estrutural",
+          "arquivo": "historia-racismo-estrutural.md",
           "tema": "historia"
         }
       ]
@@ -906,6 +980,20 @@
         }
       ]
     },
+    "A Elite do Atraso: da Escravidão à Lava Jato": {
+      "autor": "Jessé Souza",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Elite do atraso",
+          "arquivo": "sociologia-elite-do-atraso.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
     "As Regras do Método Sociológico, de Émile Durkheim": {
       "autor": "Émile Durkheim",
       "total": 1,
@@ -990,6 +1078,20 @@
         }
       ]
     },
+    "Os Donos do Poder": {
+      "autor": "Raymundo Faoro",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Patrimonialismo",
+          "arquivo": "sociologia-patrimonialismo.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
     "Curso de Filosofia Positiva (Discurso preliminar), de Auguste Comte": {
       "autor": "Auguste Comte",
       "total": 1,
@@ -1038,6 +1140,15 @@
         "Técnicas do corpo"
       ]
     },
+    "Roberto DaMatta": {
+      "total": 1,
+      "obras": [
+        "Carnavais, Malandros e Heróis"
+      ],
+      "conceitos": [
+        "Cultura popular e sincretismo"
+      ]
+    },
     "William Graham Sumner": {
       "total": 1,
       "obras": [
@@ -1056,6 +1167,15 @@
         "Etnografia"
       ]
     },
+    "Gilberto Freyre": {
+      "total": 1,
+      "obras": [
+        "Casa-Grande & Senzala"
+      ],
+      "conceitos": [
+        "Mestiçagem e identidade nacional"
+      ]
+    },
     "Franz Boas": {
       "total": 1,
       "obras": [
@@ -1072,6 +1192,15 @@
       ],
       "conceitos": [
         "Ritual"
+      ]
+    },
+    "Gilberto Freyre (formulação); Florestan Fernandes e Lélia Gonzalez (crítica)": {
+      "total": 1,
+      "obras": [
+        "Casa-Grande & Senzala"
+      ],
+      "conceitos": [
+        "Democracia racial"
       ]
     },
     "Steven Levitsky e Daniel Ziblatt": {
@@ -1170,6 +1299,21 @@
         "PIB e crescimento"
       ]
     },
+    "Desconhecido": {
+      "total": 7,
+      "obras": [
+        "Sem obra"
+      ],
+      "conceitos": [
+        "Brasil × Universal",
+        "Continuidade × Ruptura",
+        "Indivíduo × Grupo",
+        "Liberdade × Igualdade",
+        "Local × Global",
+        "Mercado × Estado",
+        "Natureza × Cultura"
+      ]
+    },
     "Debate clássico das ciências humanas": {
       "total": 2,
       "obras": [
@@ -1178,20 +1322,6 @@
       "conceitos": [
         "Conflito × Coesão",
         "Estrutura × Agência"
-      ]
-    },
-    "Desconhecido": {
-      "total": 6,
-      "obras": [
-        "Sem obra"
-      ],
-      "conceitos": [
-        "Continuidade × Ruptura",
-        "Indivíduo × Grupo",
-        "Liberdade × Igualdade",
-        "Local × Global",
-        "Mercado × Estado",
-        "Natureza × Cultura"
       ]
     },
     "Debate filosófico clássico (Platão e Locke a Chomsky)": {
@@ -1404,6 +1534,16 @@
         "Fonte histórica"
       ]
     },
+    "Sérgio Buarque de Holanda": {
+      "total": 2,
+      "obras": [
+        "Raízes do Brasil"
+      ],
+      "conceitos": [
+        "Formação social brasileira",
+        "Cordialidade"
+      ]
+    },
     "Maurice Halbwachs": {
       "total": 1,
       "obras": [
@@ -1411,6 +1551,15 @@
       ],
       "conceitos": [
         "Memória e esquecimento"
+      ]
+    },
+    "Silvio Almeida": {
+      "total": 1,
+      "obras": [
+        "O Que É Racismo Estrutural"
+      ],
+      "conceitos": [
+        "Racismo estrutural"
       ]
     },
     "Fernand Braudel": {
@@ -1613,6 +1762,15 @@
         "Desigualdade Social"
       ]
     },
+    "Jessé Souza": {
+      "total": 1,
+      "obras": [
+        "A Elite do Atraso: da Escravidão à Lava Jato"
+      ],
+      "conceitos": [
+        "Elite do atraso"
+      ]
+    },
     "Conceito das ciências sociais (Scott, Butler; fonte didática: Wikipédia)": {
       "total": 1,
       "obras": [
@@ -1685,6 +1843,15 @@
         "Papel Social"
       ]
     },
+    "Raymundo Faoro": {
+      "total": 1,
+      "obras": [
+        "Os Donos do Poder"
+      ],
+      "conceitos": [
+        "Patrimonialismo"
+      ]
+    },
     "Auguste Comte": {
       "total": 1,
       "obras": [
@@ -1704,5 +1871,5 @@
       ]
     }
   },
-  "atualizado_em": "2026-10-23T01:36:27"
+  "atualizado_em": "2026-10-23T01:44:16"
 }

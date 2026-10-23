@@ -6,13 +6,13 @@
 
 | Indicador | Valor |
 |---|---|
-| Notas de conceito | 87 |
+| Notas de conceito | 96 |
 | Notas reescritas (`status: ok`) | 0 |
-| Notas em rascunho | 87 |
+| Notas em rascunho | 96 |
 | Notas com citação de apoio | 0 |
-| Notas com fonte primária declarada | 64 |
+| Notas com fonte primária declarada | 72 |
 | Notas com fonte verificada | 0 |
-| Nós de trilha concluídos | 0 de 121 |
+| Nós de trilha concluídos | 0 de 133 |
 | Entradas de diário | 0 (em 0 semana(s)) |
 | Fichas de leitura | 0 |
 | Trechos guardados | 0 |
@@ -29,6 +29,7 @@
 | Geografia — Nível 1: ler o mundo pela escala | 12 | 0 | [----------] 0% | Espaço geográfico — a porta de entrada: espaço como sistema de obje… |
 | História — Nível 1: do documento ao tempo longo | 12 | 0 | [----------] 0% | Fonte histórica — a porta de entrada: o documento responde a pergun… |
 | Integrada — Nível 1: as três lentes juntas (Filosofia × Sociologia × Psicologia) | 13 | 0 | [----------] 0% | A0. A mentalidade do explorador (Fase 0 do plano) |
+| Pensamento Social Brasileiro: por que o Brasil é assim | 12 | 0 | [----------] 0% | Eixo Brasil × Universal — a bússola de abertura: excepcionalismo de… |
 | Psicologia — Nível 1: Fundações | 12 | 0 | [----------] 0% | Eixo Livre-arbítrio × Determinismo — a bússola 1: antes das escolas… |
 | Psicologia — Nível 2: do laboratório à vida | 12 | 0 | [----------] 0% | Vieses cognitivos — Kahneman: Sistema 1 × Sistema 2, heurísticas e… |
 | Sociologia — Nível 1: do olhar sociológico ao mundo contemporâneo | 12 | 0 | [----------] 0% | Imaginação sociológica — a porta de entrada (Mills): o pessoal é pú… |
@@ -37,14 +38,14 @@
 
 | Tema | Notas | ok | rascunho | Com citação | Fonte primária | Fonte verificada |
 |---|---|---|---|---|---|---|
-| Sociologia | 20 | 0 | 20 | 0 | 12 | 0 |
+| Sociologia | 24 | 0 | 24 | 0 | 15 | 0 |
 | Psicologia | 16 | 0 | 16 | 0 | 9 | 0 |
 | Filosofia | 15 | 0 | 15 | 0 | 12 | 0 |
+| Antropologia | 9 | 0 | 9 | 0 | 8 | 0 |
+| História | 9 | 0 | 9 | 0 | 8 | 0 |
+| Ciência Política | 8 | 0 | 8 | 0 | 7 | 0 |
 | Economia | 8 | 0 | 8 | 0 | 7 | 0 |
-| Antropologia | 7 | 0 | 7 | 0 | 6 | 0 |
-| Ciência Política | 7 | 0 | 7 | 0 | 6 | 0 |
 | Geografia | 7 | 0 | 7 | 0 | 6 | 0 |
-| História | 7 | 0 | 7 | 0 | 6 | 0 |
 
 ## Próximas notas a reescrever
 
@@ -64,7 +65,7 @@ As notas com mais pendências primeiro. Reescrever uma nota é o que a move para
 | Inatismo × Empirismo | Filosofia | 5 — explicação com as suas palavras |
 | Livre-arbítrio × Determinismo | Filosofia | 5 — explicação com as suas palavras |
 | Mente × Corpo | Filosofia | 5 — explicação com as suas palavras |
-| … | | mais 75 nota(s) |
+| … | | mais 84 nota(s) |
 
 ## Marcos de decisão
 
