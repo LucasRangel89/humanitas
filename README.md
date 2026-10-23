@@ -23,7 +23,7 @@ A lógica do projeto é simples: em vez de reler um PDF de 400 páginas para ach
 | `diario/` | Diário de bordo — sínteses reflexivas escritas por você ao fechar cada módulo de estudo |
 | `indices/` | `indice.json` — o mapa geral do acervo processado |
 | `templates/` | Modelos prontos para copiar ao criar uma nota nova |
-| `docs/` | Guias passo a passo (01 a 05): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo e priorizar leituras |
+| `docs/` | Guias passo a passo (01 a 09): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo, priorizar leituras, manter o CI e planejar a expansão para outras humanidades |
 | `notebooks/` | Notebooks do Google Colab (sem digitar código): `converter-pdfs` transforma PDFs em Markdown |
 
 ## Painel de temas
@@ -46,6 +46,11 @@ Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo vi
 | Integrada | Ativo | 0 | 0 | 0 | 1 |
 
 <!-- PAINEL-TEMAS-FIM -->
+
+Os temas marcados como "Em breve" já fazem parte da missão do painel — não são uma
+novidade, são a parte do mapa que ainda não foi estudada. O plano de expansão (quais
+humanidades entram, com que critério, em que ordem e por quê) está no
+[Guia 09](docs/09-mapa-das-humanidades.md).
 
 ## Meta desta semana
 

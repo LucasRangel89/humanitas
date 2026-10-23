@@ -12,6 +12,7 @@ Comece pelo que resolve o seu problema agora.
 | [06 — Manutenção: CLI e CI](06-manutencao-e-ci.md) | Rodar `scripts/painel.py`, entender a auditoria e importar flashcards |
 | [07 — Rumos e próximos passos](07-rumos-e-proximos-passos.md) | O que fazer depois da fundação: padrão-ouro, site, RAG e **quando migrar de ferramenta** (Fase 4) |
 | [08 — Instruções para futuros mantenedores](08-instrucoes-futuras.md) | Como adicionar campo, manter CI, publicar site e criar PRs |
+| [09 — Mapa das humanidades](09-mapa-das-humanidades.md) | **Expansão**: quais áreas entram, como (tema × eixo × tag), em que ordem e com que critério |
 | [Análise do projeto (arquivo histórico)](arquivo/analise-2026-10-21.md) | Diagnóstico de 21/10/2026 — números desatualizados, não é plano vigente |
 
 ## Anexos
