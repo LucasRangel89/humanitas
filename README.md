@@ -19,11 +19,11 @@ A lógica do projeto é simples: em vez de reler um PDF de 400 páginas para ach
 | `acervo/` | Um arquivo Markdown por livro convertido (texto integral da obra) |
 | `conceitos/` | Notas de conceito — uma ideia central por arquivo, com explicação e trecho de apoio |
 | `trechos/` | Citações e passagens guardadas, sempre acompanhadas de um comentário pessoal |
-| `trilhas/` | Trilhas de aprendizado — caminhos ordenados do básico ao avançado (Modo Trilha). Já vêm prontas: Psicologia Níveis 1 e 2, Filosofia, Sociologia e a Integrada (as três lentes juntas) |
+| `trilhas/` | Trilhas de aprendizado — caminhos ordenados do básico ao avançado (Modo Trilha). Já vêm prontas: Psicologia Níveis 1 e 2, Filosofia, Sociologia, Integrada, Antropologia, História, Geografia, Ciência Política, Economia e Pensamento Social Brasileiro |
 | `diario/` | Diário de bordo — sínteses reflexivas escritas por você ao fechar cada módulo de estudo |
 | `indices/` | `indice.json` — o mapa geral do acervo processado |
 | `templates/` | Modelos prontos para copiar ao criar uma nota nova |
-| `docs/` | Guias passo a passo (01 a 09): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo, priorizar leituras, manter o CI e planejar a expansão para outras humanidades |
+| `docs/` | Guias passo a passo (01 a 10): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo, priorizar leituras, manter o CI, planejar a expansão para outras humanidades e executar o ritual de estudo |
 | `notebooks/` | Notebooks do Google Colab (sem digitar código): `converter-pdfs` transforma PDFs em Markdown |
 
 ## Painel de temas
@@ -34,11 +34,11 @@ Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo vi
 
 | Tema | Status | Notas de conceito | Livros processados | Fichas | Trilhas |
 |---|---|---|---|---|---|
-| História | Ativo | 7 | 0 | 0 | 1 |
-| Sociologia | Ativo | 20 | 0 | 0 | 1 |
+| História | Ativo | 9 | 0 | 0 | 1 |
+| Sociologia | Ativo | 24 | 0 | 0 | 2 |
 | Filosofia | Ativo | 15 | 0 | 0 | 1 |
-| Ciência Política | Ativo | 7 | 0 | 0 | 1 |
-| Antropologia | Ativo | 7 | 0 | 0 | 1 |
+| Ciência Política | Ativo | 8 | 0 | 0 | 1 |
+| Antropologia | Ativo | 9 | 0 | 0 | 1 |
 | Economia | Ativo | 8 | 0 | 0 | 1 |
 | Geografia | Ativo | 7 | 0 | 0 | 1 |
 | Psicologia | Ativo | 16 | 0 | 0 | 2 |
@@ -57,7 +57,7 @@ Edite esta linha toda semana (o atualizador do painel não mexe nela): _ex.: nó
 
 ## Trilhas prontas para começar
 
-O painel nasce com dez trilhas semente: cinco montadas a partir dos planos de estudo anexados pelo autor (arquivados em `docs/anexos/`) e cinco abertas pela expansão para as demais humanidades (Guia 09):
+O painel nasce com onze trilhas semente: cinco montadas a partir dos planos de estudo anexados pelo autor (arquivados em `docs/anexos/`), cinco abertas pela expansão para as demais humanidades (Guia 09) e uma transversal brasileira (Guia 09, §4.4):
 
 | Trilha | Em uma frase |
 |---|---|
@@ -71,8 +71,11 @@ O painel nasce com dez trilhas semente: cinco montadas a partir dos planos de es
 | [Geografia Nível 1](trilhas/geografia-nivel-1.md) | Ler o mundo pela escala: do lugar vivido ao sistema de fluxos |
 | [Ciência Política Nível 1](trilhas/ciencia-politica-nivel-1.md) | Do poder ao regime: as três dimensões do poder e o teste da democracia |
 | [Economia Nível 1](trilhas/economia-nivel-1.md) | Como ler o noticiário econômico: escassez, incentivos, juros, desigualdade — sem cálculo |
+| [Pensamento Social Brasileiro](trilhas/pensamento-social-brasileiro.md) | Por que o Brasil é assim: formação, cordialidade, mito da democracia racial e racismo estrutural |
 
-A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridades-de-leitura.md) — os 10 livros-chave definidos a partir dos planos anexados. As leituras de Antropologia, História, Geografia, Ciência Política e Economia estão no [Guia 09](docs/09-mapa-das-humanidades.md) (§4.1).
+A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridades-de-leitura.md) — os 10 livros-chave definidos a partir dos planos anexados. As leituras de Antropologia, História, Geografia, Ciência Política e Economia estão no [Guia 09](docs/09-mapa-das-humanidades.md) (§4.1); a da trilha brasileira, no §4.4.
+
+O guia que explica **como** transformar uma leitura em nota `ok` (o ritual de 90 minutos, os cinco testes e os anti-padrões) é o [Guia 10](docs/10-ritual-de-estudo.md).
 
 ## Como adicionar um livro novo (resumo rápido)
 

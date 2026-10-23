@@ -82,6 +82,21 @@ paralela, curta e barata:
 | Economia | Celso Furtado, *Formação Econômica do Brasil* | a economia brasileira explicada pelos ciclos, não por fórmulas |
 | Economia | Thomas Piketty, *O Capital no Século XXI* (introdução) | por que riqueza concentra mais que renda |
 
+### Bloco brasileiro (trilha Pensamento Social Brasileiro)
+
+Estas obras não entram no top 10 pelo mesmo motivo das anteriores: o top 10 é o
+cruzamento entre os planos anexados. Mas, entre todas as filas deste guia, esta é a que
+mais rende por página lida — porque dá ao painel autores e exemplos brasileiros.
+
+| Tema | Obra de entrada | Por que começar por ela |
+|---|---|---|
+| Sociologia/História | Sérgio Buarque de Holanda, *Raízes do Brasil* | curto, em português, e abre formação, cordialidade e patrimonialismo de uma vez |
+| Sociologia | Gilberto Freyre, *Casa-Grande & Senzala* (introdução e cap. 1) | a matriz da narrativa nacional — ler junto com a crítica |
+| História | Caio Prado Jr., *Formação do Brasil Contemporâneo* (cap. 1) | a leitura materialista do mesmo processo |
+| Antropologia | Roberto DaMatta, *Carnavais, Malandros e Heróis* | o cotidiano brasileiro como objeto antropológico |
+| Sociologia | Jessé Souza, *A Elite do Atraso* | a hipótese rival mais forte sobre a desigualdade |
+| Ciência Política | Lélia Gonzalez, *Por um Feminismo Afro-Latino-Americano* | a crítica que reorganiza todo o bloco |
+
 ## Como usar este guia na prática
 
 1. Abra a trilha do mês e olhe qual nó vem a seguir.

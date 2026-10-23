@@ -189,6 +189,8 @@ A lista gerada de marcos e métricas está em [`progresso.md`](../progresso.md).
 | P2 | Conversor por capítulo (arquivos menores, melhor busca) | 1 dia |
 | P2 | `pre-commit` rodando `auditar` antes de cada commit | 1 h |
 | P2 | Fichas de leitura de *Raça e História* e *Apologia da História* (Guia 09, §12) | 3 h |
+| P1 | **Começar a Fase 1 pelo [Guia 10](10-ritual-de-estudo.md)**: 1 sessão de 90 min por semana (a fila das 10 primeiras está no §5.1) | 90 min/semana |
+| P2 | Trilha Pensamento Social Brasileiro: esqueleto pronto, faltam as leituras (Guia 09, §4.4) | conforme leitura |
 | P1 | ~~Decidir Psicologia Social~~ — **feito**: rebaixada a tag + eixo Indivíduo × Grupo (Guia 09, §4.1.6) | 30 min |
 | P2 | ~~Quinta onda da expansão: Economia~~ — **feito em 2026-10-23** (Guia 09, §4.1.5) | 20 h |
 
