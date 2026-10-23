@@ -904,6 +904,29 @@ def test_pagina_registrar_lista_pendencia_com_link_de_edicao(mini_repo: pathlib.
     assert "edit/main/conceitos/sociologia-habitus.md" in texto
 
 
+def test_indice_guarda_titulo_dos_nos(mini_repo: pathlib.Path):
+    indice = painel.montar_indice(mini_repo)
+    trilha = indice["trilhas"][0]
+    assert trilha["nos_total"] == len(trilha["nos"]) == 3
+    assert "Habitus" in trilha["nos"][0]
+    assert not any("](" in no for no in trilha["nos"])  # markdown dos links sai limpo
+
+
+def test_pagina_registrar_tem_central_de_progresso(mini_repo: pathlib.Path):
+    painel.montar_site_src(mini_repo)
+    texto = (mini_repo / "site-src" / "registrar.md").read_text(encoding="utf-8")
+    assert 'id="hum-progresso"' in texto
+    assert 'data-acao="exportar"' in texto and 'data-acao="importar"' in texto
+    assert 'data-acao="baixar-md"' in texto and 'data-acao="copiar-comando"' in texto
+    assert "make aplicar-progresso ARQUIVO=~/Downloads/progresso.json" in texto
+    # a configuração levada ao JS tem slug, nome, total e os títulos dos nós
+    config = texto.split('id="hum-config">')[1].split("</script>")[0]
+    dados = json.loads(config)
+    trilha = dados["trilhas"][0]
+    assert trilha["slug"] == "sociologia-teste"
+    assert trilha["total"] == 3 and len(trilha["nos"]) == 3
+
+
 def test_site_copia_assets_js(mini_repo: pathlib.Path):
     pasta = mini_repo / "docs" / "assets" / "js"
     pasta.mkdir(parents=True, exist_ok=True)

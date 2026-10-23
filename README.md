@@ -81,7 +81,7 @@ O guia que explica **como** transformar uma leitura em nota `ok` (o ritual de 90
 
 O site (MkDocs) não é só leitura:
 
-- **Marcar progresso** — nas páginas de trilha as caixas são clicáveis; a marcação fica no navegador e o botão **Exportar progresso** baixa `progresso.json`. No computador, `make aplicar-progresso ARQUIVO=progresso.json` grava os nós nas trilhas (e ajusta o `status`).
+- **Marcar progresso** — nas páginas de trilha as caixas são clicáveis; a marcação fica no navegador. A **central de progresso** (em *Registrar*) exporta `progresso.json` (backup que dá para reimportar), baixa um resumo `.md` legível e copia o comando. No computador, `make aplicar-progresso ARQUIVO=progresso.json` grava os nós nas trilhas e ajusta o `status`.
 - **Registrar uma nota** — a página **Registrar** monta o Markdown no formato que a auditoria espera e oferece **Copiar** ou **Abrir no GitHub já preenchido**. O mesmo resultado sai de `make nova`.
 - **Acompanhar** — painel inicial com o que falta, pendências por nota, cartões (Anki) e retenção.
 

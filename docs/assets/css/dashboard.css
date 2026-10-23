@@ -191,3 +191,71 @@
 .task-list-item.hum-feito > label .task-list-indicator::after { opacity: 1; }
 .task-list-item.hum-feito { color: var(--md-default-fg-color--light); }
 .task-list-item.hum-feito strong { text-decoration: line-through; text-decoration-thickness: 1px; }
+
+/* --- Central de progresso (página Registrar) ------------------------------- */
+.hum-tabela-progresso {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.4rem 0 0.8rem;
+  font-size: 0.86rem;
+}
+.hum-tabela-progresso th,
+.hum-tabela-progresso td {
+  border: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.4rem 0.5rem;
+  vertical-align: middle;
+  text-align: left;
+}
+.hum-tabela-progresso th {
+  color: var(--md-default-fg-color--light);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.hum-tabela-progresso tr.hum-linha-ativa td {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 7%, transparent);
+}
+.hum-mini-barra {
+  display: inline-block;
+  width: 5.5rem;
+  height: 0.35rem;
+  margin-right: 0.45rem;
+  border-radius: 999px;
+  background: var(--md-default-fg-color--lightest);
+  overflow: hidden;
+  vertical-align: middle;
+}
+.hum-mini-barra > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--md-primary-fg-color);
+}
+.hum-mini-contagem {
+  color: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.78rem;
+}
+.hum-mini-acao {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+.hum-comando {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.3rem 0 0.6rem;
+}
+.hum-comando code {
+  flex: 1 1 16rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--md-code-bg-color);
+  border-radius: 0.3rem;
+  font-size: 0.74rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}

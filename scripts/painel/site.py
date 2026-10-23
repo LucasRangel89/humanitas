@@ -438,6 +438,16 @@ def pagina_registrar(indice: dict, guias: set[str] | None = None) -> str:
         "pastas": PASTAS_NOVA,
         "temas": dict(TEMAS),
         "hoje": __import__("datetime").date.today().isoformat(),
+        "trilhas": [
+            {
+                "slug": str(tr.get("arquivo", "")).removesuffix(".md"),
+                "nome": tr.get("trilha", ""),
+                "arquivo": tr.get("arquivo", ""),
+                "total": tr.get("nos_total", 0),
+                "nos": tr.get("nos", []),
+            }
+            for tr in indice.get("trilhas", [])
+        ],
     }
 
     linhas = [
@@ -540,18 +550,43 @@ def pagina_registrar(indice: dict, guias: set[str] | None = None) -> str:
         "## 4. Progresso das trilhas",
         "",
         "Nas páginas de trilha, cada nó tem uma caixa clicável. A marcação fica "
-        "**neste navegador** (localStorage) — é rascunho de progresso, não commit. "
-        "Para gravar no repositório:",
-        "",
-        "1. marque os nós estudados na página da trilha;",
-        "2. clique em **Exportar progresso** (baixa `progresso.json`);",
-        "3. rode `make aplicar-progresso ARQUIVO=progresso.json`;",
-        "4. `make painel` e commite — o `progresso.md` passa a contar os nós.",
-        "",
-        "Enquanto não sincronizar, o painel mostra o progresso real do "
-        "repositório e as trilhas mostram o **seu** progresso local, lado a lado.",
+        "**neste navegador** (localStorage) — é rascunho, não commit. Este painel "
+        "é a central dela: exporte um backup antes de limpar o navegador ou "
+        "trocar de computador.",
         "",
         "</div>",
+        "",
+        '<div class="hum-card" id="hum-progresso">',
+        '  <table class="hum-tabela-progresso">',
+        "    <thead><tr><th>Trilha</th><th>Seu progresso</th><th></th></tr></thead>",
+        '    <tbody id="hum-linhas-progresso"></tbody>',
+        "  </table>",
+        '  <p class="hum-dica" id="hum-total-progresso"></p>',
+        '  <div class="hum-acoes">',
+        '    <button type="button" class="hum-btn hum-btn-primario" data-acao="exportar">'
+        "Exportar progresso (.json)</button>",
+        '    <button type="button" class="hum-btn" data-acao="baixar-md">'
+        "Baixar resumo legível (.md)</button>",
+        '    <button type="button" class="hum-btn" data-acao="importar">Importar…</button>',
+        '    <input type="file" class="hum-input-arquivo" accept="application/json" hidden>',
+        '    <button type="button" class="hum-btn hum-btn-sutil" data-acao="limpar-tudo">'
+        "Limpar tudo</button>",
+        "  </div>",
+        '  <p class="hum-dica" id="hum-dica-progresso"></p>',
+        '  <p class="hum-nota">Para gravar no repositório, exporte e rode o comando '
+        "abaixo na pasta do projeto — o site nunca escreve sozinho:</p>",
+        '  <div class="hum-comando"><code id="hum-comando">'
+        "make aplicar-progresso ARQUIVO=~/Downloads/progresso.json</code>"
+        '<button type="button" class="hum-btn hum-btn-sutil" data-acao="copiar-comando">'
+        "Copiar comando</button></div>",
+        '  <p class="hum-nota">Depois: <code>make painel</code>, confira o diff e commite. '
+        "O <code>progresso.md</code> passa a contar os nós e o status da trilha muda "
+        "para <code>concluida</code> quando todos fecham. O arquivo JSON fica fora do "
+        "Git (está no <code>.gitignore</code>).</p>",
+        "</div>",
+        "",
+        "> Enquanto não sincronizar, o painel mostra o progresso do **repositório** e "
+        "as trilhas mostram o **seu** progresso local, lado a lado.",
         "",
         f'<script type="application/json" id="hum-config">{_json.dumps(config, ensure_ascii=False)}</script>',
         "",

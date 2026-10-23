@@ -146,7 +146,7 @@ não de navegação. Nada disso é editado à mão: mudou a nota, mudou o painel
 | Página | O que é |
 |---|---|
 | `index.md` | Painel inicial (dashboard) |
-| `registrar.md` | **Registrar**: monta uma nota nova, lista pendências, cartões e progresso |
+| `registrar.md` | **Registrar**: monta uma nota nova, lista pendências, cartões e a central de progresso |
 | `trilhas/index.md` | Trilhas com progresso, status e ordem de percurso |
 | `conceitos/index.md` | Notas agrupadas por tema, com ✔/○ por estado |
 | `eixos.md` | Mapa dos debates, com a pergunta de cada eixo |
@@ -183,6 +183,13 @@ Duas coisas deixaram de exigir terminal:
    baixa `progresso.json`; `make aplicar-progresso ARQUIVO=progresso.json` grava
    os nós em `trilhas/<slug>.md`, ajusta o `status` (`em-andamento` ⇄
    `concluida`) e é idempotente (`--simular` mostra o que mudaria).
+
+   A **central de progresso** fica em *Registrar → 4. Progresso das trilhas*:
+   lê o `localStorage`, mostra as 11 trilhas com marcados/total e oferece
+   **Exportar (.json)**, **Baixar resumo legível (.md)** — lista `- [x]` com o
+   título de cada nó, boa para celular/impressão —, **Importar…**, **Limpar
+   tudo** e **Copiar comando**. O `.md` é só leitura: quem restaura backup é o
+   JSON.
 2. **Criar/reescrever nota** — a página **Registrar** monta o Markdown no
    formato da auditoria (frontmatter + corpo-semente por tipo), com **Copiar
    Markdown** e **Abrir no GitHub preenchido** (`/new/main/<pasta>?filename=…&value=…`).
