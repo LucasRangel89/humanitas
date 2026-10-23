@@ -1,19 +1,243 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-22T23:13:07",
+  "atualizado_em": "2026-10-23T01:25:34",
   "totais": {
     "livros": 0,
     "fichas": 0,
-    "conceitos": 45,
-    "eixos": 5,
+    "conceitos": 57,
+    "eixos": 7,
     "trechos": 0,
-    "trilhas": 5,
+    "trilhas": 7,
     "diario": 0
   },
   "livros": [],
   "fichas": [],
   "conceitos": [
+    {
+      "arquivo": "antropologia-alteridade.md",
+      "caminho": "conceitos/antropologia-alteridade.md",
+      "conceito": "Alteridade",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Raça e História",
+      "autor_origem": "Claude Lévi-Strauss",
+      "fonte_verificada": "nao",
+      "tradicao": "estruturalismo",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-etnocentrismo",
+        "antropologia-relativismo-cultural",
+        "antropologia-etnografia"
+      ],
+      "definicao": "Reconhecer o outro como sujeito que tem razões próprias — e não como uma versão atrasada, exótica ou incompleta de nós mesmos.",
+      "tags": [
+        "antropologia",
+        "alteridade",
+        "levi-strauss",
+        "metodo-etnografia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-corpo-tecnicas.md",
+      "caminho": "conceitos/antropologia-corpo-tecnicas.md",
+      "conceito": "Técnicas do corpo",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "As técnicas do corpo",
+      "autor_origem": "Marcel Mauss",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia francesa / antropologia",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-ritual",
+        "eixo-natureza-cultura",
+        "sociologia-habitus"
+      ],
+      "definicao": "Os modos aprendidos de usar o corpo — andar, comer, dormir, parir, lutar — que variam por sociedade e parecem naturais a quem os pratica.",
+      "tags": [
+        "antropologia",
+        "corpo",
+        "mauss",
+        "habitus",
+        "tecnica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-etnocentrismo.md",
+      "caminho": "conceitos/antropologia-etnocentrismo.md",
+      "conceito": "Etnocentrismo",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Folkways",
+      "autor_origem": "William Graham Sumner",
+      "fonte_verificada": "nao",
+      "tradicao": "evolucionismo social / crítica cultural",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-relativismo-cultural",
+        "antropologia-alteridade",
+        "sociologia-cultura"
+      ],
+      "definicao": "Tomar a própria cultura como medida do que é humano, julgando as outras pelo quanto se parecem com ela.",
+      "tags": [
+        "antropologia",
+        "etnocentrismo",
+        "sumner",
+        "preconceito"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-etnografia.md",
+      "caminho": "conceitos/antropologia-etnografia.md",
+      "conceito": "Etnografia",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Argonautas do Pacífico Ocidental",
+      "autor_origem": "Bronisław Malinowski",
+      "fonte_verificada": "nao",
+      "tradicao": "funcionalismo",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-alteridade",
+        "antropologia-relativismo-cultural",
+        "antropologia-ritual"
+      ],
+      "definicao": "Método que produz conhecimento convivendo: observar, participar, entrevistar e registrar por tempo prolongado a vida de um grupo.",
+      "tags": [
+        "antropologia",
+        "etnografia",
+        "malinowski",
+        "metodo-etnografia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-relativismo-cultural.md",
+      "caminho": "conceitos/antropologia-relativismo-cultural.md",
+      "conceito": "Relativismo cultural",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Mente do Homem Primitivo",
+      "autor_origem": "Franz Boas",
+      "fonte_verificada": "nao",
+      "tradicao": "particularismo histórico",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-etnocentrismo",
+        "antropologia-alteridade",
+        "antropologia-etnografia"
+      ],
+      "definicao": "Compreender uma prática dentro do sistema cultural que a produziu, suspendendo o julgamento até entender o contexto — o que não significa afirmar que tudo é válido.",
+      "tags": [
+        "antropologia",
+        "relativismo",
+        "boas",
+        "metodo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-ritual.md",
+      "caminho": "conceitos/antropologia-ritual.md",
+      "conceito": "Ritual",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Os Ritos de Passagem",
+      "autor_origem": "Arnold van Gennep",
+      "fonte_verificada": "nao",
+      "tradicao": "folclore comparado / estruturalismo",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-etnografia",
+        "antropologia-relativismo-cultural",
+        "sociologia-fato-social"
+      ],
+      "definicao": "Sequência de ações formalizadas e repetidas que marca uma passagem, reafirma uma ordem social ou transforma o status de quem a realiza.",
+      "tags": [
+        "antropologia",
+        "ritual",
+        "van-gennep",
+        "turner",
+        "simbolo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
     {
       "arquivo": "eixo-conflito-coesao.md",
       "caminho": "conceitos/eixo-conflito-coesao.md",
@@ -43,6 +267,38 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-continuidade-ruptura.md",
+      "caminho": "conceitos/eixo-continuidade-ruptura.md",
+      "conceito": "Continuidade × Ruptura",
+      "tipo": "eixo",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "historiografia",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "A história muda por rupturas bruscas ou por continuidades lentas — e como uma mudança é reconhecida como \"marco\"?",
+      "tags": [
+        "eixo",
+        "historia",
+        "historiografia",
+        "mudanca"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -175,6 +431,37 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-natureza-cultura.md",
+      "caminho": "conceitos/eixo-natureza-cultura.md",
+      "conceito": "Natureza × Cultura",
+      "tipo": "eixo",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "debate clássico das ciências humanas",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "O que no ser humano é dado pela biologia e o que é fabricado pela vida em sociedade — e onde termina um e começa o outro?",
+      "tags": [
+        "eixo",
+        "antropologia",
+        "natureza-cultura"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -559,6 +846,237 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-colonialismo.md",
+      "caminho": "conceitos/historia-colonialismo.md",
+      "conceito": "Colonialismo",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Colonialidade do poder, eurocentrismo e América Latina",
+      "autor_origem": "Aníbal Quijano",
+      "fonte_verificada": "nao",
+      "tradicao": "teoria decolonial",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura",
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "historia-escravidao-abolicao",
+        "historia-memoria",
+        "antropologia-etnocentrismo"
+      ],
+      "definicao": "Domínio político, econômico e cultural de um território por outro — e o conjunto de hierarquias que ele deixa mesmo depois de terminar formalmente.",
+      "tags": [
+        "historia",
+        "colonialismo",
+        "colonialidade",
+        "quijano",
+        "brasil"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-ditadura-transicao.md",
+      "caminho": "conceitos/historia-ditadura-transicao.md",
+      "conceito": "Ditadura e transição",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Ditadura e Democracia no Brasil",
+      "autor_origem": "Daniel Aarão Reis",
+      "fonte_verificada": "nao",
+      "tradicao": "historiografia política brasileira",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-memoria",
+        "historia-fonte-historica",
+        "eixo-continuidade-ruptura"
+      ],
+      "definicao": "O regime autoritário brasileiro de 1964 a 1985 e o processo negociado que o encerrou — uma transição que mudou o regime sem julgar os crimes do Estado.",
+      "tags": [
+        "historia",
+        "ditadura",
+        "brasil",
+        "seculo-xx",
+        "transicao",
+        "democracia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-escravidao-abolicao.md",
+      "caminho": "conceitos/historia-escravidao-abolicao.md",
+      "conceito": "Escravidão e abolição",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Brasil: uma biografia",
+      "autor_origem": "Lilia Moritz Schwarcz e Heloisa Murgel Starling",
+      "fonte_verificada": "nao",
+      "tradicao": "historiografia social brasileira",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-colonialismo",
+        "historia-memoria",
+        "sociologia-desigualdade-social"
+      ],
+      "definicao": "O sistema que transformou pessoas em propriedade no Brasil por quase quatro séculos — e o processo lento, conflituoso e sem reparação que o encerrou em 1888.",
+      "tags": [
+        "historia",
+        "escravidao",
+        "abolicao",
+        "brasil",
+        "seculo-xix",
+        "racismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-fonte-historica.md",
+      "caminho": "conceitos/historia-fonte-historica.md",
+      "conceito": "Fonte histórica",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Apologia da História ou O Ofício de Historiador",
+      "autor_origem": "Marc Bloch",
+      "fonte_verificada": "nao",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-tempo-historico",
+        "historia-memoria",
+        "antropologia-etnografia"
+      ],
+      "definicao": "Todo vestígio do passado — documento, objeto, imagem, relato oral, ruína — que o historiador interroga com perguntas próprias para construir uma explicação.",
+      "tags": [
+        "historia",
+        "bloch",
+        "fonte",
+        "metodo",
+        "documento"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-memoria.md",
+      "caminho": "conceitos/historia-memoria.md",
+      "conceito": "Memória e esquecimento",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Memória Coletiva",
+      "autor_origem": "Maurice Halbwachs",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia durkheimiana",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-fonte-historica",
+        "historia-ditadura-transicao",
+        "sociologia-construcao-social-realidade"
+      ],
+      "definicao": "A memória é uma construção coletiva do passado, feita de lembranças e silêncios — e por isso é objeto de disputa, não um arquivo neutro.",
+      "tags": [
+        "historia",
+        "memoria",
+        "halbwachs",
+        "esquecimento",
+        "negacionismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-tempo-historico.md",
+      "caminho": "conceitos/historia-tempo-historico.md",
+      "conceito": "Tempo histórico (longa duração)",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "O Mediterrâneo e o Mundo Mediterrânico na Época de Filipe II",
+      "autor_origem": "Fernand Braudel",
+      "fonte_verificada": "nao",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-fonte-historica",
+        "historia-memoria",
+        "eixo-continuidade-ruptura"
+      ],
+      "definicao": "A ideia de que o tempo histórico tem velocidades diferentes — do evento instantâneo às estruturas que duram séculos — e de que a escolha da escala muda a explicação.",
+      "tags": [
+        "historia",
+        "braudel",
+        "annales",
+        "tempo",
+        "longa-duracao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -1625,6 +2143,19 @@
   "trechos": [],
   "trilhas": [
     {
+      "arquivo": "antropologia-nivel-1.md",
+      "caminho": "trilhas/antropologia-nivel-1.md",
+      "trilha": "Antropologia — Nível 1: estranhar o familiar",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de explicar por que \"natural\" é a palavra mais suspeita das ciências humanas: reconhecer o próprio etnocentrismo, usar o relativismo como método (e não como moral), descrever o que a etnografia faz de diferente e posicionar qualquer prática cultural — do ritual à forma de sentar — no eixo Natureza × Cultura.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Alteridade — a porta de entrada: o outro como sujeito, não como versão incompleta de nós."
+    },
+    {
       "arquivo": "filosofia-nivel-1.md",
       "caminho": "trilhas/filosofia-nivel-1.md",
       "trilha": "Filosofia — Nível 1: do mito ao século XX",
@@ -1636,6 +2167,19 @@
       "nos_concluidos": 0,
       "formato": "checkbox",
       "proximo_no": "Teoria das Formas — o ponto de partida: opinião × conhecimento, a Caverna."
+    },
+    {
+      "arquivo": "historia-nivel-1.md",
+      "caminho": "trilhas/historia-nivel-1.md",
+      "trilha": "História — Nível 1: do documento ao tempo longo",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de fazer o que separa história de opinião sobre o passado: interrogar uma fonte com perguntas próprias, escolher a escala de tempo adequada, distinguir memória de história e explicar o Brasil republicano — do colonialismo à transição de 1985 — sem decorar cronologia.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Fonte histórica — a porta de entrada: o documento responde a perguntas, não a todas."
     },
     {
       "arquivo": "integrada-nivel-1.md",

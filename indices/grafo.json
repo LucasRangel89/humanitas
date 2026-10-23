@@ -1,12 +1,87 @@
 {
   "nodes": [
     {
+      "id": "antropologia-alteridade.md",
+      "conceito": "Alteridade",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "estruturalismo",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-corpo-tecnicas.md",
+      "conceito": "Técnicas do corpo",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "sociologia francesa / antropologia",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-etnocentrismo.md",
+      "conceito": "Etnocentrismo",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "evolucionismo social / crítica cultural",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-etnografia.md",
+      "conceito": "Etnografia",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "funcionalismo",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-relativismo-cultural.md",
+      "conceito": "Relativismo cultural",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "particularismo histórico",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-ritual.md",
+      "conceito": "Ritual",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "folclore comparado / estruturalismo",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
       "id": "eixo-conflito-coesao.md",
       "conceito": "Conflito × Coesão",
       "tema": "sociologia",
       "tipo": "eixo",
       "tradicao": "",
       "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-continuidade-ruptura.md",
+      "conceito": "Continuidade × Ruptura",
+      "tema": "historia",
+      "tipo": "eixo",
+      "tradicao": "historiografia",
+      "nivel_evidencia": "teorica",
       "eixos": []
     },
     {
@@ -43,6 +118,15 @@
       "tipo": "eixo",
       "tradicao": "",
       "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-natureza-cultura.md",
+      "conceito": "Natureza × Cultura",
+      "tema": "antropologia",
+      "tipo": "eixo",
+      "tradicao": "debate clássico das ciências humanas",
+      "nivel_evidencia": "teorica",
       "eixos": []
     },
     {
@@ -152,6 +236,73 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "eixos": []
+    },
+    {
+      "id": "historia-colonialismo.md",
+      "conceito": "Colonialismo",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "teoria decolonial",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura",
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "historia-ditadura-transicao.md",
+      "conceito": "Ditadura e transição",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "historiografia política brasileira",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-escravidao-abolicao.md",
+      "conceito": "Escravidão e abolição",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "historiografia social brasileira",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-fonte-historica.md",
+      "conceito": "Fonte histórica",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-memoria.md",
+      "conceito": "Memória e esquecimento",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "sociologia durkheimiana",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-tempo-historico.md",
+      "conceito": "Tempo histórico (longa duração)",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
     },
     {
       "id": "psicologia-apego.md",
@@ -451,10 +602,256 @@
       "eixos": []
     }
   ],
-  "edges": [],
-  "atualizado_em": "2026-10-22T23:13:53",
+  "edges": [
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "antropologia-etnocentrismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "antropologia-ritual.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "sociologia-habitus.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "antropologia-alteridade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "sociologia-cultura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "antropologia-alteridade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "antropologia-ritual.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "antropologia-etnocentrismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "antropologia-alteridade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "sociologia-fato-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "historia-escravidao-abolicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "antropologia-etnocentrismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "historia-fonte-historica.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "historia-colonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "sociologia-desigualdade-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "historia-tempo-historico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "historia-fonte-historica.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "historia-ditadura-transicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "sociologia-construcao-social-realidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "historia-fonte-historica.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    }
+  ],
+  "atualizado_em": "2026-10-23T01:25:35",
   "totais": {
-    "nodes": 50,
-    "edges": 0
+    "nodes": 64,
+    "edges": 49
   }
 }

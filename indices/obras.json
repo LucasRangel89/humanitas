@@ -1,5 +1,89 @@
 {
   "obras": {
+    "Raça e História": {
+      "autor": "Claude Lévi-Strauss",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Alteridade",
+          "arquivo": "antropologia-alteridade.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "As técnicas do corpo": {
+      "autor": "Marcel Mauss",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Técnicas do corpo",
+          "arquivo": "antropologia-corpo-tecnicas.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "Folkways": {
+      "autor": "William Graham Sumner",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Etnocentrismo",
+          "arquivo": "antropologia-etnocentrismo.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "Argonautas do Pacífico Ocidental": {
+      "autor": "Bronisław Malinowski",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Etnografia",
+          "arquivo": "antropologia-etnografia.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "A Mente do Homem Primitivo": {
+      "autor": "Franz Boas",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Relativismo cultural",
+          "arquivo": "antropologia-relativismo-cultural.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "Os Ritos de Passagem": {
+      "autor": "Arnold van Gennep",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Ritual",
+          "arquivo": "antropologia-ritual.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
     "Planos de estudo anexados pelo autor": {
       "autor": "Debate clássico das ciências humanas",
       "total": 2,
@@ -16,6 +100,26 @@
           "conceito": "Estrutura × Agência",
           "arquivo": "eixo-estrutura-agencia.md",
           "tema": "sociologia"
+        }
+      ]
+    },
+    "Sem obra": {
+      "autor": "Desconhecido",
+      "total": 2,
+      "temas": {
+        "historia": 1,
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Continuidade × Ruptura",
+          "arquivo": "eixo-continuidade-ruptura.md",
+          "tema": "historia"
+        },
+        {
+          "conceito": "Natureza × Cultura",
+          "arquivo": "eixo-natureza-cultura.md",
+          "tema": "antropologia"
         }
       ]
     },
@@ -270,6 +374,90 @@
           "conceito": "Véu da Ignorância",
           "arquivo": "filosofia-veu-da-ignorancia.md",
           "tema": "filosofia"
+        }
+      ]
+    },
+    "Colonialidade do poder, eurocentrismo e América Latina": {
+      "autor": "Aníbal Quijano",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Colonialismo",
+          "arquivo": "historia-colonialismo.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "Ditadura e Democracia no Brasil": {
+      "autor": "Daniel Aarão Reis",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Ditadura e transição",
+          "arquivo": "historia-ditadura-transicao.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "Brasil: uma biografia": {
+      "autor": "Lilia Moritz Schwarcz e Heloisa Murgel Starling",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Escravidão e abolição",
+          "arquivo": "historia-escravidao-abolicao.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "Apologia da História ou O Ofício de Historiador": {
+      "autor": "Marc Bloch",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Fonte histórica",
+          "arquivo": "historia-fonte-historica.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "A Memória Coletiva": {
+      "autor": "Maurice Halbwachs",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Memória e esquecimento",
+          "arquivo": "historia-memoria.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "O Mediterrâneo e o Mundo Mediterrânico na Época de Filipe II": {
+      "autor": "Fernand Braudel",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Tempo histórico (longa duração)",
+          "arquivo": "historia-tempo-historico.md",
+          "tema": "historia"
         }
       ]
     },
@@ -569,6 +757,60 @@
     }
   },
   "autores": {
+    "Claude Lévi-Strauss": {
+      "total": 1,
+      "obras": [
+        "Raça e História"
+      ],
+      "conceitos": [
+        "Alteridade"
+      ]
+    },
+    "Marcel Mauss": {
+      "total": 1,
+      "obras": [
+        "As técnicas do corpo"
+      ],
+      "conceitos": [
+        "Técnicas do corpo"
+      ]
+    },
+    "William Graham Sumner": {
+      "total": 1,
+      "obras": [
+        "Folkways"
+      ],
+      "conceitos": [
+        "Etnocentrismo"
+      ]
+    },
+    "Bronisław Malinowski": {
+      "total": 1,
+      "obras": [
+        "Argonautas do Pacífico Ocidental"
+      ],
+      "conceitos": [
+        "Etnografia"
+      ]
+    },
+    "Franz Boas": {
+      "total": 1,
+      "obras": [
+        "A Mente do Homem Primitivo"
+      ],
+      "conceitos": [
+        "Relativismo cultural"
+      ]
+    },
+    "Arnold van Gennep": {
+      "total": 1,
+      "obras": [
+        "Os Ritos de Passagem"
+      ],
+      "conceitos": [
+        "Ritual"
+      ]
+    },
     "Debate clássico das ciências humanas": {
       "total": 2,
       "obras": [
@@ -577,6 +819,16 @@
       "conceitos": [
         "Conflito × Coesão",
         "Estrutura × Agência"
+      ]
+    },
+    "Desconhecido": {
+      "total": 2,
+      "obras": [
+        "Sem obra"
+      ],
+      "conceitos": [
+        "Continuidade × Ruptura",
+        "Natureza × Cultura"
       ]
     },
     "Debate filosófico clássico (Platão e Locke a Chomsky)": {
@@ -705,6 +957,60 @@
       ],
       "conceitos": [
         "Véu da Ignorância"
+      ]
+    },
+    "Aníbal Quijano": {
+      "total": 1,
+      "obras": [
+        "Colonialidade do poder, eurocentrismo e América Latina"
+      ],
+      "conceitos": [
+        "Colonialismo"
+      ]
+    },
+    "Daniel Aarão Reis": {
+      "total": 1,
+      "obras": [
+        "Ditadura e Democracia no Brasil"
+      ],
+      "conceitos": [
+        "Ditadura e transição"
+      ]
+    },
+    "Lilia Moritz Schwarcz e Heloisa Murgel Starling": {
+      "total": 1,
+      "obras": [
+        "Brasil: uma biografia"
+      ],
+      "conceitos": [
+        "Escravidão e abolição"
+      ]
+    },
+    "Marc Bloch": {
+      "total": 1,
+      "obras": [
+        "Apologia da História ou O Ofício de Historiador"
+      ],
+      "conceitos": [
+        "Fonte histórica"
+      ]
+    },
+    "Maurice Halbwachs": {
+      "total": 1,
+      "obras": [
+        "A Memória Coletiva"
+      ],
+      "conceitos": [
+        "Memória e esquecimento"
+      ]
+    },
+    "Fernand Braudel": {
+      "total": 1,
+      "obras": [
+        "O Mediterrâneo e o Mundo Mediterrânico na Época de Filipe II"
+      ],
+      "conceitos": [
+        "Tempo histórico (longa duração)"
       ]
     },
     "John Bowlby e Mary Ainsworth": {
@@ -998,5 +1304,5 @@
       ]
     }
   },
-  "atualizado_em": "2026-10-22T23:18:11"
+  "atualizado_em": "2026-10-23T01:25:35"
 }

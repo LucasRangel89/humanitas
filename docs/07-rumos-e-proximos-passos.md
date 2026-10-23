@@ -184,10 +184,11 @@ A lista gerada de marcos e métricas está em [`progresso.md`](../progresso.md).
 | Prioridade | Item | Esforço |
 |---|---|---|
 | P1 | Habilitar branch protection exigindo o CI verde em `main` | 10 min |
-| P1 | Decidir o primeiro tema da expansão e o teto de temas ativos ([Guia 09](09-mapa-das-humanidades.md), §11) | 30 min |
-| P2 | Regra do zero: tirar do README os temas sem nota/trilha e listá-los como "planejados" ([Guia 09](09-mapa-das-humanidades.md), §2.3) | 1 h |
+| P1 | ~~Decidir o primeiro tema da expansão~~ — **feito**: Antropologia, depois História ([Guia 09](09-mapa-das-humanidades.md), §11) | 30 min |
+| P2 | ~~Regra do zero: tirar do README os temas sem nota/trilha~~ — **feito em 2026-10-23** ([Guia 09](09-mapa-das-humanidades.md), §2.3) | 1 h |
 | P2 | Conversor por capítulo (arquivos menores, melhor busca) | 1 dia |
 | P2 | `pre-commit` rodando `auditar` antes de cada commit | 1 h |
+| P2 | Fichas de leitura de *Raça e História* e *Apologia da História* (Guia 09, §12) | 3 h |
 
 ## Como medir (sem autoengano)
 

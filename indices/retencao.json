@@ -1,23 +1,27 @@
 {
-  "total_conceitos": 50,
+  "total_conceitos": 64,
   "por_status": {
-    "rascunho": 50
+    "rascunho": 64
   },
   "por_nivel": {
-    "entusiasta": 19,
-    "iniciante": 31
+    "iniciante": 41,
+    "entusiasta": 23
   },
   "por_tema": {
+    "antropologia": 7,
     "sociologia": 20,
+    "historia": 7,
     "filosofia": 15,
     "psicologia": 15
   },
-  "total_cartoes": 55,
+  "total_cartoes": 123,
   "cartoes_por_tema": {
+    "antropologia": 34,
     "filosofia": 18,
+    "história": 34,
     "psicologia": 15,
     "sociologia": 22
   },
   "taxa_ok": 0.0,
-  "atualizado_em": "2026-10-22T23:18:46"
+  "atualizado_em": "2026-10-23T01:25:35"
 }
