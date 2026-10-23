@@ -361,6 +361,15 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
 
 
 def cmd_site(raiz: pathlib.Path, **opcoes) -> int:
+    # PR7: portão — não publica site se auditoria falhar
+    from .auditoria import auditar as _auditar_gate
+    erros, _avisos = _auditar_gate(raiz)
+    if erros:
+        print("# Portão de publicação bloqueado: auditoria encontrou erros.")
+        for e in erros[:10]:
+            print(f"  - {e}")
+        print(f"\nCorrija {len(erros)} erro(s) antes de publicar o site (rode `make auditar`).")
+        return 1
     destino = raiz / "site-src"
     montar_site_src(raiz, destino)
     paginas = sorted(destino.rglob("*.md"))

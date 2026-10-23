@@ -766,3 +766,23 @@ def test_cmd_retencao_gera_json(mini_repo: pathlib.Path):
     assert painel.main(["--raiz", str(mini_repo), "retencao"]) == 0
     assert (mini_repo / "indices" / "retencao.json").exists()
 
+
+# ---------------------------------------------------------------------------
+# PR7: portão publicação site
+# ---------------------------------------------------------------------------
+
+def test_site_gate_bloqueia_com_erro(mini_repo: pathlib.Path):
+    # cria duplicata para gerar erro de auditoria
+    import shutil
+    orig = mini_repo / "conceitos" / "sociologia-habitus.md"
+    dup = mini_repo / "conceitos" / "sociologia-habitus-duplicata.md"
+    shutil.copy(orig, dup)
+    # auditar deve falhar
+    erros, _ = painel.auditar(mini_repo)
+    assert any("duplicado" in e.lower() for e in erros)
+    assert painel.main(["--raiz", str(mini_repo), "site"]) == 1
+
+
+def test_site_gate_passou_sem_erro(mini_repo: pathlib.Path):
+    assert painel.main(["--raiz", str(mini_repo), "site"]) == 0
+
