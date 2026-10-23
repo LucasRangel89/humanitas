@@ -1,4 +1,5 @@
 ---
+
 conceito: "Psicologia Humanista"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Carl Rogers, Abraham Maslow"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, escolas-classicas, autorrealizacao]
+fonte_verificada: nao
 ---
 
 # Conceito — Psicologia Humanista

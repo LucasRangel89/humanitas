@@ -1,4 +1,5 @@
 ---
+
 conceito: "Behaviorismo"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "John B. Watson, B. F. Skinner; base de Ivan Pavlov"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, escolas-classicas, comportamento]
+fonte_verificada: nao
 ---
 
 # Conceito — Behaviorismo

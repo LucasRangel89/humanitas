@@ -1,4 +1,5 @@
 ---
+
 conceito: "Desigualdade Social"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Conceito sociológico clássico (Marx, Bourdieu; fonte didática: Brasil Escola)"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, socio-antropologia, desigualdade]
+fonte_verificada: nao
 ---
 
 # Conceito — Desigualdade Social

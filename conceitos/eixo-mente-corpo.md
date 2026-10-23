@@ -1,4 +1,5 @@
 ---
+
 eixo: "Mente × Corpo"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Debate filosófico clássico (Descartes a Ryle)"
@@ -7,6 +8,7 @@ tipo: eixo
 nivel: entusiasta
 status: rascunho
 tags: [eixo, filosofia, psicologia, mente-corpo]
+fonte_verificada: nao
 ---
 
 # Eixo — Mente × Corpo

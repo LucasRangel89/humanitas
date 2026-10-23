@@ -1,4 +1,5 @@
 ---
+
 conceito: "Identidade"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Conceito sociológico clássico (Mead, Erikson; fonte didática: InfoEscola)"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, socio-antropologia, identidade]
+fonte_verificada: nao
 ---
 
 # Conceito — Identidade

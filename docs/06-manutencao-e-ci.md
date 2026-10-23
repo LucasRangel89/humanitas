@@ -15,6 +15,7 @@ python -m scripts.painel auditar     # links, metadados, duplicados, órfãs, se
 python -m scripts.painel tudo        # índice + tabela + progresso + flashcards
 python -m scripts.painel nova        # cria o esqueleto de uma nota a partir do template
 python -m scripts.painel pendencias  # o que falta em cada nota para virar padrão-ouro
+python -m scripts.painel afirmacoes # gera relatorio-afirmacoes.md para conferência manual
 python -m scripts.painel site        # monta as fontes do site com busca (site-src/)
 ```
 
@@ -106,15 +107,13 @@ Dois workflows:
 | Workflow | Quando roda | O que faz |
 |---|---|---|
 | `.github/workflows/ci.yml` | Todo push e pull request | Roda os testes, a auditoria e confere se índice/progresso/tabela estão atualizados |
-| `.github/workflows/painel.yml` | Push em `main` (pastas de conteúdo) ou manual | Regenera índice, tabela, progresso e flashcards; commita os três primeiros; publica `flashcards.csv` como artefato |
+| `.github/workflows/painel.yml` | Push em `main` (pastas de conteúdo) ou manual | Gera `flashcards.csv` e publica como artefato (sem commitar) |
 
 Fluxo diário, na prática:
 
-1. Você escreve/edita notas e dá commit.
+1. Você escreve/edita notas, roda `make painel` e commita os artefatos gerados (`README.md`, `indices/indice.json`, `progresso.md`) — o CI cobra se estiverem desatualizados.
 2. O CI roda os testes e a auditoria (se algo quebrar, o PR fica vermelho).
-3. Ao entrar em `main`, o painel regenera os artefatos e commita sozinho
-   (`chore: regenera índice, tabela de temas e progresso [skip ci]`).
-4. Você baixa o `flashcards.csv` em **Actions → último run do "Painel" → Artifacts**.
+3. Você baixa o `flashcards.csv` em **Actions → último run do "Painel" → Artifacts**.
 
 ## Site com busca e painel inicial (MkDocs Material)
 
@@ -228,8 +227,13 @@ a 3 como *Verso*, a 4 como *Tags* e a 5 como *Baralho*. Recomenda-se o agendador
 - `status`: `rascunho`, `ok`, `arquivada` (notas) ou `em-andamento`, `concluida`,
   `pausada` (trilhas).
 - `nivel`: `iniciante`, `entusiasta`, `avancado`.
+- `fonte_verificada`: `sim` | `nao` — obrigatório em `conceito` e `eixo`; indica se a obra primária foi conferida. Notas `ok` exigem citação com capítulo/página ou a frase “Sem citação — fonte secundária” e `fonte_verificada` preenchido.
 - Seções obrigatórias: veja `SECOES_OBRIGATORIAS` em `scripts/painel.py` e a
   checklist no `templates/template-conceito.md`.
+
+Para criar notas novas, use os templates em `templates/` — eles já contêm o campo `fonte_verificada: nao` e a estrutura de seções esperada. O comando `nova` preenche o campo automaticamente.
+
+A lista de próximos passos manual fica apenas no [Guia 07](07-rumos-e-proximos-passos.md); a lista gerada está em [`progresso.md`](../progresso.md).
 
 ## Estrutura do CLI
 
@@ -245,5 +249,5 @@ scripts/painel.py
 └── comandos (indice, tabela, progresso, flashcards, auditar, tudo, nova, pendencias, site)
 tests/
 ├── conftest.py   (mini-repositório válido como fixture)
-└── test_painel.py (51 testes: parsing, auditoria, índice, progresso, flashcards, scaffold, site)
+└── test_painel.py (testes de parsing, auditoria, índice, progresso, flashcards, scaffold, site e afirmações)
 ```

@@ -1,4 +1,5 @@
 ---
+
 conceito: "Construção Social da Realidade"
 obra_origem: "A Construção Social da Realidade, de Berger e Luckmann"
 autor_origem: "Peter Berger e Thomas Luckmann"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[sociologia, berger, luckmann, conhecimento]"
+fonte_verificada: nao
 ---
 # Conceito — Construção Social da Realidade
 

@@ -1,4 +1,5 @@
 ---
+
 conceito: "Existencialismo"
 obra_origem: "O Existencialismo é um Humanismo, de Sartre"
 autor_origem: "Jean-Paul Sartre"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [filosofia, sartre, seculo-20, liberdade]
+fonte_verificada: nao
 ---
 # Conceito — Existencialismo
 

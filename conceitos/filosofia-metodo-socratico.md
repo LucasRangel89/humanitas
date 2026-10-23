@@ -1,4 +1,5 @@
 ---
+
 conceito: "Método Socrático"
 obra_origem: "Apologia de Sócrates e A República (Livro I), de Platão"
 autor_origem: "Sócrates (via Platão)"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
 tags: "[filosofia, socratico, metodo, grecia]"
+fonte_verificada: nao
 ---
 # Conceito — Método Socrático
 

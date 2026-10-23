@@ -1,4 +1,5 @@
 ---
+
 conceito: "Teoria das Formas"
 obra_origem: "A República (Livro VII), de Platão"
 autor_origem: "Platão"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [filosofia, platao, epistemologia, antiguidade]
+fonte_verificada: nao
 ---
 # Conceito — Teoria das Formas
 

@@ -5,6 +5,12 @@ autor_origem: "Autor da obra"
 tema: historia
 tipo: conceito
 nivel: iniciante
+fonte_verificada: nao
+tradicao: ""
+nivel_evidencia: teorica
+contestado_por: []
+eixos: []
+relacoes: []
 tags: [exemplo-tag]
 ---
 

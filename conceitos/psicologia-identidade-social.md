@@ -1,4 +1,5 @@
 ---
+
 conceito: "Identidade Social"
 obra_origem: "Experiments in Intergroup Discrimination (1971) e An Integrative Theory of Intergroup Conflict (1979), de Tajfel e Turner"
 autor_origem: "Henri Tajfel e John Turner"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
 tags: "[psicologia, social, tajfel, grupos]"
+fonte_verificada: nao
 ---
 # Conceito — Identidade Social
 

@@ -1,4 +1,5 @@
 ---
+
 conceito: "Paradigma (Kuhn)"
 obra_origem: "A Estrutura das Revoluções Científicas, de Thomas Kuhn"
 autor_origem: "Thomas Kuhn"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[filosofia, ciencia, kuhn, paradigma]"
+fonte_verificada: nao
 ---
 # Conceito — Paradigma (Kuhn)
 

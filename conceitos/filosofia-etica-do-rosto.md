@@ -1,4 +1,5 @@
 ---
+
 conceito: "Ética do Rosto (Lévinas)"
 obra_origem: "Totalidade e Infinito, de Emmanuel Lévinas"
 autor_origem: "Emmanuel Lévinas"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[filosofia, levinas, etica, alteridade]"
+fonte_verificada: nao
 ---
 # Conceito — Ética do Rosto (Lévinas)
 

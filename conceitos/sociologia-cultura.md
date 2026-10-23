@@ -1,4 +1,5 @@
 ---
+
 conceito: "Cultura"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Conceito sociológico clássico (Tylor a Berger; fonte didática: Toda Matéria)"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, socio-antropologia, cultura]
+fonte_verificada: nao
 ---
 
 # Conceito — Cultura

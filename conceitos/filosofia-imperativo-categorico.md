@@ -1,4 +1,5 @@
 ---
+
 conceito: "Imperativo Categórico"
 obra_origem: "Fundamentação da Metafísica dos Costumes (seções I e II), de Kant"
 autor_origem: "Immanuel Kant"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: entusiasta
 status: rascunho
 tags: [filosofia, kant, etica, modernidade]
+fonte_verificada: nao
 ---
 # Conceito — Imperativo Categórico
 

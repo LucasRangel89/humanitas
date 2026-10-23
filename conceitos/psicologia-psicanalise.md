@@ -1,4 +1,5 @@
 ---
+
 conceito: "Psicanálise"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Sigmund Freud; divergências de Carl Jung e Alfred Adler"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, escolas-classicas, inconsciente]
+fonte_verificada: nao
 ---
 
 # Conceito — Psicanálise

@@ -1,4 +1,5 @@
 ---
+
 conceito: "Estruturalismo"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Edward B. Titchener, a partir de Wilhelm Wundt"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, escolas-classicas, mente-corpo]
+fonte_verificada: nao
 ---
 
 # Conceito — Estruturalismo

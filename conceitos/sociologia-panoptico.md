@@ -1,4 +1,5 @@
 ---
+
 conceito: "Panóptico e Biopoder"
 obra_origem: "Vigiar e Punir (parte 3: Panoptismo), de Michel Foucault"
 autor_origem: "Michel Foucault"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
 tags: "[sociologia, foucault, poder, vigilancia]"
+fonte_verificada: nao
 ---
 # Conceito — Panóptico e Biopoder
 

@@ -1,7 +1,7 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-22T22:14:24",
+  "atualizado_em": "2026-10-22T23:13:07",
   "totais": {
     "livros": 0,
     "fichas": 0,
@@ -24,6 +24,12 @@
       "status": "rascunho",
       "obra_origem": "Planos de estudo anexados pelo autor",
       "autor_origem": "Debate clássico das ciências humanas",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O que mantém uma sociedade unida — o consenso partilhado entre seus membros ou o conflito entre seus interesses, administrado pela força?",
       "tags": [
         "eixo",
@@ -37,6 +43,7 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -50,6 +57,12 @@
       "status": "rascunho",
       "obra_origem": "Planos de estudo anexados pelo autor",
       "autor_origem": "Debate clássico das ciências humanas",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Nossas ações refletem escolhas livres ou traçados sociais que não escolhemos — e, se os dois, onde termina um e começa o outro?",
       "tags": [
         "eixo",
@@ -63,6 +76,7 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -76,6 +90,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Debate filosófico clássico (Platão e Locke a Chomsky)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O que é dado no nascimento (estruturas, capacidades, predisposições) — e o que é aprendido pela experiência?",
       "tags": [
         "eixo",
@@ -89,6 +109,7 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -102,6 +123,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Debate filosófico clássico (estoicos a Dennett)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O comportamento humano é escolhido pelo sujeito — ou efeito de causas anteriores (biológicas, psíquicas, sociais) que ele não controla?",
       "tags": [
         "eixo",
@@ -115,6 +142,7 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -128,6 +156,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Debate filosófico clássico (Descartes a Ryle)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A mente é uma coisa diferente do corpo (ou da matéria) — e, se for, como as duas interagem?",
       "tags": [
         "eixo",
@@ -141,6 +175,7 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -154,6 +189,12 @@
       "status": "rascunho",
       "obra_origem": "Totalidade e Infinito, de Emmanuel Lévinas",
       "autor_origem": "Emmanuel Lévinas",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A ética não nasce de princípios abstratos, mas do encontro com o rosto do outro — uma exigência primeira e irrecusável (\"não mates\") que vem antes de qualquer teoria moral.",
       "tags": [
         "filosofia",
@@ -166,6 +207,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -179,6 +221,12 @@
       "status": "rascunho",
       "obra_origem": "Ética a Nicômaco (Livros I e II), de Aristóteles",
       "autor_origem": "Aristóteles",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Eudaimonia é o florescimento humano: a vida plena que resulta do exercício constante da virtude — não um prazer passageiro, mas a realização daquilo que uma vida bem vivida pode ser.",
       "tags": [
         "filosofia",
@@ -191,6 +239,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -204,6 +253,12 @@
       "status": "rascunho",
       "obra_origem": "O Existencialismo é um Humanismo, de Sartre",
       "autor_origem": "Jean-Paul Sartre",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A existência precede a essência: não há natureza humana pré-definida — cada um é o que faz da sua vida, e essa liberdade intransferível Sartre chama de \"condenação\".",
       "tags": [
         "filosofia",
@@ -216,6 +271,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -229,6 +285,12 @@
       "status": "rascunho",
       "obra_origem": "Conjecturas e Refutações, de Karl Popper",
       "autor_origem": "Karl Popper",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Uma teoria só é científica se puder ser refutada: o que separa ciência de pseudociência não é ter provas a favor, é estar exposta a testes que poderiam provar o contrário.",
       "tags": [
         "filosofia",
@@ -241,6 +303,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -254,6 +317,12 @@
       "status": "rascunho",
       "obra_origem": "Crítica da Razão Pura, de Kant",
       "autor_origem": "Immanuel Kant",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Fenômeno é o mundo como nos aparece — moldado pelas estruturas da mente (espaço, tempo, categorias); númeno é a \"coisa em si\", que existe mas é inacessível ao conhecimento humano.",
       "tags": [
         "filosofia",
@@ -266,6 +335,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -279,6 +349,12 @@
       "status": "rascunho",
       "obra_origem": "Fundamentação da Metafísica dos Costumes (seções I e II), de Kant",
       "autor_origem": "Immanuel Kant",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Aja apenas segundo a máxima que você possa querer ver transformada em lei universal — e trate cada pessoa sempre também como fim, nunca apenas como meio.",
       "tags": [
         "filosofia",
@@ -291,6 +367,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -304,6 +381,12 @@
       "status": "rascunho",
       "obra_origem": "Apologia de Sócrates e A República (Livro I), de Platão",
       "autor_origem": "Sócrates (via Platão)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Ensinar perguntando: em vez de entregar respostas, o método desmonta certezas mal examinadas (ironia) e leva o interlocutor a \"parir\" ideias que ele mesmo reconhece como verdadeiras (maiêutica).",
       "tags": [
         "filosofia",
@@ -316,6 +399,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -329,6 +413,12 @@
       "status": "rascunho",
       "obra_origem": "A Gaia Ciência (aforismo 125) e Genealogia da Moral, de Nietzsche",
       "autor_origem": "Friedrich Nietzsche",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A \"morte de Deus\" é o anúncio de que as fundações absolutas da moral ocidental perderam credibilidade — e o desafio de criar valores sem elas.",
       "tags": [
         "filosofia",
@@ -341,6 +431,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -354,6 +445,12 @@
       "status": "rascunho",
       "obra_origem": "A Estrutura das Revoluções Científicas, de Thomas Kuhn",
       "autor_origem": "Thomas Kuhn",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A ciência funciona por paradigmas — matrizes compartilhadas de problemas, métodos e pressupostos — e muda por revoluções que trocam o paradigma inteiro, não por acúmulo linear de fatos.",
       "tags": [
         "filosofia",
@@ -366,6 +463,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -379,6 +477,12 @@
       "status": "rascunho",
       "obra_origem": "A República (Livro VII), de Platão",
       "autor_origem": "Platão",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Para Platão, o mundo que vemos é cópia imperfeita de um mundo inteligível de Formas perfeitas e eternas — com a Ideia do Bem no topo —, e conhecer é sair das cópias e alcançar as Formas pela razão.",
       "tags": [
         "filosofia",
@@ -391,6 +495,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -404,6 +509,12 @@
       "status": "rascunho",
       "obra_origem": "Utilitarismo, de John Stuart Mill; Introdução aos Princípios da Moral e da Legislação, de Bentham",
       "autor_origem": "Jeremy Bentham e John Stuart Mill",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A ação certa é a que produz o maior bem-estar para o maior número — a moral julgada pelas consequências, não pela intenção nem pela obediência a regras.",
       "tags": [
         "filosofia",
@@ -416,6 +527,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -429,6 +541,12 @@
       "status": "rascunho",
       "obra_origem": "Uma Teoria da Justiça, de John Rawls",
       "autor_origem": "John Rawls",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O véu da ignorância é um experimento mental: as regras justas de uma sociedade são aquelas que você escolheria sem saber qual posição ocuparia nela — classe, gênero, raça, talento, saúde.",
       "tags": [
         "filosofia",
@@ -441,6 +559,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -454,6 +573,12 @@
       "status": "rascunho",
       "obra_origem": "Apego (Attachment and Loss, 1969), de John Bowlby",
       "autor_origem": "John Bowlby e Mary Ainsworth",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Apego é o vínculo afetivo primário que a criança forma com seus cuidadores — e a segurança (ou insegurança) dessa base moldeia a forma de se relacionar por toda a vida.",
       "tags": [
         "psicologia",
@@ -466,6 +591,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -479,6 +605,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "John B. Watson, B. F. Skinner; base de Ivan Pavlov",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Escola que restringe a psicologia ao comportamento observável, explicado por condicionamento estímulo-resposta, dispensando entidades mentais internas.",
       "tags": [
         "psicologia",
@@ -491,6 +623,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -504,6 +637,12 @@
       "status": "rascunho",
       "obra_origem": "Em Busca de Sentido, de Viktor Frankl; Florescer, de Martin Seligman",
       "autor_origem": "Viktor Frankl e Martin Seligman",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O bem-estar profundo vem de sentido, não de prazer acumulado: para Frankl, a busca de sentido é a força-motriz básica; para Seligman, o florescimento segue o modelo PERMA (emoções positivas, engajamento, relações, sentido, conquistas).",
       "tags": [
         "psicologia",
@@ -516,6 +655,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -529,6 +669,12 @@
       "status": "rascunho",
       "obra_origem": "A Teoria da Dissonância Cognitiva, de Leon Festinger",
       "autor_origem": "Leon Festinger",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Dissonância cognitiva é o desconforto psicológico de sustentar crenças, atitudes ou comportamentos em conflito entre si — e o esforço, quase sempre enviesado, para reduzir esse desconforto.",
       "tags": [
         "psicologia",
@@ -541,6 +687,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -554,6 +701,12 @@
       "status": "rascunho",
       "obra_origem": "Infância e Sociedade, de Erik Erikson",
       "autor_origem": "Erik Erikson",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O desenvolvimento humano atravessa oito crises ao longo da vida inteira — cada uma um conflito com o mundo social (confiança, autonomia, identidade, intimidade, integridade...) cuja resolução produz uma força (esperança, vontade, fidelidade, amor, cuidado, sabedoria).",
       "tags": [
         "psicologia",
@@ -566,6 +719,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -579,6 +733,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Edward B. Titchener, a partir de Wilhelm Wundt",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Primeira escola sistemática da psicologia científica: decompor a consciência em seus elementos básicos — sensações, imagens e sentimentos — por meio da introspecção treinada.",
       "tags": [
         "psicologia",
@@ -591,6 +751,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -604,6 +765,12 @@
       "status": "rascunho",
       "obra_origem": "Flow: A Psicologia da Felicidade (Flow, 1990), de Mihaly Csikszentmihalyi",
       "autor_origem": "Mihaly Csikszentmihalyi",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Fluxo é o estado de imersão total numa atividade em que desafio e habilidade se equilibram, o tempo se dissolve e a ação vira fim em si mesma.",
       "tags": [
         "psicologia",
@@ -616,6 +783,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -629,6 +797,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "William James, John Dewey, James Angell, Harvey Carr, G. H. Mead",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Corrente que estuda as funções da consciência — o que a mente FAZ para adaptar o organismo ao ambiente — em vez de decompor seus elementos.",
       "tags": [
         "psicologia",
@@ -641,6 +815,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -654,6 +829,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Max Wertheimer, Wolfgang Köhler, Kurt Koffka",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Escola da percepção que sustenta que a experiência se organiza em totalidades — o todo é diferente da soma das partes — por princípios de organização presentes desde o início.",
       "tags": [
         "psicologia",
@@ -667,6 +848,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -680,6 +862,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Carl Rogers, Abraham Maslow",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A \"terceira força\" da psicologia: estuda a experiência subjetiva integral — potencial, escolha e autorrealização — como reação ao determinismo do behaviorismo e da psicanálise.",
       "tags": [
         "psicologia",
@@ -692,6 +880,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -705,6 +894,12 @@
       "status": "rascunho",
       "obra_origem": "Experiments in Intergroup Discrimination (1971) e An Integrative Theory of Intergroup Conflict (1979), de Tajfel e Turner",
       "autor_origem": "Henri Tajfel e John Turner",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A simples divisão em grupos (\"nós\" × \"eles\") já produz favoritismo interno e discriminação externa — mesmo sem interesse, sem história e sem ódio envolvidos.",
       "tags": [
         "psicologia",
@@ -717,6 +912,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -730,6 +926,12 @@
       "status": "rascunho",
       "obra_origem": "Obedience to Authority, de Stanley Milgram; experimento de Stanford, de Zimbardo",
       "autor_origem": "Stanley Milgram e Philip Zimbardo",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Os experimentos de Milgram e Zimbardo mostram que pessoas comuns obedecem a autoridades e a papéis até cometer crueldade — a situação pesa mais que o caráter.",
       "tags": [
         "psicologia",
@@ -742,6 +944,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -755,6 +958,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Sigmund Freud; divergências de Carl Jung e Alfred Adler",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Teoria e método clínico que explicam o psiquismo por processos inconscientes — desejos, conflitos e defesas que operam fora da consciência — e o tratam pela escuta, não pelo laboratório.",
       "tags": [
         "psicologia",
@@ -767,6 +976,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -780,6 +990,12 @@
       "status": "rascunho",
       "obra_origem": "Rápido e Devagar: Duas Formas de Pensar, de Daniel Kahneman",
       "autor_origem": "Daniel Kahneman e Amos Tversky",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Vieses cognitivos são erros previsíveis de julgamento produzidos pelos atalhos mentais (heurísticas) que economizam esforço — o Sistema 1, rápido e intuitivo, vencendo o Sistema 2, lento e analítico.",
       "tags": [
         "psicologia",
@@ -792,6 +1008,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -805,6 +1022,12 @@
       "status": "rascunho",
       "obra_origem": "Pensamento e Linguagem, de Lev Vygotsky",
       "autor_origem": "Lev Vygotsky",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "ZDP é a distância entre o que a pessoa consegue fazer sozinha e o que consegue fazer com apoio de alguém mais experiente — é dentro dessa zona, com mediação, que o aprendizado acontece.",
       "tags": [
         "psicologia",
@@ -817,6 +1040,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -830,6 +1054,12 @@
       "status": "rascunho",
       "obra_origem": "Alienação e Aceleração, de Hartmut Rosa",
       "autor_origem": "Hartmut Rosa",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O mal-estar da modernidade tardia é aceleração — técnica, social e do ritmo de vida — que rompe a ressonância: a relação viva, responsiva e transformadora com o mundo, as pessoas e as coisas.",
       "tags": [
         "sociologia",
@@ -842,6 +1072,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -855,6 +1086,12 @@
       "status": "rascunho",
       "obra_origem": "Manuscritos Econômico-Filosóficos de 1844 (seção \"Trabalho Alienado\"), de Karl Marx",
       "autor_origem": "Karl Marx",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Alienação é a separação que o trabalhador capitalista sofre em quatro frentes: do produto do seu trabalho, do próprio processo de trabalho, da sua essência humana e dos outros seres humanos.",
       "tags": [
         "sociologia",
@@ -867,6 +1104,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -880,6 +1118,12 @@
       "status": "rascunho",
       "obra_origem": "O Suicídio, de Émile Durkheim",
       "autor_origem": "Émile Durkheim",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Anomia é o estado de desregulação em que as normas perdem força e a sociedade deixa de dizer o que é esperado — e o indivíduo, sem bússola coletiva, desorienta-se e sofre.",
       "tags": [
         "sociologia",
@@ -892,6 +1136,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -905,6 +1150,12 @@
       "status": "rascunho",
       "obra_origem": "A Construção Social da Realidade, de Berger e Luckmann",
       "autor_origem": "Peter Berger e Thomas Luckmann",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "A sociedade é obra humana (externalização) que se volta contra o criador como realidade objetiva (objetivação) e re-produz pessoas que a tomam por natureza (internalização).",
       "tags": [
         "sociologia",
@@ -917,6 +1168,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -930,6 +1182,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Conceito sociológico clássico (Tylor a Berger; fonte didática: Toda Matéria)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Conjunto amplo de tradições, crenças, valores e costumes compartilhados por um grupo social e transmitido entre gerações.",
       "tags": [
         "sociologia",
@@ -942,6 +1200,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -955,6 +1214,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Conceito sociológico clássico (Marx, Bourdieu; fonte didática: Brasil Escola)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Diferenças sistemáticas nas condições de vida e no acesso a recursos — econômicos, educacionais, simbólicos — entre classes e grupos sociais.",
       "tags": [
         "sociologia",
@@ -967,6 +1232,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -980,6 +1246,12 @@
       "status": "rascunho",
       "obra_origem": "As Regras do Método Sociológico, de Émile Durkheim",
       "autor_origem": "Émile Durkheim",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Fato social é toda maneira de agir, pensar e sentir exterior ao indivíduo e dotada de poder coercitivo — o objeto próprio da sociologia.",
       "tags": [
         "sociologia",
@@ -992,6 +1264,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1005,6 +1278,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Conceito das ciências sociais (Scott, Butler; fonte didática: Wikipédia)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Conjunto de características físicas, mentais e comportamentais socialmente atribuídas ao masculino e ao feminino — distinto do sexo biológico e variável entre culturas e épocas.",
       "tags": [
         "sociologia",
@@ -1017,6 +1296,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1030,6 +1310,12 @@
       "status": "rascunho",
       "obra_origem": "A Reprodução (com Passeron) e A Distinção, de Pierre Bourdieu",
       "autor_origem": "Pierre Bourdieu",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "As disposições incorporadas — jeito de falar, de se mover, de gostar, de se portar diante de autoridades — que a posição social instala no corpo e que operam como segunda natureza.",
       "tags": [
         "sociologia",
@@ -1042,6 +1328,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1055,6 +1342,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Conceito sociológico clássico (Mead, Erikson; fonte didática: InfoEscola)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Conjunto de significados que define um indivíduo num dado contexto social — família, profissão, etnia, religião — e que ele reconhece como \"quem eu sou\".",
       "tags": [
         "sociologia",
@@ -1067,6 +1360,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1080,6 +1374,12 @@
       "status": "rascunho",
       "obra_origem": "A Imaginação Sociológica (cap. 1, \"A Promessa\"), de C. Wright Mills",
       "autor_origem": "Charles Wright Mills",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Imaginação sociológica é a capacidade de conectar a experiência pessoal à estrutura social e à história — entender que o \"problema meu\" quase nunca nasce só dentro de mim.",
       "tags": [
         "sociologia",
@@ -1092,6 +1392,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1105,6 +1406,12 @@
       "status": "rascunho",
       "obra_origem": "Mind, Self and Society, de George Herbert Mead",
       "autor_origem": "George Herbert Mead",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O self não existe antes da interação — ele emerge do diálogo social interno entre o \"I\" (o lado espontâneo que age) e o \"Me\" (o lado socializado, o olhar dos outros incorporado).",
       "tags": [
         "sociologia",
@@ -1117,6 +1424,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1130,6 +1438,12 @@
       "status": "rascunho",
       "obra_origem": "Demarginalizing the Intersection of Race and Sex (1989), de Kimberlé Crenshaw",
       "autor_origem": "Kimberlé Crenshaw",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Interseccionalidade é a ideia de que desigualdades — raça, classe, gênero e outras marcações — não se somam simplesmente: elas se cruzam, produzindo experiências específicas nas interseções.",
       "tags": [
         "sociologia",
@@ -1143,6 +1457,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1156,6 +1471,12 @@
       "status": "rascunho",
       "obra_origem": "Vigiar e Punir (parte 3: Panoptismo), de Michel Foucault",
       "autor_origem": "Michel Foucault",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Foucault: o poder moderno não apenas reprime — produz corpos dóceis pela vigilância arquitetônica (panóptico) e administra populações inteiras (biopoder); onde a vigilância é possível, a obediência acontece sozinha.",
       "tags": [
         "sociologia",
@@ -1168,6 +1489,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1181,6 +1503,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Conceito sociológico clássico (Linton, Goffman; fonte didática: Toda Matéria)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Conjunto de comportamentos, direitos e deveres que a sociedade associa a um status — pai, professor, líder, paciente — numa estrutura social.",
       "tags": [
         "sociologia",
@@ -1193,6 +1521,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1206,6 +1535,12 @@
       "status": "rascunho",
       "obra_origem": "Curso de Filosofia Positiva (Discurso preliminar), de Auguste Comte",
       "autor_origem": "Auguste Comte",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "O programa de Comte de estudar a sociedade como fenômeno natural — observação, comparação e leis em lugar de teologia e metafísica: a \"física social\".",
       "tags": [
         "sociologia",
@@ -1218,6 +1553,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1231,6 +1567,12 @@
       "status": "rascunho",
       "obra_origem": "A Ética Protestante e o Espírito do Capitalismo, de Max Weber",
       "autor_origem": "Max Weber",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Racionalização é o processo histórico em que a eficiência, o cálculo e a previsibilidade substituem a tradição, a magia e o afeto como critérios de organização do mundo.",
       "tags": [
         "sociologia",
@@ -1243,6 +1585,7 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     },
@@ -1256,6 +1599,12 @@
       "status": "rascunho",
       "obra_origem": "Guia de Estudos Integrativo de Psicologia (anexo do autor)",
       "autor_origem": "Conceito sociológico clássico (Berger e Luckmann; fonte didática: Toda Matéria)",
+      "fonte_verificada": "nao",
+      "tradicao": "",
+      "nivel_evidencia": "",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
       "definicao": "Processo pelo qual o indivíduo aprende e interioriza hábitos culturais, normas e valores da sociedade em que vive.",
       "tags": [
         "sociologia",
@@ -1268,6 +1617,7 @@
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
         "fonte primária",
+        "fonte verificada",
         "status ainda é rascunho"
       ]
     }

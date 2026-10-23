@@ -1,4 +1,5 @@
 ---
+
 conceito: "Apego"
 obra_origem: "Apego (Attachment and Loss, 1969), de John Bowlby"
 autor_origem: "John Bowlby e Mary Ainsworth"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, desenvolvimento, bowlby, vinculo]
+fonte_verificada: nao
 ---
 # Conceito — Apego
 

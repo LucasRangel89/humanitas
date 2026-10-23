@@ -1,4 +1,5 @@
 ---
+
 conceito: "Fato social"
 obra_origem: "As Regras do Método Sociológico, de Émile Durkheim"
 autor_origem: "Émile Durkheim"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, durkheim, metodo, classicos]
+fonte_verificada: nao
 ---
 # Conceito — Fato social
 

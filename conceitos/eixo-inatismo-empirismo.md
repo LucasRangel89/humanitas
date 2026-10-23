@@ -1,4 +1,5 @@
 ---
+
 eixo: "Inatismo × Empirismo"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Debate filosófico clássico (Platão e Locke a Chomsky)"
@@ -7,6 +8,7 @@ tipo: eixo
 nivel: entusiasta
 status: rascunho
 tags: [eixo, filosofia, psicologia, natureza-cultura]
+fonte_verificada: nao
 ---
 
 # Eixo — Inatismo × Empirismo

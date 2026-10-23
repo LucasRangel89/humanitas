@@ -1,4 +1,5 @@
 ---
+
 conceito: "Morte de Deus"
 obra_origem: "A Gaia Ciência (aforismo 125) e Genealogia da Moral, de Nietzsche"
 autor_origem: "Friedrich Nietzsche"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: entusiasta
 status: rascunho
 tags: [filosofia, nietzsche, seculo-19, moral]
+fonte_verificada: nao
 ---
 # Conceito — Morte de Deus
 

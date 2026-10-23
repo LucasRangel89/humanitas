@@ -1,4 +1,5 @@
 ---
+
 conceito: "Zona de Desenvolvimento Proximal"
 obra_origem: "Pensamento e Linguagem, de Lev Vygotsky"
 autor_origem: "Lev Vygotsky"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, desenvolvimento, vygotsky, aprendizagem]
+fonte_verificada: nao
 ---
 # Conceito — Zona de Desenvolvimento Proximal (ZDP)
 

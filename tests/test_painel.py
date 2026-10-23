@@ -28,8 +28,21 @@ def test_parse_frontmatter_sem_cabecalho():
     assert painel.parse_frontmatter("# Título\n\ntexto") == {}
 
 
-def test_parse_frontmatter_quebrado_nao_explode():
-    assert isinstance(painel.parse_frontmatter("---\ntema: [\n---\n"), dict)
+def test_parse_frontmatter_quebrado_levanta_erro():
+    with pytest.raises(painel.ErroFrontmatter):
+        painel.parse_frontmatter("---\ntema: [\n---\n")
+
+
+def test_parse_frontmatter_delimitador_faltando():
+    with pytest.raises(painel.ErroFrontmatter):
+        painel.parse_frontmatter("---\ntema: psicologia\n")
+
+
+def test_parse_frontmatter_sem_frontmatter_obrigatorio_na_coleta(mini_repo: pathlib.Path):
+    sem_fm = mini_repo / "conceitos" / "sem-frontmatter.md"
+    sem_fm.write_text("# Sem cabecalho\n\nTexto sem YAML.\n", encoding="utf-8")
+    erros, _ = painel.auditar(mini_repo)
+    assert any("sem-frontmatter.md" in e and "frontmatter" in e.lower() for e in erros)
 
 
 def test_parse_tags_aceita_lista_e_string():
@@ -591,3 +604,165 @@ def test_marcos_refletem_os_numeros(indice=None):
     assert marcos["Notas reescritas (`ok`)"][0] == 25
     assert marcos["Notas reescritas (`ok`)"][2] is True
     assert marcos["Entradas de diário"][2] is False
+
+# ---------------------------------------------------------------------------
+# Afirmações
+# ---------------------------------------------------------------------------
+
+def test_afirmacoes_detecta_porcentagem_e_ano(mini_repo: pathlib.Path):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    texto = nota.read_text(encoding="utf-8")
+    texto += "\n\nEstudos mostram que 95% dos casos ocorrem em 2021. O maior impacto é evidente.\n"
+    nota.write_text(texto, encoding="utf-8")
+    coletadas = painel.coletar_afirmacoes(mini_repo)
+    # deve encontrar pelo menos porcentagem e ano
+    total = sum(len(v) for v in coletadas.values())
+    assert total >= 2
+    assert any("sociologia-habitus.md" in k for k in coletadas)
+
+
+def test_cmd_afirmacoes_gera_relatorio(mini_repo: pathlib.Path, capsys):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    texto = nota.read_text(encoding="utf-8")
+    texto += "\n\nPesquisas indicam que tudo é absoluto.\n"
+    nota.write_text(texto, encoding="utf-8")
+    assert painel.main(["--raiz", str(mini_repo), "afirmacoes"]) == 0
+    rel = mini_repo / "relatorio-afirmacoes.md"
+    assert rel.exists()
+    conteudo = rel.read_text(encoding="utf-8")
+    assert "Relatório de afirmações" in conteudo
+    assert "sociologia-habitus.md" in conteudo
+
+
+def test_fonte_verificada_obrigatoria(mini_repo: pathlib.Path):
+    # remove fonte_verificada de uma nota e verifica que auditoria aponta erro
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    texto = nota.read_text(encoding="utf-8").replace("fonte_verificada: sim", "")
+    nota.write_text(texto, encoding="utf-8")
+    erros, _ = painel.auditar(mini_repo)
+    assert any("fonte_verificada" in e for e in erros)
+
+
+def test_fonte_verificada_ok_com_citacao(mini_repo: pathlib.Path):
+    # nota ok sem trecho com cap/pagina deve gerar erro, mas com frase secundaria passa
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    # já tem status ok e trecho com cap/p no fixture original (cap. 3, p. 94)
+    erros, _ = painel.auditar(mini_repo)
+    assert not any("Trecho de apoio" in e for e in erros)
+    # agora remove trecho e coloca frase secundaria
+    texto = nota.read_text(encoding="utf-8")
+    # substitui trecho por frase secundaria
+    texto = texto.replace('(cap. 3, p. 94)', 'Sem citação — fonte secundária')
+    nota.write_text(texto, encoding="utf-8")
+    erros, _ = painel.auditar(mini_repo)
+    assert not any("Trecho de apoio" in e for e in erros)
+
+
+# ---------------------------------------------------------------------------
+# PR3: esquema enriquecido
+# ---------------------------------------------------------------------------
+
+def test_esquema_enriquecido_preservado_no_indice(mini_repo: pathlib.Path):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    texto = nota.read_text(encoding="utf-8")
+    texto = texto.replace("fonte_verificada: sim", "fonte_verificada: sim\ntradicao: \"estruturalista\"\nnivel_evidencia: alta\ncontestado_por: [Bourdieu]\neixos: [Conflito × Coesão]\nrelacoes: [campo]")
+    nota.write_text(texto, encoding="utf-8")
+    indice = painel.montar_indice(mini_repo)
+    hit = next(c for c in indice["conceitos"] if c["arquivo"] == "sociologia-habitus.md")
+    assert hit["tradicao"] == "estruturalista"
+    assert hit["nivel_evidencia"] == "alta"
+    assert hit["contestado_por"] == ["Bourdieu"]
+    assert hit["eixos"] == ["Conflito × Coesão"]
+    assert hit["relacoes"] == ["campo"]
+
+
+def test_nivel_evidencia_invalido_da_erro(mini_repo: pathlib.Path):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    texto = nota.read_text(encoding="utf-8").replace("fonte_verificada: sim", "fonte_verificada: sim\nnivel_evidencia: invalido")
+    nota.write_text(texto, encoding="utf-8")
+    erros, _ = painel.auditar(mini_repo)
+    assert any("nivel_evidencia" in e for e in erros)
+
+
+def test_nova_conceito_com_tradicao(mini_repo: pathlib.Path):
+    assert painel.main(["--raiz", str(mini_repo), "nova", "--tipo", "conceito", "--nome", "Teste Tradicao", "--tema", "sociologia", "--tradicao", "fenomenologica", "--nivel-evidencia", "forte", "--contestado-por", "Autor A, Autor B"]) == 0
+    novo = mini_repo / "conceitos" / "sociologia-teste-tradicao.md"
+    assert novo.exists()
+    fm = painel.parse_frontmatter(novo.read_text(encoding="utf-8"))
+    assert fm["tradicao"] == "fenomenologica"
+    assert fm["nivel_evidencia"] == "forte"
+    assert fm["contestado_por"] == ["Autor A", "Autor B"]
+
+
+
+# ---------------------------------------------------------------------------
+# PR4: grafo e cartões
+# ---------------------------------------------------------------------------
+
+def test_grafo_mapeia_relacoes(mini_repo: pathlib.Path):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    texto = nota.read_text(encoding="utf-8")
+    texto = texto.replace("fonte_verificada: sim", "fonte_verificada: sim\nrelacoes: [campo]\neixos: [Conflito × Coesão]")
+    nota.write_text(texto, encoding="utf-8")
+    indice = painel.montar_indice(mini_repo)
+    grafo = painel.montar_grafo(indice)
+    assert grafo["totais"]["nodes"] >= 3
+    assert any(e["tipo"] == "relacionado" for e in grafo["edges"])
+    assert any(e["tipo"] == "eixo" for e in grafo["edges"])
+
+
+def test_cmd_grafo_gera_json(mini_repo: pathlib.Path):
+    assert painel.main(["--raiz", str(mini_repo), "grafo"]) == 0
+    assert (mini_repo / "indices" / "grafo.json").exists()
+    dados = painel.montar_grafo(painel.montar_indice(mini_repo))
+    assert "nodes" in dados and "edges" in dados
+
+
+def test_cartoes_incluem_tradicao(mini_repo: pathlib.Path):
+    nota = mini_repo / "conceitos" / "sociologia-habitus.md"
+    texto = nota.read_text(encoding="utf-8").replace("fonte_verificada: sim", "fonte_verificada: sim\ntradicao: fenomenologica\nnivel_evidencia: alta")
+    nota.write_text(texto, encoding="utf-8")
+    indice = painel.montar_indice(mini_repo)
+    conceitos = painel.coletar_conceitos(mini_repo)
+    reg = next(c for c in conceitos if c["arquivo"] == "sociologia-habitus.md")
+    cartoes = painel.cartoes_de(reg)
+    # deve ter cartão de tradição e nivel_evidencia
+    assert any("tradição" in c[1].lower() for c in cartoes)
+    assert any("evidência" in c[1].lower() or "evidencia" in c[1].lower() for c in cartoes)
+
+
+# ---------------------------------------------------------------------------
+# PR5: autores/obras
+# ---------------------------------------------------------------------------
+
+def test_obras_agrupa_por_obra(mini_repo: pathlib.Path):
+    indice = painel.montar_indice(mini_repo)
+    dados = painel.agrupar_obras(indice)
+    assert "obras" in dados and "autores" in dados
+    # mini_repo tem pelo menos 1 obra (habitus etc.)
+    assert len(dados["obras"]) >= 1
+    assert any("Bourdieu" in autor for autor in dados["autores"])
+
+
+def test_cmd_obras_gera_json(mini_repo: pathlib.Path):
+    assert painel.main(["--raiz", str(mini_repo), "obras"]) == 0
+    assert (mini_repo / "indices" / "obras.json").exists()
+
+
+# ---------------------------------------------------------------------------
+# PR6: retenção
+# ---------------------------------------------------------------------------
+
+def test_retencao_calcula_taxa(mini_repo: pathlib.Path):
+    indice = painel.montar_indice(mini_repo)
+    cartoes = painel.gerar_flashcards(mini_repo, indice)
+    dados = painel.calcular_retencao(indice, cartoes)
+    assert "total_conceitos" in dados
+    assert "taxa_ok" in dados
+    assert dados["total_conceitos"] >= 2
+
+
+def test_cmd_retencao_gera_json(mini_repo: pathlib.Path):
+    assert painel.main(["--raiz", str(mini_repo), "retencao"]) == 0
+    assert (mini_repo / "indices" / "retencao.json").exists()
+

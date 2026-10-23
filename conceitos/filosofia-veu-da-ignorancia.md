@@ -1,4 +1,5 @@
 ---
+
 conceito: "Véu da Ignorância"
 obra_origem: "Uma Teoria da Justiça, de John Rawls"
 autor_origem: "John Rawls"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: entusiasta
 status: rascunho
 tags: [filosofia, rawls, justica, seculo-20]
+fonte_verificada: nao
 ---
 # Conceito — Véu da Ignorância
 

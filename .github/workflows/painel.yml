@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: painel
@@ -22,7 +22,6 @@ concurrency:
 
 jobs:
   atualizar:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -44,15 +43,3 @@ jobs:
           name: flashcards
           path: flashcards.csv
           if-no-files-found: warn
-
-      - name: Commitar os artefatos
-        run: |
-          git config user.name "painel-bot"
-          git config user.email "painel-bot@users.noreply.github.com"
-          git add README.md indices/indice.json progresso.md
-          if git diff --cached --quiet; then
-            echo "Nada mudou — nada a commitar."
-          else
-            git commit -m "chore: regenera índice, tabela de temas e progresso [skip ci]"
-            git push
-          fi

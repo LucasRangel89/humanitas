@@ -1,4 +1,5 @@
 ---
+
 conceito: "Positivismo"
 obra_origem: "Curso de Filosofia Positiva (Discurso preliminar), de Auguste Comte"
 autor_origem: "Auguste Comte"
@@ -7,6 +8,7 @@ tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
 tags: "[sociologia, comte, metodo, fundadores]"
+fonte_verificada: nao
 ---
 # Conceito — Positivismo
 

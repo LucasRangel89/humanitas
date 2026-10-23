@@ -24,11 +24,11 @@ A lógica do projeto é simples: em vez de reler um PDF de 400 páginas para ach
 | `indices/` | `indice.json` — o mapa geral do acervo processado |
 | `templates/` | Modelos prontos para copiar ao criar uma nota nova |
 | `docs/` | Guias passo a passo (01 a 05): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo e priorizar leituras |
-| `notebooks/` | Notebooks do Google Colab (sem digitar código): `converter-pdfs` transforma PDFs em Markdown; `atualizador-do-painel` regenera o índice, a tabela de temas, os flashcards e audita o repositório |
+| `notebooks/` | Notebooks do Google Colab (sem digitar código): `converter-pdfs` transforma PDFs em Markdown |
 
 ## Painel de temas
 
-Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo viram links clicáveis para as notas de cada tema. Esta tabela é regenerada automaticamente pelo notebook `atualizador-do-painel.ipynb` — não edite à mão.
+Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo viram links clicáveis para as notas de cada tema. Esta tabela é regenerada automaticamente por `make painel` — não edite à mão. Rode `make painel` e commite; o CI cobra se estiver desatualizada.
 
 <!-- PAINEL-TEMAS-INICIO -->
 
@@ -73,7 +73,7 @@ O fluxo completo está explicado em `docs/02-fluxo-de-extracao.md`, mas em resum
 2. **Explorar** a obra no NotebookLM usando os prompts prontos de `docs/03-prompts-notebooklm.md`.
 3. **Anotar** os resultados usando os modelos da pasta `templates/`.
 4. **Publicar** os arquivos aqui no GitHub (guia em `docs/01-criar-repositorio-no-github.md` e `docs/04-atualizar-o-github.md`).
-5. **Regenerar** o índice, a tabela de temas e os flashcards com o notebook `notebooks/atualizador-do-painel.ipynb`.
+5. **Regenerar** o índice, a tabela de temas e os flashcards com `make painel` e commitar — o CI cobra se estiver desatualizado.
 
 ## Ferramentas utilizadas
 
@@ -83,23 +83,12 @@ O fluxo completo está explicado em `docs/02-fluxo-de-extracao.md`, mas em resum
 | NotebookLM (Google) | Lê os PDFs e ajuda a extrair conceitos, resumos, perguntas e trechos | Gratuito |
 | Google Colab | Converte PDFs em Markdown em lote e mantém o painel atualizado, no navegador, sem instalar nada | Gratuito |
 | Google Drive | Organiza os PDFs originais por tema | Gratuito |
-| Anki | Revisão espaçada dos conceitos por flashcards, gerados pelo notebook atualizador | Gratuito |
+| Anki | Revisão espaçada dos conceitos por flashcards, gerados por `make painel` | Gratuito |
 | Assistente de IA (GLM, Gemini, Claude) | Modo Tutor: gera módulos de aprendizado com resumo, fontes, conexões e quiz (Guia 03) | Gratuito |
 
 ## Roteiro (roadmap)
 
-- [ ] Criar o repositório no GitHub
-- [ ] Organizar os PDFs por tema no Google Drive
-- [ ] Converter os 10 livros-chave do primeiro lote (lista pronta no Guia 05 — estratégia híbrida, ver Guia 02)
-- [ ] Revisar e reescrever com suas palavras as 50 notas semente já presentes no repositório
-- [ ] Percorrer a trilha de Psicologia Nível 1 até o nó 12, com quiz e diário de bordo
-- [ ] Percorrer as trilhas de Filosofia e de Sociologia Nível 1 (podem rodar em paralelo com a de Psicologia)
-- [ ] Fazer uma rota da trilha Integrada quando as trilhas de disciplina estiverem avançadas
-- [ ] Preencher a primeira ficha de leitura completa
-- [ ] Importar os primeiros flashcards no Anki e estabelecer a rotina de revisão
-- [ ] Rodar o notebook atualizador do painel pela primeira vez
-- [ ] Processar 50 livros e atualizar o painel de temas
-- [ ] (Futuro) Transformar este painel em um site interativo com busca, trilhas visuais e XP — design de referência no blueprint Humanitas Explore (`docs/anexos/`)
+O progresso atualizado está em [`progresso.md`](progresso.md) (gerado automaticamente) e o plano de trabalho vigente no [Guia 07](docs/07-rumos-e-proximos-passos.md).
 
 ## Nota sobre direitos autorais
 

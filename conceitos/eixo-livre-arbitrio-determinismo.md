@@ -1,4 +1,5 @@
 ---
+
 eixo: "Livre-arbítrio × Determinismo"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "Debate filosófico clássico (estoicos a Dennett)"
@@ -7,6 +8,7 @@ tipo: eixo
 nivel: entusiasta
 status: rascunho
 tags: [eixo, filosofia, psicologia, agencia]
+fonte_verificada: nao
 ---
 
 # Eixo — Livre-arbítrio × Determinismo

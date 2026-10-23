@@ -1,4 +1,5 @@
 ---
+
 conceito: "Funcionalismo"
 obra_origem: "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
 autor_origem: "William James, John Dewey, James Angell, Harvey Carr, G. H. Mead"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [psicologia, escolas-classicas, mente-corpo]
+fonte_verificada: nao
 ---
 
 # Conceito — Funcionalismo

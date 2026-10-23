@@ -1,0 +1,1002 @@
+{
+  "obras": {
+    "Planos de estudo anexados pelo autor": {
+      "autor": "Debate clássico das ciências humanas",
+      "total": 2,
+      "temas": {
+        "sociologia": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Conflito × Coesão",
+          "arquivo": "eixo-conflito-coesao.md",
+          "tema": "sociologia"
+        },
+        {
+          "conceito": "Estrutura × Agência",
+          "arquivo": "eixo-estrutura-agencia.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "Guia de Estudos Integrativo de Psicologia (anexo do autor)": {
+      "autor": "Conceito sociológico clássico (Berger e Luckmann; fonte didática: Toda Matéria)",
+      "total": 15,
+      "temas": {
+        "filosofia": 3,
+        "psicologia": 6,
+        "sociologia": 6
+      },
+      "conceitos": [
+        {
+          "conceito": "Inatismo × Empirismo",
+          "arquivo": "eixo-inatismo-empirismo.md",
+          "tema": "filosofia"
+        },
+        {
+          "conceito": "Livre-arbítrio × Determinismo",
+          "arquivo": "eixo-livre-arbitrio-determinismo.md",
+          "tema": "filosofia"
+        },
+        {
+          "conceito": "Mente × Corpo",
+          "arquivo": "eixo-mente-corpo.md",
+          "tema": "filosofia"
+        },
+        {
+          "conceito": "Behaviorismo",
+          "arquivo": "psicologia-behaviorismo.md",
+          "tema": "psicologia"
+        },
+        {
+          "conceito": "Estruturalismo",
+          "arquivo": "psicologia-estruturalismo.md",
+          "tema": "psicologia"
+        },
+        {
+          "conceito": "Funcionalismo",
+          "arquivo": "psicologia-funcionalismo.md",
+          "tema": "psicologia"
+        },
+        {
+          "conceito": "Psicologia da Gestalt",
+          "arquivo": "psicologia-gestalt.md",
+          "tema": "psicologia"
+        },
+        {
+          "conceito": "Psicologia Humanista",
+          "arquivo": "psicologia-humanismo.md",
+          "tema": "psicologia"
+        },
+        {
+          "conceito": "Psicanálise",
+          "arquivo": "psicologia-psicanalise.md",
+          "tema": "psicologia"
+        },
+        {
+          "conceito": "Cultura",
+          "arquivo": "sociologia-cultura.md",
+          "tema": "sociologia"
+        },
+        {
+          "conceito": "Desigualdade Social",
+          "arquivo": "sociologia-desigualdade-social.md",
+          "tema": "sociologia"
+        },
+        {
+          "conceito": "Gênero",
+          "arquivo": "sociologia-genero.md",
+          "tema": "sociologia"
+        },
+        {
+          "conceito": "Identidade",
+          "arquivo": "sociologia-identidade.md",
+          "tema": "sociologia"
+        },
+        {
+          "conceito": "Papel Social",
+          "arquivo": "sociologia-papel-social.md",
+          "tema": "sociologia"
+        },
+        {
+          "conceito": "Socialização",
+          "arquivo": "sociologia-socializacao.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "Totalidade e Infinito, de Emmanuel Lévinas": {
+      "autor": "Emmanuel Lévinas",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Ética do Rosto (Lévinas)",
+          "arquivo": "filosofia-etica-do-rosto.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Ética a Nicômaco (Livros I e II), de Aristóteles": {
+      "autor": "Aristóteles",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Eudaimonia",
+          "arquivo": "filosofia-eudaimonia.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "O Existencialismo é um Humanismo, de Sartre": {
+      "autor": "Jean-Paul Sartre",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Existencialismo",
+          "arquivo": "filosofia-existencialismo.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Conjecturas e Refutações, de Karl Popper": {
+      "autor": "Karl Popper",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Falseabilidade",
+          "arquivo": "filosofia-falseabilidade.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Crítica da Razão Pura, de Kant": {
+      "autor": "Immanuel Kant",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Fenômeno e Númeno",
+          "arquivo": "filosofia-fenomeno-noumeno.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Fundamentação da Metafísica dos Costumes (seções I e II), de Kant": {
+      "autor": "Immanuel Kant",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Imperativo Categórico",
+          "arquivo": "filosofia-imperativo-categorico.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Apologia de Sócrates e A República (Livro I), de Platão": {
+      "autor": "Sócrates (via Platão)",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Método Socrático",
+          "arquivo": "filosofia-metodo-socratico.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "A Gaia Ciência (aforismo 125) e Genealogia da Moral, de Nietzsche": {
+      "autor": "Friedrich Nietzsche",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Morte de Deus",
+          "arquivo": "filosofia-morte-de-deus.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "A Estrutura das Revoluções Científicas, de Thomas Kuhn": {
+      "autor": "Thomas Kuhn",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Paradigma (Kuhn)",
+          "arquivo": "filosofia-paradigma-kuhn.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "A República (Livro VII), de Platão": {
+      "autor": "Platão",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Teoria das Formas",
+          "arquivo": "filosofia-teoria-das-formas.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Utilitarismo, de John Stuart Mill; Introdução aos Princípios da Moral e da Legislação, de Bentham": {
+      "autor": "Jeremy Bentham e John Stuart Mill",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Utilitarismo",
+          "arquivo": "filosofia-utilitarismo.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Uma Teoria da Justiça, de John Rawls": {
+      "autor": "John Rawls",
+      "total": 1,
+      "temas": {
+        "filosofia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Véu da Ignorância",
+          "arquivo": "filosofia-veu-da-ignorancia.md",
+          "tema": "filosofia"
+        }
+      ]
+    },
+    "Apego (Attachment and Loss, 1969), de John Bowlby": {
+      "autor": "John Bowlby e Mary Ainsworth",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Apego",
+          "arquivo": "psicologia-apego.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Em Busca de Sentido, de Viktor Frankl; Florescer, de Martin Seligman": {
+      "autor": "Viktor Frankl e Martin Seligman",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Bem-estar e Sentido",
+          "arquivo": "psicologia-bem-estar-sentido.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "A Teoria da Dissonância Cognitiva, de Leon Festinger": {
+      "autor": "Leon Festinger",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Dissonância cognitiva",
+          "arquivo": "psicologia-dissonancia-cognitiva.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Infância e Sociedade, de Erik Erikson": {
+      "autor": "Erik Erikson",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Estágios Psicossociais (Erikson)",
+          "arquivo": "psicologia-estagios-erikson.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Flow: A Psicologia da Felicidade (Flow, 1990), de Mihaly Csikszentmihalyi": {
+      "autor": "Mihaly Csikszentmihalyi",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Fluxo",
+          "arquivo": "psicologia-fluxo.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Experiments in Intergroup Discrimination (1971) e An Integrative Theory of Intergroup Conflict (1979), de Tajfel e Turner": {
+      "autor": "Henri Tajfel e John Turner",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Identidade Social",
+          "arquivo": "psicologia-identidade-social.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Obedience to Authority, de Stanley Milgram; experimento de Stanford, de Zimbardo": {
+      "autor": "Stanley Milgram e Philip Zimbardo",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Obediência à Autoridade",
+          "arquivo": "psicologia-obediencia-autoridade.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Rápido e Devagar: Duas Formas de Pensar, de Daniel Kahneman": {
+      "autor": "Daniel Kahneman e Amos Tversky",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Vieses cognitivos",
+          "arquivo": "psicologia-vieses-cognitivos.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Pensamento e Linguagem, de Lev Vygotsky": {
+      "autor": "Lev Vygotsky",
+      "total": 1,
+      "temas": {
+        "psicologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Zona de Desenvolvimento Proximal",
+          "arquivo": "psicologia-zona-desenvolvimento-proximal.md",
+          "tema": "psicologia"
+        }
+      ]
+    },
+    "Alienação e Aceleração, de Hartmut Rosa": {
+      "autor": "Hartmut Rosa",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Aceleração Social (Rosa)",
+          "arquivo": "sociologia-aceleracao-rosa.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "Manuscritos Econômico-Filosóficos de 1844 (seção \"Trabalho Alienado\"), de Karl Marx": {
+      "autor": "Karl Marx",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Alienação",
+          "arquivo": "sociologia-alienacao.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "O Suicídio, de Émile Durkheim": {
+      "autor": "Émile Durkheim",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Anomia",
+          "arquivo": "sociologia-anomia.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "A Construção Social da Realidade, de Berger e Luckmann": {
+      "autor": "Peter Berger e Thomas Luckmann",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Construção Social da Realidade",
+          "arquivo": "sociologia-construcao-social-realidade.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "As Regras do Método Sociológico, de Émile Durkheim": {
+      "autor": "Émile Durkheim",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Fato social",
+          "arquivo": "sociologia-fato-social.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "A Reprodução (com Passeron) e A Distinção, de Pierre Bourdieu": {
+      "autor": "Pierre Bourdieu",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Habitus",
+          "arquivo": "sociologia-habitus.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "A Imaginação Sociológica (cap. 1, \"A Promessa\"), de C. Wright Mills": {
+      "autor": "Charles Wright Mills",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Imaginação sociológica",
+          "arquivo": "sociologia-imaginacao-sociologica.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "Mind, Self and Society, de George Herbert Mead": {
+      "autor": "George Herbert Mead",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Interacionismo Simbólico",
+          "arquivo": "sociologia-interacionismo-simbolico.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "Demarginalizing the Intersection of Race and Sex (1989), de Kimberlé Crenshaw": {
+      "autor": "Kimberlé Crenshaw",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Interseccionalidade",
+          "arquivo": "sociologia-interseccionalidade.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "Vigiar e Punir (parte 3: Panoptismo), de Michel Foucault": {
+      "autor": "Michel Foucault",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Panóptico e Biopoder",
+          "arquivo": "sociologia-panoptico.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "Curso de Filosofia Positiva (Discurso preliminar), de Auguste Comte": {
+      "autor": "Auguste Comte",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Positivismo",
+          "arquivo": "sociologia-positivismo.md",
+          "tema": "sociologia"
+        }
+      ]
+    },
+    "A Ética Protestante e o Espírito do Capitalismo, de Max Weber": {
+      "autor": "Max Weber",
+      "total": 1,
+      "temas": {
+        "sociologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Racionalização",
+          "arquivo": "sociologia-racionalizacao.md",
+          "tema": "sociologia"
+        }
+      ]
+    }
+  },
+  "autores": {
+    "Debate clássico das ciências humanas": {
+      "total": 2,
+      "obras": [
+        "Planos de estudo anexados pelo autor"
+      ],
+      "conceitos": [
+        "Conflito × Coesão",
+        "Estrutura × Agência"
+      ]
+    },
+    "Debate filosófico clássico (Platão e Locke a Chomsky)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Inatismo × Empirismo"
+      ]
+    },
+    "Debate filosófico clássico (estoicos a Dennett)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Livre-arbítrio × Determinismo"
+      ]
+    },
+    "Debate filosófico clássico (Descartes a Ryle)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Mente × Corpo"
+      ]
+    },
+    "Emmanuel Lévinas": {
+      "total": 1,
+      "obras": [
+        "Totalidade e Infinito, de Emmanuel Lévinas"
+      ],
+      "conceitos": [
+        "Ética do Rosto (Lévinas)"
+      ]
+    },
+    "Aristóteles": {
+      "total": 1,
+      "obras": [
+        "Ética a Nicômaco (Livros I e II), de Aristóteles"
+      ],
+      "conceitos": [
+        "Eudaimonia"
+      ]
+    },
+    "Jean-Paul Sartre": {
+      "total": 1,
+      "obras": [
+        "O Existencialismo é um Humanismo, de Sartre"
+      ],
+      "conceitos": [
+        "Existencialismo"
+      ]
+    },
+    "Karl Popper": {
+      "total": 1,
+      "obras": [
+        "Conjecturas e Refutações, de Karl Popper"
+      ],
+      "conceitos": [
+        "Falseabilidade"
+      ]
+    },
+    "Immanuel Kant": {
+      "total": 2,
+      "obras": [
+        "Crítica da Razão Pura, de Kant",
+        "Fundamentação da Metafísica dos Costumes (seções I e II), de Kant"
+      ],
+      "conceitos": [
+        "Fenômeno e Númeno",
+        "Imperativo Categórico"
+      ]
+    },
+    "Sócrates (via Platão)": {
+      "total": 1,
+      "obras": [
+        "Apologia de Sócrates e A República (Livro I), de Platão"
+      ],
+      "conceitos": [
+        "Método Socrático"
+      ]
+    },
+    "Friedrich Nietzsche": {
+      "total": 1,
+      "obras": [
+        "A Gaia Ciência (aforismo 125) e Genealogia da Moral, de Nietzsche"
+      ],
+      "conceitos": [
+        "Morte de Deus"
+      ]
+    },
+    "Thomas Kuhn": {
+      "total": 1,
+      "obras": [
+        "A Estrutura das Revoluções Científicas, de Thomas Kuhn"
+      ],
+      "conceitos": [
+        "Paradigma (Kuhn)"
+      ]
+    },
+    "Platão": {
+      "total": 1,
+      "obras": [
+        "A República (Livro VII), de Platão"
+      ],
+      "conceitos": [
+        "Teoria das Formas"
+      ]
+    },
+    "Jeremy Bentham e John Stuart Mill": {
+      "total": 1,
+      "obras": [
+        "Utilitarismo, de John Stuart Mill; Introdução aos Princípios da Moral e da Legislação, de Bentham"
+      ],
+      "conceitos": [
+        "Utilitarismo"
+      ]
+    },
+    "John Rawls": {
+      "total": 1,
+      "obras": [
+        "Uma Teoria da Justiça, de John Rawls"
+      ],
+      "conceitos": [
+        "Véu da Ignorância"
+      ]
+    },
+    "John Bowlby e Mary Ainsworth": {
+      "total": 1,
+      "obras": [
+        "Apego (Attachment and Loss, 1969), de John Bowlby"
+      ],
+      "conceitos": [
+        "Apego"
+      ]
+    },
+    "John B. Watson, B. F. Skinner; base de Ivan Pavlov": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Behaviorismo"
+      ]
+    },
+    "Viktor Frankl e Martin Seligman": {
+      "total": 1,
+      "obras": [
+        "Em Busca de Sentido, de Viktor Frankl; Florescer, de Martin Seligman"
+      ],
+      "conceitos": [
+        "Bem-estar e Sentido"
+      ]
+    },
+    "Leon Festinger": {
+      "total": 1,
+      "obras": [
+        "A Teoria da Dissonância Cognitiva, de Leon Festinger"
+      ],
+      "conceitos": [
+        "Dissonância cognitiva"
+      ]
+    },
+    "Erik Erikson": {
+      "total": 1,
+      "obras": [
+        "Infância e Sociedade, de Erik Erikson"
+      ],
+      "conceitos": [
+        "Estágios Psicossociais (Erikson)"
+      ]
+    },
+    "Edward B. Titchener, a partir de Wilhelm Wundt": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Estruturalismo"
+      ]
+    },
+    "Mihaly Csikszentmihalyi": {
+      "total": 1,
+      "obras": [
+        "Flow: A Psicologia da Felicidade (Flow, 1990), de Mihaly Csikszentmihalyi"
+      ],
+      "conceitos": [
+        "Fluxo"
+      ]
+    },
+    "William James, John Dewey, James Angell, Harvey Carr, G. H. Mead": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Funcionalismo"
+      ]
+    },
+    "Max Wertheimer, Wolfgang Köhler, Kurt Koffka": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Psicologia da Gestalt"
+      ]
+    },
+    "Carl Rogers, Abraham Maslow": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Psicologia Humanista"
+      ]
+    },
+    "Henri Tajfel e John Turner": {
+      "total": 1,
+      "obras": [
+        "Experiments in Intergroup Discrimination (1971) e An Integrative Theory of Intergroup Conflict (1979), de Tajfel e Turner"
+      ],
+      "conceitos": [
+        "Identidade Social"
+      ]
+    },
+    "Stanley Milgram e Philip Zimbardo": {
+      "total": 1,
+      "obras": [
+        "Obedience to Authority, de Stanley Milgram; experimento de Stanford, de Zimbardo"
+      ],
+      "conceitos": [
+        "Obediência à Autoridade"
+      ]
+    },
+    "Sigmund Freud; divergências de Carl Jung e Alfred Adler": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Psicanálise"
+      ]
+    },
+    "Daniel Kahneman e Amos Tversky": {
+      "total": 1,
+      "obras": [
+        "Rápido e Devagar: Duas Formas de Pensar, de Daniel Kahneman"
+      ],
+      "conceitos": [
+        "Vieses cognitivos"
+      ]
+    },
+    "Lev Vygotsky": {
+      "total": 1,
+      "obras": [
+        "Pensamento e Linguagem, de Lev Vygotsky"
+      ],
+      "conceitos": [
+        "Zona de Desenvolvimento Proximal"
+      ]
+    },
+    "Hartmut Rosa": {
+      "total": 1,
+      "obras": [
+        "Alienação e Aceleração, de Hartmut Rosa"
+      ],
+      "conceitos": [
+        "Aceleração Social (Rosa)"
+      ]
+    },
+    "Karl Marx": {
+      "total": 1,
+      "obras": [
+        "Manuscritos Econômico-Filosóficos de 1844 (seção \"Trabalho Alienado\"), de Karl Marx"
+      ],
+      "conceitos": [
+        "Alienação"
+      ]
+    },
+    "Émile Durkheim": {
+      "total": 2,
+      "obras": [
+        "As Regras do Método Sociológico, de Émile Durkheim",
+        "O Suicídio, de Émile Durkheim"
+      ],
+      "conceitos": [
+        "Anomia",
+        "Fato social"
+      ]
+    },
+    "Peter Berger e Thomas Luckmann": {
+      "total": 1,
+      "obras": [
+        "A Construção Social da Realidade, de Berger e Luckmann"
+      ],
+      "conceitos": [
+        "Construção Social da Realidade"
+      ]
+    },
+    "Conceito sociológico clássico (Tylor a Berger; fonte didática: Toda Matéria)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Cultura"
+      ]
+    },
+    "Conceito sociológico clássico (Marx, Bourdieu; fonte didática: Brasil Escola)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Desigualdade Social"
+      ]
+    },
+    "Conceito das ciências sociais (Scott, Butler; fonte didática: Wikipédia)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Gênero"
+      ]
+    },
+    "Pierre Bourdieu": {
+      "total": 1,
+      "obras": [
+        "A Reprodução (com Passeron) e A Distinção, de Pierre Bourdieu"
+      ],
+      "conceitos": [
+        "Habitus"
+      ]
+    },
+    "Conceito sociológico clássico (Mead, Erikson; fonte didática: InfoEscola)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Identidade"
+      ]
+    },
+    "Charles Wright Mills": {
+      "total": 1,
+      "obras": [
+        "A Imaginação Sociológica (cap. 1, \"A Promessa\"), de C. Wright Mills"
+      ],
+      "conceitos": [
+        "Imaginação sociológica"
+      ]
+    },
+    "George Herbert Mead": {
+      "total": 1,
+      "obras": [
+        "Mind, Self and Society, de George Herbert Mead"
+      ],
+      "conceitos": [
+        "Interacionismo Simbólico"
+      ]
+    },
+    "Kimberlé Crenshaw": {
+      "total": 1,
+      "obras": [
+        "Demarginalizing the Intersection of Race and Sex (1989), de Kimberlé Crenshaw"
+      ],
+      "conceitos": [
+        "Interseccionalidade"
+      ]
+    },
+    "Michel Foucault": {
+      "total": 1,
+      "obras": [
+        "Vigiar e Punir (parte 3: Panoptismo), de Michel Foucault"
+      ],
+      "conceitos": [
+        "Panóptico e Biopoder"
+      ]
+    },
+    "Conceito sociológico clássico (Linton, Goffman; fonte didática: Toda Matéria)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Papel Social"
+      ]
+    },
+    "Auguste Comte": {
+      "total": 1,
+      "obras": [
+        "Curso de Filosofia Positiva (Discurso preliminar), de Auguste Comte"
+      ],
+      "conceitos": [
+        "Positivismo"
+      ]
+    },
+    "Max Weber": {
+      "total": 1,
+      "obras": [
+        "A Ética Protestante e o Espírito do Capitalismo, de Max Weber"
+      ],
+      "conceitos": [
+        "Racionalização"
+      ]
+    },
+    "Conceito sociológico clássico (Berger e Luckmann; fonte didática: Toda Matéria)": {
+      "total": 1,
+      "obras": [
+        "Guia de Estudos Integrativo de Psicologia (anexo do autor)"
+      ],
+      "conceitos": [
+        "Socialização"
+      ]
+    }
+  },
+  "atualizado_em": "2026-10-22T23:18:11"
+}

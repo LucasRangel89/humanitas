@@ -3,6 +3,12 @@ eixo: "Nome da grande questão (ex.: Livre-arbítrio × determinismo)"
 tema: filosofia
 tipo: eixo
 nivel: entusiasta
+fonte_verificada: nao
+tradicao: ""
+nivel_evidencia: teorica
+contestado_por: []
+eixos: []
+relacoes: []
 tags: [eixo, exemplo-tag]
 ---
 

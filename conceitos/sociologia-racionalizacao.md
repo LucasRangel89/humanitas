@@ -1,4 +1,5 @@
 ---
+
 conceito: "Racionalização"
 obra_origem: "A Ética Protestante e o Espírito do Capitalismo, de Max Weber"
 autor_origem: "Max Weber"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: entusiasta
 status: rascunho
 tags: [sociologia, weber, modernidade, classicos]
+fonte_verificada: nao
 ---
 # Conceito — Racionalização
 

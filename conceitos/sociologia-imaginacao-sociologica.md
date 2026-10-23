@@ -1,12 +1,14 @@
 ---
+
 conceito: "Imaginação sociológica"
-obra_origem: "A Imaginação Sociológica (cap. 1, "A Promessa"), de C. Wright Mills"
+obra_origem: 'A Imaginação Sociológica (cap. 1, "A Promessa"), de C. Wright Mills'
 autor_origem: "Charles Wright Mills"
 tema: sociologia
 tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, mills, metodo, classicos]
+fonte_verificada: nao
 ---
 # Conceito — Imaginação sociológica
 

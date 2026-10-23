@@ -1,4 +1,5 @@
 ---
+
 conceito: "Anomia"
 obra_origem: "O Suicídio, de Émile Durkheim"
 autor_origem: "Émile Durkheim"
@@ -7,6 +8,7 @@ tipo: conceito
 nivel: iniciante
 status: rascunho
 tags: [sociologia, durkheim, normas, classicos]
+fonte_verificada: nao
 ---
 # Conceito — Anomia
 
