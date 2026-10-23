@@ -189,6 +189,7 @@ A lista gerada de marcos e métricas está em [`progresso.md`](../progresso.md).
 | P2 | Conversor por capítulo (arquivos menores, melhor busca) | 1 dia |
 | P2 | `pre-commit` rodando `auditar` antes de cada commit | 1 h |
 | P2 | Fichas de leitura de *Raça e História* e *Apologia da História* (Guia 09, §12) | 3 h |
+| P2 | Quinta onda da expansão: Economia + decisão sobre Psicologia Social (Guia 09, §4.1.5 e §4.1.6) | 20 h |
 
 ## Como medir (sem autoengano)
 

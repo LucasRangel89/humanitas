@@ -1,14 +1,14 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-23T01:25:34",
+  "atualizado_em": "2026-10-23T01:30:06",
   "totais": {
     "livros": 0,
     "fichas": 0,
-    "conceitos": 57,
-    "eixos": 7,
+    "conceitos": 69,
+    "eixos": 9,
     "trechos": 0,
-    "trilhas": 7,
+    "trilhas": 9,
     "diario": 0
   },
   "livros": [],
@@ -239,6 +239,236 @@
       ]
     },
     {
+      "arquivo": "ciencia-politica-democracia.md",
+      "caminho": "conceitos/ciencia-politica-democracia.md",
+      "conceito": "Democracia",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Como as Democracias Morrem",
+      "autor_origem": "Steven Levitsky e Daniel Ziblatt",
+      "fonte_verificada": "nao",
+      "tradicao": "ciência política comparada",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-regime-politico",
+        "ciencia-politica-legitimidade",
+        "sociologia-desigualdade-social"
+      ],
+      "definicao": "Regime em que o poder é disputado em eleições livres e competitivas, sob regras que garantem oposição, liberdade de expressão e limitação do governante — e não apenas o direito de votar.",
+      "tags": [
+        "ciencia-politica",
+        "democracia",
+        "levitsky",
+        "dahl",
+        "brasil",
+        "constituicao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-estado.md",
+      "caminho": "conceitos/ciencia-politica-estado.md",
+      "conceito": "Estado",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Política como Vocação",
+      "autor_origem": "Max Weber",
+      "fonte_verificada": "nao",
+      "tradicao": "teoria política moderna",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-poder",
+        "ciencia-politica-legitimidade",
+        "geografia-territorio"
+      ],
+      "definicao": "A organização que, dentro de um território, reivindica com sucesso o monopólio do uso legítimo da força física.",
+      "tags": [
+        "ciencia-politica",
+        "estado",
+        "weber",
+        "bobbio",
+        "instituicoes"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-legitimidade.md",
+      "caminho": "conceitos/ciencia-politica-legitimidade.md",
+      "conceito": "Legitimidade",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Economia e Sociedade",
+      "autor_origem": "Max Weber",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia compreensiva",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-poder",
+        "ciencia-politica-estado",
+        "ciencia-politica-democracia"
+      ],
+      "definicao": "A crença compartilhada de que uma autoridade tem o direito de mandar e de que há dever de obedecer — o que distingue autoridade de simples coerção.",
+      "tags": [
+        "ciencia-politica",
+        "legitimidade",
+        "weber",
+        "dominacao",
+        "autoridade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-poder.md",
+      "caminho": "conceitos/ciencia-politica-poder.md",
+      "conceito": "Poder",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Economia e Sociedade",
+      "autor_origem": "Max Weber",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia compreensiva / teoria política",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-estado",
+        "ciencia-politica-legitimidade",
+        "sociologia-panoptico"
+      ],
+      "definicao": "A capacidade de impor a própria vontade mesmo contra resistência — e, em versões mais amplas, a capacidade de definir o que os outros consideram possível ou legítimo.",
+      "tags": [
+        "ciencia-politica",
+        "poder",
+        "weber",
+        "lukes",
+        "dominacao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-populismo.md",
+      "caminho": "conceitos/ciencia-politica-populismo.md",
+      "conceito": "Populismo",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Razão Populista",
+      "autor_origem": "Ernesto Laclau",
+      "fonte_verificada": "nao",
+      "tradicao": "teoria do discurso / política comparada",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-democracia",
+        "ciencia-politica-regime-politico",
+        "sociologia-identidade"
+      ],
+      "definicao": "Uma lógica política que divide a sociedade em dois campos — \"o povo\" e \"a elite\" — e reivindica falar em nome do povo inteiro contra os que o exploram.",
+      "tags": [
+        "ciencia-politica",
+        "populismo",
+        "laclau",
+        "mudde",
+        "lacao",
+        "eleicoes"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-regime-politico.md",
+      "caminho": "conceitos/ciencia-politica-regime-politico.md",
+      "conceito": "Regime político",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Poliarquia: Participação e Oposição",
+      "autor_origem": "Robert A. Dahl",
+      "fonte_verificada": "nao",
+      "tradicao": "ciência política comparada",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-democracia",
+        "ciencia-politica-legitimidade",
+        "historia-ditadura-transicao"
+      ],
+      "definicao": "O conjunto de regras que define como se chega ao poder, como se governa e como se sai dele — o que separa democracia, autoritarismo e totalitarismo.",
+      "tags": [
+        "ciencia-politica",
+        "regime",
+        "dahl",
+        "linz",
+        "autoritarismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "eixo-conflito-coesao.md",
       "caminho": "conceitos/eixo-conflito-coesao.md",
       "conceito": "Conflito × Coesão",
@@ -370,6 +600,39 @@
       ]
     },
     {
+      "arquivo": "eixo-liberdade-igualdade.md",
+      "caminho": "conceitos/eixo-liberdade-igualdade.md",
+      "conceito": "Liberdade × Igualdade",
+      "tipo": "eixo",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "filosofia política moderna",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "É possível maximizar a liberdade de todos e a igualdade entre todos ao mesmo tempo — ou uma sempre cobra o preço da outra?",
+      "tags": [
+        "eixo",
+        "ciencia-politica",
+        "liberdade",
+        "igualdade",
+        "justica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "eixo-livre-arbitrio-determinismo.md",
       "caminho": "conceitos/eixo-livre-arbitrio-determinismo.md",
       "conceito": "Livre-arbítrio × Determinismo",
@@ -398,6 +661,38 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-local-global.md",
+      "caminho": "conceitos/eixo-local-global.md",
+      "conceito": "Local × Global",
+      "tipo": "eixo",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "Em que escala um fenômeno se explica — no lugar onde ele acontece ou no sistema mundial que o produz?",
+      "tags": [
+        "eixo",
+        "geografia",
+        "escala",
+        "globalizacao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -846,6 +1141,233 @@
       "pendencias": [
         "citação de apoio (com capítulo/página)",
         "exemplo próprio (de preferência brasileiro)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-escala.md",
+      "caminho": "conceitos/geografia-escala.md",
+      "conceito": "Escala",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Natureza do Espaço",
+      "autor_origem": "Milton Santos",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-territorio",
+        "eixo-local-global"
+      ],
+      "definicao": "O recorte de tamanho e de alcance com que se observa um fenômeno — uma escolha de método que decide o que aparece e o que desaparece.",
+      "tags": [
+        "geografia",
+        "escala",
+        "metodo",
+        "milton-santos"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-espaco-geografico.md",
+      "caminho": "conceitos/geografia-espaco-geografico.md",
+      "conceito": "Espaço geográfico",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Natureza do Espaço",
+      "autor_origem": "Milton Santos",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-lugar",
+        "geografia-territorio",
+        "geografia-paisagem"
+      ],
+      "definicao": "O espaço não é o cenário onde a sociedade acontece: é o conjunto indissociável de sistemas de objetos e sistemas de ações que se transforma junto com ela.",
+      "tags": [
+        "geografia",
+        "milton-santos",
+        "espaco",
+        "tecnica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-lugar.md",
+      "caminho": "conceitos/geografia-lugar.md",
+      "conceito": "Lugar",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Espaço e Lugar",
+      "autor_origem": "Yi-Fu Tuan",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia humanista",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-territorio",
+        "antropologia-ritual"
+      ],
+      "definicao": "O espaço quando deixa de ser extensão indiferenciada e passa a ter significado, memória e afeto para quem o habita.",
+      "tags": [
+        "geografia",
+        "lugar",
+        "tuan",
+        "topofilia",
+        "experiencia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-paisagem.md",
+      "caminho": "conceitos/geografia-paisagem.md",
+      "conceito": "Paisagem",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Morfologia da Paisagem",
+      "autor_origem": "Carl O. Sauer",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia cultural",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-lugar",
+        "historia-fonte-historica"
+      ],
+      "definicao": "A dimensão visível do espaço: um texto escrito por camadas de trabalho, técnica e cultura que pode ser lido como documento.",
+      "tags": [
+        "geografia",
+        "paisagem",
+        "sauer",
+        "cultura-material",
+        "leitura"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-redes-fluxos.md",
+      "caminho": "conceitos/geografia-redes-fluxos.md",
+      "conceito": "Redes e fluxos",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Sociedade em Rede",
+      "autor_origem": "Manuel Castells",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica / sociologia da tecnologia",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-escala",
+        "sociologia-aceleracao-rosa"
+      ],
+      "definicao": "A organização do espaço por conexões — cabos, rotas, algoritmos — que distribui poder conforme a capacidade de circular e de controlar a circulação.",
+      "tags": [
+        "geografia",
+        "redes",
+        "fluxos",
+        "castells",
+        "globalizacao",
+        "tecnologia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-territorio.md",
+      "caminho": "conceitos/geografia-territorio.md",
+      "conceito": "Território",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "O Brasil: Território e Sociedade no Início do Século XXI",
+      "autor_origem": "Milton Santos e María Laura Silveira",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica / geopolítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-escala",
+        "historia-colonialismo"
+      ],
+      "definicao": "Espaço apropriado e controlado — por um Estado, um grupo, uma empresa — onde o poder se exerce por meio de fronteiras, normas e usos.",
+      "tags": [
+        "geografia",
+        "territorio",
+        "poder",
+        "milton-santos",
+        "geopolitica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -2156,6 +2678,19 @@
       "proximo_no": "Alteridade — a porta de entrada: o outro como sujeito, não como versão incompleta de nós."
     },
     {
+      "arquivo": "ciencia-politica-nivel-1.md",
+      "caminho": "trilhas/ciencia-politica-nivel-1.md",
+      "trilha": "Ciência Política — Nível 1: do poder ao regime",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de analisar qualquer notícia política sem reduzir tudo a \"governo bom\" ou \"governo ruim\": identificar onde está o poder, se ele é legítimo, que tipo de regime o organiza e como se mede a saúde de uma democracia.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Poder — a porta de entrada: as três dimensões, de decidir a moldar o desejo."
+    },
+    {
       "arquivo": "filosofia-nivel-1.md",
       "caminho": "trilhas/filosofia-nivel-1.md",
       "trilha": "Filosofia — Nível 1: do mito ao século XX",
@@ -2167,6 +2702,19 @@
       "nos_concluidos": 0,
       "formato": "checkbox",
       "proximo_no": "Teoria das Formas — o ponto de partida: opinião × conhecimento, a Caverna."
+    },
+    {
+      "arquivo": "geografia-nivel-1.md",
+      "caminho": "trilhas/geografia-nivel-1.md",
+      "trilha": "Geografia — Nível 1: ler o mundo pela escala",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de olhar qualquer lugar — a rua onde mora, uma notícia sobre a Amazônia, um mapa no jornal — e responder três perguntas: que espaço é este, em que escala ele se explica e quem ganhou e perdeu na sua produção.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Espaço geográfico — a porta de entrada: espaço como sistema de objetos e ações, não como cenário."
     },
     {
       "arquivo": "historia-nivel-1.md",

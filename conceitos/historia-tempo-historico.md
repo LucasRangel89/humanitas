@@ -46,7 +46,7 @@ Em *O Mediterrâneo* (1949), Braudel organiza o livro em três partes correspond
 
 - **Sociologia — [Racionalização](sociologia-racionalizacao.md):** Weber descreve um processo de longuíssima duração — o desencantamento do mundo — que só faz sentido nessa escala.
 - **Antropologia — [Relativismo cultural](antropologia-relativismo-cultural.md):** a longa duração é o argumento contra a ideia de povos "sem história".
-- **Geografia — território e escala:** a geografia trabalha a camada mais lenta do tempo, a que Braudel chamou de quase imóvel (nota a criar no bloco de Geografia).
+- **Geografia — [Território](geografia-territorio.md):** a geografia trabalha a camada mais lenta do tempo, a que Braudel chamou de quase imóvel.
 
 ## Por que este conceito importa
 

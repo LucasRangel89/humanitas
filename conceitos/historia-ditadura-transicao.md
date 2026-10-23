@@ -44,7 +44,7 @@ Em *Ditadura e Democracia no Brasil* (2014), Daniel Aarão Reis discute a transi
 
 ## Conexões interdisciplinares
 
-- **Ciência Política — regime político:** a transição brasileira é o caso clássico de mudança de regime sem ruptura com as elites (nota a criar no bloco de Ciência Política).
+- **Ciência Política — [Regime político](ciencia-politica-regime-politico.md):** a transição brasileira é o caso clássico de mudança de regime sem ruptura com as elites.
 - **Sociologia — [Anomia](sociologia-anomia.md):** quando a lei do Estado autoriza o arbítrio, a norma social perde referência por anos.
 - **Filosofia — [Banalidade do mal / obediência](psicologia-obediencia-autoridade.md):** o funcionário que apenas cumpre ordens é o elo entre o regime e o cotidiano.
 

@@ -84,6 +84,81 @@
         }
       ]
     },
+    "Como as Democracias Morrem": {
+      "autor": "Steven Levitsky e Daniel Ziblatt",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Democracia",
+          "arquivo": "ciencia-politica-democracia.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "A Política como Vocação": {
+      "autor": "Max Weber",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Estado",
+          "arquivo": "ciencia-politica-estado.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "Economia e Sociedade": {
+      "autor": "Max Weber",
+      "total": 2,
+      "temas": {
+        "ciencia-politica": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Legitimidade",
+          "arquivo": "ciencia-politica-legitimidade.md",
+          "tema": "ciencia-politica"
+        },
+        {
+          "conceito": "Poder",
+          "arquivo": "ciencia-politica-poder.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "A Razão Populista": {
+      "autor": "Ernesto Laclau",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Populismo",
+          "arquivo": "ciencia-politica-populismo.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "Poliarquia: Participação e Oposição": {
+      "autor": "Robert A. Dahl",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Regime político",
+          "arquivo": "ciencia-politica-regime-politico.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
     "Planos de estudo anexados pelo autor": {
       "autor": "Debate clássico das ciências humanas",
       "total": 2,
@@ -105,9 +180,11 @@
     },
     "Sem obra": {
       "autor": "Desconhecido",
-      "total": 2,
+      "total": 4,
       "temas": {
         "historia": 1,
+        "ciencia-politica": 1,
+        "geografia": 1,
         "antropologia": 1
       },
       "conceitos": [
@@ -115,6 +192,16 @@
           "conceito": "Continuidade × Ruptura",
           "arquivo": "eixo-continuidade-ruptura.md",
           "tema": "historia"
+        },
+        {
+          "conceito": "Liberdade × Igualdade",
+          "arquivo": "eixo-liberdade-igualdade.md",
+          "tema": "ciencia-politica"
+        },
+        {
+          "conceito": "Local × Global",
+          "arquivo": "eixo-local-global.md",
+          "tema": "geografia"
         },
         {
           "conceito": "Natureza × Cultura",
@@ -374,6 +461,81 @@
           "conceito": "Véu da Ignorância",
           "arquivo": "filosofia-veu-da-ignorancia.md",
           "tema": "filosofia"
+        }
+      ]
+    },
+    "A Natureza do Espaço": {
+      "autor": "Milton Santos",
+      "total": 2,
+      "temas": {
+        "geografia": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Escala",
+          "arquivo": "geografia-escala.md",
+          "tema": "geografia"
+        },
+        {
+          "conceito": "Espaço geográfico",
+          "arquivo": "geografia-espaco-geografico.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "Espaço e Lugar": {
+      "autor": "Yi-Fu Tuan",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Lugar",
+          "arquivo": "geografia-lugar.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "A Morfologia da Paisagem": {
+      "autor": "Carl O. Sauer",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Paisagem",
+          "arquivo": "geografia-paisagem.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "A Sociedade em Rede": {
+      "autor": "Manuel Castells",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Redes e fluxos",
+          "arquivo": "geografia-redes-fluxos.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "O Brasil: Território e Sociedade no Início do Século XXI": {
+      "autor": "Milton Santos e María Laura Silveira",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Território",
+          "arquivo": "geografia-territorio.md",
+          "tema": "geografia"
         }
       ]
     },
@@ -811,6 +973,47 @@
         "Ritual"
       ]
     },
+    "Steven Levitsky e Daniel Ziblatt": {
+      "total": 1,
+      "obras": [
+        "Como as Democracias Morrem"
+      ],
+      "conceitos": [
+        "Democracia"
+      ]
+    },
+    "Max Weber": {
+      "total": 4,
+      "obras": [
+        "A Política como Vocação",
+        "A Ética Protestante e o Espírito do Capitalismo, de Max Weber",
+        "Economia e Sociedade"
+      ],
+      "conceitos": [
+        "Estado",
+        "Legitimidade",
+        "Poder",
+        "Racionalização"
+      ]
+    },
+    "Ernesto Laclau": {
+      "total": 1,
+      "obras": [
+        "A Razão Populista"
+      ],
+      "conceitos": [
+        "Populismo"
+      ]
+    },
+    "Robert A. Dahl": {
+      "total": 1,
+      "obras": [
+        "Poliarquia: Participação e Oposição"
+      ],
+      "conceitos": [
+        "Regime político"
+      ]
+    },
     "Debate clássico das ciências humanas": {
       "total": 2,
       "obras": [
@@ -822,12 +1025,14 @@
       ]
     },
     "Desconhecido": {
-      "total": 2,
+      "total": 4,
       "obras": [
         "Sem obra"
       ],
       "conceitos": [
         "Continuidade × Ruptura",
+        "Liberdade × Igualdade",
+        "Local × Global",
         "Natureza × Cultura"
       ]
     },
@@ -957,6 +1162,52 @@
       ],
       "conceitos": [
         "Véu da Ignorância"
+      ]
+    },
+    "Milton Santos": {
+      "total": 2,
+      "obras": [
+        "A Natureza do Espaço"
+      ],
+      "conceitos": [
+        "Escala",
+        "Espaço geográfico"
+      ]
+    },
+    "Yi-Fu Tuan": {
+      "total": 1,
+      "obras": [
+        "Espaço e Lugar"
+      ],
+      "conceitos": [
+        "Lugar"
+      ]
+    },
+    "Carl O. Sauer": {
+      "total": 1,
+      "obras": [
+        "A Morfologia da Paisagem"
+      ],
+      "conceitos": [
+        "Paisagem"
+      ]
+    },
+    "Manuel Castells": {
+      "total": 1,
+      "obras": [
+        "A Sociedade em Rede"
+      ],
+      "conceitos": [
+        "Redes e fluxos"
+      ]
+    },
+    "Milton Santos e María Laura Silveira": {
+      "total": 1,
+      "obras": [
+        "O Brasil: Território e Sociedade no Início do Século XXI"
+      ],
+      "conceitos": [
+        "Território"
       ]
     },
     "Aníbal Quijano": {
@@ -1285,15 +1536,6 @@
         "Positivismo"
       ]
     },
-    "Max Weber": {
-      "total": 1,
-      "obras": [
-        "A Ética Protestante e o Espírito do Capitalismo, de Max Weber"
-      ],
-      "conceitos": [
-        "Racionalização"
-      ]
-    },
     "Conceito sociológico clássico (Berger e Luckmann; fonte didática: Toda Matéria)": {
       "total": 1,
       "obras": [
@@ -1304,5 +1546,5 @@
       ]
     }
   },
-  "atualizado_em": "2026-10-23T01:25:35"
+  "atualizado_em": "2026-10-23T01:30:07"
 }

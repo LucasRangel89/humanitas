@@ -384,7 +384,7 @@ O plano abaixo pressupõe ~3 h/semana. Se a rotina mudar, o prazo muda — a ord
 | **1. Fechar o ciclo** | mês 1 | 5 notas `ok` + 1 ficha + 1 diário (Guia 07, Fase 1) + eixo **Natureza × Cultura** | 8 h |
 | **2. Antropologia** | meses 2–3 | 8 notas (4 `ok`), trilha de 12 nós, 1 ficha, 1 diário — **esqueleto pronto em 2026-10-23** (eixo + 6 notas + trilha) | 18 h |
 | **3. História** | meses 4–6 | 8 notas (4 `ok`), trilha, 1 ficha, eixo **Continuidade × Ruptura** — **esqueleto pronto em 2026-10-23** (eixo + 6 notas + trilha) | 20 h |
-| **4. Geografia + Política** | meses 7–9 | 6 notas em cada, 1 trilha cada, eixos Local × Global e Liberdade × Igualdade | 24 h |
+| **4. Geografia + Política** | meses 7–9 | 6 notas em cada, 1 trilha cada, eixos Local × Global e Liberdade × Igualdade — **esqueleto pronto em 2026-10-23** (2 eixos + 12 notas + 2 trilhas) | 24 h |
 | **5. Economia + Brasil** | meses 10–12 | 6 notas de Economia, trilha "noticiário", eixo Mercado × Estado e trilha **Pensamento Social Brasileiro** | 24 h |
 
 O que **não** está no roadmap: converter os 100+ PDFs, criar 20 temas, migrar o site.
@@ -557,6 +557,7 @@ de ser intenção.
 | 2026-10-23 | Mapa criado com 7 famílias, 5 temas de primeira onda e 14 candidatos | 6 de 10 temas vazios; 0 notas `ok` | houver 10 notas `ok` e 2 temas ativos |
 | 2026-10-23 | Primeiro tema da expansão: **Antropologia**, seguido de **História** (decisão de fato, tomada ao abrir as trilhas) | Guia §4.1.1 e §4.1.2; clássicos curtos e eixo-ponte disponível | ao fechar 4 notas `ok` em cada tema |
 | 2026-10-23 | Regra do zero implementada no gerador da tabela (temas vazios vão para o rodapé "Planejados") | `scripts/painel/indice.py` + 2 testes | se a tabela esconder tema que está sendo estudado |
+| 2026-10-23 | Terceiro e quarto temas abertos: **Geografia** e **Ciência Política**, completando a primeira onda parcial (faltam Economia e a decisão sobre Psicologia Social) | Guia §4.1.3 e §4.1.4; eixos-ponte disponíveis | ao fechar 4 notas `ok` em cada tema |
 | *(pendente)* | Profundidade Brasil no primeiro ano? | — | — |
 
 ---
@@ -572,12 +573,17 @@ de ser intenção.
 | Eixo-ponte de História (Continuidade × Ruptura) | **feito** (rascunho) | `conceitos/eixo-continuidade-ruptura.md` |
 | 6 notas semente de História | **feito** (rascunho) | `conceitos/historia-*.md` |
 | Trilha de História (12 nós) | **feito** | `trilhas/historia-nivel-1.md` |
+| Eixos-ponte de Geografia (Local × Global) e de Ciência Política (Liberdade × Igualdade) | **feito** (rascunho) | `conceitos/eixo-local-global.md`, `conceitos/eixo-liberdade-igualdade.md` |
+| 6 notas semente de Geografia | **feito** (rascunho) | `conceitos/geografia-*.md` |
+| 6 notas semente de Ciência Política | **feito** (rascunho) | `conceitos/ciencia-politica-*.md` |
+| Trilhas de Geografia e de Ciência Política (12 nós cada) | **feito** | `trilhas/geografia-nivel-1.md`, `trilhas/ciencia-politica-nivel-1.md` |
 | Fichas de leitura (*Raça e História*, *Apologia da História*) | **falta** | `acervo/fichas/` |
 | Reescrever as notas para `ok` com citação e página | **falta** (é o trabalho de estudo, não de infraestrutura) | `make pendencias` |
 
-O esqueleto está de pé: 2 temas saíram de "Em breve" e agora aparecem como **Ativos** na
-tabela do README, cada um com eixo, notas e trilha. O que resta é a parte que não pode
-ser terceirizada — ler, reescrever e escrever o diário.
+O esqueleto está de pé: **4 temas** saíram de "Em breve" e agora aparecem como **Ativos**
+na tabela do README, cada um com eixo, notas e trilha (Antropologia, História, Geografia
+e Ciência Política). O que resta é a parte que não pode ser terceirizada — ler,
+reescrever e escrever o diário.
 
 ## 13. O que já está pronto e o que falta
 
