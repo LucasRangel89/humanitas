@@ -1,23 +1,33 @@
 {
-  "total_conceitos": 50,
+  "total_conceitos": 87,
   "por_status": {
-    "rascunho": 50
+    "rascunho": 87
   },
   "por_nivel": {
-    "entusiasta": 19,
-    "iniciante": 31
+    "iniciante": 52,
+    "entusiasta": 35
   },
   "por_tema": {
+    "antropologia": 7,
+    "ciencia-politica": 7,
+    "economia": 8,
     "sociologia": 20,
+    "historia": 7,
     "filosofia": 15,
-    "psicologia": 15
+    "psicologia": 16,
+    "geografia": 7
   },
-  "total_cartoes": 55,
+  "total_cartoes": 234,
   "cartoes_por_tema": {
+    "antropologia": 34,
+    "ciência política": 34,
+    "economia": 39,
     "filosofia": 18,
-    "psicologia": 15,
+    "geografia": 34,
+    "história": 34,
+    "psicologia": 19,
     "sociologia": 22
   },
   "taxa_ok": 0.0,
-  "atualizado_em": "2026-10-22T23:18:46"
+  "atualizado_em": "2026-10-23T01:36:27"
 }

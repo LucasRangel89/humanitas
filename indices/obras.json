@@ -1,5 +1,253 @@
 {
   "obras": {
+    "Raça e História": {
+      "autor": "Claude Lévi-Strauss",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Alteridade",
+          "arquivo": "antropologia-alteridade.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "As técnicas do corpo": {
+      "autor": "Marcel Mauss",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Técnicas do corpo",
+          "arquivo": "antropologia-corpo-tecnicas.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "Folkways": {
+      "autor": "William Graham Sumner",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Etnocentrismo",
+          "arquivo": "antropologia-etnocentrismo.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "Argonautas do Pacífico Ocidental": {
+      "autor": "Bronisław Malinowski",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Etnografia",
+          "arquivo": "antropologia-etnografia.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "A Mente do Homem Primitivo": {
+      "autor": "Franz Boas",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Relativismo cultural",
+          "arquivo": "antropologia-relativismo-cultural.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "Os Ritos de Passagem": {
+      "autor": "Arnold van Gennep",
+      "total": 1,
+      "temas": {
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Ritual",
+          "arquivo": "antropologia-ritual.md",
+          "tema": "antropologia"
+        }
+      ]
+    },
+    "Como as Democracias Morrem": {
+      "autor": "Steven Levitsky e Daniel Ziblatt",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Democracia",
+          "arquivo": "ciencia-politica-democracia.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "A Política como Vocação": {
+      "autor": "Max Weber",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Estado",
+          "arquivo": "ciencia-politica-estado.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "Economia e Sociedade": {
+      "autor": "Max Weber",
+      "total": 2,
+      "temas": {
+        "ciencia-politica": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Legitimidade",
+          "arquivo": "ciencia-politica-legitimidade.md",
+          "tema": "ciencia-politica"
+        },
+        {
+          "conceito": "Poder",
+          "arquivo": "ciencia-politica-poder.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "A Razão Populista": {
+      "autor": "Ernesto Laclau",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Populismo",
+          "arquivo": "ciencia-politica-populismo.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "Poliarquia: Participação e Oposição": {
+      "autor": "Robert A. Dahl",
+      "total": 1,
+      "temas": {
+        "ciencia-politica": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Regime político",
+          "arquivo": "ciencia-politica-regime-politico.md",
+          "tema": "ciencia-politica"
+        }
+      ]
+    },
+    "O Capital no Século XXI": {
+      "autor": "Thomas Piketty",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Desigualdade e distribuição",
+          "arquivo": "economia-desigualdade-distribuicao.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "Economia: Modo de Usar": {
+      "autor": "Ha-Joon Chang",
+      "total": 2,
+      "temas": {
+        "economia": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Escassez e custo de oportunidade",
+          "arquivo": "economia-escassez-custo-oportunidade.md",
+          "tema": "economia"
+        },
+        {
+          "conceito": "Incentivos",
+          "arquivo": "economia-incentivos.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "A Economia do Bem-Estar": {
+      "autor": "Arthur C. Pigou",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Externalidades e bens públicos",
+          "arquivo": "economia-externalidades-bens-publicos.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "Teoria Geral do Emprego, do Juro e da Moeda": {
+      "autor": "John Maynard Keynes",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Inflação e juros",
+          "arquivo": "economia-inflacao-juros.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "A Riqueza das Nações": {
+      "autor": "Adam Smith",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Oferta e demanda",
+          "arquivo": "economia-oferta-demanda.md",
+          "tema": "economia"
+        }
+      ]
+    },
+    "Formação Econômica do Brasil": {
+      "autor": "Celso Furtado",
+      "total": 1,
+      "temas": {
+        "economia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "PIB e crescimento",
+          "arquivo": "economia-pib-crescimento.md",
+          "tema": "economia"
+        }
+      ]
+    },
     "Planos de estudo anexados pelo autor": {
       "autor": "Debate clássico das ciências humanas",
       "total": 2,
@@ -16,6 +264,50 @@
           "conceito": "Estrutura × Agência",
           "arquivo": "eixo-estrutura-agencia.md",
           "tema": "sociologia"
+        }
+      ]
+    },
+    "Sem obra": {
+      "autor": "Desconhecido",
+      "total": 6,
+      "temas": {
+        "historia": 1,
+        "psicologia": 1,
+        "ciencia-politica": 1,
+        "geografia": 1,
+        "economia": 1,
+        "antropologia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Continuidade × Ruptura",
+          "arquivo": "eixo-continuidade-ruptura.md",
+          "tema": "historia"
+        },
+        {
+          "conceito": "Indivíduo × Grupo",
+          "arquivo": "eixo-individuo-grupo.md",
+          "tema": "psicologia"
+        },
+        {
+          "conceito": "Liberdade × Igualdade",
+          "arquivo": "eixo-liberdade-igualdade.md",
+          "tema": "ciencia-politica"
+        },
+        {
+          "conceito": "Local × Global",
+          "arquivo": "eixo-local-global.md",
+          "tema": "geografia"
+        },
+        {
+          "conceito": "Mercado × Estado",
+          "arquivo": "eixo-mercado-estado.md",
+          "tema": "economia"
+        },
+        {
+          "conceito": "Natureza × Cultura",
+          "arquivo": "eixo-natureza-cultura.md",
+          "tema": "antropologia"
         }
       ]
     },
@@ -270,6 +562,165 @@
           "conceito": "Véu da Ignorância",
           "arquivo": "filosofia-veu-da-ignorancia.md",
           "tema": "filosofia"
+        }
+      ]
+    },
+    "A Natureza do Espaço": {
+      "autor": "Milton Santos",
+      "total": 2,
+      "temas": {
+        "geografia": 2
+      },
+      "conceitos": [
+        {
+          "conceito": "Escala",
+          "arquivo": "geografia-escala.md",
+          "tema": "geografia"
+        },
+        {
+          "conceito": "Espaço geográfico",
+          "arquivo": "geografia-espaco-geografico.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "Espaço e Lugar": {
+      "autor": "Yi-Fu Tuan",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Lugar",
+          "arquivo": "geografia-lugar.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "A Morfologia da Paisagem": {
+      "autor": "Carl O. Sauer",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Paisagem",
+          "arquivo": "geografia-paisagem.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "A Sociedade em Rede": {
+      "autor": "Manuel Castells",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Redes e fluxos",
+          "arquivo": "geografia-redes-fluxos.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "O Brasil: Território e Sociedade no Início do Século XXI": {
+      "autor": "Milton Santos e María Laura Silveira",
+      "total": 1,
+      "temas": {
+        "geografia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Território",
+          "arquivo": "geografia-territorio.md",
+          "tema": "geografia"
+        }
+      ]
+    },
+    "Colonialidade do poder, eurocentrismo e América Latina": {
+      "autor": "Aníbal Quijano",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Colonialismo",
+          "arquivo": "historia-colonialismo.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "Ditadura e Democracia no Brasil": {
+      "autor": "Daniel Aarão Reis",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Ditadura e transição",
+          "arquivo": "historia-ditadura-transicao.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "Brasil: uma biografia": {
+      "autor": "Lilia Moritz Schwarcz e Heloisa Murgel Starling",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Escravidão e abolição",
+          "arquivo": "historia-escravidao-abolicao.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "Apologia da História ou O Ofício de Historiador": {
+      "autor": "Marc Bloch",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Fonte histórica",
+          "arquivo": "historia-fonte-historica.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "A Memória Coletiva": {
+      "autor": "Maurice Halbwachs",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Memória e esquecimento",
+          "arquivo": "historia-memoria.md",
+          "tema": "historia"
+        }
+      ]
+    },
+    "O Mediterrâneo e o Mundo Mediterrânico na Época de Filipe II": {
+      "autor": "Fernand Braudel",
+      "total": 1,
+      "temas": {
+        "historia": 1
+      },
+      "conceitos": [
+        {
+          "conceito": "Tempo histórico (longa duração)",
+          "arquivo": "historia-tempo-historico.md",
+          "tema": "historia"
         }
       ]
     },
@@ -569,6 +1020,156 @@
     }
   },
   "autores": {
+    "Claude Lévi-Strauss": {
+      "total": 1,
+      "obras": [
+        "Raça e História"
+      ],
+      "conceitos": [
+        "Alteridade"
+      ]
+    },
+    "Marcel Mauss": {
+      "total": 1,
+      "obras": [
+        "As técnicas do corpo"
+      ],
+      "conceitos": [
+        "Técnicas do corpo"
+      ]
+    },
+    "William Graham Sumner": {
+      "total": 1,
+      "obras": [
+        "Folkways"
+      ],
+      "conceitos": [
+        "Etnocentrismo"
+      ]
+    },
+    "Bronisław Malinowski": {
+      "total": 1,
+      "obras": [
+        "Argonautas do Pacífico Ocidental"
+      ],
+      "conceitos": [
+        "Etnografia"
+      ]
+    },
+    "Franz Boas": {
+      "total": 1,
+      "obras": [
+        "A Mente do Homem Primitivo"
+      ],
+      "conceitos": [
+        "Relativismo cultural"
+      ]
+    },
+    "Arnold van Gennep": {
+      "total": 1,
+      "obras": [
+        "Os Ritos de Passagem"
+      ],
+      "conceitos": [
+        "Ritual"
+      ]
+    },
+    "Steven Levitsky e Daniel Ziblatt": {
+      "total": 1,
+      "obras": [
+        "Como as Democracias Morrem"
+      ],
+      "conceitos": [
+        "Democracia"
+      ]
+    },
+    "Max Weber": {
+      "total": 4,
+      "obras": [
+        "A Política como Vocação",
+        "A Ética Protestante e o Espírito do Capitalismo, de Max Weber",
+        "Economia e Sociedade"
+      ],
+      "conceitos": [
+        "Estado",
+        "Legitimidade",
+        "Poder",
+        "Racionalização"
+      ]
+    },
+    "Ernesto Laclau": {
+      "total": 1,
+      "obras": [
+        "A Razão Populista"
+      ],
+      "conceitos": [
+        "Populismo"
+      ]
+    },
+    "Robert A. Dahl": {
+      "total": 1,
+      "obras": [
+        "Poliarquia: Participação e Oposição"
+      ],
+      "conceitos": [
+        "Regime político"
+      ]
+    },
+    "Thomas Piketty": {
+      "total": 1,
+      "obras": [
+        "O Capital no Século XXI"
+      ],
+      "conceitos": [
+        "Desigualdade e distribuição"
+      ]
+    },
+    "Ha-Joon Chang": {
+      "total": 2,
+      "obras": [
+        "Economia: Modo de Usar"
+      ],
+      "conceitos": [
+        "Escassez e custo de oportunidade",
+        "Incentivos"
+      ]
+    },
+    "Arthur C. Pigou": {
+      "total": 1,
+      "obras": [
+        "A Economia do Bem-Estar"
+      ],
+      "conceitos": [
+        "Externalidades e bens públicos"
+      ]
+    },
+    "John Maynard Keynes": {
+      "total": 1,
+      "obras": [
+        "Teoria Geral do Emprego, do Juro e da Moeda"
+      ],
+      "conceitos": [
+        "Inflação e juros"
+      ]
+    },
+    "Adam Smith": {
+      "total": 1,
+      "obras": [
+        "A Riqueza das Nações"
+      ],
+      "conceitos": [
+        "Oferta e demanda"
+      ]
+    },
+    "Celso Furtado": {
+      "total": 1,
+      "obras": [
+        "Formação Econômica do Brasil"
+      ],
+      "conceitos": [
+        "PIB e crescimento"
+      ]
+    },
     "Debate clássico das ciências humanas": {
       "total": 2,
       "obras": [
@@ -577,6 +1178,20 @@
       "conceitos": [
         "Conflito × Coesão",
         "Estrutura × Agência"
+      ]
+    },
+    "Desconhecido": {
+      "total": 6,
+      "obras": [
+        "Sem obra"
+      ],
+      "conceitos": [
+        "Continuidade × Ruptura",
+        "Indivíduo × Grupo",
+        "Liberdade × Igualdade",
+        "Local × Global",
+        "Mercado × Estado",
+        "Natureza × Cultura"
       ]
     },
     "Debate filosófico clássico (Platão e Locke a Chomsky)": {
@@ -705,6 +1320,106 @@
       ],
       "conceitos": [
         "Véu da Ignorância"
+      ]
+    },
+    "Milton Santos": {
+      "total": 2,
+      "obras": [
+        "A Natureza do Espaço"
+      ],
+      "conceitos": [
+        "Escala",
+        "Espaço geográfico"
+      ]
+    },
+    "Yi-Fu Tuan": {
+      "total": 1,
+      "obras": [
+        "Espaço e Lugar"
+      ],
+      "conceitos": [
+        "Lugar"
+      ]
+    },
+    "Carl O. Sauer": {
+      "total": 1,
+      "obras": [
+        "A Morfologia da Paisagem"
+      ],
+      "conceitos": [
+        "Paisagem"
+      ]
+    },
+    "Manuel Castells": {
+      "total": 1,
+      "obras": [
+        "A Sociedade em Rede"
+      ],
+      "conceitos": [
+        "Redes e fluxos"
+      ]
+    },
+    "Milton Santos e María Laura Silveira": {
+      "total": 1,
+      "obras": [
+        "O Brasil: Território e Sociedade no Início do Século XXI"
+      ],
+      "conceitos": [
+        "Território"
+      ]
+    },
+    "Aníbal Quijano": {
+      "total": 1,
+      "obras": [
+        "Colonialidade do poder, eurocentrismo e América Latina"
+      ],
+      "conceitos": [
+        "Colonialismo"
+      ]
+    },
+    "Daniel Aarão Reis": {
+      "total": 1,
+      "obras": [
+        "Ditadura e Democracia no Brasil"
+      ],
+      "conceitos": [
+        "Ditadura e transição"
+      ]
+    },
+    "Lilia Moritz Schwarcz e Heloisa Murgel Starling": {
+      "total": 1,
+      "obras": [
+        "Brasil: uma biografia"
+      ],
+      "conceitos": [
+        "Escravidão e abolição"
+      ]
+    },
+    "Marc Bloch": {
+      "total": 1,
+      "obras": [
+        "Apologia da História ou O Ofício de Historiador"
+      ],
+      "conceitos": [
+        "Fonte histórica"
+      ]
+    },
+    "Maurice Halbwachs": {
+      "total": 1,
+      "obras": [
+        "A Memória Coletiva"
+      ],
+      "conceitos": [
+        "Memória e esquecimento"
+      ]
+    },
+    "Fernand Braudel": {
+      "total": 1,
+      "obras": [
+        "O Mediterrâneo e o Mundo Mediterrânico na Época de Filipe II"
+      ],
+      "conceitos": [
+        "Tempo histórico (longa duração)"
       ]
     },
     "John Bowlby e Mary Ainsworth": {
@@ -979,15 +1694,6 @@
         "Positivismo"
       ]
     },
-    "Max Weber": {
-      "total": 1,
-      "obras": [
-        "A Ética Protestante e o Espírito do Capitalismo, de Max Weber"
-      ],
-      "conceitos": [
-        "Racionalização"
-      ]
-    },
     "Conceito sociológico clássico (Berger e Luckmann; fonte didática: Toda Matéria)": {
       "total": 1,
       "obras": [
@@ -998,5 +1704,5 @@
       ]
     }
   },
-  "atualizado_em": "2026-10-22T23:18:11"
+  "atualizado_em": "2026-10-23T01:36:27"
 }

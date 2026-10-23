@@ -58,6 +58,30 @@ A conclusão do plano de 5 módulos traz a lista de continuação por disciplina
 - **Sociologia:** Zygmunt Bauman (*Modernidade Líquida*), Byung-Chul Han (*A Sociedade do Cansaço* — síntese de Foucault e Nietzsche aplicada ao esgotamento contemporâneo), bell hooks (*Ensinando a Transgredir*), Jessé Souza (*A Elite do Atraso* — sociologia brasileira aplicada).
 - **Psicologia:** Carl Jung (*O Homem e Seus Símbolos*), Antonio Damásio (*O Erro de Descartes* — já na terceira fila), Bessel van der Kolk (*O Corpo Guarda as Marcas* — trauma), Robert Sapolsky (*Comporte-se* — a ponte biologia × comportamento).
 
+## Temas novos: Antropologia, História, Geografia, Ciência Política e Economia
+
+A expansão para as demais humanidades (Guia 09) abriu dois temas com trilha própria. As
+leituras de entrada deles **não entram no top 10** — a regra continua: o top 10 é o
+cruzamento entre os planos anexados, e esses temas nasceram depois. Eles formam uma fila
+paralela, curta e barata:
+
+| Tema | Obra de entrada | Por que começar por ela |
+|---|---|---|
+| Antropologia | Lévi-Strauss, *Raça e História* | menos de 100 páginas; entrega alteridade, etnocentrismo e relativismo de uma vez |
+| Antropologia | Malinowski, *Argonautas do Pacífico Ocidental* (introdução) | é onde a etnografia se define como método |
+| Antropologia | DaMatta, *Carnavais, Malandros e Heróis* | a ponte para o Brasil: hierarquia e "você sabe com quem está falando?" |
+| História | Marc Bloch, *Apologia da História* | o ofício do historiador explicado por dentro |
+| História | Schwarcz e Starling, *Brasil: uma biografia* | o recorte brasileiro da trilha de História |
+| Geografia | Milton Santos, *Por uma outra globalização* | curto, em português, e já entrega espaço, técnica e escala juntos |
+| Geografia | Milton Santos e Silveira, *O Brasil: Território e Sociedade* | a leitura do território brasileiro por dentro |
+| Geografia | Yi-Fu Tuan, *Espaço e Lugar* | a dimensão vivida, que nenhum mapa mostra |
+| Ciência Política | Weber, "A política como vocação" | uma conferência: Estado, poder e legitimidade de uma vez |
+| Ciência Política | Bobbio, *Estado, Governo, Sociedade* | o vocabulário institucional em português, sem jargão |
+| Ciência Política | Levitsky e Ziblatt, *Como as Democracias Morrem* | o diagnóstico contemporâneo, legível em uma semana |
+| Economia | Ha-Joon Chang, *Economia: Modo de Usar* | a melhor porta de entrada sem matemática: conceitos em linguagem comum |
+| Economia | Celso Furtado, *Formação Econômica do Brasil* | a economia brasileira explicada pelos ciclos, não por fórmulas |
+| Economia | Thomas Piketty, *O Capital no Século XXI* (introdução) | por que riqueza concentra mais que renda |
+
 ## Como usar este guia na prática
 
 1. Abra a trilha do mês e olhe qual nó vem a seguir.

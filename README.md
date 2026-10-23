@@ -23,7 +23,7 @@ A lógica do projeto é simples: em vez de reler um PDF de 400 páginas para ach
 | `diario/` | Diário de bordo — sínteses reflexivas escritas por você ao fechar cada módulo de estudo |
 | `indices/` | `indice.json` — o mapa geral do acervo processado |
 | `templates/` | Modelos prontos para copiar ao criar uma nota nova |
-| `docs/` | Guias passo a passo (01 a 05): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo e priorizar leituras |
+| `docs/` | Guias passo a passo (01 a 09): criar o repositório, extrair conteúdo dos PDFs, usar prompts no NotebookLM, atualizar tudo, priorizar leituras, manter o CI e planejar a expansão para outras humanidades |
 | `notebooks/` | Notebooks do Google Colab (sem digitar código): `converter-pdfs` transforma PDFs em Markdown |
 
 ## Painel de temas
@@ -34,18 +34,22 @@ Este é o mapa dos estudos. Conforme o acervo for processado, os itens abaixo vi
 
 | Tema | Status | Notas de conceito | Livros processados | Fichas | Trilhas |
 |---|---|---|---|---|---|
-| História | Em breve | 0 | 0 | 0 | 0 |
+| História | Ativo | 7 | 0 | 0 | 1 |
 | Sociologia | Ativo | 20 | 0 | 0 | 1 |
 | Filosofia | Ativo | 15 | 0 | 0 | 1 |
-| Ciência Política | Em breve | 0 | 0 | 0 | 0 |
-| Antropologia | Em breve | 0 | 0 | 0 | 0 |
-| Economia | Em breve | 0 | 0 | 0 | 0 |
-| Geografia | Em breve | 0 | 0 | 0 | 0 |
-| Psicologia | Ativo | 15 | 0 | 0 | 2 |
-| Psicologia Social | Em breve | 0 | 0 | 0 | 0 |
+| Ciência Política | Ativo | 7 | 0 | 0 | 1 |
+| Antropologia | Ativo | 7 | 0 | 0 | 1 |
+| Economia | Ativo | 8 | 0 | 0 | 1 |
+| Geografia | Ativo | 7 | 0 | 0 | 1 |
+| Psicologia | Ativo | 16 | 0 | 0 | 2 |
 | Integrada | Ativo | 0 | 0 | 0 | 1 |
 
 <!-- PAINEL-TEMAS-FIM -->
+
+Os temas marcados como "Em breve" já fazem parte da missão do painel — não são uma
+novidade, são a parte do mapa que ainda não foi estudada. O plano de expansão (quais
+humanidades entram, com que critério, em que ordem e por quê) está no
+[Guia 09](docs/09-mapa-das-humanidades.md).
 
 ## Meta desta semana
 
@@ -53,7 +57,7 @@ Edite esta linha toda semana (o atualizador do painel não mexe nela): _ex.: nó
 
 ## Trilhas prontas para começar
 
-O painel nasce com cinco trilhas semente, montadas a partir dos planos de estudo anexados pelo autor (arquivados em `docs/anexos/`):
+O painel nasce com dez trilhas semente: cinco montadas a partir dos planos de estudo anexados pelo autor (arquivados em `docs/anexos/`) e cinco abertas pela expansão para as demais humanidades (Guia 09):
 
 | Trilha | Em uma frase |
 |---|---|
@@ -62,8 +66,13 @@ O painel nasce com cinco trilhas semente, montadas a partir dos planos de estudo
 | [Filosofia Nível 1](trilhas/filosofia-nivel-1.md) | Do mito ao século XX — dos gregos a Rawls, um conceito-fundador por época |
 | [Sociologia Nível 1](trilhas/sociologia-nivel-1.md) | Do olhar sociológico de Mills aos clássicos, desigualdade e o mundo digital |
 | [Integrada Nível 1](trilhas/integrada-nivel-1.md) | As três lentes juntas (três rotas): a Confluência Humano-Tecnológica, os três módulos temáticos e o curso completo de 5 módulos "Mente, Sociedade e Existência" |
+| [Antropologia Nível 1](trilhas/antropologia-nivel-1.md) | Estranhar o familiar: da alteridade ao eixo Natureza × Cultura, passando pelo método etnográfico |
+| [História Nível 1](trilhas/historia-nivel-1.md) | Do documento ao tempo longo: o ofício do historiador aplicado à formação do Brasil |
+| [Geografia Nível 1](trilhas/geografia-nivel-1.md) | Ler o mundo pela escala: do lugar vivido ao sistema de fluxos |
+| [Ciência Política Nível 1](trilhas/ciencia-politica-nivel-1.md) | Do poder ao regime: as três dimensões do poder e o teste da democracia |
+| [Economia Nível 1](trilhas/economia-nivel-1.md) | Como ler o noticiário econômico: escassez, incentivos, juros, desigualdade — sem cálculo |
 
-A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridades-de-leitura.md) — os 10 livros-chave definidos a partir dos planos anexados.
+A lista de leituras que sustenta as trilhas está no [Guia 05](docs/05-prioridades-de-leitura.md) — os 10 livros-chave definidos a partir dos planos anexados. As leituras de Antropologia, História, Geografia, Ciência Política e Economia estão no [Guia 09](docs/09-mapa-das-humanidades.md) (§4.1).
 
 ## Como adicionar um livro novo (resumo rápido)
 

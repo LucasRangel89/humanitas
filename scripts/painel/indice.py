@@ -281,6 +281,12 @@ def montar_indice(raiz: pathlib.Path) -> dict:
 
 
 def tabela_temas(indice: dict) -> str:
+    """Tabela de temas do README, com a "regra do zero" do Guia 09.
+
+    Tema sem nenhum conteúdo (nota, livro, ficha ou trilha) não ocupa linha na
+    vitrine: ele aparece no rodapé como planejado. Assim a tabela é um retrato
+    honesto do que está sendo estudado, e não uma lista de promessas.
+    """
     conceitos = Counter(c.get("tema", "sem-tema") for c in indice["conceitos"])
     livros = Counter(l.get("tema", "sem-tema") for l in indice["livros"])
     fichas = Counter(f.get("tema", "sem-tema") for f in indice["fichas"])
@@ -294,11 +300,23 @@ def tabela_temas(indice: dict) -> str:
         "| Tema | Status | Notas de conceito | Livros processados | Fichas | Trilhas |",
         "|---|---|---|---|---|---|",
     ]
+    planejados: list[str] = []
     for chave, nome in temas.items():
         nc, nl, nf = conceitos.get(chave, 0), livros.get(chave, 0), fichas.get(chave, 0)
         nt = trilhas.get(chave, 0)
-        status = "Ativo" if (nc + nl + nf + nt) > 0 else "Em breve"
-        linhas.append(f"| {nome} | {status} | {nc} | {nl} | {nf} | {nt} |")
+        if (nc + nl + nf + nt) == 0:
+            planejados.append(nome)
+            continue
+        linhas.append(f"| {nome} | Ativo | {nc} | {nl} | {nf} | {nt} |")
+
+    if planejados:
+        linhas.append("")
+        linhas.append(
+            "> **Planejados (sem conteúdo ainda):** "
+            + ", ".join(planejados)
+            + ". Critério de entrada e ordem de estudo no Guia 09 "
+            "(`docs/09-mapa-das-humanidades.md`)."
+        )
     return "\n".join(linhas)
 
 

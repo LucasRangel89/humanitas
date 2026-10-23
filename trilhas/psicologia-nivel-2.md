@@ -38,6 +38,7 @@ Critério de conclusão de todo nó: explicar em voz alta + quiz do Modo Tutor +
 7. [ ] **[Dissonância cognitiva](../conceitos/psicologia-dissonancia-cognitiva.md)** — Festinger + o clássico da psicologia social: conformidade (Asch), obediência (Milgram), poder da situação (Zimbardo).
    - ⚑ Atividade: registre uma vez em que você agiu contra as próprias crenças e como justificou — a redução de dissonância em ação.
    - Pergunta reflexiva: se estivesse no experimento de Milgram, você acha que iria até o fim? O que a pergunta revela sobre autoconhecimento?
+   - **Bússola do módulo:** use o [Eixo Indivíduo × Grupo](../conceitos/eixo-individuo-grupo.md) para separar o que é traço pessoal, o que é situação e o que é pertencimento — e note que a tag `psicologia-social` reúne as notas dessa lente (ver Guia 09, §4.1.6).
 8. [ ] **[Fluxo](../conceitos/psicologia-fluxo.md)** — Csikszentmihalyi: o canal entre tédio e ansiedade; bem-estar como desenho, não acaso.
    - ⚑ Atividade (Grade Curricular): uma semana de registro de "sinais de fluxo" — contexto, emoção, decisão.
 9. [ ] **Psicopatologia e saúde mental** *(nota a criar: `psicologia-psicopatologia-modelo-biopsicossocial.md`)* — os "4 Ds", DSM/CID, o modelo biopsicossocial, terapias (psicodinâmica, TCC, terceira onda).

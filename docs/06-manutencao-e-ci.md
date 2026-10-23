@@ -223,7 +223,9 @@ a 3 como *Verso*, a 4 como *Tags* e a 5 como *Baralho*. Recomenda-se o agendador
 ## Convenções de conteúdo validadas pelo CI
 
 - `tema`: um de `historia`, `sociologia`, `filosofia`, `ciencia-politica`,
-  `antropologia`, `economia`, `geografia`, `psicologia`, `psicologia-social`, `integrada`.
+  `antropologia`, `economia`, `geografia`, `psicologia`, `integrada`.
+  *(Psicologia Social deixou de ser tema em 2026-10-23: virou a tag `psicologia-social`
+  e o eixo Indivíduo × Grupo — ver Guia 09, §4.1.6.)*
 - `status`: `rascunho`, `ok`, `arquivada` (notas) ou `em-andamento`, `concluida`,
   `pausada` (trilhas).
 - `nivel`: `iniciante`, `entusiasta`, `avancado`.

@@ -1,12 +1,230 @@
 {
   "nodes": [
     {
+      "id": "antropologia-alteridade.md",
+      "conceito": "Alteridade",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "estruturalismo",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-corpo-tecnicas.md",
+      "conceito": "Técnicas do corpo",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "sociologia francesa / antropologia",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-etnocentrismo.md",
+      "conceito": "Etnocentrismo",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "evolucionismo social / crítica cultural",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-etnografia.md",
+      "conceito": "Etnografia",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "funcionalismo",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-relativismo-cultural.md",
+      "conceito": "Relativismo cultural",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "particularismo histórico",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "antropologia-ritual.md",
+      "conceito": "Ritual",
+      "tema": "antropologia",
+      "tipo": "conceito",
+      "tradicao": "folclore comparado / estruturalismo",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "ciencia-politica-democracia.md",
+      "conceito": "Democracia",
+      "tema": "ciencia-politica",
+      "tipo": "conceito",
+      "tradicao": "ciência política comparada",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ]
+    },
+    {
+      "id": "ciencia-politica-estado.md",
+      "conceito": "Estado",
+      "tema": "ciencia-politica",
+      "tipo": "conceito",
+      "tradicao": "teoria política moderna",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ]
+    },
+    {
+      "id": "ciencia-politica-legitimidade.md",
+      "conceito": "Legitimidade",
+      "tema": "ciencia-politica",
+      "tipo": "conceito",
+      "tradicao": "sociologia compreensiva",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ]
+    },
+    {
+      "id": "ciencia-politica-poder.md",
+      "conceito": "Poder",
+      "tema": "ciencia-politica",
+      "tipo": "conceito",
+      "tradicao": "sociologia compreensiva / teoria política",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ]
+    },
+    {
+      "id": "ciencia-politica-populismo.md",
+      "conceito": "Populismo",
+      "tema": "ciencia-politica",
+      "tipo": "conceito",
+      "tradicao": "teoria do discurso / política comparada",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ]
+    },
+    {
+      "id": "ciencia-politica-regime-politico.md",
+      "conceito": "Regime político",
+      "tema": "ciencia-politica",
+      "tipo": "conceito",
+      "tradicao": "ciência política comparada",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ]
+    },
+    {
+      "id": "economia-desigualdade-distribuicao.md",
+      "conceito": "Desigualdade e distribuição",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia da distribuição",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-escassez-custo-oportunidade.md",
+      "conceito": "Escassez e custo de oportunidade",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia política heterodoxa",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-externalidades-bens-publicos.md",
+      "conceito": "Externalidades e bens públicos",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia do bem-estar",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-incentivos.md",
+      "conceito": "Incentivos",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-inflacao-juros.md",
+      "conceito": "Inflação e juros",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "macroeconomia keynesiana",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-oferta-demanda.md",
+      "conceito": "Oferta e demanda",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia clássica",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
+      "id": "economia-pib-crescimento.md",
+      "conceito": "PIB e crescimento",
+      "tema": "economia",
+      "tipo": "conceito",
+      "tradicao": "economia do desenvolvimento / estruturalismo latino-americano",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-mercado-estado"
+      ]
+    },
+    {
       "id": "eixo-conflito-coesao.md",
       "conceito": "Conflito × Coesão",
       "tema": "sociologia",
       "tipo": "eixo",
       "tradicao": "",
       "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-continuidade-ruptura.md",
+      "conceito": "Continuidade × Ruptura",
+      "tema": "historia",
+      "tipo": "eixo",
+      "tradicao": "historiografia",
+      "nivel_evidencia": "teorica",
       "eixos": []
     },
     {
@@ -28,6 +246,24 @@
       "eixos": []
     },
     {
+      "id": "eixo-individuo-grupo.md",
+      "conceito": "Indivíduo × Grupo",
+      "tema": "psicologia",
+      "tipo": "eixo",
+      "tradicao": "psicologia social",
+      "nivel_evidencia": "teorica",
+      "eixos": []
+    },
+    {
+      "id": "eixo-liberdade-igualdade.md",
+      "conceito": "Liberdade × Igualdade",
+      "tema": "ciencia-politica",
+      "tipo": "eixo",
+      "tradicao": "filosofia política moderna",
+      "nivel_evidencia": "teorica",
+      "eixos": []
+    },
+    {
       "id": "eixo-livre-arbitrio-determinismo.md",
       "conceito": "Livre-arbítrio × Determinismo",
       "tema": "filosofia",
@@ -37,12 +273,39 @@
       "eixos": []
     },
     {
+      "id": "eixo-local-global.md",
+      "conceito": "Local × Global",
+      "tema": "geografia",
+      "tipo": "eixo",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "eixos": []
+    },
+    {
       "id": "eixo-mente-corpo.md",
       "conceito": "Mente × Corpo",
       "tema": "filosofia",
       "tipo": "eixo",
       "tradicao": "",
       "nivel_evidencia": "",
+      "eixos": []
+    },
+    {
+      "id": "eixo-mercado-estado.md",
+      "conceito": "Mercado × Estado",
+      "tema": "economia",
+      "tipo": "eixo",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
+      "eixos": []
+    },
+    {
+      "id": "eixo-natureza-cultura.md",
+      "conceito": "Natureza × Cultura",
+      "tema": "antropologia",
+      "tipo": "eixo",
+      "tradicao": "debate clássico das ciências humanas",
+      "nivel_evidencia": "teorica",
       "eixos": []
     },
     {
@@ -154,6 +417,139 @@
       "eixos": []
     },
     {
+      "id": "geografia-escala.md",
+      "conceito": "Escala",
+      "tema": "geografia",
+      "tipo": "conceito",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-local-global"
+      ]
+    },
+    {
+      "id": "geografia-espaco-geografico.md",
+      "conceito": "Espaço geográfico",
+      "tema": "geografia",
+      "tipo": "conceito",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-local-global"
+      ]
+    },
+    {
+      "id": "geografia-lugar.md",
+      "conceito": "Lugar",
+      "tema": "geografia",
+      "tipo": "conceito",
+      "tradicao": "geografia humanista",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-local-global"
+      ]
+    },
+    {
+      "id": "geografia-paisagem.md",
+      "conceito": "Paisagem",
+      "tema": "geografia",
+      "tipo": "conceito",
+      "tradicao": "geografia cultural",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-local-global"
+      ]
+    },
+    {
+      "id": "geografia-redes-fluxos.md",
+      "conceito": "Redes e fluxos",
+      "tema": "geografia",
+      "tipo": "conceito",
+      "tradicao": "geografia crítica / sociologia da tecnologia",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-local-global"
+      ]
+    },
+    {
+      "id": "geografia-territorio.md",
+      "conceito": "Território",
+      "tema": "geografia",
+      "tipo": "conceito",
+      "tradicao": "geografia crítica / geopolítica",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-local-global"
+      ]
+    },
+    {
+      "id": "historia-colonialismo.md",
+      "conceito": "Colonialismo",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "teoria decolonial",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura",
+        "eixo-natureza-cultura"
+      ]
+    },
+    {
+      "id": "historia-ditadura-transicao.md",
+      "conceito": "Ditadura e transição",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "historiografia política brasileira",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-escravidao-abolicao.md",
+      "conceito": "Escravidão e abolição",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "historiografia social brasileira",
+      "nivel_evidencia": "empirica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-fonte-historica.md",
+      "conceito": "Fonte histórica",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-memoria.md",
+      "conceito": "Memória e esquecimento",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "sociologia durkheimiana",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
+      "id": "historia-tempo-historico.md",
+      "conceito": "Tempo histórico (longa duração)",
+      "tema": "historia",
+      "tipo": "conceito",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ]
+    },
+    {
       "id": "psicologia-apego.md",
       "conceito": "Apego",
       "tema": "psicologia",
@@ -187,7 +583,9 @@
       "tipo": "conceito",
       "tradicao": "",
       "nivel_evidencia": "",
-      "eixos": []
+      "eixos": [
+        "eixo-individuo-grupo"
+      ]
     },
     {
       "id": "psicologia-estagios-erikson.md",
@@ -250,7 +648,9 @@
       "tipo": "conceito",
       "tradicao": "",
       "nivel_evidencia": "",
-      "eixos": []
+      "eixos": [
+        "eixo-individuo-grupo"
+      ]
     },
     {
       "id": "psicologia-obediencia-autoridade.md",
@@ -259,7 +659,9 @@
       "tipo": "conceito",
       "tradicao": "",
       "nivel_evidencia": "",
-      "eixos": []
+      "eixos": [
+        "eixo-individuo-grupo"
+      ]
     },
     {
       "id": "psicologia-psicanalise.md",
@@ -451,10 +853,651 @@
       "eixos": []
     }
   ],
-  "edges": [],
-  "atualizado_em": "2026-10-22T23:13:53",
+  "edges": [
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "antropologia-etnocentrismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-alteridade.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "antropologia-ritual.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "sociologia-habitus.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-corpo-tecnicas.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "antropologia-alteridade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "sociologia-cultura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnocentrismo.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "antropologia-alteridade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "antropologia-ritual.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-etnografia.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "antropologia-etnocentrismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "antropologia-alteridade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-relativismo-cultural.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "antropologia-relativismo-cultural.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "sociologia-fato-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "antropologia-ritual.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-democracia.md",
+      "target": "ciencia-politica-regime-politico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-democracia.md",
+      "target": "ciencia-politica-legitimidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-democracia.md",
+      "target": "sociologia-desigualdade-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-democracia.md",
+      "target": "eixo-liberdade-igualdade.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-estado.md",
+      "target": "ciencia-politica-poder.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-estado.md",
+      "target": "ciencia-politica-legitimidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-estado.md",
+      "target": "geografia-territorio.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-estado.md",
+      "target": "eixo-liberdade-igualdade.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-legitimidade.md",
+      "target": "ciencia-politica-poder.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-legitimidade.md",
+      "target": "ciencia-politica-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-legitimidade.md",
+      "target": "ciencia-politica-democracia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-legitimidade.md",
+      "target": "eixo-liberdade-igualdade.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-poder.md",
+      "target": "ciencia-politica-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-poder.md",
+      "target": "ciencia-politica-legitimidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-poder.md",
+      "target": "sociologia-panoptico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-poder.md",
+      "target": "eixo-liberdade-igualdade.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-populismo.md",
+      "target": "ciencia-politica-democracia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-populismo.md",
+      "target": "ciencia-politica-regime-politico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-populismo.md",
+      "target": "sociologia-identidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-populismo.md",
+      "target": "eixo-liberdade-igualdade.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "ciencia-politica-regime-politico.md",
+      "target": "ciencia-politica-democracia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-regime-politico.md",
+      "target": "ciencia-politica-legitimidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-regime-politico.md",
+      "target": "historia-ditadura-transicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "ciencia-politica-regime-politico.md",
+      "target": "eixo-liberdade-igualdade.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "economia-pib-crescimento.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "sociologia-desigualdade-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-desigualdade-distribuicao.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "economia-incentivos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "economia-oferta-demanda.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-escassez-custo-oportunidade.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "economia-incentivos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "geografia-redes-fluxos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-externalidades-bens-publicos.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "economia-escassez-custo-oportunidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "economia-oferta-demanda.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "economia-externalidades-bens-publicos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-incentivos.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "economia-pib-crescimento.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "economia-oferta-demanda.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "economia-desigualdade-distribuicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-inflacao-juros.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "economia-incentivos.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "economia-inflacao-juros.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-oferta-demanda.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "economia-inflacao-juros.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "economia-desigualdade-distribuicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "historia-colonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "economia-pib-crescimento.md",
+      "target": "eixo-mercado-estado.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "geografia-escala.md",
+      "target": "geografia-espaco-geografico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-escala.md",
+      "target": "geografia-territorio.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-escala.md",
+      "target": "eixo-local-global.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-escala.md",
+      "target": "eixo-local-global.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "geografia-espaco-geografico.md",
+      "target": "geografia-lugar.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-espaco-geografico.md",
+      "target": "geografia-territorio.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-espaco-geografico.md",
+      "target": "geografia-paisagem.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-espaco-geografico.md",
+      "target": "eixo-local-global.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "geografia-lugar.md",
+      "target": "geografia-espaco-geografico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-lugar.md",
+      "target": "geografia-territorio.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-lugar.md",
+      "target": "antropologia-ritual.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-lugar.md",
+      "target": "eixo-local-global.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "geografia-paisagem.md",
+      "target": "geografia-espaco-geografico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-paisagem.md",
+      "target": "geografia-lugar.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-paisagem.md",
+      "target": "historia-fonte-historica.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-paisagem.md",
+      "target": "eixo-local-global.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "geografia-redes-fluxos.md",
+      "target": "geografia-espaco-geografico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-redes-fluxos.md",
+      "target": "geografia-escala.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-redes-fluxos.md",
+      "target": "sociologia-aceleracao-rosa.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-redes-fluxos.md",
+      "target": "eixo-local-global.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "geografia-territorio.md",
+      "target": "geografia-espaco-geografico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-territorio.md",
+      "target": "geografia-escala.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-territorio.md",
+      "target": "historia-colonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "geografia-territorio.md",
+      "target": "eixo-local-global.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "historia-escravidao-abolicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "antropologia-etnocentrismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-colonialismo.md",
+      "target": "eixo-natureza-cultura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "historia-fonte-historica.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-ditadura-transicao.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "historia-colonialismo.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "sociologia-desigualdade-social.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-escravidao-abolicao.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "historia-tempo-historico.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "antropologia-etnografia.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-fonte-historica.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "historia-fonte-historica.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "historia-ditadura-transicao.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "sociologia-construcao-social-realidade.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-memoria.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "historia-fonte-historica.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "historia-memoria.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "relacionado"
+    },
+    {
+      "source": "historia-tempo-historico.md",
+      "target": "eixo-continuidade-ruptura.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "psicologia-dissonancia-cognitiva.md",
+      "target": "eixo-individuo-grupo.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "psicologia-identidade-social.md",
+      "target": "eixo-individuo-grupo.md",
+      "tipo": "eixo"
+    },
+    {
+      "source": "psicologia-obediencia-autoridade.md",
+      "target": "eixo-individuo-grupo.md",
+      "tipo": "eixo"
+    }
+  ],
+  "atualizado_em": "2026-10-23T01:36:27",
   "totais": {
-    "nodes": 50,
-    "edges": 0
+    "nodes": 87,
+    "edges": 128
   }
 }

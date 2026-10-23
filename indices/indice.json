@@ -1,19 +1,743 @@
 {
   "projeto": "humanitas",
   "descricao": "Mapa geral do painel. Gerado por `python -m scripts.painel indice` — não edite à mão.",
-  "atualizado_em": "2026-10-22T23:13:07",
+  "atualizado_em": "2026-10-23T01:36:26",
   "totais": {
     "livros": 0,
     "fichas": 0,
-    "conceitos": 45,
-    "eixos": 5,
+    "conceitos": 76,
+    "eixos": 11,
     "trechos": 0,
-    "trilhas": 5,
+    "trilhas": 10,
     "diario": 0
   },
   "livros": [],
   "fichas": [],
   "conceitos": [
+    {
+      "arquivo": "antropologia-alteridade.md",
+      "caminho": "conceitos/antropologia-alteridade.md",
+      "conceito": "Alteridade",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Raça e História",
+      "autor_origem": "Claude Lévi-Strauss",
+      "fonte_verificada": "nao",
+      "tradicao": "estruturalismo",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-etnocentrismo",
+        "antropologia-relativismo-cultural",
+        "antropologia-etnografia"
+      ],
+      "definicao": "Reconhecer o outro como sujeito que tem razões próprias — e não como uma versão atrasada, exótica ou incompleta de nós mesmos.",
+      "tags": [
+        "antropologia",
+        "alteridade",
+        "levi-strauss",
+        "metodo-etnografia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-corpo-tecnicas.md",
+      "caminho": "conceitos/antropologia-corpo-tecnicas.md",
+      "conceito": "Técnicas do corpo",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "As técnicas do corpo",
+      "autor_origem": "Marcel Mauss",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia francesa / antropologia",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-ritual",
+        "eixo-natureza-cultura",
+        "sociologia-habitus"
+      ],
+      "definicao": "Os modos aprendidos de usar o corpo — andar, comer, dormir, parir, lutar — que variam por sociedade e parecem naturais a quem os pratica.",
+      "tags": [
+        "antropologia",
+        "corpo",
+        "mauss",
+        "habitus",
+        "tecnica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-etnocentrismo.md",
+      "caminho": "conceitos/antropologia-etnocentrismo.md",
+      "conceito": "Etnocentrismo",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Folkways",
+      "autor_origem": "William Graham Sumner",
+      "fonte_verificada": "nao",
+      "tradicao": "evolucionismo social / crítica cultural",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-relativismo-cultural",
+        "antropologia-alteridade",
+        "sociologia-cultura"
+      ],
+      "definicao": "Tomar a própria cultura como medida do que é humano, julgando as outras pelo quanto se parecem com ela.",
+      "tags": [
+        "antropologia",
+        "etnocentrismo",
+        "sumner",
+        "preconceito"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-etnografia.md",
+      "caminho": "conceitos/antropologia-etnografia.md",
+      "conceito": "Etnografia",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Argonautas do Pacífico Ocidental",
+      "autor_origem": "Bronisław Malinowski",
+      "fonte_verificada": "nao",
+      "tradicao": "funcionalismo",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-alteridade",
+        "antropologia-relativismo-cultural",
+        "antropologia-ritual"
+      ],
+      "definicao": "Método que produz conhecimento convivendo: observar, participar, entrevistar e registrar por tempo prolongado a vida de um grupo.",
+      "tags": [
+        "antropologia",
+        "etnografia",
+        "malinowski",
+        "metodo-etnografia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-relativismo-cultural.md",
+      "caminho": "conceitos/antropologia-relativismo-cultural.md",
+      "conceito": "Relativismo cultural",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Mente do Homem Primitivo",
+      "autor_origem": "Franz Boas",
+      "fonte_verificada": "nao",
+      "tradicao": "particularismo histórico",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-etnocentrismo",
+        "antropologia-alteridade",
+        "antropologia-etnografia"
+      ],
+      "definicao": "Compreender uma prática dentro do sistema cultural que a produziu, suspendendo o julgamento até entender o contexto — o que não significa afirmar que tudo é válido.",
+      "tags": [
+        "antropologia",
+        "relativismo",
+        "boas",
+        "metodo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "antropologia-ritual.md",
+      "caminho": "conceitos/antropologia-ritual.md",
+      "conceito": "Ritual",
+      "tipo": "conceito",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Os Ritos de Passagem",
+      "autor_origem": "Arnold van Gennep",
+      "fonte_verificada": "nao",
+      "tradicao": "folclore comparado / estruturalismo",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "antropologia-etnografia",
+        "antropologia-relativismo-cultural",
+        "sociologia-fato-social"
+      ],
+      "definicao": "Sequência de ações formalizadas e repetidas que marca uma passagem, reafirma uma ordem social ou transforma o status de quem a realiza.",
+      "tags": [
+        "antropologia",
+        "ritual",
+        "van-gennep",
+        "turner",
+        "simbolo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-democracia.md",
+      "caminho": "conceitos/ciencia-politica-democracia.md",
+      "conceito": "Democracia",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Como as Democracias Morrem",
+      "autor_origem": "Steven Levitsky e Daniel Ziblatt",
+      "fonte_verificada": "nao",
+      "tradicao": "ciência política comparada",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-regime-politico",
+        "ciencia-politica-legitimidade",
+        "sociologia-desigualdade-social"
+      ],
+      "definicao": "Regime em que o poder é disputado em eleições livres e competitivas, sob regras que garantem oposição, liberdade de expressão e limitação do governante — e não apenas o direito de votar.",
+      "tags": [
+        "ciencia-politica",
+        "democracia",
+        "levitsky",
+        "dahl",
+        "brasil",
+        "constituicao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-estado.md",
+      "caminho": "conceitos/ciencia-politica-estado.md",
+      "conceito": "Estado",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Política como Vocação",
+      "autor_origem": "Max Weber",
+      "fonte_verificada": "nao",
+      "tradicao": "teoria política moderna",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-poder",
+        "ciencia-politica-legitimidade",
+        "geografia-territorio"
+      ],
+      "definicao": "A organização que, dentro de um território, reivindica com sucesso o monopólio do uso legítimo da força física.",
+      "tags": [
+        "ciencia-politica",
+        "estado",
+        "weber",
+        "bobbio",
+        "instituicoes"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-legitimidade.md",
+      "caminho": "conceitos/ciencia-politica-legitimidade.md",
+      "conceito": "Legitimidade",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Economia e Sociedade",
+      "autor_origem": "Max Weber",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia compreensiva",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-poder",
+        "ciencia-politica-estado",
+        "ciencia-politica-democracia"
+      ],
+      "definicao": "A crença compartilhada de que uma autoridade tem o direito de mandar e de que há dever de obedecer — o que distingue autoridade de simples coerção.",
+      "tags": [
+        "ciencia-politica",
+        "legitimidade",
+        "weber",
+        "dominacao",
+        "autoridade"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-poder.md",
+      "caminho": "conceitos/ciencia-politica-poder.md",
+      "conceito": "Poder",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Economia e Sociedade",
+      "autor_origem": "Max Weber",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia compreensiva / teoria política",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-estado",
+        "ciencia-politica-legitimidade",
+        "sociologia-panoptico"
+      ],
+      "definicao": "A capacidade de impor a própria vontade mesmo contra resistência — e, em versões mais amplas, a capacidade de definir o que os outros consideram possível ou legítimo.",
+      "tags": [
+        "ciencia-politica",
+        "poder",
+        "weber",
+        "lukes",
+        "dominacao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-populismo.md",
+      "caminho": "conceitos/ciencia-politica-populismo.md",
+      "conceito": "Populismo",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Razão Populista",
+      "autor_origem": "Ernesto Laclau",
+      "fonte_verificada": "nao",
+      "tradicao": "teoria do discurso / política comparada",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-democracia",
+        "ciencia-politica-regime-politico",
+        "sociologia-identidade"
+      ],
+      "definicao": "Uma lógica política que divide a sociedade em dois campos — \"o povo\" e \"a elite\" — e reivindica falar em nome do povo inteiro contra os que o exploram.",
+      "tags": [
+        "ciencia-politica",
+        "populismo",
+        "laclau",
+        "mudde",
+        "lacao",
+        "eleicoes"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "ciencia-politica-regime-politico.md",
+      "caminho": "conceitos/ciencia-politica-regime-politico.md",
+      "conceito": "Regime político",
+      "tipo": "conceito",
+      "tema": "ciencia-politica",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Poliarquia: Participação e Oposição",
+      "autor_origem": "Robert A. Dahl",
+      "fonte_verificada": "nao",
+      "tradicao": "ciência política comparada",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-liberdade-igualdade"
+      ],
+      "relacoes": [
+        "ciencia-politica-democracia",
+        "ciencia-politica-legitimidade",
+        "historia-ditadura-transicao"
+      ],
+      "definicao": "O conjunto de regras que define como se chega ao poder, como se governa e como se sai dele — o que separa democracia, autoritarismo e totalitarismo.",
+      "tags": [
+        "ciencia-politica",
+        "regime",
+        "dahl",
+        "linz",
+        "autoritarismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-desigualdade-distribuicao.md",
+      "caminho": "conceitos/economia-desigualdade-distribuicao.md",
+      "conceito": "Desigualdade e distribuição",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "O Capital no Século XXI",
+      "autor_origem": "Thomas Piketty",
+      "fonte_verificada": "nao",
+      "tradicao": "economia da distribuição",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-pib-crescimento",
+        "sociologia-desigualdade-social",
+        "eixo-mercado-estado"
+      ],
+      "definicao": "Como o produto e a riqueza de um país se repartem entre as pessoas — medido por indicadores como o coeficiente de Gini, e explicado por fluxos (renda, trabalho) e estoques (patrimônio, herança).",
+      "tags": [
+        "economia",
+        "desigualdade",
+        "gini",
+        "piketty",
+        "distribuicao",
+        "brasil"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-escassez-custo-oportunidade.md",
+      "caminho": "conceitos/economia-escassez-custo-oportunidade.md",
+      "conceito": "Escassez e custo de oportunidade",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Economia: Modo de Usar",
+      "autor_origem": "Ha-Joon Chang",
+      "fonte_verificada": "nao",
+      "tradicao": "economia política heterodoxa",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-incentivos",
+        "economia-oferta-demanda",
+        "eixo-mercado-estado"
+      ],
+      "definicao": "Escassez é ter desejos maiores que os recursos disponíveis; custo de oportunidade é o valor da melhor alternativa que você abriu mão para escolher.",
+      "tags": [
+        "economia",
+        "escassez",
+        "custo-oportunidade",
+        "chang",
+        "decisao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-externalidades-bens-publicos.md",
+      "caminho": "conceitos/economia-externalidades-bens-publicos.md",
+      "conceito": "Externalidades e bens públicos",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Economia do Bem-Estar",
+      "autor_origem": "Arthur C. Pigou",
+      "fonte_verificada": "nao",
+      "tradicao": "economia do bem-estar",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-incentivos",
+        "eixo-mercado-estado",
+        "geografia-redes-fluxos"
+      ],
+      "definicao": "Externalidade é um efeito de uma transação sobre terceiros que não participaram dela; bem público é aquele que, uma vez produzido, ninguém pode ser excluído de usar.",
+      "tags": [
+        "economia",
+        "externalidades",
+        "bens-publicos",
+        "pigou",
+        "ostrom",
+        "falha-de-mercado"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-incentivos.md",
+      "caminho": "conceitos/economia-incentivos.md",
+      "conceito": "Incentivos",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Economia: Modo de Usar",
+      "autor_origem": "Ha-Joon Chang",
+      "fonte_verificada": "nao",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-escassez-custo-oportunidade",
+        "economia-oferta-demanda",
+        "economia-externalidades-bens-publicos"
+      ],
+      "definicao": "As recompensas e punições — preços, impostos, multas, prêmios — que mudam o cálculo de custo e benefício e, com ele, o comportamento das pessoas.",
+      "tags": [
+        "economia",
+        "incentivos",
+        "comportamento",
+        "politica-publica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-inflacao-juros.md",
+      "caminho": "conceitos/economia-inflacao-juros.md",
+      "conceito": "Inflação e juros",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Teoria Geral do Emprego, do Juro e da Moeda",
+      "autor_origem": "John Maynard Keynes",
+      "fonte_verificada": "nao",
+      "tradicao": "macroeconomia keynesiana",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-pib-crescimento",
+        "economia-oferta-demanda",
+        "economia-desigualdade-distribuicao"
+      ],
+      "definicao": "Inflação é a alta contínua e generalizada dos preços; a taxa de juros é o preço do dinheiro no tempo — e, no Brasil, o principal instrumento para conter a primeira.",
+      "tags": [
+        "economia",
+        "inflacao",
+        "juros",
+        "selic",
+        "keynes",
+        "banco-central"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-oferta-demanda.md",
+      "caminho": "conceitos/economia-oferta-demanda.md",
+      "conceito": "Oferta e demanda",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Riqueza das Nações",
+      "autor_origem": "Adam Smith",
+      "fonte_verificada": "nao",
+      "tradicao": "economia clássica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-incentivos",
+        "economia-inflacao-juros",
+        "eixo-mercado-estado"
+      ],
+      "definicao": "O preço de equilíbrio é o ponto em que a quantidade que as pessoas querem comprar encontra a quantidade que os produtores querem vender — e ele se move quando um dos dois lados muda.",
+      "tags": [
+        "economia",
+        "oferta",
+        "demanda",
+        "preco",
+        "smith",
+        "mercado"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "economia-pib-crescimento.md",
+      "caminho": "conceitos/economia-pib-crescimento.md",
+      "conceito": "PIB e crescimento",
+      "tipo": "conceito",
+      "tema": "economia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Formação Econômica do Brasil",
+      "autor_origem": "Celso Furtado",
+      "fonte_verificada": "nao",
+      "tradicao": "economia do desenvolvimento / estruturalismo latino-americano",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-mercado-estado"
+      ],
+      "relacoes": [
+        "economia-inflacao-juros",
+        "economia-desigualdade-distribuicao",
+        "historia-colonialismo"
+      ],
+      "definicao": "O PIB é a soma de tudo o que é produzido em um território num período; crescimento é o aumento dessa soma — um indicador de tamanho, não de bem-estar.",
+      "tags": [
+        "economia",
+        "pib",
+        "crescimento",
+        "furtado",
+        "desenvolvimento",
+        "brasil"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
     {
       "arquivo": "eixo-conflito-coesao.md",
       "caminho": "conceitos/eixo-conflito-coesao.md",
@@ -43,6 +767,38 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-continuidade-ruptura.md",
+      "caminho": "conceitos/eixo-continuidade-ruptura.md",
+      "conceito": "Continuidade × Ruptura",
+      "tipo": "eixo",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "historiografia",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "A história muda por rupturas bruscas ou por continuidades lentas — e como uma mudança é reconhecida como \"marco\"?",
+      "tags": [
+        "eixo",
+        "historia",
+        "historiografia",
+        "mudanca"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -114,6 +870,73 @@
       ]
     },
     {
+      "arquivo": "eixo-individuo-grupo.md",
+      "caminho": "conceitos/eixo-individuo-grupo.md",
+      "conceito": "Indivíduo × Grupo",
+      "tipo": "eixo",
+      "tema": "psicologia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "psicologia social",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "Pensamos e agimos como indivíduos ou como membros de grupos — e quanto do que parece pessoal é, na verdade, posição social?",
+      "tags": [
+        "eixo",
+        "psicologia",
+        "psicologia-social",
+        "grupo",
+        "identidade",
+        "influencia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-liberdade-igualdade.md",
+      "caminho": "conceitos/eixo-liberdade-igualdade.md",
+      "conceito": "Liberdade × Igualdade",
+      "tipo": "eixo",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "filosofia política moderna",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "É possível maximizar a liberdade de todos e a igualdade entre todos ao mesmo tempo — ou uma sempre cobra o preço da outra?",
+      "tags": [
+        "eixo",
+        "ciencia-politica",
+        "liberdade",
+        "igualdade",
+        "justica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "eixo-livre-arbitrio-determinismo.md",
       "caminho": "conceitos/eixo-livre-arbitrio-determinismo.md",
       "conceito": "Livre-arbítrio × Determinismo",
@@ -147,6 +970,38 @@
       ]
     },
     {
+      "arquivo": "eixo-local-global.md",
+      "caminho": "conceitos/eixo-local-global.md",
+      "conceito": "Local × Global",
+      "tipo": "eixo",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "Em que escala um fenômeno se explica — no lugar onde ele acontece ou no sistema mundial que o produz?",
+      "tags": [
+        "eixo",
+        "geografia",
+        "escala",
+        "globalizacao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "eixo-mente-corpo.md",
       "caminho": "conceitos/eixo-mente-corpo.md",
       "conceito": "Mente × Corpo",
@@ -175,6 +1030,70 @@
         "explicação com as suas palavras",
         "citação de apoio (com capítulo/página)",
         "fonte primária",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-mercado-estado.md",
+      "caminho": "conceitos/eixo-mercado-estado.md",
+      "conceito": "Mercado × Estado",
+      "tipo": "eixo",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "economia política",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "Quem deve coordenar a vida material — o mercado, com seus preços e incentivos, ou o Estado, com suas regras e gastos?",
+      "tags": [
+        "eixo",
+        "economia",
+        "mercado",
+        "estado",
+        "politica-economica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "eixo-natureza-cultura.md",
+      "caminho": "conceitos/eixo-natureza-cultura.md",
+      "conceito": "Natureza × Cultura",
+      "tipo": "eixo",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "",
+      "autor_origem": "",
+      "fonte_verificada": "nao",
+      "tradicao": "debate clássico das ciências humanas",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [],
+      "relacoes": [],
+      "definicao": "O que no ser humano é dado pela biologia e o que é fabricado pela vida em sociedade — e onde termina um e começa o outro?",
+      "tags": [
+        "eixo",
+        "antropologia",
+        "natureza-cultura"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "explicação com as suas palavras",
+        "citação de apoio (com capítulo/página)",
         "fonte verificada",
         "status ainda é rascunho"
       ]
@@ -564,6 +1483,464 @@
       ]
     },
     {
+      "arquivo": "geografia-escala.md",
+      "caminho": "conceitos/geografia-escala.md",
+      "conceito": "Escala",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Natureza do Espaço",
+      "autor_origem": "Milton Santos",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-territorio",
+        "eixo-local-global"
+      ],
+      "definicao": "O recorte de tamanho e de alcance com que se observa um fenômeno — uma escolha de método que decide o que aparece e o que desaparece.",
+      "tags": [
+        "geografia",
+        "escala",
+        "metodo",
+        "milton-santos"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-espaco-geografico.md",
+      "caminho": "conceitos/geografia-espaco-geografico.md",
+      "conceito": "Espaço geográfico",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Natureza do Espaço",
+      "autor_origem": "Milton Santos",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-lugar",
+        "geografia-territorio",
+        "geografia-paisagem"
+      ],
+      "definicao": "O espaço não é o cenário onde a sociedade acontece: é o conjunto indissociável de sistemas de objetos e sistemas de ações que se transforma junto com ela.",
+      "tags": [
+        "geografia",
+        "milton-santos",
+        "espaco",
+        "tecnica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-lugar.md",
+      "caminho": "conceitos/geografia-lugar.md",
+      "conceito": "Lugar",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Espaço e Lugar",
+      "autor_origem": "Yi-Fu Tuan",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia humanista",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-territorio",
+        "antropologia-ritual"
+      ],
+      "definicao": "O espaço quando deixa de ser extensão indiferenciada e passa a ter significado, memória e afeto para quem o habita.",
+      "tags": [
+        "geografia",
+        "lugar",
+        "tuan",
+        "topofilia",
+        "experiencia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-paisagem.md",
+      "caminho": "conceitos/geografia-paisagem.md",
+      "conceito": "Paisagem",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "A Morfologia da Paisagem",
+      "autor_origem": "Carl O. Sauer",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia cultural",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-lugar",
+        "historia-fonte-historica"
+      ],
+      "definicao": "A dimensão visível do espaço: um texto escrito por camadas de trabalho, técnica e cultura que pode ser lido como documento.",
+      "tags": [
+        "geografia",
+        "paisagem",
+        "sauer",
+        "cultura-material",
+        "leitura"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-redes-fluxos.md",
+      "caminho": "conceitos/geografia-redes-fluxos.md",
+      "conceito": "Redes e fluxos",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Sociedade em Rede",
+      "autor_origem": "Manuel Castells",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica / sociologia da tecnologia",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-escala",
+        "sociologia-aceleracao-rosa"
+      ],
+      "definicao": "A organização do espaço por conexões — cabos, rotas, algoritmos — que distribui poder conforme a capacidade de circular e de controlar a circulação.",
+      "tags": [
+        "geografia",
+        "redes",
+        "fluxos",
+        "castells",
+        "globalizacao",
+        "tecnologia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "geografia-territorio.md",
+      "caminho": "conceitos/geografia-territorio.md",
+      "conceito": "Território",
+      "tipo": "conceito",
+      "tema": "geografia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "O Brasil: Território e Sociedade no Início do Século XXI",
+      "autor_origem": "Milton Santos e María Laura Silveira",
+      "fonte_verificada": "nao",
+      "tradicao": "geografia crítica / geopolítica",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-local-global"
+      ],
+      "relacoes": [
+        "geografia-espaco-geografico",
+        "geografia-escala",
+        "historia-colonialismo"
+      ],
+      "definicao": "Espaço apropriado e controlado — por um Estado, um grupo, uma empresa — onde o poder se exerce por meio de fronteiras, normas e usos.",
+      "tags": [
+        "geografia",
+        "territorio",
+        "poder",
+        "milton-santos",
+        "geopolitica"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-colonialismo.md",
+      "caminho": "conceitos/historia-colonialismo.md",
+      "conceito": "Colonialismo",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Colonialidade do poder, eurocentrismo e América Latina",
+      "autor_origem": "Aníbal Quijano",
+      "fonte_verificada": "nao",
+      "tradicao": "teoria decolonial",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura",
+        "eixo-natureza-cultura"
+      ],
+      "relacoes": [
+        "historia-escravidao-abolicao",
+        "historia-memoria",
+        "antropologia-etnocentrismo"
+      ],
+      "definicao": "Domínio político, econômico e cultural de um território por outro — e o conjunto de hierarquias que ele deixa mesmo depois de terminar formalmente.",
+      "tags": [
+        "historia",
+        "colonialismo",
+        "colonialidade",
+        "quijano",
+        "brasil"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-ditadura-transicao.md",
+      "caminho": "conceitos/historia-ditadura-transicao.md",
+      "conceito": "Ditadura e transição",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "Ditadura e Democracia no Brasil",
+      "autor_origem": "Daniel Aarão Reis",
+      "fonte_verificada": "nao",
+      "tradicao": "historiografia política brasileira",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-memoria",
+        "historia-fonte-historica",
+        "eixo-continuidade-ruptura"
+      ],
+      "definicao": "O regime autoritário brasileiro de 1964 a 1985 e o processo negociado que o encerrou — uma transição que mudou o regime sem julgar os crimes do Estado.",
+      "tags": [
+        "historia",
+        "ditadura",
+        "brasil",
+        "seculo-xx",
+        "transicao",
+        "democracia"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-escravidao-abolicao.md",
+      "caminho": "conceitos/historia-escravidao-abolicao.md",
+      "conceito": "Escravidão e abolição",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Brasil: uma biografia",
+      "autor_origem": "Lilia Moritz Schwarcz e Heloisa Murgel Starling",
+      "fonte_verificada": "nao",
+      "tradicao": "historiografia social brasileira",
+      "nivel_evidencia": "empirica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-colonialismo",
+        "historia-memoria",
+        "sociologia-desigualdade-social"
+      ],
+      "definicao": "O sistema que transformou pessoas em propriedade no Brasil por quase quatro séculos — e o processo lento, conflituoso e sem reparação que o encerrou em 1888.",
+      "tags": [
+        "historia",
+        "escravidao",
+        "abolicao",
+        "brasil",
+        "seculo-xix",
+        "racismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-fonte-historica.md",
+      "caminho": "conceitos/historia-fonte-historica.md",
+      "conceito": "Fonte histórica",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "rascunho",
+      "obra_origem": "Apologia da História ou O Ofício de Historiador",
+      "autor_origem": "Marc Bloch",
+      "fonte_verificada": "nao",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-tempo-historico",
+        "historia-memoria",
+        "antropologia-etnografia"
+      ],
+      "definicao": "Todo vestígio do passado — documento, objeto, imagem, relato oral, ruína — que o historiador interroga com perguntas próprias para construir uma explicação.",
+      "tags": [
+        "historia",
+        "bloch",
+        "fonte",
+        "metodo",
+        "documento"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-memoria.md",
+      "caminho": "conceitos/historia-memoria.md",
+      "conceito": "Memória e esquecimento",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "A Memória Coletiva",
+      "autor_origem": "Maurice Halbwachs",
+      "fonte_verificada": "nao",
+      "tradicao": "sociologia durkheimiana",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-fonte-historica",
+        "historia-ditadura-transicao",
+        "sociologia-construcao-social-realidade"
+      ],
+      "definicao": "A memória é uma construção coletiva do passado, feita de lembranças e silêncios — e por isso é objeto de disputa, não um arquivo neutro.",
+      "tags": [
+        "historia",
+        "memoria",
+        "halbwachs",
+        "esquecimento",
+        "negacionismo"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
+      "arquivo": "historia-tempo-historico.md",
+      "caminho": "conceitos/historia-tempo-historico.md",
+      "conceito": "Tempo histórico (longa duração)",
+      "tipo": "conceito",
+      "tema": "historia",
+      "nivel": "entusiasta",
+      "status": "rascunho",
+      "obra_origem": "O Mediterrâneo e o Mundo Mediterrânico na Época de Filipe II",
+      "autor_origem": "Fernand Braudel",
+      "fonte_verificada": "nao",
+      "tradicao": "Escola dos Annales",
+      "nivel_evidencia": "teorica",
+      "contestado_por": [],
+      "eixos": [
+        "eixo-continuidade-ruptura"
+      ],
+      "relacoes": [
+        "historia-fonte-historica",
+        "historia-memoria",
+        "eixo-continuidade-ruptura"
+      ],
+      "definicao": "A ideia de que o tempo histórico tem velocidades diferentes — do evento instantâneo às estruturas que duram séculos — e de que a escolha da escala muda a explicação.",
+      "tags": [
+        "historia",
+        "braudel",
+        "annales",
+        "tempo",
+        "longa-duracao"
+      ],
+      "secoes_faltando": [],
+      "tem_trecho": false,
+      "pendencias": [
+        "citação de apoio (com capítulo/página)",
+        "fonte verificada",
+        "status ainda é rascunho"
+      ]
+    },
+    {
       "arquivo": "psicologia-apego.md",
       "caminho": "conceitos/psicologia-apego.md",
       "conceito": "Apego",
@@ -673,14 +2050,17 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "contestado_por": [],
-      "eixos": [],
+      "eixos": [
+        "eixo-individuo-grupo"
+      ],
       "relacoes": [],
       "definicao": "Dissonância cognitiva é o desconforto psicológico de sustentar crenças, atitudes ou comportamentos em conflito entre si — e o esforço, quase sempre enviesado, para reduzir esse desconforto.",
       "tags": [
         "psicologia",
         "social",
         "festinger",
-        "atuitudes"
+        "atuitudes",
+        "psicologia-social"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -898,14 +2278,17 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "contestado_por": [],
-      "eixos": [],
+      "eixos": [
+        "eixo-individuo-grupo"
+      ],
       "relacoes": [],
       "definicao": "A simples divisão em grupos (\"nós\" × \"eles\") já produz favoritismo interno e discriminação externa — mesmo sem interesse, sem história e sem ódio envolvidos.",
       "tags": [
         "psicologia",
         "social",
         "tajfel",
-        "grupos"
+        "grupos",
+        "psicologia-social"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -930,14 +2313,17 @@
       "tradicao": "",
       "nivel_evidencia": "",
       "contestado_por": [],
-      "eixos": [],
+      "eixos": [
+        "eixo-individuo-grupo"
+      ],
       "relacoes": [],
       "definicao": "Os experimentos de Milgram e Zimbardo mostram que pessoas comuns obedecem a autoridades e a papéis até cometer crueldade — a situação pesa mais que o caráter.",
       "tags": [
         "psicologia",
         "social",
         "milgram",
-        "obediencia"
+        "obediencia",
+        "psicologia-social"
       ],
       "secoes_faltando": [],
       "tem_trecho": false,
@@ -1625,6 +3011,45 @@
   "trechos": [],
   "trilhas": [
     {
+      "arquivo": "antropologia-nivel-1.md",
+      "caminho": "trilhas/antropologia-nivel-1.md",
+      "trilha": "Antropologia — Nível 1: estranhar o familiar",
+      "tema": "antropologia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de explicar por que \"natural\" é a palavra mais suspeita das ciências humanas: reconhecer o próprio etnocentrismo, usar o relativismo como método (e não como moral), descrever o que a etnografia faz de diferente e posicionar qualquer prática cultural — do ritual à forma de sentar — no eixo Natureza × Cultura.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Alteridade — a porta de entrada: o outro como sujeito, não como versão incompleta de nós."
+    },
+    {
+      "arquivo": "ciencia-politica-nivel-1.md",
+      "caminho": "trilhas/ciencia-politica-nivel-1.md",
+      "trilha": "Ciência Política — Nível 1: do poder ao regime",
+      "tema": "ciencia-politica",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de analisar qualquer notícia política sem reduzir tudo a \"governo bom\" ou \"governo ruim\": identificar onde está o poder, se ele é legítimo, que tipo de regime o organiza e como se mede a saúde de uma democracia.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Poder — a porta de entrada: as três dimensões, de decidir a moldar o desejo."
+    },
+    {
+      "arquivo": "economia-nivel-1.md",
+      "caminho": "trilhas/economia-nivel-1.md",
+      "trilha": "Economia — Nível 1: como ler o noticiário econômico",
+      "tema": "economia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de abrir o jornal econômico e entender o que está em jogo: por que a Selic subiu, o que a inflação faz com o seu salário, de onde vem a desigualdade brasileira e quem paga a conta de cada decisão — sem precisar de cálculo e sem aceitar frase pronta.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Escassez e custo de oportunidade — a porta de entrada: toda escolha tem uma renúncia."
+    },
+    {
       "arquivo": "filosofia-nivel-1.md",
       "caminho": "trilhas/filosofia-nivel-1.md",
       "trilha": "Filosofia — Nível 1: do mito ao século XX",
@@ -1636,6 +3061,32 @@
       "nos_concluidos": 0,
       "formato": "checkbox",
       "proximo_no": "Teoria das Formas — o ponto de partida: opinião × conhecimento, a Caverna."
+    },
+    {
+      "arquivo": "geografia-nivel-1.md",
+      "caminho": "trilhas/geografia-nivel-1.md",
+      "trilha": "Geografia — Nível 1: ler o mundo pela escala",
+      "tema": "geografia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de olhar qualquer lugar — a rua onde mora, uma notícia sobre a Amazônia, um mapa no jornal — e responder três perguntas: que espaço é este, em que escala ele se explica e quem ganhou e perdeu na sua produção.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Espaço geográfico — a porta de entrada: espaço como sistema de objetos e ações, não como cenário."
+    },
+    {
+      "arquivo": "historia-nivel-1.md",
+      "caminho": "trilhas/historia-nivel-1.md",
+      "trilha": "História — Nível 1: do documento ao tempo longo",
+      "tema": "historia",
+      "nivel": "iniciante",
+      "status": "em-andamento",
+      "objetivo": "Ao terminar, você será capaz de fazer o que separa história de opinião sobre o passado: interrogar uma fonte com perguntas próprias, escolher a escala de tempo adequada, distinguir memória de história e explicar o Brasil republicano — do colonialismo à transição de 1985 — sem decorar cronologia.",
+      "nos_total": 12,
+      "nos_concluidos": 0,
+      "formato": "checkbox",
+      "proximo_no": "Fonte histórica — a porta de entrada: o documento responde a perguntas, não a todas."
     },
     {
       "arquivo": "integrada-nivel-1.md",

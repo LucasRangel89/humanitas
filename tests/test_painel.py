@@ -206,6 +206,31 @@ def test_tabela_conta_sem_somar_ficha_em_livro(mini_repo: pathlib.Path):
     assert celulas[5] == "1"  # trilhas
 
 
+def test_tabela_omite_temas_sem_conteudo(mini_repo: pathlib.Path):
+    """Regra do zero (Guia 09): tema vazio não ocupa linha, aparece no rodapé."""
+    tabela = painel.tabela_temas(painel.montar_indice(mini_repo))
+    linhas = tabela.splitlines()
+    assert any(l.startswith("| Sociologia |") for l in linhas)
+    assert not any(l.startswith("| História |") for l in linhas)
+    rodape = [l for l in linhas if l.startswith("> **Planejados")]
+    assert rodape, "temas sem conteúdo devem ser listados no rodapé"
+    assert "História" in rodape[0] and "Economia" in rodape[0]
+    assert "docs/09-mapa-das-humanidades.md" in rodape[0]
+
+
+def test_tabela_promove_tema_quando_ganha_conteudo(mini_repo: pathlib.Path):
+    modelo = (mini_repo / "conceitos" / "sociologia-habitus.md").read_text(encoding="utf-8")
+    (mini_repo / "conceitos" / "historia-tempo-historico.md").write_text(
+        modelo.replace('"Habitus"', '"Tempo histórico"')
+        .replace("tema: sociologia", "tema: historia")
+        .replace("# Conceito — Habitus", "# Conceito — Tempo histórico"),
+        encoding="utf-8",
+    )
+    tabela = painel.tabela_temas(painel.montar_indice(mini_repo))
+    linha = next(l for l in tabela.splitlines() if l.startswith("| História |"))
+    assert linha.startswith("| História | Ativo |")
+
+
 def test_atualizar_readme_e_idempotente(mini_repo: pathlib.Path):
     indice = painel.montar_indice(mini_repo)
     tabela = painel.tabela_temas(indice)

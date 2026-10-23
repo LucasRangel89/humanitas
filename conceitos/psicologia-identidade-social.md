@@ -6,8 +6,9 @@ autor_origem: "Henri Tajfel e John Turner"
 tema: "psicologia"
 tipo: "conceito"
 nivel: "iniciante"
+eixos: ["eixo-individuo-grupo"]
 status: "rascunho"
-tags: [psicologia, social, tajfel, grupos]
+tags: [psicologia, social, tajfel, grupos, psicologia-social]
 fonte_verificada: nao
 ---
 # Conceito — Identidade Social

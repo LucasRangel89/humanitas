@@ -45,7 +45,6 @@ TEMAS = {
     "economia": "Economia",
     "geografia": "Geografia",
     "psicologia": "Psicologia",
-    "psicologia-social": "Psicologia Social",
     "integrada": "Integrada",
 }
 
