@@ -7,7 +7,7 @@ tema: "sociologia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[sociologia, bourdieu, habitus, desigualdade]"
+tags: [sociologia, bourdieu, habitus, desigualdade]
 fonte_verificada: nao
 ---
 # Conceito — Habitus

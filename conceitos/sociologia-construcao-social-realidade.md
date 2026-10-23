@@ -7,7 +7,7 @@ tema: "sociologia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[sociologia, berger, luckmann, conhecimento]"
+tags: [sociologia, berger, luckmann, conhecimento]
 fonte_verificada: nao
 ---
 # Conceito — Construção Social da Realidade

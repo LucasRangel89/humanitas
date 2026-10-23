@@ -7,7 +7,7 @@ tema: "sociologia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[sociologia, foucault, poder, vigilancia]"
+tags: [sociologia, foucault, poder, vigilancia]
 fonte_verificada: nao
 ---
 # Conceito — Panóptico e Biopoder

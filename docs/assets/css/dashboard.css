@@ -1,0 +1,90 @@
+/* Humanitas Dashboard — extra CSS */
+.humanitas-hero {
+  background: linear-gradient(135deg, #3f51b5 0%, #673ab7 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.humanitas-hero h1 { color: white; margin: 0; font-size: 2rem; }
+.humanitas-hero p { color: rgba(255,255,255,0.9); margin: 0.5rem 0 0; }
+.humanitas-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.humanitas-stat {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.humanitas-stat .num { font-size: 1.8rem; font-weight: 700; color: var(--md-primary-fg-color); }
+.humanitas-stat .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7; }
+.humanitas-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.humanitas-filter {
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  border: 1px solid var(--md-primary-fg-color);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+.humanitas-filter.active {
+  background: var(--md-primary-fg-color);
+  color: white;
+}
+.humanitas-search {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: var(--md-default-bg-color) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E") 0.8rem center no-repeat;
+}
+.humanitas-search:focus { outline: 2px solid var(--md-primary-fg-color); border-color: transparent; }
+.conceito-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.conceito-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--md-default-bg-color);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.conceito-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-color: var(--md-primary-fg-color--light); }
+.conceito-card h3 { margin: 0 0 0.5rem; font-size: 1rem; }
+.conceito-card .meta { font-size: 0.75rem; opacity: 0.7; display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.conceito-card .meta span { background: var(--md-code-bg-color); padding: 0.2rem 0.5rem; border-radius: 10px; }
+.conceito-card .def { font-size: 0.85rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.conceito-card .pendencias { font-size: 0.7rem; color: #e65100; margin-top: 0.5rem; }
+.grafo-container {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  height: 400px;
+  background: #fafafa;
+  position: relative;
+  overflow: hidden;
+}
+.grafo-container canvas { width: 100%; height: 100%; }
+.grafo-legend { display: flex; gap: 1rem; font-size: 0.75rem; margin-top: 0.5rem; flex-wrap: wrap; }
+.grafo-legend span { display: flex; align-items: center; gap: 0.3rem; }
+.grafo-legend .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.obra-list { display: grid; gap: 1rem; }
+.obra-item { border-left: 4px solid var(--md-primary-fg-color); padding: 0.8rem 1rem; background: var(--md-code-bg-color); border-radius: 0 8px 8px 0; }
+.obra-item h4 { margin: 0; font-size: 0.95rem; }
+.obra-item .autor { font-size: 0.8rem; opacity: 0.7; }
+.obra-item .conceitos-tags { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.obra-item .tag { font-size: 0.7rem; background: white; padding: 0.2rem 0.5rem; border-radius: 10px; border: 1px solid #ddd; }

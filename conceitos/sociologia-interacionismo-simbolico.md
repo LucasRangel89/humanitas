@@ -7,7 +7,7 @@ tema: "sociologia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[sociologia, mead, self, interacao]"
+tags: [sociologia, mead, self, interacao]
 fonte_verificada: nao
 ---
 # Conceito — Interacionismo Simbólico

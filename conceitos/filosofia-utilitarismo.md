@@ -7,7 +7,7 @@ tema: "filosofia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[filosofia, etica, utilitarismo, consequencias]"
+tags: [filosofia, etica, utilitarismo, consequencias]
 fonte_verificada: nao
 ---
 # Conceito — Utilitarismo

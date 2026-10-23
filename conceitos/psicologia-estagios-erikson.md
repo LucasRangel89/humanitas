@@ -7,7 +7,7 @@ tema: "psicologia"
 tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
-tags: "[psicologia, desenvolvimento, erikson, identidade]"
+tags: [psicologia, desenvolvimento, erikson, identidade]
 fonte_verificada: nao
 ---
 # Conceito — Estágios Psicossociais (Erikson)

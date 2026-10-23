@@ -38,177 +38,224 @@ def _link_nota(registro: dict, prefixo: str = "conceitos/") -> str:
 
 
 def pagina_dashboard(indice: dict) -> str:
-    """Página inicial do site: um painel, não um README."""
+    """Dashboard navegável: hero + stats + trilhas + filtros + grafo + obras."""
     p = calcular_progresso(indice)
     temas = Counter(c["tema"] for c in indice["conceitos"])
     pct_nos = (p["nos_concluidos"] * 100 // p["nos_total"]) if p["nos_total"] else 0
+    pct_ok = (p["ok"] * 100 // p["conceitos"]) if p["conceitos"] else 0
     pendentes = sorted(
         (c for c in indice["conceitos"] if c.get("pendencias") and c.get("status") != "ok"),
         key=lambda c: (-len(c["pendencias"]), c["conceito"]),
-    )[:5]
+    )[:6]
     proxima_trilha = next(
         (t for t in indice["trilhas"] if t["nos_total"] and t["status"] != "concluida"), None
     )
+    try:
+        import json
+        ret = json.loads((pathlib.Path("indices/retencao.json").read_text(encoding="utf-8"))) if pathlib.Path("indices/retencao.json").exists() else {}
+    except Exception:
+        ret = {}
+    try:
+        from .obras import agrupar_obras as _agrupar_obras_dashboard
+        obras_data = _agrupar_obras_dashboard(indice)
+    except Exception:
+        obras_data = {"obras": {}}
 
     linhas = [
-        "# Humanitas",
+        '<div class="humanitas-hero" markdown>',
         "",
-        "**Um painel de estudos de ciências humanas.** Conceitos ligados a eixos de "
-        "debate, trilhas com critério de conclusão e um diário que só você escreve.",
+        "# Humanitas — seu painel de estudos",
+        "",
+        "Conceitos ligados por eixos, trilhas com critério e diário que só você escreve. **3 cliques até qualquer ideia.**",
+        "",
+        f"*Atualizado em {indice.get('atualizado_em','').replace('T',' ')[:16] or '—'} · {p['conceitos']} notas · {p['trilhas_total']} trilhas*",
+        "",
+        "</div>",
+        "",
+        '<div class="humanitas-stats" markdown>',
+        f'<div class="humanitas-stat"><div class="num">{p["ok"]}/{p["conceitos"]}</div><div class="label">reescritas {pct_ok}%</div></div>',
+        f'<div class="humanitas-stat"><div class="num">{p["nos_concluidos"]}/{p["nos_total"]}</div><div class="label">nós trilha {pct_nos}%</div></div>',
+        f'<div class="humanitas-stat"><div class="num">{p["com_trecho"]}</div><div class="label">com citação</div></div>',
+        f'<div class="humanitas-stat"><div class="num">{p["diario_total"]}</div><div class="label">diários</div></div>',
+        "</div>",
         "",
         '<div class="grid cards" markdown>',
         "",
-        "-   :material-progress-clock:{ .lg .middle } __Onde você está__",
+        "-   :material-progress-clock:{ .lg .middle } **Onde você está**",
         "",
         "    ---",
         "",
-        f"    - Nós de trilha: **{p['nos_concluidos']} de {p['nos_total']}** ({pct_nos}%)",
-        f"    - Notas reescritas: **{p['ok']} de {p['conceitos']}**",
-        f"    - Entradas no diário: **{p['diario_total']}**",
-        f"    - Notas com citação: **{p['com_trecho']} de {p['conceitos']}**",
+        f"    - Nós: **{p['nos_concluidos']} de {p['nos_total']}** ` {barra(p['nos_concluidos'], p['nos_total'])} `",
+        f"    - Notas ok: **{p['ok']} de {p['conceitos']}** · ` {progresso_barra(p['ok'], p['conceitos'])} `",
+        f"    - Citações: **{p['com_trecho']} de {p['conceitos']}**",
+        f"    - Fonte verificada: **{p.get('fonte_verificada',0)}**",
         "",
-        "    [Ver progresso completo](progresso.md)",
+        "    [Ver progresso →](progresso.md) · [Filtar pendências →](progresso.md#pendências)",
         "",
-        "-   :material-play-circle-outline:{ .lg .middle } __Comece por aqui__",
+        "-   :material-play-circle-outline:{ .lg .middle } **Comece por aqui**",
         "",
         "    ---",
         "",
     ]
     if proxima_trilha:
         linhas.append(
-            f"    - [Retomar: {proxima_trilha['trilha']}](trilhas/"
-            f"{proxima_trilha['arquivo']})"
+            f"    - 🎯 **Retomar:** [{proxima_trilha['trilha']}](trilhas/{proxima_trilha['arquivo']}) — próximo: *{proxima_trilha['proximo_no'][:60]}*"
         )
     else:
-        linhas.append("    - [Escolher uma trilha](trilhas/index.md)")
+        linhas.append("    - 🎯 [Escolher trilha](trilhas/index.md)")
     linhas += [
-        "    - [Mapa dos eixos de debate](eixos.md)",
-        "    - [Como este painel funciona](sobre.md)",
+        "    - 🗺️ [Mapa de eixos](eixos.md) · 5 debates que atravessam tudo",
+        "    - 📚 [Mapa de obras](obras.md) — por autor/obra",
+        "    - 🧠 [Grafo interativo](grafo.md) — clique nos nós",
         "",
-        "-   :material-map-marker-path:{ .lg .middle } __Trilhas__",
-        "",
-        "    ---",
-        "",
-        "    Cinco caminhos, do básico ao avançado, cada um com critério de conclusão.",
-        "",
-        "    [As 5 trilhas](trilhas/index.md)",
-        "",
-        "-   :material-book-open-variant:{ .lg .middle } __Conceitos e eixos__",
+        "-   :material-map-marker-path:{ .lg .middle } **Trilhas**",
         "",
         "    ---",
+        "    *Cada nó = uma nota. Só fecha com explicação + quiz + diário.*",
         "",
-        "    "
-        + " · ".join(
-            f"{TEMAS.get(tema, tema)} ({qtd})"
-            for tema, qtd in sorted(temas.items(), key=lambda item: (-item[1], item[0]))
+        "    [Ver 5 trilhas →](trilhas/index.md)",
+        "",
+        "-   :material-book-open-variant:{ .lg .middle } **Conceitos**",
+        "",
+        "    ---",
+        "    " + " · ".join(
+            f"[{TEMAS.get(tema, tema)}](conceitos/index.md#{slug(TEMAS.get(tema, tema))}) ({qtd})"
+            for tema, qtd in sorted(temas.items(), key=lambda i: (-i[1], i[0]))
         ),
         "",
-        "    [Navegar por tema](conceitos/index.md)",
+        "    `Ctrl+K` ou `/` para buscar · [Ver todos →](conceitos/index.md)",
         "",
         "</div>",
         "",
-        "## Trilhas",
+        "## Trilhas — progresso visual",
         "",
-        "| Trilha | Nós | Progresso | Próximo nó |",
-        "|---|---|---|---|",
+        "| Trilha | Tema | Nós | Progresso | Próximo |",
+        "|---|---|---|---|---|",
     ]
     for t in indice["trilhas"]:
-        proximo = t["proximo_no"] or "—"
-        if len(proximo) > 60:
-            proximo = proximo[:57].rstrip() + "…"
+        proximo = (t["proximo_no"] or "—")[:60]
         linhas.append(
-            f"| [{t['trilha']}](trilhas/{t['arquivo']}) | {t['nos_concluidos']}/{t['nos_total']} "
-            f"| `{barra(t['nos_concluidos'], t['nos_total'])}` | {proximo} |"
+            f"| [{t['trilha']}](trilhas/{t['arquivo']}) | {TEMAS.get(t['tema'], t['tema'])} | {t['nos_concluidos']}/{t['nos_total']} | `{barra(t['nos_concluidos'], t['nos_total'])}` | {proximo} |"
         )
-
     linhas += [
         "",
-        "## Temas",
+        "## Temas — saúde do acervo",
         "",
-        "| Tema | Notas | Reescritas | Com citação |",
-        "|---|---|---|---|",
+        "| Tema | Notas | ✅ ok | 💬 citação | Barra |",
+        "|---|---|---|---|---|",
     ]
-    for tema, qtd in sorted(temas.items(), key=lambda item: (-item[1], item[0])):
+    for tema, qtd in sorted(temas.items(), key=lambda i: (-i[1], i[0])):
         do_tema = [c for c in indice["conceitos"] if c["tema"] == tema]
+        ok = sum(1 for c in do_tema if c['status']=="ok")
+        cit = sum(1 for c in do_tema if c['tem_trecho'])
         linhas.append(
-            f"| [{TEMAS.get(tema, tema)}](conceitos/index.md#{slug(TEMAS.get(tema, tema))}) "
-            f"| {qtd} | {sum(1 for c in do_tema if c['status'] == 'ok')} "
-            f"| {sum(1 for c in do_tema if c['tem_trecho'])} |"
+            f"| [{TEMAS.get(tema, tema)}](conceitos/index.md#{slug(TEMAS.get(tema, tema))}) | {qtd} | {ok} | {cit} | `{barra(ok, qtd)}` |"
         )
-
+    linhas += [
+        "",
+        "## Grafo — como as ideias se ligam",
+        "",
+        '<div class="grafo-container" markdown>',
+        '<canvas id="grafo-canvas" width="900" height="400" aria-label="Grafo de conceitos"></canvas>',
+        "</div>",
+        '<div class="grafo-legend" markdown>',
+        '<span><span class="dot" style="background:#3f51b5"></span> Sociologia</span>',
+        '<span><span class="dot" style="background:#009688"></span> Filosofia</span>',
+        '<span><span class="dot" style="background:#ff9800"></span> Psicologia</span>',
+        '<span><span class="dot" style="background:#e91e63"></span> Eixo</span>',
+        "</div>",
+        "",
+        "[Explorar grafo completo →](grafo.md) · clique nos nós para navegar",
+        "",
+    ]
+    if obras_data.get("obras"):
+        top_obras = sorted(obras_data["obras"].items(), key=lambda kv: -kv[1]["total"])[:3]
+        linhas += ["", "## Obras — por onde o conhecimento entra", "", '<div class="obra-list" markdown>', ""]
+        for obra, dados in top_obras:
+            linhas += [
+                f'<div class="obra-item" markdown>',
+                f"**{obra}** · {dados['autor']} — {dados['total']} conceitos",
+                f"<div class=\"conceitos-tags\" markdown>",
+            ]
+            for c in dados["conceitos"][:5]:
+                linhas.append(f"<span class=\"tag\">{c['conceito']}</span>")
+            linhas.append("</div></div>")
+        linhas += ["</div>", "", "[Todas as obras →](obras.md)", ""]
     if pendentes:
         linhas += [
             "",
-            "## O que falta para as notas ficarem boas",
+            "## Próximas — o que falta para padrão-ouro",
             "",
-            "Texto de exemplo, citação sem página e fonte secundária não passam no "
-            "padrão-ouro. Estas são as próximas:",
+            "Filtros: `Ctrl+K` busca instantânea nas 50 notas. Pendência = explicação + citação com página + fonte verificada.",
             "",
-            "| Nota | Tema | Primeira pendência |",
-            "|---|---|---|",
+            "| Nota | Tema | Pendência | Ação |",
+            "|---|---|---|---|",
         ]
         for c in pendentes:
             linhas.append(
-                f"| {_link_nota(c)} | {TEMAS.get(c['tema'], c['tema'])} "
-                f"| {c['pendencias'][0]} |"
+                f"| {_link_nota(c)} | {TEMAS.get(c['tema'], c['tema'])} | {c['pendencias'][0]} | [editar](conceitos/{c['arquivo']}) |"
             )
-        linhas += [
-            "",
-            "Como fechar uma nota: escrever com as suas palavras, citar com "
-            "capítulo/página e mudar o status para `ok`. "
-            "Veja o [Guia 07](docs/07-rumos-e-proximos-passos.md).",
-        ]
-
+        linhas += ["", "[Ver todas as pendências →](progresso.md#pendências)", ""]
     if indice["diario"]:
-        linhas += ["", "## Últimas no diário", ""]
-        for entrada in sorted(
-            indice["diario"], key=lambda d: d.get("data", ""), reverse=True
-        )[:5]:
-            alvo = entrada.get("caminho", f"diario/{entrada['arquivo']}").replace("diario/", "")
-            data = entrada.get("data", "")
-            linhas.append(f"- `{data}` [{entrada['titulo'] or entrada['arquivo']}](diario/{alvo})")
-
+        linhas += ["", "## Diário — últimas reflexões", ""]
+        for e in sorted(indice["diario"], key=lambda d: d.get("data",""), reverse=True)[:3]:
+            alvo = e.get("caminho", f"diario/{e['arquivo']}").replace("diario/","")
+            linhas.append(f"- `{e.get('data','')}` [{e['titulo'] or e['arquivo']}](diario/{alvo}) — {e.get('origem','')}")
     linhas += [
         "",
         "## Como isto é mantido",
         "",
-        "Tudo aqui é **gerado a partir de arquivos Markdown** e regenerado a cada "
-        "push em `main`. O que você escreve em `conceitos/`, `trilhas/` e `diario/` "
-        "vira este painel sem edição manual. Os guias estão em [docs/](docs/index.md).",
+        "`conceitos/` + `trilhas/` + `diario/` → `make painel` → este site. Sem edição manual. Guias em [docs/](docs/index.md).",
         "",
-        f"*Painel gerado em {indice.get('atualizado_em', '').replace('T', ' ') or '—'} "
-        "a partir de "
-        f"{indice['totais']['conceitos'] + indice['totais']['eixos']} notas, "
-        f"{indice['totais']['trilhas']} trilhas e {indice['totais']['diario']} entradas de diário.*",
+        f"*Gerado em {indice.get('atualizado_em','').replace('T',' ') or '—'} · {indice['totais']['conceitos']+indice['totais']['eixos']} notas · {indice['totais']['trilhas']} trilhas · [Guias](docs/index.md)*",
         "",
     ]
     return "\n".join(linhas)
 
 
 def pagina_conceitos(indice: dict) -> str:
-    """Índice de conceitos agrupado por tema (substitui a listagem crua de arquivos)."""
+    """Índice navegável: busca + filtros + cards."""
     linhas = [
         "# Conceitos",
         "",
-        "Uma nota por ideia. O símbolo indica o estado: ✔ reescrita e conferida, "
-        "○ ainda rascunho.",
+        "Uma nota por ideia. **Busque com Ctrl+K ou /**, filtre por tema e clique para abrir. ✔ = reescrita, ○ = rascunho.",
         "",
-        "Use a **busca** (tecla `/`) para procurar por termo, ou navegue pelas "
-        "[tags](../tags.md).",
+        '<input id="humanitas-search" class="humanitas-search" placeholder="Buscar conceito, autor, obra… (Ctrl+K)" aria-label="Buscar conceitos">',
         "",
+        '<div class="humanitas-filters" markdown>',
     ]
     temas = Counter(c["tema"] for c in indice["conceitos"])
-    for tema, _ in sorted(temas.items(), key=lambda item: (-item[1], item[0])):
-        do_tema = sorted(
-            (c for c in indice["conceitos"] if c["tema"] == tema),
-            key=lambda c: (c["status"] != "ok", c["conceito"]),
-        )
-        linhas += [f"## {TEMAS.get(tema, tema)}", ""]
-        for c in do_tema:
-            glifo = GLIFO_STATUS.get(c["status"], "·")
-            tipo = " *(eixo)*" if c["tipo"] == "eixo" else ""
-            linhas.append(f"- {glifo} {_link_nota(c, prefixo='')}{tipo}")
-        linhas.append("")
+    linhas.append('<button class="humanitas-filter active" data-filter="todos">Todos (50)</button>')
+    for tema, qtd in sorted(temas.items(), key=lambda i: (-i[1], i[0])):
+        linhas.append(f'<button class="humanitas-filter" data-filter="{tema}">{TEMAS.get(tema, tema)} ({qtd})</button>')
+    linhas += [
+        "</div>",
+        "",
+        '<div id="conceito-counter" style="font-size:0.8rem; opacity:0.7; margin-bottom:0.5rem"></div>',
+        "",
+        '<div class="conceito-grid" markdown>',
+        "",
+    ]
+    todos = sorted(indice["conceitos"], key=lambda c: (c["status"] != "ok", c["conceito"]))
+    for c in todos:
+        glifo = GLIFO_STATUS.get(c["status"], "·")
+        cor_status = "ok" if c["status"]=="ok" else "rascunho"
+        trad = f"<span>📚 {c.get('tradicao')}</span>" if c.get('tradicao') else ""
+        ev = f"<span>🔬 {c.get('nivel_evidencia')}</span>" if c.get('nivel_evidencia') else ""
+        pend = f"<div class=\"pendencias\">⚠️ {', '.join(c.get('pendencias',[])[:2])}</div>" if c.get('pendencias') else ""
+        link = _link_nota(c, prefixo='')
+        linhas += [
+            f'<div class="conceito-card" data-tema="{c["tema"]}" data-status="{c["status"]}" markdown>',
+            f"**{glifo} {c['conceito']}** {trad} {ev}",
+            "",
+            f'<div class="meta" markdown><span>{TEMAS.get(c["tema"], c["tema"])}</span><span>{cor_status}</span><span>{c["nivel"]}</span></div>',
+            f'<div class="def" markdown>{c["definicao"][:180] or "*Sem definição*"}…</div>',
+            pend,
+            f"[Abrir nota]({c['arquivo']}) · {link}",
+            "</div>",
+            "",
+        ]
+    linhas += ["</div>", "", "Dica: `/` foca busca, clique no grafo para navegar.", ""]
     return "\n".join(linhas)
 
 
@@ -267,6 +314,84 @@ def pagina_eixos(indice: dict) -> str:
     return "\n".join(linhas)
 
 
+def pagina_obras(indice: dict) -> str:
+    try:
+        from .obras import agrupar_obras
+        dados = agrupar_obras(indice)
+    except Exception:
+        dados = {"obras": {}}
+    linhas = ["# Obras & Autores", "", "De onde vem cada conceito. Clique para ver os conceitos ligados.", ""]
+    if not dados.get("obras"):
+        linhas.append("Nenhuma obra indexada ainda — rode `make painel`.")
+        
+    for obra, info in sorted(dados["obras"].items(), key=lambda kv: (-kv[1]["total"], kv[0])):
+        linhas += [f"## {obra}", "", f"*Autor: {info['autor']} · {info['total']} conceitos · temas: {', '.join(info['temas'].keys())}*", ""]
+        for c in info["conceitos"]:
+            linhas.append(f"- [{c['conceito']}](conceitos/{c['arquivo']}) — {TEMAS.get(c['tema'], c['tema'])}")
+        linhas.append("")
+    
+
+
+    return "\n".join(linhas)
+
+
+def pagina_grafo(indice: dict) -> str:
+    linhas = [
+        "# Grafo de conceitos",
+        "",
+        "Cada nó é um conceito, cada aresta é uma relação (`relacoes`) ou eixo compartilhado. **Clique no nó para abrir a nota.** Use filtros por tema se quiser focar.",
+        "",
+        '<div class="grafo-container" style="height:600px" markdown>',
+        '<canvas id="grafo-canvas" width="1100" height="600"></canvas>',
+        "</div>",
+        '<div class="grafo-legend" markdown>',
+        '<span><span class="dot" style="background:#3f51b5"></span> Sociologia</span>',
+        '<span><span class="dot" style="background:#009688"></span> Filosofia</span>',
+        '<span><span class="dot" style="background:#ff9800"></span> Psicologia</span>',
+        '<span><span class="dot" style="background:#e91e63"></span> Eixo</span>',
+        "</div>",
+        "",
+        "Dados em `indices/grafo.json` (gerado por `make painel`). Filtre no dashboard com `Ctrl+K`.",
+        "",
+    ]
+    
+
+
+    return "\n".join(linhas)
+
+
+def pagina_retencao(indice: dict) -> str:
+    try:
+        import json
+        ret = json.loads(pathlib.Path("indices/retencao.json").read_text(encoding="utf-8")) if pathlib.Path("indices/retencao.json").exists() else {}
+    except Exception:
+        ret = {}
+    linhas = ["# Retenção & Progresso", "", "Métricas para decidir o que revisar.", ""]
+    if ret:
+        linhas += [
+            f"- **Taxa ok:** {ret.get('taxa_ok',0):.0%} ({ret.get('por_status',{}).get('ok',0)}/{ret.get('total_conceitos',0)})",
+            f"- **Cartões:** {ret.get('total_cartoes',0)} total · por tema: {ret.get('cartoes_por_tema',{})}",
+            f"- **Por nível:** {ret.get('por_nivel',{})}",
+            "",
+        ]
+    p = calcular_progresso(indice)
+    linhas += [
+        "## Por tema",
+        "",
+        "| Tema | Notas | ok | citação |",
+        "|---|---|---|---|",
+    ]
+    from collections import Counter
+    temas = Counter(c["tema"] for c in indice["conceitos"])
+    for tema, qtd in sorted(temas.items(), key=lambda i: (-i[1], i[0])):
+        do_tema = [c for c in indice["conceitos"] if c["tema"]==tema]
+        linhas.append(f"| {TEMAS.get(tema,tema)} | {qtd} | {sum(1 for c in do_tema if c['status']=='ok')} | {sum(1 for c in do_tema if c['tem_trecho'])} |")
+    
+
+
+    return "\n".join(linhas)
+
+
 def _ajustar_links_readme(destino: pathlib.Path) -> None:
     """No site, os README viram `index.md`: ajusta os links que apontavam para eles."""
     for arquivo in destino.rglob("*.md"):
@@ -320,6 +445,10 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
     (destino / "conceitos" / "index.md").write_text(pagina_conceitos(indice), encoding="utf-8")
     (destino / "trilhas").mkdir(parents=True, exist_ok=True)
     (destino / "trilhas" / "index.md").write_text(pagina_trilhas(indice), encoding="utf-8")
+    # novas páginas navegáveis PR9
+    (destino / "obras.md").write_text(pagina_obras(indice), encoding="utf-8")
+    (destino / "grafo.md").write_text(pagina_grafo(indice), encoding="utf-8")
+    (destino / "retencao.md").write_text(pagina_retencao(indice), encoding="utf-8")
 
     # fichas de leitura (produção própria) — nunca o texto integral
     fichas = raiz / "acervo" / "fichas"
@@ -341,6 +470,21 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
         (destino / rel_pasta / "index.md").write_text(
             ler(readme) if readme.exists() else texto_padrao, encoding="utf-8"
         )
+
+    # assets de UI (css/js) e indices para o frontend
+    for asset in ["docs/assets/css/dashboard.css", "docs/assets/js/dashboard.js"]:
+        src = raiz / asset
+        if src.exists():
+            dst = destino / asset.replace("docs/", "")
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            import shutil
+            shutil.copy2(src, dst)
+    # indices JSON para fetch no JS
+    if (raiz / "indices").exists():
+        import shutil
+        (destino / "indices").mkdir(parents=True, exist_ok=True)
+        for jf in (raiz / "indices").glob("*.json"):
+            shutil.copy2(jf, destino / "indices" / jf.name)
 
     _ajustar_links_readme(destino)
 

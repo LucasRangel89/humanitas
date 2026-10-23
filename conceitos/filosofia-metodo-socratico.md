@@ -7,7 +7,7 @@ tema: "filosofia"
 tipo: "conceito"
 nivel: "iniciante"
 status: "rascunho"
-tags: "[filosofia, socratico, metodo, grecia]"
+tags: [filosofia, socratico, metodo, grecia]
 fonte_verificada: nao
 ---
 # Conceito — Método Socrático

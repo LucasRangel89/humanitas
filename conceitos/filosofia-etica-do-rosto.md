@@ -7,7 +7,7 @@ tema: "filosofia"
 tipo: "conceito"
 nivel: "entusiasta"
 status: "rascunho"
-tags: "[filosofia, levinas, etica, alteridade]"
+tags: [filosofia, levinas, etica, alteridade]
 fonte_verificada: nao
 ---
 # Conceito — Ética do Rosto (Lévinas)
