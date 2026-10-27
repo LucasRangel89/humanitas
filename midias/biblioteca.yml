@@ -406,6 +406,87 @@ itens:
     verificado_em: 2026-10-27
     verificado_como: oembed
 
+  # ------------------------------------------- ciência política (lacuna fechada)
+  - id: passos-cp-aula-02
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Curso de Ciência Política — Aula 02 — Conceito de Ciência Política"
+    autor: "Matheus Passos (UnB/Lisboa), curso gratuito no YouTube"
+    canal: "Prof. Matheus Passos"
+    url: "https://www.youtube.com/watch?v=zC5oSwI98eo"
+    tema: ciencia-politica
+    conceitos: [ciencia-politica-poder, ciencia-politica-estado]
+    nota: "Aula 2 de um curso de 10 aulas que acompanha o livro Curso básico de Ciência Política. Comece por aqui: define o campo antes dos conceitos."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: passos-cp-ditadura
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Curso de Ciência Política — Aula 10 — Conceito de Ditadura — Autoritarismo"
+    autor: "Matheus Passos (UnB/Lisboa), curso gratuito no YouTube"
+    canal: "Prof. Matheus Passos"
+    url: "https://www.youtube.com/watch?v=Daa5TIB1CK4"
+    tema: ciencia-politica
+    conceitos: [ciencia-politica-regime-politico, historia-ditadura-transicao]
+    nota: "Separa autoritarismo de totalitarismo com critério tipológico — o vocabulário que a trilha cobra antes de discutir 1964."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: passos-weber-politica-vocacao
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "A política como vocação em 7 minutos"
+    autor: "Matheus Passos, sobre o texto de Max Weber"
+    canal: "Prof. Matheus Passos"
+    url: "https://www.youtube.com/watch?v=cXxHZM9t2k8"
+    tema: sociologia
+    conceitos: [sociologia-racionalizacao, ciencia-politica-estado, ciencia-politica-legitimidade]
+    nota: "Síntese de 'A política como vocação': os três tipos de legitimidade e a distinção entre ética da convicção e ética da responsabilidade. Curto; leia Weber depois."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  # --------------------------------------- filosofia: poder, moral, genealogia
+  - id: brasilescola-foucault-poder
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Michel Foucault: Poder"
+    autor: "Brasil Escola"
+    canal: "Brasil Escola Oficial"
+    url: "https://www.youtube.com/watch?v=A-D1qdR9zKI"
+    tema: filosofia
+    conceitos: [sociologia-panoptico, eixo-estrutura-agencia]
+    nota: "Apresenta a Microfísica do poder: poder como relação capilar, não como coisa que se possui. Bom para rever depois de ler Vigiar e punir."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: oliva-nietzsche-vontade
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Nietzsche • Vontade de potência"
+    autor: "Alfredo Oliva"
+    canal: "Alfredo Oliva"
+    url: "https://www.youtube.com/watch?v=3Q_ZHq6v8A4"
+    tema: filosofia
+    conceitos: [filosofia-morte-de-deus, filosofia-existencialismo]
+    nota: "Percorre biografia, potência como vitalidade e crítica dos valores. Contextualiza a 'morte de Deus' sem reduzir Nietzsche a frase de efeito."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  # ------------------------------------------------- geografia: fluxos e redes
+  - id: futura-globalizacao-fluxos
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "A globalização e seus fluxos — Geografia — Ensino Médio"
+    autor: "Canal Futura"
+    canal: "Canal Futura"
+    url: "https://www.youtube.com/watch?v=wqRoZF9_J_g"
+    tema: geografia
+    conceitos: [geografia-redes-fluxos, eixo-local-global]
+    nota: "Liga globalização a fluxos concretos (mercadorias, capitais, pessoas) — o elo entre 'redes e fluxos' e o eixo local × global."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
   # ---------------------------------------------------- artigos, verbetes, resenhas
   - id: scielo-milgram-consentimento
     tipo: artigo

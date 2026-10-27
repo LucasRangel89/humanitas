@@ -2,31 +2,103 @@
  "versao": 1,
  "atualizado_em": "2026-10-27",
  "totais": {
-  "itens": 38,
+  "itens": 44,
   "por_tipo": {
    "artigo": 1,
    "curso": 3,
    "filme": 6,
    "podcast": 1,
    "resenha": 1,
-   "videoaula": 26
+   "videoaula": 32
   },
   "por_tema": {
    "antropologia": 4,
-   "ciencia-politica": 1,
+   "ciencia-politica": 3,
    "economia": 3,
-   "filosofia": 7,
-   "geografia": 3,
+   "filosofia": 9,
+   "geografia": 4,
    "historia": 2,
    "psicologia": 8,
-   "sociologia": 10
+   "sociologia": 11
   },
   "por_verificacao": {
    "material-do-autor": 7,
-   "oembed": 29,
+   "oembed": 35,
    "pagina": 2
   }
  },
+ "cobertura_trilhas": [
+  {
+   "arquivo": "antropologia-nivel-1.md",
+   "trilha": "Antropologia — Nível 1",
+   "nos": 7,
+   "cobertos": 5,
+   "pct": 71
+  },
+  {
+   "arquivo": "ciencia-politica-nivel-1.md",
+   "trilha": "Ciência Política — Nível 1",
+   "nos": 7,
+   "cobertos": 6,
+   "pct": 86
+  },
+  {
+   "arquivo": "economia-nivel-1.md",
+   "trilha": "Economia — Nível 1",
+   "nos": 8,
+   "cobertos": 3,
+   "pct": 38
+  },
+  {
+   "arquivo": "filosofia-nivel-1.md",
+   "trilha": "Filosofia — Nível 1",
+   "nos": 12,
+   "cobertos": 7,
+   "pct": 58
+  },
+  {
+   "arquivo": "geografia-nivel-1.md",
+   "trilha": "Geografia — Nível 1",
+   "nos": 7,
+   "cobertos": 6,
+   "pct": 86
+  },
+  {
+   "arquivo": "historia-nivel-1.md",
+   "trilha": "História — Nível 1",
+   "nos": 7,
+   "cobertos": 1,
+   "pct": 14
+  },
+  {
+   "arquivo": "pensamento-social-brasileiro.md",
+   "trilha": "Pensamento Social Brasileiro",
+   "nos": 11,
+   "cobertos": 4,
+   "pct": 36
+  },
+  {
+   "arquivo": "psicologia-nivel-1.md",
+   "trilha": "Psicologia — Nível 1",
+   "nos": 11,
+   "cobertos": 8,
+   "pct": 73
+  },
+  {
+   "arquivo": "psicologia-nivel-2.md",
+   "trilha": "Psicologia — Nível 2",
+   "nos": 8,
+   "cobertos": 1,
+   "pct": 12
+  },
+  {
+   "arquivo": "sociologia-nivel-1.md",
+   "trilha": "Sociologia — Nível 1",
+   "nos": 12,
+   "cobertos": 8,
+   "pct": 67
+  }
+ ],
  "itens": [
   {
    "id": "sbs-sociologia-01",
@@ -568,6 +640,121 @@
     "geografia-paisagem"
    ],
    "nota": "Aula do Canal Futura que separa lugar de paisagem com exemplos brasileiros.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "passos-cp-aula-02",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Curso de Ciência Política — Aula 02 — Conceito de Ciência Política",
+   "autor": "Matheus Passos (UnB/Lisboa), curso gratuito no YouTube",
+   "canal": "Prof. Matheus Passos",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=zC5oSwI98eo",
+   "onde": "",
+   "tema": "ciencia-politica",
+   "conceitos": [
+    "ciencia-politica-poder",
+    "ciencia-politica-estado"
+   ],
+   "nota": "Aula 2 de um curso de 10 aulas que acompanha o livro Curso básico de Ciência Política. Comece por aqui: define o campo antes dos conceitos.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "passos-cp-ditadura",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Curso de Ciência Política — Aula 10 — Conceito de Ditadura — Autoritarismo",
+   "autor": "Matheus Passos (UnB/Lisboa), curso gratuito no YouTube",
+   "canal": "Prof. Matheus Passos",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=Daa5TIB1CK4",
+   "onde": "",
+   "tema": "ciencia-politica",
+   "conceitos": [
+    "ciencia-politica-regime-politico",
+    "historia-ditadura-transicao"
+   ],
+   "nota": "Separa autoritarismo de totalitarismo com critério tipológico — o vocabulário que a trilha cobra antes de discutir 1964.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "passos-weber-politica-vocacao",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "A política como vocação em 7 minutos",
+   "autor": "Matheus Passos, sobre o texto de Max Weber",
+   "canal": "Prof. Matheus Passos",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=cXxHZM9t2k8",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-racionalizacao",
+    "ciencia-politica-estado",
+    "ciencia-politica-legitimidade"
+   ],
+   "nota": "Síntese de 'A política como vocação': os três tipos de legitimidade e a distinção entre ética da convicção e ética da responsabilidade. Curto; leia Weber depois.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-foucault-poder",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Michel Foucault: Poder",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=A-D1qdR9zKI",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "sociologia-panoptico",
+    "eixo-estrutura-agencia"
+   ],
+   "nota": "Apresenta a Microfísica do poder: poder como relação capilar, não como coisa que se possui. Bom para rever depois de ler Vigiar e punir.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "oliva-nietzsche-vontade",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Nietzsche • Vontade de potência",
+   "autor": "Alfredo Oliva",
+   "canal": "Alfredo Oliva",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=3Q_ZHq6v8A4",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-morte-de-deus",
+    "filosofia-existencialismo"
+   ],
+   "nota": "Percorre biografia, potência como vitalidade e crítica dos valores. Contextualiza a 'morte de Deus' sem reduzir Nietzsche a frase de efeito.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "futura-globalizacao-fluxos",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "A globalização e seus fluxos — Geografia — Ensino Médio",
+   "autor": "Canal Futura",
+   "canal": "Canal Futura",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=wqRoZF9_J_g",
+   "onde": "",
+   "tema": "geografia",
+   "conceitos": [
+    "geografia-redes-fluxos",
+    "eixo-local-global"
+   ],
+   "nota": "Liga globalização a fluxos concretos (mercadorias, capitais, pessoas) — o elo entre 'redes e fluxos' e o eixo local × global.",
    "verificado_em": "2026-10-27",
    "verificado_como": "oembed"
   },

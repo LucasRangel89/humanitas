@@ -21,9 +21,10 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **38 indicações** em 8 temas. A maioria são videoaulas de graduação
-gratuitas; há também artigos em acesso aberto, um resumo acadêmico, filmes e um
-podcast.
+Hoje: **44 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+graduação); há também artigos em acesso aberto, um resumo acadêmico, filmes e um
+podcast. A própria página mostra a **cobertura das trilhas**: 49 dos 90 nós com
+link já têm mídia ligada.
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
 
@@ -73,14 +74,34 @@ entretenimento.
 
 | Tema | Indicações | Melhor porta de entrada |
 |---|---|---|
-| Sociologia | 10 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
+| Sociologia | 11 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
 | Psicologia | 8 | *Introdução à Psicanálise* (Instituto ESPE) |
-| Filosofia | 7 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
+| Filosofia | 9 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
+| Ciência Política | 3 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
 | Antropologia | 4 | *Relativismo cultural* (Brasil Escola) |
 | Economia | 3 | *Introdução à Inflação* (Denise Cyrillo, FEA-USP) |
-| Geografia | 3 | *Espaço geográfico* (Brasil Escola) |
+| Geografia | 4 | *Espaço geográfico* (Brasil Escola) |
 | História | 2 | *A Formação do Brasil #1* (ILP) e Napolitano sobre "populismo" |
-| Ciência Política | 1 | *Democracia* (Brasil Escola) |
+
+### Cobertura das trilhas
+
+O gerador compara os links de cada nó com as notas citadas em `conceitos` e publica
+a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **49 de 90
+nós com link** (ficam fora os nós "síntese no diário" e a trilha Integrada, cujos
+nós não apontam para notas).
+
+| Trilha | Nós com mídia |
+|---|---|
+| Ciência Política — Nível 1 | 6/7 (86%) |
+| Geografia — Nível 1 | 6/7 (86%) |
+| Psicologia — Nível 1 | 8/11 (73%) |
+| Antropologia — Nível 1 | 5/7 (71%) |
+| Sociologia — Nível 1 | 8/12 (67%) |
+| Filosofia — Nível 1 | 7/12 (58%) |
+| Economia — Nível 1 | 3/8 (38%) |
+| Pensamento Social Brasileiro | 4/11 (36%) |
+| História — Nível 1 | 1/7 (14%) |
+| Psicologia — Nível 2 | 1/8 (12%) |
 
 Acervos que aparecem mais de uma vez e valem assinar: **Canal USP** (aulas de
 graduação da FEA e da FFLCH), **UNIVESP** (cursos completos de Sociologia,
@@ -90,12 +111,19 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
 
 ### Lacunas conhecidas
 
-- **Antropologia**: falta uma aula universitária em vídeo (as de campo estão em
-  texto, na [e-Aulas da USP](https://eaulas.usp.br/) — vídeo, mas fora do YouTube).
-- **Ciência Política**: só há divulgação; falta um curso de teoria política.
-- **Pensamento social brasileiro**: a trilha tem 12 nós e apenas duas mídias.
-- **Filosofia**: falta Nietzsche, Foucault e Butler vídeo-aula (o podcast cobre mal).
-- **Integrada**: nenhuma indicação ainda.
+- **Antropologia**: continua sem aula universitária em vídeo aberto. As aulas de
+  *Antropologia I* da USP (Heloisa Buarque de Almeida) estão na
+  [e-Aulas](https://eaulas.usp.br/) e são excelentes — **mas exigem login USP**
+  (conferido em 27/10/2026), então não entram nesta lista. Ficam como sugestão
+  para quem tem vínculo.
+- **História e Psicologia Nível 2**: 1 nó coberto em cada. São as duas maiores
+  lacunas agora.
+- **Filosofia**: ainda falta Butler (o podcast cobre mal) e uma aula sobre
+  fenomenologia (Husserl/Heidegger).
+- **Integrada**: nenhuma indicação; a trilha não tem nós linkados, então nem
+  aparece na cobertura.
+- **Pensamento social brasileiro**: 4 de 11 — faltam Florestan Fernandes,
+  DaMatta e Sérgio Buarque em vídeo.
 
 ---
 
@@ -183,12 +211,12 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 
 ## 7. Próximos passos
 
-1. **Fechar as lacunas do §3**, começando por Antropologia (e-Aulas da USP) e
-   Ciência Política (curso do Prof. Matheus Passos é gratuito e tem 16 aulas).
-2. **Uma mídia por nó das trilhas de 12 nós**: hoje 38 indicações cobrem ~30 dos
-   133 nós. A meta não é 133 links — é que cada trilha tenha **uma** porta de
-   entrada em vídeo e **uma** leitura de apoio por nó.
-3. **Podcasts com episódio específico**: hoje só *Filosofia Pop* está cadastrado
-   sem episódio. O certo é cadastrar o episódio (título, número, duração).
+1. **Fechar as lacunas de História (1/7) e Psicologia Nível 2 (1/8)** — são as
+   trilhas mais descobertas.
+2. **Uma mídia por nó**: a meta não é 133 links, é que cada trilha tenha **uma
+   porta de entrada em vídeo** e **uma leitura de apoio por nó**. A tabela de
+   cobertura em `midias.md` é o placar.
+3. **Podcasts com episódio específico**: hoje *Filosofia Pop* está cadastrado sem
+   episódio. O certo é cadastrar o episódio (título, número, duração).
 4. **Reconferir a cada seis meses**: `verificado_em` serve para isso. Uma mídia
    com mais de um ano sem revisão deve ser reaberta antes de continuar na lista.

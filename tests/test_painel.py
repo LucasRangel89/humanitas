@@ -1080,3 +1080,26 @@ def test_site_publica_pagina_de_midias(mini_repo: pathlib.Path):
     texto = (mini_repo / "site-src" / "midias.md").read_text(encoding="utf-8")
     assert "# Mídias" in texto
     assert "https://www.youtube.com/watch?v=abc123" in texto
+
+
+def test_midias_cobertura_conta_nos_com_link(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo)
+    itens, _, _ = painel.carregar_midias(mini_repo)
+    cobertura = painel.midias.cobertura_trilhas(mini_repo, itens)
+    # a trilha do mini_repo tem 3 nós; 2 apontam para notas e 1 é "Síntese"
+    trilha = next(c for c in cobertura if c["arquivo"] == "sociologia-teste.md")
+    assert trilha["trilha"].startswith("Sociologia")
+    assert trilha["nos"] == 2
+    # só o nó do habitus tem mídia na biblioteca de teste
+    assert trilha["cobertos"] == 1
+    assert trilha["pct"] == 50
+
+
+def test_midias_cobertura_aparece_na_pagina(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo)
+    md, js, _ = painel.gravar_midias(mini_repo)
+    texto = md.read_text(encoding="utf-8")
+    assert "## Cobertura das trilhas" in texto
+    assert "1/2 (50%)" in texto
+    dados = json.loads(js.read_text(encoding="utf-8"))
+    assert dados["cobertura_trilhas"][0]["arquivo"] == "sociologia-teste.md"

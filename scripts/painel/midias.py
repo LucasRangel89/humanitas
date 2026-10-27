@@ -283,8 +283,61 @@ def _celula_ligacao(item: dict, titulos: dict[str, str] | None = None) -> str:
     return " · ".join(partes)
 
 
+LINK_CONCEITO = re.compile(r"\]\((?:\.\./)?conceitos/([a-z0-9-]+)\.md")
+
+
+def cobertura_trilhas(raiz: pathlib.Path, itens: list[dict]) -> list[dict]:
+    """Para cada trilha, quantos nós já têm pelo menos uma mídia ligada.
+
+    O nó é contado como coberto quando o link daquele nó aponta para uma nota
+    que aparece em algum `conceitos` da biblioteca. Nó sem link (ex.: "Síntese
+    no diário") não entra na conta: não é conteúdo que vídeo resolva.
+    """
+    com_midia = {c for item in itens if not item.get("_invalido")
+                 for c in item.get("conceitos", [])}
+    pasta = raiz / "trilhas"
+    if not pasta.exists():
+        return []
+    saida = []
+    for arquivo in sorted(pasta.glob("*.md")):
+        if arquivo.name == "README.md":
+            continue
+        texto = arquivo.read_text(encoding="utf-8")
+        nome = arquivo.stem.replace("-", " ")
+        acha_nome = re.search(r"^trilha:\s*\"?(.+?)\"?\s*$", texto, re.M)
+        if acha_nome:
+            nome = acha_nome.group(1).strip()
+            # "Antropologia — Nível 1: estranhar o familiar" -> "Antropologia — Nível 1"
+            nome = nome.split(":")[0].strip()
+        corpo = texto.split("\n---\n", 1)[-1] if texto.startswith("---") else texto
+        # cada linha de nó com link é um nó; slugs únicos por linha
+        nos = []
+        for linha in corpo.splitlines():
+            if not re.match(r"^\s*(?:\d+\.|[-*])\s", linha):
+                continue
+            achados = LINK_CONCEITO.findall(linha)
+            if achados:
+                nos.append(achados)
+        if not nos:
+            continue
+        cobertos = sum(1 for slugs in nos if any(s in com_midia for s in slugs))
+        saida.append(
+            {
+                "arquivo": arquivo.name,
+                "trilha": nome,
+                "nos": len(nos),
+                "cobertos": cobertos,
+                "pct": round(cobertos * 100 / len(nos)) if nos else 0,
+            }
+        )
+    return saida
+
+
 def gerar_markdown(
-    itens: list[dict], atualizado_em: str = "", titulos: dict[str, str] | None = None
+    itens: list[dict],
+    atualizado_em: str = "",
+    titulos: dict[str, str] | None = None,
+    cobertura: list[dict] | None = None,
 ) -> str:
     """Monta a página `midias.md` (determinística: sem data de geração)."""
     validos = [i for i in itens if not i.get("_invalido")]
@@ -371,6 +424,28 @@ def gerar_markdown(
             )
         linhas.append("")
 
+    cobertura = cobertura or []
+    if cobertura:
+        total_nos = sum(c["nos"] for c in cobertura)
+        total_cob = sum(c["cobertos"] for c in cobertura)
+        linhas += [
+            "## Cobertura das trilhas",
+            "",
+            f"**{total_cob} de {total_nos} nós com link** já têm pelo menos uma mídia "
+            "ligada. Ficam fora da conta os nós sem link (síntese no diário) e as "
+            "trilhas cujos nós não apontam para notas (a Integrada, por exemplo).",
+            "",
+            "| Trilha | Nós com mídia | |",
+            "|---|---|---|",
+        ]
+        for c in sorted(cobertura, key=lambda c: (c["pct"], c["arquivo"])):
+            nome = c.get("trilha") or c["arquivo"].removesuffix(".md").replace("-", " ")
+            cheia = "█" * round(c["pct"] / 10) + "░" * (10 - round(c["pct"] / 10))
+            linhas.append(
+                f"| {_escapar(nome)} | {c['cobertos']}/{c['nos']} ({c['pct']}%) | `{cheia}` |"
+            )
+        linhas.append("")
+
     if canais:
         linhas += [
             "## Canais que valem assinar",
@@ -406,7 +481,9 @@ def gerar_markdown(
     return "\n".join(linhas)
 
 
-def montar_json(itens: list[dict], atualizado_em: str = "") -> dict:
+def montar_json(
+    itens: list[dict], atualizado_em: str = "", cobertura: list[dict] | None = None
+) -> dict:
     validos = [i for i in itens if not i.get("_invalido")]
     por_tipo: dict[str, int] = {}
     por_tema: dict[str, int] = {}
@@ -424,6 +501,7 @@ def montar_json(itens: list[dict], atualizado_em: str = "") -> dict:
             "por_tema": dict(sorted(por_tema.items())),
             "por_verificacao": dict(sorted(por_verificacao.items())),
         },
+        "cobertura_trilhas": cobertura or [],
         "itens": [
             {
                 "id": i["id"],
@@ -449,14 +527,17 @@ def montar_json(itens: list[dict], atualizado_em: str = "") -> dict:
 def gravar(raiz: pathlib.Path) -> tuple[pathlib.Path, pathlib.Path, int]:
     """Regrava `midias.md` e `indices/midias.json`. Devolve (md, json, nº de itens)."""
     itens, atualizado_em, _erros = carregar(raiz)
-    texto = gerar_markdown(itens, atualizado_em, titulos_dos_conceitos(raiz))
+    cobertura = cobertura_trilhas(raiz, itens)
+    texto = gerar_markdown(itens, atualizado_em, titulos_dos_conceitos(raiz), cobertura)
     destino_md = raiz / SAIDA_MD
     destino_md.write_text(texto, encoding="utf-8")
 
     destino_json = raiz / SAIDA_JSON
     destino_json.parent.mkdir(parents=True, exist_ok=True)
     destino_json.write_text(
-        json.dumps(montar_json(itens, atualizado_em), ensure_ascii=False, indent=1) + "\n",
+        json.dumps(
+            montar_json(itens, atualizado_em, cobertura), ensure_ascii=False, indent=1
+        ) + "\n",
         encoding="utf-8",
     )
     return destino_md, destino_json, len([i for i in itens if not i.get("_invalido")])
@@ -475,7 +556,9 @@ def verificar(raiz: pathlib.Path) -> tuple[list[str], list[str]]:
     erros, avisos = validar(itens, conceitos, atualizado_em=atualizado_em)
 
     destino = raiz / SAIDA_MD
-    esperado = gerar_markdown(itens, atualizado_em, titulos_dos_conceitos(raiz))
+    esperado = gerar_markdown(
+        itens, atualizado_em, titulos_dos_conceitos(raiz), cobertura_trilhas(raiz, itens)
+    )
     if destino.exists() and destino.read_text(encoding="utf-8") != esperado:
         erros.append(
             f"{SAIDA_MD} está desatualizado — rode `python -m scripts.painel midias`."

@@ -2,7 +2,7 @@
 
 # Mídias
 
-**38 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**44 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -20,12 +20,12 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | Tema | Indicações | Onde começar |
 |---|---|---|
 | [Psicologia](#psicologia) | 8 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
-| [Filosofia](#filosofia) | 7 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
-| [Sociologia](#sociologia) | 10 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
+| [Filosofia](#filosofia) | 9 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
+| [Sociologia](#sociologia) | 11 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
 | [Antropologia](#antropologia) | 4 | [Relativismo cultural](https://www.youtube.com/watch?v=D247x6t31is) |
 | [História](#historia) | 2 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
-| [Geografia](#geografia) | 3 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
-| [Ciência Política](#ciencia-politica) | 1 | [Democracia](https://www.youtube.com/watch?v=shCNQfoQwqE) |
+| [Geografia](#geografia) | 4 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
+| [Ciência Política](#ciencia-politica) | 3 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
 | [Economia](#economia) | 3 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
 
 ## Indicações por tema
@@ -51,6 +51,8 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · curso livre | [Introdução à Filosofia da Ciência \| Introdução Geral à Filosofia \| Aula 33](https://www.youtube.com/watch?v=M2mm8Y4OJKo) | Vitor Lima (Isto não é Filosofia) · canal Isto não é Filosofia | Liga Popper e Kuhn ao problema da demarcação científica — exatamente o que a nota de falseabilidade pede. | [Falseabilidade](conceitos/filosofia-falseabilidade.md) · [Paradigma (Kuhn)](conceitos/filosofia-paradigma-kuhn.md) |
 | curso · curso livre | [A filosofia de Karl Marx — uma introdução \| Novo curso disponível!](https://www.youtube.com/watch?v=JYe6VHyE6kI) | Filosofia Vermelha · canal Filosofia Vermelha | Apresentação do curso sobre Marx: percorre os textos de juventude até O Capital. Leitura exigente, em português. | [Alienação](conceitos/sociologia-alienacao.md) · [Estrutura × Agência](conceitos/eixo-estrutura-agencia.md) |
 | curso · curso livre | [Curso de introdução à filosofia: dos pré-socráticos a Sartre](https://www.youtube.com/watch?v=k1GUwOeehlw) | Filosofia Vermelha · canal Filosofia Vermelha | Curso cronológico completo; o vídeo é a apresentação. Escolha um módulo por vez e escreva o diário antes de seguir. | [Método Socrático](conceitos/filosofia-metodo-socratico.md) |
+| videoaula · divulgação | [Michel Foucault: Poder](https://www.youtube.com/watch?v=A-D1qdR9zKI) | Brasil Escola · canal Brasil Escola Oficial | Apresenta a Microfísica do poder: poder como relação capilar, não como coisa que se possui. Bom para rever depois de ler Vigiar e punir. | [Panóptico e Biopoder](conceitos/sociologia-panoptico.md) · [Estrutura × Agência](conceitos/eixo-estrutura-agencia.md) |
+| videoaula · divulgação | [Nietzsche • Vontade de potência](https://www.youtube.com/watch?v=3Q_ZHq6v8A4) | Alfredo Oliva · canal Alfredo Oliva | Percorre biografia, potência como vitalidade e crítica dos valores. Contextualiza a 'morte de Deus' sem reduzir Nietzsche a frase de efeito. | [Morte de Deus](conceitos/filosofia-morte-de-deus.md) · [Existencialismo](conceitos/filosofia-existencialismo.md) |
 | filme · obra de apoio | Matrix (1999) — *streaming e locação* | Lana e Lilly Wachowski | A alegoria da caverna em versão contemporânea: realidade simulada, libertação dolorosa e o retorno a quem não quer ver. Citado no plano de estudos do autor. | [Teoria das Formas](conceitos/filosofia-teoria-das-formas.md) |
 | filme · obra de apoio | Laranja Mecânica (1971) — *streaming e locação* | Stanley Kubrick | Condicionamento, livre-arbítrio e a pergunta utilitarista sobre o custo da ordem. Citado no plano de estudos do autor. | [Livre-arbítrio × Determinismo](conceitos/eixo-livre-arbitrio-determinismo.md) · [Utilitarismo](conceitos/filosofia-utilitarismo.md) |
 | podcast · obra de apoio | Filosofia Pop — *Spotify, YouTube e site do projeto — procure o episódio pelo nome do autor* | Podcast Filosofia Pop | Episódios por filósofo (Platão, Descartes, Nietzsche, Foucault, Butler). Bom para o trajeto de volta do trabalho; rende pergunta para o diário. | [Existencialismo](conceitos/filosofia-existencialismo.md) · [Morte de Deus](conceitos/filosofia-morte-de-deus.md) |
@@ -67,6 +69,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Sociologia — Aula 01 — Introdução aos clássicos da Sociologia e aos seus principais conceitos](https://www.youtube.com/watch?v=4AjXOAWTicM) | Centro de Mídias de Educação do Amazonas · canal centrodemidias | Passa por Durkheim, Weber e Comte na mesma aula — útil para ver o trio clássico lado a lado antes de estudar cada um. | [Fato social](conceitos/sociologia-fato-social.md) · [Racionalização](conceitos/sociologia-racionalizacao.md) · [Positivismo](conceitos/sociologia-positivismo.md) |
 | videoaula · divulgação | [Pierre Bourdieu: teoria de habitus \| Sociologia #10](https://www.youtube.com/watch?v=7I84Vgrb5wY) | Canal É Fácil Quando se Aprende · canal É Fácil Quando se Aprende | Explica o conceito em linguagem de sala de aula. Depois de assistir, volte ao texto do Bourdieu: o vídeo não substitui a distinção habitus/campo/capital. | [Habitus](conceitos/sociologia-habitus.md) · [Estrutura × Agência](conceitos/eixo-estrutura-agencia.md) |
 | videoaula · divulgação | [Sociologia Brasileira](https://www.youtube.com/watch?v=YFSnf7TzQbM) | Brasil Escola · canal Brasil Escola Oficial | Panorama curto do surgimento da sociologia no Brasil e dos seus campos de pesquisa. | [Formação social brasileira](conceitos/historia-formacao-social-brasileira.md) · [Patrimonialismo](conceitos/sociologia-patrimonialismo.md) |
+| videoaula · divulgação | [A política como vocação em 7 minutos](https://www.youtube.com/watch?v=cXxHZM9t2k8) | Matheus Passos, sobre o texto de Max Weber · canal Prof. Matheus Passos | Síntese de 'A política como vocação': os três tipos de legitimidade e a distinção entre ética da convicção e ética da responsabilidade. Curto; leia Weber depois. | [Racionalização](conceitos/sociologia-racionalizacao.md) · [Estado](conceitos/ciencia-politica-estado.md) · [Legitimidade](conceitos/ciencia-politica-legitimidade.md) |
 | filme · obra de apoio | Tempos Modernos (1936) — *streaming e locação* | Charlie Chaplin | A linha de montagem como imagem da alienação e da racionalização. Citado no plano de estudos do autor. | [Alienação](conceitos/sociologia-alienacao.md) · [Racionalização](conceitos/sociologia-racionalizacao.md) |
 | filme · obra de apoio | Parasita (2019) — *streaming e locação* | Bong Joon-ho | Desigualdade e reprodução de classe encenadas no espaço da casa — bom para discutir habitus e mobilidade social. | [Desigualdade Social](conceitos/sociologia-desigualdade-social.md) · [Habitus](conceitos/sociologia-habitus.md) |
 
@@ -93,12 +96,15 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) | Brasil Escola · canal Brasil Escola Oficial | Define espaço geográfico e percorre as categorias (lugar, paisagem, região, território) em uma aula. | [Espaço geográfico](conceitos/geografia-espaco-geografico.md) · [Território](conceitos/geografia-territorio.md) |
 | videoaula · divulgação | [O que é território?](https://www.youtube.com/watch?v=t5NCxcLozAo) | Brasil Escola · canal Brasil Escola Oficial | Território como relação de poder, não como pedaço de mapa — o ponto que a nota cobra. | [Território](conceitos/geografia-territorio.md) |
 | videoaula · divulgação | [Conceitos de espaço geográfico, região, lugar, território e paisagem — Geografia — Ensino Médio](https://www.youtube.com/watch?v=ExJO6rncnwg) | Canal Futura · canal Canal Futura | Aula do Canal Futura que separa lugar de paisagem com exemplos brasileiros. | [Lugar](conceitos/geografia-lugar.md) · [Paisagem](conceitos/geografia-paisagem.md) |
+| videoaula · divulgação | [A globalização e seus fluxos — Geografia — Ensino Médio](https://www.youtube.com/watch?v=wqRoZF9_J_g) | Canal Futura · canal Canal Futura | Liga globalização a fluxos concretos (mercadorias, capitais, pessoas) — o elo entre 'redes e fluxos' e o eixo local × global. | [Redes e fluxos](conceitos/geografia-redes-fluxos.md) · [Local × Global](conceitos/eixo-local-global.md) |
 
 ### Ciência Política
 
 | Tipo | Título | Quem publica | Por que assistir | Liga a |
 |---|---|---|---|---|
 | videoaula · divulgação | [Democracia](https://www.youtube.com/watch?v=shCNQfoQwqE) | Brasil Escola · canal Brasil Escola Oficial | Tipos de democracia (direta, indireta, semidireta) e os institutos de participação. Bom para fixar vocabulário. | [Democracia](conceitos/ciencia-politica-democracia.md) |
+| videoaula · aula universitária | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Aula 2 de um curso de 10 aulas que acompanha o livro Curso básico de Ciência Política. Comece por aqui: define o campo antes dos conceitos. | [Poder](conceitos/ciencia-politica-poder.md) · [Estado](conceitos/ciencia-politica-estado.md) |
+| videoaula · aula universitária | [Curso de Ciência Política — Aula 10 — Conceito de Ditadura — Autoritarismo](https://www.youtube.com/watch?v=Daa5TIB1CK4) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Separa autoritarismo de totalitarismo com critério tipológico — o vocabulário que a trilha cobra antes de discutir 1964. | [Regime político](conceitos/ciencia-politica-regime-politico.md) · [Ditadura e transição](conceitos/historia-ditadura-transicao.md) |
 
 ### Economia
 
@@ -108,18 +114,37 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · aula universitária | [Inflação e desemprego (Aula 5, parte 1)](https://www.youtube.com/watch?v=qoBb6EtN4dQ) | João Sayad (FEA-USP) · canal Canal USP | Sayad liga inflação, desemprego e conflito distributivo — o elo com a nota de desigualdade. | [Inflação e juros](conceitos/economia-inflacao-juros.md) · [Desigualdade e distribuição](conceitos/economia-desigualdade-distribuicao.md) |
 | videoaula · divulgação | [Macroeconomia, aula 1.2: PIB nas contas nacionais](https://www.youtube.com/watch?v=IMidyc6tAwE) | Rascunhos Econômicos · canal Rascunhos Econômicos | PIB pelas três óticas (produção, renda, demanda), desenhado no papel — a melhor explicação curta em português. | [PIB e crescimento](conceitos/economia-pib-crescimento.md) |
 
+## Cobertura das trilhas
+
+**49 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+
+| Trilha | Nós com mídia | |
+|---|---|---|
+| Psicologia — Nível 2 | 1/8 (12%) | `█░░░░░░░░░` |
+| História — Nível 1 | 1/7 (14%) | `█░░░░░░░░░` |
+| Pensamento Social Brasileiro | 4/11 (36%) | `████░░░░░░` |
+| Economia — Nível 1 | 3/8 (38%) | `████░░░░░░` |
+| Filosofia — Nível 1 | 7/12 (58%) | `██████░░░░` |
+| Sociologia — Nível 1 | 8/12 (67%) | `███████░░░` |
+| Antropologia — Nível 1 | 5/7 (71%) | `███████░░░` |
+| Psicologia — Nível 1 | 8/11 (73%) | `███████░░░` |
+| Ciência Política — Nível 1 | 6/7 (86%) | `█████████░` |
+| Geografia — Nível 1 | 6/7 (86%) | `█████████░` |
+
 ## Canais que valem assinar
 
 Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periódicos aparecem nas tabelas por tema.
 
 | Canal | Indicações aqui |
 |---|---|
-| Brasil Escola Oficial | 5 |
+| Brasil Escola Oficial | 6 |
 | Canal USP | 3 |
+| Prof. Matheus Passos | 3 |
 | SBS tv — Sociedade Brasileira de Sociologia | 3 |
+| Canal Futura | 2 |
 | Filosofia Vermelha | 2 |
 | UNIVESP | 2 |
-| Canal Futura | 1 |
+| Alfredo Oliva | 1 |
 | Glória Vianna | 1 |
 | Icles Rodrigues | 1 |
 | Instituto ESPE | 1 |
@@ -141,4 +166,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 38 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 44 indicações em 8 temas.*
