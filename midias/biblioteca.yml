@@ -550,6 +550,72 @@ itens:
     verificado_em: 2026-10-27
     verificado_como: oembed
 
+  # ------------------------------------------ economia: lacunas fechadas
+  - id: univesp-economia-incentivos
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Economia - Aula 01 - Incentivos, funcionamento dos mercados e efeito dos impostos"
+    autor: "Rodrigo De Losso (Univesp, disciplina CEG-001)"
+    canal: "UNIVESP"
+    url: "https://www.youtube.com/watch?v=wh3e4KLAIsw"
+    tema: economia
+    conceitos: [economia-incentivos, eixo-mercado-estado]
+    nota: "A aula de abertura da disciplina pega o incentivo como objeto: por que preço, imposto e regra mudam comportamento — e o que acontece quando o formulador ignora isso."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: univesp-economia-oferta-demanda
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Economia II - Aula 01 - Oferta e Demanda: Princípios Básicos"
+    autor: "Roberto Alexandre Zanchetta Borghi (Univesp, Engenharia de Produção)"
+    canal: "UNIVESP"
+    url: "https://www.youtube.com/watch?v=gdAkCrzyZsY"
+    tema: economia
+    conceitos: [economia-oferta-demanda]
+    nota: "Curvas, deslocamentos e equilíbrio do zero, em ritmo de graduação. Assista antes de ler o capítulo 2 do Pindyck."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: unicamp-economia-aula-01
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Aula 1 — Introdução a Economia"
+    autor: "Orlando Fontes Lima Jr. e Sérgio Adriano Loureiro (FEC-Unicamp), nos Cursos Abertos do LALT"
+    canal: "LALT — Cursos Abertos (Unicamp)"
+    url: "https://lalt.fecfau.unicamp.br/cursos_abertos/introducao-a-economia/aula_1.html"
+    tema: economia
+    conceitos: [economia-escassez-custo-oportunidade, eixo-mercado-estado]
+    nota: "Curso de graduação da Engenharia Civil da Unicamp, aberto e com material de apoio. A aula 1 define economia, escassez e os problemas econômicos fundamentais; o vídeo é um mp4 hospedado no Google Drive, na própria página (que também traz slides, leituras e exercícios)."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: unicamp-economia-aula-05
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Aula 5 — Demanda, Oferta e Elasticidade"
+    autor: "Orlando Fontes Lima Jr. e Sérgio Adriano Loureiro (FEC-Unicamp), nos Cursos Abertos do LALT"
+    canal: "LALT — Cursos Abertos (Unicamp)"
+    url: "https://lalt.fecfau.unicamp.br/cursos_abertos/introducao-a-economia/aula_5.html"
+    tema: economia
+    conceitos: [economia-oferta-demanda]
+    nota: "Aprofunda o que a aula introdutória só anuncia: elasticidade-preço, cruzada e renda, com exercícios resolvidos na página. Vídeo em mp4 no Google Drive."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: unicamp-economia-aula-12
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Aula 12 — Teoria do Bem-Estar e Externalidades"
+    autor: "Orlando Fontes Lima Jr. e Sérgio Adriano Loureiro (FEC-Unicamp), nos Cursos Abertos do LALT"
+    canal: "LALT — Cursos Abertos (Unicamp)"
+    url: "https://lalt.fecfau.unicamp.br/cursos_abertos/introducao-a-economia/aula_12.html"
+    tema: economia
+    conceitos: [economia-externalidades-bens-publicos, eixo-mercado-estado]
+    nota: "A falha de mercado como argumento para a intervenção do Estado: externalidades, custo social e o que o preço não captura. É a base econômica do eixo mercado × Estado. Vídeo em mp4 no Google Drive; a página traz slides, Pindyck cap. 18 e exercícios."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
   # ------------------------------------------------------------------- geografia
   - id: brasilescola-espaco
     tipo: videoaula
