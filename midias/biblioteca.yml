@@ -245,6 +245,111 @@ itens:
     verificado_em: 2026-10-27
     verificado_como: oembed
 
+  # --------------------------------------- psicologia: lacunas fechadas
+  - id: minutospsiquicos-vies-confirmacao
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "VIÉS DE CONFIRMAÇÃO: VER PARA CRER OU CRER PARA VER?"
+    autor: "André Rabelo (Minutos Psíquicos)"
+    canal: "Minutos Psíquicos"
+    url: "https://www.youtube.com/watch?v=LJ9L7aVTmmE"
+    tema: psicologia
+    conceitos: [psicologia-vieses-cognitivos]
+    nota: "Um viés por vídeo, com o experimento que o sustenta. Comece por este e leia o capítulo correspondente de 'Rápido e devagar'."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: guerrapires-kahneman-sistemas
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Duas formas de pensar: sistema 1 e sistema 2 (Daniel Kahneman)"
+    autor: "Jorge Guerra Pires"
+    canal: "Jorge Guerra Pires, Ph.D."
+    url: "https://www.youtube.com/watch?v=fFSnAdf0zkw"
+    tema: psicologia
+    conceitos: [psicologia-vieses-cognitivos]
+    nota: "Os dois sistemas de processamento explicados em português; é a base sobre a qual os vieses fazem sentido."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: nerdologia-dissonancia
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Dissonância Cognitiva | Nerdologia"
+    autor: "Altay de Souza (roteiro e apresentação)"
+    canal: "Nerdologia"
+    url: "https://www.youtube.com/watch?v=p7PO8G8LMHw"
+    tema: psicologia
+    conceitos: [psicologia-dissonancia-cognitiva]
+    nota: "Reconstrói o caso da seita que esperava o dilúvio (Festinger) e explica por que a crença sobrevive ao desmentido. Par audiovisual do artigo que já está na lista."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: fulgencio-apego-desenvolvimento
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "A Teoria Do Apego (Bowlby & Ainsworth) como uma teoria do desenvolvimento"
+    autor: "Leopoldo Fulgencio (Instituto de Psicologia da USP)"
+    canal: "Editor universoacademicovideo"
+    url: "https://www.youtube.com/watch?v=WucgqDxJukE"
+    tema: psicologia
+    conceitos: [psicologia-apego]
+    nota: "Aula do Prof. Fulgencio (IP-USP) que trata o apego como teoria do desenvolvimento, e não como rótulo de personalidade. É a versão em sala de aula do mesmo tema."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: professor-davi-zdp
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "PIAGET, VYGOTSKY E WALLON - ZONA DE DESENVOLVIMENTO PROXIMAL (ZDP) | Vygotsky"
+    autor: "Professor Davi"
+    canal: "Professor Davi"
+    url: "https://www.youtube.com/watch?v=UHPR2oC2xDA"
+    tema: psicologia
+    conceitos: [psicologia-zona-desenvolvimento-proximal]
+    nota: "Situa a ZDP entre Piaget e Wallon e explica os três níveis (real, proximal, potencial) com exemplos de sala de aula."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: universo-psicologia-humanista
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Psicologia Humanista: A 3ª Força da Psicologia"
+    autor: "Universo da Psicologia"
+    canal: "Universo da Psicologia"
+    url: "https://www.youtube.com/watch?v=s3tXQDK6BNc"
+    tema: psicologia
+    conceitos: [psicologia-humanismo]
+    nota: "Apresenta o humanismo como terceira força, de Maslow e Rogers a Fromm, e o contraste com behaviorismo e psicanálise."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: ted-csikszentmihalyi-flow
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Fluidez, o segredo da felicidade"
+    autor: "Mihaly Csikszentmihalyi (TED2004)"
+    canal: "TED"
+    url: "https://www.ted.com/talks/mihaly_csikszentmihalyi_flow_the_secret_to_happiness"
+    tema: psicologia
+    conceitos: [psicologia-fluxo]
+    nota: "O próprio autor explicando o flow, com transcrição e legendas em português na página. Palestra de 2004: use como porta de entrada do livro 'Flow'."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: luislouis-emocao-sentimento
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "O que é: emoção, sentimento e consciência?"
+    autor: "Luis Louis"
+    canal: "Luis Louis"
+    url: "https://www.youtube.com/watch?v=SRZP491gJOI"
+    tema: psicologia
+    conceitos: [eixo-mente-corpo]
+    nota: "Separa emoção, sentimento e consciência seguindo 'O erro de Descartes', de Damásio — a ponte entre o eixo mente-corpo e a neurociência afetiva."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
   # ---------------------------------------------------------------- antropologia
   - id: brasilescola-relativismo
     tipo: videoaula
@@ -309,6 +414,85 @@ itens:
     tema: historia
     conceitos: [historia-formacao-social-brasileira, sociologia-cordialidade]
     nota: "Mesa de abertura do ciclo: os quatro intérpretes do Brasil discutidos por especialistas. Melhor porta de entrada da trilha Pensamento Social Brasileiro."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  # ----------------------------------------- história: lacunas fechadas
+  - id: barchi-fonte-historica
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Fonte Histórica (Dicionário Histórico n.6)"
+    autor: "Felipe Barchi"
+    canal: "Felipe Barchi"
+    url: "https://www.youtube.com/watch?v=PEj7eALnrQs"
+    tema: historia
+    conceitos: [historia-fonte-historica]
+    nota: "Verbete em vídeo sobre o que conta como fonte histórica. Bom para fixar o vocabulário antes de ler o capítulo de Bloch sobre a crítica documental."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: historiaemtopicos-braudel-duracoes
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "AS DURAÇÕES DO TEMPO HISTÓRICO: curta, média e longa duração (Fernand Braudel)"
+    autor: "Prof. DavidBandian"
+    canal: "HISTÓRIA EM TÓPICOS - Prof. DavidBandian"
+    url: "https://www.youtube.com/watch?v=eXdxoxH33EI"
+    tema: historia
+    conceitos: [historia-tempo-historico]
+    nota: "As três durações de Braudel apresentadas em sequência, com exemplos. Serve de mapa antes do artigo 'História e Ciências Sociais: a longa duração'."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: magno-memoria-historia
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Memória e História / Jaques Le Goff e Pierre Nora"
+    autor: "Professor Magno"
+    canal: "Professor Magno"
+    url: "https://www.youtube.com/watch?v=OjH5gYy_gyw"
+    tema: historia
+    conceitos: [historia-memoria]
+    nota: "Contrasta memória vivida e operação histórica a partir de Le Goff e Nora. Complementa a nota; a distinção conceitual continua vindo do texto dos autores."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: quilombo-ufrj-quijano-colonialidade
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "COLONIALIDADE DO PODER, EUROCENTRISMO e AMÉRICA LATINA (Aníbal Quijano) Aula 1"
+    autor: "Prof. Wallace de Moraes, pelo projeto Quilombo da UFRJ"
+    canal: "QUILOMBO DA UFRJ"
+    url: "https://www.youtube.com/watch?v=ptf6OtO8N34"
+    tema: historia
+    conceitos: [historia-colonialismo]
+    nota: "Aula de leitura guiada do texto de Quijano: colonialidade do poder, eurocentrismo e América Latina. Leva o debate do colonialismo histórico para a sua permanência hoje."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: futura-escravidao-brasil
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Escravidão no Brasil - História - Ensino Médio"
+    autor: "Canal Futura"
+    canal: "Canal Futura"
+    url: "https://www.youtube.com/watch?v=r5kF0HUkuug"
+    tema: historia
+    conceitos: [historia-escravidao-abolicao]
+    nota: "Aula de ensino médio que trata do tráfico, do cotidiano da escravidão, da posição da Igreja e das resistências indígena e negra. Panorama para organizar a cronologia."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: iea-usp-continuidade-ruptura
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Continuidade e Ruptura na Construção Nacional do Brasil"
+    autor: "Lourdes Sola, Jorge Caldeira, Maria Tereza Sadek e Eduardo Viola (IEA-USP)"
+    canal: "Instituto de Estudos Avançados da USP"
+    url: "https://www.youtube.com/watch?v=qlVagBE1CBE"
+    tema: historia
+    conceitos: [eixo-continuidade-ruptura]
+    nota: "Mesa do IEA-USP que parte da independência como ruptura e continuidade ao mesmo tempo. Útil para ver o par conceitual aplicado a um caso concreto — 2h49, assista em blocos."
     verificado_em: 2026-10-27
     verificado_como: oembed
 
