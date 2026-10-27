@@ -2,7 +2,7 @@
 
 # Mídias
 
-**44 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**58 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -19,11 +19,11 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 | Tema | Indicações | Onde começar |
 |---|---|---|
-| [Psicologia](#psicologia) | 8 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
+| [Psicologia](#psicologia) | 16 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
 | [Filosofia](#filosofia) | 9 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
 | [Sociologia](#sociologia) | 11 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
 | [Antropologia](#antropologia) | 4 | [Relativismo cultural](https://www.youtube.com/watch?v=D247x6t31is) |
-| [História](#historia) | 2 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
+| [História](#historia) | 8 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 4 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
 | [Ciência Política](#ciencia-politica) | 3 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
 | [Economia](#economia) | 3 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
@@ -39,6 +39,14 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Teoria da Gestalt \| Max Wertheimer \| Introdução à Psicologia #6](https://www.youtube.com/watch?v=yrmX-CPye0U) | Leituras do Lucas · canal Leituras do Lucas | Apresenta as leis de organização perceptual e situa a Gestalt no debate inatismo × empirismo. | [Psicologia da Gestalt](conceitos/psicologia-gestalt.md) · [Inatismo × Empirismo](conceitos/eixo-inatismo-empirismo.md) |
 | videoaula · divulgação | [Psicologia 7 — Pavlov, Watson, Skinner — Behaviorismo](https://www.youtube.com/watch?v=IE8lzYxVW6M) | Socran · canal Socran | Pavlov, Watson e Skinner na mesma aula, com os experimentos. Serve como mapa antes de ler o texto original. | [Behaviorismo](conceitos/psicologia-behaviorismo.md) · [Livre-arbítrio × Determinismo](conceitos/eixo-livre-arbitrio-determinismo.md) |
 | videoaula · divulgação | [Milgram — Experimento de Obediência à Autoridade (legendado em português)](https://www.youtube.com/watch?v=9AFO0MDu_Ws) | Professor Thiago Coronato (com legendas) · canal Professor Thiago Coronato | O experimento original, com legendas. Assista antes de ler o artigo do SciELO que discute os resultados. | [Obediência à Autoridade](conceitos/psicologia-obediencia-autoridade.md) · [Indivíduo × Grupo](conceitos/eixo-individuo-grupo.md) |
+| videoaula · divulgação | [VIÉS DE CONFIRMAÇÃO: VER PARA CRER OU CRER PARA VER?](https://www.youtube.com/watch?v=LJ9L7aVTmmE) | André Rabelo (Minutos Psíquicos) · canal Minutos Psíquicos | Um viés por vídeo, com o experimento que o sustenta. Comece por este e leia o capítulo correspondente de 'Rápido e devagar'. | [Vieses cognitivos](conceitos/psicologia-vieses-cognitivos.md) |
+| videoaula · divulgação | [Duas formas de pensar: sistema 1 e sistema 2 (Daniel Kahneman)](https://www.youtube.com/watch?v=fFSnAdf0zkw) | Jorge Guerra Pires · canal Jorge Guerra Pires, Ph.D. | Os dois sistemas de processamento explicados em português; é a base sobre a qual os vieses fazem sentido. | [Vieses cognitivos](conceitos/psicologia-vieses-cognitivos.md) |
+| videoaula · divulgação | [Dissonância Cognitiva \| Nerdologia](https://www.youtube.com/watch?v=p7PO8G8LMHw) | Altay de Souza (roteiro e apresentação) · canal Nerdologia | Reconstrói o caso da seita que esperava o dilúvio (Festinger) e explica por que a crença sobrevive ao desmentido. Par audiovisual do artigo que já está na lista. | [Dissonância cognitiva](conceitos/psicologia-dissonancia-cognitiva.md) |
+| videoaula · aula universitária | [A Teoria Do Apego (Bowlby & Ainsworth) como uma teoria do desenvolvimento](https://www.youtube.com/watch?v=WucgqDxJukE) | Leopoldo Fulgencio (Instituto de Psicologia da USP) · canal Editor universoacademicovideo | Aula do Prof. Fulgencio (IP-USP) que trata o apego como teoria do desenvolvimento, e não como rótulo de personalidade. É a versão em sala de aula do mesmo tema. | [Apego](conceitos/psicologia-apego.md) |
+| videoaula · divulgação | [PIAGET, VYGOTSKY E WALLON - ZONA DE DESENVOLVIMENTO PROXIMAL (ZDP) \| Vygotsky](https://www.youtube.com/watch?v=UHPR2oC2xDA) | Professor Davi · canal Professor Davi | Situa a ZDP entre Piaget e Wallon e explica os três níveis (real, proximal, potencial) com exemplos de sala de aula. | [Zona de Desenvolvimento Proximal (ZDP)](conceitos/psicologia-zona-desenvolvimento-proximal.md) |
+| videoaula · divulgação | [Psicologia Humanista: A 3ª Força da Psicologia](https://www.youtube.com/watch?v=s3tXQDK6BNc) | Universo da Psicologia · canal Universo da Psicologia | Apresenta o humanismo como terceira força, de Maslow e Rogers a Fromm, e o contraste com behaviorismo e psicanálise. | [Psicologia Humanista](conceitos/psicologia-humanismo.md) |
+| videoaula · divulgação | [Fluidez, o segredo da felicidade](https://www.ted.com/talks/mihaly_csikszentmihalyi_flow_the_secret_to_happiness) | Mihaly Csikszentmihalyi (TED2004) · canal TED | O próprio autor explicando o flow, com transcrição e legendas em português na página. Palestra de 2004: use como porta de entrada do livro 'Flow'. | [Fluxo](conceitos/psicologia-fluxo.md) |
+| videoaula · divulgação | [O que é: emoção, sentimento e consciência?](https://www.youtube.com/watch?v=SRZP491gJOI) | Luis Louis · canal Luis Louis | Separa emoção, sentimento e consciência seguindo 'O erro de Descartes', de Damásio — a ponte entre o eixo mente-corpo e a neurociência afetiva. | [Mente × Corpo](conceitos/eixo-mente-corpo.md) |
 | artigo · fonte acadêmica | [Da obediência ao consentimento: reflexões sobre o experimento de Milgram à luz das instituições modernas](https://www.scielo.br/j/se/a/PWkPLyXbvd7TTYHq5MqNg8c/) | Sandra Leal de Melo Dahia · Sociedade e Estado, v. 30, n. 1 (2015) — SciELO | Lê Milgram com Giddens (sistemas peritos) e Arendt (responsabilidade moral) e desloca a análise de 'obediência' para 'consentimento'. Acesso aberto. | [Obediência à Autoridade](conceitos/psicologia-obediencia-autoridade.md) · [Indivíduo × Grupo](conceitos/eixo-individuo-grupo.md) |
 | resenha · divulgação | [Estruturalismo de Edward B. Titchener](https://periodicos.unoesc.edu.br/apeuv/article/view/35113) | Kauany Tomazi et al. · Anuário Pesquisa e Extensão Unoesc Videira, v. 9 (2024) | Resumo acadêmico de seis páginas sobre o método introspectivo e os elementos da consciência. Fonte secundária — use como ponte até Titchener. | [Estruturalismo](conceitos/psicologia-estruturalismo.md) |
 | filme · obra de apoio | O Experimento (Das Experiment, 2001) — *streaming e locação* | Oliver Hirschbiegel | Ficção inspirada no experimento do Stanford Prison: papel social, autoridade e violência. Depois, compare com Milgram e com a crítica ética. | [Obediência à Autoridade](conceitos/psicologia-obediencia-autoridade.md) · [Indivíduo × Grupo](conceitos/eixo-individuo-grupo.md) |
@@ -88,6 +96,12 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 |---|---|---|---|---|
 | videoaula · aula universitária | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) | Marcos Napolitano (FFLCH-USP) · canal Canal USP | Aula universitária sobre o uso (e o abuso) do rótulo 'populismo' entre 1946 e 1964 — o antídoto contra o senso comum. | [Populismo](conceitos/ciencia-politica-populismo.md) · [Ditadura e transição](conceitos/historia-ditadura-transicao.md) |
 | videoaula · aula universitária | [A Formação do Brasil #1: Gilberto Freyre, Sérgio Buarque de Holanda, Caio Prado Jr. e Celso Furtado](https://www.youtube.com/watch?v=-RsGBXUJPtg) | Instituto do Legislativo Paulista (ILP) · canal Instituto do Legislativo Paulista (ILP) | Mesa de abertura do ciclo: os quatro intérpretes do Brasil discutidos por especialistas. Melhor porta de entrada da trilha Pensamento Social Brasileiro. | [Formação social brasileira](conceitos/historia-formacao-social-brasileira.md) · [Cordialidade](conceitos/sociologia-cordialidade.md) |
+| videoaula · divulgação | [Fonte Histórica (Dicionário Histórico n.6)](https://www.youtube.com/watch?v=PEj7eALnrQs) | Felipe Barchi · canal Felipe Barchi | Verbete em vídeo sobre o que conta como fonte histórica. Bom para fixar o vocabulário antes de ler o capítulo de Bloch sobre a crítica documental. | [Fonte histórica](conceitos/historia-fonte-historica.md) |
+| videoaula · divulgação | [AS DURAÇÕES DO TEMPO HISTÓRICO: curta, média e longa duração (Fernand Braudel)](https://www.youtube.com/watch?v=eXdxoxH33EI) | Prof. DavidBandian · canal HISTÓRIA EM TÓPICOS - Prof. DavidBandian | As três durações de Braudel apresentadas em sequência, com exemplos. Serve de mapa antes do artigo 'História e Ciências Sociais: a longa duração'. | [Tempo histórico (longa duração)](conceitos/historia-tempo-historico.md) |
+| videoaula · divulgação | [Memória e História / Jaques Le Goff e Pierre Nora](https://www.youtube.com/watch?v=OjH5gYy_gyw) | Professor Magno · canal Professor Magno | Contrasta memória vivida e operação histórica a partir de Le Goff e Nora. Complementa a nota; a distinção conceitual continua vindo do texto dos autores. | [Memória e esquecimento](conceitos/historia-memoria.md) |
+| videoaula · aula universitária | [COLONIALIDADE DO PODER, EUROCENTRISMO e AMÉRICA LATINA (Aníbal Quijano) Aula 1](https://www.youtube.com/watch?v=ptf6OtO8N34) | Prof. Wallace de Moraes, pelo projeto Quilombo da UFRJ · canal QUILOMBO DA UFRJ | Aula de leitura guiada do texto de Quijano: colonialidade do poder, eurocentrismo e América Latina. Leva o debate do colonialismo histórico para a sua permanência hoje. | [Colonialismo](conceitos/historia-colonialismo.md) |
+| videoaula · divulgação | [Escravidão no Brasil - História - Ensino Médio](https://www.youtube.com/watch?v=r5kF0HUkuug) | Canal Futura · canal Canal Futura | Aula de ensino médio que trata do tráfico, do cotidiano da escravidão, da posição da Igreja e das resistências indígena e negra. Panorama para organizar a cronologia. | [Escravidão e abolição](conceitos/historia-escravidao-abolicao.md) |
+| videoaula · aula universitária | [Continuidade e Ruptura na Construção Nacional do Brasil](https://www.youtube.com/watch?v=qlVagBE1CBE) | Lourdes Sola, Jorge Caldeira, Maria Tereza Sadek e Eduardo Viola (IEA-USP) · canal Instituto de Estudos Avançados da USP | Mesa do IEA-USP que parte da independência como ruptura e continuidade ao mesmo tempo. Útil para ver o par conceitual aplicado a um caso concreto — 2h49, assista em blocos. | [Continuidade × Ruptura](conceitos/eixo-continuidade-ruptura.md) |
 
 ### Geografia
 
@@ -116,20 +130,20 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 ## Cobertura das trilhas
 
-**49 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+**67 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
 
 | Trilha | Nós com mídia | |
 |---|---|---|
-| Psicologia — Nível 2 | 1/8 (12%) | `█░░░░░░░░░` |
-| História — Nível 1 | 1/7 (14%) | `█░░░░░░░░░` |
-| Pensamento Social Brasileiro | 4/11 (36%) | `████░░░░░░` |
 | Economia — Nível 1 | 3/8 (38%) | `████░░░░░░` |
-| Filosofia — Nível 1 | 7/12 (58%) | `██████░░░░` |
+| Pensamento Social Brasileiro | 6/11 (55%) | `██████░░░░` |
+| Filosofia — Nível 1 | 8/12 (67%) | `███████░░░` |
 | Sociologia — Nível 1 | 8/12 (67%) | `███████░░░` |
 | Antropologia — Nível 1 | 5/7 (71%) | `███████░░░` |
-| Psicologia — Nível 1 | 8/11 (73%) | `███████░░░` |
 | Ciência Política — Nível 1 | 6/7 (86%) | `█████████░` |
 | Geografia — Nível 1 | 6/7 (86%) | `█████████░` |
+| Psicologia — Nível 1 | 10/11 (91%) | `█████████░` |
+| História — Nível 1 | 7/7 (100%) | `██████████` |
+| Psicologia — Nível 2 | 8/8 (100%) | `██████████` |
 
 ## Canais que valem assinar
 
@@ -138,23 +152,36 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Canal | Indicações aqui |
 |---|---|
 | Brasil Escola Oficial | 6 |
+| Canal Futura | 3 |
 | Canal USP | 3 |
 | Prof. Matheus Passos | 3 |
 | SBS tv — Sociedade Brasileira de Sociologia | 3 |
-| Canal Futura | 2 |
 | Filosofia Vermelha | 2 |
 | UNIVESP | 2 |
 | Alfredo Oliva | 1 |
+| Editor universoacademicovideo | 1 |
+| Felipe Barchi | 1 |
 | Glória Vianna | 1 |
+| HISTÓRIA EM TÓPICOS - Prof. DavidBandian | 1 |
 | Icles Rodrigues | 1 |
 | Instituto ESPE | 1 |
+| Instituto de Estudos Avançados da USP | 1 |
 | Instituto do Legislativo Paulista (ILP) | 1 |
 | Isto não é Filosofia | 1 |
+| Jorge Guerra Pires, Ph.D. | 1 |
 | Kamila Thais da Silva Figueira | 1 |
 | Leituras do Lucas | 1 |
+| Luis Louis | 1 |
+| Minutos Psíquicos | 1 |
+| Nerdologia | 1 |
+| Professor Davi | 1 |
+| Professor Magno | 1 |
 | Professor Thiago Coronato | 1 |
+| QUILOMBO DA UFRJ | 1 |
 | Rascunhos Econômicos | 1 |
 | Socran | 1 |
+| TED | 1 |
+| Universo da Psicologia | 1 |
 | Victor Sales Pinheiro | 1 |
 | centrodemidias | 1 |
 | É Fácil Quando se Aprende | 1 |
@@ -166,4 +193,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 44 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 58 indicações em 8 temas.*

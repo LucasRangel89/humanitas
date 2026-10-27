@@ -21,9 +21,9 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **44 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **58 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, filmes e um
-podcast. A própria página mostra a **cobertura das trilhas**: 49 dos 90 nós com
+podcast. A própria página mostra a **cobertura das trilhas**: 67 dos 90 nós com
 link já têm mídia ligada.
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
@@ -74,40 +74,50 @@ entretenimento.
 
 | Tema | Indicações | Melhor porta de entrada |
 |---|---|---|
+| Psicologia | 16 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
 | Sociologia | 11 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
-| Psicologia | 8 | *Introdução à Psicanálise* (Instituto ESPE) |
 | Filosofia | 9 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
-| Ciência Política | 3 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
+| História | 8 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Antropologia | 4 | *Relativismo cultural* (Brasil Escola) |
-| Economia | 3 | *Introdução à Inflação* (Denise Cyrillo, FEA-USP) |
 | Geografia | 4 | *Espaço geográfico* (Brasil Escola) |
-| História | 2 | *A Formação do Brasil #1* (ILP) e Napolitano sobre "populismo" |
+| Ciência Política | 3 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
+| Economia | 3 | *Introdução à Inflação* (Denise Cyrillo, FEA-USP) |
 
 ### Cobertura das trilhas
 
 O gerador compara os links de cada nó com as notas citadas em `conceitos` e publica
-a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **49 de 90
+a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **67 de 90
 nós com link** (ficam fora os nós "síntese no diário" e a trilha Integrada, cujos
 nós não apontam para notas).
 
 | Trilha | Nós com mídia |
 |---|---|
+| História — Nível 1 | 7/7 (100%) |
+| Psicologia — Nível 2 | 8/8 (100%) |
+| Psicologia — Nível 1 | 10/11 (91%) |
 | Ciência Política — Nível 1 | 6/7 (86%) |
 | Geografia — Nível 1 | 6/7 (86%) |
-| Psicologia — Nível 1 | 8/11 (73%) |
 | Antropologia — Nível 1 | 5/7 (71%) |
+| Filosofia — Nível 1 | 8/12 (67%) |
 | Sociologia — Nível 1 | 8/12 (67%) |
-| Filosofia — Nível 1 | 7/12 (58%) |
+| Pensamento Social Brasileiro | 6/11 (55%) |
 | Economia — Nível 1 | 3/8 (38%) |
-| Pensamento Social Brasileiro | 4/11 (36%) |
-| História — Nível 1 | 1/7 (14%) |
-| Psicologia — Nível 2 | 1/8 (12%) |
+
+As duas trilhas que estavam no fim da tabela (História, 14%, e Psicologia Nível 2,
+12%) fecharam em 100% nesta rodada. Parte da subida das outras vem de nós
+compartilhados, e não de mídia feita para elas: Filosofia ganhou um nó porque
+`eixo-mente-corpo` é citado lá também; Pensamento Social Brasileiro ganhou dois
+porque as notas de `historia-colonialismo` e `historia-escravidao-abolicao` são
+usadas nos nós da trilha. Cobertura é cobertura — mas o peso da mídia continua
+sendo o que diz o campo `peso`.
 
 Acervos que aparecem mais de uma vez e valem assinar: **Canal USP** (aulas de
 graduação da FEA e da FFLCH), **UNIVESP** (cursos completos de Sociologia,
 Filosofia da Educação), **SBS tv** (ciclo *Aulas Abertas* da Sociedade Brasileira
 de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
-(conferências sobre formação do Brasil).
+(conferências sobre formação do Brasil), **IEA-USP** e **Quilombo da UFRJ**
+(universidade em vídeo aberto) e, para revisão rápida, **Minutos Psíquicos**,
+**Nerdologia** e **Canal Futura**.
 
 ### Lacunas conhecidas
 
@@ -116,8 +126,16 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   [e-Aulas](https://eaulas.usp.br/) e são excelentes — **mas exigem login USP**
   (conferido em 27/10/2026), então não entram nesta lista. Ficam como sugestão
   para quem tem vínculo.
-- **História e Psicologia Nível 2**: 1 nó coberto em cada. São as duas maiores
-  lacunas agora.
+- **Economia**: 3 de 8 — o gargalo seguinte. Falta vídeo aberto de qualidade
+  sobre macro, moeda e pensamento econômico (a FEA-USP tem aula, mas o acervo
+  aberto é pequeno).
+- **História**: 7 de 7, mas com peso desigual — só duas entradas são de nível
+  universitário (IEA-USP e Quijano pelo Quilombo da UFRJ). As demais são
+  divulgação correta, não aula de graduação.
+- **Psicologia Nível 2**: 8 de 8. O elo mais fraco é `psicologia-fluxo`, que
+  depende de uma palestra do próprio Csikszentmihalyi (TED, 2004) e não de uma
+  aula em português; e `eixo-mente-corpo` está apoiado em divulgação sobre
+  Damásio, não em aula de neurociência.
 - **Filosofia**: ainda falta Butler (o podcast cobre mal) e uma aula sobre
   fenomenologia (Husserl/Heidegger).
 - **Integrada**: nenhuma indicação; a trilha não tem nós linkados, então nem
@@ -211,8 +229,8 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 
 ## 7. Próximos passos
 
-1. **Fechar as lacunas de História (1/7) e Psicologia Nível 2 (1/8)** — são as
-   trilhas mais descobertas.
+1. **Economia (3/8)** — é a única trilha ainda abaixo de 40%; precisa de vídeo
+   aberto de macro, moeda e história do pensamento econômico.
 2. **Uma mídia por nó**: a meta não é 133 links, é que cada trilha tenha **uma
    porta de entrada em vídeo** e **uma leitura de apoio por nó**. A tabela de
    cobertura em `midias.md` é o placar.
