@@ -14,6 +14,7 @@ python -m scripts.painel flashcards  # gera flashcards.csv com GUID estável (An
 python -m scripts.painel auditar     # links, metadados, duplicados, órfãs, seções ausentes
 python -m scripts.painel tudo        # índice + tabela + progresso + flashcards
 python -m scripts.painel aplicar-progresso --arquivo progresso.json  # marcação feita no site
+python -m scripts.painel midias       # midias.md + indices/midias.json (biblioteca de mídias)
 python -m scripts.painel nova        # cria o esqueleto de uma nota a partir do template
 python -m scripts.painel pendencias  # o que falta em cada nota para virar padrão-ouro
 python -m scripts.painel afirmacoes # gera relatorio-afirmacoes.md para conferência manual
@@ -147,6 +148,7 @@ não de navegação. Nada disso é editado à mão: mudou a nota, mudou o painel
 |---|---|
 | `index.md` | Painel inicial (dashboard) |
 | `registrar.md` | **Registrar**: monta uma nota nova, lista pendências, cartões e a central de progresso |
+| `midias.md` | **Mídias**: videoaulas, cursos, artigos, filmes e podcasts por tema, com data de verificação |
 | `trilhas/index.md` | Trilhas com progresso, status e ordem de percurso |
 | `conceitos/index.md` | Notas agrupadas por tema, com ✔/○ por estado |
 | `eixos.md` | Mapa dos debates, com a pergunta de cada eixo |
@@ -287,6 +289,7 @@ scripts/painel.py
 ├── pendências (pendencias: checklist do padrão-ouro)
 ├── site (monta site-src/ sem acervo nem anexos)
 ├── marcacao (aplicar-progresso: progresso exportado pelo site → trilhas)
+├── midias (biblioteca de mídias: valida o YAML, gera midias.md e indices/midias.json)
 └── comandos (indice, tabela, progresso, flashcards, auditar, tudo, nova, pendencias, site, aplicar-progresso)
 tests/
 ├── conftest.py   (mini-repositório válido como fixture)

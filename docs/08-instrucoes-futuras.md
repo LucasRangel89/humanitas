@@ -16,6 +16,8 @@
 | `scripts/painel/` | CLI que gera índices, progresso, flashcards, grafo, obras, retenção e site | PRs de funcionalidade |
 | `scripts/painel/marcacao.py` | Aplica nas trilhas o `progresso.json` exportado pelo site (idempotente) | PRs de funcionalidade |
 | `docs/assets/js/` | `progresso.js` (marcação local + central de backup em `/registrar/`) e `registrar.js` (formulário → Markdown/GitHub) | PRs de usabilidade |
+| `midias/biblioteca.yml` | Curadoria de videoaulas, artigos, filmes e podcasts (com data e método de verificação) | PRs de conteúdo |
+| `scripts/painel/midias.py` | Valida a biblioteca e gera `midias.md` + `indices/midias.json` | PRs de funcionalidade |
 | `templates/` | Modelos para `nova` | Ao adicionar campo novo |
 | `docs/06-manutencao-e-ci.md` | Como usar `make painel` e CI | Ao mudar workflow |
 | `docs/07-rumos-e-proximos-passos.md` | Backlog priorizado | Ao fechar/entregar marco |

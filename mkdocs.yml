@@ -95,6 +95,7 @@ nav:
       - Progresso: progresso.md
       - Retenção: retencao.md
   - Biblioteca:
+      - Mídias: midias.md
       - Obras: obras.md
       - Fichas de leitura: acervo/fichas/index.md
       - Trechos: trechos/index.md
@@ -103,6 +104,7 @@ nav:
       - Guias: docs/index.md
       - Mapa das humanidades: docs/09-mapa-das-humanidades.md
       - Ritual de estudo: docs/10-ritual-de-estudo.md
+      - Mídias e videoaulas: docs/11-midias-e-videoaulas.md
       - Como manter o painel: docs/08-instrucoes-futuras.md
       - Sobre: sobre.md
 

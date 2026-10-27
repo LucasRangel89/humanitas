@@ -79,6 +79,14 @@ from .retencao import calcular_retencao, gravar_retencao, cmd_retencao
 
 from .marcacao import aplicar_progresso
 
+from .midias import (
+    carregar as carregar_midias,
+    validar as validar_midias,
+    gravar as gravar_midias,
+    verificar as verificar_midias,
+    gerar_markdown as gerar_markdown_midias,
+)
+
 from .auditoria import (
     _links_quebrados,
     _wikilinks,

@@ -8,6 +8,7 @@ from collections import Counter
 from .modelo import TEMAS, PASTAS_SITE, ARQUIVOS_SITE, ler, listar_md, rel, _limpar_erros_frontmatter, normalizar
 from .indice import montar_indice, coletar_conceitos
 from .progresso import calcular_progresso, pendencias_da_nota, progresso_barra
+from .midias import carregar as carregar_midias, gerar_markdown as gerar_markdown_midias, titulos_dos_conceitos
 from .auditoria import _links_quebrados
 from .scaffolding import slug
 
@@ -618,6 +619,13 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
         (destino / nome).write_text(ler(raiz / nome), encoding="utf-8")
 
     (destino / "index.md").write_text(pagina_dashboard(indice), encoding="utf-8")
+    if (raiz / "midias" / "biblioteca.yml").exists():
+        itens_midia, atualizado_midia, _ = carregar_midias(raiz)
+        (destino / "midias.md").write_text(
+            gerar_markdown_midias(itens_midia, atualizado_midia, titulos_dos_conceitos(raiz)),
+            encoding="utf-8",
+        )
+
     guias = {p.name for p in (raiz / "docs").glob("*.md")} if (raiz / "docs").exists() else set()
     (destino / "registrar.md").write_text(
         pagina_registrar(indice, guias=guias), encoding="utf-8"
