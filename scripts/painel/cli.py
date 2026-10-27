@@ -17,6 +17,7 @@ from .grafo import cmd_grafo
 from .obras import cmd_obras
 from .retencao import cmd_retencao
 from .marcacao import aplicar_progresso
+from .midias import gravar as gravar_midias, verificar as verificar_midias
 import json as _json
 
 # ---------------------------------------------------------------------------
@@ -111,8 +112,25 @@ def cmd_auditar(raiz: pathlib.Path, estrito: bool = False) -> int:
 
 
 # ---------------------------------------------------------------------------
+def cmd_midias(raiz: pathlib.Path, **opcoes) -> int:
+    """Regenera midias.md e indices/midias.json a partir de midias/biblioteca.yml."""
+    arquivo = raiz / "midias" / "biblioteca.yml"
+    if not arquivo.exists():
+        print("Nada a fazer: midias/biblioteca.yml não existe.")
+        return 0
+    md, js, total = gravar_midias(raiz)
+    print(f"{rel(md, raiz)} regenerado: {total} indicação(ões) de mídia.")
+    print(f"{rel(js, raiz)} regenerado.")
+    erros, avisos = verificar_midias(raiz)
+    _imprimir_lista("Avisos", avisos)
+    if erros:
+        _imprimir_lista("Erros", erros)
+        return 1
+    return 0
+
+
 def cmd_tudo(raiz: pathlib.Path) -> int:
-    for comando in (cmd_indice, cmd_tabela, cmd_progresso, cmd_flashcards, cmd_grafo, cmd_obras, cmd_retencao):
+    for comando in (cmd_indice, cmd_tabela, cmd_progresso, cmd_flashcards, cmd_grafo, cmd_obras, cmd_retencao, cmd_midias):
         codigo = comando(raiz)
         if codigo:
             return codigo
@@ -167,6 +185,7 @@ COMANDOS = {
     "obras": cmd_obras,
     "retencao": cmd_retencao,
     "aplicar-progresso": cmd_aplicar_progresso,
+    "midias": cmd_midias,
 }
 
 

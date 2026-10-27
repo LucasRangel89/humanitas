@@ -933,3 +933,150 @@ def test_site_copia_assets_js(mini_repo: pathlib.Path):
     (pasta / "progresso.js").write_text("// teste\n", encoding="utf-8")
     painel.montar_site_src(mini_repo)
     assert (mini_repo / "site-src" / "assets" / "js" / "progresso.js").exists()
+
+
+# ---------------------------------------------------------------------------
+# Biblioteca de mídias (videoaulas, artigos, filmes)
+# ---------------------------------------------------------------------------
+
+MIDIA_OK = """
+versao: 1
+atualizado_em: 2026-10-27
+itens:
+  - id: aula-habitus
+    tipo: videoaula
+    peso: divulgacao
+    titulo: "Aula sobre habitus"
+    autor: "Canal de teste"
+    canal: "Canal de teste"
+    url: "https://www.youtube.com/watch?v=abc123"
+    tema: sociologia
+    conceitos: [sociologia-habitus]
+    nota: "Explica o conceito em 12 minutos."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+  - id: filme-teste
+    tipo: filme
+    peso: obra-de-apoio
+    titulo: "Filme de teste (2001)"
+    autor: "Diretor de teste"
+    onde: "streaming"
+    tema: filosofia
+    conceitos: [eixo-natureza-cultura]
+    nota: "Serve para discutir eudaimonia."
+    verificado_em: 2026-10-27
+    verificado_como: material-do-autor
+"""
+
+
+def _escrever_midias(mini_repo: pathlib.Path, texto: str = MIDIA_OK) -> pathlib.Path:
+    caminho = mini_repo / "midias" / "biblioteca.yml"
+    caminho.parent.mkdir(parents=True, exist_ok=True)
+    caminho.write_text(texto, encoding="utf-8")
+    return caminho
+
+
+def test_midias_validas_nao_geram_erro(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo)
+    itens, atualizado, erros = painel.carregar_midias(mini_repo)
+    assert erros == [] and len(itens) == 2
+    conceitos = {p.stem for p in (mini_repo / "conceitos").glob("*.md")}
+    erros, avisos = painel.validar_midias(itens, conceitos, atualizado_em=atualizado)
+    assert erros == []
+
+
+def test_midias_sem_verificacao_e_erro(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo, MIDIA_OK.replace("    verificado_em: 2026-10-27\n    verificado_como: oembed\n", ""))
+    itens, atualizado, _ = painel.carregar_midias(mini_repo)
+    conceitos = {p.stem for p in (mini_repo / "conceitos").glob("*.md")}
+    erros, _ = painel.validar_midias(itens, conceitos, atualizado_em=atualizado)
+    assert any("verificado_em" in e for e in erros)
+    assert any("verificado_como" in e for e in erros)
+
+
+def test_midias_conceito_inexistente_e_erro(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo, MIDIA_OK.replace("sociologia-habitus", "sociologia-fantasma"))
+    itens, atualizado, _ = painel.carregar_midias(mini_repo)
+    erros, _ = painel.validar_midias(itens, {"sociologia-habitus"}, atualizado_em=atualizado)
+    assert any("conceito inexistente" in e and "sociologia-fantasma" in e for e in erros)
+
+
+def test_midias_url_repetida_e_tema_invalido(mini_repo: pathlib.Path):
+    texto = MIDIA_OK.replace("id: filme-teste", "id: outra-aula").replace(
+        "tipo: filme", "tipo: videoaula"
+    ).replace('onde: "streaming"', 'url: "https://www.youtube.com/watch?v=abc123"').replace(
+        "material-do-autor", "oembed"
+    ).replace("tema: filosofia", "tema: alquimia")
+    _escrever_midias(mini_repo, texto)
+    itens, atualizado, _ = painel.carregar_midias(mini_repo)
+    conceitos = {p.stem for p in (mini_repo / "conceitos").glob("*.md")}
+    erros, _ = painel.validar_midias(itens, conceitos, atualizado_em=atualizado)
+    assert any("url repetida" in e for e in erros)
+    assert any("tema inválido" in e for e in erros)
+
+
+def test_midias_com_url_nao_pode_ser_material_do_autor(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo, MIDIA_OK.replace("verificado_como: oembed", "verificado_como: material-do-autor", 1))
+    itens, atualizado, _ = painel.carregar_midias(mini_repo)
+    conceitos = {p.stem for p in (mini_repo / "conceitos").glob("*.md")}
+    erros, _ = painel.validar_midias(itens, conceitos, atualizado_em=atualizado)
+    assert any("material-do-autor" in e for e in erros)
+
+
+def test_midias_geracao_markdown_e_json(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo)
+    md, js, total = painel.gravar_midias(mini_repo)
+    assert total == 2
+    texto = md.read_text(encoding="utf-8")
+    assert "# Mídias" in texto
+    assert "[Aula sobre habitus](https://www.youtube.com/watch?v=abc123)" in texto
+    assert "conceitos/sociologia-habitus.md" in texto  # liga a mídia à nota
+    assert "Filme de teste (2001)" in texto and "streaming" in texto
+    assert "Canal de teste" in texto
+    dados = json.loads(js.read_text(encoding="utf-8"))
+    assert dados["totais"]["itens"] == 2
+    assert dados["totais"]["por_tipo"] == {"filme": 1, "videoaula": 1}
+    # determinístico: gerar de novo não muda nada
+    antes = texto
+    painel.gravar_midias(mini_repo)
+    assert md.read_text(encoding="utf-8") == antes
+
+
+def test_midias_markdown_nao_quebra_tabela(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo, MIDIA_OK.replace("Aula sobre habitus", "Aula | com pipe"))
+    md, _, _ = painel.gravar_midias(mini_repo)
+    linha = [l for l in md.read_text(encoding="utf-8").splitlines() if "Aula" in l and l.startswith("|")]
+    assert linha and r"\|" in linha[0]
+
+
+def test_midias_desatualizado_e_erro_de_auditoria(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo)
+    erros, avisos = painel.auditar(mini_repo)
+    assert not any("desatualizado" in e for e in erros)
+    assert any("não foi gerado" in a for a in avisos)
+
+    painel.gravar_midias(mini_repo)
+    erros, _ = painel.auditar(mini_repo)
+    assert not any("midias.md" in e for e in erros)
+
+    # mexer na fonte sem regerar deixa a página velha: a auditoria cobra
+    _escrever_midias(mini_repo, MIDIA_OK.replace("Explica o conceito", "Explica melhor o conceito"))
+    erros, _ = painel.auditar(mini_repo)
+    assert any("midias.md está desatualizado" in e for e in erros)
+
+
+def test_cli_midias(mini_repo: pathlib.Path, capsys):
+    _escrever_midias(mini_repo)
+    assert painel.main(["--raiz", str(mini_repo), "midias"]) == 0
+    saida = capsys.readouterr().out
+    assert "2 indicação(ões)" in saida
+    assert (mini_repo / "midias.md").exists()
+    assert (mini_repo / "indices" / "midias.json").exists()
+
+
+def test_site_publica_pagina_de_midias(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo)
+    painel.montar_site_src(mini_repo)
+    texto = (mini_repo / "site-src" / "midias.md").read_text(encoding="utf-8")
+    assert "# Mídias" in texto
+    assert "https://www.youtube.com/watch?v=abc123" in texto

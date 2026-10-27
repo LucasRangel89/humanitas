@@ -1,0 +1,744 @@
+{
+ "versao": 1,
+ "atualizado_em": "2026-10-27",
+ "totais": {
+  "itens": 38,
+  "por_tipo": {
+   "artigo": 1,
+   "curso": 3,
+   "filme": 6,
+   "podcast": 1,
+   "resenha": 1,
+   "videoaula": 26
+  },
+  "por_tema": {
+   "antropologia": 4,
+   "ciencia-politica": 1,
+   "economia": 3,
+   "filosofia": 7,
+   "geografia": 3,
+   "historia": 2,
+   "psicologia": 8,
+   "sociologia": 10
+  },
+  "por_verificacao": {
+   "material-do-autor": 7,
+   "oembed": 29,
+   "pagina": 2
+  }
+ },
+ "itens": [
+  {
+   "id": "sbs-sociologia-01",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "SBS Aulas Abertas — Introdução à Sociologia | O que é Sociologia?",
+   "autor": "Irlys Barreira (UFC), pelo ciclo SBS Aulas Abertas",
+   "canal": "SBS tv — Sociedade Brasileira de Sociologia",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=JH9wu7meUaU",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-imaginacao-sociologica"
+   ],
+   "nota": "Aula de abertura do ciclo: o que a sociologia faz que o senso comum não faz. Melhor primeiro contato em nível universitário.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "sbs-sociologia-02",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "SBS Aulas Abertas — Introdução à Sociologia | Cultura e Sociedade",
+   "autor": "Edson Farias (UnB), pelo ciclo SBS Aulas Abertas",
+   "canal": "SBS tv — Sociedade Brasileira de Sociologia",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=mSGg3kXQRdY",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-cultura",
+    "sociologia-socializacao"
+   ],
+   "nota": "Cultura como processo, não como repertório fixo; bom par com a nota de socialização.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "sbs-sociologia-03",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "SBS Aulas Abertas — Introdução à Sociologia | Trabalho e Sociedade",
+   "autor": "Ricardo Antunes (Unicamp), pelo ciclo SBS Aulas Abertas",
+   "canal": "SBS tv — Sociedade Brasileira de Sociologia",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=hrg4FK5_n1g",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-alienacao",
+    "sociologia-desigualdade-social"
+   ],
+   "nota": "Trabalho, informalidade e uberização: a versão contemporânea do debate sobre alienação.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "univesp-sociologia-intro",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Sociologia — Introdução ao curso",
+   "autor": "Tatiana Rotondaro (Univesp)",
+   "canal": "UNIVESP",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=N3RLbnb_heI",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-imaginacao-sociologica"
+   ],
+   "nota": "Aula 1 do curso regular da Univesp: apresenta o percurso todo. Use para decidir se vale seguir a série.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "univesp-sociologia-marx",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Sociologia da Educação — Aula 1 — Clássicos da Sociologia — Marx",
+   "autor": "Univesp (curso de Licenciatura)",
+   "canal": "UNIVESP",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=7gKph1NXOc8",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-alienacao",
+    "eixo-estrutura-agencia"
+   ],
+   "nota": "Marx explicado por quem dá aula de formação de professor: estrutura, classe e ideologia sem atalho.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "centrodemidias-sociologia-01",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Sociologia — Aula 01 — Introdução aos clássicos da Sociologia e aos seus principais conceitos",
+   "autor": "Centro de Mídias de Educação do Amazonas",
+   "canal": "centrodemidias",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=4AjXOAWTicM",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-fato-social",
+    "sociologia-racionalizacao",
+    "sociologia-positivismo"
+   ],
+   "nota": "Passa por Durkheim, Weber e Comte na mesma aula — útil para ver o trio clássico lado a lado antes de estudar cada um.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "bourdieu-habitus",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Pierre Bourdieu: teoria de habitus | Sociologia #10",
+   "autor": "Canal É Fácil Quando se Aprende",
+   "canal": "É Fácil Quando se Aprende",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=7I84Vgrb5wY",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-habitus",
+    "eixo-estrutura-agencia"
+   ],
+   "nota": "Explica o conceito em linguagem de sala de aula. Depois de assistir, volte ao texto do Bourdieu: o vídeo não substitui a distinção habitus/campo/capital.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-sociologia-brasileira",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Sociologia Brasileira",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=YFSnf7TzQbM",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "historia-formacao-social-brasileira",
+    "sociologia-patrimonialismo"
+   ],
+   "nota": "Panorama curto do surgimento da sociologia no Brasil e dos seus campos de pesquisa.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "inef-filosofia-aula-01",
+   "tipo": "curso",
+   "peso": "curso-livre",
+   "titulo": "Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria",
+   "autor": "Victor Sales Pinheiro (INÉF)",
+   "canal": "Victor Sales Pinheiro",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=L7bB5wsGPNw",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-metodo-socratico"
+   ],
+   "nota": "Aula 1 de um curso de 50 aulas, temático e gratuito. É o melhor ponto de entrada em português para o vocabulário filosófico.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "inef-filosofia-ciencia-33",
+   "tipo": "videoaula",
+   "peso": "curso-livre",
+   "titulo": "Introdução à Filosofia da Ciência | Introdução Geral à Filosofia | Aula 33",
+   "autor": "Vitor Lima (Isto não é Filosofia)",
+   "canal": "Isto não é Filosofia",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=M2mm8Y4OJKo",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-falseabilidade",
+    "filosofia-paradigma-kuhn"
+   ],
+   "nota": "Liga Popper e Kuhn ao problema da demarcação científica — exatamente o que a nota de falseabilidade pede.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "filosofia-vermelha-marx",
+   "tipo": "curso",
+   "peso": "curso-livre",
+   "titulo": "A filosofia de Karl Marx — uma introdução | Novo curso disponível!",
+   "autor": "Filosofia Vermelha",
+   "canal": "Filosofia Vermelha",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=JYe6VHyE6kI",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "sociologia-alienacao",
+    "eixo-estrutura-agencia"
+   ],
+   "nota": "Apresentação do curso sobre Marx: percorre os textos de juventude até O Capital. Leitura exigente, em português.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "filosofia-vermelha-curso",
+   "tipo": "curso",
+   "peso": "curso-livre",
+   "titulo": "Curso de introdução à filosofia: dos pré-socráticos a Sartre",
+   "autor": "Filosofia Vermelha",
+   "canal": "Filosofia Vermelha",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=k1GUwOeehlw",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-metodo-socratico"
+   ],
+   "nota": "Curso cronológico completo; o vídeo é a apresentação. Escolha um módulo por vez e escreva o diário antes de seguir.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "psicanalise-basica-inconsciente",
+   "tipo": "videoaula",
+   "peso": "curso-livre",
+   "titulo": "Psicanálise Básica — Aula 1 — O Inconsciente",
+   "autor": "Glória Vianna",
+   "canal": "Glória Vianna",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=YhuOxztzKM4",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-psicanalise"
+   ],
+   "nota": "Aula de abertura sobre o inconsciente freudiano, com exemplos clínicos. Boa antes de ler o texto de Freud.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "espe-intro-psicanalise",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Introdução à Psicanálise | Rubia Zecchin e Cláudia Martins",
+   "autor": "Instituto ESPE (Escola de Psicanálise)",
+   "canal": "Instituto ESPE",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=3yLJOuYIZ48",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-psicanalise",
+    "eixo-livre-arbitrio-determinismo"
+   ],
+   "nota": "Distingue psicanálise de psicologia e de psiquiatria e discute o determinismo psíquico — útil para o eixo livre-arbítrio × determinismo.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "leituras-gestalt",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Teoria da Gestalt | Max Wertheimer | Introdução à Psicologia #6",
+   "autor": "Leituras do Lucas",
+   "canal": "Leituras do Lucas",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=yrmX-CPye0U",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-gestalt",
+    "eixo-inatismo-empirismo"
+   ],
+   "nota": "Apresenta as leis de organização perceptual e situa a Gestalt no debate inatismo × empirismo.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "socran-behaviorismo",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Psicologia 7 — Pavlov, Watson, Skinner — Behaviorismo",
+   "autor": "Socran",
+   "canal": "Socran",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=IE8lzYxVW6M",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-behaviorismo",
+    "eixo-livre-arbitrio-determinismo"
+   ],
+   "nota": "Pavlov, Watson e Skinner na mesma aula, com os experimentos. Serve como mapa antes de ler o texto original.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "milgram-legendado",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Milgram — Experimento de Obediência à Autoridade (legendado em português)",
+   "autor": "Professor Thiago Coronato (com legendas)",
+   "canal": "Professor Thiago Coronato",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=9AFO0MDu_Ws",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-obediencia-autoridade",
+    "eixo-individuo-grupo"
+   ],
+   "nota": "O experimento original, com legendas. Assista antes de ler o artigo do SciELO que discute os resultados.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-relativismo",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Relativismo cultural",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=D247x6t31is",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "antropologia-relativismo-cultural",
+    "antropologia-etnocentrismo"
+   ],
+   "nota": "Explica o método relativista e a confusão frequente com 'tudo é válido'. Curto, bom para começar.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "boas-malinowski",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Relativismo, etnografia, alteridade / Franz Boas e Bronisław Malinowski",
+   "autor": "Kamila Thais da Silva Figueira",
+   "canal": "Kamila Thais da Silva Figueira",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=Nn0cGqzvsck",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "antropologia-alteridade",
+    "antropologia-etnografia",
+    "antropologia-relativismo-cultural"
+   ],
+   "nota": "Liga os dois fundadores ao método: particularismo histórico (Boas) e trabalho de campo (Malinowski).",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "icles-etnografia",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "O que é etnografia e como fazer? — Antropológica",
+   "autor": "Icles Rodrigues",
+   "canal": "Icles Rodrigues",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=H-pAVymWhYo",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "antropologia-etnografia"
+   ],
+   "nota": "Diferença entre observar e fazer etnografia, com dicas de registro em campo.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "usp-napolitano-populismo",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)",
+   "autor": "Marcos Napolitano (FFLCH-USP)",
+   "canal": "Canal USP",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=qJnCQXEZyz8",
+   "onde": "",
+   "tema": "historia",
+   "conceitos": [
+    "ciencia-politica-populismo",
+    "historia-ditadura-transicao"
+   ],
+   "nota": "Aula universitária sobre o uso (e o abuso) do rótulo 'populismo' entre 1946 e 1964 — o antídoto contra o senso comum.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "ilp-formacao-brasil-01",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "A Formação do Brasil #1: Gilberto Freyre, Sérgio Buarque de Holanda, Caio Prado Jr. e Celso Furtado",
+   "autor": "Instituto do Legislativo Paulista (ILP)",
+   "canal": "Instituto do Legislativo Paulista (ILP)",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=-RsGBXUJPtg",
+   "onde": "",
+   "tema": "historia",
+   "conceitos": [
+    "historia-formacao-social-brasileira",
+    "sociologia-cordialidade"
+   ],
+   "nota": "Mesa de abertura do ciclo: os quatro intérpretes do Brasil discutidos por especialistas. Melhor porta de entrada da trilha Pensamento Social Brasileiro.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-democracia",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Democracia",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=shCNQfoQwqE",
+   "onde": "",
+   "tema": "ciencia-politica",
+   "conceitos": [
+    "ciencia-politica-democracia"
+   ],
+   "nota": "Tipos de democracia (direta, indireta, semidireta) e os institutos de participação. Bom para fixar vocabulário.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "usp-inflacao-intro",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Introdução à Inflação (Aula 5, parte 1)",
+   "autor": "Denise Cavallini Cyrillo (FEA-USP)",
+   "canal": "Canal USP",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=GIAZlKLD4hY",
+   "onde": "",
+   "tema": "economia",
+   "conceitos": [
+    "economia-inflacao-juros"
+   ],
+   "nota": "Aula de graduação: conceito, causas e efeitos distributivos da inflação. Sem cálculo.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "usp-sayad-inflacao-desemprego",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Inflação e desemprego (Aula 5, parte 1)",
+   "autor": "João Sayad (FEA-USP)",
+   "canal": "Canal USP",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=qoBb6EtN4dQ",
+   "onde": "",
+   "tema": "economia",
+   "conceitos": [
+    "economia-inflacao-juros",
+    "economia-desigualdade-distribuicao"
+   ],
+   "nota": "Sayad liga inflação, desemprego e conflito distributivo — o elo com a nota de desigualdade.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "rascunhos-pib",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Macroeconomia, aula 1.2: PIB nas contas nacionais",
+   "autor": "Rascunhos Econômicos",
+   "canal": "Rascunhos Econômicos",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=IMidyc6tAwE",
+   "onde": "",
+   "tema": "economia",
+   "conceitos": [
+    "economia-pib-crescimento"
+   ],
+   "nota": "PIB pelas três óticas (produção, renda, demanda), desenhado no papel — a melhor explicação curta em português.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-espaco",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Espaço geográfico",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=vonz6HrVhWc",
+   "onde": "",
+   "tema": "geografia",
+   "conceitos": [
+    "geografia-espaco-geografico",
+    "geografia-territorio"
+   ],
+   "nota": "Define espaço geográfico e percorre as categorias (lugar, paisagem, região, território) em uma aula.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-territorio",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "O que é território?",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=t5NCxcLozAo",
+   "onde": "",
+   "tema": "geografia",
+   "conceitos": [
+    "geografia-territorio"
+   ],
+   "nota": "Território como relação de poder, não como pedaço de mapa — o ponto que a nota cobra.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "futura-conceitos-geografia",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Conceitos de espaço geográfico, região, lugar, território e paisagem — Geografia — Ensino Médio",
+   "autor": "Canal Futura",
+   "canal": "Canal Futura",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=ExJO6rncnwg",
+   "onde": "",
+   "tema": "geografia",
+   "conceitos": [
+    "geografia-lugar",
+    "geografia-paisagem"
+   ],
+   "nota": "Aula do Canal Futura que separa lugar de paisagem com exemplos brasileiros.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "scielo-milgram-consentimento",
+   "tipo": "artigo",
+   "peso": "fonte-academica",
+   "titulo": "Da obediência ao consentimento: reflexões sobre o experimento de Milgram à luz das instituições modernas",
+   "autor": "Sandra Leal de Melo Dahia",
+   "canal": "",
+   "veiculo": "Sociedade e Estado, v. 30, n. 1 (2015) — SciELO",
+   "url": "https://www.scielo.br/j/se/a/PWkPLyXbvd7TTYHq5MqNg8c/",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-obediencia-autoridade",
+    "eixo-individuo-grupo"
+   ],
+   "nota": "Lê Milgram com Giddens (sistemas peritos) e Arendt (responsabilidade moral) e desloca a análise de 'obediência' para 'consentimento'. Acesso aberto.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "pagina"
+  },
+  {
+   "id": "unoesc-titchener",
+   "tipo": "resenha",
+   "peso": "divulgacao",
+   "titulo": "Estruturalismo de Edward B. Titchener",
+   "autor": "Kauany Tomazi et al.",
+   "canal": "",
+   "veiculo": "Anuário Pesquisa e Extensão Unoesc Videira, v. 9 (2024)",
+   "url": "https://periodicos.unoesc.edu.br/apeuv/article/view/35113",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-estruturalismo"
+   ],
+   "nota": "Resumo acadêmico de seis páginas sobre o método introspectivo e os elementos da consciência. Fonte secundária — use como ponte até Titchener.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "pagina"
+  },
+  {
+   "id": "filme-matrix",
+   "tipo": "filme",
+   "peso": "obra-de-apoio",
+   "titulo": "Matrix (1999)",
+   "autor": "Lana e Lilly Wachowski",
+   "canal": "",
+   "veiculo": "",
+   "url": "",
+   "onde": "streaming e locação",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-teoria-das-formas"
+   ],
+   "nota": "A alegoria da caverna em versão contemporânea: realidade simulada, libertação dolorosa e o retorno a quem não quer ver. Citado no plano de estudos do autor.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "material-do-autor"
+  },
+  {
+   "id": "filme-tempos-modernos",
+   "tipo": "filme",
+   "peso": "obra-de-apoio",
+   "titulo": "Tempos Modernos (1936)",
+   "autor": "Charlie Chaplin",
+   "canal": "",
+   "veiculo": "",
+   "url": "",
+   "onde": "streaming e locação",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-alienacao",
+    "sociologia-racionalizacao"
+   ],
+   "nota": "A linha de montagem como imagem da alienação e da racionalização. Citado no plano de estudos do autor.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "material-do-autor"
+  },
+  {
+   "id": "filme-o-experimento",
+   "tipo": "filme",
+   "peso": "obra-de-apoio",
+   "titulo": "O Experimento (Das Experiment, 2001)",
+   "autor": "Oliver Hirschbiegel",
+   "canal": "",
+   "veiculo": "",
+   "url": "",
+   "onde": "streaming e locação",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-obediencia-autoridade",
+    "eixo-individuo-grupo"
+   ],
+   "nota": "Ficção inspirada no experimento do Stanford Prison: papel social, autoridade e violência. Depois, compare com Milgram e com a crítica ética.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "material-do-autor"
+  },
+  {
+   "id": "filme-parasita",
+   "tipo": "filme",
+   "peso": "obra-de-apoio",
+   "titulo": "Parasita (2019)",
+   "autor": "Bong Joon-ho",
+   "canal": "",
+   "veiculo": "",
+   "url": "",
+   "onde": "streaming e locação",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-desigualdade-social",
+    "sociologia-habitus"
+   ],
+   "nota": "Desigualdade e reprodução de classe encenadas no espaço da casa — bom para discutir habitus e mobilidade social.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "material-do-autor"
+  },
+  {
+   "id": "filme-laranja-mecanica",
+   "tipo": "filme",
+   "peso": "obra-de-apoio",
+   "titulo": "Laranja Mecânica (1971)",
+   "autor": "Stanley Kubrick",
+   "canal": "",
+   "veiculo": "",
+   "url": "",
+   "onde": "streaming e locação",
+   "tema": "filosofia",
+   "conceitos": [
+    "eixo-livre-arbitrio-determinismo",
+    "filosofia-utilitarismo"
+   ],
+   "nota": "Condicionamento, livre-arbítrio e a pergunta utilitarista sobre o custo da ordem. Citado no plano de estudos do autor.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "material-do-autor"
+  },
+  {
+   "id": "filme-gattaca",
+   "tipo": "filme",
+   "peso": "obra-de-apoio",
+   "titulo": "Gattaca — A Experiência Genética (1997)",
+   "autor": "Andrew Niccol",
+   "canal": "",
+   "veiculo": "",
+   "url": "",
+   "onde": "streaming e locação",
+   "tema": "antropologia",
+   "conceitos": [
+    "eixo-natureza-cultura",
+    "eixo-inatismo-empirismo"
+   ],
+   "nota": "Determinismo genético como distopia: leva o eixo natureza × cultura ao limite. Citado no plano de estudos do autor.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "material-do-autor"
+  },
+  {
+   "id": "podcast-filosofia-pop",
+   "tipo": "podcast",
+   "peso": "obra-de-apoio",
+   "titulo": "Filosofia Pop",
+   "autor": "Podcast Filosofia Pop",
+   "canal": "",
+   "veiculo": "",
+   "url": "",
+   "onde": "Spotify, YouTube e site do projeto — procure o episódio pelo nome do autor",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-existencialismo",
+    "filosofia-morte-de-deus"
+   ],
+   "nota": "Episódios por filósofo (Platão, Descartes, Nietzsche, Foucault, Butler). Bom para o trajeto de volta do trabalho; rende pergunta para o diário.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "material-do-autor"
+  }
+ ]
+}

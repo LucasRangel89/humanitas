@@ -6,6 +6,7 @@ import re
 
 from .modelo import TEMAS, NIVEIS_EVIDENCIA_VALIDOS, TIPOS_VALIDOS, STATUS_VALIDOS, NIVEIS_VALIDOS, SECOES_OBRIGATORIAS, SECAO_TRECHO, REGEX_LINK, REGEX_WIKILINK, _ERROS_FRONTMATTER, _limpar_erros_frontmatter, _registrar_erro_frontmatter, ler, normalizar, listar_md, rel, achar_secao, secoes, sem_codigo, extrair_secao, parse_tags
 from .indice import coletar_conceitos, coletar_trilhas, coletar_diario, coletar_trechos, coletar_livros, tema_do_indice_antigo, coletar_conceitos
+from .midias import verificar as _verificar_midias
 
 # ---------------------------------------------------------------------------
 # Auditoria
@@ -176,6 +177,11 @@ def auditar(raiz: pathlib.Path) -> tuple[list[str], list[str]]:
 
     erros.extend(_links_quebrados(raiz, arquivos))
     erros.extend(_wikilinks(raiz, arquivos))
+
+    # biblioteca de mídias (videoaulas, artigos, filmes): verificação obrigatória
+    erros_midias, avisos_midias = _verificar_midias(raiz)
+    erros.extend(erros_midias)
+    avisos.extend(avisos_midias)
 
     conceitos = coletar_conceitos(raiz)
     trilhas = coletar_trilhas(raiz)

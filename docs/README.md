@@ -14,6 +14,7 @@ Comece pelo que resolve o seu problema agora.
 | [08 — Instruções para futuros mantenedores](08-instrucoes-futuras.md) | Como adicionar campo, manter CI, publicar site e criar PRs |
 | [09 — Mapa das humanidades](09-mapa-das-humanidades.md) | **Expansão**: quais áreas entram, como (tema × eixo × tag), em que ordem e com que critério |
 | [10 — Ritual de estudo](10-ritual-de-estudo.md) | **Como** transformar uma leitura em nota `ok`: os 90 minutos, os cinco testes, os anti-padrões |
+| [11 — Mídias e videoaulas](11-midias-e-videoaulas.md) | Videoaulas, cursos, artigos, filmes e podcasts: o que entra, como se verifica e como assistir sem perder tempo |
 | [Análise do projeto (arquivo histórico)](arquivo/analise-2026-10-21.md) | Diagnóstico de 21/10/2026 — números desatualizados, não é plano vigente |
 
 ## Anexos
