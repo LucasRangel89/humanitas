@@ -2,7 +2,7 @@
 
 # Mídias
 
-**80 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**83 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -19,13 +19,13 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 | Tema | Indicações | Onde começar |
 |---|---|---|
-| [Psicologia](#psicologia) | 16 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
+| [Psicologia](#psicologia) | 17 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
 | [Filosofia](#filosofia) | 13 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
 | [Sociologia](#sociologia) | 18 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
 | [Antropologia](#antropologia) | 9 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
 | [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
-| [Geografia](#geografia) | 4 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
-| [Ciência Política](#ciencia-politica) | 3 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
+| [Geografia](#geografia) | 5 | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) |
+| [Ciência Política](#ciencia-politica) | 4 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
 | [Economia](#economia) | 8 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
 
 ## Indicações por tema
@@ -47,6 +47,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Psicologia Humanista: A 3ª Força da Psicologia](https://www.youtube.com/watch?v=s3tXQDK6BNc) | Universo da Psicologia · canal Universo da Psicologia | Apresenta o humanismo como terceira força, de Maslow e Rogers a Fromm, e o contraste com behaviorismo e psicanálise. | [Psicologia Humanista](conceitos/psicologia-humanismo.md) |
 | videoaula · divulgação | [Fluidez, o segredo da felicidade](https://www.ted.com/talks/mihaly_csikszentmihalyi_flow_the_secret_to_happiness) | Mihaly Csikszentmihalyi (TED2004) · canal TED | O próprio autor explicando o flow, com transcrição e legendas em português na página. Palestra de 2004: use como porta de entrada do livro 'Flow'. | [Fluxo](conceitos/psicologia-fluxo.md) |
 | videoaula · divulgação | [O que é: emoção, sentimento e consciência?](https://www.youtube.com/watch?v=SRZP491gJOI) | Luis Louis · canal Luis Louis | Separa emoção, sentimento e consciência seguindo 'O erro de Descartes', de Damásio — a ponte entre o eixo mente-corpo e a neurociência afetiva. | [Mente × Corpo](conceitos/eixo-mente-corpo.md) |
+| videoaula · divulgação | [História da Psicologia: Estruturalismo e Funcionalismo](https://www.youtube.com/watch?v=mpqJXSYGRSo) | Universo da Psicologia · canal Universo da Psicologia | Apresenta o funcionalismo pelo contraste que a nota pede: estrutura (Titchener) contra função (James e a herança de Darwin), com os pontos fortes e as críticas de cada escola. Divulgação — é aula introdutória de canal, não de graduação, e resolve o vocabulário, não a leitura dos Princípios de Psicologia. | [Funcionalismo](conceitos/psicologia-funcionalismo.md) |
 | artigo · fonte acadêmica | [Da obediência ao consentimento: reflexões sobre o experimento de Milgram à luz das instituições modernas](https://www.scielo.br/j/se/a/PWkPLyXbvd7TTYHq5MqNg8c/) | Sandra Leal de Melo Dahia · Sociedade e Estado, v. 30, n. 1 (2015) — SciELO | Lê Milgram com Giddens (sistemas peritos) e Arendt (responsabilidade moral) e desloca a análise de 'obediência' para 'consentimento'. Acesso aberto. | [Obediência à Autoridade](conceitos/psicologia-obediencia-autoridade.md) · [Indivíduo × Grupo](conceitos/eixo-individuo-grupo.md) |
 | resenha · divulgação | [Estruturalismo de Edward B. Titchener](https://periodicos.unoesc.edu.br/apeuv/article/view/35113) | Kauany Tomazi et al. · Anuário Pesquisa e Extensão Unoesc Videira, v. 9 (2024) | Resumo acadêmico de seis páginas sobre o método introspectivo e os elementos da consciência. Fonte secundária — use como ponte até Titchener. | [Estruturalismo](conceitos/psicologia-estruturalismo.md) |
 | filme · obra de apoio | O Experimento (Das Experiment, 2001) — *streaming e locação* | Oliver Hirschbiegel | Ficção inspirada no experimento do Stanford Prison: papel social, autoridade e violência. Depois, compare com Milgram e com a crítica ética. | [Obediência à Autoridade](conceitos/psicologia-obediencia-autoridade.md) · [Indivíduo × Grupo](conceitos/eixo-individuo-grupo.md) |
@@ -124,6 +125,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 | Tipo | Título | Quem publica | Por que assistir | Liga a |
 |---|---|---|---|---|
+| videoaula · divulgação | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) | geo ilustrada · canal geo ilustrada | Trata escala como categoria de análise — o recorte que decide o que aparece —, que é o sentido da nota, e não apenas como conta de mapa. Divulgação, e com o defeito de vir emendada com redes: assista pela metade que interessa. Para o conceito em Milton Santos, o caminho continua sendo A Natureza do Espaço. | [Escala](conceitos/geografia-escala.md) |
 | videoaula · divulgação | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) | Brasil Escola · canal Brasil Escola Oficial | Define espaço geográfico e percorre as categorias (lugar, paisagem, região, território) em uma aula. | [Espaço geográfico](conceitos/geografia-espaco-geografico.md) · [Território](conceitos/geografia-territorio.md) |
 | videoaula · divulgação | [O que é território?](https://www.youtube.com/watch?v=t5NCxcLozAo) | Brasil Escola · canal Brasil Escola Oficial | Território como relação de poder, não como pedaço de mapa — o ponto que a nota cobra. | [Território](conceitos/geografia-territorio.md) |
 | videoaula · divulgação | [Conceitos de espaço geográfico, região, lugar, território e paisagem — Geografia — Ensino Médio](https://www.youtube.com/watch?v=ExJO6rncnwg) | Canal Futura · canal Canal Futura | Aula do Canal Futura que separa lugar de paisagem com exemplos brasileiros. | [Lugar](conceitos/geografia-lugar.md) · [Paisagem](conceitos/geografia-paisagem.md) |
@@ -134,6 +136,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | Tipo | Título | Quem publica | Por que assistir | Liga a |
 |---|---|---|---|---|
 | videoaula · divulgação | [Democracia](https://www.youtube.com/watch?v=shCNQfoQwqE) | Brasil Escola · canal Brasil Escola Oficial | Tipos de democracia (direta, indireta, semidireta) e os institutos de participação. Bom para fixar vocabulário. | [Democracia](conceitos/ciencia-politica-democracia.md) |
+| videoaula · divulgação | [Dois conceitos de liberdade: liberdade negativa e liberdade positiva a partir de Isaiah Berlin](https://www.youtube.com/watch?v=vxSjEbVhknE) | Daniel Cidade · canal Daniel Cidade | Explica o par de Berlin — liberdade como ausência de interferência × liberdade como autogoverno —, que é o primeiro polo do eixo e a origem da frase que o organiza (liberdade não é igualdade). Ressalva: cobre um lado da balança, não a disputa inteira. O outro lado tem o vídeo do véu da ignorância (Rawls) e a nota de desigualdade social; a comparação é trabalho seu, no diário. | [Liberdade × Igualdade](conceitos/eixo-liberdade-igualdade.md) |
 | videoaula · aula universitária | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Aula 2 de um curso de 10 aulas que acompanha o livro Curso básico de Ciência Política. Comece por aqui: define o campo antes dos conceitos. | [Poder](conceitos/ciencia-politica-poder.md) · [Estado](conceitos/ciencia-politica-estado.md) |
 | videoaula · aula universitária | [Curso de Ciência Política — Aula 10 — Conceito de Ditadura — Autoritarismo](https://www.youtube.com/watch?v=Daa5TIB1CK4) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Separa autoritarismo de totalitarismo com critério tipológico — o vocabulário que a trilha cobra antes de discutir 1964. | [Regime político](conceitos/ciencia-politica-regime-politico.md) · [Ditadura e transição](conceitos/historia-ditadura-transicao.md) |
 
@@ -152,18 +155,18 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 ## Cobertura das trilhas
 
-**87 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+**90 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
 
 | Trilha | Nós com mídia | |
 |---|---|---|
-| Ciência Política — Nível 1 | 6/7 (86%) | `█████████░` |
-| Geografia — Nível 1 | 6/7 (86%) | `█████████░` |
-| Psicologia — Nível 1 | 10/11 (91%) | `█████████░` |
 | Antropologia — Nível 1 | 7/7 (100%) | `██████████` |
+| Ciência Política — Nível 1 | 7/7 (100%) | `██████████` |
 | Economia — Nível 1 | 8/8 (100%) | `██████████` |
 | Filosofia — Nível 1 | 12/12 (100%) | `██████████` |
+| Geografia — Nível 1 | 7/7 (100%) | `██████████` |
 | História — Nível 1 | 7/7 (100%) | `██████████` |
 | Pensamento Social Brasileiro | 11/11 (100%) | `██████████` |
+| Psicologia — Nível 1 | 11/11 (100%) | `██████████` |
 | Psicologia — Nível 2 | 8/8 (100%) | `██████████` |
 | Sociologia — Nível 1 | 12/12 (100%) | `██████████` |
 
@@ -182,12 +185,14 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Prof. Matheus Passos | 3 |
 | Escola do Parlamento CMSP | 2 |
 | Filosofia Vermelha | 2 |
+| Universo da Psicologia | 2 |
 | uspfflch | 2 |
 | A Filosofia Explica | 1 |
 | Alfredo Oliva | 1 |
 | Amílcar Ifé | 1 |
 | CFH \| UFSC | 1 |
 | Clóvis de Barros | 1 |
+| Daniel Cidade | 1 |
 | Douglas Dutra | 1 |
 | Editor universoacademicovideo | 1 |
 | Felipe Barchi | 1 |
@@ -214,9 +219,9 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Socran | 1 |
 | TED | 1 |
 | TV PUC-Rio \| Comunicar | 1 |
-| Universo da Psicologia | 1 |
 | Victor Sales Pinheiro | 1 |
 | centrodemidias | 1 |
+| geo ilustrada | 1 |
 | É Fácil Quando se Aprende | 1 |
 
 ## Como esta lista é mantida
@@ -226,4 +231,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 80 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 83 indicações em 8 temas.*

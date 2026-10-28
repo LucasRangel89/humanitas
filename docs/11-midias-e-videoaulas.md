@@ -21,10 +21,10 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **80 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **83 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
 documentário, filmes e um podcast. A própria página mostra a **cobertura das
-trilhas**: 87 dos 90 nós com link já têm mídia ligada.
+trilhas**: **90 de 90** nós com link já têm mídia ligada.
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
 
@@ -80,38 +80,38 @@ entretenimento.
 
 | Tema | Indicações | Melhor porta de entrada |
 |---|---|---|
-| Psicologia | 16 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
+| Psicologia | 17 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
 | Sociologia | 18 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
 | Filosofia | 13 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
 | História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
 | Antropologia | 9 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
-| Geografia | 4 | *Espaço geográfico* (Brasil Escola) |
-| Ciência Política | 3 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
+| Geografia | 5 | *Espaço geográfico* (Brasil Escola) |
+| Ciência Política | 4 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
 
 ### Cobertura das trilhas
 
 O gerador compara os links de cada nó com as notas citadas em `conceitos` e publica
-a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **87 de 90
-nós com link** (ficam fora os nós "síntese no diário" e a trilha Integrada, cujos
-nós não apontam para notas).
+a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **90 de 90
+nós com link** (ficam fora da conta os nós "síntese no diário" e a trilha
+Integrada, cujos nós não apontam para notas).
 
 | Trilha | Nós com mídia |
 |---|---|
 | Antropologia — Nível 1 | 7/7 (100%) |
+| Ciência Política — Nível 1 | 7/7 (100%) |
 | Economia — Nível 1 | 8/8 (100%) |
 | Filosofia — Nível 1 | 12/12 (100%) |
+| Geografia — Nível 1 | 7/7 (100%) |
 | História — Nível 1 | 7/7 (100%) |
 | Pensamento Social Brasileiro | 11/11 (100%) |
+| Psicologia — Nível 1 | 11/11 (100%) |
 | Psicologia — Nível 2 | 8/8 (100%) |
 | Sociologia — Nível 1 | 12/12 (100%) |
-| Psicologia — Nível 1 | 10/11 (91%) |
-| Ciência Política — Nível 1 | 6/7 (86%) |
-| Geografia — Nível 1 | 6/7 (86%) |
 
-Sete trilhas estão em 100%. As duas últimas a fechar foram Filosofia e Sociologia,
-que estavam em 8/12 e agora estão completas — mas com pesos diferentes, e vale
-olhar o campo `peso` antes de comemorar: das oito lacunas fechadas nesta rodada,
+**Todas as dez trilhas estão em 100%** — e vale olhar o campo `peso` antes de
+comemorar, porque cobertura mede link, não profundidade. Em Filosofia e
+Sociologia, que estavam em 8/12, das oito lacunas fechadas,
 duas entraram como `curso-livre` de um curso público sobre Kant (Escola do
 Parlamento, com professor da PUC-SP), uma como `aula-universitaria` (SBS), e as
 outras cinco como `divulgacao` do Brasil Escola e de um canal de filosofia. O nó
@@ -120,7 +120,15 @@ divulgação — uma para cada polo —, porque não achei material que tratasse
 comparação de uma vez. Cobertura é cobertura; o peso continua dizendo o que
 esperar antes de clicar.
 
-Antropologia fechou por último, e com o par mais desigual da biblioteca: uma
+As três últimas lacunas — Psicologia N1, Ciência Política e Geografia — caíram
+todas na mesma rodada e **todas com divulgação**, das três a mais fraca em peso.
+Vale dizer o que isso significa: `psicologia-funcionalismo` tem vídeo de canal
+introdutório, `eixo-liberdade-igualdade` tem a explicação do par de Berlin por um
+professor mas **só um lado da balança**, e `geografia-escala` tem um vídeo de
+categoria geográfica que vem emendado com redes. O placar fechou; a qualidade
+desses três é a mais baixa da biblioteca, e está escrito na nota de cada um.
+
+Antropologia fechou com o par mais desigual da biblioteca: uma
 jornada de seminários do Departamento de Antropologia da USP sobre os 90 anos de
 *As técnicas do corpo* (institucional, densa, longa) e uma conversa de TV
 universitária em que DaMatta explica o carnaval como ritual. A segunda não ensina
@@ -173,6 +181,9 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   depende de uma palestra do próprio Csikszentmihalyi (TED, 2004) e não de uma
   aula em português; e `eixo-mente-corpo` está apoiado em divulgação sobre
   Damásio, não em aula de neurociência.
+- **Psicologia Nível 1, Ciência Política e Geografia**: 100% de cobertura, mas
+  fechadas com divulgação (ver acima). São os primeiros candidatos a substituição
+  quando aparecer aula universitária aberta.
 - **Integrada**: nenhuma indicação; a trilha não tem nós linkados, então nem
   aparece na cobertura.
 
@@ -262,17 +273,19 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 
 ## 7. Próximos passos
 
-1. **Três nós, três trilhas**: `psicologia-funcionalismo` (Psicologia N1),
-   `eixo-liberdade-igualdade` (Ciência Política) e `geografia-escala`
-   (Geografia). Fechar esses três leva a cobertura a 90 de 90.
-2. **Depois da cobertura, o peso.** Em Filosofia e Sociologia o que falta não é
-   link, é nível: eudaimonia, anomia, papéis/identidade e o eixo Conflito ×
-   Coesão estão apoiados em divulgação, e Antropologia depende de uma conversa de
-   TV para o nó de ritual. Substituir por aula universitária quando aparecer.
-2. **Uma mídia por nó**: a meta não é 133 links, é que cada trilha tenha **uma
-   porta de entrada em vídeo** e **uma leitura de apoio por nó**. A tabela de
-   cobertura em `midias.md` é o placar.
-3. **Podcasts com episódio específico**: hoje *Filosofia Pop* está cadastrado sem
+1. **A cobertura acabou: 90 de 90.** O que resta não é acrescentar indicação, é
+   **substituir as fracas por fortes**. A fila, da pior para a menos pior:
+   `geografia-escala`, `eixo-liberdade-igualdade`, `psicologia-funcionalismo`,
+   `sociologia-anomia`, `sociologia-papel-social`/`identidade`,
+   `antropologia-ritual`, `filosofia-eudaimonia` e o eixo Conflito × Coesão.
+2. **Antropologia e Filosofia dependem de acesso institucional.** A introdução à
+   antropologia e a fenomenologia de Husserl/Heidegger só existem em vídeo dentro
+   do e-Aulas da USP, atrás de login. Sem vínculo USP, a lacuna é real e não tem
+   solução no YouTube aberto — melhor registrar do que fingir.
+3. **Uma mídia por nó**: a meta nunca foi 133 links, é que cada trilha tenha
+   **uma porta de entrada em vídeo** e **uma leitura de apoio por nó**. Com o
+   placar fechado, essa é a única régua que ainda diz alguma coisa.
+4. **Podcasts com episódio específico**: hoje *Filosofia Pop* está cadastrado sem
    episódio. O certo é cadastrar o episódio (título, número, duração).
-4. **Reconferir a cada seis meses**: `verificado_em` serve para isso. Uma mídia
+5. **Reconferir a cada seis meses**: `verificado_em` serve para isso. Uma mídia
    com mais de um ano sem revisão deve ser reaberta antes de continuar na lista.
