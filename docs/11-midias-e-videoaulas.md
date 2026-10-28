@@ -21,10 +21,10 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **63 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
-graduação); há também artigos em acesso aberto, um resumo acadêmico, filmes e um
-podcast. A própria página mostra a **cobertura das trilhas**: 72 dos 90 nós com
-link já têm mídia ligada.
+Hoje: **69 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+graduação); há também artigos em acesso aberto, um resumo acadêmico, um
+documentário, filmes e um podcast. A própria página mostra a **cobertura das
+trilhas**: 77 dos 90 nós com link já têm mídia ligada.
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
 
@@ -59,6 +59,12 @@ Regras que a auditoria cobra (erro bloqueia o CI):
 6. entrada com URL **não pode** ser marcada como `material-do-autor`;
 7. `midias.md` tem de estar igual ao que o gerador produz (senão: rode `make painel`).
 
+**Hospedagem fora do YouTube** (Drive, Vimeo, site do curso): só entra com o aval
+explícito do autor do projeto, caso a caso, porque o link é mais frágil e não
+passa pelo oEmbed. Nesse caso `verificado_como: pagina` e a página indicada é a
+do curso, não o arquivo solto. Exceção registrada hoje: o curso *Introdução a
+Economia* do LALT/FEC-Unicamp, cujos vídeos são mp4 no Drive.
+
 O item 4 é o que dá sentido à lista: **a mídia é indexada pelo conceito que ela
 ajuda a estudar**, não pelo canal. Se você não sabe a qual nota ela serve, é
 entretenimento.
@@ -75,18 +81,18 @@ entretenimento.
 | Tema | Indicações | Melhor porta de entrada |
 |---|---|---|
 | Psicologia | 16 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
-| Sociologia | 11 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
+| Sociologia | 13 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
 | Filosofia | 9 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
-| História | 8 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
+| História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
-| Antropologia | 4 | *Relativismo cultural* (Brasil Escola) |
+| Antropologia | 7 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
 | Geografia | 4 | *Espaço geográfico* (Brasil Escola) |
 | Ciência Política | 3 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
 
 ### Cobertura das trilhas
 
 O gerador compara os links de cada nó com as notas citadas em `conceitos` e publica
-a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **72 de 90
+a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **77 de 90
 nós com link** (ficam fora os nós "síntese no diário" e a trilha Integrada, cujos
 nós não apontam para notas).
 
@@ -94,6 +100,7 @@ nós não apontam para notas).
 |---|---|
 | Economia — Nível 1 | 8/8 (100%) |
 | História — Nível 1 | 7/7 (100%) |
+| Pensamento Social Brasileiro | 11/11 (100%) |
 | Psicologia — Nível 2 | 8/8 (100%) |
 | Psicologia — Nível 1 | 10/11 (91%) |
 | Ciência Política — Nível 1 | 6/7 (86%) |
@@ -101,15 +108,13 @@ nós não apontam para notas).
 | Antropologia — Nível 1 | 5/7 (71%) |
 | Filosofia — Nível 1 | 8/12 (67%) |
 | Sociologia — Nível 1 | 8/12 (67%) |
-| Pensamento Social Brasileiro | 6/11 (55%) |
 
-Três trilhas estão em 100% (Economia, História e Psicologia Nível 2) — as duas
-últimas fecharam na rodada anterior, quando estavam em 14% e 12%. Parte da subida
-de Filosofia e de Pensamento Social Brasileiro veio de nós compartilhados, e não
-de mídia feita para elas: Filosofia ganhou um nó porque `eixo-mente-corpo` é
-citado lá também; Pensamento Social Brasileiro ganhou dois porque as notas de
-`historia-colonialismo` e `historia-escravidao-abolicao` são usadas nos nós da
-trilha. Cobertura é cobertura — mas o peso da mídia continua sendo o que diz o
+Quatro trilhas estão em 100%. A mais recente é Pensamento Social Brasileiro, que
+estava em 36% quando a medição começou. Parte das subidas de Filosofia e de
+Sociologia veio de nós compartilhados, e não de mídia feita para elas: Filosofia
+ganhou um nó porque `eixo-mente-corpo` é citado lá também; Sociologia ganhou nós
+porque `eixo-brasil-universal` e `sociologia-elite-do-atraso` aparecem em mais de
+uma trilha. Cobertura é cobertura — mas o peso da mídia continua sendo o que diz o
 campo `peso`.
 
 Acervos que aparecem mais de uma vez e valem assinar: **Canal USP** (aulas de
@@ -122,7 +127,9 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
 
 ### Lacunas conhecidas
 
-- **Antropologia**: continua sem aula universitária em vídeo aberto. As aulas de
+- **Antropologia**: 5 de 7. Conseguiu a primeira aula de nível universitário
+  (Munanga, sobre relações étnico-raciais) e o episódio de Darcy Ribeiro, mas
+  ainda não há introdução à antropologia em vídeo aberto. As aulas de
   *Antropologia I* da USP (Heloisa Buarque de Almeida) estão na
   [e-Aulas](https://eaulas.usp.br/) e são excelentes — **mas exigem login USP**
   (conferido em 27/10/2026), então não entram nesta lista. Ficam como sugestão
@@ -133,8 +140,14 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   e abre sem login (conferido em 27/10/2026), mas é um formato mais frágil que o
   oEmbed — se o arquivo sair do ar, o link morre sem aviso. As outras duas
   entradas (UNIVESP) são YouTube.
-- **Pensamento Social Brasileiro**: 6 de 11 — é o gargalo agora. Faltam Florestan
-  Fernandes, DaMatta e Sérgio Buarque em vídeo aberto.
+- **Filosofia e Sociologia**: 8 de 12 — o gargalo agora. Em Filosofia faltam
+  Butler (o podcast cobre mal) e uma aula de fenomenologia; em Sociologia falta
+  vídeo sobre trabalho/divisão social do trabalho e sobre movimentos sociais.
+- **Racismo estrutural e democracia racial**: cobertos, mas por palestras
+  publicadas em canais que não são da universidade (Munanga está numa
+  republicação, Silvio Almeida na UFSC, Jessé Souza num sindicato). São boas falas
+  dos próprios autores; o risco é o vídeo sair do ar — reconferir a cada seis
+  meses.
 - **História**: 7 de 7, mas com peso desigual — só duas entradas são de nível
   universitário (IEA-USP e Quijano pelo Quilombo da UFRJ). As demais são
   divulgação correta, não aula de graduação.
@@ -142,12 +155,8 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   depende de uma palestra do próprio Csikszentmihalyi (TED, 2004) e não de uma
   aula em português; e `eixo-mente-corpo` está apoiado em divulgação sobre
   Damásio, não em aula de neurociência.
-- **Filosofia**: ainda falta Butler (o podcast cobre mal) e uma aula sobre
-  fenomenologia (Husserl/Heidegger).
 - **Integrada**: nenhuma indicação; a trilha não tem nós linkados, então nem
   aparece na cobertura.
-- **Pensamento social brasileiro**: ver acima — é a trilha mais descoberta depois
-  desta rodada.
 
 ---
 
@@ -235,8 +244,9 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 
 ## 7. Próximos passos
 
-1. **Pensamento Social Brasileiro (6/11)** — é a trilha mais descoberta agora;
-   precisa de Florestan, DaMatta e Sérgio Buarque em vídeo aberto.
+1. **Filosofia e Sociologia (8/12)** — são as trilhas mais descobertas agora:
+   falta fenomenologia e Butler em Filosofia; trabalho e movimentos sociais em
+   Sociologia.
 2. **Uma mídia por nó**: a meta não é 133 links, é que cada trilha tenha **uma
    porta de entrada em vídeo** e **uma leitura de apoio por nó**. A tabela de
    cobertura em `midias.md` é o placar.
