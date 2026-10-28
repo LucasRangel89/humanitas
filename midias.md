@@ -2,7 +2,7 @@
 
 # Mídias
 
-**95 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**99 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -24,8 +24,8 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | [Sociologia](#sociologia) | 21 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
 | [Antropologia](#antropologia) | 15 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
 | [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
-| [Geografia](#geografia) | 5 | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) |
-| [Ciência Política](#ciencia-politica) | 5 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
+| [Geografia](#geografia) | 8 | [Senior Loeb Scholar lecture: David Harvey](https://www.youtube.com/watch?v=pm_UgX--ef8) |
+| [Ciência Política](#ciencia-politica) | 6 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
 | [Economia](#economia) | 8 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
 
 ## Indicações por tema
@@ -136,11 +136,14 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 | Tipo | Título | Quem publica | Por que assistir | Liga a |
 |---|---|---|---|---|
-| videoaula · divulgação | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) | geo ilustrada · canal geo ilustrada | Trata escala como categoria de análise — o recorte que decide o que aparece —, que é o sentido da nota, e não apenas como conta de mapa. Divulgação, e com o defeito de vir emendada com redes: assista pela metade que interessa. Para o conceito em Milton Santos, o caminho continua sendo A Natureza do Espaço. | [Escala](conceitos/geografia-escala.md) |
+| artigo · fonte acadêmica | [Escala geográfica](https://periodicos.uff.br/geographia/article/view/53283) | Matheus da Silveira Grandi (UERJ) · GEOgraphia, v. 24, n. 52 (2022) — seção 'Conceitos fundamentais da Geografia' | É o texto que dá ao conceito o peso que a videoaula de divulgação não dá: percorre a escala como construção social e como instrumento de análise (Smith, Marston, Moore, Castro), separando-a de vez da escala cartográfica. Acesso aberto, com PDF; ~20 páginas. Comece por aqui e use o vídeo como aquecimento. | [Escala](conceitos/geografia-escala.md) |
+| artigo · fonte acadêmica | [A questão escalar no ensino de Geografia](https://periodicos.ufsm.br/geografia/article/view/91742) | José Vitor Rossi Souza (Unesp) e Denis Richter (UFG) · Geografia Ensino & Pesquisa (UFSM), v. 30 (2026) — publicação contínua | Complementa o anterior pelo lado de quem aprende: cinco obstáculos ao raciocínio escalar, entre eles a 'prisão da representação' (confundir escala geográfica com escala de mapa) e a ideia de círculos concêntricos que vão do bairro ao mundo. Útil para diagnosticar o próprio entendimento. Acesso aberto (CC BY-NC-SA), com PDF. | [Escala](conceitos/geografia-escala.md) |
+| videoaula · divulgação | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) | geo ilustrada · canal geo ilustrada | Trata escala como categoria de análise — o recorte que decide o que aparece —, que é o sentido da nota, e não apenas como conta de mapa. Divulgação, e com o defeito de vir emendada com redes: assista pela metade que interessa. Para o conceito, os dois artigos de acesso aberto logo abaixo (Grandi; Souza e Richter) valem mais do que este vídeo; para a formulação em Milton Santos, o caminho continua sendo A Natureza do Espaço. | [Escala](conceitos/geografia-escala.md) |
 | videoaula · divulgação | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) | Brasil Escola · canal Brasil Escola Oficial | Define espaço geográfico e percorre as categorias (lugar, paisagem, região, território) em uma aula. | [Espaço geográfico](conceitos/geografia-espaco-geografico.md) · [Território](conceitos/geografia-territorio.md) |
 | videoaula · divulgação | [O que é território?](https://www.youtube.com/watch?v=t5NCxcLozAo) | Brasil Escola · canal Brasil Escola Oficial | Território como relação de poder, não como pedaço de mapa — o ponto que a nota cobra. | [Território](conceitos/geografia-territorio.md) |
 | videoaula · divulgação | [Conceitos de espaço geográfico, região, lugar, território e paisagem — Geografia — Ensino Médio](https://www.youtube.com/watch?v=ExJO6rncnwg) | Canal Futura · canal Canal Futura | Aula do Canal Futura que separa lugar de paisagem com exemplos brasileiros. | [Lugar](conceitos/geografia-lugar.md) · [Paisagem](conceitos/geografia-paisagem.md) |
 | videoaula · divulgação | [A globalização e seus fluxos — Geografia — Ensino Médio](https://www.youtube.com/watch?v=wqRoZF9_J_g) | Canal Futura · canal Canal Futura | Liga globalização a fluxos concretos (mercadorias, capitais, pessoas) — o elo entre 'redes e fluxos' e o eixo local × global. | [Redes e fluxos](conceitos/geografia-redes-fluxos.md) · [Local × Global](conceitos/eixo-local-global.md) |
+| videoaula · aula universitária | [Senior Loeb Scholar lecture: David Harvey](https://www.youtube.com/watch?v=pm_UgX--ef8) | David Harvey (CUNY), na Senior Loeb Scholar Lecture da Harvard Graduate School of Design · canal Harvard GSD · **inglês, legenda automática em português** | Aula magna de 28/03/2016 na Harvard GSD, 1h48: por que o mundo consome cimento nessa escala, e como a produção do espaço e a organização do território são parte constitutiva da economia capitalista (sobreacumulação, expansão espacial, urbanização, limites do crescimento). Nível de teoria que faltava ao tema, que até aqui só tinha divulgação em português. Longa e densa: assista em blocos (a conferência ocupa a primeira hora; o resto é debate). Em inglês, com legenda automática em português (máquina, com erros). | [Espaço geográfico](conceitos/geografia-espaco-geografico.md) · [Território](conceitos/geografia-territorio.md) |
 
 ### Ciência Política
 
@@ -151,6 +154,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Dois conceitos de liberdade: liberdade negativa e liberdade positiva a partir de Isaiah Berlin](https://www.youtube.com/watch?v=vxSjEbVhknE) | Daniel Cidade · canal Daniel Cidade | Explica o par de Berlin — liberdade como ausência de interferência × liberdade como autogoverno —, que é o primeiro polo do eixo e a origem da frase que o organiza (liberdade não é igualdade). Ressalva: cobre um lado da balança, não a disputa inteira. O outro lado tem o vídeo do véu da ignorância (Rawls) e a nota de desigualdade social; a comparação é trabalho seu, no diário. | [Liberdade × Igualdade](conceitos/eixo-liberdade-igualdade.md) |
 | videoaula · aula universitária | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Aula 2 de um curso de 10 aulas que acompanha o livro Curso básico de Ciência Política. Comece por aqui: define o campo antes dos conceitos. | [Poder](conceitos/ciencia-politica-poder.md) · [Estado](conceitos/ciencia-politica-estado.md) |
 | videoaula · aula universitária | [Curso de Ciência Política — Aula 10 — Conceito de Ditadura — Autoritarismo](https://www.youtube.com/watch?v=Daa5TIB1CK4) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Separa autoritarismo de totalitarismo com critério tipológico — o vocabulário que a trilha cobra antes de discutir 1964. | [Regime político](conceitos/ciencia-politica-regime-politico.md) · [Ditadura e transição](conceitos/historia-ditadura-transicao.md) |
+| curso · curso livre | [Introduction to Political Philosophy with Steven B. Smith (24 aulas)](https://www.youtube.com/playlist?list=PL8D95DEA9B7DFE825) | Steven B. Smith (Yale University), no Open Yale Courses · canal YaleCourses · **inglês, legenda automática em português** | Curso de graduação de Yale gravado em sala de aula: 24 aulas sobre o poder, o Estado e o regime, de Platão e Aristóteles a Hobbes, Locke, Rousseau e Tocqueville. É o que o tema não tinha — em português só há videoaulas avulsas de introdução. Em inglês, com legenda automática em português (máquina, com erros); o site do Open Yale Courses publica a transcrição em inglês, útil para conferir termos. | [Poder](conceitos/ciencia-politica-poder.md) · [Estado](conceitos/ciencia-politica-estado.md) |
 
 ### Economia
 
@@ -213,6 +217,7 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Felipe Barchi | 1 |
 | Glória Vianna | 1 |
 | HISTÓRIA EM TÓPICOS - Prof. DavidBandian | 1 |
+| Harvard GSD | 1 |
 | Harvard University | 1 |
 | Icles Rodrigues | 1 |
 | Instituto ESPE | 1 |
@@ -237,6 +242,7 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | TED | 1 |
 | TV PUC-Rio \| Comunicar | 1 |
 | Victor Sales Pinheiro | 1 |
+| YaleCourses | 1 |
 | centrodemidias | 1 |
 | geo ilustrada | 1 |
 | É Fácil Quando se Aprende | 1 |
@@ -248,4 +254,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 95 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 99 indicações em 8 temas.*

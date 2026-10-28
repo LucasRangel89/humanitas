@@ -21,11 +21,12 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **95 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **99 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
-documentário, filmes e um podcast. **Dez** estão fora do português: quatro em inglês — o curso
-*Justice* (Harvard, legenda revisada em português) e três aulas de graduação com
-legenda automática — e seis episódios de antropologia da UNED, em espanhol. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
+documentário, filmes e um podcast. **Doze** estão fora do português: seis em inglês — o curso
+*Justice* (Harvard, legenda revisada em português), o curso de introdução à
+filosofia política de Yale e quatro aulas e conferências com legenda automática — e
+seis episódios de antropologia da UNED, em espanhol. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
 link já têm mídia **em português** ligada (a regra de idioma está na seção 2).
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
@@ -128,8 +129,8 @@ entretenimento.
 | História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
 | Antropologia | 15 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
-| Geografia | 5 | *Espaço geográfico* (Brasil Escola) |
-| Ciência Política | 5 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
+| Geografia | 8 | *Escala geográfica* (Grandi, GEOgraphia — acesso aberto) |
+| Ciência Política | 6 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
 
 ### Cobertura das trilhas
 
@@ -213,8 +214,9 @@ Onde a fila continua travada — e por quê, depois de procurar de novo:
 
 - `psicologia-funcionalismo`, `sociologia-papel-social`/`identidade`,
   `geografia-escala`, `filosofia-eudaimonia`: procurei aula de graduação aberta em
-  português e **não existe** no YouTube. O que aparece é divulgação de canal, que é
-  exatamente o que já está lá. Não vou trocar seis por meia dúzia para melhorar a
+  português e **não existe** no YouTube. (`geografia-escala` foi resolvido depois
+  por outro caminho — artigo, não vídeo; ver a rodada seguinte.) O que aparece é
+  divulgação de canal, que é exatamente o que já está lá. Não vou trocar seis por meia dúzia para melhorar a
   aparência da tabela.
 - `antropologia-ritual`: o material certo está no e-Aulas da USP, atrás de login.
 
@@ -230,7 +232,38 @@ Vale dizer o que isso significa: `psicologia-funcionalismo` tem vídeo de canal
 introdutório, `eixo-liberdade-igualdade` tem a explicação do par de Berlin por um
 professor mas **só um lado da balança**, e `geografia-escala` tem um vídeo de
 categoria geográfica que vem emendado com redes. O placar fechou; a qualidade
-desses três é a mais baixa da biblioteca, e está escrito na nota de cada um.
+desses três é a mais baixa da biblioteca, e está escrito na nota de cada um. (O da
+Geografia foi corrigido logo em seguida — ver a rodada abaixo.)
+
+**Terceira rodada: quando não há aula, entra artigo (27/10/2026).** A busca por uma
+aula universitária aberta sobre **escala geográfica** — em português, inglês ou
+espanhol com legenda — não deu nada além de preparatório para AP e cursinho, ou
+seja, divulgação de outro sotaque. Em vez de cadastrar mais um vídeo fraco, a lacuna
+foi fechada com **dois artigos de acesso aberto, em português e revisados por
+pares**, que são melhores do que a videoaula que a fila pedia:
+
+| Item | Onde | Serve a |
+|---|---|---|
+| **Matheus da Silveira Grandi**, *Escala geográfica* (GEOgraphia, UFF, 2022 — seção "Conceitos fundamentais da Geografia") | [periodicos.uff.br](https://periodicos.uff.br/geographia/article/view/53283), CC BY | `geografia-escala` — a escala como construção social e instrumento de análise (Smith, Marston, Moore, Castro) |
+| **José Vitor Rossi Souza & Denis Richter**, *A questão escalar no ensino de Geografia* (Geografia Ensino & Pesquisa, UFSM, 2026) | [periodicos.ufsm.br](https://periodicos.ufsm.br/geografia/article/view/91742), CC BY-NC-SA | `geografia-escala` — cinco obstáculos do raciocínio escalar, entre eles a "prisão da representação" |
+
+Os dois foram **abertos e lidos** (`verificado_como: pagina`), não herdados de uma
+lista de referências. Na página gerada eles aparecem **acima** do vídeo de
+divulgação, porque agora é isso que a pessoa deve ler primeiro — o vídeo continua
+ali como aquecimento de 7 minutos.
+
+No mesmo movimento, dois temas ganharam a camada de teoria que faltava, os dois em
+inglês com legenda automática (`pt-auto`, e por isso **fora** da conta da cobertura):
+
+| Item | Onde | Serve a |
+|---|---|---|
+| **David Harvey**, *Senior Loeb Scholar lecture* (Harvard GSD, 2016, 1h48) | [youtube.com/watch?v=pm_UgX--ef8](https://www.youtube.com/watch?v=pm_UgX--ef8) | `geografia-espaco-geografico`, `geografia-territorio` — produção do espaço e organização do território como parte da economia capitalista |
+| **Steven B. Smith**, *Introduction to Political Philosophy* (Open Yale Courses, 24 aulas) | [playlist no YaleCourses](https://www.youtube.com/playlist?list=PL8D95DEA9B7DFE825) | `ciencia-politica` — o poder, o Estado e o regime, de Platão a Tocqueville |
+
+A conferência de Harvey foi conferida pelo **índice de capítulos** que o próprio
+canal publica (cimento, crise, mais-valia, urbanização, China, limites do
+crescimento, debate aberto), e o que ela **não** é: uma aula sobre escala. Daí o
+artigo, e não ela, ter fechado aquele nó.
 
 Antropologia fechou com o par mais desigual da biblioteca: uma
 jornada de seminários do Departamento de Antropologia da USP sobre os 90 anos de
@@ -387,9 +420,11 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
    Conflito × Coesão (UNIVESP), `antropologia-ritual` e `antropologia-etnografia`
    (UNED, em espanhol), `filosofia-eudaimonia`, `psicologia-funcionalismo` e
    `sociologia-papel-social`/`identidade` (aulas em inglês com legenda automática).
-   Sobra `geografia-escala`: não existe aula de graduação aberta sobre escala
-   geográfica, nem em português nem com legenda — as buscas devolveram material de
-   preparatório para AP Human Geography.
+   `geografia-escala` saiu da fila **sem vídeo**: não existe aula de graduação
+   aberta sobre escala geográfica (as buscas devolvem preparatório para AP Human
+   Geography), então o nó passou a ser aberto por dois artigos de acesso aberto em
+   português. **A fila de substituição está vazia.** O que resta é o que a régua
+   nova pede: um artigo de acesso aberto por nó, onde houver.
 2. **Antropologia e Filosofia dependem de acesso institucional.** A introdução à
    antropologia e a fenomenologia de Husserl/Heidegger só existem em vídeo dentro
    do e-Aulas da USP, atrás de login. Sem vínculo USP, a lacuna é real e não tem

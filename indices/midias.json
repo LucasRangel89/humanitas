@@ -2,35 +2,35 @@
  "versao": 1,
  "atualizado_em": "2026-10-27",
  "totais": {
-  "itens": 95,
+  "itens": 99,
   "por_tipo": {
-   "artigo": 1,
-   "curso": 4,
+   "artigo": 3,
+   "curso": 5,
    "documentario": 1,
    "filme": 6,
    "podcast": 1,
    "resenha": 1,
-   "videoaula": 81
+   "videoaula": 82
   },
   "por_tema": {
    "antropologia": 15,
-   "ciencia-politica": 5,
+   "ciencia-politica": 6,
    "economia": 8,
    "filosofia": 14,
-   "geografia": 5,
+   "geografia": 8,
    "historia": 9,
    "psicologia": 18,
    "sociologia": 21
   },
   "por_verificacao": {
    "material-do-autor": 7,
-   "oembed": 76,
-   "pagina": 12
+   "oembed": 78,
+   "pagina": 14
   },
   "por_idioma": {
-   "en": 4,
+   "en": 6,
    "es": 6,
-   "pt": 85
+   "pt": 87
   }
  },
  "cobertura_trilhas": [
@@ -1669,6 +1669,46 @@
    "legendas": ""
   },
   {
+   "id": "grandi-escala-geografica",
+   "tipo": "artigo",
+   "peso": "fonte-academica",
+   "titulo": "Escala geográfica",
+   "autor": "Matheus da Silveira Grandi (UERJ)",
+   "canal": "",
+   "veiculo": "GEOgraphia, v. 24, n. 52 (2022) — seção 'Conceitos fundamentais da Geografia'",
+   "url": "https://periodicos.uff.br/geographia/article/view/53283",
+   "onde": "",
+   "tema": "geografia",
+   "conceitos": [
+    "geografia-escala"
+   ],
+   "nota": "É o texto que dá ao conceito o peso que a videoaula de divulgação não dá: percorre a escala como construção social e como instrumento de análise (Smith, Marston, Moore, Castro), separando-a de vez da escala cartográfica. Acesso aberto, com PDF; ~20 páginas. Comece por aqui e use o vídeo como aquecimento.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
+  },
+  {
+   "id": "souza-richter-questao-escalar",
+   "tipo": "artigo",
+   "peso": "fonte-academica",
+   "titulo": "A questão escalar no ensino de Geografia",
+   "autor": "José Vitor Rossi Souza (Unesp) e Denis Richter (UFG)",
+   "canal": "",
+   "veiculo": "Geografia Ensino & Pesquisa (UFSM), v. 30 (2026) — publicação contínua",
+   "url": "https://periodicos.ufsm.br/geografia/article/view/91742",
+   "onde": "",
+   "tema": "geografia",
+   "conceitos": [
+    "geografia-escala"
+   ],
+   "nota": "Complementa o anterior pelo lado de quem aprende: cinco obstáculos ao raciocínio escalar, entre eles a 'prisão da representação' (confundir escala geográfica com escala de mapa) e a ideia de círculos concêntricos que vão do bairro ao mundo. Útil para diagnosticar o próprio entendimento. Acesso aberto (CC BY-NC-SA), com PDF.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
+  },
+  {
    "id": "geoilustrada-escala",
    "tipo": "videoaula",
    "peso": "divulgacao",
@@ -1682,7 +1722,7 @@
    "conceitos": [
     "geografia-escala"
    ],
-   "nota": "Trata escala como categoria de análise — o recorte que decide o que aparece —, que é o sentido da nota, e não apenas como conta de mapa. Divulgação, e com o defeito de vir emendada com redes: assista pela metade que interessa. Para o conceito em Milton Santos, o caminho continua sendo A Natureza do Espaço.",
+   "nota": "Trata escala como categoria de análise — o recorte que decide o que aparece —, que é o sentido da nota, e não apenas como conta de mapa. Divulgação, e com o defeito de vir emendada com redes: assista pela metade que interessa. Para o conceito, os dois artigos de acesso aberto logo abaixo (Grandi; Souza e Richter) valem mais do que este vídeo; para a formulação em Milton Santos, o caminho continua sendo A Natureza do Espaço.",
    "verificado_em": "2026-10-27",
    "verificado_como": "oembed",
    "idioma": "pt",
@@ -1793,6 +1833,27 @@
    "legendas": ""
   },
   {
+   "id": "yale-smith-filosofia-politica",
+   "tipo": "curso",
+   "peso": "curso-livre",
+   "titulo": "Introduction to Political Philosophy with Steven B. Smith (24 aulas)",
+   "autor": "Steven B. Smith (Yale University), no Open Yale Courses",
+   "canal": "YaleCourses",
+   "veiculo": "",
+   "url": "https://www.youtube.com/playlist?list=PL8D95DEA9B7DFE825",
+   "onde": "",
+   "tema": "ciencia-politica",
+   "conceitos": [
+    "ciencia-politica-poder",
+    "ciencia-politica-estado"
+   ],
+   "nota": "Curso de graduação de Yale gravado em sala de aula: 24 aulas sobre o poder, o Estado e o regime, de Platão e Aristóteles a Hobbes, Locke, Rousseau e Tocqueville. É o que o tema não tinha — em português só há videoaulas avulsas de introdução. Em inglês, com legenda automática em português (máquina, com erros); o site do Open Yale Courses publica a transcrição em inglês, útil para conferir termos.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed",
+   "idioma": "en",
+   "legendas": "pt-auto"
+  },
+  {
    "id": "passos-weber-politica-vocacao",
    "tipo": "videoaula",
    "peso": "divulgacao",
@@ -1876,6 +1937,27 @@
    "verificado_como": "oembed",
    "idioma": "pt",
    "legendas": ""
+  },
+  {
+   "id": "harvey-espaco-harvard",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Senior Loeb Scholar lecture: David Harvey",
+   "autor": "David Harvey (CUNY), na Senior Loeb Scholar Lecture da Harvard Graduate School of Design",
+   "canal": "Harvard GSD",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=pm_UgX--ef8",
+   "onde": "",
+   "tema": "geografia",
+   "conceitos": [
+    "geografia-espaco-geografico",
+    "geografia-territorio"
+   ],
+   "nota": "Aula magna de 28/03/2016 na Harvard GSD, 1h48: por que o mundo consome cimento nessa escala, e como a produção do espaço e a organização do território são parte constitutiva da economia capitalista (sobreacumulação, expansão espacial, urbanização, limites do crescimento). Nível de teoria que faltava ao tema, que até aqui só tinha divulgação em português. Longa e densa: assista em blocos (a conferência ocupa a primeira hora; o resto é debate). Em inglês, com legenda automática em português (máquina, com erros).",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed",
+   "idioma": "en",
+   "legendas": "pt-auto"
   },
   {
    "id": "scielo-milgram-consentimento",
