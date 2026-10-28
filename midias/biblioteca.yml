@@ -736,6 +736,21 @@ itens:
     verificado_em: 2026-10-27
     verificado_como: oembed
 
+  - id: kaplan-etica-nicomaco-i
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Aristotle's Nicomachean Ethics - Book I"
+    autor: "Jeffrey Kaplan (professor de filosofia)"
+    canal: "Jeffrey Kaplan"
+    url: "https://www.youtube.com/watch?v=s11sEBenlPI"
+    tema: filosofia
+    conceitos: [filosofia-eudaimonia]
+    idioma: en
+    legendas: pt-auto
+    nota: "Aula de 28 min sobre o livro I da Ética a Nicômaco: o argumento da função, eudaimonia como atividade e não como estado, e o contraste com Nietzsche. É a exposição de sala de aula que faltava em português — o vídeo do Clóvis é divulgação e não entra no texto. Em inglês: ligue o CC e escolha português para a legenda automática (tradução de máquina, com erros; para citação, vale a tradução impressa)."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
   - id: clovis-eudaimonia-aristoteles
     tipo: videoaula
     peso: divulgacao
@@ -799,6 +814,21 @@ itens:
     tema: sociologia
     conceitos: [sociologia-anomia]
     nota: "Dá o essencial durkheimiano em poucos minutos: norma que afrouxa, conduta que perde parâmetro, crise que acelera a mudança. Divulgação — serve para fixar vocabulário antes de ir a O Suicídio."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: krier-goffman-apresentacao-do-eu
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Sociological Theory: Skeleton Key 1 to Goffman's Presentation of Self in Everyday Life"
+    autor: "Dan Krier (professor de sociologia, California State University Northridge)"
+    canal: "Dan Krier"
+    url: "https://www.youtube.com/watch?v=wr5MM9_kd8E"
+    tema: sociologia
+    conceitos: [sociologia-papel-social, sociologia-identidade]
+    idioma: en
+    legendas: pt-auto
+    nota: "Primeira aula da série de teoria sociológica de Dan Krier sobre A representação do eu na vida cotidiana: palco, fachada, equipe, controle das impressões e a diferença entre papel e self. É o que o nó pede e o que a divulgação em português não entrega — Goffman lido em sala de aula, não resumido. Em inglês, com legenda automática em português (máquina, com erros)."
     verificado_em: 2026-10-27
     verificado_como: oembed
 
@@ -973,6 +1003,21 @@ itens:
     verificado_como: pagina
 
   # ------------- psicologia: funcionalismo (lacuna fechada na trilha N1)
+  - id: landrum-funcionalismo
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Functionalism"
+    autor: "Eric Landrum (Boise State University), na disciplina History & Systems (PSYC 487)"
+    canal: "Eric Landrum"
+    url: "https://www.youtube.com/watch?v=MFsHT1NnVCg"
+    tema: psicologia
+    conceitos: [psicologia-funcionalismo]
+    idioma: en
+    legendas: pt-auto
+    nota: "Aula de graduação de History & Systems da Boise State sobre o funcionalismo: a influência de Darwin, o fluxo de consciência de James, a psicologia aplicada e as críticas à escola. É o nível que faltava — em português só havia divulgação de canal. Em inglês, com legenda automática em português no player (máquina, com erros)."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
   - id: universo-psicologia-funcionalismo
     tipo: videoaula
     peso: divulgacao

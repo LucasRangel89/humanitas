@@ -2,7 +2,7 @@
  "versao": 1,
  "atualizado_em": "2026-10-27",
  "totais": {
-  "itens": 92,
+  "itens": 95,
   "por_tipo": {
    "artigo": 1,
    "curso": 4,
@@ -10,25 +10,25 @@
    "filme": 6,
    "podcast": 1,
    "resenha": 1,
-   "videoaula": 78
+   "videoaula": 81
   },
   "por_tema": {
    "antropologia": 15,
    "ciencia-politica": 5,
    "economia": 8,
-   "filosofia": 13,
+   "filosofia": 14,
    "geografia": 5,
    "historia": 9,
-   "psicologia": 17,
-   "sociologia": 20
+   "psicologia": 18,
+   "sociologia": 21
   },
   "por_verificacao": {
    "material-do-autor": 7,
-   "oembed": 73,
+   "oembed": 76,
    "pagina": 12
   },
   "por_idioma": {
-   "en": 1,
+   "en": 4,
    "es": 6,
    "pt": 85
   }
@@ -1222,6 +1222,26 @@
    "legendas": ""
   },
   {
+   "id": "kaplan-etica-nicomaco-i",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Aristotle's Nicomachean Ethics - Book I",
+   "autor": "Jeffrey Kaplan (professor de filosofia)",
+   "canal": "Jeffrey Kaplan",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=s11sEBenlPI",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-eudaimonia"
+   ],
+   "nota": "Aula de 28 min sobre o livro I da Ética a Nicômaco: o argumento da função, eudaimonia como atividade e não como estado, e o contraste com Nietzsche. É a exposição de sala de aula que faltava em português — o vídeo do Clóvis é divulgação e não entra no texto. Em inglês: ligue o CC e escolha português para a legenda automática (tradução de máquina, com erros; para citação, vale a tradução impressa).",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed",
+   "idioma": "en",
+   "legendas": "pt-auto"
+  },
+  {
    "id": "clovis-eudaimonia-aristoteles",
    "tipo": "videoaula",
    "peso": "divulgacao",
@@ -1322,6 +1342,27 @@
    "verificado_como": "oembed",
    "idioma": "pt",
    "legendas": ""
+  },
+  {
+   "id": "krier-goffman-apresentacao-do-eu",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Sociological Theory: Skeleton Key 1 to Goffman's Presentation of Self in Everyday Life",
+   "autor": "Dan Krier (professor de sociologia, California State University Northridge)",
+   "canal": "Dan Krier",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=wr5MM9_kd8E",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-papel-social",
+    "sociologia-identidade"
+   ],
+   "nota": "Primeira aula da série de teoria sociológica de Dan Krier sobre A representação do eu na vida cotidiana: palco, fachada, equipe, controle das impressões e a diferença entre papel e self. É o que o nó pede e o que a divulgação em português não entrega — Goffman lido em sala de aula, não resumido. Em inglês, com legenda automática em português (máquina, com erros).",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed",
+   "idioma": "en",
+   "legendas": "pt-auto"
   },
   {
    "id": "brasilescola-interacionismo",
@@ -1566,6 +1607,26 @@
    "verificado_como": "pagina",
    "idioma": "es",
    "legendas": "nao-verificado"
+  },
+  {
+   "id": "landrum-funcionalismo",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Functionalism",
+   "autor": "Eric Landrum (Boise State University), na disciplina History & Systems (PSYC 487)",
+   "canal": "Eric Landrum",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=MFsHT1NnVCg",
+   "onde": "",
+   "tema": "psicologia",
+   "conceitos": [
+    "psicologia-funcionalismo"
+   ],
+   "nota": "Aula de graduação de History & Systems da Boise State sobre o funcionalismo: a influência de Darwin, o fluxo de consciência de James, a psicologia aplicada e as críticas à escola. É o nível que faltava — em português só havia divulgação de canal. Em inglês, com legenda automática em português no player (máquina, com erros).",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed",
+   "idioma": "en",
+   "legendas": "pt-auto"
   },
   {
    "id": "universo-psicologia-funcionalismo",

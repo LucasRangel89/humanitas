@@ -59,11 +59,13 @@ CAMPOS_OBRIGATORIOS = ("id", "tipo", "titulo", "autor", "tema", "verificado_em",
 IDIOMAS = ("pt", "en", "es")
 
 # Situação das legendas, do ponto de vista de quem vai assistir.
-#   pt              -> há legenda em português (documentada na fonte ou na nota)
+#   pt              -> há legenda em português, revisada ou publicada pela fonte
+#   pt-auto         -> legenda automática do YouTube traduzida para português
+#                      (texto de máquina, com erros previsíveis)
 #   es / en         -> legenda em espanhol/inglês
 #   nenhuma         -> não há legenda
 #   nao-verificado  -> não consegui confirmar; a nota diz o que se sabe
-LEGENDAS = ("pt", "es", "en", "nenhuma", "nao-verificado")
+LEGENDAS = ("pt", "pt-auto", "es", "en", "nenhuma", "nao-verificado")
 
 ARQUIVO = pathlib.Path("midias") / "biblioteca.yml"
 SAIDA_MD = pathlib.Path("midias.md")
@@ -124,6 +126,7 @@ def validar(
     vistos_id: dict[str, int] = {}
     vistos_url: dict[str, str] = {}
     legendas_pendentes: list[str] = []
+    legendas_automaticas: list[str] = []
 
     if atualizado_em and not DATA_ISO.match(atualizado_em):
         erros.append(f"{ARQUIVO}: `atualizado_em` deve ser AAAA-MM-DD (tem {atualizado_em!r}).")
@@ -175,6 +178,10 @@ def validar(
                     f"{ARQUIVO}: {rotulo} está em {item['idioma']} e precisa declarar "
                     "`legendas` (pt, es, en, nenhuma ou nao-verificado)."
                 )
+            elif item["legendas"] == "pt-auto":
+                # Tradução de máquina: aceita por decisão do projeto, mas nunca
+                # silenciosa — a auditoria conta quantas são.
+                legendas_automaticas.append(rotulo)
             elif item["legendas"] == "nao-verificado":
                 # Um aviso por biblioteca, não por item: a dúvida é a mesma para
                 # todas as mídias daquele idioma, e uma linha por item afogaria
@@ -219,6 +226,13 @@ def validar(
 
     if itens and not any(i.get("verificado_em") for i in itens if not i.get("_invalido")):
         erros.append(f"{ARQUIVO}: nenhuma entrada tem `verificado_em`.")
+
+    if legendas_automaticas:
+        avisos.append(
+            f"{ARQUIVO}: {len(legendas_automaticas)} mídia(s) com legenda automática "
+            "em português (tradução de máquina, não revisada): "
+            f"{', '.join(legendas_automaticas)}."
+        )
 
     if legendas_pendentes:
         avisos.append(
@@ -297,6 +311,8 @@ def _marca_idioma(item: dict) -> str:
     legenda = item.get("legendas", "")
     if legenda == "pt":
         volta = f"{rotulo}, legenda em português"
+    elif legenda == "pt-auto":
+        volta = f"{rotulo}, legenda automática em português"
     elif legenda in ("es", "en"):
         volta = f"{rotulo}, legenda em {ROTULO_IDIOMA.get(legenda, legenda)}"
     elif legenda == "nenhuma":

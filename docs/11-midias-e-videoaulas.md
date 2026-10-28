@@ -21,11 +21,11 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **92 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **95 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
-documentário, filmes e um podcast. **Sete** estão fora do português: um curso
-universitário em inglês com legenda em português (Harvard, *Justice*) e seis
-episódios de antropologia da UNED, em espanhol. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
+documentário, filmes e um podcast. **Dez** estão fora do português: quatro em inglês — o curso
+*Justice* (Harvard, legenda revisada em português) e três aulas de graduação com
+legenda automática — e seis episódios de antropologia da UNED, em espanhol. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
 link já têm mídia **em português** ligada (a regra de idioma está na seção 2).
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
@@ -77,7 +77,7 @@ um material em português que exista.
 | Campo | Valores | Regra |
 |---|---|---|
 | `idioma` | `pt` (padrão) · `en` · `es` | Ausência do campo significa `pt`. Mídia em `en`/`es` **precisa** declarar `legendas`, senão a auditoria barra |
-| `legendas` | `pt` · `es` · `en` · `nenhuma` · `nao-verificado` | O que a pessoa vai ver ao assistir. `nao-verificado` é permitido, mas gera aviso na auditoria — é dúvida assumida, não atalho |
+| `legendas` | `pt` · `pt-auto` · `es` · `en` · `nenhuma` · `nao-verificado` | O que a pessoa vai ver ao assistir. `nao-verificado` e `pt-auto` são permitidos, mas geram aviso na auditoria — dúvida e tradução de máquina declaradas, não atalhos |
 
 Critérios para aceitar:
 
@@ -88,6 +88,12 @@ Critérios para aceitar:
 2. **Legenda decide o desempate.** Entre uma fonte inglesa com legenda em
    português e uma espanhola sem legenda, ganha a inglesa. Vídeo sem legenda
    nenhuma e com áudio difícil só entra se for a única opção e a nota avisar.
+   **Legenda automática conta, mas é declarada à parte:** `legendas: pt` é legenda
+   revisada ou publicada pela fonte; `pt-auto` é a tradução de máquina do player do
+   YouTube (ligue o CC e escolha português). A diferença não é preciosismo: a versão
+   automática erra termos técnicos e nomes próprios, e nunca serve para citar. A
+   auditoria conta quantas mídias estão em `pt-auto`, para que a proporção não
+   passe despercebida.
 3. **Continua valendo o protocolo da seção 2**, inclusive a regra de hospedagem:
    player próprio não entra sem aval do autor do projeto. O CanalUNED recebeu esse
    aval em 27/10/2026, para a série de Antropologia — com `verificado_como: pagina`
@@ -116,9 +122,9 @@ entretenimento.
 
 | Tema | Indicações | Melhor porta de entrada |
 |---|---|---|
-| Psicologia | 17 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
-| Sociologia | 20 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
-| Filosofia | 13 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
+| Psicologia | 18 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
+| Sociologia | 21 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
+| Filosofia | 14 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
 | História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
 | Antropologia | 15 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
@@ -177,6 +183,21 @@ português, e as notas dos episódios dizem isso. E as **legendas ficaram como
 `nao-verificado`** nos seis: o CanalUNED não informa faixa de legenda na página do
 vídeo, e eu não vou escrever "sem legenda" sobre o que não conferi. É por isso que
 a auditoria agora mostra um aviso agregado — dúvida declarada, não descuido.
+
+**Legenda automática aceita, e declarada (27/10/2026).** Os quatro nós que não
+tinham solução em português ganharam material estrangeiro. Três entraram como
+`pt-auto` — tradução de máquina do player —, porque a alternativa era continuar com
+divulgação:
+
+| Nó | Antes | Agora |
+|---|---|---|
+| `filosofia-eudaimonia` | vídeo de divulgação de Clóvis de Barros | **Jeffrey Kaplan**, *Aristotle's Nicomachean Ethics – Book I* (28 min): argumento da função, eudaimonia como atividade |
+| `psicologia-funcionalismo` | divulgação do canal Universo da Psicologia | **Eric Landrum** (Boise State), aula de *History & Systems* (PSYC 487) sobre o funcionalismo |
+| `sociologia-papel-social` / `identidade` | divulgação do Brasil Escola | **Dan Krier** (CSUN), primeira aula da série sobre *A representação do eu* de Goffman: fachada, equipe, papel × self |
+
+`geografia-escala` continua como estava: procurei aula de graduação aberta sobre
+escala geográfica e só encontrei material de cursinho e de preparatório de AP
+(GeoMindz, Heimler), que é divulgação com outro sotaque. Não entrou.
 
 **Segunda rodada: trocar divulgação por aula de universidade.** A fila do Guia
 apontava oito nós fechados com divulgação. Nesta rodada entraram dois, os dois da
@@ -364,9 +385,11 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
    **substituir as fracas por fortes**. Já resolvidos: `eixo-liberdade-igualdade`
    (curso *Justice*, em inglês com legenda), `sociologia-anomia` e o eixo
    Conflito × Coesão (UNIVESP), `antropologia-ritual` e `antropologia-etnografia`
-   (UNED, em espanhol). A fila que sobra, da pior para a menos pior:
-   `geografia-escala`, `psicologia-funcionalismo`,
-   `sociologia-papel-social`/`identidade`, `filosofia-eudaimonia`.
+   (UNED, em espanhol), `filosofia-eudaimonia`, `psicologia-funcionalismo` e
+   `sociologia-papel-social`/`identidade` (aulas em inglês com legenda automática).
+   Sobra `geografia-escala`: não existe aula de graduação aberta sobre escala
+   geográfica, nem em português nem com legenda — as buscas devolveram material de
+   preparatório para AP Human Geography.
 2. **Antropologia e Filosofia dependem de acesso institucional.** A introdução à
    antropologia e a fenomenologia de Husserl/Heidegger só existem em vídeo dentro
    do e-Aulas da USP, atrás de login. Sem vínculo USP, a lacuna é real e não tem
