@@ -2,7 +2,7 @@
 
 # Mídias
 
-**78 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**80 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -22,7 +22,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | [Psicologia](#psicologia) | 16 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
 | [Filosofia](#filosofia) | 13 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
 | [Sociologia](#sociologia) | 18 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
-| [Antropologia](#antropologia) | 7 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
+| [Antropologia](#antropologia) | 9 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
 | [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 4 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
 | [Ciência Política](#ciencia-politica) | 3 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
@@ -102,6 +102,8 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · aula universitária | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) | Kabengele Munanga (FFLCH-USP) · canal Amílcar Ifé | Aula em que Munanga desmonta o mito da democracia racial a partir de Freyre e da mestiçagem. O canal é uma republicação, não a universidade — o conteúdo é a aula, e o risco de sair do ar é maior do que num canal institucional. | [Democracia racial](conceitos/ciencia-politica-democracia-racial.md) |
 | documentário · obra de apoio | [O Povo Brasileiro - Episódio 4: Encontros e desencontros](https://www.youtube.com/watch?v=5_3XrQD5VOI) | Darcy Ribeiro (obra) · direção de Isa Grinspum Ferraz · canal Douglas Dutra | O episódio da série de 2000 sobre a gestação étnica do povo brasileiro: mestiçagem como processo, não como elogio. 26 min. A série completa está no canal da Fundação Leonel Brizola; este é um recorte por episódio. | [Mestiçagem e identidade nacional](conceitos/antropologia-mesticagem-identidade.md) |
 | videoaula · divulgação | [Identidade nacional: o que é 'ser brasileiro'](https://www.youtube.com/watch?v=Q9LIEDRmlcE) | Lilia Schwarcz e equipe do Nexo, na série Temas Fundamentais do Brasil · canal Nexo Jornal | Vídeo curto e bem editado: como a identidade nacional foi inventada e por que 'ser brasileiro' não é uma essência. Bom para começar o nó antes do episódio de Darcy Ribeiro. | [Mestiçagem e identidade nacional](conceitos/antropologia-mesticagem-identidade.md) · [Brasil × Universal](conceitos/eixo-brasil-universal.md) |
+| videoaula · aula universitária | [AS TÉCNICAS DO CORPO : 90 anos do ensaio de Marcel Mauss - 04/10/24](https://www.youtube.com/watch?v=J1jLKW0YWvU) | Departamento de Antropologia da FFLCH-USP (jornada de seminários) · canal uspfflch | Jornada de seminários dos 90 anos de As técnicas do corpo, no Departamento de Antropologia da USP, com convidados estrangeiros. Ressalva honesta: não é aula expositiva — é um dia inteiro de falas, longo e desigual, melhor para quem já leu o ensaio e quer ver o conceito em uso. É o material aberto mais próximo do texto que consegui verificar: a aula de Antropologia I da USP que trata do tema está no e-Aulas, atrás de login. | [Técnicas do corpo](conceitos/antropologia-corpo-tecnicas.md) |
+| videoaula · obra de apoio | [TV PUC-Rio: 40 anos de “Carnavais, malandros e heróis”, de Roberto DaMatta](https://www.youtube.com/watch?v=bEUc8v70ohw) | Roberto DaMatta, em programa da TV PUC-Rio · canal TV PUC-Rio \| Comunicar | DaMatta conversando sobre o livro que levou a análise de ritual para a sociedade brasileira: o carnaval como rito de inversão. Não é aula sobre van Gennep nem sobre Turner — é o conceito em ação num caso brasileiro, e é assim que deve ser assistido. Para a teoria, o caminho continua sendo Os ritos de passagem e O processo ritual. | [Ritual](conceitos/antropologia-ritual.md) |
 | filme · obra de apoio | Gattaca — A Experiência Genética (1997) — *streaming e locação* | Andrew Niccol | Determinismo genético como distopia: leva o eixo natureza × cultura ao limite. Citado no plano de estudos do autor. | [Natureza × Cultura](conceitos/eixo-natureza-cultura.md) · [Inatismo × Empirismo](conceitos/eixo-inatismo-empirismo.md) |
 
 ### História
@@ -150,14 +152,14 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 ## Cobertura das trilhas
 
-**85 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+**87 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
 
 | Trilha | Nós com mídia | |
 |---|---|---|
-| Antropologia — Nível 1 | 5/7 (71%) | `███████░░░` |
 | Ciência Política — Nível 1 | 6/7 (86%) | `█████████░` |
 | Geografia — Nível 1 | 6/7 (86%) | `█████████░` |
 | Psicologia — Nível 1 | 10/11 (91%) | `█████████░` |
+| Antropologia — Nível 1 | 7/7 (100%) | `██████████` |
 | Economia — Nível 1 | 8/8 (100%) | `██████████` |
 | Filosofia — Nível 1 | 12/12 (100%) | `██████████` |
 | História — Nível 1 | 7/7 (100%) | `██████████` |
@@ -180,6 +182,7 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Prof. Matheus Passos | 3 |
 | Escola do Parlamento CMSP | 2 |
 | Filosofia Vermelha | 2 |
+| uspfflch | 2 |
 | A Filosofia Explica | 1 |
 | Alfredo Oliva | 1 |
 | Amílcar Ifé | 1 |
@@ -210,10 +213,10 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Sindicato dos Bancários de Porto Alegre e região | 1 |
 | Socran | 1 |
 | TED | 1 |
+| TV PUC-Rio \| Comunicar | 1 |
 | Universo da Psicologia | 1 |
 | Victor Sales Pinheiro | 1 |
 | centrodemidias | 1 |
-| uspfflch | 1 |
 | É Fácil Quando se Aprende | 1 |
 
 ## Como esta lista é mantida
@@ -223,4 +226,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 78 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 80 indicações em 8 temas.*

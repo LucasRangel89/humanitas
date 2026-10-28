@@ -21,10 +21,10 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **78 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **80 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
 documentário, filmes e um podcast. A própria página mostra a **cobertura das
-trilhas**: 85 dos 90 nós com link já têm mídia ligada.
+trilhas**: 87 dos 90 nós com link já têm mídia ligada.
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
 
@@ -85,19 +85,20 @@ entretenimento.
 | Filosofia | 13 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
 | História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
-| Antropologia | 7 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
+| Antropologia | 9 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
 | Geografia | 4 | *Espaço geográfico* (Brasil Escola) |
 | Ciência Política | 3 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
 
 ### Cobertura das trilhas
 
 O gerador compara os links de cada nó com as notas citadas em `conceitos` e publica
-a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **85 de 90
+a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **87 de 90
 nós com link** (ficam fora os nós "síntese no diário" e a trilha Integrada, cujos
 nós não apontam para notas).
 
 | Trilha | Nós com mídia |
 |---|---|
+| Antropologia — Nível 1 | 7/7 (100%) |
 | Economia — Nível 1 | 8/8 (100%) |
 | Filosofia — Nível 1 | 12/12 (100%) |
 | História — Nível 1 | 7/7 (100%) |
@@ -107,9 +108,8 @@ nós não apontam para notas).
 | Psicologia — Nível 1 | 10/11 (91%) |
 | Ciência Política — Nível 1 | 6/7 (86%) |
 | Geografia — Nível 1 | 6/7 (86%) |
-| Antropologia — Nível 1 | 5/7 (71%) |
 
-Seis trilhas estão em 100%. As duas últimas a fechar foram Filosofia e Sociologia,
+Sete trilhas estão em 100%. As duas últimas a fechar foram Filosofia e Sociologia,
 que estavam em 8/12 e agora estão completas — mas com pesos diferentes, e vale
 olhar o campo `peso` antes de comemorar: das oito lacunas fechadas nesta rodada,
 duas entraram como `curso-livre` de um curso público sobre Kant (Escola do
@@ -119,6 +119,12 @@ do eixo Conflito × Coesão, em particular, foi fechado com **duas** videoaulas 
 divulgação — uma para cada polo —, porque não achei material que tratasse da
 comparação de uma vez. Cobertura é cobertura; o peso continua dizendo o que
 esperar antes de clicar.
+
+Antropologia fechou por último, e com o par mais desigual da biblioteca: uma
+jornada de seminários do Departamento de Antropologia da USP sobre os 90 anos de
+*As técnicas do corpo* (institucional, densa, longa) e uma conversa de TV
+universitária em que DaMatta explica o carnaval como ritual. A segunda não ensina
+van Gennep nem Turner — está registrada como `obra-de-apoio` justamente por isso.
 
 Acervos que aparecem mais de uma vez e valem assinar: **Canal USP** (aulas de
 graduação da FEA e da FFLCH), **UNIVESP** (cursos completos de Sociologia,
@@ -130,13 +136,13 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
 
 ### Lacunas conhecidas
 
-- **Antropologia**: 5 de 7. Conseguiu a primeira aula de nível universitário
-  (Munanga, sobre relações étnico-raciais) e o episódio de Darcy Ribeiro, mas
-  ainda não há introdução à antropologia em vídeo aberto. As aulas de
-  *Antropologia I* da USP (Heloisa Buarque de Almeida) estão na
-  [e-Aulas](https://eaulas.usp.br/) e são excelentes — **mas exigem login USP**
-  (conferido em 27/10/2026), então não entram nesta lista. Ficam como sugestão
-  para quem tem vínculo.
+- **Antropologia**: 7 de 7, mas ainda **não há introdução à antropologia em
+  vídeo aberto** — o que existe são aulas sobre recortes (Munanga, Darcy Ribeiro,
+  técnicas do corpo, ritual). As aulas de *Antropologia I* da USP estão na
+  [e-Aulas](https://eaulas.usp.br/) e são exatamente o que falta — inclusive uma
+  chamada *Ritual, símbolo, liminaridade e poder* —, **mas exigem login USP**
+  (conferido de novo em 27/10/2026), então não entram nesta lista. Ficam como
+  sugestão para quem tem vínculo.
 - **Economia**: 8 de 8, mas metade da trilha depende de um curso cujo vídeo é
   **mp4 no Google Drive**, não YouTube: os Cursos Abertos do LALT (FEC-Unicamp)
   publicam a aula em Drive, com slides, leituras e exercícios na página. Funciona
@@ -256,12 +262,13 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 
 ## 7. Próximos passos
 
-1. **Antropologia (5/7)** — é a trilha mais descoberta agora. Falta uma
-   introdução à antropologia em vídeo aberto; as aulas da USP estão na e-Aulas,
-   atrás de login. Depois dela, Psicologia N1 (10/11), Ciência Política (6/7) e
-   Geografia (6/7) — um nó cada. Em Filosofia e Sociologia, o que falta não é
-   cobertura e sim **peso**: substituir divulgação por aula universitária em
-   eudaimonia, anomia, papéis/identidade e no eixo Conflito × Coesão.
+1. **Três nós, três trilhas**: `psicologia-funcionalismo` (Psicologia N1),
+   `eixo-liberdade-igualdade` (Ciência Política) e `geografia-escala`
+   (Geografia). Fechar esses três leva a cobertura a 90 de 90.
+2. **Depois da cobertura, o peso.** Em Filosofia e Sociologia o que falta não é
+   link, é nível: eudaimonia, anomia, papéis/identidade e o eixo Conflito ×
+   Coesão estão apoiados em divulgação, e Antropologia depende de uma conversa de
+   TV para o nó de ritual. Substituir por aula universitária quando aparecer.
 2. **Uma mídia por nó**: a meta não é 133 links, é que cada trilha tenha **uma
    porta de entrada em vídeo** e **uma leitura de apoio por nó**. A tabela de
    cobertura em `midias.md` é o placar.

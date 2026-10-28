@@ -2,7 +2,7 @@
  "versao": 1,
  "atualizado_em": "2026-10-27",
  "totais": {
-  "itens": 78,
+  "itens": 80,
   "por_tipo": {
    "artigo": 1,
    "curso": 3,
@@ -10,10 +10,10 @@
    "filme": 6,
    "podcast": 1,
    "resenha": 1,
-   "videoaula": 65
+   "videoaula": 67
   },
   "por_tema": {
-   "antropologia": 7,
+   "antropologia": 9,
    "ciencia-politica": 3,
    "economia": 8,
    "filosofia": 13,
@@ -24,7 +24,7 @@
   },
   "por_verificacao": {
    "material-do-autor": 7,
-   "oembed": 65,
+   "oembed": 67,
    "pagina": 6
   }
  },
@@ -33,8 +33,8 @@
    "arquivo": "antropologia-nivel-1.md",
    "trilha": "Antropologia — Nível 1",
    "nos": 7,
-   "cobertos": 5,
-   "pct": 71
+   "cobertos": 7,
+   "pct": 100
   },
   {
    "arquivo": "ciencia-politica-nivel-1.md",
@@ -1203,6 +1203,42 @@
     "eixo-conflito-coesao"
    ],
    "nota": "O polo do conflito: desigualdade como motor da vida social e ordem como arranjo de poder. Par obrigatório da videoaula sobre funcionalismo; sozinha, ela responde só metade da pergunta do eixo.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "uspfflch-tecnicas-do-corpo",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "AS TÉCNICAS DO CORPO : 90 anos do ensaio de Marcel Mauss - 04/10/24",
+   "autor": "Departamento de Antropologia da FFLCH-USP (jornada de seminários)",
+   "canal": "uspfflch",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=J1jLKW0YWvU",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "antropologia-corpo-tecnicas"
+   ],
+   "nota": "Jornada de seminários dos 90 anos de As técnicas do corpo, no Departamento de Antropologia da USP, com convidados estrangeiros. Ressalva honesta: não é aula expositiva — é um dia inteiro de falas, longo e desigual, melhor para quem já leu o ensaio e quer ver o conceito em uso. É o material aberto mais próximo do texto que consegui verificar: a aula de Antropologia I da USP que trata do tema está no e-Aulas, atrás de login.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "pucrio-damatta-carnaval-ritual",
+   "tipo": "videoaula",
+   "peso": "obra-de-apoio",
+   "titulo": "TV PUC-Rio: 40 anos de “Carnavais, malandros e heróis”, de Roberto DaMatta",
+   "autor": "Roberto DaMatta, em programa da TV PUC-Rio",
+   "canal": "TV PUC-Rio | Comunicar",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=bEUc8v70ohw",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "antropologia-ritual"
+   ],
+   "nota": "DaMatta conversando sobre o livro que levou a análise de ritual para a sociedade brasileira: o carnaval como rito de inversão. Não é aula sobre van Gennep nem sobre Turner — é o conceito em ação num caso brasileiro, e é assim que deve ser assistido. Para a teoria, o caminho continua sendo Os ritos de passagem e O processo ritual.",
    "verificado_em": "2026-10-27",
    "verificado_como": "oembed"
   },
