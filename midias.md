@@ -2,7 +2,7 @@
 
 # Mídias
 
-**84 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**86 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -21,7 +21,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 |---|---|---|
 | [Psicologia](#psicologia) | 17 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
 | [Filosofia](#filosofia) | 13 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
-| [Sociologia](#sociologia) | 18 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
+| [Sociologia](#sociologia) | 20 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
 | [Antropologia](#antropologia) | 9 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
 | [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 5 | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) |
@@ -85,9 +85,11 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · aula universitária | [As Epistemologias do Sul e a Descolonização das Ciências Sociais](https://www.youtube.com/watch?v=ZUO_EnEZzRw) | Boaventura de Sousa Santos, na FFLCH-USP · canal uspfflch | A conferência que dá vocabulário ao outro polo do eixo Brasil x Universal: colonialismo epistemológico, sociologia das ausências e o que significa aprender a partir do Sul. Assista depois de ler a nota do eixo. | [Brasil × Universal](conceitos/eixo-brasil-universal.md) |
 | videoaula · obra de apoio | [Palestra do sociólogo Jessé Souza, autor do livro A Elite do Atraso, na íntegra](https://www.youtube.com/watch?v=IDLTAjVoaDI) | Jessé Souza · canal Sindicato dos Bancários de Porto Alegre e região | O próprio autor apresentando a tese que rivaliza com a de Freyre e Sérgio Buarque: a escravidão, e não o patrimonialismo ibérico, como chave da desigualdade brasileira. Não substitui o livro — é a versão oral do argumento, útil para localizar a polêmica. | [Elite do atraso](conceitos/sociologia-elite-do-atraso.md) |
 | videoaula · aula universitária | [SBS Aulas Abertas - Introdução à Sociologia \| Gênero, Raça e Interseccionalidade](https://www.youtube.com/watch?v=OTlQQjcYxV8) | Profª. Drª. Paula Cristina da Silva (UFBA), pelo ciclo SBS Aulas Abertas · canal SBS tv — Sociedade Brasileira de Sociologia | Aula 7 do ciclo aberto da SBS: gênero, raça e interseccionalidade no mesmo encontro — cobre o nó 11 inteiro, e não só o conceito de gênero. Peguei a lista de aulas do próprio ciclo para não repetir as que já estavam no painel. | [Interseccionalidade](conceitos/sociologia-interseccionalidade.md) · [Gênero](conceitos/sociologia-genero.md) |
+| videoaula · aula universitária | [D-09 - Clássicos da Sociologia: Émile Durkheim](https://www.youtube.com/watch?v=SMaxxNEqk7U) | Gabriel Cohn (USP) e Raquel Weiss, na videoaula 3 de Sociologia da Educação (HSE-001) · canal UNIVESP | Videoaula de graduação da Licenciatura da UNIVESP: fato social, solidariedade mecânica e orgânica e a anomia como forma patológica da divisão do trabalho, com Gabriel Cohn e Raquel Weiss e um caso concreto (Águas de São Pedro). São 17 minutos, não uma aula de 50: o formato é o da TV universitária, com entrevistas e inserções. Serve como porta de entrada séria e como polo da coesão do eixo Conflito × Coesão; a leitura continua em Da divisão do trabalho social. | [Anomia](conceitos/sociologia-anomia.md) · [Conflito × Coesão](conceitos/eixo-conflito-coesao.md) |
 | videoaula · divulgação | [O que é anomia social? - Brasil Escola](https://www.youtube.com/watch?v=2JuwxiCp1ho) | Brasil Escola · canal Brasil Escola Oficial | Dá o essencial durkheimiano em poucos minutos: norma que afrouxa, conduta que perde parâmetro, crise que acelera a mudança. Divulgação — serve para fixar vocabulário antes de ir a O Suicídio. | [Anomia](conceitos/sociologia-anomia.md) |
 | videoaula · divulgação | [Interacionismo simbólico - Brasil Escola](https://www.youtube.com/watch?v=kqWb_JE4ZrM) | Brasil Escola · canal Brasil Escola Oficial | A corrente que trata o eu e os papéis como produto da interação — Mead, Blumer, Goffman: é literalmente o argumento do nó 9. Divulgação: ensina o vocabulário, não substitui Goffman. | [Papel Social](conceitos/sociologia-papel-social.md) · [Identidade](conceitos/sociologia-identidade.md) |
 | videoaula · divulgação | [Funcionalismo - Brasil Escola](https://www.youtube.com/watch?v=I8CXmVnZX_s) | Brasil Escola · canal Brasil Escola Oficial | O polo da coesão: sociedade como sistema de partes que se integram para manter o todo. Assista junto com a videoaula sobre teoria do conflito — o eixo é a comparação entre as duas, não cada uma isolada. | [Conflito × Coesão](conceitos/eixo-conflito-coesao.md) |
+| videoaula · aula universitária | [Na Íntegra — Gabriel Cohn: Karl Marx e Émile Durkheim (parte 1/2)](https://www.youtube.com/watch?v=xliI9XEujGk) | Gabriel Cohn (FFLCH-USP), entrevistado pela UNIVESP TV · canal UNIVESP | É entrevista, não aula expositiva: 25 minutos em que um titular de Sociologia da USP compara os dois polos do eixo — a sociedade como luta entre interesses (Marx) e como consenso em torno de normas (Durkheim). Entrou porque é o único material aberto que trata a comparação de uma vez, e não um polo por vídeo. Tem a parte 2/2 no mesmo canal. | [Conflito × Coesão](conceitos/eixo-conflito-coesao.md) · [Anomia](conceitos/sociologia-anomia.md) |
 | videoaula · divulgação | [Teoria do conflito social - Brasil Escola](https://www.youtube.com/watch?v=EVWbxR6AQls) | Brasil Escola · canal Brasil Escola Oficial | O polo do conflito: desigualdade como motor da vida social e ordem como arranjo de poder. Par obrigatório da videoaula sobre funcionalismo; sozinha, ela responde só metade da pergunta do eixo. | [Conflito × Coesão](conceitos/eixo-conflito-coesao.md) |
 | videoaula · divulgação | [A política como vocação em 7 minutos](https://www.youtube.com/watch?v=cXxHZM9t2k8) | Matheus Passos, sobre o texto de Max Weber · canal Prof. Matheus Passos | Síntese de 'A política como vocação': os três tipos de legitimidade e a distinção entre ética da convicção e ética da responsabilidade. Curto; leia Weber depois. | [Racionalização](conceitos/sociologia-racionalizacao.md) · [Estado](conceitos/ciencia-politica-estado.md) · [Legitimidade](conceitos/ciencia-politica-legitimidade.md) |
 | filme · obra de apoio | Tempos Modernos (1936) — *streaming e locação* | Charlie Chaplin | A linha de montagem como imagem da alienação e da racionalização. Citado no plano de estudos do autor. | [Alienação](conceitos/sociologia-alienacao.md) · [Racionalização](conceitos/sociologia-racionalizacao.md) |
@@ -178,8 +180,8 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Canal | Indicações aqui |
 |---|---|
 | Brasil Escola Oficial | 10 |
+| UNIVESP | 6 |
 | SBS tv — Sociedade Brasileira de Sociologia | 4 |
-| UNIVESP | 4 |
 | Canal Futura | 3 |
 | Canal USP | 3 |
 | LALT — Cursos Abertos (Unicamp) | 3 |
@@ -233,4 +235,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 84 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 86 indicações em 8 temas.*
