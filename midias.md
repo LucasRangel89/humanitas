@@ -2,7 +2,7 @@
 
 # Mídias
 
-**83 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**84 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -25,7 +25,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | [Antropologia](#antropologia) | 9 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
 | [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 5 | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) |
-| [Ciência Política](#ciencia-politica) | 4 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
+| [Ciência Política](#ciencia-politica) | 5 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
 | [Economia](#economia) | 8 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
 
 ## Indicações por tema
@@ -136,6 +136,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | Tipo | Título | Quem publica | Por que assistir | Liga a |
 |---|---|---|---|---|
 | videoaula · divulgação | [Democracia](https://www.youtube.com/watch?v=shCNQfoQwqE) | Brasil Escola · canal Brasil Escola Oficial | Tipos de democracia (direta, indireta, semidireta) e os institutos de participação. Bom para fixar vocabulário. | [Democracia](conceitos/ciencia-politica-democracia.md) |
+| curso · curso livre | [Justice with Michael Sandel — curso completo (12 aulas)](https://www.youtube.com/playlist?list=PL30C13C91CFFEFEA6) | Michael Sandel (Harvard University) · canal Harvard University · **inglês, legenda em português** | Curso de graduação de Harvard que percorre exatamente as posições deste eixo: utilitarismo (Mill), liberdade e propriedade (Nozick, Locke) e justiça como equidade (Rawls). Entra porque não há equivalente em português com a mesma extensão e as aulas de Rawls e Nozick daqui são de divulgação. Áudio em inglês com legenda em português. | [Liberdade × Igualdade](conceitos/eixo-liberdade-igualdade.md) · [Véu da Ignorância](conceitos/filosofia-veu-da-ignorancia.md) · [Utilitarismo](conceitos/filosofia-utilitarismo.md) |
 | videoaula · divulgação | [Dois conceitos de liberdade: liberdade negativa e liberdade positiva a partir de Isaiah Berlin](https://www.youtube.com/watch?v=vxSjEbVhknE) | Daniel Cidade · canal Daniel Cidade | Explica o par de Berlin — liberdade como ausência de interferência × liberdade como autogoverno —, que é o primeiro polo do eixo e a origem da frase que o organiza (liberdade não é igualdade). Ressalva: cobre um lado da balança, não a disputa inteira. O outro lado tem o vídeo do véu da ignorância (Rawls) e a nota de desigualdade social; a comparação é trabalho seu, no diário. | [Liberdade × Igualdade](conceitos/eixo-liberdade-igualdade.md) |
 | videoaula · aula universitária | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Aula 2 de um curso de 10 aulas que acompanha o livro Curso básico de Ciência Política. Comece por aqui: define o campo antes dos conceitos. | [Poder](conceitos/ciencia-politica-poder.md) · [Estado](conceitos/ciencia-politica-estado.md) |
 | videoaula · aula universitária | [Curso de Ciência Política — Aula 10 — Conceito de Ditadura — Autoritarismo](https://www.youtube.com/watch?v=Daa5TIB1CK4) | Matheus Passos (UnB/Lisboa), curso gratuito no YouTube · canal Prof. Matheus Passos | Separa autoritarismo de totalitarismo com critério tipológico — o vocabulário que a trilha cobra antes de discutir 1964. | [Regime político](conceitos/ciencia-politica-regime-politico.md) · [Ditadura e transição](conceitos/historia-ditadura-transicao.md) |
@@ -155,7 +156,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 ## Cobertura das trilhas
 
-**90 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+**90 de 90 nós com link** já têm pelo menos uma mídia **em português** ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
 
 | Trilha | Nós com mídia | |
 |---|---|---|
@@ -198,6 +199,7 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Felipe Barchi | 1 |
 | Glória Vianna | 1 |
 | HISTÓRIA EM TÓPICOS - Prof. DavidBandian | 1 |
+| Harvard University | 1 |
 | Icles Rodrigues | 1 |
 | Instituto ESPE | 1 |
 | Instituto de Estudos Avançados da USP | 1 |
@@ -231,4 +233,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 83 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 84 indicações em 8 temas.*

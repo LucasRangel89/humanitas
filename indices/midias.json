@@ -2,10 +2,10 @@
  "versao": 1,
  "atualizado_em": "2026-10-27",
  "totais": {
-  "itens": 83,
+  "itens": 84,
   "por_tipo": {
    "artigo": 1,
-   "curso": 3,
+   "curso": 4,
    "documentario": 1,
    "filme": 6,
    "podcast": 1,
@@ -14,7 +14,7 @@
   },
   "por_tema": {
    "antropologia": 9,
-   "ciencia-politica": 4,
+   "ciencia-politica": 5,
    "economia": 8,
    "filosofia": 13,
    "geografia": 5,
@@ -24,8 +24,12 @@
   },
   "por_verificacao": {
    "material-do-autor": 7,
-   "oembed": 70,
+   "oembed": 71,
    "pagina": 6
+  },
+  "por_idioma": {
+   "en": 1,
+   "pt": 83
   }
  },
  "cobertura_trilhas": [
@@ -34,70 +38,80 @@
    "trilha": "Antropologia — Nível 1",
    "nos": 7,
    "cobertos": 7,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 7
   },
   {
    "arquivo": "ciencia-politica-nivel-1.md",
    "trilha": "Ciência Política — Nível 1",
    "nos": 7,
    "cobertos": 7,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 7
   },
   {
    "arquivo": "economia-nivel-1.md",
    "trilha": "Economia — Nível 1",
    "nos": 8,
    "cobertos": 8,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 8
   },
   {
    "arquivo": "filosofia-nivel-1.md",
    "trilha": "Filosofia — Nível 1",
    "nos": 12,
    "cobertos": 12,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 12
   },
   {
    "arquivo": "geografia-nivel-1.md",
    "trilha": "Geografia — Nível 1",
    "nos": 7,
    "cobertos": 7,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 7
   },
   {
    "arquivo": "historia-nivel-1.md",
    "trilha": "História — Nível 1",
    "nos": 7,
    "cobertos": 7,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 7
   },
   {
    "arquivo": "pensamento-social-brasileiro.md",
    "trilha": "Pensamento Social Brasileiro",
    "nos": 11,
    "cobertos": 11,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 11
   },
   {
    "arquivo": "psicologia-nivel-1.md",
    "trilha": "Psicologia — Nível 1",
    "nos": 11,
    "cobertos": 11,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 11
   },
   {
    "arquivo": "psicologia-nivel-2.md",
    "trilha": "Psicologia — Nível 2",
    "nos": 8,
    "cobertos": 8,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 8
   },
   {
    "arquivo": "sociologia-nivel-1.md",
    "trilha": "Sociologia — Nível 1",
    "nos": 12,
    "cobertos": 12,
-   "pct": 100
+   "pct": 100,
+   "cobertos_amplo": 12
   }
  ],
  "itens": [
@@ -117,7 +131,9 @@
    ],
    "nota": "Aula de abertura do ciclo: o que a sociologia faz que o senso comum não faz. Melhor primeiro contato em nível universitário.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "sbs-sociologia-02",
@@ -136,7 +152,9 @@
    ],
    "nota": "Cultura como processo, não como repertório fixo; bom par com a nota de socialização.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "sbs-sociologia-03",
@@ -155,7 +173,9 @@
    ],
    "nota": "Trabalho, informalidade e uberização: a versão contemporânea do debate sobre alienação.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "univesp-sociologia-intro",
@@ -173,7 +193,9 @@
    ],
    "nota": "Aula 1 do curso regular da Univesp: apresenta o percurso todo. Use para decidir se vale seguir a série.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "univesp-sociologia-marx",
@@ -192,7 +214,9 @@
    ],
    "nota": "Marx explicado por quem dá aula de formação de professor: estrutura, classe e ideologia sem atalho.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "centrodemidias-sociologia-01",
@@ -212,7 +236,9 @@
    ],
    "nota": "Passa por Durkheim, Weber e Comte na mesma aula — útil para ver o trio clássico lado a lado antes de estudar cada um.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "bourdieu-habitus",
@@ -231,7 +257,9 @@
    ],
    "nota": "Explica o conceito em linguagem de sala de aula. Depois de assistir, volte ao texto do Bourdieu: o vídeo não substitui a distinção habitus/campo/capital.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-sociologia-brasileira",
@@ -250,7 +278,9 @@
    ],
    "nota": "Panorama curto do surgimento da sociologia no Brasil e dos seus campos de pesquisa.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "usp-boaventura-epistemologias-sul",
@@ -268,7 +298,9 @@
    ],
    "nota": "A conferência que dá vocabulário ao outro polo do eixo Brasil x Universal: colonialismo epistemológico, sociologia das ausências e o que significa aprender a partir do Sul. Assista depois de ler a nota do eixo.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "jesse-souza-elite-do-atraso-palestra",
@@ -286,7 +318,9 @@
    ],
    "nota": "O próprio autor apresentando a tese que rivaliza com a de Freyre e Sérgio Buarque: a escravidão, e não o patrimonialismo ibérico, como chave da desigualdade brasileira. Não substitui o livro — é a versão oral do argumento, útil para localizar a polêmica.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "inef-filosofia-aula-01",
@@ -304,7 +338,9 @@
    ],
    "nota": "Aula 1 de um curso de 50 aulas, temático e gratuito. É o melhor ponto de entrada em português para o vocabulário filosófico.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "inef-filosofia-ciencia-33",
@@ -323,7 +359,9 @@
    ],
    "nota": "Liga Popper e Kuhn ao problema da demarcação científica — exatamente o que a nota de falseabilidade pede.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filosofia-vermelha-marx",
@@ -342,7 +380,9 @@
    ],
    "nota": "Apresentação do curso sobre Marx: percorre os textos de juventude até O Capital. Leitura exigente, em português.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filosofia-vermelha-curso",
@@ -360,7 +400,9 @@
    ],
    "nota": "Curso cronológico completo; o vídeo é a apresentação. Escolha um módulo por vez e escreva o diário antes de seguir.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "psicanalise-basica-inconsciente",
@@ -378,7 +420,9 @@
    ],
    "nota": "Aula de abertura sobre o inconsciente freudiano, com exemplos clínicos. Boa antes de ler o texto de Freud.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "espe-intro-psicanalise",
@@ -397,7 +441,9 @@
    ],
    "nota": "Distingue psicanálise de psicologia e de psiquiatria e discute o determinismo psíquico — útil para o eixo livre-arbítrio × determinismo.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "leituras-gestalt",
@@ -416,7 +462,9 @@
    ],
    "nota": "Apresenta as leis de organização perceptual e situa a Gestalt no debate inatismo × empirismo.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "socran-behaviorismo",
@@ -435,7 +483,9 @@
    ],
    "nota": "Pavlov, Watson e Skinner na mesma aula, com os experimentos. Serve como mapa antes de ler o texto original.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "milgram-legendado",
@@ -454,7 +504,9 @@
    ],
    "nota": "O experimento original, com legendas. Assista antes de ler o artigo do SciELO que discute os resultados.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "minutospsiquicos-vies-confirmacao",
@@ -472,7 +524,9 @@
    ],
    "nota": "Um viés por vídeo, com o experimento que o sustenta. Comece por este e leia o capítulo correspondente de 'Rápido e devagar'.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "guerrapires-kahneman-sistemas",
@@ -490,7 +544,9 @@
    ],
    "nota": "Os dois sistemas de processamento explicados em português; é a base sobre a qual os vieses fazem sentido.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "nerdologia-dissonancia",
@@ -508,7 +564,9 @@
    ],
    "nota": "Reconstrói o caso da seita que esperava o dilúvio (Festinger) e explica por que a crença sobrevive ao desmentido. Par audiovisual do artigo que já está na lista.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "fulgencio-apego-desenvolvimento",
@@ -526,7 +584,9 @@
    ],
    "nota": "Aula do Prof. Fulgencio (IP-USP) que trata o apego como teoria do desenvolvimento, e não como rótulo de personalidade. É a versão em sala de aula do mesmo tema.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "professor-davi-zdp",
@@ -544,7 +604,9 @@
    ],
    "nota": "Situa a ZDP entre Piaget e Wallon e explica os três níveis (real, proximal, potencial) com exemplos de sala de aula.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "universo-psicologia-humanista",
@@ -562,7 +624,9 @@
    ],
    "nota": "Apresenta o humanismo como terceira força, de Maslow e Rogers a Fromm, e o contraste com behaviorismo e psicanálise.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "ted-csikszentmihalyi-flow",
@@ -580,7 +644,9 @@
    ],
    "nota": "O próprio autor explicando o flow, com transcrição e legendas em português na página. Palestra de 2004: use como porta de entrada do livro 'Flow'.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "pagina"
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "luislouis-emocao-sentimento",
@@ -598,7 +664,9 @@
    ],
    "nota": "Separa emoção, sentimento e consciência seguindo 'O erro de Descartes', de Damásio — a ponte entre o eixo mente-corpo e a neurociência afetiva.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-relativismo",
@@ -617,7 +685,9 @@
    ],
    "nota": "Explica o método relativista e a confusão frequente com 'tudo é válido'. Curto, bom para começar.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "boas-malinowski",
@@ -637,7 +707,9 @@
    ],
    "nota": "Liga os dois fundadores ao método: particularismo histórico (Boas) e trabalho de campo (Malinowski).",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "icles-etnografia",
@@ -655,7 +727,9 @@
    ],
    "nota": "Diferença entre observar e fazer etnografia, com dicas de registro em campo.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "munanga-relacoes-etnico-raciais",
@@ -673,7 +747,9 @@
    ],
    "nota": "Aula em que Munanga desmonta o mito da democracia racial a partir de Freyre e da mestiçagem. O canal é uma republicação, não a universidade — o conteúdo é a aula, e o risco de sair do ar é maior do que num canal institucional.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "povo-brasileiro-ep4-encontros",
@@ -691,7 +767,9 @@
    ],
    "nota": "O episódio da série de 2000 sobre a gestação étnica do povo brasileiro: mestiçagem como processo, não como elogio. 26 min. A série completa está no canal da Fundação Leonel Brizola; este é um recorte por episódio.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "nexo-identidade-nacional",
@@ -710,7 +788,9 @@
    ],
    "nota": "Vídeo curto e bem editado: como a identidade nacional foi inventada e por que 'ser brasileiro' não é uma essência. Bom para começar o nó antes do episódio de Darcy Ribeiro.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "usp-napolitano-populismo",
@@ -729,7 +809,9 @@
    ],
    "nota": "Aula universitária sobre o uso (e o abuso) do rótulo 'populismo' entre 1946 e 1964 — o antídoto contra o senso comum.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "ilp-formacao-brasil-01",
@@ -748,7 +830,9 @@
    ],
    "nota": "Mesa de abertura do ciclo: os quatro intérpretes do Brasil discutidos por especialistas. Melhor porta de entrada da trilha Pensamento Social Brasileiro.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "barchi-fonte-historica",
@@ -766,7 +850,9 @@
    ],
    "nota": "Verbete em vídeo sobre o que conta como fonte histórica. Bom para fixar o vocabulário antes de ler o capítulo de Bloch sobre a crítica documental.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "historiaemtopicos-braudel-duracoes",
@@ -784,7 +870,9 @@
    ],
    "nota": "As três durações de Braudel apresentadas em sequência, com exemplos. Serve de mapa antes do artigo 'História e Ciências Sociais: a longa duração'.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "magno-memoria-historia",
@@ -802,7 +890,9 @@
    ],
    "nota": "Contrasta memória vivida e operação histórica a partir de Le Goff e Nora. Complementa a nota; a distinção conceitual continua vindo do texto dos autores.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "quilombo-ufrj-quijano-colonialidade",
@@ -820,7 +910,9 @@
    ],
    "nota": "Aula de leitura guiada do texto de Quijano: colonialidade do poder, eurocentrismo e América Latina. Leva o debate do colonialismo histórico para a sua permanência hoje.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "futura-escravidao-brasil",
@@ -838,7 +930,9 @@
    ],
    "nota": "Aula de ensino médio que trata do tráfico, do cotidiano da escravidão, da posição da Igreja e das resistências indígena e negra. Panorama para organizar a cronologia.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "iea-usp-continuidade-ruptura",
@@ -856,7 +950,9 @@
    ],
    "nota": "Mesa do IEA-USP que parte da independência como ruptura e continuidade ao mesmo tempo. Útil para ver o par conceitual aplicado a um caso concreto — 2h49, assista em blocos.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "silvio-almeida-racismo-estrutural-ufsc",
@@ -874,7 +970,9 @@
    ],
    "nota": "Aula aberta do Ciclo 13 de maio no Centro de Filosofia e Ciências Humanas da UFSC. É a apresentação do conceito pelo autor de Racismo Estrutural, do mito da democracia racial à responsabilidade das instituições.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-democracia",
@@ -892,7 +990,31 @@
    ],
    "nota": "Tipos de democracia (direta, indireta, semidireta) e os institutos de participação. Bom para fixar vocabulário.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
+  },
+  {
+   "id": "harvard-justice-sandel",
+   "tipo": "curso",
+   "peso": "curso-livre",
+   "titulo": "Justice with Michael Sandel — curso completo (12 aulas)",
+   "autor": "Michael Sandel (Harvard University)",
+   "canal": "Harvard University",
+   "veiculo": "",
+   "url": "https://www.youtube.com/playlist?list=PL30C13C91CFFEFEA6",
+   "onde": "",
+   "tema": "ciencia-politica",
+   "conceitos": [
+    "eixo-liberdade-igualdade",
+    "filosofia-veu-da-ignorancia",
+    "filosofia-utilitarismo"
+   ],
+   "nota": "Curso de graduação de Harvard que percorre exatamente as posições deste eixo: utilitarismo (Mill), liberdade e propriedade (Nozick, Locke) e justiça como equidade (Rawls). Entra porque não há equivalente em português com a mesma extensão e as aulas de Rawls e Nozick daqui são de divulgação. Áudio em inglês com legenda em português.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed",
+   "idioma": "en",
+   "legendas": "pt"
   },
   {
    "id": "usp-inflacao-intro",
@@ -910,7 +1032,9 @@
    ],
    "nota": "Aula de graduação: conceito, causas e efeitos distributivos da inflação. Sem cálculo.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "usp-sayad-inflacao-desemprego",
@@ -929,7 +1053,9 @@
    ],
    "nota": "Sayad liga inflação, desemprego e conflito distributivo — o elo com a nota de desigualdade.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "rascunhos-pib",
@@ -947,7 +1073,9 @@
    ],
    "nota": "PIB pelas três óticas (produção, renda, demanda), desenhado no papel — a melhor explicação curta em português.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "univesp-economia-incentivos",
@@ -966,7 +1094,9 @@
    ],
    "nota": "A aula de abertura da disciplina pega o incentivo como objeto: por que preço, imposto e regra mudam comportamento — e o que acontece quando o formulador ignora isso.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "univesp-economia-oferta-demanda",
@@ -984,7 +1114,9 @@
    ],
    "nota": "Curvas, deslocamentos e equilíbrio do zero, em ritmo de graduação. Assista antes de ler o capítulo 2 do Pindyck.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "unicamp-economia-aula-01",
@@ -1003,7 +1135,9 @@
    ],
    "nota": "Curso de graduação da Engenharia Civil da Unicamp, aberto e com material de apoio. A aula 1 define economia, escassez e os problemas econômicos fundamentais; o vídeo é um mp4 hospedado no Google Drive, na própria página (que também traz slides, leituras e exercícios).",
    "verificado_em": "2026-10-27",
-   "verificado_como": "pagina"
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "unicamp-economia-aula-05",
@@ -1021,7 +1155,9 @@
    ],
    "nota": "Aprofunda o que a aula introdutória só anuncia: elasticidade-preço, cruzada e renda, com exercícios resolvidos na página. Vídeo em mp4 no Google Drive.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "pagina"
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "unicamp-economia-aula-12",
@@ -1040,7 +1176,9 @@
    ],
    "nota": "A falha de mercado como argumento para a intervenção do Estado: externalidades, custo social e o que o preço não captura. É a base econômica do eixo mercado × Estado. Vídeo em mp4 no Google Drive; a página traz slides, Pindyck cap. 18 e exercícios.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "pagina"
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "cmsp-kant-aula-03",
@@ -1058,7 +1196,9 @@
    ],
    "nota": "Terceira aula de um curso público de quatro encontros sobre Kant; o programa anuncia para este encontro a inversão copernicana, fenômeno e númeno e a dedução transcendental. É o material mais sólido em português que encontrei para o par fenômeno/númeno: quem explica é um professor de Kant, não um canal de resumo. Curso livre da Escola do Parlamento (Câmara Municipal de SP), não é graduação.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "cmsp-kant-aula-04",
@@ -1076,7 +1216,9 @@
    ],
    "nota": "Quarta aula do mesmo curso: o problema da ética, o fundamento do dever, o imperativo categórico e o lugar de Kant na história da filosofia. Preferi esta à videoaula de divulgação que também tinha verificado, porque aqui a exposição é de um especialista em Kant; fica registrado que a alternativa mais curta existia e foi preterida.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "clovis-eudaimonia-aristoteles",
@@ -1094,7 +1236,9 @@
    ],
    "nota": "Clóvis de Barros Filho (professor da ECA-USP) explica eudaimonia como vida boa e virtuosa, dentro da Ética a Nicômaco. Formato curto de divulgação, de série patrocinada — não é aula de graduação. Não achei aula universitária aberta em português sobre eudaimonia; esta foi a melhor porta de entrada que consegui abrir e conferir.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "afilosofiaexplica-veu-ignorancia",
@@ -1112,7 +1256,9 @@
    ],
    "nota": "Explica o experimento mental de Rawls passo a passo: por que escolher os princípios de justiça sem saber que posição se vai ocupar. Divulgação bem feita; a conferência da página do YouTube confirma título e canal.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "sbs-sociologia-aula-07",
@@ -1131,7 +1277,9 @@
    ],
    "nota": "Aula 7 do ciclo aberto da SBS: gênero, raça e interseccionalidade no mesmo encontro — cobre o nó 11 inteiro, e não só o conceito de gênero. Peguei a lista de aulas do próprio ciclo para não repetir as que já estavam no painel.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-anomia",
@@ -1149,7 +1297,9 @@
    ],
    "nota": "Dá o essencial durkheimiano em poucos minutos: norma que afrouxa, conduta que perde parâmetro, crise que acelera a mudança. Divulgação — serve para fixar vocabulário antes de ir a O Suicídio.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-interacionismo",
@@ -1168,7 +1318,9 @@
    ],
    "nota": "A corrente que trata o eu e os papéis como produto da interação — Mead, Blumer, Goffman: é literalmente o argumento do nó 9. Divulgação: ensina o vocabulário, não substitui Goffman.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-funcionalismo",
@@ -1186,7 +1338,9 @@
    ],
    "nota": "O polo da coesão: sociedade como sistema de partes que se integram para manter o todo. Assista junto com a videoaula sobre teoria do conflito — o eixo é a comparação entre as duas, não cada uma isolada.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-conflito-social",
@@ -1204,7 +1358,9 @@
    ],
    "nota": "O polo do conflito: desigualdade como motor da vida social e ordem como arranjo de poder. Par obrigatório da videoaula sobre funcionalismo; sozinha, ela responde só metade da pergunta do eixo.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "uspfflch-tecnicas-do-corpo",
@@ -1222,7 +1378,9 @@
    ],
    "nota": "Jornada de seminários dos 90 anos de As técnicas do corpo, no Departamento de Antropologia da USP, com convidados estrangeiros. Ressalva honesta: não é aula expositiva — é um dia inteiro de falas, longo e desigual, melhor para quem já leu o ensaio e quer ver o conceito em uso. É o material aberto mais próximo do texto que consegui verificar: a aula de Antropologia I da USP que trata do tema está no e-Aulas, atrás de login.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "pucrio-damatta-carnaval-ritual",
@@ -1240,7 +1398,9 @@
    ],
    "nota": "DaMatta conversando sobre o livro que levou a análise de ritual para a sociedade brasileira: o carnaval como rito de inversão. Não é aula sobre van Gennep nem sobre Turner — é o conceito em ação num caso brasileiro, e é assim que deve ser assistido. Para a teoria, o caminho continua sendo Os ritos de passagem e O processo ritual.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "universo-psicologia-funcionalismo",
@@ -1258,7 +1418,9 @@
    ],
    "nota": "Apresenta o funcionalismo pelo contraste que a nota pede: estrutura (Titchener) contra função (James e a herança de Darwin), com os pontos fortes e as críticas de cada escola. Divulgação — é aula introdutória de canal, não de graduação, e resolve o vocabulário, não a leitura dos Princípios de Psicologia.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "cidade-berlin-liberdades",
@@ -1276,7 +1438,9 @@
    ],
    "nota": "Explica o par de Berlin — liberdade como ausência de interferência × liberdade como autogoverno —, que é o primeiro polo do eixo e a origem da frase que o organiza (liberdade não é igualdade). Ressalva: cobre um lado da balança, não a disputa inteira. O outro lado tem o vídeo do véu da ignorância (Rawls) e a nota de desigualdade social; a comparação é trabalho seu, no diário.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "geoilustrada-escala",
@@ -1294,7 +1458,9 @@
    ],
    "nota": "Trata escala como categoria de análise — o recorte que decide o que aparece —, que é o sentido da nota, e não apenas como conta de mapa. Divulgação, e com o defeito de vir emendada com redes: assista pela metade que interessa. Para o conceito em Milton Santos, o caminho continua sendo A Natureza do Espaço.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-espaco",
@@ -1313,7 +1479,9 @@
    ],
    "nota": "Define espaço geográfico e percorre as categorias (lugar, paisagem, região, território) em uma aula.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-territorio",
@@ -1331,7 +1499,9 @@
    ],
    "nota": "Território como relação de poder, não como pedaço de mapa — o ponto que a nota cobra.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "futura-conceitos-geografia",
@@ -1350,7 +1520,9 @@
    ],
    "nota": "Aula do Canal Futura que separa lugar de paisagem com exemplos brasileiros.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "passos-cp-aula-02",
@@ -1369,7 +1541,9 @@
    ],
    "nota": "Aula 2 de um curso de 10 aulas que acompanha o livro Curso básico de Ciência Política. Comece por aqui: define o campo antes dos conceitos.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "passos-cp-ditadura",
@@ -1388,7 +1562,9 @@
    ],
    "nota": "Separa autoritarismo de totalitarismo com critério tipológico — o vocabulário que a trilha cobra antes de discutir 1964.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "passos-weber-politica-vocacao",
@@ -1408,7 +1584,9 @@
    ],
    "nota": "Síntese de 'A política como vocação': os três tipos de legitimidade e a distinção entre ética da convicção e ética da responsabilidade. Curto; leia Weber depois.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "brasilescola-foucault-poder",
@@ -1427,7 +1605,9 @@
    ],
    "nota": "Apresenta a Microfísica do poder: poder como relação capilar, não como coisa que se possui. Bom para rever depois de ler Vigiar e punir.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "oliva-nietzsche-vontade",
@@ -1446,7 +1626,9 @@
    ],
    "nota": "Percorre biografia, potência como vitalidade e crítica dos valores. Contextualiza a 'morte de Deus' sem reduzir Nietzsche a frase de efeito.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "futura-globalizacao-fluxos",
@@ -1465,7 +1647,9 @@
    ],
    "nota": "Liga globalização a fluxos concretos (mercadorias, capitais, pessoas) — o elo entre 'redes e fluxos' e o eixo local × global.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "oembed"
+   "verificado_como": "oembed",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "scielo-milgram-consentimento",
@@ -1484,7 +1668,9 @@
    ],
    "nota": "Lê Milgram com Giddens (sistemas peritos) e Arendt (responsabilidade moral) e desloca a análise de 'obediência' para 'consentimento'. Acesso aberto.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "pagina"
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "unoesc-titchener",
@@ -1502,7 +1688,9 @@
    ],
    "nota": "Resumo acadêmico de seis páginas sobre o método introspectivo e os elementos da consciência. Fonte secundária — use como ponte até Titchener.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "pagina"
+   "verificado_como": "pagina",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filme-matrix",
@@ -1520,7 +1708,9 @@
    ],
    "nota": "A alegoria da caverna em versão contemporânea: realidade simulada, libertação dolorosa e o retorno a quem não quer ver. Citado no plano de estudos do autor.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "material-do-autor"
+   "verificado_como": "material-do-autor",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filme-tempos-modernos",
@@ -1539,7 +1729,9 @@
    ],
    "nota": "A linha de montagem como imagem da alienação e da racionalização. Citado no plano de estudos do autor.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "material-do-autor"
+   "verificado_como": "material-do-autor",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filme-o-experimento",
@@ -1558,7 +1750,9 @@
    ],
    "nota": "Ficção inspirada no experimento do Stanford Prison: papel social, autoridade e violência. Depois, compare com Milgram e com a crítica ética.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "material-do-autor"
+   "verificado_como": "material-do-autor",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filme-parasita",
@@ -1577,7 +1771,9 @@
    ],
    "nota": "Desigualdade e reprodução de classe encenadas no espaço da casa — bom para discutir habitus e mobilidade social.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "material-do-autor"
+   "verificado_como": "material-do-autor",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filme-laranja-mecanica",
@@ -1596,7 +1792,9 @@
    ],
    "nota": "Condicionamento, livre-arbítrio e a pergunta utilitarista sobre o custo da ordem. Citado no plano de estudos do autor.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "material-do-autor"
+   "verificado_como": "material-do-autor",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "filme-gattaca",
@@ -1615,7 +1813,9 @@
    ],
    "nota": "Determinismo genético como distopia: leva o eixo natureza × cultura ao limite. Citado no plano de estudos do autor.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "material-do-autor"
+   "verificado_como": "material-do-autor",
+   "idioma": "pt",
+   "legendas": ""
   },
   {
    "id": "podcast-filosofia-pop",
@@ -1634,7 +1834,9 @@
    ],
    "nota": "Episódios por filósofo (Platão, Descartes, Nietzsche, Foucault, Butler). Bom para o trajeto de volta do trabalho; rende pergunta para o diário.",
    "verificado_em": "2026-10-27",
-   "verificado_como": "material-do-autor"
+   "verificado_como": "material-do-autor",
+   "idioma": "pt",
+   "legendas": ""
   }
  ]
 }

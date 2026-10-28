@@ -1103,3 +1103,97 @@ def test_midias_cobertura_aparece_na_pagina(mini_repo: pathlib.Path):
     assert "1/2 (50%)" in texto
     dados = json.loads(js.read_text(encoding="utf-8"))
     assert dados["cobertura_trilhas"][0]["arquivo"] == "sociologia-teste.md"
+
+
+# --- mídia em outro idioma ------------------------------------------------
+
+MIDIA_ESTRANGEIRA = MIDIA_OK + """  - id: aula-habitus-en
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Lecture on habitus"
+    autor: "Universidade de teste"
+    canal: "Universidade de teste"
+    url: "https://www.youtube.com/watch?v=ingles01"
+    tema: sociologia
+    conceitos: [sociologia-habitus]
+    idioma: en
+    legendas: pt
+    nota: "Só existe em inglês; tem legenda em português."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+"""
+
+
+def _validar(mini_repo: pathlib.Path, texto: str):
+    _escrever_midias(mini_repo, texto)
+    itens, atualizado, erros_carga = painel.carregar_midias(mini_repo)
+    assert erros_carga == []
+    conceitos = {p.stem for p in (mini_repo / "conceitos").glob("*.md")}
+    return painel.validar_midias(itens, conceitos, atualizado_em=atualizado)
+
+
+def test_midia_em_outro_idioma_com_legenda_e_aceita(mini_repo: pathlib.Path):
+    erros, avisos = _validar(mini_repo, MIDIA_ESTRANGEIRA)
+    assert erros == []
+    assert avisos == []
+
+
+def test_midia_estrangeira_sem_legendas_declaradas_e_erro(mini_repo: pathlib.Path):
+    texto = MIDIA_ESTRANGEIRA.replace("    legendas: pt\n", "")
+    erros, _ = _validar(mini_repo, texto)
+    assert any("legendas" in e for e in erros)
+
+
+def test_midia_estrangeira_com_legenda_nao_conferida_avisa(mini_repo: pathlib.Path):
+    texto = MIDIA_ESTRANGEIRA.replace("legendas: pt", "legendas: nao-verificado")
+    erros, avisos = _validar(mini_repo, texto)
+    assert erros == []
+    assert any("legendas" in a for a in avisos)
+
+
+def test_midia_idioma_e_legendas_invalidos(mini_repo: pathlib.Path):
+    texto = MIDIA_ESTRANGEIRA.replace("idioma: en", "idioma: fr")
+    erros, _ = _validar(mini_repo, texto)
+    assert any("idioma inválido" in e for e in erros)
+
+    texto = MIDIA_ESTRANGEIRA.replace("legendas: pt", "legendas: sim")
+    erros, _ = _validar(mini_repo, texto)
+    assert any("legendas inválido" in e for e in erros)
+
+
+def test_midia_sem_idioma_e_portugues(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo)
+    itens, _, _ = painel.carregar_midias(mini_repo)
+    assert {i["idioma"] for i in itens} == {"pt"}
+    assert {i["legendas"] for i in itens} == {""}
+
+
+def test_midia_estrangeira_aparece_marcada_e_nao_infla_a_cobertura(mini_repo: pathlib.Path):
+    _escrever_midias(mini_repo, MIDIA_ESTRANGEIRA)
+    md, js, total = painel.gravar_midias(mini_repo)
+    assert total == 3
+    texto = md.read_text(encoding="utf-8")
+    assert "inglês, legenda em português" in texto
+    # a cobertura em português continua a mesma do teste anterior
+    assert "1/2 (50%)" in texto
+    dados = json.loads(js.read_text(encoding="utf-8"))
+    assert dados["totais"]["por_idioma"] == {"en": 1, "pt": 2}
+
+
+def test_midia_estrangeira_conta_na_cobertura_ampliada(mini_repo: pathlib.Path):
+    # tira a mídia em português: só a inglesa cobre o nó do habitus
+    texto = MIDIA_ESTRANGEIRA.split("  - id: aula-habitus\n")[0] + "  - id: aula-habitus-en" + \
+        MIDIA_ESTRANGEIRA.split("  - id: aula-habitus-en")[1]
+    _escrever_midias(mini_repo, texto)
+    itens, _, _ = painel.carregar_midias(mini_repo)
+    cobertura = painel.midias.cobertura_trilhas(mini_repo, itens)
+    trilha = next(c for c in cobertura if c["arquivo"] == "sociologia-teste.md")
+    assert trilha["cobertos"] == 0
+    assert trilha["cobertos_amplo"] == 1
+    assert trilha["pct"] == 0
+    md, js, _ = painel.gravar_midias(mini_repo)
+    texto_md = md.read_text(encoding="utf-8")
+    assert "0/2 (0%)" in texto_md
+    assert "1 de 2" in texto_md  # contagem ampliada anunciada
+    dados = json.loads(js.read_text(encoding="utf-8"))
+    assert dados["cobertura_trilhas"][0]["cobertos_amplo"] == 1

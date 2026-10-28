@@ -53,6 +53,18 @@ SEM_URL = {"filme", "podcast", "documentario"}
 
 CAMPOS_OBRIGATORIOS = ("id", "tipo", "titulo", "autor", "tema", "verificado_em", "verificado_como")
 
+# Idioma da mídia. O projeto é em português: `pt` é o padrão e é o único que
+# conta para a cobertura das trilhas. `en` e `es` entram só como apoio onde o
+# material em português é fraco ou inexistente (ver Guia 11, §2).
+IDIOMAS = ("pt", "en", "es")
+
+# Situação das legendas, do ponto de vista de quem vai assistir.
+#   pt              -> há legenda em português (documentada na fonte ou na nota)
+#   es / en         -> legenda em espanhol/inglês
+#   nenhuma         -> não há legenda
+#   nao-verificado  -> não consegui confirmar; a nota diz o que se sabe
+LEGENDAS = ("pt", "es", "en", "nenhuma", "nao-verificado")
+
 ARQUIVO = pathlib.Path("midias") / "biblioteca.yml"
 SAIDA_MD = pathlib.Path("midias.md")
 SAIDA_JSON = pathlib.Path("indices") / "midias.json"
@@ -94,6 +106,8 @@ def carregar(raiz: pathlib.Path) -> tuple[list[dict], str, list[str]]:
         item["onde"] = str(item.get("onde") or "").strip()
         item["verificado_como"] = str(item.get("verificado_como") or "").strip()
         item["verificado_em"] = str(item.get("verificado_em") or "").strip()
+        item["idioma"] = str(item.get("idioma") or "pt").strip()
+        item["legendas"] = str(item.get("legendas") or "").strip()
         limpos.append(item)
     return limpos, str(dados.get("atualizado_em") or "").strip(), []
 
@@ -144,6 +158,27 @@ def validar(
                 f"{ARQUIVO}: {rotulo} tem verificado_como inválido "
                 f"({item['verificado_como']!r}); use um de {', '.join(ORIGENS_VERIFICACAO)}."
             )
+        if item.get("idioma") and item["idioma"] not in IDIOMAS:
+            erros.append(
+                f"{ARQUIVO}: {rotulo} tem idioma inválido ({item['idioma']!r}); "
+                f"use um de {', '.join(IDIOMAS)}."
+            )
+        if item.get("legendas") and item["legendas"] not in LEGENDAS:
+            erros.append(
+                f"{ARQUIVO}: {rotulo} tem legendas inválido ({item['legendas']!r}); "
+                f"use um de {', '.join(LEGENDAS)}."
+            )
+        if item.get("idioma", "pt") != "pt":
+            if not item.get("legendas"):
+                erros.append(
+                    f"{ARQUIVO}: {rotulo} está em {item['idioma']} e precisa declarar "
+                    "`legendas` (pt, es, en, nenhuma ou nao-verificado)."
+                )
+            elif item["legendas"] == "nao-verificado":
+                avisos.append(
+                    f"{ARQUIVO}: {rotulo} está em {item['idioma']} e as legendas ainda "
+                    "não foram conferidas."
+                )
         if item.get("verificado_em") and not DATA_ISO.match(item["verificado_em"]):
             erros.append(
                 f"{ARQUIVO}: {rotulo} tem verificado_em fora do padrão AAAA-MM-DD "
@@ -242,12 +277,36 @@ def _celula_titulo(item: dict) -> str:
     return titulo
 
 
+ROTULO_IDIOMA = {"en": "inglês", "es": "espanhol"}
+
+
+def _marca_idioma(item: dict) -> str:
+    """Selo de idioma/legenda; vazio quando a mídia é em português."""
+    idioma = item.get("idioma", "pt")
+    if idioma == "pt":
+        return ""
+    rotulo = ROTULO_IDIOMA.get(idioma, idioma)
+    legenda = item.get("legendas", "")
+    if legenda == "pt":
+        volta = f"{rotulo}, legenda em português"
+    elif legenda in ("es", "en"):
+        volta = f"{rotulo}, legenda em {ROTULO_IDIOMA.get(legenda, legenda)}"
+    elif legenda == "nenhuma":
+        volta = f"{rotulo}, sem legenda"
+    else:
+        volta = f"{rotulo}, legenda não conferida"
+    return f"**{volta}**"
+
+
 def _celula_quem(item: dict) -> str:
     partes = [item.get("autor", "")]
     if item.get("canal"):
         partes.append(f"canal {item['canal']}")
     elif item.get("veiculo"):
         partes.append(item["veiculo"])
+    marca = _marca_idioma(item)
+    if marca:
+        partes.append(marca)
     return _escapar(" · ".join(p for p in partes if p))
 
 
@@ -292,9 +351,15 @@ def cobertura_trilhas(raiz: pathlib.Path, itens: list[dict]) -> list[dict]:
     O nó é contado como coberto quando o link daquele nó aponta para uma nota
     que aparece em algum `conceitos` da biblioteca. Nó sem link (ex.: "Síntese
     no diário") não entra na conta: não é conteúdo que vídeo resolva.
+
+    `cobertos` conta **só mídia em português** — é o placar do projeto.
+    `cobertos_amplo` conta também espanhol e inglês: serve para medir apoio
+    extra, nunca para inflar a cobertura em português.
     """
-    com_midia = {c for item in itens if not item.get("_invalido")
+    validos = [item for item in itens if not item.get("_invalido")]
+    com_midia = {c for item in validos if item.get("idioma", "pt") == "pt"
                  for c in item.get("conceitos", [])}
+    com_midia_amplo = {c for item in validos for c in item.get("conceitos", [])}
     pasta = raiz / "trilhas"
     if not pasta.exists():
         return []
@@ -321,6 +386,7 @@ def cobertura_trilhas(raiz: pathlib.Path, itens: list[dict]) -> list[dict]:
         if not nos:
             continue
         cobertos = sum(1 for slugs in nos if any(s in com_midia for s in slugs))
+        cobertos_amplo = sum(1 for slugs in nos if any(s in com_midia_amplo for s in slugs))
         saida.append(
             {
                 "arquivo": arquivo.name,
@@ -328,6 +394,7 @@ def cobertura_trilhas(raiz: pathlib.Path, itens: list[dict]) -> list[dict]:
                 "nos": len(nos),
                 "cobertos": cobertos,
                 "pct": round(cobertos * 100 / len(nos)) if nos else 0,
+                "cobertos_amplo": cobertos_amplo,
             }
         )
     return saida
@@ -432,8 +499,9 @@ def gerar_markdown(
             "## Cobertura das trilhas",
             "",
             f"**{total_cob} de {total_nos} nós com link** já têm pelo menos uma mídia "
-            "ligada. Ficam fora da conta os nós sem link (síntese no diário) e as "
-            "trilhas cujos nós não apontam para notas (a Integrada, por exemplo).",
+            "**em português** ligada. Ficam fora da conta os nós sem link (síntese no "
+            "diário) e as trilhas cujos nós não apontam para notas (a Integrada, por "
+            "exemplo).",
             "",
             "| Trilha | Nós com mídia | |",
             "|---|---|---|",
@@ -444,6 +512,14 @@ def gerar_markdown(
             linhas.append(
                 f"| {_escapar(nome)} | {c['cobertos']}/{c['nos']} ({c['pct']}%) | `{cheia}` |"
             )
+        total_amplo = sum(c.get("cobertos_amplo", c["cobertos"]) for c in cobertura)
+        if total_amplo > total_cob:
+            linhas += [
+                f"Contando também as indicações em espanhol e inglês, "
+                f"**{total_amplo} de {total_nos}** nós têm alguma mídia. Essa segunda "
+                "contagem mede apoio extra, não substitui a de português.",
+                "",
+            ]
         linhas.append("")
 
     if canais:
@@ -488,10 +564,13 @@ def montar_json(
     por_tipo: dict[str, int] = {}
     por_tema: dict[str, int] = {}
     por_verificacao: dict[str, int] = {}
+    por_idioma: dict[str, int] = {}
     for item in validos:
         por_tipo[item["tipo"]] = por_tipo.get(item["tipo"], 0) + 1
         por_tema[item["tema"]] = por_tema.get(item["tema"], 0) + 1
         por_verificacao[item["verificado_como"]] = por_verificacao.get(item["verificado_como"], 0) + 1
+        idioma = item.get("idioma", "pt")
+        por_idioma[idioma] = por_idioma.get(idioma, 0) + 1
     return {
         "versao": 1,
         "atualizado_em": atualizado_em,
@@ -500,6 +579,7 @@ def montar_json(
             "por_tipo": dict(sorted(por_tipo.items())),
             "por_tema": dict(sorted(por_tema.items())),
             "por_verificacao": dict(sorted(por_verificacao.items())),
+            "por_idioma": dict(sorted(por_idioma.items())),
         },
         "cobertura_trilhas": cobertura or [],
         "itens": [
@@ -518,6 +598,8 @@ def montar_json(
                 "nota": i.get("nota", ""),
                 "verificado_em": i["verificado_em"],
                 "verificado_como": i["verificado_como"],
+                "idioma": i.get("idioma", "pt"),
+                "legendas": i.get("legendas", ""),
             }
             for i in validos
         ],
