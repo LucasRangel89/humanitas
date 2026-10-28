@@ -776,6 +776,19 @@ itens:
     verificado_em: 2026-10-27
     verificado_como: oembed
 
+  - id: univesp-durkheim-classicos
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "D-09 - Clássicos da Sociologia: Émile Durkheim"
+    autor: "Gabriel Cohn (USP) e Raquel Weiss, na videoaula 3 de Sociologia da Educação (HSE-001)"
+    canal: "UNIVESP"
+    url: "https://www.youtube.com/watch?v=SMaxxNEqk7U"
+    tema: sociologia
+    conceitos: [sociologia-anomia, eixo-conflito-coesao]
+    nota: "Videoaula de graduação da Licenciatura da UNIVESP: fato social, solidariedade mecânica e orgânica e a anomia como forma patológica da divisão do trabalho, com Gabriel Cohn e Raquel Weiss e um caso concreto (Águas de São Pedro). São 17 minutos, não uma aula de 50: o formato é o da TV universitária, com entrevistas e inserções. Serve como porta de entrada séria e como polo da coesão do eixo Conflito × Coesão; a leitura continua em Da divisão do trabalho social."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
   - id: brasilescola-anomia
     tipo: videoaula
     peso: divulgacao
@@ -812,6 +825,19 @@ itens:
     tema: sociologia
     conceitos: [eixo-conflito-coesao]
     nota: "O polo da coesão: sociedade como sistema de partes que se integram para manter o todo. Assista junto com a videoaula sobre teoria do conflito — o eixo é a comparação entre as duas, não cada uma isolada."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
+  - id: univesp-cohn-marx-durkheim
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Na Íntegra — Gabriel Cohn: Karl Marx e Émile Durkheim (parte 1/2)"
+    autor: "Gabriel Cohn (FFLCH-USP), entrevistado pela UNIVESP TV"
+    canal: "UNIVESP"
+    url: "https://www.youtube.com/watch?v=xliI9XEujGk"
+    tema: sociologia
+    conceitos: [eixo-conflito-coesao, sociologia-anomia]
+    nota: "É entrevista, não aula expositiva: 25 minutos em que um titular de Sociologia da USP compara os dois polos do eixo — a sociedade como luta entre interesses (Marx) e como consenso em torno de normas (Durkheim). Entrou porque é o único material aberto que trata a comparação de uma vez, e não um polo por vídeo. Tem a parte 2/2 no mesmo canal."
     verificado_em: 2026-10-27
     verificado_como: oembed
 

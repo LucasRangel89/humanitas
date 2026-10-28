@@ -21,7 +21,7 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **84 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **86 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
 documentário, filmes, um podcast e um curso universitário em inglês com legenda em
 português. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
@@ -114,7 +114,7 @@ entretenimento.
 | Tema | Indicações | Melhor porta de entrada |
 |---|---|---|
 | Psicologia | 17 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
-| Sociologia | 18 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
+| Sociologia | 20 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
 | Filosofia | 13 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
 | História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
@@ -152,6 +152,25 @@ do eixo Conflito × Coesão, em particular, foi fechado com **duas** videoaulas 
 divulgação — uma para cada polo —, porque não achei material que tratasse da
 comparação de uma vez. Cobertura é cobertura; o peso continua dizendo o que
 esperar antes de clicar.
+
+**Segunda rodada: trocar divulgação por aula de universidade.** A fila do Guia
+apontava oito nós fechados com divulgação. Nesta rodada entraram dois, os dois da
+UNIVESP, e a diferença não está no link (que já existia) e sim no que a pessoa
+encontra ao clicar:
+
+| Nó | Antes | Agora |
+|---|---|---|
+| `sociologia-anomia` | Brasil Escola (7 min, divulgação) | videoaula 3 de *Sociologia da Educação* (HSE-001), com **Gabriel Cohn (USP) e Raquel Weiss**: fato social, solidariedade e anomia como forma patológica, 17 min. O vídeo do Brasil Escola continua na lista, como revisão |
+| `eixo-conflito-coesao` | duas videoaulas de divulgação, uma por polo | *Na Íntegra*: **Gabriel Cohn** compara Marx e Durkheim, os dois polos do eixo, de uma vez, em 25 min |
+
+Onde a fila continua travada — e por quê, depois de procurar de novo:
+
+- `psicologia-funcionalismo`, `sociologia-papel-social`/`identidade`,
+  `geografia-escala`, `filosofia-eudaimonia`: procurei aula de graduação aberta em
+  português e **não existe** no YouTube. O que aparece é divulgação de canal, que é
+  exatamente o que já está lá. Não vou trocar seis por meia dúzia para melhorar a
+  aparência da tabela.
+- `antropologia-ritual`: o material certo está no e-Aulas da USP, atrás de login.
 
 Uma exceção recente, e só uma: o eixo Liberdade × Igualdade ganhou o curso
 *Justice*, de Michael Sandel, **em inglês com legenda em português**. Ele não entra
@@ -316,10 +335,12 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 ## 7. Próximos passos
 
 1. **A cobertura acabou: 90 de 90.** O que resta não é acrescentar indicação, é
-   **substituir as fracas por fortes**. A fila, da pior para a menos pior:
-   `geografia-escala`, `eixo-liberdade-igualdade`, `psicologia-funcionalismo`,
-   `sociologia-anomia`, `sociologia-papel-social`/`identidade`,
-   `antropologia-ritual`, `filosofia-eudaimonia` e o eixo Conflito × Coesão.
+   **substituir as fracas por fortes**. Já resolvidos: `eixo-liberdade-igualdade`
+   (curso *Justice*, em inglês com legenda), `sociologia-anomia` e o eixo
+   Conflito × Coesão (UNIVESP). A fila que sobra, da pior para a menos pior:
+   `geografia-escala`, `psicologia-funcionalismo`,
+   `sociologia-papel-social`/`identidade`, `antropologia-ritual`,
+   `filosofia-eudaimonia`.
 2. **Antropologia e Filosofia dependem de acesso institucional.** A introdução à
    antropologia e a fenomenologia de Husserl/Heidegger só existem em vídeo dentro
    do e-Aulas da USP, atrás de login. Sem vínculo USP, a lacuna é real e não tem
