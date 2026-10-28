@@ -588,6 +588,21 @@ itens:
     verificado_em: 2026-10-27
     verificado_como: oembed
 
+  - id: harvard-justice-sandel
+    tipo: curso
+    peso: curso-livre
+    titulo: "Justice with Michael Sandel — curso completo (12 aulas)"
+    autor: "Michael Sandel (Harvard University)"
+    canal: "Harvard University"
+    url: "https://www.youtube.com/playlist?list=PL30C13C91CFFEFEA6"
+    tema: ciencia-politica
+    conceitos: [eixo-liberdade-igualdade, filosofia-veu-da-ignorancia, filosofia-utilitarismo]
+    idioma: en
+    legendas: pt
+    nota: "Curso de graduação de Harvard que percorre exatamente as posições deste eixo: utilitarismo (Mill), liberdade e propriedade (Nozick, Locke) e justiça como equidade (Rawls). Entra porque não há equivalente em português com a mesma extensão e as aulas de Rawls e Nozick daqui são de divulgação. Áudio em inglês com legenda em português."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+
   # ------------------------------------------------------------------- economia
   - id: usp-inflacao-intro
     tipo: videoaula

@@ -21,10 +21,11 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **83 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **84 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
-documentário, filmes e um podcast. A própria página mostra a **cobertura das
-trilhas**: **90 de 90** nós com link já têm mídia ligada.
+documentário, filmes, um podcast e um curso universitário em inglês com legenda em
+português. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
+link já têm mídia **em português** ligada (a regra de idioma está na seção 2).
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
 
@@ -57,13 +58,45 @@ Regras que a auditoria cobra (erro bloqueia o CI):
 4. toda `conceitos` precisa apontar para uma nota que existe em `conceitos/`;
 5. URL sempre `https://`, sem repetição entre entradas;
 6. entrada com URL **não pode** ser marcada como `material-do-autor`;
-7. `midias.md` tem de estar igual ao que o gerador produz (senão: rode `make painel`).
+7. mídia em idioma estrangeiro declara `idioma` **e** `legendas` (ver abaixo);
+8. `midias.md` tem de estar igual ao que o gerador produz (senão: rode `make painel`).
 
 **Hospedagem fora do YouTube** (Drive, Vimeo, site do curso): só entra com o aval
 explícito do autor do projeto, caso a caso, porque o link é mais frágil e não
 passa pelo oEmbed. Nesse caso `verificado_como: pagina` e a página indicada é a
 do curso, não o arquivo solto. Exceção registrada hoje: o curso *Introdução a
 Economia* do LALT/FEC-Unicamp, cujos vídeos são mp4 no Drive.
+
+### Mídia em outro idioma (espanhol, inglês)
+
+O projeto é **em português**. Uma mídia estrangeira entra como *camada de
+aprofundamento* — nunca como porta de entrada de um conceito, e nunca no lugar de
+um material em português que exista.
+
+| Campo | Valores | Regra |
+|---|---|---|
+| `idioma` | `pt` (padrão) · `en` · `es` | Ausência do campo significa `pt`. Mídia em `en`/`es` **precisa** declarar `legendas`, senão a auditoria barra |
+| `legendas` | `pt` · `es` · `en` · `nenhuma` · `nao-verificado` | O que a pessoa vai ver ao assistir. `nao-verificado` é permitido, mas gera aviso na auditoria — é dúvida assumida, não atalho |
+
+Critérios para aceitar:
+
+1. **Só onde o português é fraco ou não existe.** Se há aula de graduação em
+   português cobrindo o conceito, a estrangeira não entra para "melhorar a nota".
+   A `nota` do item tem de dizer **por que não há equivalente em português** — não
+   basta "é excelente".
+2. **Legenda decide o desempate.** Entre uma fonte inglesa com legenda em
+   português e uma espanhola sem legenda, ganha a inglesa. Vídeo sem legenda
+   nenhuma e com áudio difícil só entra se for a única opção e a nota avisar.
+3. **Continua valendo o protocolo da seção 2**, inclusive a regra de hospedagem:
+   player próprio (por exemplo, CanalUNED) não entra sem aval do autor do projeto.
+4. **A cobertura não muda de régua.** O placar das trilhas conta **só mídia em
+   português**. Há uma segunda contagem, ao lado, que soma espanhol e inglês — ela
+   existe para mostrar apoio extra, jamais para inflar o número de português.
+
+Na página gerada, o item estrangeiro aparece com o selo ao lado do canal:
+`**inglês, legenda em português**`, `**espanhol, legenda em espanhol**` ou
+`**inglês, sem legenda**`. Em `indices/midias.json`, `totais.por_idioma` traz a
+contagem por idioma.
 
 O item 4 é o que dá sentido à lista: **a mídia é indexada pelo conceito que ela
 ajuda a estudar**, não pelo canal. Se você não sabe a qual nota ela serve, é
@@ -87,7 +120,7 @@ entretenimento.
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
 | Antropologia | 9 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
 | Geografia | 5 | *Espaço geográfico* (Brasil Escola) |
-| Ciência Política | 4 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
+| Ciência Política | 5 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
 
 ### Cobertura das trilhas
 
@@ -119,6 +152,12 @@ do eixo Conflito × Coesão, em particular, foi fechado com **duas** videoaulas 
 divulgação — uma para cada polo —, porque não achei material que tratasse da
 comparação de uma vez. Cobertura é cobertura; o peso continua dizendo o que
 esperar antes de clicar.
+
+Uma exceção recente, e só uma: o eixo Liberdade × Igualdade ganhou o curso
+*Justice*, de Michael Sandel, **em inglês com legenda em português**. Ele não entra
+na conta da cobertura porque a régua é o português; entra ao lado dela, para o nó
+em que a biblioteca em português só tinha um lado da balança. A regra que permite
+essa exceção está na seção 2.
 
 As três últimas lacunas — Psicologia N1, Ciência Política e Geografia — caíram
 todas na mesma rodada e **todas com divulgação**, das três a mais fraca em peso.
@@ -183,7 +222,10 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   Damásio, não em aula de neurociência.
 - **Psicologia Nível 1, Ciência Política e Geografia**: 100% de cobertura, mas
   fechadas com divulgação (ver acima). São os primeiros candidatos a substituição
-  quando aparecer aula universitária aberta.
+  quando aparecer aula universitária aberta. Em Ciência Política há um paliativo
+  assumido: o curso *Justice* (Harvard, legenda em português) cobre Rawls, Nozick,
+  Mill e Locke com profundidade de graduação, mas **em inglês** — é aprofundamento,
+  não substitui a porta de entrada em português.
 - **Integrada**: nenhuma indicação; a trilha não tem nós linkados, então nem
   aparece na cobertura.
 
