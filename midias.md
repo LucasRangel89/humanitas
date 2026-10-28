@@ -2,7 +2,7 @@
 
 # Mídias
 
-**86 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**92 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -22,7 +22,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | [Psicologia](#psicologia) | 17 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
 | [Filosofia](#filosofia) | 13 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
 | [Sociologia](#sociologia) | 20 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
-| [Antropologia](#antropologia) | 9 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
+| [Antropologia](#antropologia) | 15 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
 | [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 5 | [Conceitos (categorias) da Geografia: REDES e ESCALA Geográfica](https://www.youtube.com/watch?v=cAcuDPS4cTQ) |
 | [Ciência Política](#ciencia-politica) | 5 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
@@ -107,6 +107,12 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Identidade nacional: o que é 'ser brasileiro'](https://www.youtube.com/watch?v=Q9LIEDRmlcE) | Lilia Schwarcz e equipe do Nexo, na série Temas Fundamentais do Brasil · canal Nexo Jornal | Vídeo curto e bem editado: como a identidade nacional foi inventada e por que 'ser brasileiro' não é uma essência. Bom para começar o nó antes do episódio de Darcy Ribeiro. | [Mestiçagem e identidade nacional](conceitos/antropologia-mesticagem-identidade.md) · [Brasil × Universal](conceitos/eixo-brasil-universal.md) |
 | videoaula · aula universitária | [AS TÉCNICAS DO CORPO : 90 anos do ensaio de Marcel Mauss - 04/10/24](https://www.youtube.com/watch?v=J1jLKW0YWvU) | Departamento de Antropologia da FFLCH-USP (jornada de seminários) · canal uspfflch | Jornada de seminários dos 90 anos de As técnicas do corpo, no Departamento de Antropologia da USP, com convidados estrangeiros. Ressalva honesta: não é aula expositiva — é um dia inteiro de falas, longo e desigual, melhor para quem já leu o ensaio e quer ver o conceito em uso. É o material aberto mais próximo do texto que consegui verificar: a aula de Antropologia I da USP que trata do tema está no e-Aulas, atrás de login. | [Técnicas do corpo](conceitos/antropologia-corpo-tecnicas.md) |
 | videoaula · obra de apoio | [TV PUC-Rio: 40 anos de “Carnavais, malandros e heróis”, de Roberto DaMatta](https://www.youtube.com/watch?v=bEUc8v70ohw) | Roberto DaMatta, em programa da TV PUC-Rio · canal TV PUC-Rio \| Comunicar | DaMatta conversando sobre o livro que levou a análise de ritual para a sociedade brasileira: o carnaval como rito de inversão. Não é aula sobre van Gennep nem sobre Turner — é o conceito em ação num caso brasileiro, e é assim que deve ser assistido. Para a teoria, o caminho continua sendo Os ritos de passagem e O processo ritual. | [Ritual](conceitos/antropologia-ritual.md) |
+| videoaula · aula universitária | [Equipaje para aventurarse en antropología](https://canal.uned.es/video/5a6f313ab1111f910e8b456a) | Curso de Acceso: Antropología (UNED) · canal Canal UNED · **espanhol, legenda não conferida** | Episódio de 12 min que abre a série de Antropologia do Curso de Acceso da UNED: o que a disciplina faz, por que o estranhamento é o método e por que a alteridade é o objeto. É a introdução à antropologia em vídeo aberto que faltava na biblioteca — mas em espanhol, e por isso não é a porta de entrada: serve de panorama para quem lê espanhol. O episódio é do curso preparatório de acesso, não de graduação. | [Alteridade](conceitos/antropologia-alteridade.md) |
+| videoaula · aula universitária | [El relativismo cultural](https://canal.uned.es/video/5a6f313bb1111f910e8b4575) | Curso de Acceso: Antropología (UNED) · canal Canal UNED · **espanhol, legenda não conferida** | 11 min sobre o relativismo como método de análise, e não como doutrina moral — a distinção que a nota cobra e que o vídeo em português só encosta. Em espanhol, episódio do Curso de Acceso. | [Relativismo cultural](conceitos/antropologia-relativismo-cultural.md) · [Etnocentrismo](conceitos/antropologia-etnocentrismo.md) |
+| videoaula · aula universitária | [El trabajo de campo](https://canal.uned.es/video/5a6f313cb1111f910e8b457a) | Curso de Acceso: Antropología (UNED) · canal Canal UNED · **espanhol, legenda não conferida** | 13 min sobre observação participante: ir a campo, o diário, a relação com os interlocutores e o que o método não resolve. É mais sistemático que a divulgação em português que já está na lista; a leitura continua em Malinowski e na descrição densa de Geertz. Em espanhol. | [Etnografia](conceitos/antropologia-etnografia.md) |
+| videoaula · aula universitária | [Los niños salvajes entre la naturaleza y la cultura](https://canal.uned.es/video/5a6f313eb1111f910e8b457f) | Curso de Acceso: Antropología (UNED) · canal Canal UNED · **espanhol, legenda não conferida** | Os casos de crianças criadas fora do convívio social (Victor de Aveyron e outros) como experimento trágico do eixo natureza × cultura: o que nelas é natureza e o que só aparece com a cultura. 12 min, em espanhol; bom par com Gattaca, que leva o mesmo eixo ao extremo da ficção. | [Natureza × Cultura](conceitos/eixo-natureza-cultura.md) · [Inatismo × Empirismo](conceitos/eixo-inatismo-empirismo.md) |
+| videoaula · aula universitária | [Los ritos de paso](https://canal.uned.es/video/5a6f3141b1111f910e8b4598) | Honorio Velasco Maíllo (Antropologia Social e Cultural, UNED) · canal Canal UNED · **espanhol, legenda não conferida** | O professor Honorio Velasco Maíllo explica a sequência de van Gennep — separação, margem e reagregação — em 12 min. É o que faltava: o DaMatta mostra o ritual em ação no carnaval, este episódio explica a estrutura que está por trás. Em espanhol; para a teoria escrita, Os ritos de passagem. | [Ritual](conceitos/antropologia-ritual.md) |
+| videoaula · aula universitária | [Ritos, cuerpos y símbolos. Perspectivas clásicas en el estudio del ritual](https://canal.uned.es/video/5f5a09f35578f24f9f412ed8) | Sara Sama Acedo (UNED) · canal Canal UNED · **espanhol, legenda não conferida** | Videoconferência de 50 min do Grado de Antropologia Social y Cultural da UNED sobre corpo e símbolo nos contextos rituais — a parte clássica do programa (van Gennep, Turner, Mary Douglas). É o material aberto mais denso que encontrei sobre ritual, e o único de nível de graduação: assista depois do episódio de 12 min, não antes. Licença CC BY-NC-SA 3.0 ES; em espanhol. | [Ritual](conceitos/antropologia-ritual.md) |
 | filme · obra de apoio | Gattaca — A Experiência Genética (1997) — *streaming e locação* | Andrew Niccol | Determinismo genético como distopia: leva o eixo natureza × cultura ao limite. Citado no plano de estudos do autor. | [Natureza × Cultura](conceitos/eixo-natureza-cultura.md) · [Inatismo × Empirismo](conceitos/eixo-inatismo-empirismo.md) |
 
 ### História
@@ -180,6 +186,7 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Canal | Indicações aqui |
 |---|---|
 | Brasil Escola Oficial | 10 |
+| Canal UNED | 6 |
 | UNIVESP | 6 |
 | SBS tv — Sociedade Brasileira de Sociologia | 4 |
 | Canal Futura | 3 |
@@ -235,4 +242,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 86 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 92 indicações em 8 temas.*

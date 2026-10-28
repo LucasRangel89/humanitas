@@ -881,6 +881,97 @@ itens:
     verificado_em: 2026-10-27
     verificado_como: oembed
 
+  # --- Canal UNED, série "Curso de Acceso: Antropología" (espanhol) ---
+  - id: uned-equipaje-antropologia
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Equipaje para aventurarse en antropología"
+    autor: "Curso de Acceso: Antropología (UNED)"
+    canal: "Canal UNED"
+    url: "https://canal.uned.es/video/5a6f313ab1111f910e8b456a"
+    tema: antropologia
+    conceitos: [antropologia-alteridade]
+    idioma: es
+    legendas: nao-verificado
+    nota: "Episódio de 12 min que abre a série de Antropologia do Curso de Acceso da UNED: o que a disciplina faz, por que o estranhamento é o método e por que a alteridade é o objeto. É a introdução à antropologia em vídeo aberto que faltava na biblioteca — mas em espanhol, e por isso não é a porta de entrada: serve de panorama para quem lê espanhol. O episódio é do curso preparatório de acesso, não de graduação."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: uned-relativismo-cultural
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "El relativismo cultural"
+    autor: "Curso de Acceso: Antropología (UNED)"
+    canal: "Canal UNED"
+    url: "https://canal.uned.es/video/5a6f313bb1111f910e8b4575"
+    tema: antropologia
+    conceitos: [antropologia-relativismo-cultural, antropologia-etnocentrismo]
+    idioma: es
+    legendas: nao-verificado
+    nota: "11 min sobre o relativismo como método de análise, e não como doutrina moral — a distinção que a nota cobra e que o vídeo em português só encosta. Em espanhol, episódio do Curso de Acceso."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: uned-trabalho-de-campo
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "El trabajo de campo"
+    autor: "Curso de Acceso: Antropología (UNED)"
+    canal: "Canal UNED"
+    url: "https://canal.uned.es/video/5a6f313cb1111f910e8b457a"
+    tema: antropologia
+    conceitos: [antropologia-etnografia]
+    idioma: es
+    legendas: nao-verificado
+    nota: "13 min sobre observação participante: ir a campo, o diário, a relação com os interlocutores e o que o método não resolve. É mais sistemático que a divulgação em português que já está na lista; a leitura continua em Malinowski e na descrição densa de Geertz. Em espanhol."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: uned-ninos-salvajes
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Los niños salvajes entre la naturaleza y la cultura"
+    autor: "Curso de Acceso: Antropología (UNED)"
+    canal: "Canal UNED"
+    url: "https://canal.uned.es/video/5a6f313eb1111f910e8b457f"
+    tema: antropologia
+    conceitos: [eixo-natureza-cultura, eixo-inatismo-empirismo]
+    idioma: es
+    legendas: nao-verificado
+    nota: "Os casos de crianças criadas fora do convívio social (Victor de Aveyron e outros) como experimento trágico do eixo natureza × cultura: o que nelas é natureza e o que só aparece com a cultura. 12 min, em espanhol; bom par com Gattaca, que leva o mesmo eixo ao extremo da ficção."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: uned-ritos-de-paso
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Los ritos de paso"
+    autor: "Honorio Velasco Maíllo (Antropologia Social e Cultural, UNED)"
+    canal: "Canal UNED"
+    url: "https://canal.uned.es/video/5a6f3141b1111f910e8b4598"
+    tema: antropologia
+    conceitos: [antropologia-ritual]
+    idioma: es
+    legendas: nao-verificado
+    nota: "O professor Honorio Velasco Maíllo explica a sequência de van Gennep — separação, margem e reagregação — em 12 min. É o que faltava: o DaMatta mostra o ritual em ação no carnaval, este episódio explica a estrutura que está por trás. Em espanhol; para a teoria escrita, Os ritos de passagem."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
+  - id: uned-ritos-cuerpos-simbolos
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Ritos, cuerpos y símbolos. Perspectivas clásicas en el estudio del ritual"
+    autor: "Sara Sama Acedo (UNED)"
+    canal: "Canal UNED"
+    url: "https://canal.uned.es/video/5f5a09f35578f24f9f412ed8"
+    tema: antropologia
+    conceitos: [antropologia-ritual]
+    idioma: es
+    legendas: nao-verificado
+    nota: "Videoconferência de 50 min do Grado de Antropologia Social y Cultural da UNED sobre corpo e símbolo nos contextos rituais — a parte clássica do programa (van Gennep, Turner, Mary Douglas). É o material aberto mais denso que encontrei sobre ritual, e o único de nível de graduação: assista depois do episódio de 12 min, não antes. Licença CC BY-NC-SA 3.0 ES; em espanhol."
+    verificado_em: 2026-10-27
+    verificado_como: pagina
+
   # ------------- psicologia: funcionalismo (lacuna fechada na trilha N1)
   - id: universo-psicologia-funcionalismo
     tipo: videoaula
