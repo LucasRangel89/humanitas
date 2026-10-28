@@ -48,6 +48,10 @@ Critério de conclusão de todo nó: explicar em voz alta sem olhar a nota + qui
 12. [ ] **[Eixo Estrutura × Agência](../conceitos/eixo-estrutura-agencia.md)** — a bússola final: distribua o peso entre traçado e escolha nos casos dos nós anteriores.
     - **Fechamento:** síntese no diário (200+ palavras) respondendo ao objetivo da trilha; atualize o `status` para `concluida`.
 
+## Leituras e obras de apoio
+
+A [Estante de obras](../estante.md) reúne sugestões das planilhas, com perguntas para estudo e identificação ainda pendente de conferência.
+
 ## Como usar com IA
 
 - **Modo Tutor (Guia 03):** um módulo por nó ("Gere um módulo para 'Fato social' em 'Sociologia', nível 'iniciante'").

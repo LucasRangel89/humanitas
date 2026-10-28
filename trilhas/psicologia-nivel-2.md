@@ -50,6 +50,10 @@ Critério de conclusão de todo nó: explicar em voz alta + quiz do Modo Tutor +
     - ⚑ Atividade: uma semana de registro de "intuições viscerais" — contexto, emoção, decisão — e teste o conceito de Damásio nos próprios casos.
 12. [ ] **Síntese: do laboratório à vida** — entrada final no diário (200+ palavras): que módulo mais mudou a forma de se olhar, e por quê? Depois: `status` para `concluida` e ponte para a [trilha Integrada](integrada-nivel-1.md).
 
+## Leituras e obras de apoio
+
+A [Estante de obras](../estante.md) reúne sugestões das planilhas, com perguntas para estudo e identificação ainda pendente de conferência.
+
 ## Como usar com IA
 
 - **Modo Tutor (Guia 03):** um módulo por nó; para os nós 2, 5, 6, 9 e 10 (sem nota ainda), o Tutor gera o módulo e a nota nasce do resultado reescrito — é o ciclo desenhado no Guia 03.

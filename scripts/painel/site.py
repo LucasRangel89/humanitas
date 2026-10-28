@@ -691,12 +691,12 @@ def montar_site_src(raiz: pathlib.Path, destino: pathlib.Path | None = None) -> 
 
     _ajustar_links_readme(destino)
 
-    # guias do projeto, sem os anexos de terceiros
+    # guias do projeto, sem anexos e textos NOBA de terceiros
     docs = raiz / "docs"
     if docs.exists():
         shutil.copytree(
             docs, destino / "docs", dirs_exist_ok=True,
-            ignore=shutil.ignore_patterns("anexos"),
+            ignore=shutil.ignore_patterns("anexos", "NOBA"),
         )
         if (destino / "docs" / "README.md").exists():
             (destino / "docs" / "index.md").write_text(
@@ -724,7 +724,7 @@ def cmd_site(raiz: pathlib.Path, **opcoes) -> int:
     auditaveis = [p for p in paginas if "templates" not in p.relative_to(destino).parts]
     problemas = _links_quebrados(destino, auditaveis)
     print(f"site-src/ montado com {len(paginas)} página(s).")
-    print("O texto integral do acervo e docs/anexos ficaram de fora.")
+    print("O texto integral do acervo, docs/anexos e docs/NOBA ficaram de fora.")
     if problemas:
         print(f"\nAviso: {len(problemas)} link(s) relativo(s) não resolvem no site:")
         for problema in problemas[:10]:

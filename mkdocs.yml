@@ -95,6 +95,7 @@ nav:
       - Progresso: progresso.md
       - Retenção: retencao.md
   - Biblioteca:
+      - Estante de obras: estante.md
       - Mídias: midias.md
       - Obras: obras.md
       - Fichas de leitura: acervo/fichas/index.md

@@ -47,6 +47,10 @@ Critério de conclusão de todo nó: explicar em voz alta sem olhar a nota + qui
 12. [ ] **Síntese no diário** — fechamento da trilha.
     - Escreva 200+ palavras respondendo ao objetivo: que notícia política você teria lido de outro jeito antes desta trilha? Marque `status: concluida`.
 
+## Leituras e obras de apoio
+
+A [Estante de obras](../estante.md) reúne sugestões das planilhas, com perguntas para estudo e identificação ainda pendente de conferência.
+
 ## Como usar com IA
 
 - **Modo Tutor (Guia 03):** um módulo por nó ("Gere um módulo para 'Legitimidade' em 'Ciência Política', nível 'iniciante'").

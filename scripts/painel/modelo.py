@@ -113,7 +113,7 @@ PLACEHOLDERS = (
 
 # Arquivos e pastas que entram no site (o texto integral do acervo fica de fora).
 PASTAS_SITE = ("conceitos", "trilhas", "diario", "trechos")
-ARQUIVOS_SITE = ("README.md", "progresso.md", "LICENSE", "LICENSE-CONTEUDO.md")
+ARQUIVOS_SITE = ("README.md", "progresso.md", "estante.md", "LICENSE", "LICENSE-CONTEUDO.md")
 
 
 # ---------------------------------------------------------------------------

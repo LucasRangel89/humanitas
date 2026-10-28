@@ -1245,3 +1245,15 @@ def test_midia_com_legenda_automatica_avisa_e_rende_selo(mini_repo: pathlib.Path
     assert "inglês, legenda automática em português" in md.read_text(encoding="utf-8")
     dados = json.loads(js.read_text(encoding="utf-8"))
     assert {i["legendas"] for i in dados["itens"] if i["idioma"] == "en"} == {"pt-auto"}
+
+
+def test_site_estante_e_acervo_noba_nao_publicado(mini_repo: pathlib.Path):
+    """A estante é pública; os documentos de origem não vão para o site."""
+    (mini_repo / "estante.md").write_text("# Estante de obras\n", encoding="utf-8")
+    noba = mini_repo / "docs" / "NOBA" / "NOBA"
+    noba.mkdir(parents=True)
+    (noba / "obra.docx").write_bytes(b"conteudo privado")
+    painel.montar_site_src(mini_repo)
+    fontes = mini_repo / "site-src"
+    assert (fontes / "estante.md").read_text(encoding="utf-8") == "# Estante de obras\n"
+    assert not (fontes / "docs" / "NOBA").exists()
