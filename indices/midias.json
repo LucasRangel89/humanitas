@@ -2,7 +2,7 @@
  "versao": 1,
  "atualizado_em": "2026-10-27",
  "totais": {
-  "itens": 69,
+  "itens": 78,
   "por_tipo": {
    "artigo": 1,
    "curso": 3,
@@ -10,21 +10,21 @@
    "filme": 6,
    "podcast": 1,
    "resenha": 1,
-   "videoaula": 56
+   "videoaula": 65
   },
   "por_tema": {
    "antropologia": 7,
    "ciencia-politica": 3,
    "economia": 8,
-   "filosofia": 9,
+   "filosofia": 13,
    "geografia": 4,
    "historia": 9,
    "psicologia": 16,
-   "sociologia": 13
+   "sociologia": 18
   },
   "por_verificacao": {
    "material-do-autor": 7,
-   "oembed": 56,
+   "oembed": 65,
    "pagina": 6
   }
  },
@@ -54,8 +54,8 @@
    "arquivo": "filosofia-nivel-1.md",
    "trilha": "Filosofia — Nível 1",
    "nos": 12,
-   "cobertos": 8,
-   "pct": 67
+   "cobertos": 12,
+   "pct": 100
   },
   {
    "arquivo": "geografia-nivel-1.md",
@@ -96,8 +96,8 @@
    "arquivo": "sociologia-nivel-1.md",
    "trilha": "Sociologia — Nível 1",
    "nos": 12,
-   "cobertos": 8,
-   "pct": 67
+   "cobertos": 12,
+   "pct": 100
   }
  ],
  "itens": [
@@ -1041,6 +1041,170 @@
    "nota": "A falha de mercado como argumento para a intervenção do Estado: externalidades, custo social e o que o preço não captura. É a base econômica do eixo mercado × Estado. Vídeo em mp4 no Google Drive; a página traz slides, Pindyck cap. 18 e exercícios.",
    "verificado_em": "2026-10-27",
    "verificado_como": "pagina"
+  },
+  {
+   "id": "cmsp-kant-aula-03",
+   "tipo": "videoaula",
+   "peso": "curso-livre",
+   "titulo": "Introdução à Filosofia de Immanuel Kant - AULA 3",
+   "autor": "Prof. Dr. Mario Ariel González Porta (PUC-SP), pela Escola do Parlamento",
+   "canal": "Escola do Parlamento CMSP",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=0Phf8R01ZQE",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-fenomeno-noumeno"
+   ],
+   "nota": "Terceira aula de um curso público de quatro encontros sobre Kant; o programa anuncia para este encontro a inversão copernicana, fenômeno e númeno e a dedução transcendental. É o material mais sólido em português que encontrei para o par fenômeno/númeno: quem explica é um professor de Kant, não um canal de resumo. Curso livre da Escola do Parlamento (Câmara Municipal de SP), não é graduação.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "cmsp-kant-aula-04",
+   "tipo": "videoaula",
+   "peso": "curso-livre",
+   "titulo": "Introdução à Filosofia de Immanuel Kant - AULA 4",
+   "autor": "Prof. Dr. Mario Ariel González Porta (PUC-SP), pela Escola do Parlamento",
+   "canal": "Escola do Parlamento CMSP",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=pWi0AhAslck",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-imperativo-categorico"
+   ],
+   "nota": "Quarta aula do mesmo curso: o problema da ética, o fundamento do dever, o imperativo categórico e o lugar de Kant na história da filosofia. Preferi esta à videoaula de divulgação que também tinha verificado, porque aqui a exposição é de um especialista em Kant; fica registrado que a alternativa mais curta existia e foi preterida.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "clovis-eudaimonia-aristoteles",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "#PartiuPensar 221 - Aristóteles: Ética a Nicômaco",
+   "autor": "Clóvis de Barros Filho",
+   "canal": "Clóvis de Barros",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=XBjjSIvBRl4",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-eudaimonia"
+   ],
+   "nota": "Clóvis de Barros Filho (professor da ECA-USP) explica eudaimonia como vida boa e virtuosa, dentro da Ética a Nicômaco. Formato curto de divulgação, de série patrocinada — não é aula de graduação. Não achei aula universitária aberta em português sobre eudaimonia; esta foi a melhor porta de entrada que consegui abrir e conferir.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "afilosofiaexplica-veu-ignorancia",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "John Rawls e o Véu da Ignorância",
+   "autor": "A Filosofia Explica",
+   "canal": "A Filosofia Explica",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=hu6oM55C5DE",
+   "onde": "",
+   "tema": "filosofia",
+   "conceitos": [
+    "filosofia-veu-da-ignorancia"
+   ],
+   "nota": "Explica o experimento mental de Rawls passo a passo: por que escolher os princípios de justiça sem saber que posição se vai ocupar. Divulgação bem feita; a conferência da página do YouTube confirma título e canal.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "sbs-sociologia-aula-07",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "SBS Aulas Abertas - Introdução à Sociologia | Gênero, Raça e Interseccionalidade",
+   "autor": "Profª. Drª. Paula Cristina da Silva (UFBA), pelo ciclo SBS Aulas Abertas",
+   "canal": "SBS tv — Sociedade Brasileira de Sociologia",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=OTlQQjcYxV8",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-interseccionalidade",
+    "sociologia-genero"
+   ],
+   "nota": "Aula 7 do ciclo aberto da SBS: gênero, raça e interseccionalidade no mesmo encontro — cobre o nó 11 inteiro, e não só o conceito de gênero. Peguei a lista de aulas do próprio ciclo para não repetir as que já estavam no painel.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-anomia",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "O que é anomia social? - Brasil Escola",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=2JuwxiCp1ho",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-anomia"
+   ],
+   "nota": "Dá o essencial durkheimiano em poucos minutos: norma que afrouxa, conduta que perde parâmetro, crise que acelera a mudança. Divulgação — serve para fixar vocabulário antes de ir a O Suicídio.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-interacionismo",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Interacionismo simbólico - Brasil Escola",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=kqWb_JE4ZrM",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-papel-social",
+    "sociologia-identidade"
+   ],
+   "nota": "A corrente que trata o eu e os papéis como produto da interação — Mead, Blumer, Goffman: é literalmente o argumento do nó 9. Divulgação: ensina o vocabulário, não substitui Goffman.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-funcionalismo",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Funcionalismo - Brasil Escola",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=I8CXmVnZX_s",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "eixo-conflito-coesao"
+   ],
+   "nota": "O polo da coesão: sociedade como sistema de partes que se integram para manter o todo. Assista junto com a videoaula sobre teoria do conflito — o eixo é a comparação entre as duas, não cada uma isolada.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "brasilescola-conflito-social",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Teoria do conflito social - Brasil Escola",
+   "autor": "Brasil Escola",
+   "canal": "Brasil Escola Oficial",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=EVWbxR6AQls",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "eixo-conflito-coesao"
+   ],
+   "nota": "O polo do conflito: desigualdade como motor da vida social e ordem como arranjo de poder. Par obrigatório da videoaula sobre funcionalismo; sozinha, ela responde só metade da pergunta do eixo.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
   },
   {
    "id": "brasilescola-espaco",
