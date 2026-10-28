@@ -84,7 +84,7 @@ O site (MkDocs) não é só leitura:
 - **Marcar progresso** — nas páginas de trilha as caixas são clicáveis; a marcação fica no navegador. A **central de progresso** (em *Registrar*) exporta `progresso.json` (backup que dá para reimportar), baixa um resumo `.md` legível e copia o comando. No computador, `make aplicar-progresso ARQUIVO=progresso.json` grava os nós nas trilhas e ajusta o `status`.
 - **Registrar uma nota** — a página **Registrar** monta o Markdown no formato que a auditoria espera e oferece **Copiar** ou **Abrir no GitHub já preenchido**. O mesmo resultado sai de `make nova`.
 - **Acompanhar** — painel inicial com o que falta, pendências por nota, cartões (Anki) e retenção.
-- **Mídias** — videoaulas, cursos, artigos, filmes e podcasts por tema, todos conferidos um a um (título, canal e data de verificação), ligados às notas que ajudam a estudar. São 92 indicações (sete delas em inglês ou espanhol), com a cobertura das trilhas medida na própria página; o protocolo está no [Guia 11](docs/11-midias-e-videoaulas.md).
+- **Mídias** — videoaulas, cursos, artigos, filmes e podcasts por tema, todos conferidos um a um (título, canal e data de verificação), ligados às notas que ajudam a estudar. São 95 indicações (dez delas em inglês ou espanhol, com legenda — revisada ou automática — declarada), com a cobertura das trilhas medida na própria página; o protocolo está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
 O menu lateral tem quatro grupos — **Estudar**, **Acompanhar**, **Biblioteca** e **Projeto** — e só o grupo da página atual abre. Quem está estudando não precisa ver guias nem manutenção: elas ficam em *Projeto*.
 

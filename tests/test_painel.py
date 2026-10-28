@@ -1234,3 +1234,14 @@ def test_aviso_de_legenda_nao_conferida_e_agregado(mini_repo: pathlib.Path):
     pendentes = [a for a in avisos if "nao-verificado" in a]
     assert len(pendentes) == 1          # um aviso só, não um por item
     assert "2 mídia(s)" in pendentes[0]
+
+
+def test_midia_com_legenda_automatica_avisa_e_rende_selo(mini_repo: pathlib.Path):
+    texto = MIDIA_ESTRANGEIRA.replace("legendas: pt", "legendas: pt-auto")
+    erros, avisos = _validar(mini_repo, texto)
+    assert erros == []
+    assert any("legenda automática" in a for a in avisos)
+    md, js, _ = painel.gravar_midias(mini_repo)
+    assert "inglês, legenda automática em português" in md.read_text(encoding="utf-8")
+    dados = json.loads(js.read_text(encoding="utf-8"))
+    assert {i["legendas"] for i in dados["itens"] if i["idioma"] == "en"} == {"pt-auto"}
