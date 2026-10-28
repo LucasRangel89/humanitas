@@ -2,7 +2,7 @@
 
 # Mídias
 
-**58 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**63 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -26,7 +26,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | [História](#historia) | 8 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 4 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
 | [Ciência Política](#ciencia-politica) | 3 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
-| [Economia](#economia) | 3 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
+| [Economia](#economia) | 8 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
 
 ## Indicações por tema
 
@@ -127,14 +127,18 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · aula universitária | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) | Denise Cavallini Cyrillo (FEA-USP) · canal Canal USP | Aula de graduação: conceito, causas e efeitos distributivos da inflação. Sem cálculo. | [Inflação e juros](conceitos/economia-inflacao-juros.md) |
 | videoaula · aula universitária | [Inflação e desemprego (Aula 5, parte 1)](https://www.youtube.com/watch?v=qoBb6EtN4dQ) | João Sayad (FEA-USP) · canal Canal USP | Sayad liga inflação, desemprego e conflito distributivo — o elo com a nota de desigualdade. | [Inflação e juros](conceitos/economia-inflacao-juros.md) · [Desigualdade e distribuição](conceitos/economia-desigualdade-distribuicao.md) |
 | videoaula · divulgação | [Macroeconomia, aula 1.2: PIB nas contas nacionais](https://www.youtube.com/watch?v=IMidyc6tAwE) | Rascunhos Econômicos · canal Rascunhos Econômicos | PIB pelas três óticas (produção, renda, demanda), desenhado no papel — a melhor explicação curta em português. | [PIB e crescimento](conceitos/economia-pib-crescimento.md) |
+| videoaula · aula universitária | [Economia - Aula 01 - Incentivos, funcionamento dos mercados e efeito dos impostos](https://www.youtube.com/watch?v=wh3e4KLAIsw) | Rodrigo De Losso (Univesp, disciplina CEG-001) · canal UNIVESP | A aula de abertura da disciplina pega o incentivo como objeto: por que preço, imposto e regra mudam comportamento — e o que acontece quando o formulador ignora isso. | [Incentivos](conceitos/economia-incentivos.md) · [Mercado × Estado](conceitos/eixo-mercado-estado.md) |
+| videoaula · aula universitária | [Economia II - Aula 01 - Oferta e Demanda: Princípios Básicos](https://www.youtube.com/watch?v=gdAkCrzyZsY) | Roberto Alexandre Zanchetta Borghi (Univesp, Engenharia de Produção) · canal UNIVESP | Curvas, deslocamentos e equilíbrio do zero, em ritmo de graduação. Assista antes de ler o capítulo 2 do Pindyck. | [Oferta e demanda](conceitos/economia-oferta-demanda.md) |
+| videoaula · aula universitária | [Aula 1 — Introdução a Economia](https://lalt.fecfau.unicamp.br/cursos_abertos/introducao-a-economia/aula_1.html) | Orlando Fontes Lima Jr. e Sérgio Adriano Loureiro (FEC-Unicamp), nos Cursos Abertos do LALT · canal LALT — Cursos Abertos (Unicamp) | Curso de graduação da Engenharia Civil da Unicamp, aberto e com material de apoio. A aula 1 define economia, escassez e os problemas econômicos fundamentais; o vídeo é um mp4 hospedado no Google Drive, na própria página (que também traz slides, leituras e exercícios). | [Escassez e custo de oportunidade](conceitos/economia-escassez-custo-oportunidade.md) · [Mercado × Estado](conceitos/eixo-mercado-estado.md) |
+| videoaula · aula universitária | [Aula 5 — Demanda, Oferta e Elasticidade](https://lalt.fecfau.unicamp.br/cursos_abertos/introducao-a-economia/aula_5.html) | Orlando Fontes Lima Jr. e Sérgio Adriano Loureiro (FEC-Unicamp), nos Cursos Abertos do LALT · canal LALT — Cursos Abertos (Unicamp) | Aprofunda o que a aula introdutória só anuncia: elasticidade-preço, cruzada e renda, com exercícios resolvidos na página. Vídeo em mp4 no Google Drive. | [Oferta e demanda](conceitos/economia-oferta-demanda.md) |
+| videoaula · aula universitária | [Aula 12 — Teoria do Bem-Estar e Externalidades](https://lalt.fecfau.unicamp.br/cursos_abertos/introducao-a-economia/aula_12.html) | Orlando Fontes Lima Jr. e Sérgio Adriano Loureiro (FEC-Unicamp), nos Cursos Abertos do LALT · canal LALT — Cursos Abertos (Unicamp) | A falha de mercado como argumento para a intervenção do Estado: externalidades, custo social e o que o preço não captura. É a base econômica do eixo mercado × Estado. Vídeo em mp4 no Google Drive; a página traz slides, Pindyck cap. 18 e exercícios. | [Externalidades e bens públicos](conceitos/economia-externalidades-bens-publicos.md) · [Mercado × Estado](conceitos/eixo-mercado-estado.md) |
 
 ## Cobertura das trilhas
 
-**67 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+**72 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
 
 | Trilha | Nós com mídia | |
 |---|---|---|
-| Economia — Nível 1 | 3/8 (38%) | `████░░░░░░` |
 | Pensamento Social Brasileiro | 6/11 (55%) | `██████░░░░` |
 | Filosofia — Nível 1 | 8/12 (67%) | `███████░░░` |
 | Sociologia — Nível 1 | 8/12 (67%) | `███████░░░` |
@@ -142,6 +146,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | Ciência Política — Nível 1 | 6/7 (86%) | `█████████░` |
 | Geografia — Nível 1 | 6/7 (86%) | `█████████░` |
 | Psicologia — Nível 1 | 10/11 (91%) | `█████████░` |
+| Economia — Nível 1 | 8/8 (100%) | `██████████` |
 | História — Nível 1 | 7/7 (100%) | `██████████` |
 | Psicologia — Nível 2 | 8/8 (100%) | `██████████` |
 
@@ -152,12 +157,13 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Canal | Indicações aqui |
 |---|---|
 | Brasil Escola Oficial | 6 |
+| UNIVESP | 4 |
 | Canal Futura | 3 |
 | Canal USP | 3 |
+| LALT — Cursos Abertos (Unicamp) | 3 |
 | Prof. Matheus Passos | 3 |
 | SBS tv — Sociedade Brasileira de Sociologia | 3 |
 | Filosofia Vermelha | 2 |
-| UNIVESP | 2 |
 | Alfredo Oliva | 1 |
 | Editor universoacademicovideo | 1 |
 | Felipe Barchi | 1 |
@@ -193,4 +199,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 58 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 63 indicações em 8 temas.*

@@ -21,9 +21,9 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **58 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **63 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, filmes e um
-podcast. A própria página mostra a **cobertura das trilhas**: 67 dos 90 nós com
+podcast. A própria página mostra a **cobertura das trilhas**: 72 dos 90 nós com
 link já têm mídia ligada.
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
@@ -78,20 +78,21 @@ entretenimento.
 | Sociologia | 11 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
 | Filosofia | 9 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
 | História | 8 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
+| Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
 | Antropologia | 4 | *Relativismo cultural* (Brasil Escola) |
 | Geografia | 4 | *Espaço geográfico* (Brasil Escola) |
 | Ciência Política | 3 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
-| Economia | 3 | *Introdução à Inflação* (Denise Cyrillo, FEA-USP) |
 
 ### Cobertura das trilhas
 
 O gerador compara os links de cada nó com as notas citadas em `conceitos` e publica
-a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **67 de 90
+a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **72 de 90
 nós com link** (ficam fora os nós "síntese no diário" e a trilha Integrada, cujos
 nós não apontam para notas).
 
 | Trilha | Nós com mídia |
 |---|---|
+| Economia — Nível 1 | 8/8 (100%) |
 | História — Nível 1 | 7/7 (100%) |
 | Psicologia — Nível 2 | 8/8 (100%) |
 | Psicologia — Nível 1 | 10/11 (91%) |
@@ -101,15 +102,15 @@ nós não apontam para notas).
 | Filosofia — Nível 1 | 8/12 (67%) |
 | Sociologia — Nível 1 | 8/12 (67%) |
 | Pensamento Social Brasileiro | 6/11 (55%) |
-| Economia — Nível 1 | 3/8 (38%) |
 
-As duas trilhas que estavam no fim da tabela (História, 14%, e Psicologia Nível 2,
-12%) fecharam em 100% nesta rodada. Parte da subida das outras vem de nós
-compartilhados, e não de mídia feita para elas: Filosofia ganhou um nó porque
-`eixo-mente-corpo` é citado lá também; Pensamento Social Brasileiro ganhou dois
-porque as notas de `historia-colonialismo` e `historia-escravidao-abolicao` são
-usadas nos nós da trilha. Cobertura é cobertura — mas o peso da mídia continua
-sendo o que diz o campo `peso`.
+Três trilhas estão em 100% (Economia, História e Psicologia Nível 2) — as duas
+últimas fecharam na rodada anterior, quando estavam em 14% e 12%. Parte da subida
+de Filosofia e de Pensamento Social Brasileiro veio de nós compartilhados, e não
+de mídia feita para elas: Filosofia ganhou um nó porque `eixo-mente-corpo` é
+citado lá também; Pensamento Social Brasileiro ganhou dois porque as notas de
+`historia-colonialismo` e `historia-escravidao-abolicao` são usadas nos nós da
+trilha. Cobertura é cobertura — mas o peso da mídia continua sendo o que diz o
+campo `peso`.
 
 Acervos que aparecem mais de uma vez e valem assinar: **Canal USP** (aulas de
 graduação da FEA e da FFLCH), **UNIVESP** (cursos completos de Sociologia,
@@ -126,9 +127,14 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   [e-Aulas](https://eaulas.usp.br/) e são excelentes — **mas exigem login USP**
   (conferido em 27/10/2026), então não entram nesta lista. Ficam como sugestão
   para quem tem vínculo.
-- **Economia**: 3 de 8 — o gargalo seguinte. Falta vídeo aberto de qualidade
-  sobre macro, moeda e pensamento econômico (a FEA-USP tem aula, mas o acervo
-  aberto é pequeno).
+- **Economia**: 8 de 8, mas metade da trilha depende de um curso cujo vídeo é
+  **mp4 no Google Drive**, não YouTube: os Cursos Abertos do LALT (FEC-Unicamp)
+  publicam a aula em Drive, com slides, leituras e exercícios na página. Funciona
+  e abre sem login (conferido em 27/10/2026), mas é um formato mais frágil que o
+  oEmbed — se o arquivo sair do ar, o link morre sem aviso. As outras duas
+  entradas (UNIVESP) são YouTube.
+- **Pensamento Social Brasileiro**: 6 de 11 — é o gargalo agora. Faltam Florestan
+  Fernandes, DaMatta e Sérgio Buarque em vídeo aberto.
 - **História**: 7 de 7, mas com peso desigual — só duas entradas são de nível
   universitário (IEA-USP e Quijano pelo Quilombo da UFRJ). As demais são
   divulgação correta, não aula de graduação.
@@ -140,8 +146,8 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   fenomenologia (Husserl/Heidegger).
 - **Integrada**: nenhuma indicação; a trilha não tem nós linkados, então nem
   aparece na cobertura.
-- **Pensamento social brasileiro**: 4 de 11 — faltam Florestan Fernandes,
-  DaMatta e Sérgio Buarque em vídeo.
+- **Pensamento social brasileiro**: ver acima — é a trilha mais descoberta depois
+  desta rodada.
 
 ---
 
@@ -229,8 +235,8 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 
 ## 7. Próximos passos
 
-1. **Economia (3/8)** — é a única trilha ainda abaixo de 40%; precisa de vídeo
-   aberto de macro, moeda e história do pensamento econômico.
+1. **Pensamento Social Brasileiro (6/11)** — é a trilha mais descoberta agora;
+   precisa de Florestan, DaMatta e Sérgio Buarque em vídeo aberto.
 2. **Uma mídia por nó**: a meta não é 133 links, é que cada trilha tenha **uma
    porta de entrada em vídeo** e **uma leitura de apoio por nó**. A tabela de
    cobertura em `midias.md` é o placar.
