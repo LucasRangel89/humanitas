@@ -123,6 +123,7 @@ def validar(
     avisos: list[str] = []
     vistos_id: dict[str, int] = {}
     vistos_url: dict[str, str] = {}
+    legendas_pendentes: list[str] = []
 
     if atualizado_em and not DATA_ISO.match(atualizado_em):
         erros.append(f"{ARQUIVO}: `atualizado_em` deve ser AAAA-MM-DD (tem {atualizado_em!r}).")
@@ -175,10 +176,10 @@ def validar(
                     "`legendas` (pt, es, en, nenhuma ou nao-verificado)."
                 )
             elif item["legendas"] == "nao-verificado":
-                avisos.append(
-                    f"{ARQUIVO}: {rotulo} está em {item['idioma']} e as legendas ainda "
-                    "não foram conferidas."
-                )
+                # Um aviso por biblioteca, não por item: a dúvida é a mesma para
+                # todas as mídias daquele idioma, e uma linha por item afogaria
+                # os outros avisos da auditoria.
+                legendas_pendentes.append(f"{rotulo} ({item['idioma']})")
         if item.get("verificado_em") and not DATA_ISO.match(item["verificado_em"]):
             erros.append(
                 f"{ARQUIVO}: {rotulo} tem verificado_em fora do padrão AAAA-MM-DD "
@@ -218,6 +219,13 @@ def validar(
 
     if itens and not any(i.get("verificado_em") for i in itens if not i.get("_invalido")):
         erros.append(f"{ARQUIVO}: nenhuma entrada tem `verificado_em`.")
+
+    if legendas_pendentes:
+        avisos.append(
+            f"{ARQUIVO}: {len(legendas_pendentes)} mídia(s) em outro idioma com "
+            "`legendas: nao-verificado` — confira no player antes de tratar como "
+            f"apoio principal ({', '.join(legendas_pendentes)})."
+        )
 
     return erros, avisos
 

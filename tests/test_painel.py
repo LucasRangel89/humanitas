@@ -1197,3 +1197,40 @@ def test_midia_estrangeira_conta_na_cobertura_ampliada(mini_repo: pathlib.Path):
     assert "1 de 2" in texto_md  # contagem ampliada anunciada
     dados = json.loads(js.read_text(encoding="utf-8"))
     assert dados["cobertura_trilhas"][0]["cobertos_amplo"] == 1
+
+
+def test_aviso_de_legenda_nao_conferida_e_agregado(mini_repo: pathlib.Path):
+    texto = MIDIA_OK + """  - id: aula-habitus-en
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Lecture on habitus"
+    autor: "Universidade de teste"
+    canal: "Universidade de teste"
+    url: "https://www.youtube.com/watch?v=ingles01"
+    tema: sociologia
+    conceitos: [sociologia-habitus]
+    idioma: en
+    legendas: nao-verificado
+    nota: "Só existe em inglês."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+  - id: aula-habitus-es
+    tipo: videoaula
+    peso: aula-universitaria
+    titulo: "Lección sobre habitus"
+    autor: "Universidad de prueba"
+    canal: "Universidad de prueba"
+    url: "https://www.youtube.com/watch?v=espanhol01"
+    tema: sociologia
+    conceitos: [sociologia-habitus]
+    idioma: es
+    legendas: nao-verificado
+    nota: "Só existe em espanhol."
+    verificado_em: 2026-10-27
+    verificado_como: oembed
+"""
+    erros, avisos = _validar(mini_repo, texto)
+    assert erros == []
+    pendentes = [a for a in avisos if "nao-verificado" in a]
+    assert len(pendentes) == 1          # um aviso só, não um por item
+    assert "2 mídia(s)" in pendentes[0]

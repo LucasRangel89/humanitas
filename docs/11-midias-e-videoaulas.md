@@ -21,10 +21,11 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **86 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **92 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
-documentário, filmes, um podcast e um curso universitário em inglês com legenda em
-português. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
+documentário, filmes e um podcast. **Sete** estão fora do português: um curso
+universitário em inglês com legenda em português (Harvard, *Justice*) e seis
+episódios de antropologia da UNED, em espanhol. A própria página mostra a **cobertura das trilhas**: **90 de 90** nós com
 link já têm mídia **em português** ligada (a regra de idioma está na seção 2).
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
@@ -88,7 +89,9 @@ Critérios para aceitar:
    português e uma espanhola sem legenda, ganha a inglesa. Vídeo sem legenda
    nenhuma e com áudio difícil só entra se for a única opção e a nota avisar.
 3. **Continua valendo o protocolo da seção 2**, inclusive a regra de hospedagem:
-   player próprio (por exemplo, CanalUNED) não entra sem aval do autor do projeto.
+   player próprio não entra sem aval do autor do projeto. O CanalUNED recebeu esse
+   aval em 27/10/2026, para a série de Antropologia — com `verificado_como: pagina`
+   e o link sempre para a página do vídeo, nunca para arquivo solto.
 4. **A cobertura não muda de régua.** O placar das trilhas conta **só mídia em
    português**. Há uma segunda contagem, ao lado, que soma espanhol e inglês — ela
    existe para mostrar apoio extra, jamais para inflar o número de português.
@@ -118,7 +121,7 @@ entretenimento.
 | Filosofia | 13 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
 | História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
-| Antropologia | 9 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
+| Antropologia | 15 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
 | Geografia | 5 | *Espaço geográfico* (Brasil Escola) |
 | Ciência Política | 5 | *Curso de Ciência Política, Aula 02* (Prof. Matheus Passos) |
 
@@ -152,6 +155,28 @@ do eixo Conflito × Coesão, em particular, foi fechado com **duas** videoaulas 
 divulgação — uma para cada polo —, porque não achei material que tratasse da
 comparação de uma vez. Cobertura é cobertura; o peso continua dizendo o que
 esperar antes de clicar.
+
+**O pacote da UNED (espanhol).** A antropologia era o tema com a maior distância
+entre o que a trilha pede e o que existe em português: sete nós cobertos, nenhum
+por introdução à disciplina, e o ritual apoiado só numa conversa de TV. Entraram
+seis episódios, todos verificados na página do CanalUNED:
+
+| Item | Duração | Serve a |
+|---|---|---|
+| *Equipaje para aventurarse en antropología* | 12 min | `antropologia-alteridade` — a introdução à disciplina que faltava |
+| *El relativismo cultural* | 11 min | `antropologia-relativismo-cultural`, `antropologia-etnocentrismo` |
+| *El trabajo de campo* | 13 min | `antropologia-etnografia` |
+| *Los niños salvajes entre la naturaleza y la cultura* | 12 min | eixo Natureza × Cultura, Inatismo × Empirismo |
+| *Los ritos de paso* (Honorio Velasco Maíllo) | 12 min | `antropologia-ritual` — a estrutura de van Gennep |
+| *Ritos, cuerpos y símbolos* (Sara Sama Acedo) | 50 min | `antropologia-ritual` — a videoconferência de graduação |
+
+Cinco são do *Curso de Acceso* (curso preparatório da UNED, não graduação) e um é
+do Grado de Antropologia Social y Cultural, com licença CC BY-NC-SA. **Nenhum
+deles é porta de entrada**: a página continua abrindo o tema pelos materiais em
+português, e as notas dos episódios dizem isso. E as **legendas ficaram como
+`nao-verificado`** nos seis: o CanalUNED não informa faixa de legenda na página do
+vídeo, e eu não vou escrever "sem legenda" sobre o que não conferi. É por isso que
+a auditoria agora mostra um aviso agregado — dúvida declarada, não descuido.
 
 **Segunda rodada: trocar divulgação por aula de universidade.** A fila do Guia
 apontava oito nós fechados com divulgação. Nesta rodada entraram dois, os dois da
@@ -202,13 +227,14 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
 
 ### Lacunas conhecidas
 
-- **Antropologia**: 7 de 7, mas ainda **não há introdução à antropologia em
-  vídeo aberto** — o que existe são aulas sobre recortes (Munanga, Darcy Ribeiro,
-  técnicas do corpo, ritual). As aulas de *Antropologia I* da USP estão na
-  [e-Aulas](https://eaulas.usp.br/) e são exatamente o que falta — inclusive uma
-  chamada *Ritual, símbolo, liminaridade e poder* —, **mas exigem login USP**
-  (conferido de novo em 27/10/2026), então não entram nesta lista. Ficam como
-  sugestão para quem tem vínculo.
+- **Antropologia**: 7 de 7 e, desde o pacote da UNED, com introdução à disciplina
+  e teoria do ritual — **mas em espanhol**. Em português continua não havendo
+  introdução à antropologia em vídeo aberto: o que existe são aulas sobre recortes
+  (Munanga, Darcy Ribeiro, técnicas do corpo, ritual). As aulas de *Antropologia I*
+  da USP estão na [e-Aulas](https://eaulas.usp.br/) — inclusive uma chamada
+  *Ritual, símbolo, liminaridade e poder* —, **mas exigem login USP** (conferido de
+  novo em 27/10/2026). A diferença é que a lacuna deixou de ser um buraco: quem lê
+  espanhol tem por onde começar, e o Guia diz em que ordem.
 - **Economia**: 8 de 8, mas metade da trilha depende de um curso cujo vídeo é
   **mp4 no Google Drive**, não YouTube: os Cursos Abertos do LALT (FEC-Unicamp)
   publicam a aula em Drive, com slides, leituras e exercícios na página. Funciona
@@ -337,10 +363,10 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 1. **A cobertura acabou: 90 de 90.** O que resta não é acrescentar indicação, é
    **substituir as fracas por fortes**. Já resolvidos: `eixo-liberdade-igualdade`
    (curso *Justice*, em inglês com legenda), `sociologia-anomia` e o eixo
-   Conflito × Coesão (UNIVESP). A fila que sobra, da pior para a menos pior:
+   Conflito × Coesão (UNIVESP), `antropologia-ritual` e `antropologia-etnografia`
+   (UNED, em espanhol). A fila que sobra, da pior para a menos pior:
    `geografia-escala`, `psicologia-funcionalismo`,
-   `sociologia-papel-social`/`identidade`, `antropologia-ritual`,
-   `filosofia-eudaimonia`.
+   `sociologia-papel-social`/`identidade`, `filosofia-eudaimonia`.
 2. **Antropologia e Filosofia dependem de acesso institucional.** A introdução à
    antropologia e a fenomenologia de Husserl/Heidegger só existem em vídeo dentro
    do e-Aulas da USP, atrás de login. Sem vínculo USP, a lacuna é real e não tem
