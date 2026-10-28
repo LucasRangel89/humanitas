@@ -2,7 +2,7 @@
 
 # Mídias
 
-**63 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**69 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -21,9 +21,9 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 |---|---|---|
 | [Psicologia](#psicologia) | 16 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
 | [Filosofia](#filosofia) | 9 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
-| [Sociologia](#sociologia) | 11 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
-| [Antropologia](#antropologia) | 4 | [Relativismo cultural](https://www.youtube.com/watch?v=D247x6t31is) |
-| [História](#historia) | 8 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
+| [Sociologia](#sociologia) | 13 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
+| [Antropologia](#antropologia) | 7 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
+| [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 4 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
 | [Ciência Política](#ciencia-politica) | 3 | [Curso de Ciência Política — Aula 02 — Conceito de Ciência Política](https://www.youtube.com/watch?v=zC5oSwI98eo) |
 | [Economia](#economia) | 8 | [Introdução à Inflação (Aula 5, parte 1)](https://www.youtube.com/watch?v=GIAZlKLD4hY) |
@@ -77,6 +77,8 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Sociologia — Aula 01 — Introdução aos clássicos da Sociologia e aos seus principais conceitos](https://www.youtube.com/watch?v=4AjXOAWTicM) | Centro de Mídias de Educação do Amazonas · canal centrodemidias | Passa por Durkheim, Weber e Comte na mesma aula — útil para ver o trio clássico lado a lado antes de estudar cada um. | [Fato social](conceitos/sociologia-fato-social.md) · [Racionalização](conceitos/sociologia-racionalizacao.md) · [Positivismo](conceitos/sociologia-positivismo.md) |
 | videoaula · divulgação | [Pierre Bourdieu: teoria de habitus \| Sociologia #10](https://www.youtube.com/watch?v=7I84Vgrb5wY) | Canal É Fácil Quando se Aprende · canal É Fácil Quando se Aprende | Explica o conceito em linguagem de sala de aula. Depois de assistir, volte ao texto do Bourdieu: o vídeo não substitui a distinção habitus/campo/capital. | [Habitus](conceitos/sociologia-habitus.md) · [Estrutura × Agência](conceitos/eixo-estrutura-agencia.md) |
 | videoaula · divulgação | [Sociologia Brasileira](https://www.youtube.com/watch?v=YFSnf7TzQbM) | Brasil Escola · canal Brasil Escola Oficial | Panorama curto do surgimento da sociologia no Brasil e dos seus campos de pesquisa. | [Formação social brasileira](conceitos/historia-formacao-social-brasileira.md) · [Patrimonialismo](conceitos/sociologia-patrimonialismo.md) |
+| videoaula · aula universitária | [As Epistemologias do Sul e a Descolonização das Ciências Sociais](https://www.youtube.com/watch?v=ZUO_EnEZzRw) | Boaventura de Sousa Santos, na FFLCH-USP · canal uspfflch | A conferência que dá vocabulário ao outro polo do eixo Brasil x Universal: colonialismo epistemológico, sociologia das ausências e o que significa aprender a partir do Sul. Assista depois de ler a nota do eixo. | [Brasil × Universal](conceitos/eixo-brasil-universal.md) |
+| videoaula · obra de apoio | [Palestra do sociólogo Jessé Souza, autor do livro A Elite do Atraso, na íntegra](https://www.youtube.com/watch?v=IDLTAjVoaDI) | Jessé Souza · canal Sindicato dos Bancários de Porto Alegre e região | O próprio autor apresentando a tese que rivaliza com a de Freyre e Sérgio Buarque: a escravidão, e não o patrimonialismo ibérico, como chave da desigualdade brasileira. Não substitui o livro — é a versão oral do argumento, útil para localizar a polêmica. | [Elite do atraso](conceitos/sociologia-elite-do-atraso.md) |
 | videoaula · divulgação | [A política como vocação em 7 minutos](https://www.youtube.com/watch?v=cXxHZM9t2k8) | Matheus Passos, sobre o texto de Max Weber · canal Prof. Matheus Passos | Síntese de 'A política como vocação': os três tipos de legitimidade e a distinção entre ética da convicção e ética da responsabilidade. Curto; leia Weber depois. | [Racionalização](conceitos/sociologia-racionalizacao.md) · [Estado](conceitos/ciencia-politica-estado.md) · [Legitimidade](conceitos/ciencia-politica-legitimidade.md) |
 | filme · obra de apoio | Tempos Modernos (1936) — *streaming e locação* | Charlie Chaplin | A linha de montagem como imagem da alienação e da racionalização. Citado no plano de estudos do autor. | [Alienação](conceitos/sociologia-alienacao.md) · [Racionalização](conceitos/sociologia-racionalizacao.md) |
 | filme · obra de apoio | Parasita (2019) — *streaming e locação* | Bong Joon-ho | Desigualdade e reprodução de classe encenadas no espaço da casa — bom para discutir habitus e mobilidade social. | [Desigualdade Social](conceitos/sociologia-desigualdade-social.md) · [Habitus](conceitos/sociologia-habitus.md) |
@@ -88,6 +90,9 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Relativismo cultural](https://www.youtube.com/watch?v=D247x6t31is) | Brasil Escola · canal Brasil Escola Oficial | Explica o método relativista e a confusão frequente com 'tudo é válido'. Curto, bom para começar. | [Relativismo cultural](conceitos/antropologia-relativismo-cultural.md) · [Etnocentrismo](conceitos/antropologia-etnocentrismo.md) |
 | videoaula · divulgação | [Relativismo, etnografia, alteridade / Franz Boas e Bronisław Malinowski](https://www.youtube.com/watch?v=Nn0cGqzvsck) | Kamila Thais da Silva Figueira · canal Kamila Thais da Silva Figueira | Liga os dois fundadores ao método: particularismo histórico (Boas) e trabalho de campo (Malinowski). | [Alteridade](conceitos/antropologia-alteridade.md) · [Etnografia](conceitos/antropologia-etnografia.md) · [Relativismo cultural](conceitos/antropologia-relativismo-cultural.md) |
 | videoaula · divulgação | [O que é etnografia e como fazer? — Antropológica](https://www.youtube.com/watch?v=H-pAVymWhYo) | Icles Rodrigues · canal Icles Rodrigues | Diferença entre observar e fazer etnografia, com dicas de registro em campo. | [Etnografia](conceitos/antropologia-etnografia.md) |
+| videoaula · aula universitária | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) | Kabengele Munanga (FFLCH-USP) · canal Amílcar Ifé | Aula em que Munanga desmonta o mito da democracia racial a partir de Freyre e da mestiçagem. O canal é uma republicação, não a universidade — o conteúdo é a aula, e o risco de sair do ar é maior do que num canal institucional. | [Democracia racial](conceitos/ciencia-politica-democracia-racial.md) |
+| documentário · obra de apoio | [O Povo Brasileiro - Episódio 4: Encontros e desencontros](https://www.youtube.com/watch?v=5_3XrQD5VOI) | Darcy Ribeiro (obra) · direção de Isa Grinspum Ferraz · canal Douglas Dutra | O episódio da série de 2000 sobre a gestação étnica do povo brasileiro: mestiçagem como processo, não como elogio. 26 min. A série completa está no canal da Fundação Leonel Brizola; este é um recorte por episódio. | [Mestiçagem e identidade nacional](conceitos/antropologia-mesticagem-identidade.md) |
+| videoaula · divulgação | [Identidade nacional: o que é 'ser brasileiro'](https://www.youtube.com/watch?v=Q9LIEDRmlcE) | Lilia Schwarcz e equipe do Nexo, na série Temas Fundamentais do Brasil · canal Nexo Jornal | Vídeo curto e bem editado: como a identidade nacional foi inventada e por que 'ser brasileiro' não é uma essência. Bom para começar o nó antes do episódio de Darcy Ribeiro. | [Mestiçagem e identidade nacional](conceitos/antropologia-mesticagem-identidade.md) · [Brasil × Universal](conceitos/eixo-brasil-universal.md) |
 | filme · obra de apoio | Gattaca — A Experiência Genética (1997) — *streaming e locação* | Andrew Niccol | Determinismo genético como distopia: leva o eixo natureza × cultura ao limite. Citado no plano de estudos do autor. | [Natureza × Cultura](conceitos/eixo-natureza-cultura.md) · [Inatismo × Empirismo](conceitos/eixo-inatismo-empirismo.md) |
 
 ### História
@@ -102,6 +107,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · aula universitária | [COLONIALIDADE DO PODER, EUROCENTRISMO e AMÉRICA LATINA (Aníbal Quijano) Aula 1](https://www.youtube.com/watch?v=ptf6OtO8N34) | Prof. Wallace de Moraes, pelo projeto Quilombo da UFRJ · canal QUILOMBO DA UFRJ | Aula de leitura guiada do texto de Quijano: colonialidade do poder, eurocentrismo e América Latina. Leva o debate do colonialismo histórico para a sua permanência hoje. | [Colonialismo](conceitos/historia-colonialismo.md) |
 | videoaula · divulgação | [Escravidão no Brasil - História - Ensino Médio](https://www.youtube.com/watch?v=r5kF0HUkuug) | Canal Futura · canal Canal Futura | Aula de ensino médio que trata do tráfico, do cotidiano da escravidão, da posição da Igreja e das resistências indígena e negra. Panorama para organizar a cronologia. | [Escravidão e abolição](conceitos/historia-escravidao-abolicao.md) |
 | videoaula · aula universitária | [Continuidade e Ruptura na Construção Nacional do Brasil](https://www.youtube.com/watch?v=qlVagBE1CBE) | Lourdes Sola, Jorge Caldeira, Maria Tereza Sadek e Eduardo Viola (IEA-USP) · canal Instituto de Estudos Avançados da USP | Mesa do IEA-USP que parte da independência como ruptura e continuidade ao mesmo tempo. Útil para ver o par conceitual aplicado a um caso concreto — 2h49, assista em blocos. | [Continuidade × Ruptura](conceitos/eixo-continuidade-ruptura.md) |
+| videoaula · aula universitária | [Palestra: “O que é racismo estrutural?”, com o Prof. Dr. Silvio Almeida](https://www.youtube.com/watch?v=Qnp8bAFRN0E) | Silvio Luiz de Almeida · canal CFH \| UFSC | Aula aberta do Ciclo 13 de maio no Centro de Filosofia e Ciências Humanas da UFSC. É a apresentação do conceito pelo autor de Racismo Estrutural, do mito da democracia racial à responsabilidade das instituições. | [Racismo estrutural](conceitos/historia-racismo-estrutural.md) |
 
 ### Geografia
 
@@ -135,11 +141,10 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 ## Cobertura das trilhas
 
-**72 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+**77 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
 
 | Trilha | Nós com mídia | |
 |---|---|---|
-| Pensamento Social Brasileiro | 6/11 (55%) | `██████░░░░` |
 | Filosofia — Nível 1 | 8/12 (67%) | `███████░░░` |
 | Sociologia — Nível 1 | 8/12 (67%) | `███████░░░` |
 | Antropologia — Nível 1 | 5/7 (71%) | `███████░░░` |
@@ -148,6 +153,7 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | Psicologia — Nível 1 | 10/11 (91%) | `█████████░` |
 | Economia — Nível 1 | 8/8 (100%) | `██████████` |
 | História — Nível 1 | 7/7 (100%) | `██████████` |
+| Pensamento Social Brasileiro | 11/11 (100%) | `██████████` |
 | Psicologia — Nível 2 | 8/8 (100%) | `██████████` |
 
 ## Canais que valem assinar
@@ -165,6 +171,9 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | SBS tv — Sociedade Brasileira de Sociologia | 3 |
 | Filosofia Vermelha | 2 |
 | Alfredo Oliva | 1 |
+| Amílcar Ifé | 1 |
+| CFH \| UFSC | 1 |
+| Douglas Dutra | 1 |
 | Editor universoacademicovideo | 1 |
 | Felipe Barchi | 1 |
 | Glória Vianna | 1 |
@@ -180,16 +189,19 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 | Luis Louis | 1 |
 | Minutos Psíquicos | 1 |
 | Nerdologia | 1 |
+| Nexo Jornal | 1 |
 | Professor Davi | 1 |
 | Professor Magno | 1 |
 | Professor Thiago Coronato | 1 |
 | QUILOMBO DA UFRJ | 1 |
 | Rascunhos Econômicos | 1 |
+| Sindicato dos Bancários de Porto Alegre e região | 1 |
 | Socran | 1 |
 | TED | 1 |
 | Universo da Psicologia | 1 |
 | Victor Sales Pinheiro | 1 |
 | centrodemidias | 1 |
+| uspfflch | 1 |
 | É Fácil Quando se Aprende | 1 |
 
 ## Como esta lista é mantida
@@ -199,4 +211,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 63 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 69 indicações em 8 temas.*

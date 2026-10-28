@@ -2,28 +2,29 @@
  "versao": 1,
  "atualizado_em": "2026-10-27",
  "totais": {
-  "itens": 63,
+  "itens": 69,
   "por_tipo": {
    "artigo": 1,
    "curso": 3,
+   "documentario": 1,
    "filme": 6,
    "podcast": 1,
    "resenha": 1,
-   "videoaula": 51
+   "videoaula": 56
   },
   "por_tema": {
-   "antropologia": 4,
+   "antropologia": 7,
    "ciencia-politica": 3,
    "economia": 8,
    "filosofia": 9,
    "geografia": 4,
-   "historia": 8,
+   "historia": 9,
    "psicologia": 16,
-   "sociologia": 11
+   "sociologia": 13
   },
   "por_verificacao": {
    "material-do-autor": 7,
-   "oembed": 50,
+   "oembed": 56,
    "pagina": 6
   }
  },
@@ -74,8 +75,8 @@
    "arquivo": "pensamento-social-brasileiro.md",
    "trilha": "Pensamento Social Brasileiro",
    "nos": 11,
-   "cobertos": 6,
-   "pct": 55
+   "cobertos": 11,
+   "pct": 100
   },
   {
    "arquivo": "psicologia-nivel-1.md",
@@ -248,6 +249,42 @@
     "sociologia-patrimonialismo"
    ],
    "nota": "Panorama curto do surgimento da sociologia no Brasil e dos seus campos de pesquisa.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "usp-boaventura-epistemologias-sul",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "As Epistemologias do Sul e a Descolonização das Ciências Sociais",
+   "autor": "Boaventura de Sousa Santos, na FFLCH-USP",
+   "canal": "uspfflch",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=ZUO_EnEZzRw",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "eixo-brasil-universal"
+   ],
+   "nota": "A conferência que dá vocabulário ao outro polo do eixo Brasil x Universal: colonialismo epistemológico, sociologia das ausências e o que significa aprender a partir do Sul. Assista depois de ler a nota do eixo.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "jesse-souza-elite-do-atraso-palestra",
+   "tipo": "videoaula",
+   "peso": "obra-de-apoio",
+   "titulo": "Palestra do sociólogo Jessé Souza, autor do livro A Elite do Atraso, na íntegra",
+   "autor": "Jessé Souza",
+   "canal": "Sindicato dos Bancários de Porto Alegre e região",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=IDLTAjVoaDI",
+   "onde": "",
+   "tema": "sociologia",
+   "conceitos": [
+    "sociologia-elite-do-atraso"
+   ],
+   "nota": "O próprio autor apresentando a tese que rivaliza com a de Freyre e Sérgio Buarque: a escravidão, e não o patrimonialismo ibérico, como chave da desigualdade brasileira. Não substitui o livro — é a versão oral do argumento, útil para localizar a polêmica.",
    "verificado_em": "2026-10-27",
    "verificado_como": "oembed"
   },
@@ -621,6 +658,61 @@
    "verificado_como": "oembed"
   },
   {
+   "id": "munanga-relacoes-etnico-raciais",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga",
+   "autor": "Kabengele Munanga (FFLCH-USP)",
+   "canal": "Amílcar Ifé",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=7FxJOLf6HCA",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "ciencia-politica-democracia-racial"
+   ],
+   "nota": "Aula em que Munanga desmonta o mito da democracia racial a partir de Freyre e da mestiçagem. O canal é uma republicação, não a universidade — o conteúdo é a aula, e o risco de sair do ar é maior do que num canal institucional.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "povo-brasileiro-ep4-encontros",
+   "tipo": "documentario",
+   "peso": "obra-de-apoio",
+   "titulo": "O Povo Brasileiro - Episódio 4: Encontros e desencontros",
+   "autor": "Darcy Ribeiro (obra) · direção de Isa Grinspum Ferraz",
+   "canal": "Douglas Dutra",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=5_3XrQD5VOI",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "antropologia-mesticagem-identidade"
+   ],
+   "nota": "O episódio da série de 2000 sobre a gestação étnica do povo brasileiro: mestiçagem como processo, não como elogio. 26 min. A série completa está no canal da Fundação Leonel Brizola; este é um recorte por episódio.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "nexo-identidade-nacional",
+   "tipo": "videoaula",
+   "peso": "divulgacao",
+   "titulo": "Identidade nacional: o que é 'ser brasileiro'",
+   "autor": "Lilia Schwarcz e equipe do Nexo, na série Temas Fundamentais do Brasil",
+   "canal": "Nexo Jornal",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=Q9LIEDRmlcE",
+   "onde": "",
+   "tema": "antropologia",
+   "conceitos": [
+    "antropologia-mesticagem-identidade",
+    "eixo-brasil-universal"
+   ],
+   "nota": "Vídeo curto e bem editado: como a identidade nacional foi inventada e por que 'ser brasileiro' não é uma essência. Bom para começar o nó antes do episódio de Darcy Ribeiro.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
    "id": "usp-napolitano-populismo",
    "tipo": "videoaula",
    "peso": "aula-universitaria",
@@ -763,6 +855,24 @@
     "eixo-continuidade-ruptura"
    ],
    "nota": "Mesa do IEA-USP que parte da independência como ruptura e continuidade ao mesmo tempo. Útil para ver o par conceitual aplicado a um caso concreto — 2h49, assista em blocos.",
+   "verificado_em": "2026-10-27",
+   "verificado_como": "oembed"
+  },
+  {
+   "id": "silvio-almeida-racismo-estrutural-ufsc",
+   "tipo": "videoaula",
+   "peso": "aula-universitaria",
+   "titulo": "Palestra: “O que é racismo estrutural?”, com o Prof. Dr. Silvio Almeida",
+   "autor": "Silvio Luiz de Almeida",
+   "canal": "CFH | UFSC",
+   "veiculo": "",
+   "url": "https://www.youtube.com/watch?v=Qnp8bAFRN0E",
+   "onde": "",
+   "tema": "historia",
+   "conceitos": [
+    "historia-racismo-estrutural"
+   ],
+   "nota": "Aula aberta do Ciclo 13 de maio no Centro de Filosofia e Ciências Humanas da UFSC. É a apresentação do conceito pelo autor de Racismo Estrutural, do mito da democracia racial à responsabilidade das instituições.",
    "verificado_em": "2026-10-27",
    "verificado_como": "oembed"
   },
