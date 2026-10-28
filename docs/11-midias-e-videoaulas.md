@@ -21,10 +21,10 @@ dois artefatos gerados dele:
 | [`midias.md`](../midias.md) | Página pública (também no site, em **Biblioteca → Mídias**), agrupada por tema |
 | `indices/midias.json` | Versão para máquina: contagens por tipo, tema e método de verificação |
 
-Hoje: **69 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
+Hoje: **78 indicações** em 8 temas. A maioria são videoaulas gratuitas (várias de
 graduação); há também artigos em acesso aberto, um resumo acadêmico, um
 documentário, filmes e um podcast. A própria página mostra a **cobertura das
-trilhas**: 77 dos 90 nós com link já têm mídia ligada.
+trilhas**: 85 dos 90 nós com link já têm mídia ligada.
 
 ### Os cinco pesos (para você saber o que esperar antes de clicar)
 
@@ -81,8 +81,8 @@ entretenimento.
 | Tema | Indicações | Melhor porta de entrada |
 |---|---|---|
 | Psicologia | 16 | *Introdução à Psicanálise* (Instituto ESPE) e Fulgencio sobre o apego (IP-USP) |
-| Sociologia | 13 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
-| Filosofia | 9 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
+| Sociologia | 18 | *SBS Aulas Abertas — O que é Sociologia?* (Irlys Barreira, UFC) |
+| Filosofia | 13 | *Curso Introdução Geral à Filosofia, Aula 1* (Victor Sales Pinheiro/INÉF) |
 | História | 9 | *Continuidade e Ruptura na Construção Nacional do Brasil* (IEA-USP) |
 | Economia | 8 | *Introdução a Economia, aula 1* (FEC-Unicamp, Cursos Abertos do LALT) |
 | Antropologia | 7 | *O Povo Brasileiro, ep. 4* (Darcy Ribeiro) e a aula de Munanga |
@@ -92,30 +92,33 @@ entretenimento.
 ### Cobertura das trilhas
 
 O gerador compara os links de cada nó com as notas citadas em `conceitos` e publica
-a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **77 de 90
+a tabela de cobertura dentro de `midias.md`. Situação em 27/10/2026: **85 de 90
 nós com link** (ficam fora os nós "síntese no diário" e a trilha Integrada, cujos
 nós não apontam para notas).
 
 | Trilha | Nós com mídia |
 |---|---|
 | Economia — Nível 1 | 8/8 (100%) |
+| Filosofia — Nível 1 | 12/12 (100%) |
 | História — Nível 1 | 7/7 (100%) |
 | Pensamento Social Brasileiro | 11/11 (100%) |
 | Psicologia — Nível 2 | 8/8 (100%) |
+| Sociologia — Nível 1 | 12/12 (100%) |
 | Psicologia — Nível 1 | 10/11 (91%) |
 | Ciência Política — Nível 1 | 6/7 (86%) |
 | Geografia — Nível 1 | 6/7 (86%) |
 | Antropologia — Nível 1 | 5/7 (71%) |
-| Filosofia — Nível 1 | 8/12 (67%) |
-| Sociologia — Nível 1 | 8/12 (67%) |
 
-Quatro trilhas estão em 100%. A mais recente é Pensamento Social Brasileiro, que
-estava em 36% quando a medição começou. Parte das subidas de Filosofia e de
-Sociologia veio de nós compartilhados, e não de mídia feita para elas: Filosofia
-ganhou um nó porque `eixo-mente-corpo` é citado lá também; Sociologia ganhou nós
-porque `eixo-brasil-universal` e `sociologia-elite-do-atraso` aparecem em mais de
-uma trilha. Cobertura é cobertura — mas o peso da mídia continua sendo o que diz o
-campo `peso`.
+Seis trilhas estão em 100%. As duas últimas a fechar foram Filosofia e Sociologia,
+que estavam em 8/12 e agora estão completas — mas com pesos diferentes, e vale
+olhar o campo `peso` antes de comemorar: das oito lacunas fechadas nesta rodada,
+duas entraram como `curso-livre` de um curso público sobre Kant (Escola do
+Parlamento, com professor da PUC-SP), uma como `aula-universitaria` (SBS), e as
+outras cinco como `divulgacao` do Brasil Escola e de um canal de filosofia. O nó
+do eixo Conflito × Coesão, em particular, foi fechado com **duas** videoaulas de
+divulgação — uma para cada polo —, porque não achei material que tratasse da
+comparação de uma vez. Cobertura é cobertura; o peso continua dizendo o que
+esperar antes de clicar.
 
 Acervos que aparecem mais de uma vez e valem assinar: **Canal USP** (aulas de
 graduação da FEA e da FFLCH), **UNIVESP** (cursos completos de Sociologia,
@@ -140,9 +143,18 @@ de Sociologia), **Brasil Escola** (divulgação curta e correta), **ILP**
   e abre sem login (conferido em 27/10/2026), mas é um formato mais frágil que o
   oEmbed — se o arquivo sair do ar, o link morre sem aviso. As outras duas
   entradas (UNIVESP) são YouTube.
-- **Filosofia e Sociologia**: 8 de 12 — o gargalo agora. Em Filosofia faltam
-  Butler (o podcast cobre mal) e uma aula de fenomenologia; em Sociologia falta
-  vídeo sobre trabalho/divisão social do trabalho e sobre movimentos sociais.
+- **Filosofia e Sociologia**: fecharam em 12/12 nesta rodada, mas o caminho foi
+  desigual. O melhor achado foram duas aulas do curso *Introdução à Filosofia de
+  Immanuel Kant* da Escola do Parlamento (Câmara Municipal de SP), com o Prof.
+  Dr. Mario Ariel González Porta (PUC-SP): a aula 3 trata justamente de
+  fenômeno e númeno e a aula 4, do imperativo categórico. Ressalva importante: o
+  nó é sobre o par **kantiano** — **fenomenologia** como escola (Husserl,
+  Heidegger) continua sem aula aberta em português, e isso não foi resolvido.
+  Em Sociologia, o nó de gênero/interseccionalidade foi fechado com a aula 7 do
+  ciclo SBS (Profª. Paula Cristina da Silva, UFBA). Eudaimonia, anomia, papéis/
+  identidade e o eixo Conflito × Coesão ficaram com divulgação: procurei aula
+  universitária aberta para os quatro e não encontrei (Butler e movimentos
+  sociais seguem sem vídeo próprio).
 - **Racismo estrutural e democracia racial**: cobertos, mas por palestras
   publicadas em canais que não são da universidade (Munanga está numa
   republicação, Silvio Almeida na UFSC, Jessé Souza num sindicato). São boas falas
@@ -244,9 +256,12 @@ virou dado; o que era projeto de outro produto ficou de fora — de propósito.
 
 ## 7. Próximos passos
 
-1. **Filosofia e Sociologia (8/12)** — são as trilhas mais descobertas agora:
-   falta fenomenologia e Butler em Filosofia; trabalho e movimentos sociais em
-   Sociologia.
+1. **Antropologia (5/7)** — é a trilha mais descoberta agora. Falta uma
+   introdução à antropologia em vídeo aberto; as aulas da USP estão na e-Aulas,
+   atrás de login. Depois dela, Psicologia N1 (10/11), Ciência Política (6/7) e
+   Geografia (6/7) — um nó cada. Em Filosofia e Sociologia, o que falta não é
+   cobertura e sim **peso**: substituir divulgação por aula universitária em
+   eudaimonia, anomia, papéis/identidade e no eixo Conflito × Coesão.
 2. **Uma mídia por nó**: a meta não é 133 links, é que cada trilha tenha **uma
    porta de entrada em vídeo** e **uma leitura de apoio por nó**. A tabela de
    cobertura em `midias.md` é o placar.

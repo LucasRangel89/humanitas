@@ -2,7 +2,7 @@
 
 # Mídias
 
-**69 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
+**78 indicações** conferidas uma a uma — videoaulas, cursos, artigos, resenhas, filmes e podcasts, ligados às notas e às trilhas.
 
 Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte, e a data de conferência está na tabela. Se um vídeo sair do ar, corrija em [`midias/biblioteca.yml`](https://github.com/LucasRangel89/humanitas/blob/main/midias/biblioteca.yml).
 
@@ -20,8 +20,8 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | Tema | Indicações | Onde começar |
 |---|---|---|
 | [Psicologia](#psicologia) | 16 | [Introdução à Psicanálise \| Rubia Zecchin e Cláudia Martins](https://www.youtube.com/watch?v=3yLJOuYIZ48) |
-| [Filosofia](#filosofia) | 9 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
-| [Sociologia](#sociologia) | 13 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
+| [Filosofia](#filosofia) | 13 | [Curso Introdução Geral à Filosofia — Aula 1: definição da Filosofia como amor à sabedoria](https://www.youtube.com/watch?v=L7bB5wsGPNw) |
+| [Sociologia](#sociologia) | 18 | [SBS Aulas Abertas — Introdução à Sociologia \| O que é Sociologia?](https://www.youtube.com/watch?v=JH9wu7meUaU) |
 | [Antropologia](#antropologia) | 7 | [Relações Étnico-Raciais - Prof°. Dr. Kabengele Munanga](https://www.youtube.com/watch?v=7FxJOLf6HCA) |
 | [História](#historia) | 9 | [Democracia, “populismo” ou política de massas: a “República de 46” (Aula 6, parte 1)](https://www.youtube.com/watch?v=qJnCQXEZyz8) |
 | [Geografia](#geografia) | 4 | [Espaço geográfico](https://www.youtube.com/watch?v=vonz6HrVhWc) |
@@ -59,6 +59,10 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · curso livre | [Introdução à Filosofia da Ciência \| Introdução Geral à Filosofia \| Aula 33](https://www.youtube.com/watch?v=M2mm8Y4OJKo) | Vitor Lima (Isto não é Filosofia) · canal Isto não é Filosofia | Liga Popper e Kuhn ao problema da demarcação científica — exatamente o que a nota de falseabilidade pede. | [Falseabilidade](conceitos/filosofia-falseabilidade.md) · [Paradigma (Kuhn)](conceitos/filosofia-paradigma-kuhn.md) |
 | curso · curso livre | [A filosofia de Karl Marx — uma introdução \| Novo curso disponível!](https://www.youtube.com/watch?v=JYe6VHyE6kI) | Filosofia Vermelha · canal Filosofia Vermelha | Apresentação do curso sobre Marx: percorre os textos de juventude até O Capital. Leitura exigente, em português. | [Alienação](conceitos/sociologia-alienacao.md) · [Estrutura × Agência](conceitos/eixo-estrutura-agencia.md) |
 | curso · curso livre | [Curso de introdução à filosofia: dos pré-socráticos a Sartre](https://www.youtube.com/watch?v=k1GUwOeehlw) | Filosofia Vermelha · canal Filosofia Vermelha | Curso cronológico completo; o vídeo é a apresentação. Escolha um módulo por vez e escreva o diário antes de seguir. | [Método Socrático](conceitos/filosofia-metodo-socratico.md) |
+| videoaula · curso livre | [Introdução à Filosofia de Immanuel Kant - AULA 3](https://www.youtube.com/watch?v=0Phf8R01ZQE) | Prof. Dr. Mario Ariel González Porta (PUC-SP), pela Escola do Parlamento · canal Escola do Parlamento CMSP | Terceira aula de um curso público de quatro encontros sobre Kant; o programa anuncia para este encontro a inversão copernicana, fenômeno e númeno e a dedução transcendental. É o material mais sólido em português que encontrei para o par fenômeno/númeno: quem explica é um professor de Kant, não um canal de resumo. Curso livre da Escola do Parlamento (Câmara Municipal de SP), não é graduação. | [Fenômeno e Númeno](conceitos/filosofia-fenomeno-noumeno.md) |
+| videoaula · curso livre | [Introdução à Filosofia de Immanuel Kant - AULA 4](https://www.youtube.com/watch?v=pWi0AhAslck) | Prof. Dr. Mario Ariel González Porta (PUC-SP), pela Escola do Parlamento · canal Escola do Parlamento CMSP | Quarta aula do mesmo curso: o problema da ética, o fundamento do dever, o imperativo categórico e o lugar de Kant na história da filosofia. Preferi esta à videoaula de divulgação que também tinha verificado, porque aqui a exposição é de um especialista em Kant; fica registrado que a alternativa mais curta existia e foi preterida. | [Imperativo Categórico](conceitos/filosofia-imperativo-categorico.md) |
+| videoaula · divulgação | [#PartiuPensar 221 - Aristóteles: Ética a Nicômaco](https://www.youtube.com/watch?v=XBjjSIvBRl4) | Clóvis de Barros Filho · canal Clóvis de Barros | Clóvis de Barros Filho (professor da ECA-USP) explica eudaimonia como vida boa e virtuosa, dentro da Ética a Nicômaco. Formato curto de divulgação, de série patrocinada — não é aula de graduação. Não achei aula universitária aberta em português sobre eudaimonia; esta foi a melhor porta de entrada que consegui abrir e conferir. | [Eudaimonia](conceitos/filosofia-eudaimonia.md) |
+| videoaula · divulgação | [John Rawls e o Véu da Ignorância](https://www.youtube.com/watch?v=hu6oM55C5DE) | A Filosofia Explica · canal A Filosofia Explica | Explica o experimento mental de Rawls passo a passo: por que escolher os princípios de justiça sem saber que posição se vai ocupar. Divulgação bem feita; a conferência da página do YouTube confirma título e canal. | [Véu da Ignorância](conceitos/filosofia-veu-da-ignorancia.md) |
 | videoaula · divulgação | [Michel Foucault: Poder](https://www.youtube.com/watch?v=A-D1qdR9zKI) | Brasil Escola · canal Brasil Escola Oficial | Apresenta a Microfísica do poder: poder como relação capilar, não como coisa que se possui. Bom para rever depois de ler Vigiar e punir. | [Panóptico e Biopoder](conceitos/sociologia-panoptico.md) · [Estrutura × Agência](conceitos/eixo-estrutura-agencia.md) |
 | videoaula · divulgação | [Nietzsche • Vontade de potência](https://www.youtube.com/watch?v=3Q_ZHq6v8A4) | Alfredo Oliva · canal Alfredo Oliva | Percorre biografia, potência como vitalidade e crítica dos valores. Contextualiza a 'morte de Deus' sem reduzir Nietzsche a frase de efeito. | [Morte de Deus](conceitos/filosofia-morte-de-deus.md) · [Existencialismo](conceitos/filosofia-existencialismo.md) |
 | filme · obra de apoio | Matrix (1999) — *streaming e locação* | Lana e Lilly Wachowski | A alegoria da caverna em versão contemporânea: realidade simulada, libertação dolorosa e o retorno a quem não quer ver. Citado no plano de estudos do autor. | [Teoria das Formas](conceitos/filosofia-teoria-das-formas.md) |
@@ -79,6 +83,11 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 | videoaula · divulgação | [Sociologia Brasileira](https://www.youtube.com/watch?v=YFSnf7TzQbM) | Brasil Escola · canal Brasil Escola Oficial | Panorama curto do surgimento da sociologia no Brasil e dos seus campos de pesquisa. | [Formação social brasileira](conceitos/historia-formacao-social-brasileira.md) · [Patrimonialismo](conceitos/sociologia-patrimonialismo.md) |
 | videoaula · aula universitária | [As Epistemologias do Sul e a Descolonização das Ciências Sociais](https://www.youtube.com/watch?v=ZUO_EnEZzRw) | Boaventura de Sousa Santos, na FFLCH-USP · canal uspfflch | A conferência que dá vocabulário ao outro polo do eixo Brasil x Universal: colonialismo epistemológico, sociologia das ausências e o que significa aprender a partir do Sul. Assista depois de ler a nota do eixo. | [Brasil × Universal](conceitos/eixo-brasil-universal.md) |
 | videoaula · obra de apoio | [Palestra do sociólogo Jessé Souza, autor do livro A Elite do Atraso, na íntegra](https://www.youtube.com/watch?v=IDLTAjVoaDI) | Jessé Souza · canal Sindicato dos Bancários de Porto Alegre e região | O próprio autor apresentando a tese que rivaliza com a de Freyre e Sérgio Buarque: a escravidão, e não o patrimonialismo ibérico, como chave da desigualdade brasileira. Não substitui o livro — é a versão oral do argumento, útil para localizar a polêmica. | [Elite do atraso](conceitos/sociologia-elite-do-atraso.md) |
+| videoaula · aula universitária | [SBS Aulas Abertas - Introdução à Sociologia \| Gênero, Raça e Interseccionalidade](https://www.youtube.com/watch?v=OTlQQjcYxV8) | Profª. Drª. Paula Cristina da Silva (UFBA), pelo ciclo SBS Aulas Abertas · canal SBS tv — Sociedade Brasileira de Sociologia | Aula 7 do ciclo aberto da SBS: gênero, raça e interseccionalidade no mesmo encontro — cobre o nó 11 inteiro, e não só o conceito de gênero. Peguei a lista de aulas do próprio ciclo para não repetir as que já estavam no painel. | [Interseccionalidade](conceitos/sociologia-interseccionalidade.md) · [Gênero](conceitos/sociologia-genero.md) |
+| videoaula · divulgação | [O que é anomia social? - Brasil Escola](https://www.youtube.com/watch?v=2JuwxiCp1ho) | Brasil Escola · canal Brasil Escola Oficial | Dá o essencial durkheimiano em poucos minutos: norma que afrouxa, conduta que perde parâmetro, crise que acelera a mudança. Divulgação — serve para fixar vocabulário antes de ir a O Suicídio. | [Anomia](conceitos/sociologia-anomia.md) |
+| videoaula · divulgação | [Interacionismo simbólico - Brasil Escola](https://www.youtube.com/watch?v=kqWb_JE4ZrM) | Brasil Escola · canal Brasil Escola Oficial | A corrente que trata o eu e os papéis como produto da interação — Mead, Blumer, Goffman: é literalmente o argumento do nó 9. Divulgação: ensina o vocabulário, não substitui Goffman. | [Papel Social](conceitos/sociologia-papel-social.md) · [Identidade](conceitos/sociologia-identidade.md) |
+| videoaula · divulgação | [Funcionalismo - Brasil Escola](https://www.youtube.com/watch?v=I8CXmVnZX_s) | Brasil Escola · canal Brasil Escola Oficial | O polo da coesão: sociedade como sistema de partes que se integram para manter o todo. Assista junto com a videoaula sobre teoria do conflito — o eixo é a comparação entre as duas, não cada uma isolada. | [Conflito × Coesão](conceitos/eixo-conflito-coesao.md) |
+| videoaula · divulgação | [Teoria do conflito social - Brasil Escola](https://www.youtube.com/watch?v=EVWbxR6AQls) | Brasil Escola · canal Brasil Escola Oficial | O polo do conflito: desigualdade como motor da vida social e ordem como arranjo de poder. Par obrigatório da videoaula sobre funcionalismo; sozinha, ela responde só metade da pergunta do eixo. | [Conflito × Coesão](conceitos/eixo-conflito-coesao.md) |
 | videoaula · divulgação | [A política como vocação em 7 minutos](https://www.youtube.com/watch?v=cXxHZM9t2k8) | Matheus Passos, sobre o texto de Max Weber · canal Prof. Matheus Passos | Síntese de 'A política como vocação': os três tipos de legitimidade e a distinção entre ética da convicção e ética da responsabilidade. Curto; leia Weber depois. | [Racionalização](conceitos/sociologia-racionalizacao.md) · [Estado](conceitos/ciencia-politica-estado.md) · [Legitimidade](conceitos/ciencia-politica-legitimidade.md) |
 | filme · obra de apoio | Tempos Modernos (1936) — *streaming e locação* | Charlie Chaplin | A linha de montagem como imagem da alienação e da racionalização. Citado no plano de estudos do autor. | [Alienação](conceitos/sociologia-alienacao.md) · [Racionalização](conceitos/sociologia-racionalizacao.md) |
 | filme · obra de apoio | Parasita (2019) — *streaming e locação* | Bong Joon-ho | Desigualdade e reprodução de classe encenadas no espaço da casa — bom para discutir habitus e mobilidade social. | [Desigualdade Social](conceitos/sociologia-desigualdade-social.md) · [Habitus](conceitos/sociologia-habitus.md) |
@@ -141,20 +150,20 @@ Cada link foi aberto antes de entrar aqui: o título e o canal são os da fonte,
 
 ## Cobertura das trilhas
 
-**77 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
+**85 de 90 nós com link** já têm pelo menos uma mídia ligada. Ficam fora da conta os nós sem link (síntese no diário) e as trilhas cujos nós não apontam para notas (a Integrada, por exemplo).
 
 | Trilha | Nós com mídia | |
 |---|---|---|
-| Filosofia — Nível 1 | 8/12 (67%) | `███████░░░` |
-| Sociologia — Nível 1 | 8/12 (67%) | `███████░░░` |
 | Antropologia — Nível 1 | 5/7 (71%) | `███████░░░` |
 | Ciência Política — Nível 1 | 6/7 (86%) | `█████████░` |
 | Geografia — Nível 1 | 6/7 (86%) | `█████████░` |
 | Psicologia — Nível 1 | 10/11 (91%) | `█████████░` |
 | Economia — Nível 1 | 8/8 (100%) | `██████████` |
+| Filosofia — Nível 1 | 12/12 (100%) | `██████████` |
 | História — Nível 1 | 7/7 (100%) | `██████████` |
 | Pensamento Social Brasileiro | 11/11 (100%) | `██████████` |
 | Psicologia — Nível 2 | 8/8 (100%) | `██████████` |
+| Sociologia — Nível 1 | 12/12 (100%) | `██████████` |
 
 ## Canais que valem assinar
 
@@ -162,17 +171,20 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 
 | Canal | Indicações aqui |
 |---|---|
-| Brasil Escola Oficial | 6 |
+| Brasil Escola Oficial | 10 |
+| SBS tv — Sociedade Brasileira de Sociologia | 4 |
 | UNIVESP | 4 |
 | Canal Futura | 3 |
 | Canal USP | 3 |
 | LALT — Cursos Abertos (Unicamp) | 3 |
 | Prof. Matheus Passos | 3 |
-| SBS tv — Sociedade Brasileira de Sociologia | 3 |
+| Escola do Parlamento CMSP | 2 |
 | Filosofia Vermelha | 2 |
+| A Filosofia Explica | 1 |
 | Alfredo Oliva | 1 |
 | Amílcar Ifé | 1 |
 | CFH \| UFSC | 1 |
+| Clóvis de Barros | 1 |
 | Douglas Dutra | 1 |
 | Editor universoacademicovideo | 1 |
 | Felipe Barchi | 1 |
@@ -211,4 +223,4 @@ Nomes exatamente como aparecem no YouTube para os itens acima. Artigos e periód
 3. A auditoria recusa entrada sem verificação, com URL repetida, com tema inválido ou apontando para nota que não existe.
 4. O protocolo completo (como conferir, o que entra e o que nunca entra) está no [Guia 11](docs/11-midias-e-videoaulas.md).
 
-*Última curadoria: 27/10/2026 · 69 indicações em 8 temas.*
+*Última curadoria: 27/10/2026 · 78 indicações em 8 temas.*
