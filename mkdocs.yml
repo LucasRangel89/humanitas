@@ -1,18 +1,17 @@
-# Configuração do site (MkDocs Material).
+# Configuração do Livro Digital Interativo (MkDocs Material).
 # As fontes são montadas por `python -m scripts.painel site` em `site-src/`,
-# que copia apenas o que pode ser público e GERA as páginas de navegação
-# (painel inicial, índices por tema, eixos) a partir do índice.
+# que copia apenas o que pode ser público e GERA os volumes, ensaios enriquecidos
+# com mídias em ordem pedagógica, sumários, atlas e eixos.
 #
 # Uso local:
 #   make site          # monta site-src/ e serve em http://127.0.0.1:8000
 #   mkdocs build       # gera o HTML em site/
 #
-# Publicação: workflow "Site" (manual) em .github/workflows/site.yml.
+# Publicação: workflow "Site" em .github/workflows/site.yml.
 
 site_name: Humanitas
-site_description: Painel de estudos de ciências humanas — conceitos, eixos, trilhas e progresso
+site_description: Livro digital interativo de Ciências Humanas — volumes guiados, ensaios conceituais, grandes debates e mídias verificadas
 site_author: Lucas Rangel
-# Em produção aponta para o GitHub Pages; no preview local, `MKDOCS_SITE_URL=/`.
 site_url: !ENV [MKDOCS_SITE_URL, "https://lucasrangel89.github.io/humanitas/"]
 
 docs_dir: site-src
@@ -21,29 +20,32 @@ site_dir: site
 theme:
   name: material
   language: pt-BR
+  icon:
+    logo: material/book-open-page-variant-outline
+  font:
+    text: Plus Jakarta Sans
+    code: JetBrains Mono
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
-        name: Modo escuro
+        name: Modo noturno (sépia escuro)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
-        name: Modo claro
+        name: Modo leitura diurno (papel creme)
   features:
-    # Menu lateral com seções expansíveis (sem abas apertadas no topo).
-    # `navigation.expand` fica desligado: só a seção ativa abre.
+    - navigation.tabs
     - navigation.indexes
     - navigation.top
     - navigation.tracking
     - navigation.footer
-    # conteúdo
     - content.tags
     - search.suggest
     - search.highlight
@@ -59,12 +61,13 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
-  - md_in_html          # necessário para os cartões (grid cards) do painel
+  - md_in_html
   - def_list
   - footnotes
   - tables
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -74,40 +77,57 @@ markdown_extensions:
       custom_checkbox: true
 
 extra_css:
+  - https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap
   - assets/css/dashboard.css
 extra_javascript:
   - assets/js/dashboard.js
   - assets/js/progresso.js
   - assets/js/registrar.js
 
-# Navegação explícita nas seções fixas. Notas novas NÃO exigem editar este
-# arquivo: elas aparecem em Conceitos (índice gerado por tema), na busca, nas
-# tags e nos links das trilhas.
 nav:
-  - Estudar:
-      - Início: index.md
-      - Trilhas: trilhas/index.md
-      - Conceitos: conceitos/index.md
-      - Eixos: eixos.md
-  - Acompanhar:
-      - Registrar: registrar.md
-      - Diário: diario/index.md
-      - Progresso: progresso.md
-      - Retenção: retencao.md
-  - Biblioteca:
-      - Estante de obras: estante.md
-      - Mídias: midias.md
-      - Obras: obras.md
-      - Fichas de leitura: acervo/fichas/index.md
-      - Trechos: trechos/index.md
-      - Grafo: grafo.md
-  - Projeto:
-      - Guias: docs/index.md
-      - Mapa das humanidades: docs/09-mapa-das-humanidades.md
-      - Ritual de estudo: docs/10-ritual-de-estudo.md
-      - Mídias e videoaulas: docs/11-midias-e-videoaulas.md
-      - Como manter o painel: docs/08-instrucoes-futuras.md
-      - Sobre: sobre.md
+  - Capa & Sumário:
+      - Capa do Livro: index.md
+      - Como estudar (Ritual): docs/10-ritual-de-estudo.md
+      - Mapa das Humanidades: docs/09-mapa-das-humanidades.md
+      - Sobre esta edição: sobre.md
+  - Volumes do Livro:
+      - Sumário dos Volumes: trilhas/index.md
+      - Parte I · Mente, Logos e Sociedade:
+          - Vol. I · Filosofia (Nível 1): trilhas/filosofia-nivel-1.md
+          - Vol. II · Psicologia (Fundações): trilhas/psicologia-nivel-1.md
+          - Vol. III · Psicologia (Laboratório à Vida): trilhas/psicologia-nivel-2.md
+          - Vol. IV · Sociologia (Nível 1): trilhas/sociologia-nivel-1.md
+      - Parte II · Cultura, Tempo, Espaço e Poder:
+          - Vol. V · Antropologia (Nível 1): trilhas/antropologia-nivel-1.md
+          - Vol. VI · História (Nível 1): trilhas/historia-nivel-1.md
+          - Vol. VII · Geografia (Nível 1): trilhas/geografia-nivel-1.md
+          - Vol. VIII · Ciência Política (Nível 1): trilhas/ciencia-politica-nivel-1.md
+          - Vol. IX · Economia (Nível 1): trilhas/economia-nivel-1.md
+      - Parte III · Sínteses & Travessias:
+          - Vol. X · Pensamento Social Brasileiro: trilhas/pensamento-social-brasileiro.md
+          - Vol. XI · Integrada (As Três Lentes): trilhas/integrada-nivel-1.md
+  - Atlas & Debates:
+      - Atlas de Conceitos: conceitos/index.md
+      - Grandes Eixos de Debate: eixos.md
+      - Mapa de Conexões (Grafo): grafo.md
+      - Obras & Autores: obras.md
+      - Índice por Tags: tags.md
+  - Cinemateca & Acervo:
+      - Videoaulas & Mídias: midias.md
+      - Estante de Livros e Filmes: estante.md
+      - Fichas de Leitura: acervo/fichas/index.md
+      - Antologia de Trechos: trechos/index.md
+      - Critérios da Curadoria: docs/11-midias-e-videoaulas.md
+  - Meu Caderno:
+      - Caderno & Progresso: registrar.md
+      - Diário de Leitura: diario/index.md
+      - Revisão & Flashcards: retencao.md
+      - Relatório de Maturidade: progresso.md
+  - Bastidores:
+      - Guias do Projeto: docs/index.md
+      - Prioridades de Leitura: docs/05-prioridades-de-leitura.md
+      - Prompts NotebookLM & Tutor: docs/03-prompts-notebooklm.md
+      - Manutenção do Livro: docs/08-instrucoes-futuras.md
 
 extra:
   social:

@@ -1257,3 +1257,76 @@ def test_site_estante_e_acervo_noba_nao_publicado(mini_repo: pathlib.Path):
     fontes = mini_repo / "site-src"
     assert (fontes / "estante.md").read_text(encoding="utf-8") == "# Estante de obras\n"
     assert not (fontes / "docs" / "NOBA").exists()
+
+
+# ---------------------------------------------------------------------------
+# Livro Digital Interativo (Volumes, Mídias em ordem pedagógica, Players, URLs)
+# ---------------------------------------------------------------------------
+
+
+def test_livro_url_site_resolve_directory_urls():
+    from scripts.painel.livro import url_site
+
+    assert url_site("index.md", "trilhas/filosofia-nivel-1.md") == "trilhas/filosofia-nivel-1/"
+    assert url_site("index.md", "conceitos/index.md") == "conceitos/"
+    assert url_site("conceitos/index.md", "conceitos/sociologia-habitus.md") == "sociologia-habitus/"
+    assert url_site("conceitos/sociologia-habitus.md", "conceitos/sociologia-campo.md") == "../sociologia-campo/"
+    assert (
+        url_site("conceitos/sociologia-habitus.md", "trilhas/sociologia-teste.md#parada-1")
+        == "../../trilhas/sociologia-teste/#parada-1"
+    )
+    assert url_site("trilhas/sociologia-teste.md", "trilhas/index.md") == "../"
+
+
+def test_livro_ordena_midias_pedagogicamente_e_extrai_youtube():
+    from scripts.painel.livro import extrair_youtube_embed, ordenar_midias_pedagogicamente
+
+    itens = [
+        {"id": "1", "titulo": "Filme", "peso": "obra-de-apoio", "idioma": "pt"},
+        {"id": "2", "titulo": "Lecture", "peso": "aula-universitaria", "idioma": "en"},
+        {"id": "3", "titulo": "Divulgação", "peso": "divulgacao", "idioma": "pt"},
+        {"id": "4", "titulo": "Aula PT", "peso": "aula-universitaria", "idioma": "pt"},
+    ]
+    ordenados = ordenar_midias_pedagogicamente(itens)
+    assert [i["id"] for i in ordenados] == ["4", "3", "1", "2"]
+
+    yt_watch = extrair_youtube_embed("https://www.youtube.com/watch?v=7I84Vgrb5wY")
+    assert yt_watch is not None
+    assert "youtube-nocookie.com/embed/7I84Vgrb5wY" in yt_watch[0]
+
+    yt_list = extrair_youtube_embed("https://www.youtube.com/playlist?list=PLxI8Can9yAHch330p5-s23-9n8tC2xR3D")
+    assert yt_list is not None
+    assert "videoseries?list=PLxI8Can9yAHch330p5-s23-9n8tC2xR3D" in yt_list[0]
+
+
+def test_site_integra_midias_nos_volumes_e_nos_conceitos(mini_repo: pathlib.Path):
+    """Mídias verificadas entram tanto no capítulo do volume quanto na nota do conceito, preservando os checkboxes."""
+    _escrever_midias(mini_repo, MIDIA_OK)
+    painel.gravar_midias(mini_repo)
+    assert painel.main(["--raiz", str(mini_repo), "site"]) == 0
+
+    fontes = mini_repo / "site-src"
+    nota = (fontes / "conceitos" / "sociologia-habitus.md").read_text(encoding="utf-8")
+    trilha = (fontes / "trilhas" / "sociologia-teste.md").read_text(encoding="utf-8")
+    midias_site = (fontes / "midias.md").read_text(encoding="utf-8")
+    retencao = (fontes / "retencao.md").read_text(encoding="utf-8")
+
+    # Ensaio do conceito enriquecido com player sob demanda, auto-teste e pager do volume
+    assert "eb-chapter-header" in nota
+    assert "youtube-nocookie.com/embed/abc123" in nota
+    assert "eb-recall-box" in nota
+    assert "eb-book-pager" in nota
+
+    # Capítulo da trilha enriquecido mantendo 100% dos checkboxes originais (3 nós, 1 concluído)
+    assert "eb-volume-header" in trilha
+    assert "eb-stop-dossier" in trilha
+    assert "youtube-nocookie.com/embed/abc123" in trilha
+    marcacoes = painel.REGEX_CHECKBOX.findall(trilha)
+    assert len(marcacoes) == 3
+    assert sum(1 for m, _txt in marcacoes if m.strip().lower() == "x") == 1
+
+    # Cinemateca interativa e treinador de flashcards presentes no site
+    assert 'id="eb-media-search"' in midias_site
+    assert 'id="eb-flashcard-trainer"' in retencao
+    assert 'id="eb-flashcards-data"' in retencao
+
